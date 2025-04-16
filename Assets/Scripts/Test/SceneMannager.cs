@@ -46,7 +46,7 @@ public class SceneMannager : MonoBehaviour
 
     void SpawnMyPlayer()
     {
-        int actorNumber = PhotonNetwork.LocalPlayer.ActorNumber;
+        int actorNumber = PhotonNetwork.LocalPlayer.ActorNumber; //ActorNumber -> 플레이어 번호
         int spawnIndex = (actorNumber - 1) % spawnPoints.Length;
 
         Transform spawnPoint = spawnPoints[spawnIndex];
