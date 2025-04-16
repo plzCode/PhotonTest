@@ -72,7 +72,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         Debug.Log("Joined Room: " + PhotonNetwork.CurrentRoom.Name);
 
         // 로딩 씬 이동 등
-        PhotonNetwork.LoadLevel("GameScene"); // 모든 유저가 자동으로 이동
+        //PhotonNetwork.LoadLevel("GameScene"); // 모든 유저가 자동으로 이동
     }
 
     // 방 참가 실패
