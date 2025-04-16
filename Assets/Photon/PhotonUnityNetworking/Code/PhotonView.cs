@@ -242,7 +242,7 @@ namespace Photon.Pun
         public int ControllerActorNr
         {
             get { return this.controllerActorNr; }
-            set
+            set 
             {
                 Player prevController = this.Controller;
 
