@@ -9,20 +9,32 @@ public class PlayerTest : MonoBehaviourPunCallbacks, IPunObservable
     {
         playerView = GetComponent<PhotonView>();
     }
+
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
-        throw new System.NotImplementedException();
+        if (stream.IsWriting)
+        {
+            // 로컬 플레이어의 데이터를 네트워크로 전송
+            stream.SendNext(transform.position);
+            stream.SendNext(transform.rotation);
+        }
+        else
+        {
+            // 네트워크에서 데이터를 수신
+            transform.position = (Vector3)stream.ReceiveNext();
+            transform.rotation = (Quaternion)stream.ReceiveNext();
+        }
     }
 
     private void FixedUpdate()
     {
-        if (playerView.IsMine) 
+        if (playerView.IsMine)
         {
-            if (Input.GetKeyDown(KeyCode.Space)) 
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 Debug.Log("테스트" + playerView.name);
             }
         }
     }
-
 }
+
