@@ -416,7 +416,7 @@ GameObject:
   - component: {fileID: 763077982}
   - component: {fileID: 763077981}
   m_Layer: 0
-  m_Name: SceneMannager
+  m_Name: SpawnMannager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine;
 using Photon.Pun;
 
-public class SceneMannager : MonoBehaviour
+public class SpawnMannager : MonoBehaviourPun
 {
     
     public string gameSceneName = "GameScene";
@@ -34,24 +34,14 @@ public class SceneMannager : MonoBehaviour
         int actorNumber = PhotonNetwork.LocalPlayer.ActorNumber; //ActorNumber -> 플레이어 번호
         int spawnIndex = (actorNumber - 1) % spawnPoints.Length;
 
-        Transform spawnPoint = spawnPoints[spawnIndex];
-
+        Transform spawnPoint = spawnPoints[spawnIndex];        
         GameObject tmpPlayer = PhotonNetwork.Instantiate(playerPrefabName, spawnPoint.position, spawnPoint.rotation);
-        switch(actorNumber)
-        {
-            case 1:
-                tmpPlayer.GetComponentInChildren<SpriteRenderer>().color = new Color(255, 255, 255);
-                break;
-            case 2:
-                tmpPlayer.GetComponentInChildren<SpriteRenderer>().color = new Color(255, 255, 0);
-                break;
-            case 3:
-                tmpPlayer.GetComponentInChildren<SpriteRenderer>().color = new Color(0, 0, 255);
-                break;
-            case 4:
-                tmpPlayer.GetComponentInChildren<SpriteRenderer>().color = new Color(0, 255, 0);
-                break;
-        }
 
-    }
+        PhotonView playerView = tmpPlayer.GetComponent<PhotonView>();
+        int viewID = playerView.ViewID;
+
+        // 색상 설정 RPC 호출
+        playerView.RPC("SettingColor", RpcTarget.AllBuffered, actorNumber, viewID);
+    }    
+
 }
