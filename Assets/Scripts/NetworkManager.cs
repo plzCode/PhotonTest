@@ -86,4 +86,9 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
         Debug.Log("Create Room Failed: " + message);
     }
+
+    public void LeaveRoom()
+    {
+        PhotonNetwork.LeaveRoom();
+    }
 }

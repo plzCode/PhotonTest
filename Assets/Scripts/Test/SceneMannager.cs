@@ -5,22 +5,7 @@ using Photon.Pun;
 
 public class SceneMannager : MonoBehaviour
 {
-    public static SceneMannager Instance;
-
-    private void Awake()
-    {
-        // 싱글톤 패턴
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject); // 씬 전환 시에도 유지
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
-
+    
     public string gameSceneName = "GameScene";
     public string playerPrefabName = "Test/Player";// Resources 폴더에 있어야 함
     public Transform[] spawnPoints; // 미리 지정해놓은 스폰 지점들
@@ -51,6 +36,22 @@ public class SceneMannager : MonoBehaviour
 
         Transform spawnPoint = spawnPoints[spawnIndex];
 
-        PhotonNetwork.Instantiate(playerPrefabName, spawnPoint.position, spawnPoint.rotation);
+        GameObject tmpPlayer = PhotonNetwork.Instantiate(playerPrefabName, spawnPoint.position, spawnPoint.rotation);
+        switch(actorNumber)
+        {
+            case 1:
+                tmpPlayer.GetComponentInChildren<SpriteRenderer>().color = new Color(255, 255, 255);
+                break;
+            case 2:
+                tmpPlayer.GetComponentInChildren<SpriteRenderer>().color = new Color(255, 255, 0);
+                break;
+            case 3:
+                tmpPlayer.GetComponentInChildren<SpriteRenderer>().color = new Color(0, 0, 255);
+                break;
+            case 4:
+                tmpPlayer.GetComponentInChildren<SpriteRenderer>().color = new Color(0, 255, 0);
+                break;
+        }
+
     }
 }

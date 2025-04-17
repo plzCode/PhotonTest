@@ -244,6 +244,11 @@ namespace Photon.Pun.Demo.Asteroids
 
         public void OnLoginButtonClicked()
         {
+            //임시
+            if(PhotonNetwork.IsConnected)
+            {
+                PhotonNetwork.Disconnect();
+            }
             string playerName = PlayerNameInput.text;
 
             if (!playerName.Equals(""))
