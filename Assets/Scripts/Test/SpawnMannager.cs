@@ -3,24 +3,9 @@ using UnityEngine.SceneManagement;
 using UnityEngine;
 using Photon.Pun;
 
-public class SceneMannager : MonoBehaviour
+public class SpawnMannager : MonoBehaviourPun
 {
-    public static SceneMannager Instance;
-
-    private void Awake()
-    {
-        // 싱글톤 패턴
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject); // 씬 전환 시에도 유지
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
-
+    
     public string gameSceneName = "GameScene";
     public string playerPrefabName = "Test/Player";// Resources 폴더에 있어야 함
     public Transform[] spawnPoints; // 미리 지정해놓은 스폰 지점들
@@ -49,8 +34,14 @@ public class SceneMannager : MonoBehaviour
         int actorNumber = PhotonNetwork.LocalPlayer.ActorNumber; //ActorNumber -> 플레이어 번호
         int spawnIndex = (actorNumber - 1) % spawnPoints.Length;
 
-        Transform spawnPoint = spawnPoints[spawnIndex];
+        Transform spawnPoint = spawnPoints[spawnIndex];        
+        GameObject tmpPlayer = PhotonNetwork.Instantiate(playerPrefabName, spawnPoint.position, spawnPoint.rotation);
 
-        PhotonNetwork.Instantiate(playerPrefabName, spawnPoint.position, spawnPoint.rotation);
-    }
+        PhotonView playerView = tmpPlayer.GetComponent<PhotonView>();
+        int viewID = playerView.ViewID;
+
+        // 색상 설정 RPC 호출
+        playerView.RPC("SettingColor", RpcTarget.AllBuffered, actorNumber, viewID);
+    }    
+
 }
