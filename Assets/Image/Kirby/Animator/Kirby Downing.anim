@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Kirby JumpingDown
+  m_Name: Kirby Downing
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,9 +21,9 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -5798784741611462836, guid: cdfc2805fd5742d4dbc285ae1f8a0f00, type: 3}
+      value: {fileID: -2257749327113455051, guid: d6f86e871ef0b8b4f87881d325ff33eb, type: 3}
     - time: 0.06666667
-      value: {fileID: 8392936109135247519, guid: cdfc2805fd5742d4dbc285ae1f8a0f00, type: 3}
+      value: {fileID: -7168888423937541642, guid: d6f86e871ef0b8b4f87881d325ff33eb, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,8 +46,8 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -5798784741611462836, guid: cdfc2805fd5742d4dbc285ae1f8a0f00, type: 3}
-    - {fileID: 8392936109135247519, guid: cdfc2805fd5742d4dbc285ae1f8a0f00, type: 3}
+    - {fileID: -2257749327113455051, guid: d6f86e871ef0b8b4f87881d325ff33eb, type: 3}
+    - {fileID: -7168888423937541642, guid: d6f86e871ef0b8b4f87881d325ff33eb, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

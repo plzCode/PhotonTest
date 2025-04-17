@@ -23,7 +23,6 @@ public class PlayerJumpState : PlayerState
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            player.lineVelocity(rb.linearVelocityX, player.MinJumpPower);
             stateMachine.ChangeState(player.airJumpState);
         }
         else if (Input.GetKey(KeyCode.Space) && player.JumpPower >= player.MaxJumpPower)
