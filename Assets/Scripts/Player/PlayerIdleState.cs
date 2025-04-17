@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerIdleState : PlayerState
+public class PlayerIdleState : PlayerGroundState
 {
     public PlayerIdleState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName) : base(_player, _stateMachine, _animBoolName)
     {
@@ -20,9 +20,13 @@ public class PlayerIdleState : PlayerState
     {
         base.Update();
 
-        if(xInput != 0)
+
+        if(xInput != 0 && !player.isBusy)
         {
             stateMachine.ChangeState(player.moveState);
         }
+
+        if(!player.IsGroundCheck())
+            stateMachine.ChangeState(player.airState); ;
     }
 }

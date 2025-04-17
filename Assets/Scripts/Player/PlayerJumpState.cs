@@ -9,6 +9,7 @@ public class PlayerJumpState : PlayerState
     public override void Enter()
     {
         base.Enter();
+        player.MaxJumpPower = -1;
     }
 
     public override void Exit()
@@ -19,5 +20,22 @@ public class PlayerJumpState : PlayerState
     public override void Update()
     {
         base.Update();
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            player.lineVelocity(rb.linearVelocityX, player.MinJumpPower);
+            stateMachine.ChangeState(player.airJumpState);
+        }
+        else if (Input.GetKey(KeyCode.Space) && player.JumpPower >= player.MaxJumpPower)
+        {
+            player.lineVelocity(rb.linearVelocityX, player.MinJumpPower + player.JumpPower);
+            player.MaxJumpPower += 0.1f;
+        }
+
+        if (rb.linearVelocityY < 0)
+            stateMachine.ChangeState(player.airState);;
+
+        if (xInput != 0)
+            player.lineVelocity(xInput * player.MoveSpeed, rb.linearVelocityY);
     }
 }

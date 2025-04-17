@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Kirby Jump
+  m_Name: Kirby Air JumpIng
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,7 +21,11 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 161435087051999011, guid: cdfc2805fd5742d4dbc285ae1f8a0f00, type: 3}
+      value: {fileID: -4010251166861311954, guid: 4daa9acef6cd1154188ee74c33a9e054, type: 3}
+    - time: 0.06666667
+      value: {fileID: -9057858409524210213, guid: 4daa9acef6cd1154188ee74c33a9e054, type: 3}
+    - time: 0.13333334
+      value: {fileID: -2388163581544113899, guid: 4daa9acef6cd1154188ee74c33a9e054, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,13 +48,15 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 161435087051999011, guid: cdfc2805fd5742d4dbc285ae1f8a0f00, type: 3}
+    - {fileID: -4010251166861311954, guid: 4daa9acef6cd1154188ee74c33a9e054, type: 3}
+    - {fileID: -9057858409524210213, guid: 4daa9acef6cd1154188ee74c33a9e054, type: 3}
+    - {fileID: -2388163581544113899, guid: 4daa9acef6cd1154188ee74c33a9e054, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.06666667
+    m_StopTime: 0.20000002
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
