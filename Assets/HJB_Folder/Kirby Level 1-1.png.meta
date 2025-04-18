@@ -1,0 +1,1222 @@
+fileFormatVersion: 2
+guid: c9212d6d1d9f35d4e9795c4b7ba6b99b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3525528963857558072
+    second: Kirby Level 1-1_0
+  - first:
+      213: -4725760503394464496
+    second: Kirby Level 1-1_1
+  - first:
+      213: 1980065974733416828
+    second: Kirby Level 1-1_2
+  - first:
+      213: -3463679165406669416
+    second: Kirby Level 1-1_3
+  - first:
+      213: -1799696922367072142
+    second: Kirby Level 1-1_4
+  - first:
+      213: 7964839284690993780
+    second: Kirby Level 1-1_5
+  - first:
+      213: 8081074183923564354
+    second: Kirby Level 1-1_6
+  - first:
+      213: -3574790346489089128
+    second: Kirby Level 1-1_7
+  - first:
+      213: 683358323533626348
+    second: Kirby Level 1-1_8
+  - first:
+      213: -2444684063649151558
+    second: Kirby Level 1-1_9
+  - first:
+      213: -8103687668492807363
+    second: Kirby Level 1-1_10
+  - first:
+      213: 2633119479458887465
+    second: Kirby Level 1-1_11
+  - first:
+      213: -2222622530120516892
+    second: Kirby Level 1-1_12
+  - first:
+      213: 6151200231622984591
+    second: Kirby Level 1-1_13
+  - first:
+      213: 4942661719298421982
+    second: Kirby Level 1-1_14
+  - first:
+      213: 7416051245748230473
+    second: Kirby Level 1-1_15
+  - first:
+      213: -143810487924899898
+    second: Kirby Level 1-1_16
+  - first:
+      213: 5002873609598763588
+    second: Kirby Level 1-1_17
+  - first:
+      213: 6264456098571972636
+    second: Kirby Level 1-1_18
+  - first:
+      213: -3040274845017603198
+    second: Kirby Level 1-1_19
+  - first:
+      213: 6525230140639174620
+    second: Kirby Level 1-1_20
+  - first:
+      213: -2656172750221132557
+    second: Kirby Level 1-1_21
+  - first:
+      213: -4466856195498689359
+    second: Kirby Level 1-1_22
+  - first:
+      213: 3050554770361652565
+    second: Kirby Level 1-1_23
+  - first:
+      213: -6545369124205099259
+    second: Kirby Level 1-1_24
+  - first:
+      213: 4491700156582936538
+    second: Kirby Level 1-1_25
+  - first:
+      213: 2960310449755795229
+    second: Kirby Level 1-1_26
+  - first:
+      213: 7183526032355077012
+    second: Kirby Level 1-1_27
+  - first:
+      213: 7702979890202372417
+    second: Kirby Level 1-1_28
+  - first:
+      213: -7318807110097116265
+    second: Kirby Level 1-1_29
+  - first:
+      213: 5192234553684817254
+    second: Kirby Level 1-1_30
+  - first:
+      213: -4124609944869998797
+    second: Kirby Level 1-1_31
+  - first:
+      213: -7657863587918353056
+    second: Kirby Level 1-1_32
+  - first:
+      213: -7199814818597064434
+    second: Kirby Level 1-1_33
+  - first:
+      213: -1914961635444385321
+    second: Kirby Level 1-1_34
+  - first:
+      213: -1900132391328275889
+    second: Kirby Level 1-1_35
+  - first:
+      213: 2234025019976757376
+    second: Kirby Level 1-1_36
+  - first:
+      213: 1112067580465137371
+    second: Kirby Level 1-1_37
+  - first:
+      213: -9108817719404643156
+    second: Kirby Level 1-1_38
+  - first:
+      213: -5000215161996224743
+    second: Kirby Level 1-1_39
+  - first:
+      213: 200007761976699740
+    second: Kirby Level 1-1_40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Kirby Level 1-1_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 744
+        width: 1590
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83aa410e9e13de030800000000000000
+      internalID: 3525528963857558072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_1
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 722
+        width: 114
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01d0a9d3cd9ba6eb0800000000000000
+      internalID: -4725760503394464496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_2
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 727
+        width: 58
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c79a2df538b9a7b10800000000000000
+      internalID: 1980065974733416828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_3
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 711
+        width: 58
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8959302862a8eefc0800000000000000
+      internalID: -3463679165406669416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_4
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 724
+        width: 113
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27862fe2f213607e0800000000000000
+      internalID: -1799696922367072142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_5
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 706
+        width: 114
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4724511412bc88e60800000000000000
+      internalID: 7964839284690993780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_6
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 695
+        width: 58
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24ff758a72eb52070800000000000000
+      internalID: 8081074183923564354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_7
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 708
+        width: 113
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 893b503be1bc36ec0800000000000000
+      internalID: -3574790346489089128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_8
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 692
+        width: 113
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceb378056c6cb7900800000000000000
+      internalID: 683358323533626348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_9
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 690
+        width: 114
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab5422eebccb21ed0800000000000000
+      internalID: -2444684063649151558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_10
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 674
+        width: 114
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d33d5cc200be98f80800000000000000
+      internalID: -8103687668492807363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_11
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 679
+        width: 58
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 927fe483738ba8420800000000000000
+      internalID: 2633119479458887465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_12
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 676
+        width: 113
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eaf266b598a721e0800000000000000
+      internalID: -2222622530120516892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_13
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 100
+        width: 274
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f83403c25047d5550800000000000000
+      internalID: 6151200231622984591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_14
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 397
+        width: 1458
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed434b775acd79440800000000000000
+      internalID: 4942661719298421982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_15
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 509
+        width: 50
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9499aeae05b1be660800000000000000
+      internalID: 7416051245748230473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_16
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 474
+        width: 122
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cfb2488f15110ef0800000000000000
+      internalID: -143810487924899898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_17
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 493
+        width: 34
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4428f44aa07cd6540800000000000000
+      internalID: 5002873609598763588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_18
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 374
+        width: 194
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c10796291a1dfe650800000000000000
+      internalID: 6264456098571972636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_19
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 376
+        width: 194
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2838b23f226cec5d0800000000000000
+      internalID: -3040274845017603198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_20
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 378
+        width: 98
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdf5872ad364e8a50800000000000000
+      internalID: 6525230140639174620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_21
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 362
+        width: 98
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fc3ff8e4f0632bd0800000000000000
+      internalID: -2656172750221132557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_22
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 376
+        width: 97
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bc3c84e4f98202c0800000000000000
+      internalID: -4466856195498689359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_23
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 358
+        width: 194
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 555974fa66fb55a20800000000000000
+      internalID: 3050554770361652565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_24
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 360
+        width: 194
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50702fbd57d2a25a0800000000000000
+      internalID: -6545369124205099259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_25
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 344
+        width: 194
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adf31be8e79b55e30800000000000000
+      internalID: 4491700156582936538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_26
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 346
+        width: 98
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1f229e6ba2251920800000000000000
+      internalID: 2960310449755795229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_27
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 360
+        width: 97
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49bab41ddd201b360800000000000000
+      internalID: 7183526032355077012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_28
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 344
+        width: 97
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1496d73e56b76ea60800000000000000
+      internalID: 7702979890202372417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_29
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 342
+        width: 194
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 793ee07c5bf5e6a90800000000000000
+      internalID: -7318807110097116265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_30
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 326
+        width: 194
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66574e221d58e0840800000000000000
+      internalID: 5192234553684817254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_31
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 328
+        width: 194
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33feaf6bb1172c6c0800000000000000
+      internalID: -4124609944869998797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_32
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 330
+        width: 98
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06d6abfc3adc9b590800000000000000
+      internalID: -7657863587918353056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_33
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 328
+        width: 97
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e01bde8919e151c90800000000000000
+      internalID: -7199814818597064434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_34
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 57
+        width: 1554
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d916d8d980bc65e0800000000000000
+      internalID: -1914961635444385321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_35
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 191
+        width: 98
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f422aac48af51a5e0800000000000000
+      internalID: -1900132391328275889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_36
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 191
+        width: 114
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 080bc075be9d00f10800000000000000
+      internalID: 2234025019976757376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_37
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 34
+        width: 210
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd64adb829bde6f00800000000000000
+      internalID: 1112067580465137371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_38
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 25
+        width: 210
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cac3a177b8af69180800000000000000
+      internalID: -9108817719404643156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_39
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 16
+        width: 210
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91751bc6dcaab9ab0800000000000000
+      internalID: -5000215161996224743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Level 1-1_40
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 7
+        width: 210
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5b21f4fff196c200800000000000000
+      internalID: 200007761976699740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Kirby Level 1-1_0: 3525528963857558072
+      Kirby Level 1-1_1: -4725760503394464496
+      Kirby Level 1-1_10: -8103687668492807363
+      Kirby Level 1-1_11: 2633119479458887465
+      Kirby Level 1-1_12: -2222622530120516892
+      Kirby Level 1-1_13: 6151200231622984591
+      Kirby Level 1-1_14: 4942661719298421982
+      Kirby Level 1-1_15: 7416051245748230473
+      Kirby Level 1-1_16: -143810487924899898
+      Kirby Level 1-1_17: 5002873609598763588
+      Kirby Level 1-1_18: 6264456098571972636
+      Kirby Level 1-1_19: -3040274845017603198
+      Kirby Level 1-1_2: 1980065974733416828
+      Kirby Level 1-1_20: 6525230140639174620
+      Kirby Level 1-1_21: -2656172750221132557
+      Kirby Level 1-1_22: -4466856195498689359
+      Kirby Level 1-1_23: 3050554770361652565
+      Kirby Level 1-1_24: -6545369124205099259
+      Kirby Level 1-1_25: 4491700156582936538
+      Kirby Level 1-1_26: 2960310449755795229
+      Kirby Level 1-1_27: 7183526032355077012
+      Kirby Level 1-1_28: 7702979890202372417
+      Kirby Level 1-1_29: -7318807110097116265
+      Kirby Level 1-1_3: -3463679165406669416
+      Kirby Level 1-1_30: 5192234553684817254
+      Kirby Level 1-1_31: -4124609944869998797
+      Kirby Level 1-1_32: -7657863587918353056
+      Kirby Level 1-1_33: -7199814818597064434
+      Kirby Level 1-1_34: -1914961635444385321
+      Kirby Level 1-1_35: -1900132391328275889
+      Kirby Level 1-1_36: 2234025019976757376
+      Kirby Level 1-1_37: 1112067580465137371
+      Kirby Level 1-1_38: -9108817719404643156
+      Kirby Level 1-1_39: -5000215161996224743
+      Kirby Level 1-1_4: -1799696922367072142
+      Kirby Level 1-1_40: 200007761976699740
+      Kirby Level 1-1_5: 7964839284690993780
+      Kirby Level 1-1_6: 8081074183923564354
+      Kirby Level 1-1_7: -3574790346489089128
+      Kirby Level 1-1_8: 683358323533626348
+      Kirby Level 1-1_9: -2444684063649151558
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
