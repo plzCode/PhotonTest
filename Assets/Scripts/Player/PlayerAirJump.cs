@@ -9,7 +9,6 @@ public class PlayerAirJump : PlayerState
     public override void Enter()
     {
         base.Enter();
-        player.lineVelocity(rb.linearVelocityX, player.MinJumpPower);
     }
 
     public override void Exit()
@@ -21,10 +20,10 @@ public class PlayerAirJump : PlayerState
     {
         base.Update();
 
-        if (rb.linearVelocityY < -0.1)
-            stateMachine.ChangeState(player.airJumpingState);
+        if (player.IsGroundCheck())
+            stateMachine.ChangeState(player.idleState);
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space))
             stateMachine.ChangeState(player.airJumpUpState);
 
         if (xInput != 0)

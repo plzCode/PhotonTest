@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     public bool isBusy { get; private set; }
 
     public float flipdir { get; private set; } = 1;
-    public bool flipbool = true;
+    private bool flipbool = true;
 
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundLine;
@@ -29,13 +29,9 @@ public class Player : MonoBehaviour
 
     public PlayerIdleState idleState { get; private set; }
     public PlayerMoveState moveState { get; private set; }
-    public PlayerDownState downState { get; private set; }
-    public PlayerDowningState downingState { get; private set; }
-    public PlayerDowningGroundState downingGroundState { get; private set; }
     public PlayerJumpState jumpState { get; private set; }
     public PlayerAirState airState { get; private set; }
     public PlayerAirJump airJumpState { get; private set; }
-    public PlayerAirJumping airJumpingState { get; private set; }
     public PlayerAirJumpUp airJumpUpState { get; private set; }
     
 
@@ -47,13 +43,9 @@ public class Player : MonoBehaviour
 
         idleState = new PlayerIdleState(this, stateMachine, "Idle");
         moveState = new PlayerMoveState(this, stateMachine, "Move");
-        downState = new PlayerDownState(this, stateMachine, "Down");
-        downingState = new PlayerDowningState(this, stateMachine, "Downing");
-        downingGroundState = new PlayerDowningGroundState(this, stateMachine, "DowningGround");
         jumpState = new PlayerJumpState(this, stateMachine, "Jump");
         airState = new PlayerAirState(this, stateMachine, "Jump");
         airJumpState = new PlayerAirJump(this, stateMachine, "AirJump");
-        airJumpingState = new PlayerAirJumping(this, stateMachine, "AirJumping");
         airJumpUpState = new PlayerAirJumpUp(this, stateMachine, "AirJumpUp");
     }
 
@@ -111,10 +103,5 @@ public class Player : MonoBehaviour
     {
         rb.linearVelocity = new Vector2 (xlineVelocity, ylineVelocity);
         FlipController(xlineVelocity);
-    }
-
-    public void ZerolineVelocity(float xlineVelocity, float ylineVelocity)
-    {
-        rb.linearVelocity = new Vector2(xlineVelocity, ylineVelocity);
     }
 }
