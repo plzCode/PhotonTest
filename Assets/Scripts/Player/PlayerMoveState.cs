@@ -29,5 +29,8 @@ public class PlayerMoveState : PlayerGroundState
 
         if (!player.IsGroundCheck())
             stateMachine.ChangeState(player.airState); ;
+
+        if (Input.GetKeyDown(KeyCode.S))
+            stateMachine.ChangeState(player.downState);
     }
 }

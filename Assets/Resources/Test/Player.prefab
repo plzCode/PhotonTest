@@ -57,7 +57,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -221,9 +221,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 3
+  MinJumpPower: 0
   JumpPower: 3
-  flipdir: 1
-  flipbool: 1
+  MaxJumpPower: 3
+  groundCheck: {fileID: 0}
+  groundLine: 0
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!50 &-1602619267492161065
 Rigidbody2D:
   serializedVersion: 5
