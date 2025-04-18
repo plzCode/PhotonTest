@@ -103,9 +103,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <power>k__BackingField: 10
-  <speed>k__BackingField: 1
+  <speed>k__BackingField: 5
   <weaponType>k__BackingField: 0
-  flightTime: 1.5
+  flightTime: 1
 --- !u!61 &7296394996654861803
 BoxCollider2D:
   m_ObjectHideFlags: 0

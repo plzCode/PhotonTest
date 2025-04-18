@@ -5,7 +5,7 @@ public class Spear : MonsterWeapon
 
     private Rigidbody2D rb;
     private Transform target;
-    //private bool launched = false;
+    private bool launched = false;
 
     [SerializeField] private float flightTime = 1.0f; // 투창이 목표 지점에 도달할 시간
 
@@ -50,7 +50,7 @@ public class Spear : MonsterWeapon
         Vector2 velocity = new Vector2(vx, vy);
         rb.linearVelocity = velocity;
 
-        //launched = true;
+        launched = true;
 
         // 회전 방향 설정 (선택사항)
         float angle = Mathf.Atan2(velocity.y, velocity.x) * Mathf.Rad2Deg;
