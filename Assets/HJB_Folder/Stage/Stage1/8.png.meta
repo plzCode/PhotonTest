@@ -1,40 +1,40 @@
 fileFormatVersion: 2
-guid: d6f86e871ef0b8b4f87881d325ff33eb
+guid: 9da3ec694dbd52b4690b65ef96630803
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2257749327113455051
-    second: Kirby Down_0
+      213: 8288426215254106694
+    second: 8_0
   - first:
-      213: -7168888423937541642
-    second: Kirby Down_1
+      213: -2681809406195053031
+    second: 8_1
   - first:
-      213: 3814603584028645397
-    second: Kirby Down_2
+      213: -6521200998356810719
+    second: 8_2
   - first:
-      213: 732986833894499021
-    second: Kirby Down_3
+      213: -2868909495077532586
+    second: 8_3
   - first:
-      213: 6251335646813302600
-    second: Kirby Down_4
+      213: 3628795729810838210
+    second: 8_4
   - first:
-      213: -8627712369987454398
-    second: Kirby Down_5
+      213: 2847373500579207448
+    second: 8_5
   - first:
-      213: 29130512021367925
-    second: Kirby Down_6
+      213: -6423505127753160604
+    second: 8_6
   - first:
-      213: -4209809540947667
-    second: Kirby Down_7
+      213: -6926691236322396390
+    second: 8_7
   - first:
-      213: 6363275030461679559
-    second: Kirby Down_8
+      213: -188582404480058189
+    second: 8_8
   - first:
-      213: -4668087603582427073
-    second: Kirby Down_9
+      213: -8996125858950296539
+    second: 8_9
   - first:
-      213: 1247344251247325077
-    second: Kirby Down_10
+      213: 5896069441851052790
+    second: 8_10
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -67,12 +67,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -81,7 +81,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 20
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -103,7 +103,7 @@ TextureImporter:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 1
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -142,7 +142,7 @@ TextureImporter:
   - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
-    resizeAlgorithm: 1
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -155,7 +155,7 @@ TextureImporter:
   - serializedVersion: 4
     buildTarget: WindowsStoreApps
     maxTextureSize: 2048
-    resizeAlgorithm: 1
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -169,13 +169,189 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kirby Down_0
+      name: 8_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 415
+        width: 657
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 642a1439ab7660370800000000000000
+      internalID: 8288426215254106694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 8_1
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 607
+        width: 50
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91e417ccd8c48cad0800000000000000
+      internalID: -2681809406195053031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 8_2
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 607
+        width: 114
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12405082e3a0085a0800000000000000
+      internalID: -6521200998356810719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 8_3
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 591
+        width: 114
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65c882da3069f28d0800000000000000
+      internalID: -2868909495077532586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 8_4
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 575
+        width: 114
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c254d57d721c5230800000000000000
+      internalID: 3628795729810838210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 8_5
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 559
+        width: 114
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81952ecdc17e38720800000000000000
+      internalID: 2847373500579207448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 8_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 111
+        width: 929
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4686f579e102bd6a0800000000000000
+      internalID: -6423505127753160604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 8_7
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 207
+        width: 273
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a17313e05037fdf90800000000000000
+      internalID: -6926691236322396390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 8_8
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 33
-        height: 33
+        width: 1456
+        height: 134
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +360,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 53a7685f2fcdaa0e0800000000000000
-      internalID: -2257749327113455051
+      spriteID: 3bcb3126d45026df0800000000000000
+      internalID: -188582404480058189
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kirby Down_1
+      name: 8_9
       rect:
         serializedVersion: 2
-        x: 33
-        y: 0
-        width: 33
-        height: 33
+        x: 1015
+        y: 76
+        width: 122
+        height: 125
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,20 +382,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6f9fac8f5fdf28c90800000000000000
-      internalID: -7168888423937541642
+      spriteID: 52ccf8ed137572380800000000000000
+      internalID: -8996125858950296539
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kirby Down_2
+      name: 8_10
       rect:
         serializedVersion: 2
-        x: 66
-        y: 0
-        width: 33
-        height: 33
+        x: 1167
+        y: 95
+        width: 34
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,184 +404,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51895f0cfb130f430800000000000000
-      internalID: 3814603584028645397
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kirby Down_3
-      rect:
-        serializedVersion: 2
-        x: 99
-        y: 0
-        width: 33
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dc2e15354a71c2a00800000000000000
-      internalID: 732986833894499021
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kirby Down_4
-      rect:
-        serializedVersion: 2
-        x: 132
-        y: 0
-        width: 33
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 84f2b0856a431c650800000000000000
-      internalID: 6251335646813302600
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kirby Down_5
-      rect:
-        serializedVersion: 2
-        x: 165
-        y: 0
-        width: 33
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 24a77a2af45344880800000000000000
-      internalID: -8627712369987454398
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kirby Down_6
-      rect:
-        serializedVersion: 2
-        x: 198
-        y: 0
-        width: 33
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 57ca82ddb0e776000800000000000000
-      internalID: 29130512021367925
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kirby Down_7
-      rect:
-        serializedVersion: 2
-        x: 231
-        y: 0
-        width: 33
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d216db5533b01fff0800000000000000
-      internalID: -4209809540947667
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kirby Down_8
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 0
-        width: 33
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7c708c61de4ee4850800000000000000
-      internalID: 6363275030461679559
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kirby Down_9
-      rect:
-        serializedVersion: 2
-        x: 297
-        y: 0
-        width: 33
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f30a010ae0f973fb0800000000000000
-      internalID: -4668087603582427073
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kirby Down_10
-      rect:
-        serializedVersion: 2
-        x: 330
-        y: 0
-        width: 33
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 59fe830ecf47f4110800000000000000
-      internalID: 1247344251247325077
+      spriteID: 6f2519c2beb03d150800000000000000
+      internalID: 5896069441851052790
       vertices: []
       indices: 
       edges: []
@@ -414,7 +414,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c3f0e9eccb899d74186319b2a17e5e8a
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -423,18 +423,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Kirby Down_0: -2257749327113455051
-      Kirby Down_1: -7168888423937541642
-      Kirby Down_10: 1247344251247325077
-      Kirby Down_2: 3814603584028645397
-      Kirby Down_3: 732986833894499021
-      Kirby Down_4: 6251335646813302600
-      Kirby Down_5: -8627712369987454398
-      Kirby Down_6: 29130512021367925
-      Kirby Down_7: -4209809540947667
-      Kirby Down_8: 6363275030461679559
-      Kirby Down_9: -4668087603582427073
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

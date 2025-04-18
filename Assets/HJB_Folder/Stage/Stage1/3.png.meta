@@ -1,34 +1,19 @@
 fileFormatVersion: 2
-guid: ba595833ecb8a8b439ba7a924df1a99f
+guid: 01cea3a89bd252f4bb3b9050fec06b58
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4272088518103788406
-    second: Kirby Dash Air_0
+      213: -6470460504253458178
+    second: 3_0
   - first:
-      213: 4841866223245589722
-    second: Kirby Dash Air_1
+      213: 6623151957235123224
+    second: 3_1
   - first:
-      213: -5406618292012798518
-    second: Kirby Dash Air_2
+      213: 2161284124966242572
+    second: 3_2
   - first:
-      213: -716555015281368167
-    second: Kirby Dash Air_3
-  - first:
-      213: 7195114036811632092
-    second: Kirby Dash Air_4
-  - first:
-      213: 2681340469008294850
-    second: Kirby Dash Air_5
-  - first:
-      213: -8999839747607534612
-    second: Kirby Dash Air_6
-  - first:
-      213: -7224883483626507635
-    second: Kirby Dash Air_7
-  - first:
-      213: -5601078299521915174
-    second: Kirby Dash Air_8
+      213: 1646375367856145251
+    second: 3_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -61,12 +46,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -75,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 20
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,7 +82,7 @@ TextureImporter:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 1
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -136,7 +121,7 @@ TextureImporter:
   - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
-    resizeAlgorithm: 1
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -149,7 +134,7 @@ TextureImporter:
   - serializedVersion: 4
     buildTarget: WindowsStoreApps
     maxTextureSize: 2048
-    resizeAlgorithm: 1
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -163,13 +148,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kirby Dash Air_0
+      name: 3_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 33
-        height: 33
+        width: 1456
+        height: 134
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 67be99a6fd1894b30800000000000000
-      internalID: 4272088518103788406
+      spriteID: ef817ce047e4436a0800000000000000
+      internalID: -6470460504253458178
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kirby Dash Air_1
+      name: 3_1
       rect:
         serializedVersion: 2
-        x: 33
-        y: 0
-        width: 33
-        height: 33
+        x: 303
+        y: 111
+        width: 50
+        height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +185,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: adcf38e3da3c13340800000000000000
-      internalID: 4841866223245589722
+      spriteID: 814ce683d992aeb50800000000000000
+      internalID: 6623151957235123224
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kirby Dash Air_2
+      name: 3_2
       rect:
         serializedVersion: 2
-        x: 66
-        y: 0
-        width: 33
-        height: 33
+        x: 1015
+        y: 76
+        width: 122
+        height: 125
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,20 +207,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: acda2741f45d7f4b0800000000000000
-      internalID: -5406618292012798518
+      spriteID: c09cd4fe57c6efd10800000000000000
+      internalID: 2161284124966242572
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kirby Dash Air_3
+      name: 3_3
       rect:
         serializedVersion: 2
-        x: 99
-        y: 0
-        width: 33
-        height: 33
+        x: 1167
+        y: 95
+        width: 34
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,96 +229,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 993212492094e06f0800000000000000
-      internalID: -716555015281368167
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kirby Dash Air_4
-      rect:
-        serializedVersion: 2
-        x: 132
-        y: 0
-        width: 33
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cdd859a581e2ad360800000000000000
-      internalID: 7195114036811632092
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kirby Dash Air_5
-      rect:
-        serializedVersion: 2
-        x: 165
-        y: 0
-        width: 33
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2c36e1143f8063520800000000000000
-      internalID: 2681340469008294850
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kirby Dash Air_6
-      rect:
-        serializedVersion: 2
-        x: 198
-        y: 0
-        width: 33
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ce36968ce652a1380800000000000000
-      internalID: -8999839747607534612
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kirby Dash Air_7
-      rect:
-        serializedVersion: 2
-        x: 231
-        y: 0
-        width: 33
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d82fade20ce0cbb90800000000000000
-      internalID: -7224883483626507635
+      spriteID: 363c4089ca919d610800000000000000
+      internalID: 1646375367856145251
       vertices: []
       indices: 
       edges: []
@@ -342,7 +239,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 2b84403cc9e708c4785b28989937aa4f
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -351,15 +248,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Kirby Dash Air_0: 4272088518103788406
-      Kirby Dash Air_1: 4841866223245589722
-      Kirby Dash Air_2: -5406618292012798518
-      Kirby Dash Air_3: -716555015281368167
-      Kirby Dash Air_4: 7195114036811632092
-      Kirby Dash Air_5: 2681340469008294850
-      Kirby Dash Air_6: -8999839747607534612
-      Kirby Dash Air_7: -7224883483626507635
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

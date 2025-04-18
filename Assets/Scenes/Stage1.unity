@@ -5478,6 +5478,7 @@ MonoBehaviour:
   MinJumpPower: 3
   JumpPower: 2
   MaxJumpPower: -1
+  flipbool: 1
   groundCheck: {fileID: 572636035}
   groundLine: 0.88
   whatIsGround:
