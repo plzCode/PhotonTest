@@ -6,8 +6,8 @@ public class PlayerDowningGroundState : PlayerState
     {
     }
 
-    public float move;
-    public bool ground;
+    public float Lastmove;
+    public int ground;
 
     public override void Enter()
     {
@@ -15,14 +15,14 @@ public class PlayerDowningGroundState : PlayerState
 
         if(player.flipbool)
         {
-            move = 1;
+            Lastmove = 1;
         }
         else
         {
-            move = -1;
+            Lastmove = -1;
         }
 
-            player.lineVelocity(move * player.MoveSpeed, player.MinJumpPower);
+            player.lineVelocity(Lastmove * player.MoveSpeed, player.MinJumpPower);
     }
 
     public override void Exit()
@@ -33,5 +33,16 @@ public class PlayerDowningGroundState : PlayerState
     public override void Update()
     {
         base.Update();
+
+        if (player.IsGroundCheck())
+        {
+            ground += 1;
+
+            if (player.IsGroundCheck() && ground >= 15)
+            {
+                ground = 0;
+                stateMachine.ChangeState(player.idleState);
+            }
+        }
     }
 }

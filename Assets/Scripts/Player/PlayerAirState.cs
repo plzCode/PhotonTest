@@ -29,7 +29,7 @@ public class PlayerAirState : PlayerState
         if (player.IsGroundCheck())
             stateMachine.ChangeState(player.idleState);
 
-        if (rb.linearVelocityY < -5)
+        if (rb.linearVelocityY < -8)
             stateMachine.ChangeState(player.downingState);
 
         if (xInput != 0)

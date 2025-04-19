@@ -21,7 +21,7 @@ public class PlayerDownState : PlayerState
     {
         base.Update();
 
-        if (Input.GetKeyUp(KeyCode.S))
+        if (Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.DownArrow))
             stateMachine.ChangeState(player.idleState);
     }
 }

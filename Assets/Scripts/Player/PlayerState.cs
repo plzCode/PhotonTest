@@ -8,9 +8,9 @@ public class PlayerState
     protected Player player;
     protected PlayerStateMachine stateMachine;
 
-    protected Rigidbody2D rb;
-
     protected float xInput;
+
+    protected Rigidbody2D rb;
 
     private string animBoolName;
 
