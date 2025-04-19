@@ -9,6 +9,7 @@ public class PlayerIdleState : PlayerGroundState
     public override void Enter()
     {
         base.Enter();
+        player.ZerolineVelocity(0, 0);
     }
 
     public override void Exit()
@@ -28,5 +29,8 @@ public class PlayerIdleState : PlayerGroundState
 
         if(!player.IsGroundCheck())
             stateMachine.ChangeState(player.airState); ;
+
+        if (Input.GetKey(KeyCode.S))
+            stateMachine.ChangeState(player.downState);
     }
 }

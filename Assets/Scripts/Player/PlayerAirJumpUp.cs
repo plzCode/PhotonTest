@@ -22,7 +22,7 @@ public class PlayerAirJumpUp : PlayerState
         base.Update();
 
         if(rb.linearVelocityY < -0.1)
-            stateMachine.ChangeState(player.airJumpState);
+            stateMachine.ChangeState(player.airJumpingState);
 
         if (xInput != 0)
             player.lineVelocity(xInput * player.MoveSpeed, rb.linearVelocityY);
