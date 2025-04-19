@@ -9,6 +9,7 @@ public class PlayerIdleState : PlayerGroundState
     public override void Enter()
     {
         base.Enter();
+        player.ZerolineVelocity(0, 0);
     }
 
     public override void Exit()
@@ -20,13 +21,27 @@ public class PlayerIdleState : PlayerGroundState
     {
         base.Update();
 
-
-        if(xInput != 0 && !player.isBusy)
+        if (player.dashtime > 0.3)
         {
+            player.dash = false;
+            player.dashtime = 0;
+        }
+
+        if (xInput != 0 && !player.isBusy)
+        {
+            player.dash = true;
             stateMachine.ChangeState(player.moveState);
         }
 
-        if(!player.IsGroundCheck())
-            stateMachine.ChangeState(player.airState); ;
+        if (xInput != 0 && player.dashtime > 0.1)
+        {
+            stateMachine.ChangeState(player.dashState);
+        }
+
+        if (!player.IsGroundCheck())
+            stateMachine.ChangeState(player.airState);
+
+        if (Input.GetKey(KeyCode.S))
+            stateMachine.ChangeState(player.downState);
     }
 }
