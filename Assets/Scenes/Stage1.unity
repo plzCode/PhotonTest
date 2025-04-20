@@ -407,6 +407,37 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!1 &1461439623
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1461439624}
+  m_Layer: 0
+  m_Name: DashEffectPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1461439624
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461439623}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1, y: -0.25, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2034128783}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1652253103
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5271,6 +5302,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 6663518756591721886, guid: 56e0656401003ba48a1f93139b69c4ab, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8388351682181131273, guid: 56e0656401003ba48a1f93139b69c4ab, type: 3}
       propertyPath: m_Name
       value: Stage1
@@ -5433,6 +5468,7 @@ Transform:
   m_Children:
   - {fileID: 1930487515}
   - {fileID: 572636035}
+  - {fileID: 1461439624}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2034128784
@@ -5520,16 +5556,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 462a0ec88eea82f43b4c9d15cd55a998, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dashtime: 0
-  dashtime2: 0
-  dash: 0
-  dash2: 0
   MoveSpeed: 3
   DashSpeed: 5
+  dashTime: 0
+  dash: 0
+  turn: 0
   MinJumpPower: 3
   JumpPower: 2
   MaxJumpPower: -1
   flipbool: 1
+  dashEffect: {fileID: 6713143777519656305, guid: 76d5def01e095ee4ea62c7eb90c2cc5c, type: 3}
+  dashEffectPos: {fileID: 1461439624}
   groundCheck: {fileID: 572636035}
   groundLine: 0.88
   whatIsGround:

@@ -21,21 +21,32 @@ public class PlayerIdleState : PlayerGroundState
     {
         base.Update();
 
-        if (player.dashtime > 0.3)
+        if (player.dashTime > 0.3)
         {
             player.dash = false;
-            player.dashtime = 0;
+            player.dashTime = 0;
+        }
+
+        if (xInput != 0 && player.dashTime > 0.1)
+        {
+            if (xInput < 0)
+            {
+                player.turn = true;
+                stateMachine.ChangeState(player.dashState);
+                return;
+            }
+            else if (xInput > 0)
+            {
+                player.turn = false;
+                stateMachine.ChangeState(player.dashState);
+                return;
+            }
         }
 
         if (xInput != 0 && !player.isBusy)
         {
             player.dash = true;
             stateMachine.ChangeState(player.moveState);
-        }
-
-        if (xInput != 0 && player.dashtime > 0.1)
-        {
-            stateMachine.ChangeState(player.dashState);
         }
 
         if (!player.IsGroundCheck())

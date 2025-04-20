@@ -1,24 +1,30 @@
 using Photon.Realtime;
 using System;
 using System.Collections;
+using System.Resources;
 using UnityEngine;
 using UnityEngine.InputSystem.XInput;
+using UnityEngine.UIElements;
 
 public class Player : MonoBehaviour
 {
-    public float dashtime;
-    public bool dash = false;
-
     public float MoveSpeed;
     public float DashSpeed;
+
+    public float dashTime;
+    public bool dash = false;
+    public bool turn;
+
     public float MinJumpPower;
     public float JumpPower;
     public float MaxJumpPower = 3f;
 
     public bool isBusy { get; private set; }
 
-    public float flipdir { get; private set; } = 1;
     public bool flipbool = true;
+
+    [SerializeField] private GameObject dashEffect;
+    [SerializeField] private Transform dashEffectPos;
 
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundLine;
@@ -83,9 +89,9 @@ public class Player : MonoBehaviour
     {
         stateMachine.state.Update();
 
-        if(dash)
+        if (dash)
         {
-            dashtime += Time.deltaTime;
+            dashTime += Time.deltaTime;
         }
     }
 
@@ -117,7 +123,6 @@ public class Player : MonoBehaviour
     //이미지 전환
     public void Flip()
     {
-        flipdir = flipdir * -1;
         flipbool = !flipbool;
         transform.Rotate(0, 180, 0);
     }
@@ -125,9 +130,13 @@ public class Player : MonoBehaviour
     public void FlipController(float _x)
     {
         if (_x > 0 && !flipbool)
+        {
             Flip();
+        }
         else if (_x < 0 && flipbool)
+        {
             Flip();
+        }
     }
 
     //캐릭터 움직임
@@ -140,6 +149,18 @@ public class Player : MonoBehaviour
     public void ZerolineVelocity(float xlineVelocity, float ylineVelocity)
     {
         rb.linearVelocity = new Vector2(xlineVelocity, ylineVelocity);
+    }
+
+    public void DashEffect(float _x)
+    {
+        if (_x > 0)
+        {
+            Instantiate(dashEffect, dashEffectPos.position, Quaternion.identity);
+        }
+        else if (_x < 0)
+        {
+            Instantiate(dashEffect, dashEffectPos.position, Quaternion.Euler(0, 180, 0));
+        }
     }
 
 }
