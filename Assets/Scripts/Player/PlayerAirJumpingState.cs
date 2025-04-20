@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class PlayerAirJumpingState : PlayerState
 {
+    public float AirOutCoolTime;
+    public bool AirOut;
+
     public PlayerAirJumpingState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName) : base(_player, _stateMachine, _animBoolName)
     {
     }
@@ -9,6 +12,7 @@ public class PlayerAirJumpingState : PlayerState
     public override void Enter()
     {
         base.Enter();
+        AirOut = true;
     }
 
     public override void Exit()
@@ -19,13 +23,21 @@ public class PlayerAirJumpingState : PlayerState
     public override void Update()
     {
         base.Update();
-        player.LastInput(xInput);
+
+        if (AirOut)
+        {
+            AirOutCoolTime += Time.deltaTime;
+        }
 
         if (Input.GetKey(KeyCode.Space))
             stateMachine.ChangeState(player.airJumpUpState);
 
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.Z) && AirOut && AirOutCoolTime > 0.3)
+        {
             stateMachine.ChangeState(player.airJumpOutState);
+            AirOut = false;
+            AirOutCoolTime = 0;
+        }
 
         if (player.IsGroundCheck())
             stateMachine.ChangeState(player.idleState);

@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class PlayerDowningGroundState : PlayerState
 {
+    public float Lastmove;
+    public int ground;
+
     public PlayerDowningGroundState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName) : base(_player, _stateMachine, _animBoolName)
     {
     }
-
-    public float Lastmove;
-    public int ground;
 
     public override void Enter()
     {
@@ -33,6 +33,8 @@ public class PlayerDowningGroundState : PlayerState
     public override void Update()
     {
         base.Update();
+
+        player.lineVelocity(xInput * player.MoveSpeed, rb.linearVelocityY);
 
         if (player.IsGroundCheck())
         {

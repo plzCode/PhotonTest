@@ -4,6 +4,9 @@ using UnityEngine.EventSystems;
 
 public class PlayerAirJumpState : PlayerState
 {
+    public float AirOutCoolTime;
+    public bool AirOut;
+
     public PlayerAirJumpState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName) : base(_player, _stateMachine, _animBoolName)
     {
     }
@@ -11,6 +14,7 @@ public class PlayerAirJumpState : PlayerState
     public override void Enter()
     {
         base.Enter();
+        AirOut = true;
         player.lineVelocity(rb.linearVelocityX, player.MinJumpPower);
     }
 
@@ -22,7 +26,11 @@ public class PlayerAirJumpState : PlayerState
     public override void Update()
     {
         base.Update();
-        player.LastInput(xInput);
+
+        if (AirOut)
+        {
+            AirOutCoolTime += Time.deltaTime;
+        }
 
         if (rb.linearVelocityY < -0.1)
             stateMachine.ChangeState(player.airJumpingState);
@@ -30,8 +38,12 @@ public class PlayerAirJumpState : PlayerState
         if (Input.GetKeyDown(KeyCode.Space))
             stateMachine.ChangeState(player.airJumpUpState);
 
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.Z) && AirOut && AirOutCoolTime > 0.3)
+        {
             stateMachine.ChangeState(player.airJumpOutState);
+            AirOut = false;
+            AirOutCoolTime = 0;
+        }
 
         if (xInput != 0)
             player.lineVelocity(xInput * player.MoveSpeed, rb.linearVelocityY);

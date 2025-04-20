@@ -21,7 +21,6 @@ public class PlayerMoveState : PlayerGroundState
     public override void Update()
     {
         base.Update();
-        player.LastInput(xInput);
 
         player.lineVelocity(xInput * player.MoveSpeed, rb.linearVelocityY);
 

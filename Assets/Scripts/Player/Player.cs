@@ -19,8 +19,6 @@ public class Player : MonoBehaviour
     public float JumpPower;
     public float MaxJumpPower = 3f;
 
-    public float LastxInput;
-
     public bool isBusy { get; private set; }
 
     public bool flipbool = true;
@@ -168,17 +166,4 @@ public class Player : MonoBehaviour
             Instantiate(Effect, EffecPos.position, Quaternion.Euler(0, 180, 0));
         }
     }
-
-    public void LastInput(float xInput)
-    {
-        if (xInput > 0)
-        {
-            LastxInput = xInput;
-        }
-        else if (xInput < 0)
-        {
-            LastxInput = xInput;
-        }
-    }
-
 }

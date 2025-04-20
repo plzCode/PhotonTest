@@ -2,8 +2,11 @@ using UnityEngine;
 
 public class PlayerAirJumpOutState : PlayerState
 {
+    public float Lastmove;
     public float EffectTime;
     public bool Effect;
+    public float BackTime;
+    public bool Back;
 
     public PlayerAirJumpOutState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName) : base(_player, _stateMachine, _animBoolName)
     {
@@ -13,6 +16,16 @@ public class PlayerAirJumpOutState : PlayerState
     {
         base.Enter();
         Effect = true;
+        Back = true;
+
+        if (player.flipbool)
+        {
+            Lastmove = 1;
+        }
+        else
+        {
+            Lastmove = -1;
+        }
     }
 
     public override void Exit()
@@ -31,13 +44,21 @@ public class PlayerAirJumpOutState : PlayerState
 
         if (EffectTime > 0.05 && Effect)
         {
-            Debug.Log("½ÇÇàÁß");
-            player.EffectAdd(player.LastxInput, player.AirJumpOutEffect, player.AirJumpOutEffectPos);
+            player.EffectAdd(Lastmove, player.AirJumpOutEffect, player.AirJumpOutEffectPos);
             Effect = false;
             EffectTime = 0;
         }
 
-        if (player.IsGroundCheck())
-            stateMachine.ChangeState(player.idleState);
+        if (Back)
+        {
+            BackTime += Time.deltaTime;
+        }
+
+        if (BackTime > 0.1)
+        {
+            stateMachine.ChangeState(player.airState);
+            Back = false;
+            BackTime = 0;
+        }
     }
 }
