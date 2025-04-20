@@ -2,6 +2,7 @@ using Photon.Realtime;
 using UnityEngine;
 using UnityEngine.Windows;
 using Input = UnityEngine.Input;
+using Photon.Pun;
 
 public class PlayerState
 {
@@ -14,12 +15,16 @@ public class PlayerState
 
     private string animBoolName;
 
+    //for Photon
+    protected PhotonView pView;
+
     
     public PlayerState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName)
     {
         this.player = _player;
         this.stateMachine = _stateMachine;
         this.animBoolName = _animBoolName;
+        pView = _player.GetComponent<PhotonView>();
     }
 
     public virtual void Enter()

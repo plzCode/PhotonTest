@@ -26,7 +26,7 @@ public class PlayerAirJumpState : PlayerState
     public override void Update()
     {
         base.Update();
-
+        if (!pView.IsMine) return;
         if (AirOut)
         {
             AirOutCoolTime += Time.deltaTime;
