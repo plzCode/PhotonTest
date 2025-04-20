@@ -21,6 +21,7 @@ public class PlayerGroundState : PlayerState
     {
         base.Update();
 
+        
         if (Input.GetKeyDown(KeyCode.Space))
             stateMachine.ChangeState(player.jumpState);
     }

@@ -10,7 +10,7 @@ public class PlayerTest : MonoBehaviourPunCallbacks, IPunObservable
         playerView = GetComponent<PhotonView>();
     }
 
-    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+/*    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
         if (stream.IsWriting)
         {
@@ -24,7 +24,7 @@ public class PlayerTest : MonoBehaviourPunCallbacks, IPunObservable
             transform.position = (Vector3)stream.ReceiveNext();
             transform.rotation = (Quaternion)stream.ReceiveNext();
         }
-    }
+    }*/
 
     private void FixedUpdate()
     {

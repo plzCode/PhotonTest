@@ -1,3 +1,4 @@
+using Photon.Pun;
 using System;
 using System.Security;
 using UnityEngine;
@@ -22,8 +23,10 @@ public class PlayerMoveState : PlayerGroundState
     {
         base.Update();
 
+        if (!playerView.IsMine) return;
+        
         player.lineVelocity(xInput * player.MoveSpeed, rb.linearVelocityY);
-
+        
         if (xInput == 0)
         {
             stateMachine.ChangeState(player.idleState);

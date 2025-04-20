@@ -1,3 +1,4 @@
+using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine;
 using UnityEngine.Windows;
@@ -13,6 +14,7 @@ public class PlayerState
     protected Rigidbody2D rb;
 
     private string animBoolName;
+    protected PhotonView playerView;
 
     
     public PlayerState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName)
@@ -20,6 +22,8 @@ public class PlayerState
         this.player = _player;
         this.stateMachine = _stateMachine;
         this.animBoolName = _animBoolName;
+        try { playerView = this.player.GetComponent<PhotonView>(); }
+        catch { }
     }
 
     public virtual void Enter()
@@ -30,7 +34,9 @@ public class PlayerState
 
     public virtual void Update()
     {
+        
         xInput = Input.GetAxisRaw("Horizontal");
+        
         player.anim.SetFloat("yVelocity", rb.linearVelocityY);
     }
 

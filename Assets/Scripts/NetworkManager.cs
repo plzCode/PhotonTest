@@ -23,6 +23,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     void Start()
     {
         ConnectToPhoton();
+        
     }
 
     public void ConnectToPhoton()
