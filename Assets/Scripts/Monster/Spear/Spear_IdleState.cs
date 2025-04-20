@@ -1,6 +1,5 @@
-using UnityEditor.Tilemaps;
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
+
 
 public class Spear_IdleState : Spear_GroundedState
 {
