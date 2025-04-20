@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class PlayerAirJumpUp : PlayerState
+public class PlayerAirJumpUpState : PlayerState
 {
-    public PlayerAirJumpUp(Player _player, PlayerStateMachine _stateMachine, string _animBoolName) : base(_player, _stateMachine, _animBoolName)
+    public PlayerAirJumpUpState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName) : base(_player, _stateMachine, _animBoolName)
     {
     }
 
@@ -20,9 +20,13 @@ public class PlayerAirJumpUp : PlayerState
     public override void Update()
     {
         base.Update();
+        player.LastInput(xInput);
 
-        if(rb.linearVelocityY < -0.1)
+        if (rb.linearVelocityY < -0.1)
             stateMachine.ChangeState(player.airJumpingState);
+
+        if (Input.GetKeyDown(KeyCode.Z))
+            stateMachine.ChangeState(player.airJumpOutState);
 
         if (xInput != 0)
             player.lineVelocity(xInput * player.MoveSpeed, rb.linearVelocityY);
