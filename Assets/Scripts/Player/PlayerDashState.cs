@@ -38,7 +38,7 @@ public class PlayerDashState : PlayerGroundState
 
         if (EffectTime > 0.05 && Effect2)
         {
-            player.DashEffect(xInput);
+            player.EffectAdd(xInput, player.dashEffect, player.dashEffectPos);
             Effect2 = false;
             EffectTime = 0;
         }
@@ -46,7 +46,7 @@ public class PlayerDashState : PlayerGroundState
 
         if (EffectTime > 0.2 && Effect)
         {
-            player.DashEffect(xInput);
+            player.EffectAdd(xInput, player.dashEffect, player.dashEffectPos);
             Effect = false;
             EffectTime = 0;
         }
@@ -54,13 +54,13 @@ public class PlayerDashState : PlayerGroundState
         if (xInput > 0 && player.turn)
         {
             stateMachine.ChangeState(player.dashTurnState);
-            player.DashEffect(-1);
+            player.EffectAdd(-1, player.dashEffect, player.dashEffectPos);
             return;
         }
         else if (xInput < 0 && !player.turn)
         {
             stateMachine.ChangeState(player.dashTurnState);
-            player.DashEffect(1);
+            player.EffectAdd(1, player.dashEffect, player.dashEffectPos);
             return;
         }
 

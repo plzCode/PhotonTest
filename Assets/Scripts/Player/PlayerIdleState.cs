@@ -20,6 +20,7 @@ public class PlayerIdleState : PlayerGroundState
     public override void Update()
     {
         base.Update();
+        player.LastInput(xInput);
 
         if (player.dashTime > 0.3)
         {
@@ -52,7 +53,7 @@ public class PlayerIdleState : PlayerGroundState
         if (!player.IsGroundCheck())
             stateMachine.ChangeState(player.airState);
 
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.DownArrow))
             stateMachine.ChangeState(player.downState);
     }
 }

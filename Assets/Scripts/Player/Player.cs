@@ -19,12 +19,16 @@ public class Player : MonoBehaviour
     public float JumpPower;
     public float MaxJumpPower = 3f;
 
+    public float LastxInput;
+
     public bool isBusy { get; private set; }
 
     public bool flipbool = true;
 
-    [SerializeField] private GameObject dashEffect;
-    [SerializeField] private Transform dashEffectPos;
+    public GameObject dashEffect;
+    public Transform dashEffectPos;
+    public GameObject AirJumpOutEffect;
+    public Transform AirJumpOutEffectPos;
 
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundLine;
@@ -42,7 +46,7 @@ public class Player : MonoBehaviour
     public PlayerIdleState idleState { get; private set; }
     public PlayerMoveState moveState { get; private set; }
     public PlayerDashState dashState { get; private set; }
-    public PlayerDashTurn dashTurnState { get; private set; }
+    public PlayerDashTurnState dashTurnState { get; private set; }
     public PlayerDownState downState { get; private set; }
 
     public PlayerJumpState jumpState { get; private set; }
@@ -50,9 +54,10 @@ public class Player : MonoBehaviour
     public PlayerDowningGroundState downingGroundState { get; private set; }
 
     public PlayerAirState airState { get; private set; }
-    public PlayerAirJump airJumpState { get; private set; }
-    public PlayerAirJumping airJumpingState { get; private set; }
-    public PlayerAirJumpUp airJumpUpState { get; private set; }
+    public PlayerAirJumpState airJumpState { get; private set; }
+    public PlayerAirJumpingState airJumpingState { get; private set; }
+    public PlayerAirJumpUpState airJumpUpState { get; private set; }
+    public PlayerAirJumpOutState airJumpOutState { get; private set; }
     
 
 
@@ -64,7 +69,7 @@ public class Player : MonoBehaviour
         idleState = new PlayerIdleState(this, stateMachine, "Idle");
         moveState = new PlayerMoveState(this, stateMachine, "Move");
         dashState = new PlayerDashState(this, stateMachine, "Dash");
-        dashTurnState = new PlayerDashTurn(this, stateMachine, "DashTurn");
+        dashTurnState = new PlayerDashTurnState(this, stateMachine, "DashTurn");
         downState = new PlayerDownState(this, stateMachine, "Down");
 
         jumpState = new PlayerJumpState(this, stateMachine, "Jump");
@@ -72,9 +77,10 @@ public class Player : MonoBehaviour
         downingGroundState = new PlayerDowningGroundState(this, stateMachine, "DowningGround");
 
         airState = new PlayerAirState(this, stateMachine, "Jump");
-        airJumpState = new PlayerAirJump(this, stateMachine, "AirJump");
-        airJumpingState = new PlayerAirJumping(this, stateMachine, "AirJumping");
-        airJumpUpState = new PlayerAirJumpUp(this, stateMachine, "AirJumpUp");
+        airJumpState = new PlayerAirJumpState(this, stateMachine, "AirJump");
+        airJumpingState = new PlayerAirJumpingState(this, stateMachine, "AirJumping");
+        airJumpUpState = new PlayerAirJumpUpState(this, stateMachine, "AirJumpUp");
+        airJumpOutState = new PlayerAirJumpOutState(this, stateMachine, "AirJumpOut");
     }
 
     public void Start()
@@ -151,15 +157,27 @@ public class Player : MonoBehaviour
         rb.linearVelocity = new Vector2(xlineVelocity, ylineVelocity);
     }
 
-    public void DashEffect(float _x)
+    public void EffectAdd(float _x, GameObject Effect, Transform EffecPos)
     {
         if (_x > 0)
         {
-            Instantiate(dashEffect, dashEffectPos.position, Quaternion.identity);
+            Instantiate(Effect, EffecPos.position, Quaternion.identity);
         }
         else if (_x < 0)
         {
-            Instantiate(dashEffect, dashEffectPos.position, Quaternion.Euler(0, 180, 0));
+            Instantiate(Effect, EffecPos.position, Quaternion.Euler(0, 180, 0));
+        }
+    }
+
+    public void LastInput(float xInput)
+    {
+        if (xInput > 0)
+        {
+            LastxInput = xInput;
+        }
+        else if (xInput < 0)
+        {
+            LastxInput = xInput;
         }
     }
 

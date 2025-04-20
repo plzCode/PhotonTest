@@ -1,8 +1,10 @@
+using Photon.Realtime;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class PlayerAirJump : PlayerState
+public class PlayerAirJumpState : PlayerState
 {
-    public PlayerAirJump(Player _player, PlayerStateMachine _stateMachine, string _animBoolName) : base(_player, _stateMachine, _animBoolName)
+    public PlayerAirJumpState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName) : base(_player, _stateMachine, _animBoolName)
     {
     }
 
@@ -20,12 +22,16 @@ public class PlayerAirJump : PlayerState
     public override void Update()
     {
         base.Update();
+        player.LastInput(xInput);
 
         if (rb.linearVelocityY < -0.1)
             stateMachine.ChangeState(player.airJumpingState);
 
         if (Input.GetKeyDown(KeyCode.Space))
             stateMachine.ChangeState(player.airJumpUpState);
+
+        if (Input.GetKeyDown(KeyCode.Z))
+            stateMachine.ChangeState(player.airJumpOutState);
 
         if (xInput != 0)
             player.lineVelocity(xInput * player.MoveSpeed, rb.linearVelocityY);

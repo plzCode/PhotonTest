@@ -1,0 +1,825 @@
+fileFormatVersion: 2
+guid: 8e50539497ebe4044a6c971d84693f74
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7256336531385742244
+    second: Kirby Air Effect 44x44_0
+  - first:
+      213: 6018788720737701999
+    second: Kirby Air Effect 44x44_1
+  - first:
+      213: -1164359755001963406
+    second: Kirby Air Effect 44x44_2
+  - first:
+      213: -5759030134204576476
+    second: Kirby Air Effect 44x44_3
+  - first:
+      213: -1594954017161014671
+    second: Kirby Air Effect 44x44_4
+  - first:
+      213: -5042264718164058262
+    second: Kirby Air Effect 44x44_5
+  - first:
+      213: -989524629028980124
+    second: Kirby Air Effect 44x44_6
+  - first:
+      213: -1138231549475195128
+    second: Kirby Air Effect 44x44_7
+  - first:
+      213: 6327053210740338242
+    second: Kirby Air Effect 44x44_8
+  - first:
+      213: 2652866687173699777
+    second: Kirby Air Effect 44x44_9
+  - first:
+      213: -5645788523665657503
+    second: Kirby Air Effect 44x44_10
+  - first:
+      213: -5870964316913120563
+    second: Kirby Air Effect 44x44_11
+  - first:
+      213: -117274288214299570
+    second: Kirby Air Effect 44x44_12
+  - first:
+      213: -6327795317503224064
+    second: Kirby Air Effect 44x44_13
+  - first:
+      213: 6511336332084991745
+    second: Kirby Air Effect 44x44_14
+  - first:
+      213: 5060274707616863562
+    second: Kirby Air Effect 44x44_15
+  - first:
+      213: 3723076916390662912
+    second: Kirby Air Effect 44x44_16
+  - first:
+      213: -4157313008347558864
+    second: Kirby Air Effect 44x44_17
+  - first:
+      213: -8096369765821330147
+    second: Kirby Air Effect 44x44_18
+  - first:
+      213: -7648124624692589245
+    second: Kirby Air Effect 44x44_19
+  - first:
+      213: 1848728380625842115
+    second: Kirby Air Effect 44x44_20
+  - first:
+      213: -1265560152811279724
+    second: Kirby Air Effect 44x44_21
+  - first:
+      213: -8755522858347361374
+    second: Kirby Air Effect 44x44_22
+  - first:
+      213: 2373429117724377546
+    second: Kirby Air Effect 44x44_23
+  - first:
+      213: 3321545412433926162
+    second: Kirby Air Effect 44x44_24
+  - first:
+      213: -1777619365441416120
+    second: Kirby Air Effect 44x44_25
+  - first:
+      213: -4750100495729068262
+    second: Kirby Air Effect 44x44_26
+  - first:
+      213: -3536579603305441689
+    second: Kirby Air Effect 44x44_27
+  - first:
+      213: -1308999750542500827
+    second: Kirby Air Effect 44x44_28
+  - first:
+      213: -3312146354505271637
+    second: Kirby Air Effect 44x44_29
+  - first:
+      213: 1522334213125596675
+    second: Kirby Air Effect 44x44_30
+  - first:
+      213: 7236434829848950473
+    second: Kirby Air Effect 44x44_31
+  - first:
+      213: -8759126446933437664
+    second: Kirby Air Effect 44x44_32
+  - first:
+      213: -1486444864768505782
+    second: Kirby Air Effect 44x44_33
+  - first:
+      213: -7032325247351847586
+    second: Kirby Air Effect 44x44_34
+  - first:
+      213: -4711346165461471075
+    second: Kirby Air Effect 44x44_35
+  - first:
+      213: 2414470609539725561
+    second: Kirby Air Effect 44x44_36
+  - first:
+      213: -8039895047773756450
+    second: Kirby Air Effect 44x44_37
+  - first:
+      213: 7500357199719819013
+    second: Kirby Air Effect 44x44_38
+  - first:
+      213: -8776641401742891769
+    second: Kirby Air Effect 44x44_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Kirby Air Effect 44x44_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a3ffeb21afa3b460800000000000000
+      internalID: 7256336531385742244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Air Effect 44x44_1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f60d2bdd378078350800000000000000
+      internalID: 6018788720737701999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Air Effect 44x44_2
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27cd85cc8fc57dfe0800000000000000
+      internalID: -1164359755001963406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Air Effect 44x44_3
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42d47f70b90d310b0800000000000000
+      internalID: -5759030134204576476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Air Effect 44x44_4
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 172190695c59dd9e0800000000000000
+      internalID: -1594954017161014671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Air Effect 44x44_5
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6f985234f6460ab0800000000000000
+      internalID: -5042264718164058262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Air Effect 44x44_6
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46a3a36b7908442f0800000000000000
+      internalID: -989524629028980124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Air Effect 44x44_7
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8077365bf603430f0800000000000000
+      internalID: -1138231549475195128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Air Effect 44x44_8
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24e2c2d7f553ec750800000000000000
+      internalID: 6327053210740338242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Air Effect 44x44_9
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c8a47d4230e0d420800000000000000
+      internalID: 2652866687173699777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Air Effect 44x44_10
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1617ee9104126a1b0800000000000000
+      internalID: -5645788523665657503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Air Effect 44x44_11
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dca46693f05268ea0800000000000000
+      internalID: -5870964316913120563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Air Effect 44x44_12
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4c23bdf7ab5f5ef0800000000000000
+      internalID: -117274288214299570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Air Effect 44x44_13
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00717d05fa72f28a0800000000000000
+      internalID: -6327795317503224064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Air Effect 44x44_14
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 107550f35e9ec5a50800000000000000
+      internalID: 6511336332084991745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Air Effect 44x44_15
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a45956d3905b93640800000000000000
+      internalID: 5060274707616863562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Air Effect 44x44_16
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0031ce0dab60ba330800000000000000
+      internalID: 3723076916390662912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Air Effect 44x44_17
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03c455568d14e46c0800000000000000
+      internalID: -4157313008347558864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Air Effect 44x44_18
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1dc10a289ae3af80800000000000000
+      internalID: -8096369765821330147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Air Effect 44x44_19
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34dc743ec276cd590800000000000000
+      internalID: -7648124624692589245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Air Effect 44x44_20
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cfe26dcaa008a910800000000000000
+      internalID: 1848728380625842115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Air Effect 44x44_21
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49a6bc90fb3df6ee0800000000000000
+      internalID: -1265560152811279724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Air Effect 44x44_22
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ab846d59522e7680800000000000000
+      internalID: -8755522858347361374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Air Effect 44x44_23
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac1c785253d10f020800000000000000
+      internalID: 2373429117724377546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Air Effect 44x44_24
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 218d37d44ff781e20800000000000000
+      internalID: 3321545412433926162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0660b471c02f5c646977894cd32b938c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Kirby Air Effect 44x44_0: 7256336531385742244
+      Kirby Air Effect 44x44_1: 6018788720737701999
+      Kirby Air Effect 44x44_10: -5645788523665657503
+      Kirby Air Effect 44x44_11: -5870964316913120563
+      Kirby Air Effect 44x44_12: -117274288214299570
+      Kirby Air Effect 44x44_13: -6327795317503224064
+      Kirby Air Effect 44x44_14: 6511336332084991745
+      Kirby Air Effect 44x44_15: 5060274707616863562
+      Kirby Air Effect 44x44_16: 3723076916390662912
+      Kirby Air Effect 44x44_17: -4157313008347558864
+      Kirby Air Effect 44x44_18: -8096369765821330147
+      Kirby Air Effect 44x44_19: -7648124624692589245
+      Kirby Air Effect 44x44_2: -1164359755001963406
+      Kirby Air Effect 44x44_20: 1848728380625842115
+      Kirby Air Effect 44x44_21: -1265560152811279724
+      Kirby Air Effect 44x44_22: -8755522858347361374
+      Kirby Air Effect 44x44_23: 2373429117724377546
+      Kirby Air Effect 44x44_24: 3321545412433926162
+      Kirby Air Effect 44x44_3: -5759030134204576476
+      Kirby Air Effect 44x44_4: -1594954017161014671
+      Kirby Air Effect 44x44_5: -5042264718164058262
+      Kirby Air Effect 44x44_6: -989524629028980124
+      Kirby Air Effect 44x44_7: -1138231549475195128
+      Kirby Air Effect 44x44_8: 6327053210740338242
+      Kirby Air Effect 44x44_9: 2652866687173699777
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

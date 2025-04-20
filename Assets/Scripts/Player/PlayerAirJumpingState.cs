@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class PlayerAirJumping : PlayerState
+public class PlayerAirJumpingState : PlayerState
 {
-    public PlayerAirJumping(Player _player, PlayerStateMachine _stateMachine, string _animBoolName) : base(_player, _stateMachine, _animBoolName)
+    public PlayerAirJumpingState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName) : base(_player, _stateMachine, _animBoolName)
     {
     }
 
@@ -19,9 +19,13 @@ public class PlayerAirJumping : PlayerState
     public override void Update()
     {
         base.Update();
+        player.LastInput(xInput);
 
         if (Input.GetKey(KeyCode.Space))
             stateMachine.ChangeState(player.airJumpUpState);
+
+        if (Input.GetKeyDown(KeyCode.Z))
+            stateMachine.ChangeState(player.airJumpOutState);
 
         if (player.IsGroundCheck())
             stateMachine.ChangeState(player.idleState);

@@ -242,6 +242,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2034128783}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &808355127
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 808355128}
+  m_Layer: 0
+  m_Name: AirOutEffectPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &808355128
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808355127}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.914, y: -0.224, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2034128783}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &856756260 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5358251070412544883, guid: 56e0656401003ba48a1f93139b69c4ab, type: 3}
@@ -5462,13 +5493,14 @@ Transform:
   m_GameObject: {fileID: 2034128782}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -3.05, z: 0}
+  m_LocalPosition: {x: 0, y: -3.161, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1930487515}
   - {fileID: 572636035}
   - {fileID: 1461439624}
+  - {fileID: 808355128}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2034128784
@@ -5564,9 +5596,12 @@ MonoBehaviour:
   MinJumpPower: 3
   JumpPower: 2
   MaxJumpPower: -1
+  LastxInput: 0
   flipbool: 1
   dashEffect: {fileID: 6713143777519656305, guid: 76d5def01e095ee4ea62c7eb90c2cc5c, type: 3}
   dashEffectPos: {fileID: 1461439624}
+  AirJumpOutEffect: {fileID: 7334062365662037436, guid: 6a977909fd917e14592568674f7591ee, type: 3}
+  AirJumpOutEffectPos: {fileID: 808355128}
   groundCheck: {fileID: 572636035}
   groundLine: 0.88
   whatIsGround:
