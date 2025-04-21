@@ -158,13 +158,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveSpeed: 3
   DashSpeed: 5
-  dashTime: 0
-  dash: 0
-  turn: 0
-  MinJumpPower: 3
   JumpPower: 2
-  MaxJumpPower: -1
   flipbool: 1
+  LastMove: 0
   dashEffect: {fileID: 6713143777519656305, guid: 76d5def01e095ee4ea62c7eb90c2cc5c, type: 3}
   dashEffectPos: {fileID: 2956317602630708912}
   AirJumpOutEffect: {fileID: 0}
@@ -175,6 +171,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   isInhaling: 0
+  dashTime: 0
+  dash: 0
+  turn: 0
 --- !u!114 &7655887825162473413
 MonoBehaviour:
   m_ObjectHideFlags: 0

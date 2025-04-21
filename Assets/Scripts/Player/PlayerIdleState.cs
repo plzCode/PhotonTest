@@ -9,7 +9,7 @@ public class PlayerIdleState : PlayerGroundState
     public override void Enter()
     {
         base.Enter();
-        player.ZerolineVelocity(0, 0);
+        player.lineVelocity(0, 0); //움직임 0으로 만들기
     }
 
     public override void Exit()
@@ -21,26 +21,23 @@ public class PlayerIdleState : PlayerGroundState
     {
         base.Update();
 
-        if (player.dashTime > 0.3)
+        if (player.dashTime > 0.3) //대쉬 시간이 0.3초 지나면 움직이는 키 눌러도 그냥 MOVE로 바꿈
         {
             player.dash = false;
             player.dashTime = 0;
         }
 
-        if (xInput != 0 && player.dashTime > 0.1)
+        if (xInput != 0 && player.dashTime > 0.1) // 0.1 ~ 0.3초안에 움직임 값 누르면 대쉬로 전환
         {
+            stateMachine.ChangeState(player.dashState);
             if (xInput < 0)
             {
-                player.turn = true;
-                stateMachine.ChangeState(player.dashState);
+                player.turn = true; //참이면 턴할때 이미지 좌우반전 안함 + 마지막 xInput값 저장
                 return;
             }
-            else if (xInput > 0)
-            {
-                player.turn = false;
-                stateMachine.ChangeState(player.dashState);
-                return;
-            }
+            else
+                player.turn = false; //거짓이면 턴할때 이미지 좌우반전 함 + 마지막 xInput값 저장
+            return;
         }
 
         if (xInput != 0 && !player.isBusy)

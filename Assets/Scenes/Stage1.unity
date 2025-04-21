@@ -5590,14 +5590,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveSpeed: 3
   DashSpeed: 5
-  dashTime: 0
-  dash: 0
-  turn: 0
-  MinJumpPower: 3
-  JumpPower: 2
-  MaxJumpPower: -1
-  LastxInput: 0
+  JumpPower: 2.5
   flipbool: 1
+  LastMove: 0
   dashEffect: {fileID: 6713143777519656305, guid: 76d5def01e095ee4ea62c7eb90c2cc5c, type: 3}
   dashEffectPos: {fileID: 1461439624}
   AirJumpOutEffect: {fileID: 7334062365662037436, guid: 6a977909fd917e14592568674f7591ee, type: 3}
@@ -5607,6 +5602,10 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
+  isInhaling: 0
+  dashTime: 0
+  dash: 0
+  turn: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

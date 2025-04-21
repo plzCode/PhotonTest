@@ -9,8 +9,7 @@ public class PlayerDownState : PlayerState
     public override void Enter()
     {
         base.Enter();
-        player.ZerolineVelocity(0, 0);
-        Debug.Log(player.LastMove);
+        player.lineVelocity(0, 0);
     }
 
     public override void Exit()

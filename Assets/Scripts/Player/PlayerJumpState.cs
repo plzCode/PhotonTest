@@ -3,6 +3,9 @@ using UnityEngine;
 
 public class PlayerJumpState : PlayerState
 {
+    public float MinJumpPower = 2;
+    public float MaxJumpPower = -1;
+
     public PlayerJumpState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName) : base(_player, _stateMachine, _animBoolName)
     {
     }
@@ -10,7 +13,7 @@ public class PlayerJumpState : PlayerState
     public override void Enter()
     {
         base.Enter();
-        player.MaxJumpPower = -1;
+        MaxJumpPower = -1;
     }
 
     public override void Exit()
@@ -21,16 +24,16 @@ public class PlayerJumpState : PlayerState
     public override void Update()
     {
         base.Update();
-        if (!pView.IsMine) return;
+        //if (!pView.IsMine) return;
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space)) //스페이스바 누르면 최소점프
         {
             stateMachine.ChangeState(player.airJumpState);
         }
-        else if (Input.GetKey(KeyCode.Space) && player.JumpPower >= player.MaxJumpPower)
+        else if (Input.GetKey(KeyCode.Space) && player.JumpPower >= MaxJumpPower) //꾹 누르면 최대점프까지 점프
         {
-            player.lineVelocity(rb.linearVelocityX, player.MinJumpPower + player.JumpPower);
-            player.MaxJumpPower += 0.1f;
+            player.lineVelocity(rb.linearVelocityX, MinJumpPower + player.JumpPower);
+            MaxJumpPower += 0.1f;
         }
 
         if (rb.linearVelocityY < 0)

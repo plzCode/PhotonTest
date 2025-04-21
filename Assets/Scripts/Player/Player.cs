@@ -13,13 +13,7 @@ public class Player : MonoBehaviour
     public float MoveSpeed;
     public float DashSpeed;
 
-    public float dashTime;
-    public bool dash = false;
-    public bool turn;
-
-    public float MinJumpPower;
     public float JumpPower;
-    public float MaxJumpPower = 3f;
 
     public bool isBusy { get; private set; }
 
@@ -40,7 +34,7 @@ public class Player : MonoBehaviour
     public Rigidbody2D rb { get; private set; }
     public Animator anim { get; private set; }
 
-
+    #region 스탯
     public PlayerStateMachine stateMachine { get; private set; }
 
     public PlayerIdleState idleState { get; private set; }
@@ -60,7 +54,7 @@ public class Player : MonoBehaviour
     public PlayerAirJumpUpState airJumpUpState { get; private set; }
     public PlayerAirJumpOutState airJumpOutState { get; private set; }
 
-
+    #endregion
 
     //For Test Ability
     private PlayerAbility curAbility;
@@ -102,15 +96,12 @@ public class Player : MonoBehaviour
     {
         stateMachine.state.Update();
 
-        if (dash)
-        {
-            dashTime += Time.deltaTime;
-        }
+        DashTime(); //대쉬상호작용 타임
 
         #region TestRegion
-        if(Input.GetKeyDown(KeyCode.Z) && GetComponent<PhotonView>().IsMine)
+        if (Input.GetKeyDown(KeyCode.Z) && GetComponent<PhotonView>().IsMine)
         {
-            if(curAbility != null)
+            if (curAbility != null)
             {
                 curAbility.AttackHandle();
             }
@@ -120,7 +111,7 @@ public class Player : MonoBehaviour
             }
         }
 
-        if(Input.GetKeyDown(KeyCode.X) && GetComponent<PhotonView>().IsMine)
+        if (Input.GetKeyDown(KeyCode.X) && GetComponent<PhotonView>().IsMine)
         {
             if (curAbility == null)
             {
@@ -165,8 +156,8 @@ public class Player : MonoBehaviour
         Gizmos.DrawLine(groundCheck.position, new Vector3(groundCheck.position.x, groundCheck.position.y - groundLine));
     }
 
-
-    //이미지 전환
+    #region 캐릭터 움직임 및 좌우반전
+    //이미지 좌우반전
     public void Flip()
     {
         flipbool = !flipbool;
@@ -194,20 +185,31 @@ public class Player : MonoBehaviour
         FlipController(xlineVelocity);
     }
 
-    public void ZerolineVelocity(float xlineVelocity, float ylineVelocity)
+    public void EffectAdd(float _x, GameObject Effect, Transform EffecPos) //이펙트를 추가함
     {
-        rb.linearVelocity = new Vector2(xlineVelocity, ylineVelocity);
-    }
-
-    public void EffectAdd(float _x, GameObject Effect, Transform EffecPos)
-    {
-        if (_x > 0)
+        if (_x > 0) //오른쪽이면 그대로 소환
         {
             Instantiate(Effect, EffecPos.position, Quaternion.identity);
         }
-        else if (_x < 0)
+        else if (_x < 0) //왼쪽이면 좌우반전 소환
         {
             Instantiate(Effect, EffecPos.position, Quaternion.Euler(0, 180, 0));
+        }
+    }
+    #endregion
+
+
+
+
+    //대쉬타임 [idle, move, dash, dashTurn]
+    public float dashTime;
+    public bool dash;
+    public bool turn;
+    private void DashTime()
+    {
+        if (dash)
+        {
+            dashTime += Time.deltaTime;
         }
     }
 }

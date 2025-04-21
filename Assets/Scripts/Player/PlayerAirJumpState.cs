@@ -4,6 +4,8 @@ using UnityEngine.EventSystems;
 
 public class PlayerAirJumpState : PlayerState
 {
+    public float MinJumpPower = 2;
+
     public float AirOutCoolTime;
     public bool AirOut;
 
@@ -15,7 +17,7 @@ public class PlayerAirJumpState : PlayerState
     {
         base.Enter();
         AirOut = true;
-        player.lineVelocity(rb.linearVelocityX, player.MinJumpPower);
+        player.lineVelocity(rb.linearVelocityX, MinJumpPower);
     }
 
     public override void Exit()
@@ -38,7 +40,7 @@ public class PlayerAirJumpState : PlayerState
         if (Input.GetKeyDown(KeyCode.Space))
             stateMachine.ChangeState(player.airJumpUpState);
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) && AirOut && AirOutCoolTime > 0.3)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && AirOut && AirOutCoolTime > 0.3) //계속 공기 뱉을수 없게 0.3으로 조정
         {
             stateMachine.ChangeState(player.airJumpOutState);
             AirOut = false;
