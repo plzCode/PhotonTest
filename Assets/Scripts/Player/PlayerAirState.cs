@@ -22,7 +22,7 @@ public class PlayerAirState : PlayerState
 
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            player.lineVelocity(rb.linearVelocityX, player.MinJumpPower);
+            player.lineVelocity(rb.linearVelocityX, player.JumpPower);
             stateMachine.ChangeState(player.airJumpState);
         }
 

@@ -22,7 +22,7 @@ public class PlayerDowningGroundState : PlayerState
             Lastmove = -1;
         }
 
-            player.lineVelocity(Lastmove * player.MoveSpeed, player.MinJumpPower);
+            player.lineVelocity(Lastmove * player.MoveSpeed, 2);
     }
 
     public override void Exit()

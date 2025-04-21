@@ -13,7 +13,7 @@ public class PlayerAirJumpUpState : PlayerState
     {
         base.Enter();
         AirOut = true;
-        player.lineVelocity(rb.linearVelocityX, player.MinJumpPower);
+        player.lineVelocity(rb.linearVelocityX, player.JumpPower * 1.5f);
     }
 
     public override void Exit()
@@ -33,7 +33,7 @@ public class PlayerAirJumpUpState : PlayerState
         if (rb.linearVelocityY < -0.1)
             stateMachine.ChangeState(player.airJumpingState);
 
-        if (Input.GetKeyDown(KeyCode.Z) && AirOut && AirOutCoolTime > 0.3)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && AirOut && AirOutCoolTime > 0.3)
         {
             stateMachine.ChangeState(player.airJumpOutState);
             AirOut = false;
