@@ -28,13 +28,7 @@ public class PlayerTest : MonoBehaviourPunCallbacks, IPunObservable
 
     private void FixedUpdate()
     {
-        if (playerView.IsMine)
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                Debug.Log("Å×½ºÆ®" + playerView.name);
-            }
-        }
+        
     }
     [PunRPC]
     void SettingColor(int number, int viewID)

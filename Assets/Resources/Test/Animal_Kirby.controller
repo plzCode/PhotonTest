@@ -505,7 +505,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Kirby
+  m_Name: Animal_Kirby
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: AirJumpOut
@@ -861,7 +861,7 @@ AnimatorStateMachine:
   - {fileID: 8015449504682399240}
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: -510, y: 110, z: 0}
+  m_AnyStatePosition: {x: -30, y: 70, z: 0}
   m_EntryPosition: {x: -30, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
@@ -941,7 +941,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 9e6bfa18c7e293746a5216c8a5ab0088, type: 2}
+  m_Motion: {fileID: 7400000, guid: 6430cfc17a7bf1b4897b89d2bb80967a, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
