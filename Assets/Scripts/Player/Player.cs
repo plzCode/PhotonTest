@@ -1,7 +1,9 @@
+using Photon.Pun;
 using Photon.Realtime;
 using System;
 using System.Collections;
 using System.Resources;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem.XInput;
 using UnityEngine.UIElements;
@@ -57,8 +59,12 @@ public class Player : MonoBehaviour
     public PlayerAirJumpingState airJumpingState { get; private set; }
     public PlayerAirJumpUpState airJumpUpState { get; private set; }
     public PlayerAirJumpOutState airJumpOutState { get; private set; }
-    
 
+
+
+    //For Test Ability
+    private PlayerAbility curAbility;
+    public bool isInhaling = false;
 
 
     public void Awake()
@@ -100,9 +106,42 @@ public class Player : MonoBehaviour
         {
             dashTime += Time.deltaTime;
         }
+
+        #region TestRegion
+        if(Input.GetKeyDown(KeyCode.Z) && GetComponent<PhotonView>().IsMine)
+        {
+            if(curAbility != null)
+            {
+                curAbility.AttackHandle();
+            }
+            else
+            {
+                Debug.Log("Normal Kirby Attack");
+            }
+        }
+
+        if(Input.GetKeyDown(KeyCode.X) && GetComponent<PhotonView>().IsMine)
+        {
+            if (curAbility == null)
+            {
+                curAbility = gameObject.AddComponent<Ability_Animal>();
+                curAbility.OnAbilityCopied(this);
+            }
+            else
+            {
+                Destroy(curAbility);
+            }
+
+        }
+        #endregion
     }
 
-
+    #region TestRegion2
+    /*IEnumerator StartInhale()
+    {
+        while()
+    }*/
+    #endregion
 
 
 

@@ -34,7 +34,7 @@ AnimationClip:
       value: {fileID: -1467945437, guid: c443224689f01ce4cbb3f62b1609ec79, type: 3}
     - time: 0.42857143
       value: {fileID: -595686943, guid: c443224689f01ce4cbb3f62b1609ec79, type: 3}
-    - time: 0.62857145
+    - time: 0.6857143
       value: {fileID: -1589629728, guid: bf0120ba86c78404cae65a2d24cea258, type: 3}
     attribute: m_Sprite
     path: 
@@ -71,7 +71,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.6428572
+    m_StopTime: 0.70000005
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -90,4 +90,25 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.32857144
+    functionName: AttackForwardStart
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.45714286
+    functionName: AttackForwardStop
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.6571429
+    functionName: AnimationTrigger
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

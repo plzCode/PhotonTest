@@ -1,3 +1,4 @@
+using Photon.Pun;
 using UnityEngine;
 
 public class PlayerJumpState : PlayerState
@@ -21,6 +22,7 @@ public class PlayerJumpState : PlayerState
     {
         base.Update();
         if (!pView.IsMine) return;
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             stateMachine.ChangeState(player.airJumpState);
