@@ -30,6 +30,7 @@ public class PlayerDashState : PlayerGroundState
     {
         base.Update();
         if (!pView.IsMine) return;
+
         player.lineVelocity(xInput * player.DashSpeed, rb.linearVelocityY);
 
         if(Effect)

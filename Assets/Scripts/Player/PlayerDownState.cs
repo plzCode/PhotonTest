@@ -10,6 +10,7 @@ public class PlayerDownState : PlayerState
     {
         base.Enter();
         player.ZerolineVelocity(0, 0);
+        Debug.Log(player.LastMove);
     }
 
     public override void Exit()
@@ -23,5 +24,9 @@ public class PlayerDownState : PlayerState
 
         if (Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.DownArrow))
             stateMachine.ChangeState(player.idleState);
+
+        if (Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Space))
+            stateMachine.ChangeState(player.slidingState);
+
     }
 }

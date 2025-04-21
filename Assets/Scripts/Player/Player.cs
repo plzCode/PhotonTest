@@ -22,6 +22,7 @@ public class Player : MonoBehaviour
     public bool isBusy { get; private set; }
 
     public bool flipbool = true;
+    public float LastMove;
 
     public GameObject dashEffect;
     public Transform dashEffectPos;
@@ -42,9 +43,10 @@ public class Player : MonoBehaviour
 
     public PlayerIdleState idleState { get; private set; }
     public PlayerMoveState moveState { get; private set; }
+    public PlayerDownState downState { get; private set; }
+    public PlayerSlidingState slidingState { get; private set; }
     public PlayerDashState dashState { get; private set; }
     public PlayerDashTurnState dashTurnState { get; private set; }
-    public PlayerDownState downState { get; private set; }
 
     public PlayerJumpState jumpState { get; private set; }
     public PlayerDowningState downingState { get; private set; }
@@ -65,9 +67,10 @@ public class Player : MonoBehaviour
 
         idleState = new PlayerIdleState(this, stateMachine, "Idle");
         moveState = new PlayerMoveState(this, stateMachine, "Move");
+        downState = new PlayerDownState(this, stateMachine, "Down");
+        slidingState = new PlayerSlidingState(this, stateMachine, "Sliding");
         dashState = new PlayerDashState(this, stateMachine, "Dash");
         dashTurnState = new PlayerDashTurnState(this, stateMachine, "DashTurn");
-        downState = new PlayerDownState(this, stateMachine, "Down");
 
         jumpState = new PlayerJumpState(this, stateMachine, "Jump");
         downingState = new PlayerDowningState(this, stateMachine, "Downing");
@@ -84,8 +87,9 @@ public class Player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
-
         stateMachine.StartState(idleState);
+
+        LastMove = 1; //플레이어 마지막 입력값을 초기 1로 만듬
     }
 
     public void Update()
@@ -135,10 +139,12 @@ public class Player : MonoBehaviour
         if (_x > 0 && !flipbool)
         {
             Flip();
+            LastMove = 1;
         }
         else if (_x < 0 && flipbool)
         {
             Flip();
+            LastMove = -1;
         }
     }
 

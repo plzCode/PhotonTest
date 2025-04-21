@@ -38,7 +38,7 @@ public class PlayerAirJumpState : PlayerState
         if (Input.GetKeyDown(KeyCode.Space))
             stateMachine.ChangeState(player.airJumpUpState);
 
-        if (Input.GetKeyDown(KeyCode.Z) && AirOut && AirOutCoolTime > 0.3)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && AirOut && AirOutCoolTime > 0.3)
         {
             stateMachine.ChangeState(player.airJumpOutState);
             AirOut = false;
