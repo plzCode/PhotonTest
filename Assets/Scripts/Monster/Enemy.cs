@@ -8,6 +8,8 @@ public class Enemy : MonoBehaviour
     public Rigidbody2D rb { get; private set; }
 
     #endregion
+    [SerializeField] protected LayerMask whatIsPlayer;
+
 
     [Header("넉백 정보")]
     [SerializeField] protected Vector2 knockbackDirection;
@@ -31,6 +33,11 @@ public class Enemy : MonoBehaviour
     public float idleTime;
     public float battleTime;
     private float defaultMoveSpeed;
+
+    [Header("공격 정보")]
+    public float attackDistance;
+    public float attackCooldown;
+    [HideInInspector] public float lastTimeAttacked;
 
 
     public int facingDir { get; private set; } = 1;
@@ -78,6 +85,9 @@ public class Enemy : MonoBehaviour
 
     }
     public virtual void AnimationFinishTrigger() => stateMachine.currentState.AnimationFinishTrigger();
+
+    public virtual RaycastHit2D IsPlayerDetected() => Physics2D.Raycast(wallCheck.position, Vector2.right * facingDir, 50, whatIsPlayer);
+    
     #region 충돌
     public virtual bool IsGroundDetected() => Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, whatIsGround);
     public virtual bool IsWallDetected() => Physics2D.Raycast(wallCheck.position, Vector2.right * facingDir, wallCheckDistance, whatIsGround);
