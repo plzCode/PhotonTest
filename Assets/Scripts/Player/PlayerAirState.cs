@@ -1,3 +1,4 @@
+using Photon.Pun;
 using UnityEngine;
 
 public class PlayerAirState : PlayerState
@@ -22,7 +23,8 @@ public class PlayerAirState : PlayerState
 
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            player.lineVelocity(rb.linearVelocityX, player.JumpPower);
+            //player.lineVelocity(rb.linearVelocityX, player.JumpPower);
+            pView.RPC("lineVelocity", RpcTarget.All, rb.linearVelocityX, player.JumpPower);
             stateMachine.ChangeState(player.airJumpState);
         }
 
@@ -33,6 +35,7 @@ public class PlayerAirState : PlayerState
             stateMachine.ChangeState(player.downingState);
 
         if (xInput != 0)
-            player.lineVelocity(xInput * player.MoveSpeed, rb.linearVelocityY);
+            //player.lineVelocity(xInput * player.MoveSpeed, rb.linearVelocityY);
+            pView.RPC("lineVelocity", RpcTarget.All, xInput * player.MoveSpeed, rb.linearVelocityY); //수평 이동
     }
 }

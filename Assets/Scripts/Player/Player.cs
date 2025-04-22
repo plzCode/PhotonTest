@@ -10,6 +10,8 @@ using UnityEngine.UIElements;
 
 public class Player : MonoBehaviour
 {
+    public float PlayerHP;
+
     public float MoveSpeed;
     public float DashSpeed;
 
@@ -25,6 +27,8 @@ public class Player : MonoBehaviour
     public GameObject AirJumpOutEffect;
     public Transform AirJumpOutEffectPos;
 
+    public Transform attackCheck;
+    public float attackCheckRadius;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundLine;
     [SerializeField] private LayerMask whatIsGround;
@@ -54,6 +58,8 @@ public class Player : MonoBehaviour
     public PlayerAirJumpUpState airJumpUpState { get; private set; }
     public PlayerAirJumpOutState airJumpOutState { get; private set; }
 
+    public PlayerDamageState damageState { get; private set; }
+
     #endregion
 
     //For Test Ability
@@ -81,6 +87,8 @@ public class Player : MonoBehaviour
         airJumpingState = new PlayerAirJumpingState(this, stateMachine, "AirJumping");
         airJumpUpState = new PlayerAirJumpUpState(this, stateMachine, "AirJumpUp");
         airJumpOutState = new PlayerAirJumpOutState(this, stateMachine, "AirJumpOut");
+
+        damageState = new PlayerDamageState(this, stateMachine, "Damage");
     }
 
     public void Start()
@@ -154,6 +162,7 @@ public class Player : MonoBehaviour
     public void OnDrawGizmos()
     {
         Gizmos.DrawLine(groundCheck.position, new Vector3(groundCheck.position.x, groundCheck.position.y - groundLine));
+        Gizmos.DrawWireSphere(attackCheck.position, attackCheckRadius);
     }
 
     #region 캐릭터 움직임 및 좌우반전
@@ -179,6 +188,7 @@ public class Player : MonoBehaviour
     }
 
     //캐릭터 움직임
+    [PunRPC]
     public void lineVelocity(float xlineVelocity, float ylineVelocity)
     {
         rb.linearVelocity = new Vector2 (xlineVelocity, ylineVelocity);
@@ -198,6 +208,52 @@ public class Player : MonoBehaviour
     }
     #endregion
 
+
+
+    public float EnemyAttackPos;
+    private void AttackTrigger()
+    {
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(attackCheck.position, attackCheckRadius); //범위안의 콜리더 체크
+
+
+        foreach (var hit in colliders)
+        {
+            if (hit.gameObject.CompareTag("EnemyAttack"))   //콜리더의 태그 이름이 EnemyAttack라면 실행
+            {
+                if (transform.position.x > hit.transform.position.x)    //EnemyAttack보다 플레이어가 오른쪽에 있다면  오른쪽으로 굴러가게 하기 
+                {
+                    EnemyAttackPos = 1f;
+                }
+                else if (transform.position.x < hit.transform.position.x) //EnemyAttack보다 플레이어가 왼쪽에 있다면  왼쪽으로 굴러가게 하기 
+                {
+                    EnemyAttackPos = -1f;
+                }
+
+                if (transform.position.x == hit.transform.position.x) //EnemyAttack랑 플레이어 위치가 같다면 플레이어의 마지막 움직임의 반대쪽으로 굴러가게 하기 
+                {
+                    if (!flipbool)
+                    {
+                        EnemyAttackPos = 1f;
+                    }
+                    else
+                    {
+                        EnemyAttackPos = -1f;
+                    }
+                }
+            }
+
+
+        }
+
+
+    }
+
+    public void TakeDamage(float Damage)    //몬스터의 공격 데미지 실행
+    {
+        AttackTrigger(); //플레이어가 굴러갈 위치 값
+        PlayerHP -= Damage;
+        stateMachine.ChangeState(damageState);  //굴러가는거 실행
+    }
 
 
 

@@ -1,3 +1,4 @@
+using Photon.Pun;
 using UnityEngine;
 
 public class PlayerAirJumpingState : PlayerState
@@ -43,6 +44,12 @@ public class PlayerAirJumpingState : PlayerState
             stateMachine.ChangeState(player.idleState);
 
         if (xInput != 0)
-            player.lineVelocity(xInput * player.MoveSpeed, rb.linearVelocityY);
+        {
+            //player.lineVelocity(xInput * player.MoveSpeed, rb.linearVelocityY);
+            pView.RPC("lineVelocity", RpcTarget.All, xInput * player.MoveSpeed, rb.linearVelocityY);
+
+        }
+
+        
     }
 }

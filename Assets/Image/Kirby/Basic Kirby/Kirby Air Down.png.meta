@@ -1,34 +1,40 @@
 fileFormatVersion: 2
-guid: cdfc2805fd5742d4dbc285ae1f8a0f00
+guid: 42a0a536102bc4947bf447451503f486
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 161435087051999011
-    second: Kirby Jump_0
+      213: -2257749327113455051
+    second: Kirby Down_0
   - first:
-      213: -4745515916979545578
-    second: Kirby Jump_1
+      213: -7168888423937541642
+    second: Kirby Down_1
   - first:
-      213: 7980848967830899793
-    second: Kirby Jump_2
+      213: 3814603584028645397
+    second: Kirby Down_2
   - first:
-      213: -2051396663668740380
-    second: Kirby Jump_3
+      213: 732986833894499021
+    second: Kirby Down_3
   - first:
-      213: -7856773257494116574
-    second: Kirby Jump_4
+      213: 6251335646813302600
+    second: Kirby Down_4
   - first:
-      213: -1317355244114892862
-    second: Kirby Jump_5
+      213: -8627712369987454398
+    second: Kirby Down_5
   - first:
-      213: -7825489133829699617
-    second: Kirby Jump_6
+      213: 29130512021367925
+    second: Kirby Down_6
   - first:
-      213: -5798784741611462836
-    second: Kirby Jump_7
+      213: -4209809540947667
+    second: Kirby Down_7
   - first:
-      213: 8392936109135247519
-    second: Kirby Jump_8
+      213: 6363275030461679559
+    second: Kirby Down_8
+  - first:
+      213: -4668087603582427073
+    second: Kirby Down_9
+  - first:
+      213: 1247344251247325077
+    second: Kirby Down_10
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,9 +103,9 @@ TextureImporter:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 1
+    resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -133,11 +139,37 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kirby Jump_0
+      name: Kirby Down_0
       rect:
         serializedVersion: 2
         x: 0
@@ -152,14 +184,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 327c40a3b588d3200800000000000000
-      internalID: 161435087051999011
+      spriteID: 53a7685f2fcdaa0e0800000000000000
+      internalID: -2257749327113455051
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kirby Jump_1
+      name: Kirby Down_1
       rect:
         serializedVersion: 2
         x: 33
@@ -174,14 +206,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 61ad8749a6a842eb0800000000000000
-      internalID: -4745515916979545578
+      spriteID: 6f9fac8f5fdf28c90800000000000000
+      internalID: -7168888423937541642
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kirby Jump_2
+      name: Kirby Down_2
       rect:
         serializedVersion: 2
         x: 66
@@ -196,14 +228,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 15c8a951adba1ce60800000000000000
-      internalID: 7980848967830899793
+      spriteID: 51895f0cfb130f430800000000000000
+      internalID: 3814603584028645397
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kirby Jump_3
+      name: Kirby Down_3
       rect:
         serializedVersion: 2
         x: 99
@@ -218,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4ee6a986a99f783e0800000000000000
-      internalID: -2051396663668740380
+      spriteID: dc2e15354a71c2a00800000000000000
+      internalID: 732986833894499021
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kirby Jump_4
+      name: Kirby Down_4
       rect:
         serializedVersion: 2
         x: 132
@@ -240,14 +272,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 227464a695227f290800000000000000
-      internalID: -7856773257494116574
+      spriteID: 84f2b0856a431c650800000000000000
+      internalID: 6251335646813302600
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kirby Jump_5
+      name: Kirby Down_5
       rect:
         serializedVersion: 2
         x: 165
@@ -262,14 +294,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2c7a8879260d7bde0800000000000000
-      internalID: -1317355244114892862
+      spriteID: 24a77a2af45344880800000000000000
+      internalID: -8627712369987454398
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kirby Jump_6
+      name: Kirby Down_6
       rect:
         serializedVersion: 2
         x: 198
@@ -284,14 +316,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fd7c6601817466390800000000000000
-      internalID: -7825489133829699617
+      spriteID: 57ca82ddb0e776000800000000000000
+      internalID: 29130512021367925
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kirby Jump_7
+      name: Kirby Down_7
       rect:
         serializedVersion: 2
         x: 231
@@ -306,14 +338,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c4f1b433004968fa0800000000000000
-      internalID: -5798784741611462836
+      spriteID: d216db5533b01fff0800000000000000
+      internalID: -4209809540947667
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kirby Jump_8
+      name: Kirby Down_8
       rect:
         serializedVersion: 2
         x: 264
@@ -328,8 +360,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f983e8f6ce2b97470800000000000000
-      internalID: 8392936109135247519
+      spriteID: 7c708c61de4ee4850800000000000000
+      internalID: 6363275030461679559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Down_9
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 0
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f30a010ae0f973fb0800000000000000
+      internalID: -4668087603582427073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Down_10
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 0
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59fe830ecf47f4110800000000000000
+      internalID: 1247344251247325077
       vertices: []
       indices: 
       edges: []
@@ -338,7 +414,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0fe844121dc04d14a84cbd21cbca5fb2
+    spriteID: c3f0e9eccb899d74186319b2a17e5e8a
     internalID: 0
     vertices: []
     indices: 
@@ -348,15 +424,17 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Kirby Jump_0: 161435087051999011
-      Kirby Jump_1: -4745515916979545578
-      Kirby Jump_2: 7980848967830899793
-      Kirby Jump_3: -2051396663668740380
-      Kirby Jump_4: -7856773257494116574
-      Kirby Jump_5: -1317355244114892862
-      Kirby Jump_6: -7825489133829699617
-      Kirby Jump_7: -5798784741611462836
-      Kirby Jump_8: 8392936109135247519
+      Kirby Down_0: -2257749327113455051
+      Kirby Down_1: -7168888423937541642
+      Kirby Down_10: 1247344251247325077
+      Kirby Down_2: 3814603584028645397
+      Kirby Down_3: 732986833894499021
+      Kirby Down_4: 6251335646813302600
+      Kirby Down_5: -8627712369987454398
+      Kirby Down_6: 29130512021367925
+      Kirby Down_7: -4209809540947667
+      Kirby Down_8: 6363275030461679559
+      Kirby Down_9: -4668087603582427073
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

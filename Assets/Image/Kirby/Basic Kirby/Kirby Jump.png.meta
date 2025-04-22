@@ -1,34 +1,34 @@
 fileFormatVersion: 2
-guid: ea248c293aafa664ca95e99774156af3
+guid: cdfc2805fd5742d4dbc285ae1f8a0f00
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4272088518103788406
-    second: Kirby Dash Air_0
+      213: 161435087051999011
+    second: Kirby Jump_0
   - first:
-      213: 4841866223245589722
-    second: Kirby Dash Air_1
+      213: -4745515916979545578
+    second: Kirby Jump_1
   - first:
-      213: -5406618292012798518
-    second: Kirby Dash Air_2
+      213: 7980848967830899793
+    second: Kirby Jump_2
   - first:
-      213: -716555015281368167
-    second: Kirby Dash Air_3
+      213: -2051396663668740380
+    second: Kirby Jump_3
   - first:
-      213: 7195114036811632092
-    second: Kirby Dash Air_4
+      213: -7856773257494116574
+    second: Kirby Jump_4
   - first:
-      213: 2681340469008294850
-    second: Kirby Dash Air_5
+      213: -1317355244114892862
+    second: Kirby Jump_5
   - first:
-      213: -8999839747607534612
-    second: Kirby Dash Air_6
+      213: -7825489133829699617
+    second: Kirby Jump_6
   - first:
-      213: -7224883483626507635
-    second: Kirby Dash Air_7
+      213: -5798784741611462836
+    second: Kirby Jump_7
   - first:
-      213: -5601078299521915174
-    second: Kirby Dash Air_8
+      213: 8392936109135247519
+    second: Kirby Jump_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,9 +97,9 @@ TextureImporter:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 1
+    resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -133,37 +133,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 1
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 1
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kirby Dash Air_0
+      name: Kirby Jump_0
       rect:
         serializedVersion: 2
         x: 0
@@ -178,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 67be99a6fd1894b30800000000000000
-      internalID: 4272088518103788406
+      spriteID: 327c40a3b588d3200800000000000000
+      internalID: 161435087051999011
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kirby Dash Air_1
+      name: Kirby Jump_1
       rect:
         serializedVersion: 2
         x: 33
@@ -200,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: adcf38e3da3c13340800000000000000
-      internalID: 4841866223245589722
+      spriteID: 61ad8749a6a842eb0800000000000000
+      internalID: -4745515916979545578
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kirby Dash Air_2
+      name: Kirby Jump_2
       rect:
         serializedVersion: 2
         x: 66
@@ -222,14 +196,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: acda2741f45d7f4b0800000000000000
-      internalID: -5406618292012798518
+      spriteID: 15c8a951adba1ce60800000000000000
+      internalID: 7980848967830899793
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kirby Dash Air_3
+      name: Kirby Jump_3
       rect:
         serializedVersion: 2
         x: 99
@@ -244,14 +218,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 993212492094e06f0800000000000000
-      internalID: -716555015281368167
+      spriteID: 4ee6a986a99f783e0800000000000000
+      internalID: -2051396663668740380
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kirby Dash Air_4
+      name: Kirby Jump_4
       rect:
         serializedVersion: 2
         x: 132
@@ -266,14 +240,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cdd859a581e2ad360800000000000000
-      internalID: 7195114036811632092
+      spriteID: 227464a695227f290800000000000000
+      internalID: -7856773257494116574
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kirby Dash Air_5
+      name: Kirby Jump_5
       rect:
         serializedVersion: 2
         x: 165
@@ -288,14 +262,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2c36e1143f8063520800000000000000
-      internalID: 2681340469008294850
+      spriteID: 2c7a8879260d7bde0800000000000000
+      internalID: -1317355244114892862
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kirby Dash Air_6
+      name: Kirby Jump_6
       rect:
         serializedVersion: 2
         x: 198
@@ -310,14 +284,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ce36968ce652a1380800000000000000
-      internalID: -8999839747607534612
+      spriteID: fd7c6601817466390800000000000000
+      internalID: -7825489133829699617
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kirby Dash Air_7
+      name: Kirby Jump_7
       rect:
         serializedVersion: 2
         x: 231
@@ -332,8 +306,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d82fade20ce0cbb90800000000000000
-      internalID: -7224883483626507635
+      spriteID: c4f1b433004968fa0800000000000000
+      internalID: -5798784741611462836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Jump_8
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 0
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f983e8f6ce2b97470800000000000000
+      internalID: 8392936109135247519
       vertices: []
       indices: 
       edges: []
@@ -342,7 +338,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 2b84403cc9e708c4785b28989937aa4f
+    spriteID: 0fe844121dc04d14a84cbd21cbca5fb2
     internalID: 0
     vertices: []
     indices: 
@@ -352,14 +348,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Kirby Dash Air_0: 4272088518103788406
-      Kirby Dash Air_1: 4841866223245589722
-      Kirby Dash Air_2: -5406618292012798518
-      Kirby Dash Air_3: -716555015281368167
-      Kirby Dash Air_4: 7195114036811632092
-      Kirby Dash Air_5: 2681340469008294850
-      Kirby Dash Air_6: -8999839747607534612
-      Kirby Dash Air_7: -7224883483626507635
+      Kirby Jump_0: 161435087051999011
+      Kirby Jump_1: -4745515916979545578
+      Kirby Jump_2: 7980848967830899793
+      Kirby Jump_3: -2051396663668740380
+      Kirby Jump_4: -7856773257494116574
+      Kirby Jump_5: -1317355244114892862
+      Kirby Jump_6: -7825489133829699617
+      Kirby Jump_7: -5798784741611462836
+      Kirby Jump_8: 8392936109135247519
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

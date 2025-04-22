@@ -64,7 +64,7 @@ public class Spear : MonsterWeapon
         {
             Debug.Log("플레이어에게 " + power + "만큼 데미지를 줍니다.");
             Player player = collision.GetComponent<Player>();
-            //player.TakeDamage(power);
+            player.TakeDamage(power);
             Destroy(gameObject);
         }
     }

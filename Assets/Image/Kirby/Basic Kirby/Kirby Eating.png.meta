@@ -1,34 +1,40 @@
 fileFormatVersion: 2
-guid: f7134bfc76d42904a9de86a2e92c6d7b
+guid: 46d03b2406a5e6f43821a23e7c77961b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7786670810984494140
-    second: Kirby Dash_0
+      213: 5317861949162105500
+    second: Kirby Eating_0
   - first:
-      213: -677734302218277776
-    second: Kirby Dash_1
+      213: 5893375416893700041
+    second: Kirby Eating_1
   - first:
-      213: 8090664287890599502
-    second: Kirby Dash_2
+      213: -8190309690493215239
+    second: Kirby Eating_2
   - first:
-      213: 6373253126409243578
-    second: Kirby Dash_3
+      213: -2336190259279145357
+    second: Kirby Eating_3
   - first:
-      213: 2680944507114191966
-    second: Kirby Dash_4
+      213: 6771898964077264966
+    second: Kirby Eating_4
   - first:
-      213: 1908321410762783510
-    second: Kirby Dash_5
+      213: -5320658317804104657
+    second: Kirby Eating_5
   - first:
-      213: -4568811794795509039
-    second: Kirby Dash_6
+      213: -1975738517526867523
+    second: Kirby Eating_6
   - first:
-      213: -6300020297476648991
-    second: Kirby Dash_7
+      213: -8968356878748522684
+    second: Kirby Eating_7
   - first:
-      213: -3597660618750264147
-    second: Kirby Dash_8
+      213: -759108000276050783
+    second: Kirby Eating_8
+  - first:
+      213: 4688285878117618889
+    second: Kirby Eating_9
+  - first:
+      213: 1788013742522303623
+    second: Kirby Eating_10
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,9 +103,9 @@ TextureImporter:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 1
+    resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -137,7 +143,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kirby Dash_0
+      name: Kirby Eating_0
       rect:
         serializedVersion: 2
         x: 0
@@ -152,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c3432a7d8dfcf0c60800000000000000
-      internalID: 7786670810984494140
+      spriteID: c9aaf5c7447dcc940800000000000000
+      internalID: 5317861949162105500
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kirby Dash_1
+      name: Kirby Eating_1
       rect:
         serializedVersion: 2
         x: 33
@@ -174,14 +180,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 07cae203e343896f0800000000000000
-      internalID: -677734302218277776
+      spriteID: 9c7f7fb97b979c150800000000000000
+      internalID: 5893375416893700041
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kirby Dash_2
+      name: Kirby Eating_2
       rect:
         serializedVersion: 2
         x: 66
@@ -196,14 +202,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e4e68acbd40d74070800000000000000
-      internalID: 8090664287890599502
+      spriteID: 9fd56b90bbc265e80800000000000000
+      internalID: -8190309690493215239
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kirby Dash_3
+      name: Kirby Eating_3
       rect:
         serializedVersion: 2
         x: 99
@@ -218,14 +224,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: abb454793f7527850800000000000000
-      internalID: 6373253126409243578
+      spriteID: 37650fb365f249fd0800000000000000
+      internalID: -2336190259279145357
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kirby Dash_4
+      name: Kirby Eating_4
       rect:
         serializedVersion: 2
         x: 132
@@ -240,14 +246,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e5c731133d0a43520800000000000000
-      internalID: 2680944507114191966
+      spriteID: 64049a09a3e9afd50800000000000000
+      internalID: 6771898964077264966
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kirby Dash_5
+      name: Kirby Eating_5
       rect:
         serializedVersion: 2
         x: 165
@@ -262,14 +268,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 61bb9cd5638bb7a10800000000000000
-      internalID: 1908321410762783510
+      spriteID: f241f0433793926b0800000000000000
+      internalID: -5320658317804104657
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kirby Dash_6
+      name: Kirby Eating_6
       rect:
         serializedVersion: 2
         x: 198
@@ -284,14 +290,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1da499511e15890c0800000000000000
-      internalID: -4568811794795509039
+      spriteID: db111c54944c494e0800000000000000
+      internalID: -1975738517526867523
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kirby Dash_7
+      name: Kirby Eating_7
       rect:
         serializedVersion: 2
         x: 231
@@ -306,14 +312,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1ef472b1be4d198a0800000000000000
-      internalID: -6300020297476648991
+      spriteID: 44763476feef98380800000000000000
+      internalID: -8968356878748522684
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kirby Dash_8
+      name: Kirby Eating_8
       rect:
         serializedVersion: 2
         x: 264
@@ -328,8 +334,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dac7afc7aba821ec0800000000000000
-      internalID: -3597660618750264147
+      spriteID: 1ac8361bb4b1775f0800000000000000
+      internalID: -759108000276050783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eating_9
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 0
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c45ea2aa23201140800000000000000
+      internalID: 4688285878117618889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eating_10
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 0
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7840f88860d40d810800000000000000
+      internalID: 1788013742522303623
       vertices: []
       indices: 
       edges: []
@@ -338,7 +388,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 099c58ee9885df34ab39dbd8083341fa
+    spriteID: 7394cb61a1bb4c44e894f7098aa9dd8c
     internalID: 0
     vertices: []
     indices: 
@@ -348,15 +398,17 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Kirby Dash_0: 7786670810984494140
-      Kirby Dash_1: -677734302218277776
-      Kirby Dash_2: 8090664287890599502
-      Kirby Dash_3: 6373253126409243578
-      Kirby Dash_4: 2680944507114191966
-      Kirby Dash_5: 1908321410762783510
-      Kirby Dash_6: -4568811794795509039
-      Kirby Dash_7: -6300020297476648991
-      Kirby Dash_8: -3597660618750264147
+      Kirby Eating_0: 5317861949162105500
+      Kirby Eating_1: 5893375416893700041
+      Kirby Eating_10: 1788013742522303623
+      Kirby Eating_2: -8190309690493215239
+      Kirby Eating_3: -2336190259279145357
+      Kirby Eating_4: 6771898964077264966
+      Kirby Eating_5: -5320658317804104657
+      Kirby Eating_6: -1975738517526867523
+      Kirby Eating_7: -8968356878748522684
+      Kirby Eating_8: -759108000276050783
+      Kirby Eating_9: 4688285878117618889
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

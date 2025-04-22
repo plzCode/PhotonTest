@@ -119,6 +119,67 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &168449846
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3712123085005727315, guid: 458f1add67c0fde498afa05f7af694c0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712123085005727315, guid: 458f1add67c0fde498afa05f7af694c0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712123085005727315, guid: 458f1add67c0fde498afa05f7af694c0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712123085005727315, guid: 458f1add67c0fde498afa05f7af694c0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712123085005727315, guid: 458f1add67c0fde498afa05f7af694c0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712123085005727315, guid: 458f1add67c0fde498afa05f7af694c0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712123085005727315, guid: 458f1add67c0fde498afa05f7af694c0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712123085005727315, guid: 458f1add67c0fde498afa05f7af694c0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712123085005727315, guid: 458f1add67c0fde498afa05f7af694c0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712123085005727315, guid: 458f1add67c0fde498afa05f7af694c0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6694563840851363212, guid: 458f1add67c0fde498afa05f7af694c0, type: 3}
+      propertyPath: m_Name
+      value: Spear
+      objectReference: {fileID: 0}
+    - target: {fileID: 6694563840851363212, guid: 458f1add67c0fde498afa05f7af694c0, type: 3}
+      propertyPath: m_TagString
+      value: EnemyAttack
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 458f1add67c0fde498afa05f7af694c0, type: 3}
 --- !u!1 &547870922
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,6 +295,37 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 572636034}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2034128783}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &681031517
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 681031518}
+  m_Layer: 6
+  m_Name: EnemyAttackCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &681031518
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681031517}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -5366,6 +5458,7 @@ GameObject:
   - component: {fileID: 1930487515}
   - component: {fileID: 1930487514}
   - component: {fileID: 1930487516}
+  - component: {fileID: 1930487517}
   m_Layer: 0
   m_Name: Animator
   m_TagString: Untagged
@@ -5465,6 +5558,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1930487517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930487513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95fc5659f29abed4f8cf26c0799003d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2034128782
 GameObject:
   m_ObjectHideFlags: 0
@@ -5477,9 +5582,9 @@ GameObject:
   - component: {fileID: 2034128785}
   - component: {fileID: 2034128784}
   - component: {fileID: 2034128786}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5499,6 +5604,7 @@ Transform:
   m_Children:
   - {fileID: 1930487515}
   - {fileID: 572636035}
+  - {fileID: 681031518}
   - {fileID: 1461439624}
   - {fileID: 808355128}
   m_Father: {fileID: 0}
@@ -5588,6 +5694,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 462a0ec88eea82f43b4c9d15cd55a998, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerHP: 0
   MoveSpeed: 3
   DashSpeed: 5
   JumpPower: 2.5
@@ -5597,12 +5704,15 @@ MonoBehaviour:
   dashEffectPos: {fileID: 1461439624}
   AirJumpOutEffect: {fileID: 7334062365662037436, guid: 6a977909fd917e14592568674f7591ee, type: 3}
   AirJumpOutEffectPos: {fileID: 808355128}
+  attackCheck: {fileID: 681031518}
+  attackCheckRadius: 6.38
   groundCheck: {fileID: 572636035}
-  groundLine: 0.88
+  groundLine: 3.56
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
   isInhaling: 0
+  EnemyAttackPos: 0
   dashTime: 0
   dash: 0
   turn: 0
@@ -5613,3 +5723,4 @@ SceneRoots:
   - {fileID: 547870925}
   - {fileID: 2034128783}
   - {fileID: 1652253103}
+  - {fileID: 168449846}
