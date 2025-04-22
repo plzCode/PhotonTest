@@ -72,6 +72,11 @@ public class Enemy : MonoBehaviour
         Debug.Log(gameObject.name + "데미지를 입혔다.");
     }
 
+    public virtual void TakeDamage(float _damage)
+    {
+
+    }
+
 
     protected virtual IEnumerator HitKnockBack()
     {
@@ -87,7 +92,7 @@ public class Enemy : MonoBehaviour
     public virtual void AnimationFinishTrigger() => stateMachine.currentState.AnimationFinishTrigger();
 
     public virtual RaycastHit2D IsPlayerDetected() => Physics2D.Raycast(wallCheck.position, Vector2.right * facingDir, 50, whatIsPlayer);
-    
+
     #region 충돌
     public virtual bool IsGroundDetected() => Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, whatIsGround);
     public virtual bool IsWallDetected() => Physics2D.Raycast(wallCheck.position, Vector2.right * facingDir, wallCheckDistance, whatIsGround);
@@ -96,10 +101,10 @@ public class Enemy : MonoBehaviour
     protected virtual void OnDrawGizmos()
     {
 
-
-        Gizmos.DrawLine(groundCheck.position, new Vector3(groundCheck.position.x, groundCheck.position.y - groundCheckDistance));
-
-        Gizmos.DrawLine(wallCheck.position, new Vector3(wallCheck.position.x + wallCheckDistance, wallCheck.position.y));
+        if (groundCheck != null)
+            Gizmos.DrawLine(groundCheck.position, new Vector3(groundCheck.position.x, groundCheck.position.y - groundCheckDistance));
+        if (wallCheck != null)
+            Gizmos.DrawLine(wallCheck.position, new Vector3(wallCheck.position.x + wallCheckDistance, wallCheck.position.y));
         if (attackCheck != null)
             Gizmos.DrawWireSphere(attackCheck.position, attackCheckRadius);
     }
