@@ -179,6 +179,7 @@ public class Player : MonoBehaviour
     }
 
     //캐릭터 움직임
+    [PunRPC]
     public void lineVelocity(float xlineVelocity, float ylineVelocity)
     {
         rb.linearVelocity = new Vector2 (xlineVelocity, ylineVelocity);

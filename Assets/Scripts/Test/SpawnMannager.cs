@@ -2,6 +2,8 @@ using System.Diagnostics;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 using Photon.Pun;
+using Unity.Cinemachine;
+using Unity.VisualScripting;
 
 public class SpawnMannager : MonoBehaviourPun
 {
@@ -42,6 +44,18 @@ public class SpawnMannager : MonoBehaviourPun
 
         // 색상 설정 RPC 호출
         playerView.RPC("SettingColor", RpcTarget.AllBuffered, actorNumber, viewID);
-    }    
+
+        // 플레이어의 카메라 설정
+        GameObject camObj = new GameObject("PlayerCamera");
+        CinemachineCamera pCam = camObj.AddComponent<CinemachineCamera>();
+        pCam.AddComponent<CinemachineFollow>();
+        pCam.AddComponent<CinemachineRotationComposer>();
+
+
+        pCam.Follow = tmpPlayer.transform;
+        pCam.LookAt = tmpPlayer.transform;
+        pCam.Lens.OrthographicSize = 6f;
+        pCam.Lens.NearClipPlane = -1f;
+    }
 
 }

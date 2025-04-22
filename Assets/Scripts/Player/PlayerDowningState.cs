@@ -1,3 +1,4 @@
+using Photon.Pun;
 using UnityEngine;
 
 public class PlayerDowningState : PlayerState
@@ -26,6 +27,7 @@ public class PlayerDowningState : PlayerState
         }
 
         if (xInput != 0)
-            player.lineVelocity(xInput * player.MoveSpeed, rb.linearVelocityY);
+            //player.lineVelocity(xInput * player.MoveSpeed, rb.linearVelocityY);
+            pView.RPC("lineVelocity", RpcTarget.All, xInput * player.MoveSpeed, rb.linearVelocityY); //수평 이동
     }
 }
