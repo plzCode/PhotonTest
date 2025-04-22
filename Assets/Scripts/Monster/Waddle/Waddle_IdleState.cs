@@ -22,7 +22,7 @@ public class Waddle_IdleState : Waddle_GroundedState
     {
         base.Update();
 
-        Debug.Log(stateTimer);
+        
         if (stateTimer < 0)
         {
             stateMachine.ChangeState(enemy.moveState);
