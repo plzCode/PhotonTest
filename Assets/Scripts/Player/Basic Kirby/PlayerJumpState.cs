@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class PlayerJumpState : PlayerState
 {
-    public float MinJumpPower = 2;
-    public float MaxJumpPower = -1;
+    public float MinJumpPower = 2f;
+    public float MaxJumpPower = -1f;
 
     public PlayerJumpState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName) : base(_player, _stateMachine, _animBoolName)
     {
@@ -13,7 +13,6 @@ public class PlayerJumpState : PlayerState
     public override void Enter()
     {
         base.Enter();
-        MaxJumpPower = -1;
     }
 
     public override void Exit()

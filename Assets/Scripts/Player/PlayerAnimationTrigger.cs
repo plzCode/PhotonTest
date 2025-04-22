@@ -4,7 +4,7 @@ public class PlayerAnimatorController : MonoBehaviour
 {
     private Player player => GetComponentInParent<Player>();
 
-    public void IdleChange()
+    public void IFGround_Idle_State()
     {
         if (player.IsGroundCheck())
         {
@@ -12,5 +12,10 @@ public class PlayerAnimatorController : MonoBehaviour
         }
 
         //에니메이터에서 idle로 가게함
+    }
+
+    public void Air_State()
+    {
+        player.stateMachine.ChangeState(player.airState);
     }
 }

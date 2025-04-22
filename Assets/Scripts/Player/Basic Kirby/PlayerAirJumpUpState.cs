@@ -32,10 +32,10 @@ public class PlayerAirJumpUpState : PlayerState
             AirOutCoolTime += Time.deltaTime;
         }
 
-        if (rb.linearVelocityY < -0.1)
+        if (rb.linearVelocityY < -0.1f)
             stateMachine.ChangeState(player.airJumpingState);
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) && AirOut && AirOutCoolTime > 0.3)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && AirOut && AirOutCoolTime > 0.3f)
         {
             stateMachine.ChangeState(player.airJumpOutState);
             AirOut = false;

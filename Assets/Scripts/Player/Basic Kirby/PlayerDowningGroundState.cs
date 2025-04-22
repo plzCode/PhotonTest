@@ -22,7 +22,7 @@ public class PlayerDowningGroundState : PlayerState
             Lastmove = -1;
         }
 
-        //player.lineVelocity(Lastmove * player.MoveSpeed, 2);
+        //player.lineVelocity(Lastmove * player.MoveSpeed, 2f);
         pView.RPC("lineVelocity", RpcTarget.All, Lastmove * player.MoveSpeed, 2f); //수평 이동
     }
 

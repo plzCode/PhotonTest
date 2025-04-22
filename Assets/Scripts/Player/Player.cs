@@ -97,7 +97,7 @@ public class Player : MonoBehaviour
         anim = GetComponentInChildren<Animator>();
         stateMachine.StartState(idleState);
 
-        LastMove = 1; //플레이어 마지막 입력값을 초기 1로 만듬
+        LastMove = 1f; //플레이어 마지막 입력값을 초기 1로 만듬
     }
 
     public void Update()
@@ -178,12 +178,12 @@ public class Player : MonoBehaviour
         if (_x > 0 && !flipbool)
         {
             Flip();
-            LastMove = 1;
+            LastMove = 1f;
         }
         else if (_x < 0 && flipbool)
         {
             Flip();
-            LastMove = -1;
+            LastMove = -1f;
         }
     }
 

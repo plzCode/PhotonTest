@@ -21,13 +21,13 @@ public class PlayerIdleState : PlayerGroundState
     {
         base.Update();
 
-        if (player.dashTime > 0.3) //대쉬 시간이 0.3초 지나면 움직이는 키 눌러도 그냥 MOVE로 바꿈
+        if (player.dashTime > 0.3f) //대쉬 시간이 0.3초 지나면 움직이는 키 눌러도 그냥 MOVE로 바꿈
         {
             player.dash = false;
             player.dashTime = 0;
         }
 
-        if (xInput != 0 && player.dashTime > 0.1) // 0.1 ~ 0.3초안에 움직임 값 누르면 대쉬로 전환
+        if (xInput != 0 && player.dashTime > 0.1f) // 0.1 ~ 0.3초안에 움직임 값 누르면 대쉬로 전환
         {
             stateMachine.ChangeState(player.dashState);
             if (xInput < 0)

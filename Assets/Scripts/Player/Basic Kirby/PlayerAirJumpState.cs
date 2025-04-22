@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 public class PlayerAirJumpState : PlayerState
 {
-    public float MinJumpPower = 2;
+    public float MinJumpPower = 2f;
 
     public float AirOutCoolTime;
     public bool AirOut;
@@ -36,7 +36,7 @@ public class PlayerAirJumpState : PlayerState
             AirOutCoolTime += Time.deltaTime;
         }
 
-        if (rb.linearVelocityY < -0.1)
+        if (rb.linearVelocityY < -0.1f)
             stateMachine.ChangeState(player.airJumpingState);
 
         if (Input.GetKeyDown(KeyCode.Space))

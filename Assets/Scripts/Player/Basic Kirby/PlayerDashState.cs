@@ -38,7 +38,7 @@ public class PlayerDashState : PlayerGroundState
             EffectTime += Time.deltaTime;
         }
 
-        if (EffectTime > 0.05 && Effect2) //이펙트 바로소환하면 대쉬 턴 할때 이펙트 생성되서 0.05초로 함
+        if (EffectTime > 0.05f && Effect2) //이펙트 바로소환하면 대쉬 턴 할때 이펙트 생성되서 0.05초로 함
         {
             player.EffectAdd(xInput, player.dashEffect, player.dashEffectPos);
             Effect2 = false;
@@ -46,7 +46,7 @@ public class PlayerDashState : PlayerGroundState
         }
 
 
-        if (EffectTime > 0.2 && Effect)
+        if (EffectTime > 0.2f && Effect)
         {
             player.EffectAdd(xInput, player.dashEffect, player.dashEffectPos);
             Effect = false;
@@ -56,7 +56,7 @@ public class PlayerDashState : PlayerGroundState
         if (xInput > 0 && player.turn) //대쉬 턴 할때 이펙트가 달릴때랑 똑같이 나오게 하기
         {
             stateMachine.ChangeState(player.dashTurnState);
-            player.EffectAdd(-1, player.dashEffect, player.dashEffectPos);
+            player.EffectAdd(-1f, player.dashEffect, player.dashEffectPos);
             return;
         }
         else if (xInput < 0 && !player.turn)
@@ -70,7 +70,7 @@ public class PlayerDashState : PlayerGroundState
         {
             player.dash = true;
             
-            if (player.dashTime > 0.05)
+            if (player.dashTime > 0.05f)
             {
                 player.dash = false;
                 stateMachine.ChangeState(player.idleState);

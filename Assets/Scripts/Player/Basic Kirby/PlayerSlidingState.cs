@@ -34,7 +34,7 @@ public class PlayerSlidingState : PlayerState
 
         player.lineVelocity(player.LastMove * player.MoveSpeed * 5, rb.linearVelocityY);
 
-        if (SlidingTime > 0.2) //0.2초 지나면 idle로 전환 이게 가장 코드를 간단하게 할 수 있었음!
+        if (SlidingTime > 0.2f) //0.2초 지나면 idle로 전환 이게 가장 코드를 간단하게 할 수 있었음!
         {
             SlidingTime = 0;
             stateMachine.ChangeState(player.idleState);

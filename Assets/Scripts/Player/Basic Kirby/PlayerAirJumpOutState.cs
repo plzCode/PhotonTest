@@ -20,11 +20,11 @@ public class PlayerAirJumpOutState : PlayerState
 
         if (player.flipbool)
         {
-            Lastmove = 1;
+            Lastmove = 1f;
         }
         else
         {
-            Lastmove = -1;
+            Lastmove = -1f;
         }
     }
 
@@ -42,7 +42,7 @@ public class PlayerAirJumpOutState : PlayerState
             EffectTime += Time.deltaTime;
         }
 
-        if (EffectTime > 0.05 && Effect)
+        if (EffectTime > 0.05f && Effect)
         {
             player.EffectAdd(Lastmove, player.AirJumpOutEffect, player.AirJumpOutEffectPos);
             Effect = false;
@@ -54,7 +54,7 @@ public class PlayerAirJumpOutState : PlayerState
             BackTime += Time.deltaTime;
         }
 
-        if (BackTime > 0.1)
+        if (BackTime > 0.1f)
         {
             stateMachine.ChangeState(player.airState);
             Back = false;

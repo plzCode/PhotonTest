@@ -9,7 +9,7 @@ public class PlayerDamageState : PlayerState
     public override void Enter()
     {
         base.Enter();
-        player.lineVelocity(player.EnemyAttackPos * player.MoveSpeed * 2f, 0f);
+        player.lineVelocity(player.EnemyAttackPos * player.MoveSpeed * 2f, 0);
         player.Flip();
     }
 

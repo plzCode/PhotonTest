@@ -31,7 +31,7 @@ public class PlayerAirState : PlayerState
         if (player.IsGroundCheck())
             stateMachine.ChangeState(player.idleState);
 
-        if (rb.linearVelocityY < -8)
+        if (rb.linearVelocityY < -8f)
             stateMachine.ChangeState(player.downingState);
 
         if (xInput != 0)
