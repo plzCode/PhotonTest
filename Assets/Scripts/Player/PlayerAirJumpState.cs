@@ -1,3 +1,4 @@
+using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -17,7 +18,8 @@ public class PlayerAirJumpState : PlayerState
     {
         base.Enter();
         AirOut = true;
-        player.lineVelocity(rb.linearVelocityX, MinJumpPower);
+        //player.lineVelocity(rb.linearVelocityX, MinJumpPower);
+        pView.RPC("lineVelocity", RpcTarget.All, rb.linearVelocityX, MinJumpPower);
     }
 
     public override void Exit()
@@ -48,6 +50,7 @@ public class PlayerAirJumpState : PlayerState
         }
 
         if (xInput != 0)
-            player.lineVelocity(xInput * player.MoveSpeed, rb.linearVelocityY);
+            pView.RPC("lineVelocity", RpcTarget.All, xInput * player.MoveSpeed, rb.linearVelocityY);
+            //player.lineVelocity(xInput * player.MoveSpeed, rb.linearVelocityY);
     }
 }
