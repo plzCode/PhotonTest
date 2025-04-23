@@ -4232,7 +4232,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 9062669522767753022, guid: 8a6195a6563bd6442a811898b8cf658f, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7899450762382905944}
+      addedObject: {fileID: 7899450762382905948}
   m_SourcePrefab: {fileID: 100100000, guid: 8a6195a6563bd6442a811898b8cf658f, type: 3}
 --- !u!1 &7899450762382905941 stripped
 GameObject:
@@ -4249,7 +4249,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7399869452134085086, guid: 8a6195a6563bd6442a811898b8cf658f, type: 3}
   m_PrefabInstance: {fileID: 7899450762382905940}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7899450762382905944
+--- !u!114 &7899450762382905948
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4263,24 +4263,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   whatIsPlayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   knockbackDirection: {x: 0, y: 0}
   knockbackDuration: 0
   attackCheck: {fileID: 0}
   attackCheckRadius: 0
   groundCheck: {fileID: 7899450762382905943}
-  groundCheckDistance: 0
+  groundCheckDistance: 0.2
   wallCheck: {fileID: 7899450762382905942}
-  wallCheckDistance: 0
+  wallCheckDistance: 0.2
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 0
-  moveSpeed: 10
+    m_Bits: 8
+  moveSpeed: 1.5
   idleTime: 2
   battleTime: 0
   attackDistance: 5
-  attackCooldown: 0
-  attackPower: 0
+  attackCooldown: 1.5
+  attackPower: 5
   lastTimeAttacked: 0
   facingDir: 1
   startRight: 1
