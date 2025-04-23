@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class PlayerAirJumpOutState : PlayerState
 {
-    public float Lastmove;
     public float EffectTime;
     public bool Effect;
     public float BackTime;
@@ -17,15 +16,6 @@ public class PlayerAirJumpOutState : PlayerState
         base.Enter();
         Effect = true;
         Back = true;
-
-        if (player.flipbool)
-        {
-            Lastmove = 1f;
-        }
-        else
-        {
-            Lastmove = -1f;
-        }
     }
 
     public override void Exit()
@@ -44,7 +34,7 @@ public class PlayerAirJumpOutState : PlayerState
 
         if (EffectTime > 0.05f && Effect)
         {
-            player.EffectAdd(Lastmove, player.AirJumpOutEffect, player.AirJumpOutEffectPos);
+            player.EffectAdd(player.LastMove, player.AirJumpOutEffect, player.AirJumpOutEffectPos);
             Effect = false;
             EffectTime = 0;
         }

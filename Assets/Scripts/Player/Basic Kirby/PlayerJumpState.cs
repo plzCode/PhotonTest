@@ -13,6 +13,7 @@ public class PlayerJumpState : PlayerState
     public override void Enter()
     {
         base.Enter();
+        MaxJumpPower = -1f;
     }
 
     public override void Exit()

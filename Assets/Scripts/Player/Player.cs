@@ -26,6 +26,9 @@ public class Player : MonoBehaviour
     public Transform dashEffectPos;
     public GameObject AirJumpOutEffect;
     public Transform AirJumpOutEffectPos;
+    public GameObject EatEffect;
+    public Transform EatEffectPos;
+    public GameObject Attack;
 
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundLine;
@@ -56,6 +59,9 @@ public class Player : MonoBehaviour
     public PlayerAirJumpUpState airJumpUpState { get; private set; }
     public PlayerAirJumpOutState airJumpOutState { get; private set; }
 
+    public PlayerEating12State eatingState { get; private set; }
+    public PlayerEatingEndState eatingEndState { get; private set; }
+
     public PlayerDamageState damageState { get; private set; }
 
     #endregion
@@ -85,6 +91,9 @@ public class Player : MonoBehaviour
         airJumpingState = new PlayerAirJumpingState(this, stateMachine, "AirJumping");
         airJumpUpState = new PlayerAirJumpUpState(this, stateMachine, "AirJumpUp");
         airJumpOutState = new PlayerAirJumpOutState(this, stateMachine, "AirJumpOut");
+
+        eatingState = new PlayerEating12State(this, stateMachine, "Eating1");
+        eatingEndState = new PlayerEatingEndState(this, stateMachine, "EatingEnd");
 
         damageState = new PlayerDamageState(this, stateMachine, "Damage");
     }
@@ -191,6 +200,7 @@ public class Player : MonoBehaviour
         rb.linearVelocity = new Vector2 (xlineVelocity, ylineVelocity);
         FlipController(xlineVelocity);
     }
+    #endregion
 
     public void EffectAdd(float _x, GameObject Effect, Transform EffecPos) //이펙트를 추가함
     {
@@ -203,8 +213,23 @@ public class Player : MonoBehaviour
             Instantiate(Effect, EffecPos.position, Quaternion.Euler(0, 180, 0));
         }
     }
-    #endregion
 
+    public void AttackAdd(float _x, GameObject Effect, Transform EffecPos, Transform parentTransform) //자식 객체로 소환 및 다른 스크립트에서 프리펩 삭제 가능하게
+    {
+        if (_x > 0)
+        {
+            Attack = Instantiate(Effect, EffecPos.position, Quaternion.identity, parentTransform);
+        }
+        else if (_x < 0) //왼쪽이면 좌우반전 소환
+        {
+            Attack = Instantiate(Effect, EffecPos.position, Quaternion.Euler(0, 180, 0), parentTransform);
+        }
+    }
+
+    public void AttackDestroy()
+    {
+        Destroy(Attack);
+    }
 
     public float EnemyAttackLastPos;
     public void TakeDamage(Vector2 EnemyAttackPos, float Damage)    //몬스터의 공격 데미지 실행

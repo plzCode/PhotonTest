@@ -45,11 +45,5 @@ public class PlayerIdleState : PlayerGroundState
             player.dash = true;
             stateMachine.ChangeState(player.moveState);
         }
-
-        if (!player.IsGroundCheck())
-            stateMachine.ChangeState(player.airState);
-
-        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
-            stateMachine.ChangeState(player.downState);
     }
 }
