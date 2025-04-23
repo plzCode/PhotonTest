@@ -1,4 +1,5 @@
 using UnityEngine;
+using Photon.Pun;
 
 public class PlayerDamageState : PlayerState
 {
@@ -9,7 +10,7 @@ public class PlayerDamageState : PlayerState
     public override void Enter()
     {
         base.Enter();
-        player.lineVelocity(player.EnemyAttackLastPos * player.MoveSpeed * 2f, 0);
+        pView.RPC("lineVelocity", RpcTarget.All, (player.EnemyAttackLastPos * player.MoveSpeed * 2f, 0)); //수평 이동
         player.Flip();
     }
 

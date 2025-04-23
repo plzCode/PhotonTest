@@ -241,6 +241,7 @@ GameObject:
   - component: {fileID: 3883351216778525619}
   - component: {fileID: 2848372535695698984}
   - component: {fileID: 2503536393942241585}
+  - component: {fileID: 5310237826114757075}
   m_Layer: 0
   m_Name: Animator
   m_TagString: Untagged
@@ -391,9 +392,30 @@ MonoBehaviour:
   - Type: 1
     SynchronizeType: 1
     Name: yVelocity
+  - Type: 4
+    SynchronizeType: 0
+    Name: Damage
+  - Type: 4
+    SynchronizeType: 0
+    Name: Sliding
+  - Type: 4
+    SynchronizeType: 0
+    Name: AirJumpOut
   m_SynchronizeLayers:
   - SynchronizeType: 1
     LayerIndex: 0
+--- !u!114 &5310237826114757075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4857549695894206267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95fc5659f29abed4f8cf26c0799003d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5482814269045506837
 GameObject:
   m_ObjectHideFlags: 0
