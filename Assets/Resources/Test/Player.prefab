@@ -166,15 +166,13 @@ MonoBehaviour:
   dashEffectPos: {fileID: 2956317602630708912}
   AirJumpOutEffect: {fileID: 0}
   AirJumpOutEffectPos: {fileID: 0}
-  attackCheck: {fileID: 0}
-  attackCheckRadius: 0
   groundCheck: {fileID: 6332117634270816776}
   groundLine: 0.88
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
   isInhaling: 0
-  EnemyAttackPos: 0
+  EnemyAttackLastPos: 0
   dashTime: 0
   dash: 0
   turn: 0
