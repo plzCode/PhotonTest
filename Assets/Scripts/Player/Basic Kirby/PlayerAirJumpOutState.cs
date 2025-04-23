@@ -35,8 +35,8 @@ public class PlayerAirJumpOutState : PlayerState
 
         if (EffectTime > 0.05f && Effect)
         {
-            player.EffectAdd(Lastmove, player.AirJumpOutEffect, player.AirJumpOutEffectPos);
-            //pView.RPC("EffectAdd", RpcTarget.All, Lastmove, player.AirJumpOutEffect, player.AirJumpOutEffectPos);
+            player.EffectAdd(player.LastMove, player.AirJumpOutEffect, player.AirJumpOutEffectPos);
+            //pView.RPC("EffectAdd", RpcTarget.All, player.LastMove, player.AirJumpOutEffect, player.AirJumpOutEffectPos);
             Effect = false;
             EffectTime = 0;
         }
