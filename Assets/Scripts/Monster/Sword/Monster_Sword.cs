@@ -41,6 +41,6 @@ public class Monster_Sword : Enemy
         base.OnDrawGizmos();
 
         Gizmos.color = Color.yellow;
-        Gizmos.DrawLine(transform.position, new Vector3(transform.position.x + attackDistance * facingDir, transform.position.y));
+        Gizmos.DrawLine(new Vector3(transform.position.x,transform.position.y+0.03f), new Vector3(transform.position.x + attackDistance * facingDir, transform.position.y+0.03f));
     }
 }

@@ -229,7 +229,6 @@ GameObject:
   - component: {fileID: 6628869418686433156}
   - component: {fileID: 2764720097030517997}
   - component: {fileID: 2231957193223931905}
-  - component: {fileID: 3703545229611023390}
   m_Layer: 0
   m_Name: Boomerang
   m_TagString: Untagged
@@ -320,39 +319,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &3703545229611023390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9062669522767753022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7461b9bb0862a5479ad94dade7a2470, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 64
-  knockbackDirection: {x: 0, y: 0}
-  knockbackDuration: 0
-  attackCheck: {fileID: 0}
-  attackCheckRadius: 0
-  groundCheck: {fileID: 7399869452134085086}
-  groundCheckDistance: 0.2
-  wallCheck: {fileID: 6733302122910399850}
-  wallCheckDistance: 0.2
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 8
-  moveSpeed: 1.5
-  idleTime: 1
-  battleTime: 0
-  attackDistance: 5
-  attackCooldown: 3
-  attackPower: 5
-  lastTimeAttacked: 0
-  facingDir: 1
-  startRight: 1
-  dashSpeed: 0

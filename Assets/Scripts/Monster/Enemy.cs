@@ -73,6 +73,12 @@ public class Enemy : MonoBehaviour
         stateMachine.currentState.Update();
     }
 
+    public void setStart()
+    {
+        anim = GetComponentInChildren<Animator>();
+        rb = GetComponent<Rigidbody2D>();
+    }
+
 
     public virtual void Damage()
     {
