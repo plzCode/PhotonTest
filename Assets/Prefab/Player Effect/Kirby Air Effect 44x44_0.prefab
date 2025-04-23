@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 4240408955196146199}
   - component: {fileID: 3654928411339218096}
   - component: {fileID: 8670865538209773027}
+  - component: {fileID: -7587148351140812383}
   m_Layer: 0
   m_Name: Kirby Air Effect 44x44_0
   m_TagString: Untagged
@@ -171,3 +172,25 @@ MonoBehaviour:
   moveSpeed: 3
   Effect2: {fileID: 8988725665217619014, guid: a72914cba5bd1144ba90d56da3fa744b, type: 3}
   Effect2Pos: {fileID: 3891279766326830362}
+--- !u!114 &-7587148351140812383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7334062365662037436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
