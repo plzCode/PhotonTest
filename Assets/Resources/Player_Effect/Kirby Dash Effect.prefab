@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3128719731745482573}
   - component: {fileID: 8173446677876127610}
   - component: {fileID: 4031108440052511934}
-  - component: {fileID: -789621044185245304}
+  - component: {fileID: -3931384240585322562}
   m_Layer: 0
   m_Name: Kirby Dash Effect
   m_TagString: Untagged
@@ -124,7 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f94ba19095686504b98d91c343feb3f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-789621044185245304
+--- !u!114 &-3931384240585322562
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

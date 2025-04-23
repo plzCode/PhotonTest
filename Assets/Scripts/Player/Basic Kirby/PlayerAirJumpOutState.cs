@@ -1,3 +1,4 @@
+using Photon.Pun;
 using UnityEngine;
 
 public class PlayerAirJumpOutState : PlayerState
@@ -45,6 +46,7 @@ public class PlayerAirJumpOutState : PlayerState
         if (EffectTime > 0.05f && Effect)
         {
             player.EffectAdd(Lastmove, player.AirJumpOutEffect, player.AirJumpOutEffectPos);
+            //pView.RPC("EffectAdd", RpcTarget.All, Lastmove, player.AirJumpOutEffect, player.AirJumpOutEffectPos);
             Effect = false;
             EffectTime = 0;
         }

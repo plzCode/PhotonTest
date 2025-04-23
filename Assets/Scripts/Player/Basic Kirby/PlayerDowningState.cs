@@ -20,8 +20,13 @@ public class PlayerDowningState : PlayerState
     public override void Update()
     {
         base.Update();
-        if(pView.IsMine == false)
-            return;
+        try
+        {
+            if (pView.IsMine == false)
+                return;
+        }
+        catch { }
+        
         if (player.IsGroundCheck())
         {
             stateMachine.ChangeState(player.downingGroundState);

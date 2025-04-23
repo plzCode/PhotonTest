@@ -126,6 +126,7 @@ public class Player : MonoBehaviour
             }
             else
             {
+                curAbility.OnAbilityDestroyed(this);
                 Destroy(curAbility);
             }
 
@@ -191,18 +192,18 @@ public class Player : MonoBehaviour
         rb.linearVelocity = new Vector2 (xlineVelocity, ylineVelocity);
         FlipController(xlineVelocity);
     }
-
+    
     public void EffectAdd(float _x, GameObject Effect, Transform EffecPos) //이펙트를 추가함
     {
         if (_x > 0) //오른쪽이면 그대로 소환
         {
-            //Instantiate(Effect, EffecPos.position, Quaternion.identity);
+            //Instantiate(obj, EffecPos.position, Quaternion.identity);
             PhotonNetwork.Instantiate("Player_Effect/"+Effect.name, EffecPos.position, Quaternion.identity);
 
         }
         else if (_x < 0) //왼쪽이면 좌우반전 소환
         {
-            //Instantiate(Effect, EffecPos.position, Quaternion.Euler(0, 180, 0));
+            //Instantiate(obj, EffecPos.position, Quaternion.Euler(0, 180, 0));
             PhotonNetwork.Instantiate("Player_Effect/" + Effect.name, EffecPos.position, Quaternion.Euler(0, 180, 0));
         }
     }
