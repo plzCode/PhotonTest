@@ -37,11 +37,16 @@ public class Enemy : MonoBehaviour
     [Header("공격 정보")]
     public float attackDistance;
     public float attackCooldown;
+    public float attackPower;
     [HideInInspector] public float lastTimeAttacked;
 
 
-    public int facingDir { get; private set; } = 1;
+    public int facingDir= 1;
     protected bool facingRight = true;
+
+    [Header("시작 정보")]
+    [SerializeField] private bool startRight = true;
+
 
     public EnemyStateMachine stateMachine { get; private set; }
 
@@ -49,6 +54,10 @@ public class Enemy : MonoBehaviour
     {
         stateMachine = new EnemyStateMachine();
         defaultMoveSpeed = moveSpeed;
+        if (!startRight)
+        {
+            Flip();
+        }
     }
 
     protected virtual void Start()
@@ -62,6 +71,12 @@ public class Enemy : MonoBehaviour
     protected virtual void Update()
     {
         stateMachine.currentState.Update();
+    }
+
+    public void setStart()
+    {
+        anim = GetComponentInChildren<Animator>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
 
@@ -104,9 +119,20 @@ public class Enemy : MonoBehaviour
         if (groundCheck != null)
             Gizmos.DrawLine(groundCheck.position, new Vector3(groundCheck.position.x, groundCheck.position.y - groundCheckDistance));
         if (wallCheck != null)
-            Gizmos.DrawLine(wallCheck.position, new Vector3(wallCheck.position.x + wallCheckDistance, wallCheck.position.y));
+            Gizmos.DrawLine(wallCheck.position, new Vector3(wallCheck.position.x + wallCheckDistance * facingDir, wallCheck.position.y));
         if (attackCheck != null)
             Gizmos.DrawWireSphere(attackCheck.position, attackCheckRadius);
+    }
+
+    // 파라미터를 가지고있는지 확인한다.
+    public bool HasParameter(string paramName, Animator animator)
+    {
+        foreach (AnimatorControllerParameter param in animator.parameters)
+        {
+            if (param.name == paramName)
+                return true;
+        }
+        return false;
     }
     #endregion
 

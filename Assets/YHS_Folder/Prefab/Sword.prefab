@@ -151,7 +151,7 @@ MonoBehaviour:
   knockbackDirection: {x: 0, y: 0}
   knockbackDuration: 0
   attackCheck: {fileID: 329842091411450321}
-  attackCheckRadius: 1.5
+  attackCheckRadius: 0.7
   groundCheck: {fileID: 2141465373118774389}
   groundCheckDistance: 0.3
   wallCheck: {fileID: 5690346597861924102}
@@ -162,9 +162,11 @@ MonoBehaviour:
   moveSpeed: 1.5
   idleTime: 0
   battleTime: 0
-  attackDistance: 1.5
+  attackDistance: 1.74
   attackCooldown: 1
+  attackPower: 10
   lastTimeAttacked: 0
+  startRight: 1
   dashSpeed: 10
 --- !u!1 &3676352764036593325
 GameObject:
@@ -191,7 +193,7 @@ Transform:
   m_GameObject: {fileID: 3676352764036593325}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.29, y: -0.08, z: 0}
+  m_LocalPosition: {x: 1.05, y: -0.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

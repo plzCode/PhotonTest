@@ -41,6 +41,7 @@ MonoBehaviour:
   - RespawnSpaceship
   - SettingColor
   - lineVelocity
+  - EffectAdd
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

@@ -17,5 +17,13 @@ public abstract class PlayerAbility : MonoBehaviour
         this.owner = owner;
     }
 
+    public virtual void OnAbilityDestroyed(Player owner)
+    {
+        owner.GetComponentInChildren<Animator>().runtimeAnimatorController = 
+            Resources.Load<RuntimeAnimatorController>("Test/Kirby");
+        this.owner = null;         
+       
+    }
+
     public abstract void AttackHandle();
 }

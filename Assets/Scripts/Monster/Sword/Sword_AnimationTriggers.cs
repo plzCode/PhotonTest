@@ -17,4 +17,18 @@ public class Sword_AnimationTriggers : MonoBehaviour
     {
         enemy.SetZeroVelocity();
     }
+
+    private void AttackTrigger()
+    {
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(enemy.attackCheck.position, enemy.attackCheckRadius);
+
+        foreach (var hit in colliders)
+        {
+            if (hit.GetComponent<Player>() != null)
+            {
+                Debug.Log("플레이어게" + enemy.attackPower + "만큼 데미지를 줌");
+                hit.GetComponent<Player>().TakeDamage(enemy.transform.position,enemy.attackPower);
+            }
+        }
+    }
 }
