@@ -163,7 +163,9 @@ MonoBehaviour:
   battleTime: 0
   attackDistance: 0
   attackCooldown: 0
+  attackPower: 0
   lastTimeAttacked: 0
+  startRight: 1
   throwDistance: 5
 --- !u!1 &2891360666939525787
 GameObject:

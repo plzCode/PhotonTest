@@ -4,7 +4,7 @@ public class Monster_Sword : Enemy
 {
     [Header("공격 대쉬")]
     [SerializeField] private float dashSpeed;
-
+    
 
     #region States
     public M_Sword_MoveState moveState { get; private set; }
@@ -22,7 +22,7 @@ public class Monster_Sword : Enemy
     protected override void Start()
     {
         base.Start();
-
+                
         stateMachine.Initialize(moveState);
     }
 
@@ -34,5 +34,13 @@ public class Monster_Sword : Enemy
     public void Sword_AttackForward()
     {
         SetVelocity(dashSpeed * facingDir, rb.linearVelocity.y);
+    }
+
+    protected override void OnDrawGizmos()
+    {
+        base.OnDrawGizmos();
+
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawLine(transform.position, new Vector3(transform.position.x + attackDistance * facingDir, transform.position.y));
     }
 }

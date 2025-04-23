@@ -39,9 +39,18 @@ public class M_Sword_MoveState : M_Sword_GroundedState
 
                 if (CanAttack()) // 쿨다운이 아니면 공격
                 {
-                    int randomCombo = Random.Range(1, 3);
-                    enemy.anim.SetInteger("Combo", randomCombo);
-                    stateMachine.ChangeState(enemy.attackState);
+                    // sword 몹과 boomerang을 같이 쓰는데 다른점은 combo정도
+                    if(enemy.HasParameter("Combo",enemy.anim))
+                    {
+                        int randomCombo = Random.Range(1, 3);
+                        enemy.anim.SetInteger("Combo", randomCombo);
+                        stateMachine.ChangeState(enemy.attackState);
+                    }
+                    else
+                    {
+                        stateMachine.ChangeState(enemy.attackState);
+                    }
+                    
                 }
 
             }
