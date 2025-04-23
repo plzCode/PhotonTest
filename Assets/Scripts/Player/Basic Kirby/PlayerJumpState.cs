@@ -13,6 +13,7 @@ public class PlayerJumpState : PlayerState
     public override void Enter()
     {
         base.Enter();
+        MaxJumpPower = -1f;
     }
 
     public override void Exit()
@@ -28,6 +29,7 @@ public class PlayerJumpState : PlayerState
         if (Input.GetKeyDown(KeyCode.Space)) //스페이스바 누르면 최소점프
         {
             stateMachine.ChangeState(player.airJumpState);
+            
         }
         else if (Input.GetKey(KeyCode.Space) && player.JumpPower >= MaxJumpPower) //꾹 누르면 최대점프까지 점프
         {
@@ -36,8 +38,12 @@ public class PlayerJumpState : PlayerState
             MaxJumpPower += 0.1f;
         }
 
-        if (rb.linearVelocityY < 0)
-            stateMachine.ChangeState(player.airState);;
+        if (rb.linearVelocityY < 0) 
+        {
+            stateMachine.ChangeState(player.airState); ;
+        }
+            
+        
 
         if (xInput != 0)
             //player.lineVelocity(xInput * player.MoveSpeed, rb.linearVelocityY);

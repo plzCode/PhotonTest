@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 4040077426154277962}
   - component: {fileID: 715467377046399045}
   - component: {fileID: 6409723174339660876}
-  - component: {fileID: 3809610391476444073}
+  - component: {fileID: 4317321290604817319}
   - component: {fileID: 7655887825162473413}
   - component: {fileID: 2358070428936542936}
   - component: {fileID: -5503277366793095067}
@@ -69,6 +69,7 @@ Transform:
   - {fileID: 121049986373261213}
   - {fileID: 6332117634270816776}
   - {fileID: 2956317602630708912}
+  - {fileID: 595596341373123499}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &715467377046399045
@@ -144,7 +145,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.0126604, y: 0.911376}
   m_EdgeRadius: 0
---- !u!114 &3809610391476444073
+--- !u!114 &4317321290604817319
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -159,15 +160,15 @@ MonoBehaviour:
   PlayerHP: 0
   MoveSpeed: 3
   DashSpeed: 5
-  JumpPower: 2
+  JumpPower: 2.5
   flipbool: 1
   LastMove: 0
   dashEffect: {fileID: 6713143777519656305, guid: 76d5def01e095ee4ea62c7eb90c2cc5c, type: 3}
   dashEffectPos: {fileID: 2956317602630708912}
-  AirJumpOutEffect: {fileID: 0}
-  AirJumpOutEffectPos: {fileID: 0}
+  AirJumpOutEffect: {fileID: 7334062365662037436, guid: 6a977909fd917e14592568674f7591ee, type: 3}
+  AirJumpOutEffectPos: {fileID: 595596341373123499}
   groundCheck: {fileID: 6332117634270816776}
-  groundLine: 0.88
+  groundLine: 0.87
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
@@ -229,6 +230,37 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 1
   m_UseLocal: 1
+--- !u!1 &1112893942917339125
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 595596341373123499}
+  m_Layer: 0
+  m_Name: AirOutEffectPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &595596341373123499
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112893942917339125}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.914, y: -0.224, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4040077426154277962}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4857549695894206267
 GameObject:
   m_ObjectHideFlags: 0
