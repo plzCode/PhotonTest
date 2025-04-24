@@ -1,0 +1,1240 @@
+fileFormatVersion: 2
+guid: 7cb6c059152ba0045bf933924c14428f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2755156420316279157
+    second: waddleboo_0
+  - first:
+      213: 7711604921459760032
+    second: waddleboo_1
+  - first:
+      213: 6541086399415234311
+    second: waddleboo_2
+  - first:
+      213: 392708492937746833
+    second: waddleboo_3
+  - first:
+      213: -7076262726954369850
+    second: waddleboo_4
+  - first:
+      213: -2142209429811653783
+    second: waddleboo_5
+  - first:
+      213: 630461295230956355
+    second: waddleboo_6
+  - first:
+      213: -6301121343761150344
+    second: waddleboo_7
+  - first:
+      213: -2505284055899551185
+    second: waddleboo_8
+  - first:
+      213: -6979350253269198750
+    second: waddleboo_9
+  - first:
+      213: -6932559208709794073
+    second: waddleboo_10
+  - first:
+      213: -2439865539755313208
+    second: waddleboo_11
+  - first:
+      213: 1590027830221394578
+    second: waddleboo_12
+  - first:
+      213: -8707661579154950009
+    second: waddleboo_13
+  - first:
+      213: 6423690029738059147
+    second: waddleboo_14
+  - first:
+      213: 7087890301624513315
+    second: waddleboo_15
+  - first:
+      213: 2897448651993541352
+    second: waddleboo_16
+  - first:
+      213: 8517064897336391839
+    second: waddleboo_17
+  - first:
+      213: -8573452621786531470
+    second: waddleboo_18
+  - first:
+      213: -6617805993190351976
+    second: waddleboo_19
+  - first:
+      213: -691212744508000704
+    second: waddleboo_20
+  - first:
+      213: -8924538584950184530
+    second: waddleboo_21
+  - first:
+      213: -1725465252740828774
+    second: waddleboo_22
+  - first:
+      213: 6599940084333242569
+    second: waddleboo_23
+  - first:
+      213: -2369614343268456129
+    second: waddleboo_24
+  - first:
+      213: 955250881739137187
+    second: waddleboo_25
+  - first:
+      213: 4932844076409360215
+    second: waddleboo_26
+  - first:
+      213: 5328929159019142531
+    second: waddleboo_27
+  - first:
+      213: -4405715429667682577
+    second: waddleboo_28
+  - first:
+      213: -5693208211968153342
+    second: waddleboo_29
+  - first:
+      213: 3332716717497066607
+    second: waddleboo_30
+  - first:
+      213: 5102204315704455217
+    second: waddleboo_31
+  - first:
+      213: 314300685355993253
+    second: waddleboo_32
+  - first:
+      213: -6579501457591815723
+    second: waddleboo_33
+  - first:
+      213: 5474251790822261261
+    second: waddleboo_34
+  - first:
+      213: -217427266471811424
+    second: waddleboo_35
+  - first:
+      213: 6018832698243979633
+    second: waddleboo_36
+  - first:
+      213: -2082331421504241362
+    second: waddleboo_37
+  - first:
+      213: -5274690662413623061
+    second: waddleboo_38
+  - first:
+      213: -4187851992526368381
+    second: waddleboo_39
+  - first:
+      213: -6932842199000356305
+    second: waddleboo_40
+  - first:
+      213: -241518152045400865
+    second: waddleboo_41
+  - first:
+      213: 5140973598202600336
+    second: waddleboo_42
+  - first:
+      213: -2691560199808829514
+    second: waddleboo_43
+  - first:
+      213: 4248624972996940583
+    second: waddleboo_44
+  - first:
+      213: 399751483234228048
+    second: waddleboo_45
+  - first:
+      213: -6569493063391556425
+    second: waddleboo_46
+  - first:
+      213: 4056402558778485124
+    second: waddleboo_47
+  - first:
+      213: 9107188076692873360
+    second: waddleboo_48
+  - first:
+      213: -1423969794920962664
+    second: waddleboo_49
+  - first:
+      213: 1067984977573728724
+    second: waddleboo_50
+  - first:
+      213: 2844966306248313876
+    second: waddleboo_51
+  - first:
+      213: 8809624324218217060
+    second: waddleboo_52
+  - first:
+      213: -8938780286890815909
+    second: waddleboo_53
+  - first:
+      213: -540071808227996239
+    second: waddleboo_54
+  - first:
+      213: 8656712891648185835
+    second: waddleboo_55
+  - first:
+      213: -430976354881227386
+    second: waddleboo_56
+  - first:
+      213: -5718646817141426020
+    second: waddleboo_57
+  - first:
+      213: -8389565232837954656
+    second: waddleboo_58
+  - first:
+      213: -195492895030046785
+    second: waddleboo_59
+  - first:
+      213: -7092129691755863030
+    second: waddleboo_60
+  - first:
+      213: 9193312563663629852
+    second: waddleboo_61
+  - first:
+      213: -5343476002157356199
+    second: waddleboo_62
+  - first:
+      213: 3917717276574382396
+    second: waddleboo_63
+  - first:
+      213: -5986228771200514143
+    second: waddleboo_64
+  - first:
+      213: 4174450522503463959
+    second: waddleboo_65
+  - first:
+      213: 608524624443514806
+    second: waddleboo_66
+  - first:
+      213: 8433015357056940983
+    second: waddleboo_67
+  - first:
+      213: 894770500341501058
+    second: waddleboo_68
+  - first:
+      213: -1505296809340848337
+    second: waddleboo_69
+  - first:
+      213: -4923902848640812674
+    second: waddleboo_70
+  - first:
+      213: -7710986348025150264
+    second: waddleboo_71
+  - first:
+      213: 7380489626983729060
+    second: waddleboo_72
+  - first:
+      213: 8965845660603293219
+    second: waddleboo_73
+  - first:
+      213: -2986597421318517134
+    second: waddleboo_74
+  - first:
+      213: -2683949193491872909
+    second: waddleboo_75
+  - first:
+      213: 2670511540722393629
+    second: waddleboo_76
+  - first:
+      213: -2193969432427218173
+    second: waddleboo_77
+  - first:
+      213: -2545467803955653670
+    second: waddleboo_78
+  - first:
+      213: 8938921351260052212
+    second: waddleboo_79
+  - first:
+      213: -1901354856163377201
+    second: waddleboo_80
+  - first:
+      213: 4089629021445952562
+    second: waddleboo_81
+  - first:
+      213: 7007382910637926595
+    second: waddleboo_82
+  - first:
+      213: 1959937205464790803
+    second: waddleboo_83
+  - first:
+      213: -7354723532830948332
+    second: waddleboo_84
+  - first:
+      213: 4214401914434770106
+    second: waddleboo_85
+  - first:
+      213: 844936146138742835
+    second: waddleboo_86
+  - first:
+      213: 2947560813674700535
+    second: waddleboo_87
+  - first:
+      213: 2459300826824060743
+    second: waddleboo_88
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: waddleboo_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 997
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8e496a45d7b3c9d0800000000000000
+      internalID: -2755156420316279157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waddleboo_1
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 997
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ab53c771df150b60800000000000000
+      internalID: 7711604921459760032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waddleboo_2
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 998
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70fa8429c6b96ca50800000000000000
+      internalID: 6541086399415234311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waddleboo_3
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 997
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19955dd2b4e237500800000000000000
+      internalID: 392708492937746833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waddleboo_4
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 997
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cc3c8e9a801ccd90800000000000000
+      internalID: -7076262726954369850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waddleboo_6
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 871
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 343bfda2539dfb800800000000000000
+      internalID: 630461295230956355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waddleboo_7
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 872
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87e0c7ac58bed88a0800000000000000
+      internalID: -6301121343761150344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waddleboo_8
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 872
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2a48aabc617b3dd0800000000000000
+      internalID: -2505284055899551185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waddleboo_9
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 872
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2685bde3ced542f90800000000000000
+      internalID: -6979350253269198750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waddleboo_11
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 872
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c7fa23f73bd32ed0800000000000000
+      internalID: -2439865539755313208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waddleboo_13
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 872
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 788f62ecdeb282780800000000000000
+      internalID: -8707661579154950009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waddleboo_100
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 741
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe64331c821cbd2c0800000000000000
+      internalID: -4405715429667682577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waddleboo_101
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 741
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2092d4d8b49adf0b0800000000000000
+      internalID: -5693208211968153342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waddleboo_30
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 740
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f642b637230304e20800000000000000
+      internalID: 3332716717497066607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waddleboo_31
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 740
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1307701eacbaec640800000000000000
+      internalID: 5102204315704455217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waddleboo_33
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 740
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d13315b84ae0b4a0800000000000000
+      internalID: -6579501457591815723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waddleboo_35
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 740
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a6a6799d0b8bfcf0800000000000000
+      internalID: -217427266471811424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waddleboo_37
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 740
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e210b94da921a13e0800000000000000
+      internalID: -2082331421504241362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waddleboo_43
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 600
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b7b0de3248a5aad0800000000000000
+      internalID: -2691560199808829514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waddleboo_45
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 600
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0579c942bd33c8500800000000000000
+      internalID: 399751483234228048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waddleboo_47
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 600
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4892afda2ac3b4830800000000000000
+      internalID: 4056402558778485124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waddleboo_49
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 600
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 895a9da140b0d3ce0800000000000000
+      internalID: -1423969794920962664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waddleboo_52
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 600
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 462eaa1c5a2124a70800000000000000
+      internalID: 8809624324218217060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waddleboo_56
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 453
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68536b4e94dd40af0800000000000000
+      internalID: -430976354881227386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waddleboo_59
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 453
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbf0f9b6f38794df0800000000000000
+      internalID: -195492895030046785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waddleboo_62
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 453
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95b169113e828d5b0800000000000000
+      internalID: -5343476002157356199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waddleboo_63
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 453
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3970a82b178e5630800000000000000
+      internalID: 3917717276574382396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waddleboo_64
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 453
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a7ce5426a4aceca0800000000000000
+      internalID: -5986228771200514143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waddleboo_73
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 302
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32e9c3f00251d6c70800000000000000
+      internalID: 8965845660603293219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waddleboo_74
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 302
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27e463f08797d86d0800000000000000
+      internalID: -2986597421318517134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waddleboo_75
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 302
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37388bebd62b0cad0800000000000000
+      internalID: -2683949193491872909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waddleboo_76
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 302
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d12e659e8109f0520800000000000000
+      internalID: 2670511540722393629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waddleboo_77
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 302
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30b3c14ec647d81e0800000000000000
+      internalID: -2193969432427218173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waddleboo_86
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 137
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 330cc70c2f0d9bb00800000000000000
+      internalID: 844936146138742835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waddleboo_87
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 137
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fe11f471f6d7e820800000000000000
+      internalID: 2947560813674700535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waddleboo_88
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 137
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74f2ca27211312220800000000000000
+      internalID: 2459300826824060743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waddleboo_14
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 872
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b70b62d64fdd540b1018c275f3b92d
+      internalID: 1629057079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e89cfb4a3006c8a46ad7fc4e6cc468f7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      waddleboo_100: -4405715429667682577
+      waddleboo_101: -5693208211968153342
+      waddleboo_14: 1629057079
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
