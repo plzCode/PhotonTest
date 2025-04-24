@@ -24,7 +24,7 @@ public class PlayerEating12State : PlayerState
     public override void Update()
     {
         base.Update();
-
+        if(pView.IsMine == false) return;
         if (Input.GetKeyUp(KeyCode.Mouse0))
             stateMachine.ChangeState(player.eatingEndState);
     }

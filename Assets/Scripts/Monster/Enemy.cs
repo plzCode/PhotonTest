@@ -96,7 +96,7 @@ public class Enemy : MonoBehaviour
     }
     // 몬스터 상태 동기화
     [PunRPC] 
-    private void SyncMonsterState(Vector3 position, Quaternion rotation)
+    protected void SyncMonsterState(Vector3 position, Quaternion rotation)
     {
         targetPosition = position;
         targetRotation = rotation;
