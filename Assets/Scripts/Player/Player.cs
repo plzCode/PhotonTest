@@ -137,7 +137,7 @@ public class Player : MonoBehaviour
         {
             if (curAbility == null)
             {
-                curAbility = gameObject.AddComponent<Ability_Animal>();
+                curAbility = gameObject.AddComponent<Ability_Eat>();
                 curAbility.OnAbilityCopied(this);
             }
             else
@@ -148,6 +148,16 @@ public class Player : MonoBehaviour
 
         }
         #endregion
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            KirbyFormNum = 1;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            KirbyFormNum = 0;
+        }
+
+        KirbyFrom(); //커비 변신
     }
 
     #region TestRegion2
@@ -156,6 +166,26 @@ public class Player : MonoBehaviour
         while()
     }*/
     #endregion
+
+    public int EatKirbyFormNum;
+    public int KirbyFormNum;
+    public void KirbyFrom() //커비가 먹은 적의 고유 번호에 따라 변신 폼을 정함
+    {
+        if (curAbility == null)
+        {
+            switch (KirbyFormNum)
+            {
+                case 1: //먹은 폼
+                    curAbility = gameObject.AddComponent<Ability_Eat>();
+                    curAbility.OnAbilityCopied(this);
+                    break;
+                case 2: //애니멀 폼
+                    curAbility = gameObject.AddComponent<Ability_Animal>();
+                    curAbility.OnAbilityCopied(this);
+                    break;
+            }
+        }
+    }
 
     public void Eat_ChangeFrom()
     {
