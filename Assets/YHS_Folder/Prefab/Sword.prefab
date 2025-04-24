@@ -166,6 +166,7 @@ MonoBehaviour:
   attackCooldown: 1
   attackPower: 10
   lastTimeAttacked: 0
+  facingDir: 1
   startRight: 1
   dashSpeed: 10
 --- !u!1 &3676352764036593325
