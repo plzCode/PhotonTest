@@ -1,3 +1,4 @@
+using Photon.Pun;
 using UnityEngine;
 
 public class Monster_Spear : Enemy
@@ -10,6 +11,8 @@ public class Monster_Spear : Enemy
     public Spear_IdleState idleState { get; private set; }
     public Spear_ThrowState throwState { get; private set; }
     #endregion
+
+    [SerializeField] private GameObject spearPrefab;
 
     protected override void Awake()
     {
@@ -41,4 +44,10 @@ public class Monster_Spear : Enemy
         Gizmos.DrawWireSphere(transform.position, throwDistance + 2f); // 방향 전환용 감지 사거리
     }
 
+    [PunRPC]
+    public void ThrowSpear()
+    {
+        //PhotonNetwork.Instantiate("Monster_Effect/" + spearPrefab.name, transform.position, Quaternion.identity);
+        Instantiate(spearPrefab, transform.position, Quaternion.identity);
+    }
 }

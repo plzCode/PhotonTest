@@ -10,8 +10,17 @@ public class Spear_AnimationTriggers : MonoBehaviour
         enemy.AnimationFinishTrigger();
     }
 
-    private void ThrowSpear()
+    private void CalledFunction()
     {
-        PhotonNetwork.Instantiate("Monster_Effect/" + spearPrefab.name, transform.position, Quaternion.identity);
+        if (enemy.GetComponent<PhotonView>() != null) 
+        {
+            enemy.GetComponent<PhotonView>().RPC("ThrowSpear", RpcTarget.All);
+        }
+        else
+        {
+            enemy.ThrowSpear();
+        }
     }
+
+    
 }
