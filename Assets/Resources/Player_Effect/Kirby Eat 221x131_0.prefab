@@ -175,6 +175,7 @@ MonoBehaviour:
   enemy: {fileID: 0}
   pView: {fileID: 0}
   Eat: 0
+  PormNumber: 0
 --- !u!114 &-6698920531840666146
 MonoBehaviour:
   m_ObjectHideFlags: 0

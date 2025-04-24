@@ -180,6 +180,8 @@ MonoBehaviour:
     m_Bits: 8
   curAbility: {fileID: 0}
   isInhaling: 0
+  EatKirbyFormNum: 0
+  KirbyFormNum: 0
   EnemyAttackLastPos: 0
   dashTime: 0
   dash: 0

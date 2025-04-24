@@ -296,16 +296,15 @@ public class Player : MonoBehaviour
         currentEnemy = enemyCollider;
     }
 
-    public float EnemyAttackLastPos;
     public void TakeDamage(Vector2 EnemyAttackPos, float Damage)    //몬스터의 공격 데미지 실행
     {
         if (transform.position.x > EnemyAttackPos.x)
         {
-            EnemyAttackLastPos = 1f;
+            LastMove = 1f;
         }
         else if (transform.position.x < EnemyAttackPos.x)
         {
-            EnemyAttackLastPos = -1f;
+            LastMove = -1f;
         }
 
         PlayerHP -= Damage;
