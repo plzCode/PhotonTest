@@ -15,6 +15,7 @@ public class Ability_Eat : PlayerAbility
     public override void OnAbilityDestroyed(Player owner)
     {
         base.OnAbilityDestroyed(owner);
+        owner.KirbyFormNum = 0; //커비 변신 초기화
         Debug.Log("Animal ability destroyed");
     }
     public override void AttackHandle()

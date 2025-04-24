@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class PlayerEatState : PlayerState
+public class PlayerChageFormState : PlayerState
 {
-    public PlayerEatState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName) : base(_player, _stateMachine, _animBoolName)
+    public PlayerChageFormState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName) : base(_player, _stateMachine, _animBoolName)
     {
     }
 
@@ -14,7 +14,6 @@ public class PlayerEatState : PlayerState
     public override void Exit()
     {
         base.Exit();
-        player.KirbyFrom(); //먹는중인 커비로 변신
     }
 
     public override void Update()

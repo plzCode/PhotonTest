@@ -62,12 +62,14 @@ public class Player : MonoBehaviour
     public PlayerAirJumpUpState airJumpUpState { get; private set; }
     public PlayerAirJumpOutState airJumpOutState { get; private set; }
 
-    public PlayerEating12State eatingState { get; private set; }
+    public PlayerEating12State eatingState12 { get; private set; }
     public PlayerEatingEndState eatingEndState { get; private set; }
 
     public PlayerEatState eatState { get; private set; }
 
     public PlayerDamageState damageState { get; private set; }
+
+    public PlayerChageFormState changeFormState { get; private set; }
 
     #endregion
 
@@ -97,12 +99,14 @@ public class Player : MonoBehaviour
         airJumpUpState = new PlayerAirJumpUpState(this, stateMachine, "AirJumpUp");
         airJumpOutState = new PlayerAirJumpOutState(this, stateMachine, "AirJumpOut");
 
-        eatingState = new PlayerEating12State(this, stateMachine, "Eating1");
+        eatingState12 = new PlayerEating12State(this, stateMachine, "Eating1");
         eatingEndState = new PlayerEatingEndState(this, stateMachine, "EatingEnd");
 
         eatState = new PlayerEatState(this, stateMachine, "Eat");
 
         damageState = new PlayerDamageState(this, stateMachine, "Damage");
+
+        changeFormState = new PlayerChageFormState(this, stateMachine, "ChangeForm");
     }
 
     public void Start()
@@ -157,7 +161,6 @@ public class Player : MonoBehaviour
             KirbyFormNum = 0;
         }
 
-        KirbyFrom(); //Ä¿ºñ º¯½Å
     }
 
     #region TestRegion2
@@ -171,26 +174,18 @@ public class Player : MonoBehaviour
     public int KirbyFormNum;
     public void KirbyFrom() //Ä¿ºñ°¡ ¸ÔÀº ÀûÀÇ °íÀ¯ ¹øÈ£¿¡ µû¶ó º¯½Å ÆûÀ» Á¤ÇÔ
     {
-        if (curAbility == null)
-        {
+        Debug.Log("½ÇÇàµÊ");
             switch (KirbyFormNum)
             {
-                case 1: //¸ÔÀº Æû
+            case 1: //¸ÔÀº Æû
                     curAbility = gameObject.AddComponent<Ability_Eat>();
                     curAbility.OnAbilityCopied(this);
                     break;
-                case 2: //¾Ö´Ï¸Ö Æû
+            case 2: //¾Ö´Ï¸Ö Æû
                     curAbility = gameObject.AddComponent<Ability_Animal>();
                     curAbility.OnAbilityCopied(this);
                     break;
             }
-        }
-    }
-
-    public void Eat_ChangeFrom()
-    {
-        curAbility = gameObject.AddComponent<Ability_Animal>();
-        curAbility.OnAbilityCopied(this);
     }
 
 

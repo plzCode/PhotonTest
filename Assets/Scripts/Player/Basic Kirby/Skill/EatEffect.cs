@@ -25,8 +25,9 @@ public class EatEffect : MonoBehaviour
         {
             Destroy(enemy.gameObject);  //적삭제
             player.stateMachine.ChangeState(player.eatState); //플레이어 먹은모션
-            player.EatKirbyFormNum = PormNumber; //먹는 커비 모션에 값을 저장
+            player.EatKirbyFormNum = PormNumber; //먹는 커비 모션에 적의 변신 번호 값을 저장
             player.KirbyFormNum = 1; //먹는 커비로 변신
+            //PlayerEetState에서 변신 함수 씀 
         }
     }
 
@@ -38,7 +39,7 @@ public class EatEffect : MonoBehaviour
         {
             Collider2D playerCol = player.GetComponent<Collider2D>(); //플레이어 콜라이더를 가져옴
             Collider2D enemyCol = collision.GetComponent<Collider2D>(); //충돌중인 적 콜라이더를 가져옴
-            PormNumber = collision.GetComponent<EnemyNumber>().Number;
+            PormNumber = collision.GetComponent<EnemyNumber>().Number; //흡입하는 적의 변신 번호를 가져옴니다. (적에게 EnemyNumber 스크립트가 있어야하고 번호도 있어야 합니다)
 
             enemy = collision.gameObject.transform;
 

@@ -441,74 +441,6 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
---- !u!1001 &1047693239
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 387186886380086092, guid: 2e4ce0574eb56c5469226eb9e04a606e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 8.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 387186886380086092, guid: 2e4ce0574eb56c5469226eb9e04a606e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.32
-      objectReference: {fileID: 0}
-    - target: {fileID: 387186886380086092, guid: 2e4ce0574eb56c5469226eb9e04a606e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 387186886380086092, guid: 2e4ce0574eb56c5469226eb9e04a606e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 387186886380086092, guid: 2e4ce0574eb56c5469226eb9e04a606e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 387186886380086092, guid: 2e4ce0574eb56c5469226eb9e04a606e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 387186886380086092, guid: 2e4ce0574eb56c5469226eb9e04a606e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 387186886380086092, guid: 2e4ce0574eb56c5469226eb9e04a606e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 387186886380086092, guid: 2e4ce0574eb56c5469226eb9e04a606e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 387186886380086092, guid: 2e4ce0574eb56c5469226eb9e04a606e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1983025583109884315, guid: 2e4ce0574eb56c5469226eb9e04a606e, type: 3}
-      propertyPath: m_Name
-      value: Sword
-      objectReference: {fileID: 0}
-    - target: {fileID: 1983025583109884315, guid: 2e4ce0574eb56c5469226eb9e04a606e, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1983025583109884315, guid: 2e4ce0574eb56c5469226eb9e04a606e, type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1983025583109884315, guid: 2e4ce0574eb56c5469226eb9e04a606e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2089553664}
-  m_SourcePrefab: {fileID: 100100000, guid: 2e4ce0574eb56c5469226eb9e04a606e, type: 3}
 --- !u!1001 &1652253103
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5557,26 +5489,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2089553659 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1983025583109884315, guid: 2e4ce0574eb56c5469226eb9e04a606e, type: 3}
-  m_PrefabInstance: {fileID: 1047693239}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2089553664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2089553659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d2e9ad4460ba7c448f42de2ec68fa16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Number: 2
-  a: "1. \uCEE4\uBE44 \uBA39\uC740 \uD3FC"
-  b: "2. \uCEE4\uBE44 \uC560\uB2C8\uBA40 \uD3FC"
 --- !u!114 &99441518065606184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5593,61 +5505,64 @@ MonoBehaviour:
   ShowParameterInspector: 1
   m_SynchronizeParameters:
   - Type: 4
-    SynchronizeType: 1
+    SynchronizeType: 0
+    Name: ChangeForm
+  - Type: 4
+    SynchronizeType: 0
     Name: Eat
   - Type: 4
-    SynchronizeType: 1
+    SynchronizeType: 0
     Name: EatingEnd
   - Type: 4
-    SynchronizeType: 1
+    SynchronizeType: 0
     Name: Eating2
   - Type: 4
-    SynchronizeType: 1
+    SynchronizeType: 0
     Name: Eating1
   - Type: 4
-    SynchronizeType: 1
+    SynchronizeType: 0
     Name: Damage
   - Type: 4
-    SynchronizeType: 1
+    SynchronizeType: 0
     Name: Sliding
   - Type: 4
-    SynchronizeType: 1
+    SynchronizeType: 0
     Name: AirJumpOut
   - Type: 4
-    SynchronizeType: 1
+    SynchronizeType: 0
     Name: Down
   - Type: 4
-    SynchronizeType: 1
+    SynchronizeType: 0
     Name: DashTurn
   - Type: 4
-    SynchronizeType: 1
+    SynchronizeType: 0
     Name: Dash
   - Type: 4
-    SynchronizeType: 1
+    SynchronizeType: 0
     Name: AirJump
   - Type: 4
-    SynchronizeType: 1
+    SynchronizeType: 0
     Name: AirJumping
   - Type: 4
-    SynchronizeType: 1
+    SynchronizeType: 0
     Name: Downing
   - Type: 4
-    SynchronizeType: 1
+    SynchronizeType: 0
     Name: DowningGround
   - Type: 4
-    SynchronizeType: 1
+    SynchronizeType: 0
     Name: AirJumpUp
   - Type: 4
-    SynchronizeType: 1
+    SynchronizeType: 0
     Name: Jump
   - Type: 4
-    SynchronizeType: 1
+    SynchronizeType: 0
     Name: Move
   - Type: 4
-    SynchronizeType: 1
+    SynchronizeType: 0
     Name: Idle
   - Type: 1
-    SynchronizeType: 1
+    SynchronizeType: 0
     Name: yVelocity
   m_SynchronizeLayers:
   - SynchronizeType: 1
@@ -5783,7 +5698,7 @@ Animator:
   m_GameObject: {fileID: 2639204513799140755}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 586b22d75156a65419828153e4f07e16, type: 2}
+  m_Controller: {fileID: 9100000, guid: 674662fd977c80b43b410987d52d4458, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -5957,7 +5872,6 @@ MonoBehaviour:
   isInhaling: 0
   EatKirbyFormNum: 0
   KirbyFormNum: 0
-  EnemyAttackLastPos: 0
   dashTime: 0
   dash: 0
   turn: 0
@@ -6117,4 +6031,3 @@ SceneRoots:
   - {fileID: 1652253103}
   - {fileID: 168449846}
   - {fileID: 1895385122}
-  - {fileID: 1047693239}

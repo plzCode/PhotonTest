@@ -1,6 +1,7 @@
 using Photon.Pun;
 using Photon.Realtime;
 using System;
+using UnityEditor.Timeline.Actions;
 using UnityEngine;
 
 public class PlayerDashState : PlayerGroundState
@@ -46,7 +47,6 @@ public class PlayerDashState : PlayerGroundState
             Effect2 = false;
             EffectTime = 0;
         }
-
 
         if (EffectTime > 0.2f && Effect)
         {

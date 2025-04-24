@@ -21,16 +21,22 @@ public class PlayerGroundState : PlayerState
     {
         base.Update();
         if(pView.IsMine == false) return;
+
         if (!player.IsGroundCheck())
             stateMachine.ChangeState(player.airState);
 
         if (Input.GetKeyDown(KeyCode.Space))
             stateMachine.ChangeState(player.jumpState);
 
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-            stateMachine.ChangeState(player.eatingState);
-
         if (Input.GetKey(KeyCode.S))
             stateMachine.ChangeState(player.downState);
+
+        if (player.KirbyFormNum == 1) //몹을 입에 담고 있는중 일때 볼빵빵으로 못 가게 막음
+        {
+            return;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+            stateMachine.ChangeState(player.eatingState12);
     }
 }

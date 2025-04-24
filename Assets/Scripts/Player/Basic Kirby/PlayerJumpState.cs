@@ -19,6 +19,7 @@ public class PlayerJumpState : PlayerState
     public override void Exit()
     {
         base.Exit();
+        MinJumpPower = 2f;
     }
 
     public override void Update()
@@ -26,27 +27,37 @@ public class PlayerJumpState : PlayerState
         base.Update();
         if (!pView.IsMine) return;
 
-        if (Input.GetKeyDown(KeyCode.Space)) //스페이스바 누르면 최소점프
+        if (Input.GetKey(KeyCode.Space) && player.JumpPower >= MaxJumpPower) //꾹 누르면 최대점프까지 점프
         {
-            stateMachine.ChangeState(player.airJumpState);
-            
-        }
-        else if (Input.GetKey(KeyCode.Space) && player.JumpPower >= MaxJumpPower) //꾹 누르면 최대점프까지 점프
-        {
+            MinJumpPower += 0.05f;
             //player.lineVelocity(rb.linearVelocityX, MinJumpPower + player.JumpPower);
             pView.RPC("lineVelocity", RpcTarget.All, rb.linearVelocityX, MinJumpPower + player.JumpPower); //점프력 증가
             MaxJumpPower += 0.1f;
         }
 
-        if (rb.linearVelocityY < 0) 
+        if (rb.linearVelocityY < 0)
         {
             stateMachine.ChangeState(player.airState); ;
         }
-            
-        
 
         if (xInput != 0)
             //player.lineVelocity(xInput * player.MoveSpeed, rb.linearVelocityY);
             pView.RPC("lineVelocity", RpcTarget.All, xInput * player.MoveSpeed, rb.linearVelocityY); //수평 이동
+
+
+
+        if (player.KirbyFormNum == 1) //몹을 입에 담고 있는중 일때 볼빵빵으로 못 가게 막음
+        {
+            return;
+        }
+
+
+
+
+        if (Input.GetKeyDown(KeyCode.Space)) //스페이스바 누르면 볼빵빵으로 감
+        {
+            stateMachine.ChangeState(player.airJumpState);
+
+        }
     }
 }

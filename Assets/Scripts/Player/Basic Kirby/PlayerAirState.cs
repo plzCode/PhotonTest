@@ -30,21 +30,33 @@ public class PlayerAirState : PlayerState
             player.TimeBool = true;
         }
 
-        if(Input.GetKeyDown(KeyCode.Space) && player.TimeBool)
+
+        if (player.IsGroundCheck())
+            stateMachine.ChangeState(player.idleState);
+
+        if (xInput != 0)
+            //player.lineVelocity(xInput * player.MoveSpeed, rb.linearVelocityY);
+            pView.RPC("lineVelocity", RpcTarget.All, xInput * player.MoveSpeed, rb.linearVelocityY); //수평 이동
+
+
+
+
+        if (player.KirbyFormNum == 1) //몹을 입에 담고 있는중 일때 에어점프랑 땅으로 쭉떨어지는 모션 못하게 막음
+        {
+            return;
+        }
+
+
+
+
+        if (Input.GetKeyDown(KeyCode.Space) && player.TimeBool)
         {
             //player.lineVelocity(rb.linearVelocityX, player.JumpPower);
             pView.RPC("lineVelocity", RpcTarget.All, rb.linearVelocityX, player.JumpPower);
             stateMachine.ChangeState(player.airJumpState);
         }
 
-        if (player.IsGroundCheck())
-            stateMachine.ChangeState(player.idleState);
-
         if (rb.linearVelocityY < -8f)
             stateMachine.ChangeState(player.downingState);
-
-        if (xInput != 0)
-            //player.lineVelocity(xInput * player.MoveSpeed, rb.linearVelocityY);
-            pView.RPC("lineVelocity", RpcTarget.All, xInput * player.MoveSpeed, rb.linearVelocityY); //수평 이동
     }
 }

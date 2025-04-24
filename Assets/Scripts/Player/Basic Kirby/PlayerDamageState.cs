@@ -17,6 +17,7 @@ public class PlayerDamageState : PlayerState
     public override void Exit()
     {
         base.Exit();
+        //공격받을시 흡입 이펙트가 거꾸로 나가는 버그 수정
         if (player.LastMove == 1f)
         {
             player.LastMove = -1f;

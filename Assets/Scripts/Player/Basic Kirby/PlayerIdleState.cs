@@ -9,7 +9,7 @@ public class PlayerIdleState : PlayerGroundState
     public override void Enter()
     {
         base.Enter();
-        player.lineVelocity(0, 0); //움직임 0으로 만들기
+        player.lineVelocity(0f, 0f); //움직임 0으로 만들기
     }
 
     public override void Exit()

@@ -5894,6 +5894,14 @@ PrefabInstance:
       propertyPath: sceneViewId
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 333736077876393272, guid: a7a667c45d1e6f44eb84d6c2c3c48d1a, type: 3}
+      propertyPath: ObservedComponents.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 333736077876393272, guid: a7a667c45d1e6f44eb84d6c2c3c48d1a, type: 3}
+      propertyPath: 'ObservedComponents.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1959719181}
     - target: {fileID: 3355068980518483869, guid: a7a667c45d1e6f44eb84d6c2c3c48d1a, type: 3}
       propertyPath: m_Name
       value: Spear
@@ -5941,8 +5949,42 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3355068980518483869, guid: a7a667c45d1e6f44eb84d6c2c3c48d1a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1959719182}
   m_SourcePrefab: {fileID: 100100000, guid: a7a667c45d1e6f44eb84d6c2c3c48d1a, type: 3}
+--- !u!1 &1959719180 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3355068980518483869, guid: a7a667c45d1e6f44eb84d6c2c3c48d1a, type: 3}
+  m_PrefabInstance: {fileID: 1959719179}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1959719181 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7694669027513779257, guid: a7a667c45d1e6f44eb84d6c2c3c48d1a, type: 3}
+  m_PrefabInstance: {fileID: 1959719179}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1959719182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959719180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d2e9ad4460ba7c448f42de2ec68fa16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Number: 2
+  a: "1. \uCEE4\uBE44 \uBA39\uC740 \uD3FC"
+  b: "2. \uCEE4\uBE44 \uC560\uB2C8\uBA40 \uD3FC"
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
