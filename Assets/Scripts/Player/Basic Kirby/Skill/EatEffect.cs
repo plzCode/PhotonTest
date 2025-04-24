@@ -18,7 +18,7 @@ public class EatEffect : MonoBehaviour
     void Update()
     {
     }
-
+    [PunRPC]
     public void EatEnemy()
     {
         if (Vector2.Distance(player.transform.position, enemy.position) < 1f) //적과의 거리가 1보다 작다면
@@ -44,10 +44,13 @@ public class EatEffect : MonoBehaviour
 
             // 적을 플레이어 위치로 당긴다
             enemy.position = Vector2.MoveTowards(enemy.position, player.transform.position, 5f * Time.deltaTime);
-            EatEnemy();
+            GetComponent<PhotonView>().RPC("EatEnemy", RpcTarget.All);
+            //EatEnemy();
+            
 
             if (playerCol != null && enemyCol != null) //플레이어와 충돌중인 적 콜라이더가 비어있지 않다면
                 Physics2D.IgnoreCollision(playerCol, enemyCol, false); //둘이 닿을땐 서로 부딪히지 않음
         }
     }
+
 }

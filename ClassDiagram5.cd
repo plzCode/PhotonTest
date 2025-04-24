@@ -1,0 +1,628 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ParallaxBackGround" Collapsed="true">
+    <Position X="51.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQABEAAACAAAAAAAEAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\HJB_Folder\Scripts\Background\ParallaxBackground.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Boomerang_Obj" Collapsed="true">
+    <Position X="44.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAAAAEAiAAAIQEAAAAAAAAAEBAABAAIQAACAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Monster\Boomerang\Boomerang_Obj.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="M_Boomerang_AnimationTriggers" Collapsed="true">
+    <Position X="44.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgIAAAAIAAABAAACAAAAAAAACAAI=</HashCode>
+      <FileName>Assets\Scripts\Monster\Boomerang\M_Boomerang_AnimationTriggers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="M_Boomerang_IdleState" Collapsed="true">
+    <Position X="10.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAEAAABIAAAAAAQAAI=</HashCode>
+      <FileName>Assets\Scripts\Monster\Boomerang\M_Boomerang_IdleState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Monster_Boomerang" Collapsed="true">
+    <Position X="7.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQEAAAAACAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAEQ=</HashCode>
+      <FileName>Assets\Scripts\Monster\Boomerang\Monster_Boomerang.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Enemy" Collapsed="true">
+    <Position X="6.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iExEcIKEETKIAABEAQABAAkIBgAAggAAAQIAiAGYAEA=</HashCode>
+      <FileName>Assets\Scripts\Monster\Enemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyState" Collapsed="true">
+    <Position X="15.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQAAAAAAACAAAAEgAAAAAAAQAAEAAAAIAAAAAEAAAA=</HashCode>
+      <FileName>Assets\Scripts\Monster\EnemyState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyStateMachine" Collapsed="true">
+    <Position X="46.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABQAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Monster\EnemyStateMachine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="M02_AnimationTriggers" Collapsed="true">
+    <Position X="43" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAgAQAAAAAAAAAAI=</HashCode>
+      <FileName>Assets\Scripts\Monster\M_02\M02_AnimationTriggers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="M02_GroundedState" Collapsed="true">
+    <Position X="27.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAEAAABIAAAAAAAAAI=</HashCode>
+      <FileName>Assets\Scripts\Monster\M_02\M02_GroundedState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="M02_IdleState" Collapsed="true">
+    <Position X="26.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Monster\M_02\M02_IdleState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="M02_ThrowState" Collapsed="true">
+    <Position X="28.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Monster\M_02\M02_ThrowState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Monster_02" Collapsed="true">
+    <Position X="1" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQEAAAAACAABEAAAAAAAAAAAAAAAAAAAAAAAAAAAEQ=</HashCode>
+      <FileName>Assets\Scripts\Monster\M_02\Monster_02.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="M03_AnimationTriggers" Collapsed="true">
+    <Position X="44.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Assets\Scripts\Monster\M_03\M03_AnimationTriggers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="M03_GroundedState" Collapsed="true">
+    <Position X="18.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAEAAABIAAAAAAAAAI=</HashCode>
+      <FileName>Assets\Scripts\Monster\M_03\M03_GroundedState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="M03_IdleState" Collapsed="true">
+    <Position X="17.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Monster\M_03\M03_IdleState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="M03_MoveState" Collapsed="true">
+    <Position X="19.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Monster\M_03\M03_MoveState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Monster_03" Collapsed="true">
+    <Position X="10" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAEQ=</HashCode>
+      <FileName>Assets\Scripts\Monster\M_03\Monster_03.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="M_Mole_AnimationTriggers" Collapsed="true">
+    <Position X="46.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Assets\Scripts\Monster\Mole\M_Mole_AnimationTriggers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="M_Mole_AttackState" Collapsed="true">
+    <Position X="48.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Monster\Mole\M_Mole_AttackState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="M_Mole_BattleState" Collapsed="true">
+    <Position X="1.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAgAAAAAAAAAAAAAAAAAAAAAEAAQBIAAAAAAAAAI=</HashCode>
+      <FileName>Assets\Scripts\Monster\Mole\M_Mole_BattleState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="M_Mole_IdleState" Collapsed="true">
+    <Position X="8.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAIAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAI=</HashCode>
+      <FileName>Assets\Scripts\Monster\Mole\M_Mole_IdleState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="M_Mole_MoveState" Collapsed="true">
+    <Position X="50" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Monster\Mole\M_Mole_MoveState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Monster_Mole" Collapsed="true">
+    <Position X="3.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAEQ=</HashCode>
+      <FileName>Assets\Scripts\Monster\Mole\Monster_Mole.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonsterWeapon" Collapsed="true">
+    <Position X="3.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAQAAAAAAAAIAAAA=</HashCode>
+      <FileName>Assets\Scripts\Monster\MonsterWeapon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Monster_Spear" Collapsed="true">
+    <Position X="5.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQEAAAAACAABEAAAAAAAAAAAAAAAAAAAAAAAAAAAEQ=</HashCode>
+      <FileName>Assets\Scripts\Monster\Spear\Monster_Spear.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Spear_AnimationTriggers" Collapsed="true">
+    <Position X="43" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAgAQAAAAAAAAAAI=</HashCode>
+      <FileName>Assets\Scripts\Monster\Spear\Spear_AnimationTriggers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Spear_GroundedState" Collapsed="true">
+    <Position X="23.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAEAAABIAAAAAAAAAI=</HashCode>
+      <FileName>Assets\Scripts\Monster\Spear\Spear_GroundedState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Spear_IdleState" Collapsed="true">
+    <Position X="24.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Monster\Spear\Spear_IdleState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Spear_ThrowState" Collapsed="true">
+    <Position X="22" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Monster\Spear\Spear_ThrowState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Spear" Collapsed="true">
+    <Position X="3.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAgAACAAAAAEIAAACAAAAEAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Monster\Spear.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="M_Sword_AttackState" Collapsed="true">
+    <Position X="13" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Monster\Sword\M_Sword_AttackState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="M_Sword_GroundedState" Collapsed="true">
+    <Position X="14.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAEAAABIAAAAAAAAAI=</HashCode>
+      <FileName>Assets\Scripts\Monster\Sword\M_Sword_GroundedState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="M_Sword_IdleState" Collapsed="true">
+    <Position X="51.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Monster\Sword\M_Sword_IdleState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="M_Sword_MoveState" Collapsed="true">
+    <Position X="15.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAIAAAAAAAAAAEAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Monster\Sword\M_Sword_MoveState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Monster_Sword" Collapsed="true">
+    <Position X="7.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQEABAAACAAAAIAAAAAAAAAAAQAAAgAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Monster\Sword\Monster_Sword.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sword_AnimationTriggers" Collapsed="true">
+    <Position X="44.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAIEAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Assets\Scripts\Monster\Sword\Sword_AnimationTriggers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Monster_Waddle" Collapsed="true">
+    <Position X="12.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAEQ=</HashCode>
+      <FileName>Assets\Scripts\Monster\Waddle\Monster_Waddle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Waddle_AnimationTriggers" Collapsed="true">
+    <Position X="51.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Assets\Scripts\Monster\Waddle\Waddle_AnimationTriggers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Waddle_GroundedState" Collapsed="true">
+    <Position X="5.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAEAAABIAAAAAAAAAI=</HashCode>
+      <FileName>Assets\Scripts\Monster\Waddle\Waddle_GroundedState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Waddle_IdleState" Collapsed="true">
+    <Position X="4" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Monster\Waddle\Waddle_IdleState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Waddle_MoveState" Collapsed="true">
+    <Position X="6.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Monster\Waddle\Waddle_MoveState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NetworkManager" Collapsed="true">
+    <Position X="48.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAHAAAAAQAEAAAAAAgAAAAAAAUAAAAAAAUMA=</HashCode>
+      <FileName>Assets\Scripts\NetworkManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerAirJumpingState" Collapsed="true">
+    <Position X="13.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\Basic Kirby\PlayerAirJumpingState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerAirJumpOutState" Collapsed="true">
+    <Position X="18" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAAAAAAAgAAAAAAAQAAAAAAAAEAAAAIAAAgAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\Basic Kirby\PlayerAirJumpOutState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerAirJumpState" Collapsed="true">
+    <Position X="22.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAGAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\Basic Kirby\PlayerAirJumpState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerAirJumpUpState" Collapsed="true">
+    <Position X="27" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\Basic Kirby\PlayerAirJumpUpState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerAirState" Collapsed="true">
+    <Position X="31.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAEAAAAIEAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\Basic Kirby\PlayerAirState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerDamageState" Collapsed="true">
+    <Position X="40.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\Basic Kirby\PlayerDamageState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerDashState" Collapsed="true">
+    <Position X="33.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAgAAAAAAAAAAAAAAAAEAgAAIAAAgAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\Basic Kirby\PlayerDashState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerDashTurnState" Collapsed="true">
+    <Position X="4.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\Basic Kirby\PlayerDashTurnState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerDowningGroundState" Collapsed="true">
+    <Position X="6.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAIAAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\Basic Kirby\PlayerDowningGroundState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerDowningState" Collapsed="true">
+    <Position X="11.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\Basic Kirby\PlayerDowningState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerDownState" Collapsed="true">
+    <Position X="15.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\Basic Kirby\PlayerDownState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerEating12State" Collapsed="true">
+    <Position X="20.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\Basic Kirby\PlayerEating12State.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerEatingEndState" Collapsed="true">
+    <Position X="24.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\Basic Kirby\PlayerEatingEndState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerEatState" Collapsed="true">
+    <Position X="29.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\Basic Kirby\PlayerEatState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerGroundState" Collapsed="true">
+    <Position X="36" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\Basic Kirby\PlayerGroundState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerIdleState" Collapsed="true">
+    <Position X="38.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\Basic Kirby\PlayerIdleState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerJumpState" Collapsed="true">
+    <Position X="2.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAIAAAAAGAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\Basic Kirby\PlayerJumpState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerMoveState" Collapsed="true">
+    <Position X="36" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\Basic Kirby\PlayerMoveState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerSlidingState" Collapsed="true">
+    <Position X="9" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAEAAAAICAAAAAAIAA=</HashCode>
+      <FileName>Assets\Scripts\Player\Basic Kirby\PlayerSlidingState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EatEffect" Collapsed="true">
+    <Position X="43" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAECBAAAAAAAAAAAAAAACAAAARAAAAAAAAAAI=</HashCode>
+      <FileName>Assets\Scripts\Player\Basic Kirby\Skill\EatEffect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EffectManager" Collapsed="true">
+    <Position X="44.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\Effect\EffectManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KirbyAirEffect" Collapsed="true">
+    <Position X="43" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAQEAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAE=</HashCode>
+      <FileName>Assets\Scripts\Player\Effect\Kirby Air Effect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player" Collapsed="true">
+    <Position X="44.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gCQEAEEAECiCRBIEAUGBjJHIoYIYhggAYRQCoAIyIUQ=</HashCode>
+      <FileName>Assets\Scripts\Player\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerAbility" Collapsed="true">
+    <Position X="0.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAggAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Assets\Scripts\Player\PlayerAbility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerAnimatorController" Collapsed="true">
+    <Position X="46.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAABAAAIAgAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\PlayerAnimationTrigger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerState" Collapsed="true">
+    <Position X="21.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQAAAAAAACAAAAEAAAAAAAAAAAEAAARIAAAAAAEAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\PlayerState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerStateMachine" Collapsed="true">
+    <Position X="48.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAABAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\PlayerStateMachine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ability_Animal" Collapsed="true">
+    <Position X="0.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAEAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Assets\Scripts\Test\Ability_Animal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotonTest" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="43" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Test\PhotonTest.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PlayerTest" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="50" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAiBAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Test\PlayerTest.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SpawnMannager" Collapsed="true">
+    <Position X="51.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAACgAAAAAAAAACAAAAAAAAAAACAAAIAAAAAAAACAA=</HashCode>
+      <FileName>Assets\Scripts\Test\SpawnMannager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tmp_LeaveRoom" Collapsed="true">
+    <Position X="50" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Test\Tmp_LeaveRoom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Photon.Chat.UtilityScripts.EventSystemSpawner" Collapsed="true">
+    <Position X="48.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Assets\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Photon.Chat.UtilityScripts.OnStartDelete" Collapsed="true">
+    <Position X="50" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Photon.Chat.UtilityScripts.TextButtonTransition" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="46.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAABAAAAAAAAAAAAAAAAAgAAAIAAAAAQAACEI=</HashCode>
+      <FileName>Assets\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Photon.Chat.UtilityScripts.TextToggleIsOnTransition" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="48.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAADAAggAEIAAAQAQAAKAA=</HashCode>
+      <FileName>Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Photon.Chat.Demo.AppSettingsExtensions" Collapsed="true">
+    <Position X="43" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Photon\PhotonChat\Demos\DemoChat\AppSettingsExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Photon.Chat.Demo.ChannelSelector" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="46.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAgAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Photon\PhotonChat\Demos\DemoChat\ChannelSelector.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Photon.Chat.Demo.ChatAppIdCheckerUI" Collapsed="true">
+    <Position X="48.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAgAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Photon\PhotonChat\Demos\DemoChat\ChatAppIdCheckerUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Photon.Chat.Demo.ChatGui" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="50" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CGQBAFoQQCqDGEQAABCAAICUAEBggYIYCRAwTAAQAJA=</HashCode>
+      <FileName>Assets\Photon\PhotonChat\Demos\DemoChat\ChatGui.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Photon.Chat.Demo.FriendItem" Collapsed="true">
+    <Position X="50" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAIAAAAAAABAAAAEAAAAQAAAEA=</HashCode>
+      <FileName>Assets\Photon\PhotonChat\Demos\DemoChat\FriendItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Photon.Chat.Demo.IgnoreUiRaycastWhenInactive" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="51.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Photon\PhotonChat\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Photon.Chat.Demo.NamePickGui" Collapsed="true">
+    <Position X="46.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAACAAACAACAAAAAAAAAAAAAAAACAAAAAAAAgAAAA=</HashCode>
+      <FileName>Assets\Photon\PhotonChat\Demos\DemoChat\NamePickGui.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Photon.Realtime.Demo.ConnectAndJoinRandomLb" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="51.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gEaAAEIAACAAEQAAAEACAIEAAAGBAAIEEAJAAAAAQIA=</HashCode>
+      <FileName>Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Enum Name="M_WeaponType" Collapsed="true">
+    <Position X="43" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAACAAAAIAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Monster\MonsterWeapon.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="맑은 고딕" Size="9" />
+</ClassDiagram>

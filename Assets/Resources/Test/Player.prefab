@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2956317602630708912}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DashEffectPos
   m_TagString: Untagged
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
@@ -46,9 +46,9 @@ GameObject:
   - component: {fileID: 7655887825162473413}
   - component: {fileID: 2358070428936542936}
   - component: {fileID: -5503277366793095067}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70,6 +70,7 @@ Transform:
   - {fileID: 6332117634270816776}
   - {fileID: 2956317602630708912}
   - {fileID: 595596341373123499}
+  - {fileID: 3288432630328735207}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &715467377046399045
@@ -168,8 +169,8 @@ MonoBehaviour:
   dashEffectPos: {fileID: 2956317602630708912}
   AirJumpOutEffect: {fileID: 7334062365662037436, guid: 6a977909fd917e14592568674f7591ee, type: 3}
   AirJumpOutEffectPos: {fileID: 595596341373123499}
-  EatEffect: {fileID: 0}
-  EatEffectPos: {fileID: 0}
+  EatEffect: {fileID: 5009722476430104398, guid: 69b06db6f92da324ca488ad4ba216069, type: 3}
+  EatEffectPos: {fileID: 3288432630328735207}
   Attack: {fileID: 0}
   currentEnemy: {fileID: 0}
   groundCheck: {fileID: 6332117634270816776}
@@ -177,6 +178,7 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
+  curAbility: {fileID: 0}
   isInhaling: 0
   EnemyAttackLastPos: 0
   dashTime: 0
@@ -215,7 +217,7 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 7655887825162473413}
   - {fileID: -5503277366793095067}
-  - {fileID: 2503536393942241585}
+  - {fileID: 7397273143355088000}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -244,7 +246,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 595596341373123499}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AirOutEffectPos
   m_TagString: Untagged
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
@@ -266,6 +268,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4040077426154277962}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1714950788676449244
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3288432630328735207}
+  m_Layer: 6
+  m_Name: EatEffectPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3288432630328735207
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714950788676449244}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.372, y: -0.1880002, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4040077426154277962}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4857549695894206267
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,9 +310,9 @@ GameObject:
   - component: {fileID: 121049986373261213}
   - component: {fileID: 3883351216778525619}
   - component: {fileID: 2848372535695698984}
-  - component: {fileID: 2503536393942241585}
   - component: {fileID: 5310237826114757075}
-  m_Layer: 0
+  - component: {fileID: 7397273143355088000}
+  m_Layer: 6
   m_Name: Animator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -378,7 +411,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2503536393942241585
+--- !u!114 &5310237826114757075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4857549695894206267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95fc5659f29abed4f8cf26c0799003d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7397273143355088000
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -393,6 +438,27 @@ MonoBehaviour:
   ShowLayerWeightsInspector: 1
   ShowParameterInspector: 1
   m_SynchronizeParameters:
+  - Type: 4
+    SynchronizeType: 1
+    Name: Eat
+  - Type: 4
+    SynchronizeType: 1
+    Name: EatingEnd
+  - Type: 4
+    SynchronizeType: 1
+    Name: Eating2
+  - Type: 4
+    SynchronizeType: 1
+    Name: Eating1
+  - Type: 4
+    SynchronizeType: 1
+    Name: Damage
+  - Type: 4
+    SynchronizeType: 1
+    Name: Sliding
+  - Type: 4
+    SynchronizeType: 1
+    Name: AirJumpOut
   - Type: 4
     SynchronizeType: 1
     Name: Down
@@ -429,30 +495,9 @@ MonoBehaviour:
   - Type: 1
     SynchronizeType: 1
     Name: yVelocity
-  - Type: 4
-    SynchronizeType: 0
-    Name: Damage
-  - Type: 4
-    SynchronizeType: 0
-    Name: Sliding
-  - Type: 4
-    SynchronizeType: 0
-    Name: AirJumpOut
   m_SynchronizeLayers:
   - SynchronizeType: 1
     LayerIndex: 0
---- !u!114 &5310237826114757075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4857549695894206267}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95fc5659f29abed4f8cf26c0799003d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5482814269045506837
 GameObject:
   m_ObjectHideFlags: 0
@@ -462,7 +507,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6332117634270816776}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}

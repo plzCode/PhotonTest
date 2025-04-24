@@ -1,3 +1,4 @@
+using Photon.Pun;
 using System.Collections;
 using UnityEngine;
 
@@ -50,6 +51,11 @@ public class Enemy : MonoBehaviour
 
     public EnemyStateMachine stateMachine { get; private set; }
 
+    //For Photon
+    private PhotonView eView; 
+    private Vector3 targetPosition;
+    private Quaternion targetRotation;
+
     protected virtual void Awake()
     {
         stateMachine = new EnemyStateMachine();
@@ -58,6 +64,7 @@ public class Enemy : MonoBehaviour
         {
             Flip();
         }
+        eView = GetComponent<PhotonView>();
     }
 
     protected virtual void Start()
@@ -71,6 +78,28 @@ public class Enemy : MonoBehaviour
     protected virtual void Update()
     {
         stateMachine.currentState.Update();
+        if (PhotonNetwork.IsMasterClient)
+        {
+            // 마스터 클라이언트에서 몬스터 상태 업데이트
+            targetPosition = transform.position + Vector3.left * Time.deltaTime; // 예: 왼쪽으로 이동
+            targetRotation = transform.rotation;
+
+            // 다른 클라이언트에 상태 전파
+            eView.RPC("SyncMonsterState", RpcTarget.Others, targetPosition, targetRotation);
+        }
+        else
+        {
+            // 다른 클라이언트에서 상태 적용
+            transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * 10);
+            transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * 10);
+        }
+    }
+    // 몬스터 상태 동기화
+    [PunRPC] 
+    protected void SyncMonsterState(Vector3 position, Quaternion rotation)
+    {
+        targetPosition = position;
+        targetRotation = rotation;
     }
 
     public void setStart()

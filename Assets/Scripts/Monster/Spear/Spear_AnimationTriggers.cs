@@ -1,3 +1,4 @@
+using Photon.Pun;
 using UnityEngine;
 
 public class Spear_AnimationTriggers : MonoBehaviour
@@ -11,6 +12,6 @@ public class Spear_AnimationTriggers : MonoBehaviour
 
     private void ThrowSpear()
     {
-        Instantiate(spearPrefab, transform.position, Quaternion.identity);
+        PhotonNetwork.Instantiate("Monster_Effect/" + spearPrefab.name, transform.position, Quaternion.identity);
     }
 }
