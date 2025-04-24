@@ -29,6 +29,7 @@ public class Player : MonoBehaviour
     public GameObject EatEffect;
     public Transform EatEffectPos;
     public GameObject Attack;
+    public Collider2D currentEnemy;
 
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundLine;
@@ -62,6 +63,8 @@ public class Player : MonoBehaviour
     public PlayerEating12State eatingState { get; private set; }
     public PlayerEatingEndState eatingEndState { get; private set; }
 
+    public PlayerEatState eatState { get; private set; }
+
     public PlayerDamageState damageState { get; private set; }
 
     #endregion
@@ -94,6 +97,8 @@ public class Player : MonoBehaviour
 
         eatingState = new PlayerEating12State(this, stateMachine, "Eating1");
         eatingEndState = new PlayerEatingEndState(this, stateMachine, "EatingEnd");
+
+        eatState = new PlayerEatState(this, stateMachine, "Eat");
 
         damageState = new PlayerDamageState(this, stateMachine, "Damage");
     }
@@ -218,6 +223,8 @@ public class Player : MonoBehaviour
         }
     }
 
+
+
     public void AttackAdd(float _x, GameObject Effect, Transform EffecPos, Transform parentTransform) //자식 객체로 소환 및 다른 스크립트에서 프리펩 삭제 가능하게
     {
         if (_x > 0)
@@ -228,11 +235,22 @@ public class Player : MonoBehaviour
         {
             Attack = Instantiate(Effect, EffecPos.position, Quaternion.Euler(0, 180, 0), parentTransform);
         }
+        Attack.GetComponent<EatEffect>().player = this;
     }
 
     public void AttackDestroy()
     {
         Destroy(Attack);
+    }
+
+
+
+
+
+
+    public void SetCurrentTarget(Collider2D enemyCollider)
+    {
+        currentEnemy = enemyCollider;
     }
 
     public float EnemyAttackLastPos;

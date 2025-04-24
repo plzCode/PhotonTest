@@ -3,8 +3,6 @@ using WebSocketSharp;
 
 public class PlayerEating12State : PlayerState
 {
-    public bool Eat;
-
     public PlayerEating12State(Player _player, PlayerStateMachine _stateMachine, string _animBoolName) : base(_player, _stateMachine, _animBoolName)
     {
     }
@@ -12,7 +10,6 @@ public class PlayerEating12State : PlayerState
     public override void Enter()
     {
         base.Enter();
-
         player.AttackAdd(player.LastMove, player.EatEffect, player.EatEffectPos, player.transform);
     }
 
@@ -28,7 +25,5 @@ public class PlayerEating12State : PlayerState
 
         if (Input.GetKeyUp(KeyCode.Mouse0))
             stateMachine.ChangeState(player.eatingEndState);
-        
-        
     }
 }

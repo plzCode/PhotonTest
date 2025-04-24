@@ -8,6 +8,7 @@ public abstract class PlayerAbility : MonoBehaviour
     enum aibilityNumber 
     {
         Normal,
+        Eat,
         Animal,
     }
 
