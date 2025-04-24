@@ -24,4 +24,5 @@ public class PlayerAnimatorController : MonoBehaviour
     {
         player.stateMachine.ChangeState(player.airState);
     }
+
 }

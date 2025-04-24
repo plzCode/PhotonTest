@@ -72,7 +72,7 @@ public class Player : MonoBehaviour
     #endregion
 
     //For Test Ability
-    private PlayerAbility curAbility;
+    public PlayerAbility curAbility;
     public bool isInhaling = false;
 
 
@@ -157,7 +157,11 @@ public class Player : MonoBehaviour
     }*/
     #endregion
 
-
+    public void Eat_ChangeFrom()
+    {
+        curAbility = gameObject.AddComponent<Ability_Animal>();
+        curAbility.OnAbilityCopied(this);
+    }
 
 
     public IEnumerator BusyFor(float _seconds)
@@ -265,10 +269,6 @@ public class Player : MonoBehaviour
         else if (transform.position.x < EnemyAttackPos.x)
         {
             EnemyAttackLastPos = -1f;
-        }
-        else
-        {
-            EnemyAttackLastPos = flipbool ? -1f : 1f;
         }
 
         PlayerHP -= Damage;
