@@ -163,10 +163,15 @@ MonoBehaviour:
   JumpPower: 2.5
   flipbool: 1
   LastMove: 0
+  TimeBool: 1
   dashEffect: {fileID: 6713143777519656305, guid: 76d5def01e095ee4ea62c7eb90c2cc5c, type: 3}
   dashEffectPos: {fileID: 2956317602630708912}
   AirJumpOutEffect: {fileID: 7334062365662037436, guid: 6a977909fd917e14592568674f7591ee, type: 3}
   AirJumpOutEffectPos: {fileID: 595596341373123499}
+  EatEffect: {fileID: 0}
+  EatEffectPos: {fileID: 0}
+  Attack: {fileID: 0}
+  currentEnemy: {fileID: 0}
   groundCheck: {fileID: 6332117634270816776}
   groundLine: 0.87
   whatIsGround:

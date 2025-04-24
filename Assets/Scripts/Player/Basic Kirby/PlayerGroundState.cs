@@ -29,7 +29,7 @@ public class PlayerGroundState : PlayerState
         if (Input.GetKeyDown(KeyCode.Mouse0))
             stateMachine.ChangeState(player.eatingState);
 
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKey(KeyCode.S))
             stateMachine.ChangeState(player.downState);
     }
 }

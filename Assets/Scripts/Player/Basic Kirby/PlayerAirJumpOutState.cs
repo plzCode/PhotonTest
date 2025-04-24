@@ -22,6 +22,7 @@ public class PlayerAirJumpOutState : PlayerState
     public override void Exit()
     {
         base.Exit();
+        player.TimeBool = false;
     }
 
     public override void Update()

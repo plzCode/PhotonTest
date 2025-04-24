@@ -22,6 +22,8 @@ public class Player : MonoBehaviour
     public bool flipbool = true;
     public float LastMove;
 
+    public bool TimeBool = true;
+
     public GameObject dashEffect;
     public Transform dashEffectPos;
     public GameObject AirJumpOutEffect;

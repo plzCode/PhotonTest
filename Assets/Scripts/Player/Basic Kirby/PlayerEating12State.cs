@@ -1,3 +1,5 @@
+using Photon.Pun;
+using Photon.Realtime;
 using UnityEngine;
 using WebSocketSharp;
 
@@ -11,6 +13,7 @@ public class PlayerEating12State : PlayerState
     {
         base.Enter();
         player.AttackAdd(player.LastMove, player.EatEffect, player.EatEffectPos, player.transform);
+        //pView.RPC("AttackAdd", RpcTarget.All, player.LastMove,player.EatEffect.name, player.EatEffectPos, player.transform);
     }
 
     public override void Exit()

@@ -9,7 +9,7 @@ public class PlayerDownState : PlayerState
     public override void Enter()
     {
         base.Enter();
-        player.lineVelocity(0, 0);
+        player.lineVelocity(rb.linearVelocityX, 0);
     }
 
     public override void Exit()

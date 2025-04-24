@@ -3,8 +3,6 @@ using UnityEngine;
 
 public class PlayerAirJumpUpState : PlayerState
 {
-    public float AirOutCoolTime;
-    public bool AirOut;
 
     public PlayerAirJumpUpState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName) : base(_player, _stateMachine, _animBoolName)
     {
@@ -13,7 +11,6 @@ public class PlayerAirJumpUpState : PlayerState
     public override void Enter()
     {
         base.Enter();
-        AirOut = true;
         //player.lineVelocity(rb.linearVelocityX, player.JumpPower * 1.5f);
         pView.RPC("lineVelocity", RpcTarget.All, rb.linearVelocityX, player.JumpPower * 1.5f);
     }
@@ -27,19 +24,12 @@ public class PlayerAirJumpUpState : PlayerState
     {
         base.Update();
 
-        if (AirOut)
-        {
-            AirOutCoolTime += Time.deltaTime;
-        }
-
         if (rb.linearVelocityY < -0.1f)
             stateMachine.ChangeState(player.airJumpingState);
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) && AirOut && AirOutCoolTime > 0.3f)
+        if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             stateMachine.ChangeState(player.airJumpOutState);
-            AirOut = false;
-            AirOutCoolTime = 0;
         }
 
         if (xInput != 0)
