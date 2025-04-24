@@ -7,7 +7,7 @@ public class Ability_Eat : PlayerAbility
     public override void OnAbilityCopied(Player owner)
     {
         base.OnAbilityCopied(owner);
-        EatKirby = Resources.Load<RuntimeAnimatorController>("Test/Animal_Kirby");
+        EatKirby = Resources.Load<RuntimeAnimatorController>("Test/Eat_Kirby");
         owner.GetComponentInChildren<Animator>().runtimeAnimatorController = EatKirby;
         Debug.Log("Animal ability copied");
     }
