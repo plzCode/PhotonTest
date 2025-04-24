@@ -18,7 +18,8 @@ public class PlayerEating12State : PlayerState
     public override void Exit()
     {
         base.Exit();
-        player.AttackDestroy();
+        //player.AttackDestroy();
+        pView.RPC("AttackDestroy", RpcTarget.All);
     }
 
     public override void Update()

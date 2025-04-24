@@ -48,4 +48,5 @@ public class EatEffect : MonoBehaviour
                 Physics2D.IgnoreCollision(playerCol, enemyCol, false); //둘이 닿을땐 서로 부딪히지 않음
         }
     }
+
 }

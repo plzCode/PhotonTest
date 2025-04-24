@@ -248,10 +248,12 @@ public class Player : MonoBehaviour
         Attack.transform.SetParent(this.transform);
     }
 
-
+    [PunRPC]
     public void AttackDestroy()
     {
-        Destroy(Attack);
+        //Destroy(Attack);
+        PhotonNetwork.Destroy(Attack);
+        
     }
 
 
