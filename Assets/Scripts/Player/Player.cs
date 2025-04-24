@@ -231,18 +231,23 @@ public class Player : MonoBehaviour
 
 
 
-    public void AttackAdd(float _x, GameObject Effect, Transform EffecPos, Transform parentTransform) //자식 객체로 소환 및 다른 스크립트에서 프리펩 삭제 가능하게
+    [PunRPC]
+    public void AttackAdd(float _x, string Effect, Vector3 EffecPos) //자식 객체로 소환 및 다른 스크립트에서 프리펩 삭제 가능하게
     {
         if (_x > 0)
         {
-            Attack = Instantiate(Effect, EffecPos.position, Quaternion.identity, parentTransform);
+            //Attack = Instantiate(Effect, EffecPos.position, Quaternion.identity, parentTransform);
+            Attack = PhotonNetwork.Instantiate("Player_Effect/" + Effect, EffecPos, Quaternion.identity);
         }
         else if (_x < 0) //왼쪽이면 좌우반전 소환
         {
-            Attack = Instantiate(Effect, EffecPos.position, Quaternion.Euler(0, 180, 0), parentTransform);
+            //Attack = Instantiate(Effect, EffecPos.position, Quaternion.Euler(0, 180, 0), parentTransform);
+            Attack = PhotonNetwork.Instantiate("Player_Effect/" + Effect, EffecPos, Quaternion.Euler(0, 180, 0));
         }
         Attack.GetComponent<EatEffect>().player = this;
+        Attack.transform.SetParent(this.transform);
     }
+
 
     public void AttackDestroy()
     {

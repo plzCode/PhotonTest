@@ -10,7 +10,7 @@ public class PlayerDamageState : PlayerState
     public override void Enter()
     {
         base.Enter();
-        pView.RPC("lineVelocity", RpcTarget.All, (player.EnemyAttackLastPos * player.MoveSpeed * 2f, 0)); //수평 이동
+        pView.RPC("lineVelocity", RpcTarget.All, (player.EnemyAttackLastPos * player.MoveSpeed * 2f), 0f); //수평 이동
         player.Flip();
     }
 
