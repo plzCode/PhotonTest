@@ -9,7 +9,7 @@ public class Monster_Spear : Enemy
     [Header("M02 원거리 공격 정보")]
     [SerializeField] public float throwDistance;
 
-    public Transform[] player;
+    
     #region States
     public Spear_IdleState idleState { get; private set; }
     public Spear_ThrowState throwState { get; private set; }
@@ -21,12 +21,12 @@ public class Monster_Spear : Enemy
     {
         base.Awake();
 
-        GameObject[] playerObjects = GameObject.FindGameObjectsWithTag("Player");
-        player = new Transform[playerObjects.Length];
-        for (int i = 0; i < playerObjects.Length; i++)
-        {
-            player[i] = playerObjects[i].transform;
-        }
+        //GameObject[] playerObjects = GameObject.FindGameObjectsWithTag("Player");
+        //player = new Transform[playerObjects.Length];
+        //for (int i = 0; i < playerObjects.Length; i++)
+        //{
+        //    player[i] = playerObjects[i].transform;
+        //}
 
 
         idleState = new Spear_IdleState(this, stateMachine, "Idle", this);
@@ -67,23 +67,8 @@ public class Monster_Spear : Enemy
         Instantiate(spearPrefab, transform.position, Quaternion.identity);
     }
 
-    public IEnumerator delayFindPlayer()
-    {
-        yield return new WaitForSeconds(3f);
+    
 
-        GameObject[] playerObjects = GameObject.FindGameObjectsWithTag("Player");
-        player = new Transform[playerObjects.Length];
-        for (int i = 0; i < playerObjects.Length; i++)
-        {
-            player[i] = playerObjects[i].transform;
-        }
-
-        
-    }
-
-    public void startCoru()
-    {
-        StartCoroutine(delayFindPlayer());
-    }
+    
 
 }

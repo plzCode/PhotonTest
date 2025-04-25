@@ -30,24 +30,6 @@ public class Spear_GroundedState : EnemyState
 
     }
 
-    protected Transform GetClosestPlayer()
-    {
-        Transform closestPlayer = null;
-        float shortestDistance = Mathf.Infinity;
-
-        foreach (Transform p in enemy.player)
-        {
-            if (p == null) continue;
-
-            float distance = Vector3.Distance(enemy.transform.position, p.position);
-            if (distance < shortestDistance)
-            {
-                shortestDistance = distance;
-                closestPlayer = p;
-            }
-        }
-
-        return closestPlayer;
-    }
+    
 
 }
