@@ -37,6 +37,6 @@ public class PlayerGroundState : PlayerState
         }
 
         if (Input.GetKeyDown(KeyCode.Mouse0))
-            stateMachine.ChangeState(player.eatingState12);
+            stateMachine.ChangeState(player.eating12State);
     }
 }

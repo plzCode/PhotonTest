@@ -11,8 +11,8 @@ public class PlayerEating12State : PlayerState
     public override void Enter()
     {
         base.Enter();
-        //player.AttackAdd(player.LastMove, player.EatEffect, player.EatEffectPos, player.transform);
-        pView.RPC("AttackAdd", RpcTarget.All, player.LastMove, player.EatEffect.name, player.EatEffectPos.position);
+        //player.AttackAdd(player.LastMove, player.EatEffect1, player.EatEffectPos, player.transform);
+        pView.RPC("AttackAdd", RpcTarget.All, player.LastMove, player.EatEffect1.name, player.EatEffectPos.position);
     }
 
     public override void Exit()

@@ -1,0 +1,4523 @@
+fileFormatVersion: 2
+guid: 660adeaa25770ad419821c2c378f1bac
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6685157757475807162
+    second: Kirby Eat_2 221x131_0
+  - first:
+      213: -6045882637004222289
+    second: Kirby Eat_2 221x131_1
+  - first:
+      213: 6435009139090115644
+    second: Kirby Eat_2 221x131_2
+  - first:
+      213: 4834947346819611596
+    second: Kirby Eat_2 221x131_3
+  - first:
+      213: -7397166129203589593
+    second: Kirby Eat_2 221x131_4
+  - first:
+      213: -3012960629113663998
+    second: Kirby Eat_2 221x131_5
+  - first:
+      213: 4731730130074143109
+    second: Kirby Eat_2 221x131_6
+  - first:
+      213: -8712720487231699457
+    second: Kirby Eat_2 221x131_7
+  - first:
+      213: -2200233063050811093
+    second: Kirby Eat_2 221x131_8
+  - first:
+      213: -520214599782330145
+    second: Kirby Eat_2 221x131_9
+  - first:
+      213: 8943070842216842271
+    second: Kirby Eat_2 221x131_10
+  - first:
+      213: -6628218510030447365
+    second: Kirby Eat_2 221x131_11
+  - first:
+      213: -4802880059093630771
+    second: Kirby Eat_2 221x131_12
+  - first:
+      213: -3137657124398149357
+    second: Kirby Eat_2 221x131_13
+  - first:
+      213: 2039343979730030416
+    second: Kirby Eat_2 221x131_14
+  - first:
+      213: -2406369081811998063
+    second: Kirby Eat_2 221x131_15
+  - first:
+      213: -4102912817995666504
+    second: Kirby Eat_2 221x131_16
+  - first:
+      213: -7386850450977531705
+    second: Kirby Eat_2 221x131_17
+  - first:
+      213: 2808271570453460696
+    second: Kirby Eat_2 221x131_18
+  - first:
+      213: 1039203664001198005
+    second: Kirby Eat_2 221x131_19
+  - first:
+      213: -2803145338104878477
+    second: Kirby Eat_2 221x131_20
+  - first:
+      213: 85056415631108513
+    second: Kirby Eat_2 221x131_21
+  - first:
+      213: -5217503760949202011
+    second: Kirby Eat_2 221x131_22
+  - first:
+      213: 239670046922069178
+    second: Kirby Eat_2 221x131_23
+  - first:
+      213: -3823366226630300110
+    second: Kirby Eat_2 221x131_24
+  - first:
+      213: 3671600923832496621
+    second: Kirby Eat_2 221x131_25
+  - first:
+      213: 6984848315555634813
+    second: Kirby Eat_2 221x131_26
+  - first:
+      213: -1116027124184960941
+    second: Kirby Eat_2 221x131_27
+  - first:
+      213: -4302847544721731413
+    second: Kirby Eat_2 221x131_28
+  - first:
+      213: -5247206042209446914
+    second: Kirby Eat_2 221x131_29
+  - first:
+      213: 2829882737786513286
+    second: Kirby Eat_2 221x131_30
+  - first:
+      213: -2439288852501023208
+    second: Kirby Eat_2 221x131_31
+  - first:
+      213: 8611541401411948554
+    second: Kirby Eat_2 221x131_32
+  - first:
+      213: 8853146418847742843
+    second: Kirby Eat_2 221x131_33
+  - first:
+      213: 233284178200730758
+    second: Kirby Eat_2 221x131_34
+  - first:
+      213: 1706073144309970444
+    second: Kirby Eat_2 221x131_35
+  - first:
+      213: 7293616433415381758
+    second: Kirby Eat_2 221x131_36
+  - first:
+      213: -495021928012782874
+    second: Kirby Eat_2 221x131_37
+  - first:
+      213: 1194045448839640568
+    second: Kirby Eat_2 221x131_38
+  - first:
+      213: -7084574111520361442
+    second: Kirby Eat_2 221x131_39
+  - first:
+      213: 4554333381819103444
+    second: Kirby Eat_2 221x131_40
+  - first:
+      213: -5345662592294043973
+    second: Kirby Eat_2 221x131_41
+  - first:
+      213: -6670744770160107608
+    second: Kirby Eat_2 221x131_42
+  - first:
+      213: 67865342742917646
+    second: Kirby Eat_2 221x131_43
+  - first:
+      213: -3138993099125056652
+    second: Kirby Eat_2 221x131_44
+  - first:
+      213: -6996326077210179701
+    second: Kirby Eat_2 221x131_45
+  - first:
+      213: -4300201264481727680
+    second: Kirby Eat_2 221x131_46
+  - first:
+      213: 3545777281148344586
+    second: Kirby Eat_2 221x131_47
+  - first:
+      213: 8966905350318385440
+    second: Kirby Eat_2 221x131_48
+  - first:
+      213: -4479457098767715702
+    second: Kirby Eat_2 221x131_49
+  - first:
+      213: 4379075956954677510
+    second: Kirby Eat_2 221x131_50
+  - first:
+      213: -804482993428026495
+    second: Kirby Eat_2 221x131_51
+  - first:
+      213: -1757645872330576493
+    second: Kirby Eat_2 221x131_52
+  - first:
+      213: -2845652462774265357
+    second: Kirby Eat_2 221x131_53
+  - first:
+      213: -2423970608494643003
+    second: Kirby Eat_2 221x131_54
+  - first:
+      213: -2179187492979757453
+    second: Kirby Eat_2 221x131_55
+  - first:
+      213: -7608698475537697236
+    second: Kirby Eat_2 221x131_56
+  - first:
+      213: -6248067276951233830
+    second: Kirby Eat_2 221x131_57
+  - first:
+      213: 5322499944821539787
+    second: Kirby Eat_2 221x131_58
+  - first:
+      213: -3672921014868772895
+    second: Kirby Eat_2 221x131_59
+  - first:
+      213: 2276708619010461279
+    second: Kirby Eat_2 221x131_60
+  - first:
+      213: 3278047582163725049
+    second: Kirby Eat_2 221x131_61
+  - first:
+      213: 5154378697005304918
+    second: Kirby Eat_2 221x131_62
+  - first:
+      213: -3253606325771301846
+    second: Kirby Eat_2 221x131_63
+  - first:
+      213: 3914430422029544206
+    second: Kirby Eat_2 221x131_64
+  - first:
+      213: 7247927850357095507
+    second: Kirby Eat_2 221x131_65
+  - first:
+      213: -5355399283967501121
+    second: Kirby Eat_2 221x131_66
+  - first:
+      213: -3674488890759530292
+    second: Kirby Eat_2 221x131_67
+  - first:
+      213: -2652400938638561535
+    second: Kirby Eat_2 221x131_68
+  - first:
+      213: 5276514635060192516
+    second: Kirby Eat_2 221x131_69
+  - first:
+      213: 2053465119245355854
+    second: Kirby Eat_2 221x131_70
+  - first:
+      213: -2820613351854865977
+    second: Kirby Eat_2 221x131_71
+  - first:
+      213: 67794164132690541
+    second: Kirby Eat_2 221x131_72
+  - first:
+      213: 5217232133677251217
+    second: Kirby Eat_2 221x131_73
+  - first:
+      213: -2759716235663401923
+    second: Kirby Eat_2 221x131_74
+  - first:
+      213: -2941442091572239286
+    second: Kirby Eat_2 221x131_75
+  - first:
+      213: 1492612417838533314
+    second: Kirby Eat_2 221x131_76
+  - first:
+      213: -6301720545066177840
+    second: Kirby Eat_2 221x131_77
+  - first:
+      213: 1325060943476606166
+    second: Kirby Eat_2 221x131_78
+  - first:
+      213: 6206050446621683660
+    second: Kirby Eat_2 221x131_79
+  - first:
+      213: -2382816812459013463
+    second: Kirby Eat_2 221x131_80
+  - first:
+      213: -704876643484547522
+    second: Kirby Eat_2 221x131_81
+  - first:
+      213: 7273865618477875669
+    second: Kirby Eat_2 221x131_82
+  - first:
+      213: -552322154347718087
+    second: Kirby Eat_2 221x131_83
+  - first:
+      213: -1954309661991919545
+    second: Kirby Eat_2 221x131_84
+  - first:
+      213: 3194583423619227018
+    second: Kirby Eat_2 221x131_85
+  - first:
+      213: -1121634712310595640
+    second: Kirby Eat_2 221x131_86
+  - first:
+      213: -4580534480798849280
+    second: Kirby Eat_2 221x131_87
+  - first:
+      213: -1629723394512253010
+    second: Kirby Eat_2 221x131_88
+  - first:
+      213: -1589134256207561704
+    second: Kirby Eat_2 221x131_89
+  - first:
+      213: -5169218238505036026
+    second: Kirby Eat_2 221x131_90
+  - first:
+      213: -6499421854369261740
+    second: Kirby Eat_2 221x131_91
+  - first:
+      213: -2083744637721633923
+    second: Kirby Eat_2 221x131_92
+  - first:
+      213: 3786602121850624555
+    second: Kirby Eat_2 221x131_93
+  - first:
+      213: 869992272882314777
+    second: Kirby Eat_2 221x131_94
+  - first:
+      213: -251082108929416051
+    second: Kirby Eat_2 221x131_95
+  - first:
+      213: -5320889791111972561
+    second: Kirby Eat_2 221x131_96
+  - first:
+      213: 73861415822122817
+    second: Kirby Eat_2 221x131_97
+  - first:
+      213: -477102652507917776
+    second: Kirby Eat_2 221x131_98
+  - first:
+      213: -256389346357226976
+    second: Kirby Eat_2 221x131_99
+  - first:
+      213: 1398405072272322419
+    second: Kirby Eat_2 221x131_100
+  - first:
+      213: -1418816407108815667
+    second: Kirby Eat_2 221x131_101
+  - first:
+      213: 2069894778921026935
+    second: Kirby Eat_2 221x131_102
+  - first:
+      213: -3478570569005953785
+    second: Kirby Eat_2 221x131_103
+  - first:
+      213: 7739349192871140901
+    second: Kirby Eat_2 221x131_104
+  - first:
+      213: -786757418545372032
+    second: Kirby Eat_2 221x131_105
+  - first:
+      213: -2041504558791028898
+    second: Kirby Eat_2 221x131_106
+  - first:
+      213: -7728424303775519729
+    second: Kirby Eat_2 221x131_107
+  - first:
+      213: -7724226249535429900
+    second: Kirby Eat_2 221x131_108
+  - first:
+      213: 1276706608408920043
+    second: Kirby Eat_2 221x131_109
+  - first:
+      213: 4518157823756077805
+    second: Kirby Eat_2 221x131_110
+  - first:
+      213: 7621224178385098522
+    second: Kirby Eat_2 221x131_111
+  - first:
+      213: -8691595812980407663
+    second: Kirby Eat_2 221x131_112
+  - first:
+      213: 5824589402696948092
+    second: Kirby Eat_2 221x131_113
+  - first:
+      213: 166957299984612269
+    second: Kirby Eat_2 221x131_114
+  - first:
+      213: 4132761891783756663
+    second: Kirby Eat_2 221x131_115
+  - first:
+      213: 7376692814974947412
+    second: Kirby Eat_2 221x131_116
+  - first:
+      213: -6077888692857047514
+    second: Kirby Eat_2 221x131_117
+  - first:
+      213: 6523737632567174951
+    second: Kirby Eat_2 221x131_118
+  - first:
+      213: 2670560705096820818
+    second: Kirby Eat_2 221x131_119
+  - first:
+      213: -8474000145782662956
+    second: Kirby Eat_2 221x131_120
+  - first:
+      213: -5487120028766912893
+    second: Kirby Eat_2 221x131_121
+  - first:
+      213: 458473704040537652
+    second: Kirby Eat_2 221x131_122
+  - first:
+      213: -7114116023568034758
+    second: Kirby Eat_2 221x131_123
+  - first:
+      213: 5263313622501080905
+    second: Kirby Eat_2 221x131_124
+  - first:
+      213: 2252829734502589660
+    second: Kirby Eat_2 221x131_125
+  - first:
+      213: -2473638409486354321
+    second: Kirby Eat_2 221x131_126
+  - first:
+      213: 5830608040857271216
+    second: Kirby Eat_2 221x131_127
+  - first:
+      213: 302678233156051391
+    second: Kirby Eat_2 221x131_128
+  - first:
+      213: 3334177839185714133
+    second: Kirby Eat_2 221x131_129
+  - first:
+      213: 5034177335091496986
+    second: Kirby Eat_2 221x131_130
+  - first:
+      213: 4474521773422249539
+    second: Kirby Eat_2 221x131_131
+  - first:
+      213: 4455919854583949174
+    second: Kirby Eat_2 221x131_132
+  - first:
+      213: 6722839240010125845
+    second: Kirby Eat_2 221x131_133
+  - first:
+      213: 1799417346440350111
+    second: Kirby Eat_2 221x131_134
+  - first:
+      213: -7583366787256889043
+    second: Kirby Eat_2 221x131_135
+  - first:
+      213: 5462674536710019227
+    second: Kirby Eat_2 221x131_136
+  - first:
+      213: -7763455304099350629
+    second: Kirby Eat_2 221x131_137
+  - first:
+      213: -160203567299289605
+    second: Kirby Eat_2 221x131_138
+  - first:
+      213: 3892814787177335236
+    second: Kirby Eat_2 221x131_139
+  - first:
+      213: 7829261208653781757
+    second: Kirby Eat_2 221x131_140
+  - first:
+      213: -538836372426063073
+    second: Kirby Eat_2 221x131_141
+  - first:
+      213: -7080722539210393226
+    second: Kirby Eat_2 221x131_142
+  - first:
+      213: 7552504735729897621
+    second: Kirby Eat_2 221x131_143
+  - first:
+      213: -4614529683521462014
+    second: Kirby Eat_2 221x131_144
+  - first:
+      213: -2415596115624469134
+    second: Kirby Eat_2 221x131_145
+  - first:
+      213: 6585916358454588440
+    second: Kirby Eat_2 221x131_146
+  - first:
+      213: 8295824244381110083
+    second: Kirby Eat_2 221x131_147
+  - first:
+      213: -5439617426348358981
+    second: Kirby Eat_2 221x131_148
+  - first:
+      213: -6923825648493701388
+    second: Kirby Eat_2 221x131_149
+  - first:
+      213: -82921554260637508
+    second: Kirby Eat_2 221x131_150
+  - first:
+      213: 7468387487409674432
+    second: Kirby Eat_2 221x131_151
+  - first:
+      213: 9140758070254609341
+    second: Kirby Eat_2 221x131_152
+  - first:
+      213: 7936745148777394517
+    second: Kirby Eat_2 221x131_153
+  - first:
+      213: -5414260718999747214
+    second: Kirby Eat_2 221x131_154
+  - first:
+      213: 8076073976603977106
+    second: Kirby Eat_2 221x131_155
+  - first:
+      213: 1451071636538289208
+    second: Kirby Eat_2 221x131_156
+  - first:
+      213: -6878926058384576489
+    second: Kirby Eat_2 221x131_157
+  - first:
+      213: 9174616620877505343
+    second: Kirby Eat_2 221x131_158
+  - first:
+      213: -2140251752444390055
+    second: Kirby Eat_2 221x131_159
+  - first:
+      213: -1580036449167108628
+    second: Kirby Eat_2 221x131_160
+  - first:
+      213: 8865674406174968821
+    second: Kirby Eat_2 221x131_161
+  - first:
+      213: 3730777972828457374
+    second: Kirby Eat_2 221x131_162
+  - first:
+      213: -5032977884701534043
+    second: Kirby Eat_2 221x131_163
+  - first:
+      213: 9211853360179727891
+    second: Kirby Eat_2 221x131_164
+  - first:
+      213: 5942228112976015746
+    second: Kirby Eat_2 221x131_165
+  - first:
+      213: 4263991560272879854
+    second: Kirby Eat_2 221x131_166
+  - first:
+      213: -5790195542949257264
+    second: Kirby Eat_2 221x131_167
+  - first:
+      213: 2788232936048682887
+    second: Kirby Eat_2 221x131_168
+  - first:
+      213: -6573279661566394460
+    second: Kirby Eat_2 221x131_169
+  - first:
+      213: 3282750516957227937
+    second: Kirby Eat_2 221x131_170
+  - first:
+      213: -3408797459289440840
+    second: Kirby Eat_2 221x131_171
+  - first:
+      213: 3099486143415196412
+    second: Kirby Eat_2 221x131_172
+  - first:
+      213: -6199230693524197507
+    second: Kirby Eat_2 221x131_173
+  - first:
+      213: -994961254286705040
+    second: Kirby Eat_2 221x131_174
+  - first:
+      213: -2132227139309207857
+    second: Kirby Eat_2 221x131_175
+  - first:
+      213: 888299923638667526
+    second: Kirby Eat_2 221x131_176
+  - first:
+      213: 4119473948950621272
+    second: Kirby Eat_2 221x131_177
+  - first:
+      213: 6766631989335852268
+    second: Kirby Eat_2 221x131_178
+  - first:
+      213: -6936994798980044629
+    second: Kirby Eat_2 221x131_179
+  - first:
+      213: -8329638119409403031
+    second: Kirby Eat_2 221x131_180
+  - first:
+      213: -7438020439061807630
+    second: Kirby Eat_2 221x131_181
+  - first:
+      213: -2384427602469427510
+    second: Kirby Eat_2 221x131_182
+  - first:
+      213: 5500249258357540435
+    second: Kirby Eat_2 221x131_183
+  - first:
+      213: -4766382536770592476
+    second: Kirby Eat_2 221x131_184
+  - first:
+      213: 85480978212338132
+    second: Kirby Eat_2 221x131_185
+  - first:
+      213: 3889477629998097214
+    second: Kirby Eat_2 221x131_186
+  - first:
+      213: 1033874283536480714
+    second: Kirby Eat_2 221x131_187
+  - first:
+      213: -4630111309974761899
+    second: Kirby Eat_2 221x131_188
+  - first:
+      213: -4014925779426600351
+    second: Kirby Eat_2 221x131_189
+  - first:
+      213: -5042494918656271789
+    second: Kirby Eat_2 221x131_190
+  - first:
+      213: 8682949480059023747
+    second: Kirby Eat_2 221x131_191
+  - first:
+      213: 6785156705352506140
+    second: Kirby Eat_2 221x131_192
+  - first:
+      213: -2544344516677390748
+    second: Kirby Eat_2 221x131_193
+  - first:
+      213: -5556530067467339262
+    second: Kirby Eat_2 221x131_194
+  - first:
+      213: 2593453231242255063
+    second: Kirby Eat_2 221x131_195
+  - first:
+      213: -6019340828366560673
+    second: Kirby Eat_2 221x131_196
+  - first:
+      213: 6517465735063447890
+    second: Kirby Eat_2 221x131_197
+  - first:
+      213: 2244509664718664543
+    second: Kirby Eat_2 221x131_198
+  - first:
+      213: 7496433789967811632
+    second: Kirby Eat_2 221x131_199
+  - first:
+      213: -3611296972416392649
+    second: Kirby Eat_2 221x131_200
+  - first:
+      213: 2308454160759628030
+    second: Kirby Eat_2 221x131_201
+  - first:
+      213: 1066434583906386120
+    second: Kirby Eat_2 221x131_202
+  - first:
+      213: -4045220135113445606
+    second: Kirby Eat_2 221x131_203
+  - first:
+      213: -5553336859729466947
+    second: Kirby Eat_2 221x131_204
+  - first:
+      213: 7708733051387953291
+    second: Kirby Eat_2 221x131_205
+  - first:
+      213: 209415346394827426
+    second: Kirby Eat_2 221x131_206
+  - first:
+      213: -3399357213288812570
+    second: Kirby Eat_2 221x131_207
+  - first:
+      213: -8956713908763526286
+    second: Kirby Eat_2 221x131_208
+  - first:
+      213: -7287576243595960521
+    second: Kirby Eat_2 221x131_209
+  - first:
+      213: -3426745055359723544
+    second: Kirby Eat_2 221x131_210
+  - first:
+      213: -8667335385929094277
+    second: Kirby Eat_2 221x131_211
+  - first:
+      213: 297940704259627288
+    second: Kirby Eat_2 221x131_212
+  - first:
+      213: -1407402799153909054
+    second: Kirby Eat_2 221x131_213
+  - first:
+      213: 7107914815904343455
+    second: Kirby Eat_2 221x131_214
+  - first:
+      213: -6873437009455165714
+    second: Kirby Eat_2 221x131_215
+  - first:
+      213: 1869879395691094391
+    second: Kirby Eat_2 221x131_216
+  - first:
+      213: -921895632895770979
+    second: Kirby Eat_2 221x131_217
+  - first:
+      213: -9177915247011591637
+    second: Kirby Eat_2 221x131_218
+  - first:
+      213: -7498892528045033144
+    second: Kirby Eat_2 221x131_219
+  - first:
+      213: -8576490549097960947
+    second: Kirby Eat_2 221x131_220
+  - first:
+      213: 5532043535092474839
+    second: Kirby Eat_2 221x131_221
+  - first:
+      213: 1589303416013109001
+    second: Kirby Eat_2 221x131_222
+  - first:
+      213: 138072667665483744
+    second: Kirby Eat_2 221x131_223
+  - first:
+      213: -1923322133736425379
+    second: Kirby Eat_2 221x131_224
+  - first:
+      213: 8273460399835054276
+    second: Kirby Eat_2 221x131_225
+  - first:
+      213: -6135654769280513484
+    second: Kirby Eat_2 221x131_226
+  - first:
+      213: 8985907679373371904
+    second: Kirby Eat_2 221x131_227
+  - first:
+      213: 9008828893841693029
+    second: Kirby Eat_2 221x131_228
+  - first:
+      213: 1116656191338136456
+    second: Kirby Eat_2 221x131_229
+  - first:
+      213: -7636935485995459576
+    second: Kirby Eat_2 221x131_230
+  - first:
+      213: -48397807459000196
+    second: Kirby Eat_2 221x131_231
+  - first:
+      213: -5651627376560672889
+    second: Kirby Eat_2 221x131_232
+  - first:
+      213: -2499432596166102174
+    second: Kirby Eat_2 221x131_233
+  - first:
+      213: -2096259011743776620
+    second: Kirby Eat_2 221x131_234
+  - first:
+      213: -1836805655120636380
+    second: Kirby Eat_2 221x131_235
+  - first:
+      213: 8894062895050317980
+    second: Kirby Eat_2 221x131_236
+  - first:
+      213: 7131462856413906425
+    second: Kirby Eat_2 221x131_237
+  - first:
+      213: -6709051809817788151
+    second: Kirby Eat_2 221x131_238
+  - first:
+      213: -6007596647856659295
+    second: Kirby Eat_2 221x131_239
+  - first:
+      213: -6960634974025672294
+    second: Kirby Eat_2 221x131_240
+  - first:
+      213: -2574321410647742852
+    second: Kirby Eat_2 221x131_241
+  - first:
+      213: 8989836794985866829
+    second: Kirby Eat_2 221x131_242
+  - first:
+      213: 3473079041600649716
+    second: Kirby Eat_2 221x131_243
+  - first:
+      213: -5007816684748317534
+    second: Kirby Eat_2 221x131_244
+  - first:
+      213: -4720437485760796741
+    second: Kirby Eat_2 221x131_245
+  - first:
+      213: -2016932668355748257
+    second: Kirby Eat_2 221x131_246
+  - first:
+      213: 2603136803287351988
+    second: Kirby Eat_2 221x131_247
+  - first:
+      213: -3777102544141152224
+    second: Kirby Eat_2 221x131_248
+  - first:
+      213: 1480763132619510257
+    second: Kirby Eat_2 221x131_249
+  - first:
+      213: -8903351901330683968
+    second: Kirby Eat_2 221x131_250
+  - first:
+      213: -2842901707305318361
+    second: Kirby Eat_2 221x131_251
+  - first:
+      213: 4577930416716417956
+    second: Kirby Eat_2 221x131_252
+  - first:
+      213: -652622148251466612
+    second: Kirby Eat_2 221x131_253
+  - first:
+      213: 9222366976132265216
+    second: Kirby Eat_2 221x131_254
+  - first:
+      213: 6725785482302779462
+    second: Kirby Eat_2 221x131_255
+  - first:
+      213: -3947089597930898562
+    second: Kirby Eat_2 221x131_256
+  - first:
+      213: -3268550460428110059
+    second: Kirby Eat_2 221x131_257
+  - first:
+      213: 2441093302497563144
+    second: Kirby Eat_2 221x131_258
+  - first:
+      213: -2778529494426050660
+    second: Kirby Eat_2 221x131_259
+  - first:
+      213: 5075776298638196539
+    second: Kirby Eat_2 221x131_260
+  - first:
+      213: 16435337065725809
+    second: Kirby Eat_2 221x131_261
+  - first:
+      213: -7094620341118425770
+    second: Kirby Eat_2 221x131_262
+  - first:
+      213: -5344198391004579559
+    second: Kirby Eat_2 221x131_263
+  - first:
+      213: 6438640773859683845
+    second: Kirby Eat_2 221x131_264
+  - first:
+      213: 5826524652397903255
+    second: Kirby Eat_2 221x131_265
+  - first:
+      213: 3683657124391281668
+    second: Kirby Eat_2 221x131_266
+  - first:
+      213: -8565803399380962954
+    second: Kirby Eat_2 221x131_267
+  - first:
+      213: -2853992305410332743
+    second: Kirby Eat_2 221x131_268
+  - first:
+      213: 2991294773961663557
+    second: Kirby Eat_2 221x131_269
+  - first:
+      213: -5729043076473269949
+    second: Kirby Eat_2 221x131_270
+  - first:
+      213: -3242299480930989454
+    second: Kirby Eat_2 221x131_271
+  - first:
+      213: -898172871709131096
+    second: Kirby Eat_2 221x131_272
+  - first:
+      213: 3586556072664897313
+    second: Kirby Eat_2 221x131_273
+  - first:
+      213: 4356465254850881148
+    second: Kirby Eat_2 221x131_274
+  - first:
+      213: 1192213930154625372
+    second: Kirby Eat_2 221x131_275
+  - first:
+      213: -2334257859774764063
+    second: Kirby Eat_2 221x131_276
+  - first:
+      213: 1183998751737680019
+    second: Kirby Eat_2 221x131_277
+  - first:
+      213: 7975405556431511246
+    second: Kirby Eat_2 221x131_278
+  - first:
+      213: 3196507095383668763
+    second: Kirby Eat_2 221x131_279
+  - first:
+      213: -2918891553144139133
+    second: Kirby Eat_2 221x131_280
+  - first:
+      213: 17507446817967075
+    second: Kirby Eat_2 221x131_281
+  - first:
+      213: -6758807634843653111
+    second: Kirby Eat_2 221x131_282
+  - first:
+      213: -8570349280828860907
+    second: Kirby Eat_2 221x131_283
+  - first:
+      213: 6547380075921459205
+    second: Kirby Eat_2 221x131_284
+  - first:
+      213: -3345520678235599697
+    second: Kirby Eat_2 221x131_285
+  - first:
+      213: 8693824497129305374
+    second: Kirby Eat_2 221x131_286
+  - first:
+      213: -6951790776132867892
+    second: Kirby Eat_2 221x131_287
+  - first:
+      213: -6474998686548482735
+    second: Kirby Eat_2 221x131_288
+  - first:
+      213: 1565112496685123879
+    second: Kirby Eat_2 221x131_289
+  - first:
+      213: 6697390222219069844
+    second: Kirby Eat_2 221x131_290
+  - first:
+      213: -214158968884870523
+    second: Kirby Eat_2 221x131_291
+  - first:
+      213: -7893203686498993158
+    second: Kirby Eat_2 221x131_292
+  - first:
+      213: -6087200845544785881
+    second: Kirby Eat_2 221x131_293
+  - first:
+      213: 7788678597442572177
+    second: Kirby Eat_2 221x131_294
+  - first:
+      213: -5204139488833140530
+    second: Kirby Eat_2 221x131_295
+  - first:
+      213: -6011669775517984008
+    second: Kirby Eat_2 221x131_296
+  - first:
+      213: 8699084273226268245
+    second: Kirby Eat_2 221x131_297
+  - first:
+      213: 6125265760620924052
+    second: Kirby Eat_2 221x131_298
+  - first:
+      213: -1410309866016425914
+    second: Kirby Eat_2 221x131_299
+  - first:
+      213: 1536632620761674964
+    second: Kirby Eat_2 221x131_300
+  - first:
+      213: 4121428544203530736
+    second: Kirby Eat_2 221x131_301
+  - first:
+      213: -5833241311019985424
+    second: Kirby Eat_2 221x131_302
+  - first:
+      213: -4089875695527286496
+    second: Kirby Eat_2 221x131_303
+  - first:
+      213: -1158114381690038345
+    second: Kirby Eat_2 221x131_304
+  - first:
+      213: 6753472852291928177
+    second: Kirby Eat_2 221x131_305
+  - first:
+      213: -4228867333255734882
+    second: Kirby Eat_2 221x131_306
+  - first:
+      213: 4515368461197317386
+    second: Kirby Eat_2 221x131_307
+  - first:
+      213: 6434058785877980481
+    second: Kirby Eat_2 221x131_308
+  - first:
+      213: 6279918736392610131
+    second: Kirby Eat_2 221x131_309
+  - first:
+      213: 7603856848688951593
+    second: Kirby Eat_2 221x131_310
+  - first:
+      213: 3965581694519080227
+    second: Kirby Eat_2 221x131_311
+  - first:
+      213: 7277081537441869342
+    second: Kirby Eat_2 221x131_312
+  - first:
+      213: 307984731522997854
+    second: Kirby Eat_2 221x131_313
+  - first:
+      213: 6300694383078278961
+    second: Kirby Eat_2 221x131_314
+  - first:
+      213: 4291971584966116656
+    second: Kirby Eat_2 221x131_315
+  - first:
+      213: -8580447068344626734
+    second: Kirby Eat_2 221x131_316
+  - first:
+      213: 3612098004198781329
+    second: Kirby Eat_2 221x131_317
+  - first:
+      213: 109518234361947892
+    second: Kirby Eat_2 221x131_318
+  - first:
+      213: 8742212628914800713
+    second: Kirby Eat_2 221x131_319
+  - first:
+      213: 1063198565390425742
+    second: Kirby Eat_2 221x131_320
+  - first:
+      213: 6574691628410029474
+    second: Kirby Eat_2 221x131_321
+  - first:
+      213: 1361512800273176244
+    second: Kirby Eat_2 221x131_322
+  - first:
+      213: -4176146282427326564
+    second: Kirby Eat_2 221x131_323
+  - first:
+      213: 3366761524897030195
+    second: Kirby Eat_2 221x131_324
+  - first:
+      213: 8205836578727469753
+    second: Kirby Eat_2 221x131_325
+  - first:
+      213: 3875537181605767966
+    second: Kirby Eat_2 221x131_326
+  - first:
+      213: 1502323355033355597
+    second: Kirby Eat_2 221x131_327
+  - first:
+      213: -4402948284051479873
+    second: Kirby Eat_2 221x131_328
+  - first:
+      213: -1989662639369322432
+    second: Kirby Eat_2 221x131_329
+  - first:
+      213: 9008879268711065599
+    second: Kirby Eat_2 221x131_330
+  - first:
+      213: 8046552172418357298
+    second: Kirby Eat_2 221x131_331
+  - first:
+      213: 7854293184514011755
+    second: Kirby Eat_2 221x131_332
+  - first:
+      213: -4772958998686338544
+    second: Kirby Eat_2 221x131_333
+  - first:
+      213: 728841733752826404
+    second: Kirby Eat_2 221x131_334
+  - first:
+      213: -7781006578611841675
+    second: Kirby Eat_2 221x131_335
+  - first:
+      213: 7789597073622438747
+    second: Kirby Eat_2 221x131_336
+  - first:
+      213: -8752724474595767614
+    second: Kirby Eat_2 221x131_337
+  - first:
+      213: 4153433311302626901
+    second: Kirby Eat_2 221x131_338
+  - first:
+      213: 5817886878832035007
+    second: Kirby Eat_2 221x131_339
+  - first:
+      213: 855082217713947235
+    second: Kirby Eat_2 221x131_340
+  - first:
+      213: -964054095472699990
+    second: Kirby Eat_2 221x131_341
+  - first:
+      213: -7330943062275325015
+    second: Kirby Eat_2 221x131_342
+  - first:
+      213: -5729317425601249618
+    second: Kirby Eat_2 221x131_343
+  - first:
+      213: -2395977997069982373
+    second: Kirby Eat_2 221x131_344
+  - first:
+      213: -5408815339744628593
+    second: Kirby Eat_2 221x131_345
+  - first:
+      213: -7008493122483961843
+    second: Kirby Eat_2 221x131_346
+  - first:
+      213: -6126199748070793482
+    second: Kirby Eat_2 221x131_347
+  - first:
+      213: -6171256431202566910
+    second: Kirby Eat_2 221x131_348
+  - first:
+      213: -5207404603409554301
+    second: Kirby Eat_2 221x131_349
+  - first:
+      213: 5878387719311298410
+    second: Kirby Eat_2 221x131_350
+  - first:
+      213: 6678841114428452418
+    second: Kirby Eat_2 221x131_351
+  - first:
+      213: 7349873706777755438
+    second: Kirby Eat_2 221x131_352
+  - first:
+      213: 7223994910266876626
+    second: Kirby Eat_2 221x131_353
+  - first:
+      213: 2735598981841834605
+    second: Kirby Eat_2 221x131_354
+  - first:
+      213: 7264043864939050681
+    second: Kirby Eat_2 221x131_355
+  - first:
+      213: 7442336202996285428
+    second: Kirby Eat_2 221x131_356
+  - first:
+      213: -5103668012896308252
+    second: Kirby Eat_2 221x131_357
+  - first:
+      213: 5520542576248532084
+    second: Kirby Eat_2 221x131_358
+  - first:
+      213: -6470970228819379746
+    second: Kirby Eat_2 221x131_359
+  - first:
+      213: -1052179198670023384
+    second: Kirby Eat_2 221x131_360
+  - first:
+      213: 5366249688150383573
+    second: Kirby Eat_2 221x131_361
+  - first:
+      213: 6150551480631113126
+    second: Kirby Eat_2 221x131_362
+  - first:
+      213: -3781980167773973654
+    second: Kirby Eat_2 221x131_363
+  - first:
+      213: -6452702340146655770
+    second: Kirby Eat_2 221x131_364
+  - first:
+      213: 1295872324201361631
+    second: Kirby Eat_2 221x131_365
+  - first:
+      213: 8883836778364876605
+    second: Kirby Eat_2 221x131_366
+  - first:
+      213: 6585909355856712616
+    second: Kirby Eat_2 221x131_367
+  - first:
+      213: 780764673764367834
+    second: Kirby Eat_2 221x131_368
+  - first:
+      213: -6197691009734167034
+    second: Kirby Eat_2 221x131_369
+  - first:
+      213: 667792519115021501
+    second: Kirby Eat_2 221x131_370
+  - first:
+      213: -1769908713281766051
+    second: Kirby Eat_2 221x131_371
+  - first:
+      213: 615881762728356534
+    second: Kirby Eat_2 221x131_372
+  - first:
+      213: -1513895010621020632
+    second: Kirby Eat_2 221x131_373
+  - first:
+      213: 84577977763797295
+    second: Kirby Eat_2 221x131_374
+  - first:
+      213: -8959092553431762571
+    second: Kirby Eat_2 221x131_375
+  - first:
+      213: 194302600540056553
+    second: Kirby Eat_2 221x131_376
+  - first:
+      213: 7038555260203263300
+    second: Kirby Eat_2 221x131_377
+  - first:
+      213: -3355651949382070646
+    second: Kirby Eat_2 221x131_378
+  - first:
+      213: -5268995362792593102
+    second: Kirby Eat_2 221x131_379
+  - first:
+      213: -4283825028451993327
+    second: Kirby Eat_2 221x131_380
+  - first:
+      213: -3000530269177186082
+    second: Kirby Eat_2 221x131_381
+  - first:
+      213: 391960399331647638
+    second: Kirby Eat_2 221x131_382
+  - first:
+      213: -740040829894694096
+    second: Kirby Eat_2 221x131_383
+  - first:
+      213: -4518895868288546505
+    second: Kirby Eat_2 221x131_384
+  - first:
+      213: 7896660449955837875
+    second: Kirby Eat_2 221x131_385
+  - first:
+      213: 6170874252535848113
+    second: Kirby Eat_2 221x131_386
+  - first:
+      213: 7625196895334575627
+    second: Kirby Eat_2 221x131_387
+  - first:
+      213: -4533182919085470770
+    second: Kirby Eat_2 221x131_388
+  - first:
+      213: 838521445547087056
+    second: Kirby Eat_2 221x131_389
+  - first:
+      213: -8532735424494617958
+    second: Kirby Eat_2 221x131_390
+  - first:
+      213: 4392357751378043803
+    second: Kirby Eat_2 221x131_391
+  - first:
+      213: 1180396784935713014
+    second: Kirby Eat_2 221x131_392
+  - first:
+      213: 3424608325845248923
+    second: Kirby Eat_2 221x131_393
+  - first:
+      213: 8092231197850867480
+    second: Kirby Eat_2 221x131_394
+  - first:
+      213: -5379879862025446268
+    second: Kirby Eat_2 221x131_395
+  - first:
+      213: 8640547010775044456
+    second: Kirby Eat_2 221x131_396
+  - first:
+      213: -4350902183260818550
+    second: Kirby Eat_2 221x131_397
+  - first:
+      213: -7836526554917635371
+    second: Kirby Eat_2 221x131_398
+  - first:
+      213: 9078227893880965313
+    second: Kirby Eat_2 221x131_399
+  - first:
+      213: -8821922457747860335
+    second: Kirby Eat_2 221x131_400
+  - first:
+      213: -7954912250863257613
+    second: Kirby Eat_2 221x131_401
+  - first:
+      213: 3939394983989340663
+    second: Kirby Eat_2 221x131_402
+  - first:
+      213: 7109112666329143827
+    second: Kirby Eat_2 221x131_403
+  - first:
+      213: -8116325615834876856
+    second: Kirby Eat_2 221x131_404
+  - first:
+      213: -5199872573816587081
+    second: Kirby Eat_2 221x131_405
+  - first:
+      213: 6501858509146291006
+    second: Kirby Eat_2 221x131_406
+  - first:
+      213: 293027500481737912
+    second: Kirby Eat_2 221x131_407
+  - first:
+      213: -7966398210321336238
+    second: Kirby Eat_2 221x131_408
+  - first:
+      213: -7186368320137224047
+    second: Kirby Eat_2 221x131_409
+  - first:
+      213: -4479022508475041750
+    second: Kirby Eat_2 221x131_410
+  - first:
+      213: 2539897582746937052
+    second: Kirby Eat_2 221x131_411
+  - first:
+      213: -5296817396069798610
+    second: Kirby Eat_2 221x131_412
+  - first:
+      213: -7992968242881138462
+    second: Kirby Eat_2 221x131_413
+  - first:
+      213: -7786964840953546638
+    second: Kirby Eat_2 221x131_414
+  - first:
+      213: -4181176087144150073
+    second: Kirby Eat_2 221x131_415
+  - first:
+      213: -4214833546370151084
+    second: Kirby Eat_2 221x131_416
+  - first:
+      213: -8864668164442286319
+    second: Kirby Eat_2 221x131_417
+  - first:
+      213: -1021755229041609654
+    second: Kirby Eat_2 221x131_418
+  - first:
+      213: -5441735611040640314
+    second: Kirby Eat_2 221x131_419
+  - first:
+      213: -4165860354819485398
+    second: Kirby Eat_2 221x131_420
+  - first:
+      213: 2553795935332620627
+    second: Kirby Eat_2 221x131_421
+  - first:
+      213: 1210810822888328411
+    second: Kirby Eat_2 221x131_422
+  - first:
+      213: -7633583035467503703
+    second: Kirby Eat_2 221x131_423
+  - first:
+      213: -3968241516489534970
+    second: Kirby Eat_2 221x131_424
+  - first:
+      213: -1096409647168003783
+    second: Kirby Eat_2 221x131_425
+  - first:
+      213: -6380524854875133825
+    second: Kirby Eat_2 221x131_426
+  - first:
+      213: 3455913530641242074
+    second: Kirby Eat_2 221x131_427
+  - first:
+      213: 1433153247564894908
+    second: Kirby Eat_2 221x131_428
+  - first:
+      213: -867844599706309339
+    second: Kirby Eat_2 221x131_429
+  - first:
+      213: -2552973552237678177
+    second: Kirby Eat_2 221x131_430
+  - first:
+      213: -2969180369443517598
+    second: Kirby Eat_2 221x131_431
+  - first:
+      213: 3741745081736880156
+    second: Kirby Eat_2 221x131_432
+  - first:
+      213: -756008972712394964
+    second: Kirby Eat_2 221x131_433
+  - first:
+      213: 7528958692791592286
+    second: Kirby Eat_2 221x131_434
+  - first:
+      213: 6072408113071477063
+    second: Kirby Eat_2 221x131_435
+  - first:
+      213: -1985429711344768629
+    second: Kirby Eat_2 221x131_436
+  - first:
+      213: -3585152283450465587
+    second: Kirby Eat_2 221x131_437
+  - first:
+      213: 3290275348011751712
+    second: Kirby Eat_2 221x131_438
+  - first:
+      213: -5213705824234142978
+    second: Kirby Eat_2 221x131_439
+  - first:
+      213: -3840731434320926203
+    second: Kirby Eat_2 221x131_440
+  - first:
+      213: -4675477089732081
+    second: Kirby Eat_2 221x131_441
+  - first:
+      213: -4367926503554683908
+    second: Kirby Eat_2 221x131_442
+  - first:
+      213: -6150101974101345684
+    second: Kirby Eat_2 221x131_443
+  - first:
+      213: -9216645333556411281
+    second: Kirby Eat_2 221x131_444
+  - first:
+      213: -8656838049814104947
+    second: Kirby Eat_2 221x131_445
+  - first:
+      213: -3159263562102349191
+    second: Kirby Eat_2 221x131_446
+  - first:
+      213: -2216351144742900453
+    second: Kirby Eat_2 221x131_447
+  - first:
+      213: 2017352320527850318
+    second: Kirby Eat_2 221x131_448
+  - first:
+      213: 7550196118302906726
+    second: Kirby Eat_2 221x131_449
+  - first:
+      213: 6053173913136858324
+    second: Kirby Eat_2 221x131_450
+  - first:
+      213: 7108743146637936547
+    second: Kirby Eat_2 221x131_451
+  - first:
+      213: 3895443983638173930
+    second: Kirby Eat_2 221x131_452
+  - first:
+      213: 5177744762348082125
+    second: Kirby Eat_2 221x131_453
+  - first:
+      213: -4496727569464232995
+    second: Kirby Eat_2 221x131_454
+  - first:
+      213: 6699688647245453666
+    second: Kirby Eat_2 221x131_455
+  - first:
+      213: 5750383647260477201
+    second: Kirby Eat_2 221x131_456
+  - first:
+      213: 979690906908628777
+    second: Kirby Eat_2 221x131_457
+  - first:
+      213: -8232577858258710919
+    second: Kirby Eat_2 221x131_458
+  - first:
+      213: 6009031677817406852
+    second: Kirby Eat_2 221x131_459
+  - first:
+      213: 6442924063216523915
+    second: Kirby Eat_2 221x131_460
+  - first:
+      213: -511652351458518796
+    second: Kirby Eat_2 221x131_461
+  - first:
+      213: -1349873786601774529
+    second: Kirby Eat_2 221x131_462
+  - first:
+      213: -2499496640604995561
+    second: Kirby Eat_2 221x131_463
+  - first:
+      213: 280132802469516354
+    second: Kirby Eat_2 221x131_464
+  - first:
+      213: -4809441106431745653
+    second: Kirby Eat_2 221x131_465
+  - first:
+      213: -3124088352088167934
+    second: Kirby Eat_2 221x131_466
+  - first:
+      213: 8544435238373205799
+    second: Kirby Eat_2 221x131_467
+  - first:
+      213: -2898806433662532154
+    second: Kirby Eat_2 221x131_468
+  - first:
+      213: 704504215893176842
+    second: Kirby Eat_2 221x131_469
+  - first:
+      213: -1349329132189438391
+    second: Kirby Eat_2 221x131_470
+  - first:
+      213: 1863210595041711922
+    second: Kirby Eat_2 221x131_471
+  - first:
+      213: -9216314600408787766
+    second: Kirby Eat_2 221x131_472
+  - first:
+      213: -2685216459796745651
+    second: Kirby Eat_2 221x131_473
+  - first:
+      213: -1750835356402111302
+    second: Kirby Eat_2 221x131_474
+  - first:
+      213: 186146016949597976
+    second: Kirby Eat_2 221x131_475
+  - first:
+      213: -6248262898318947218
+    second: Kirby Eat_2 221x131_476
+  - first:
+      213: -9122409102992098898
+    second: Kirby Eat_2 221x131_477
+  - first:
+      213: 4964044365962941102
+    second: Kirby Eat_2 221x131_478
+  - first:
+      213: 8603598923471901535
+    second: Kirby Eat_2 221x131_479
+  - first:
+      213: -3490451312279420892
+    second: Kirby Eat_2 221x131_480
+  - first:
+      213: 5545102408658775667
+    second: Kirby Eat_2 221x131_481
+  - first:
+      213: 2919966430471682377
+    second: Kirby Eat_2 221x131_482
+  - first:
+      213: 2427323314777286488
+    second: Kirby Eat_2 221x131_483
+  - first:
+      213: 5834330685603927026
+    second: Kirby Eat_2 221x131_484
+  - first:
+      213: 5463907471131124072
+    second: Kirby Eat_2 221x131_485
+  - first:
+      213: 4439846958652266220
+    second: Kirby Eat_2 221x131_486
+  - first:
+      213: 3661789803488370711
+    second: Kirby Eat_2 221x131_487
+  - first:
+      213: 4868216527199676345
+    second: Kirby Eat_2 221x131_488
+  - first:
+      213: 2369707516486711312
+    second: Kirby Eat_2 221x131_489
+  - first:
+      213: -3802176430467711270
+    second: Kirby Eat_2 221x131_490
+  - first:
+      213: -4511768599200930585
+    second: Kirby Eat_2 221x131_491
+  - first:
+      213: -9156473442839045252
+    second: Kirby Eat_2 221x131_492
+  - first:
+      213: -4882530078127672331
+    second: Kirby Eat_2 221x131_493
+  - first:
+      213: 4877390583939927903
+    second: Kirby Eat_2 221x131_494
+  - first:
+      213: -2870896529729767226
+    second: Kirby Eat_2 221x131_495
+  - first:
+      213: 7970905886637645815
+    second: Kirby Eat_2 221x131_496
+  - first:
+      213: 7412891530814882195
+    second: Kirby Eat_2 221x131_497
+  - first:
+      213: 1564195970814148327
+    second: Kirby Eat_2 221x131_498
+  - first:
+      213: -463100581159118907
+    second: Kirby Eat_2 221x131_499
+  - first:
+      213: -2898236293019124079
+    second: Kirby Eat_2 221x131_500
+  - first:
+      213: -8597008350696428817
+    second: Kirby Eat_2 221x131_501
+  - first:
+      213: -4376883249823999730
+    second: Kirby Eat_2 221x131_502
+  - first:
+      213: 1700467064963053605
+    second: Kirby Eat_2 221x131_503
+  - first:
+      213: 8810039506809842729
+    second: Kirby Eat_2 221x131_504
+  - first:
+      213: 1129162374400244659
+    second: Kirby Eat_2 221x131_505
+  - first:
+      213: 2743948859213573991
+    second: Kirby Eat_2 221x131_506
+  - first:
+      213: -5464005835251546175
+    second: Kirby Eat_2 221x131_507
+  - first:
+      213: 2895365483456596483
+    second: Kirby Eat_2 221x131_508
+  - first:
+      213: -8462343393512205280
+    second: Kirby Eat_2 221x131_509
+  - first:
+      213: -1804000982682992123
+    second: Kirby Eat_2 221x131_510
+  - first:
+      213: 1726413707547462236
+    second: Kirby Eat_2 221x131_511
+  - first:
+      213: 5614309368810477571
+    second: Kirby Eat_2 221x131_512
+  - first:
+      213: 7059774651452813839
+    second: Kirby Eat_2 221x131_513
+  - first:
+      213: 3464177108735493877
+    second: Kirby Eat_2 221x131_514
+  - first:
+      213: -3163521817288916156
+    second: Kirby Eat_2 221x131_515
+  - first:
+      213: -1217264516031309624
+    second: Kirby Eat_2 221x131_516
+  - first:
+      213: 1340500319562391404
+    second: Kirby Eat_2 221x131_517
+  - first:
+      213: 8653446568594478479
+    second: Kirby Eat_2 221x131_518
+  - first:
+      213: 1557829552327660967
+    second: Kirby Eat_2 221x131_519
+  - first:
+      213: -3045100454141248501
+    second: Kirby Eat_2 221x131_520
+  - first:
+      213: 4805740016880010087
+    second: Kirby Eat_2 221x131_521
+  - first:
+      213: -5283842098909535609
+    second: Kirby Eat_2 221x131_522
+  - first:
+      213: -4025389349248219186
+    second: Kirby Eat_2 221x131_523
+  - first:
+      213: 7766320084907000152
+    second: Kirby Eat_2 221x131_524
+  - first:
+      213: -9045132282454759894
+    second: Kirby Eat_2 221x131_525
+  - first:
+      213: 8736050324638989531
+    second: Kirby Eat_2 221x131_526
+  - first:
+      213: -534361000735681073
+    second: Kirby Eat_2 221x131_527
+  - first:
+      213: 2976641144135892446
+    second: Kirby Eat_2 221x131_528
+  - first:
+      213: 9207033846924045108
+    second: Kirby Eat_2 221x131_529
+  - first:
+      213: 721617498194927806
+    second: Kirby Eat_2 221x131_530
+  - first:
+      213: -3298389721933143156
+    second: Kirby Eat_2 221x131_531
+  - first:
+      213: 7594794068112283757
+    second: Kirby Eat_2 221x131_532
+  - first:
+      213: 6819046312267625289
+    second: Kirby Eat_2 221x131_533
+  - first:
+      213: -2436391985919258343
+    second: Kirby Eat_2 221x131_534
+  - first:
+      213: 37611081748044516
+    second: Kirby Eat_2 221x131_535
+  - first:
+      213: 580603015111839565
+    second: Kirby Eat_2 221x131_536
+  - first:
+      213: -7846974657139706284
+    second: Kirby Eat_2 221x131_537
+  - first:
+      213: 2936505347233715892
+    second: Kirby Eat_2 221x131_538
+  - first:
+      213: -8342686358535645679
+    second: Kirby Eat_2 221x131_539
+  - first:
+      213: 4741857666404199340
+    second: Kirby Eat_2 221x131_540
+  - first:
+      213: -7922384320252462320
+    second: Kirby Eat_2 221x131_541
+  - first:
+      213: 6009819805357587901
+    second: Kirby Eat_2 221x131_542
+  - first:
+      213: 6303141489377239842
+    second: Kirby Eat_2 221x131_543
+  - first:
+      213: 5164267043645976088
+    second: Kirby Eat_2 221x131_544
+  - first:
+      213: 5305350111107471438
+    second: Kirby Eat_2 221x131_545
+  - first:
+      213: -6749208003833054227
+    second: Kirby Eat_2 221x131_546
+  - first:
+      213: 6584808569870732634
+    second: Kirby Eat_2 221x131_547
+  - first:
+      213: 1523586790014814041
+    second: Kirby Eat_2 221x131_548
+  - first:
+      213: 1901935624599244546
+    second: Kirby Eat_2 221x131_549
+  - first:
+      213: 3535579166712546911
+    second: Kirby Eat_2 221x131_550
+  - first:
+      213: 1304994066874334202
+    second: Kirby Eat_2 221x131_551
+  - first:
+      213: 9177504526388755333
+    second: Kirby Eat_2 221x131_552
+  - first:
+      213: 708251831262433292
+    second: Kirby Eat_2 221x131_553
+  - first:
+      213: 5639733618810619775
+    second: Kirby Eat_2 221x131_554
+  - first:
+      213: 5370248878123886283
+    second: Kirby Eat_2 221x131_555
+  - first:
+      213: -553387206762674902
+    second: Kirby Eat_2 221x131_556
+  - first:
+      213: 6720058642520279161
+    second: Kirby Eat_2 221x131_557
+  - first:
+      213: 9197315669481414082
+    second: Kirby Eat_2 221x131_558
+  - first:
+      213: -4627919558793991802
+    second: Kirby Eat_2 221x131_559
+  - first:
+      213: 1357084758877161830
+    second: Kirby Eat_2 221x131_560
+  - first:
+      213: 1495564820850559879
+    second: Kirby Eat_2 221x131_561
+  - first:
+      213: 3319874048799865344
+    second: Kirby Eat_2 221x131_562
+  - first:
+      213: 6283911896698796270
+    second: Kirby Eat_2 221x131_563
+  - first:
+      213: 190597632046199221
+    second: Kirby Eat_2 221x131_564
+  - first:
+      213: -7534912947179083256
+    second: Kirby Eat_2 221x131_565
+  - first:
+      213: 6122563120649131611
+    second: Kirby Eat_2 221x131_566
+  - first:
+      213: -2791423010475220478
+    second: Kirby Eat_2 221x131_567
+  - first:
+      213: 679321515776179418
+    second: Kirby Eat_2 221x131_568
+  - first:
+      213: 5720291103881606285
+    second: Kirby Eat_2 221x131_569
+  - first:
+      213: -4817611229772303486
+    second: Kirby Eat_2 221x131_570
+  - first:
+      213: -8132252040010610795
+    second: Kirby Eat_2 221x131_571
+  - first:
+      213: -2273939049218911719
+    second: Kirby Eat_2 221x131_572
+  - first:
+      213: 6121338678968891156
+    second: Kirby Eat_2 221x131_573
+  - first:
+      213: 1671225371195948005
+    second: Kirby Eat_2 221x131_574
+  - first:
+      213: -290751125897207302
+    second: Kirby Eat_2 221x131_575
+  - first:
+      213: -3813875104083205638
+    second: Kirby Eat_2 221x131_576
+  - first:
+      213: 830312372178056167
+    second: Kirby Eat_2 221x131_577
+  - first:
+      213: 7813422056324133435
+    second: Kirby Eat_2 221x131_578
+  - first:
+      213: -3932699297966249926
+    second: Kirby Eat_2 221x131_579
+  - first:
+      213: 6555558298730389995
+    second: Kirby Eat_2 221x131_580
+  - first:
+      213: 6919798604469928705
+    second: Kirby Eat_2 221x131_581
+  - first:
+      213: -6188413348199606701
+    second: Kirby Eat_2 221x131_582
+  - first:
+      213: -5719573456594307509
+    second: Kirby Eat_2 221x131_583
+  - first:
+      213: -5205088001537690929
+    second: Kirby Eat_2 221x131_584
+  - first:
+      213: 6125865677551755549
+    second: Kirby Eat_2 221x131_585
+  - first:
+      213: -5932709718168994473
+    second: Kirby Eat_2 221x131_586
+  - first:
+      213: 5402483868913412139
+    second: Kirby Eat_2 221x131_587
+  - first:
+      213: -1402699940981067032
+    second: Kirby Eat_2 221x131_588
+  - first:
+      213: -5237536870267953678
+    second: Kirby Eat_2 221x131_589
+  - first:
+      213: 6507804549562836968
+    second: Kirby Eat_2 221x131_590
+  - first:
+      213: -5715076587146814957
+    second: Kirby Eat_2 221x131_591
+  - first:
+      213: -3873900386950957438
+    second: Kirby Eat_2 221x131_592
+  - first:
+      213: 2395522954208031816
+    second: Kirby Eat_2 221x131_593
+  - first:
+      213: 6720149019188949765
+    second: Kirby Eat_2 221x131_594
+  - first:
+      213: 6583151682519148546
+    second: Kirby Eat_2 221x131_595
+  - first:
+      213: -4091979759571522082
+    second: Kirby Eat_2 221x131_596
+  - first:
+      213: 6079795773976034379
+    second: Kirby Eat_2 221x131_597
+  - first:
+      213: 7145396984571708343
+    second: Kirby Eat_2 221x131_598
+  - first:
+      213: 456069871120420165
+    second: Kirby Eat_2 221x131_599
+  - first:
+      213: -8542802172453147094
+    second: Kirby Eat_2 221x131_600
+  - first:
+      213: 7284547411667572897
+    second: Kirby Eat_2 221x131_601
+  - first:
+      213: 4244823030365240415
+    second: Kirby Eat_2 221x131_602
+  - first:
+      213: 7937527605290142343
+    second: Kirby Eat_2 221x131_603
+  - first:
+      213: 3028053988233876655
+    second: Kirby Eat_2 221x131_604
+  - first:
+      213: 6889633087482629106
+    second: Kirby Eat_2 221x131_605
+  - first:
+      213: -1442634075473683125
+    second: Kirby Eat_2 221x131_606
+  - first:
+      213: 860118589019903773
+    second: Kirby Eat_2 221x131_607
+  - first:
+      213: 6838158431140370757
+    second: Kirby Eat_2 221x131_608
+  - first:
+      213: -2220358792532998413
+    second: Kirby Eat_2 221x131_609
+  - first:
+      213: -6907295706687327426
+    second: Kirby Eat_2 221x131_610
+  - first:
+      213: 6673040427670587625
+    second: Kirby Eat_2 221x131_611
+  - first:
+      213: 6725617556101358932
+    second: Kirby Eat_2 221x131_612
+  - first:
+      213: 2054918346625096639
+    second: Kirby Eat_2 221x131_613
+  - first:
+      213: 858128719061509465
+    second: Kirby Eat_2 221x131_614
+  - first:
+      213: -5015076063784567116
+    second: Kirby Eat_2 221x131_615
+  - first:
+      213: -5053207862878319146
+    second: Kirby Eat_2 221x131_616
+  - first:
+      213: -662080503790631637
+    second: Kirby Eat_2 221x131_617
+  - first:
+      213: -6554932654379298793
+    second: Kirby Eat_2 221x131_618
+  - first:
+      213: -622974729921759438
+    second: Kirby Eat_2 221x131_619
+  - first:
+      213: 2332042643105413609
+    second: Kirby Eat_2 221x131_620
+  - first:
+      213: -6017466275636211166
+    second: Kirby Eat_2 221x131_621
+  - first:
+      213: 7067378194133569700
+    second: Kirby Eat_2 221x131_622
+  - first:
+      213: 5199260593223513468
+    second: Kirby Eat_2 221x131_623
+  - first:
+      213: 4061612093734693264
+    second: Kirby Eat_2 221x131_624
+  - first:
+      213: -2883567416773382438
+    second: Kirby Eat_2 221x131_625
+  - first:
+      213: 5921986585328969888
+    second: Kirby Eat_2 221x131_626
+  - first:
+      213: -9035695852779083302
+    second: Kirby Eat_2 221x131_627
+  - first:
+      213: -2631967335037953731
+    second: Kirby Eat_2 221x131_628
+  - first:
+      213: 1240317457942828538
+    second: Kirby Eat_2 221x131_629
+  - first:
+      213: 4110695155808505
+    second: Kirby Eat_2 221x131_630
+  - first:
+      213: -2165809525178055061
+    second: Kirby Eat_2 221x131_631
+  - first:
+      213: 23565379670724673
+    second: Kirby Eat_2 221x131_632
+  - first:
+      213: -186920595835278596
+    second: Kirby Eat_2 221x131_633
+  - first:
+      213: 170478986486908526
+    second: Kirby Eat_2 221x131_634
+  - first:
+      213: -2429472350032861911
+    second: Kirby Eat_2 221x131_635
+  - first:
+      213: -608634732313930945
+    second: Kirby Eat_2 221x131_636
+  - first:
+      213: 9006498119865637466
+    second: Kirby Eat_2 221x131_637
+  - first:
+      213: 3147349622446856794
+    second: Kirby Eat_2 221x131_638
+  - first:
+      213: -6625729700149550499
+    second: Kirby Eat_2 221x131_639
+  - first:
+      213: -1924395345697085275
+    second: Kirby Eat_2 221x131_640
+  - first:
+      213: -4061657794319585836
+    second: Kirby Eat_2 221x131_641
+  - first:
+      213: 8317121110931349937
+    second: Kirby Eat_2 221x131_642
+  - first:
+      213: -8843327904227905557
+    second: Kirby Eat_2 221x131_643
+  - first:
+      213: 4265760620049740565
+    second: Kirby Eat_2 221x131_644
+  - first:
+      213: 3488599026858504472
+    second: Kirby Eat_2 221x131_645
+  - first:
+      213: 3704513792449910144
+    second: Kirby Eat_2 221x131_646
+  - first:
+      213: -8538234543595742958
+    second: Kirby Eat_2 221x131_647
+  - first:
+      213: 4633759654821814101
+    second: Kirby Eat_2 221x131_648
+  - first:
+      213: 6510459163246930358
+    second: Kirby Eat_2 221x131_649
+  - first:
+      213: -297680869700126966
+    second: Kirby Eat_2 221x131_650
+  - first:
+      213: -5645018644066407908
+    second: Kirby Eat_2 221x131_651
+  - first:
+      213: 1051391501333230133
+    second: Kirby Eat_2 221x131_652
+  - first:
+      213: 8249435594382647656
+    second: Kirby Eat_2 221x131_653
+  - first:
+      213: -7109172015746712994
+    second: Kirby Eat_2 221x131_654
+  - first:
+      213: -5498497588230795958
+    second: Kirby Eat_2 221x131_655
+  - first:
+      213: -7534062488557259234
+    second: Kirby Eat_2 221x131_656
+  - first:
+      213: -3473621927944862451
+    second: Kirby Eat_2 221x131_657
+  - first:
+      213: 9132699928228849358
+    second: Kirby Eat_2 221x131_658
+  - first:
+      213: 319231232724283683
+    second: Kirby Eat_2 221x131_659
+  - first:
+      213: -3814164117752561761
+    second: Kirby Eat_2 221x131_660
+  - first:
+      213: 221940723894444832
+    second: Kirby Eat_2 221x131_661
+  - first:
+      213: -2573418982489213103
+    second: Kirby Eat_2 221x131_662
+  - first:
+      213: -2524356813907491188
+    second: Kirby Eat_2 221x131_663
+  - first:
+      213: -2479930814806539153
+    second: Kirby Eat_2 221x131_664
+  - first:
+      213: 303288857568980436
+    second: Kirby Eat_2 221x131_665
+  - first:
+      213: 2848986249581215364
+    second: Kirby Eat_2 221x131_666
+  - first:
+      213: 2725624297304789255
+    second: Kirby Eat_2 221x131_667
+  - first:
+      213: -4128970772165982852
+    second: Kirby Eat_2 221x131_668
+  - first:
+      213: 6704340464291371034
+    second: Kirby Eat_2 221x131_669
+  - first:
+      213: -2677639259016034086
+    second: Kirby Eat_2 221x131_670
+  - first:
+      213: 7613898909862841633
+    second: Kirby Eat_2 221x131_671
+  - first:
+      213: -6965631043235058985
+    second: Kirby Eat_2 221x131_672
+  - first:
+      213: 5034156033550467352
+    second: Kirby Eat_2 221x131_673
+  - first:
+      213: -7401845520474024866
+    second: Kirby Eat_2 221x131_674
+  - first:
+      213: 6865722896268831014
+    second: Kirby Eat_2 221x131_675
+  - first:
+      213: 7563358229357544068
+    second: Kirby Eat_2 221x131_676
+  - first:
+      213: 8906375074182834713
+    second: Kirby Eat_2 221x131_677
+  - first:
+      213: -672118845942080126
+    second: Kirby Eat_2 221x131_678
+  - first:
+      213: 5402884285322141477
+    second: Kirby Eat_2 221x131_679
+  - first:
+      213: 7935635536823191335
+    second: Kirby Eat_2 221x131_680
+  - first:
+      213: -749253576891774657
+    second: Kirby Eat_2 221x131_681
+  - first:
+      213: -2473286946885363850
+    second: Kirby Eat_2 221x131_682
+  - first:
+      213: -1086636497066665932
+    second: Kirby Eat_2 221x131_683
+  - first:
+      213: -4128880286441538419
+    second: Kirby Eat_2 221x131_684
+  - first:
+      213: 1597690019263602626
+    second: Kirby Eat_2 221x131_685
+  - first:
+      213: -5736167840006302268
+    second: Kirby Eat_2 221x131_686
+  - first:
+      213: 6123705747022398758
+    second: Kirby Eat_2 221x131_687
+  - first:
+      213: 1901918185375266476
+    second: Kirby Eat_2 221x131_688
+  - first:
+      213: 3015096698206469943
+    second: Kirby Eat_2 221x131_689
+  - first:
+      213: -6573983884217021677
+    second: Kirby Eat_2 221x131_690
+  - first:
+      213: 1574771107835106892
+    second: Kirby Eat_2 221x131_691
+  - first:
+      213: 7349516020180428998
+    second: Kirby Eat_2 221x131_692
+  - first:
+      213: 4777973156217418445
+    second: Kirby Eat_2 221x131_693
+  - first:
+      213: 2684486016544619437
+    second: Kirby Eat_2 221x131_694
+  - first:
+      213: -7236542793093150936
+    second: Kirby Eat_2 221x131_695
+  - first:
+      213: 8674467022008083341
+    second: Kirby Eat_2 221x131_696
+  - first:
+      213: 5587112886990645127
+    second: Kirby Eat_2 221x131_697
+  - first:
+      213: 4175184580513898525
+    second: Kirby Eat_2 221x131_698
+  - first:
+      213: 3442713774845428649
+    second: Kirby Eat_2 221x131_699
+  - first:
+      213: -5483915092761468571
+    second: Kirby Eat_2 221x131_700
+  - first:
+      213: -3715722436225535281
+    second: Kirby Eat_2 221x131_701
+  - first:
+      213: -6045278024292838491
+    second: Kirby Eat_2 221x131_702
+  - first:
+      213: -2501488220900657463
+    second: Kirby Eat_2 221x131_703
+  - first:
+      213: -5474557826984971726
+    second: Kirby Eat_2 221x131_704
+  - first:
+      213: 223998547849606175
+    second: Kirby Eat_2 221x131_705
+  - first:
+      213: 7788290117945039437
+    second: Kirby Eat_2 221x131_706
+  - first:
+      213: 6301653473105349840
+    second: Kirby Eat_2 221x131_707
+  - first:
+      213: -8840778887462531177
+    second: Kirby Eat_2 221x131_708
+  - first:
+      213: 6454698322730912321
+    second: Kirby Eat_2 221x131_709
+  - first:
+      213: 7346836176543382175
+    second: Kirby Eat_2 221x131_710
+  - first:
+      213: -8924379655864736985
+    second: Kirby Eat_2 221x131_711
+  - first:
+      213: 6655716784477477654
+    second: Kirby Eat_2 221x131_712
+  - first:
+      213: -119368070639669910
+    second: Kirby Eat_2 221x131_713
+  - first:
+      213: 9100893794325352783
+    second: Kirby Eat_2 221x131_714
+  - first:
+      213: 8021459251967176685
+    second: Kirby Eat_2 221x131_715
+  - first:
+      213: 9102570230168007993
+    second: Kirby Eat_2 221x131_716
+  - first:
+      213: -4347086772133391957
+    second: Kirby Eat_2 221x131_717
+  - first:
+      213: -4628323832878048693
+    second: Kirby Eat_2 221x131_718
+  - first:
+      213: -372099618388396027
+    second: Kirby Eat_2 221x131_719
+  - first:
+      213: 1422418207006317861
+    second: Kirby Eat_2 221x131_720
+  - first:
+      213: -8921503313227674569
+    second: Kirby Eat_2 221x131_721
+  - first:
+      213: 136894803902979228
+    second: Kirby Eat_2 221x131_722
+  - first:
+      213: 3861549843151793881
+    second: Kirby Eat_2 221x131_723
+  - first:
+      213: -1797375422689280618
+    second: Kirby Eat_2 221x131_724
+  - first:
+      213: -3429508458332367550
+    second: Kirby Eat_2 221x131_725
+  - first:
+      213: -1275541696158144486
+    second: Kirby Eat_2 221x131_726
+  - first:
+      213: 8856964843580189633
+    second: Kirby Eat_2 221x131_727
+  - first:
+      213: -5371119113517308413
+    second: Kirby Eat_2 221x131_728
+  - first:
+      213: -8564642170289471617
+    second: Kirby Eat_2 221x131_729
+  - first:
+      213: 1160194880980221079
+    second: Kirby Eat_2 221x131_730
+  - first:
+      213: 7573467059590476720
+    second: Kirby Eat_2 221x131_731
+  - first:
+      213: -5036219967240653106
+    second: Kirby Eat_2 221x131_732
+  - first:
+      213: 6433093265712081760
+    second: Kirby Eat_2 221x131_733
+  - first:
+      213: -5385703458659168079
+    second: Kirby Eat_2 221x131_734
+  - first:
+      213: 3851937657666369664
+    second: Kirby Eat_2 221x131_735
+  - first:
+      213: -1605713660852077488
+    second: Kirby Eat_2 221x131_736
+  - first:
+      213: 795510908881706504
+    second: Kirby Eat_2 221x131_737
+  - first:
+      213: -3529282369370731171
+    second: Kirby Eat_2 221x131_738
+  - first:
+      213: 982960135338750569
+    second: Kirby Eat_2 221x131_739
+  - first:
+      213: -5681336633594036307
+    second: Kirby Eat_2 221x131_740
+  - first:
+      213: -7850523671721307184
+    second: Kirby Eat_2 221x131_741
+  - first:
+      213: -1506883106786559015
+    second: Kirby Eat_2 221x131_742
+  - first:
+      213: -8956082775842610743
+    second: Kirby Eat_2 221x131_743
+  - first:
+      213: 2925769858031669663
+    second: Kirby Eat_2 221x131_744
+  - first:
+      213: -8986644586920675287
+    second: Kirby Eat_2 221x131_745
+  - first:
+      213: -6008764397170457513
+    second: Kirby Eat_2 221x131_746
+  - first:
+      213: 6140598346266469779
+    second: Kirby Eat_2 221x131_747
+  - first:
+      213: 2436417998678619022
+    second: Kirby Eat_2 221x131_748
+  - first:
+      213: -3953942652836254379
+    second: Kirby Eat_2 221x131_749
+  - first:
+      213: 7313305541096650406
+    second: Kirby Eat_2 221x131_750
+  - first:
+      213: -6197235860393901631
+    second: Kirby Eat_2 221x131_751
+  - first:
+      213: -9120611448798528374
+    second: Kirby Eat_2 221x131_752
+  - first:
+      213: -3205197213526220785
+    second: Kirby Eat_2 221x131_753
+  - first:
+      213: -2992693118715446648
+    second: Kirby Eat_2 221x131_754
+  - first:
+      213: -1601930197841084863
+    second: Kirby Eat_2 221x131_755
+  - first:
+      213: 5527144708244147378
+    second: Kirby Eat_2 221x131_756
+  - first:
+      213: 3765234086676949960
+    second: Kirby Eat_2 221x131_757
+  - first:
+      213: 909754525213277771
+    second: Kirby Eat_2 221x131_758
+  - first:
+      213: -5004167587866238041
+    second: Kirby Eat_2 221x131_759
+  - first:
+      213: -7263460758410943854
+    second: Kirby Eat_2 221x131_760
+  - first:
+      213: -8652631818014024566
+    second: Kirby Eat_2 221x131_761
+  - first:
+      213: 4375995886119895944
+    second: Kirby Eat_2 221x131_762
+  - first:
+      213: -4808613316988277089
+    second: Kirby Eat_2 221x131_763
+  - first:
+      213: -2551304653002404133
+    second: Kirby Eat_2 221x131_764
+  - first:
+      213: 5042001762284803494
+    second: Kirby Eat_2 221x131_765
+  - first:
+      213: 5949142086622852567
+    second: Kirby Eat_2 221x131_766
+  - first:
+      213: -8866765473019928041
+    second: Kirby Eat_2 221x131_767
+  - first:
+      213: 5730787310482363726
+    second: Kirby Eat_2 221x131_768
+  - first:
+      213: -5789791228427698347
+    second: Kirby Eat_2 221x131_769
+  - first:
+      213: -8206445402609650248
+    second: Kirby Eat_2 221x131_770
+  - first:
+      213: 1511352335030971034
+    second: Kirby Eat_2 221x131_771
+  - first:
+      213: 5520296718350090410
+    second: Kirby Eat_2 221x131_772
+  - first:
+      213: -6235399925437544690
+    second: Kirby Eat_2 221x131_773
+  - first:
+      213: -7678034997852175413
+    second: Kirby Eat_2 221x131_774
+  - first:
+      213: -964307862631505429
+    second: Kirby Eat_2 221x131_775
+  - first:
+      213: -7450408630359332788
+    second: Kirby Eat_2 221x131_776
+  - first:
+      213: -5923868851969038581
+    second: Kirby Eat_2 221x131_777
+  - first:
+      213: -3587984467254597307
+    second: Kirby Eat_2 221x131_778
+  - first:
+      213: -1820006021952302362
+    second: Kirby Eat_2 221x131_779
+  - first:
+      213: 6893776294452972244
+    second: Kirby Eat_2 221x131_780
+  - first:
+      213: 1948523170010693874
+    second: Kirby Eat_2 221x131_781
+  - first:
+      213: -1661340424515956254
+    second: Kirby Eat_2 221x131_782
+  - first:
+      213: 1294747721236178685
+    second: Kirby Eat_2 221x131_783
+  - first:
+      213: -9157675855079173192
+    second: Kirby Eat_2 221x131_784
+  - first:
+      213: 1173015314538090453
+    second: Kirby Eat_2 221x131_785
+  - first:
+      213: -7401549142825994649
+    second: Kirby Eat_2 221x131_786
+  - first:
+      213: 3200487881260506343
+    second: Kirby Eat_2 221x131_787
+  - first:
+      213: -2004788211770465704
+    second: Kirby Eat_2 221x131_788
+  - first:
+      213: -1769103084946607021
+    second: Kirby Eat_2 221x131_789
+  - first:
+      213: 2598320195447624297
+    second: Kirby Eat_2 221x131_790
+  - first:
+      213: 6201749097883809743
+    second: Kirby Eat_2 221x131_791
+  - first:
+      213: 5203414233429937341
+    second: Kirby Eat_2 221x131_792
+  - first:
+      213: -8659534190002579934
+    second: Kirby Eat_2 221x131_793
+  - first:
+      213: -7218260476258540529
+    second: Kirby Eat_2 221x131_794
+  - first:
+      213: -8708466991849055544
+    second: Kirby Eat_2 221x131_795
+  - first:
+      213: 43549737787443678
+    second: Kirby Eat_2 221x131_796
+  - first:
+      213: -818940791943823412
+    second: Kirby Eat_2 221x131_797
+  - first:
+      213: 2183800580643180221
+    second: Kirby Eat_2 221x131_798
+  - first:
+      213: 8802779887456617048
+    second: Kirby Eat_2 221x131_799
+  - first:
+      213: -2341652728988798245
+    second: Kirby Eat_2 221x131_800
+  - first:
+      213: -633312788096017700
+    second: Kirby Eat_2 221x131_801
+  - first:
+      213: -3433703869212800786
+    second: Kirby Eat_2 221x131_802
+  - first:
+      213: -2289136296502619095
+    second: Kirby Eat_2 221x131_803
+  - first:
+      213: -1523599864964983288
+    second: Kirby Eat_2 221x131_804
+  - first:
+      213: -7945967784086717250
+    second: Kirby Eat_2 221x131_805
+  - first:
+      213: 7500244867371321367
+    second: Kirby Eat_2 221x131_806
+  - first:
+      213: -753209116968904954
+    second: Kirby Eat_2 221x131_807
+  - first:
+      213: 3241800920080881439
+    second: Kirby Eat_2 221x131_808
+  - first:
+      213: -4322223997744176803
+    second: Kirby Eat_2 221x131_809
+  - first:
+      213: -7871597215021171183
+    second: Kirby Eat_2 221x131_810
+  - first:
+      213: 364370756336661308
+    second: Kirby Eat_2 221x131_811
+  - first:
+      213: 1891121705200839936
+    second: Kirby Eat_2 221x131_812
+  - first:
+      213: -8894874099415007314
+    second: Kirby Eat_2 221x131_813
+  - first:
+      213: -904179645321555560
+    second: Kirby Eat_2 221x131_814
+  - first:
+      213: 8670935310957370668
+    second: Kirby Eat_2 221x131_815
+  - first:
+      213: 3217172842538191250
+    second: Kirby Eat_2 221x131_816
+  - first:
+      213: 1712732055710086232
+    second: Kirby Eat_2 221x131_817
+  - first:
+      213: 5370609919783427997
+    second: Kirby Eat_2 221x131_818
+  - first:
+      213: -5163975524500365726
+    second: Kirby Eat_2 221x131_819
+  - first:
+      213: -8612948018954730781
+    second: Kirby Eat_2 221x131_820
+  - first:
+      213: 2711603416851893202
+    second: Kirby Eat_2 221x131_821
+  - first:
+      213: -5269004291905864290
+    second: Kirby Eat_2 221x131_822
+  - first:
+      213: 5029297740145541616
+    second: Kirby Eat_2 221x131_823
+  - first:
+      213: -5388487752228969735
+    second: Kirby Eat_2 221x131_824
+  - first:
+      213: 434507644730701170
+    second: Kirby Eat_2 221x131_825
+  - first:
+      213: -7824331046042223393
+    second: Kirby Eat_2 221x131_826
+  - first:
+      213: -4491844151670201111
+    second: Kirby Eat_2 221x131_827
+  - first:
+      213: 8341368630912856965
+    second: Kirby Eat_2 221x131_828
+  - first:
+      213: -7897044277683709612
+    second: Kirby Eat_2 221x131_829
+  - first:
+      213: 6149183082173173454
+    second: Kirby Eat_2 221x131_830
+  - first:
+      213: 8320242379100128280
+    second: Kirby Eat_2 221x131_831
+  - first:
+      213: -3742691885732139010
+    second: Kirby Eat_2 221x131_832
+  - first:
+      213: 6158409955392845271
+    second: Kirby Eat_2 221x131_833
+  - first:
+      213: -2415322522492457776
+    second: Kirby Eat_2 221x131_834
+  - first:
+      213: 3341369483740233467
+    second: Kirby Eat_2 221x131_835
+  - first:
+      213: -2396256288646718104
+    second: Kirby Eat_2 221x131_836
+  - first:
+      213: 1770882279164365854
+    second: Kirby Eat_2 221x131_837
+  - first:
+      213: -4493504085105617664
+    second: Kirby Eat_2 221x131_838
+  - first:
+      213: -4483134843859634229
+    second: Kirby Eat_2 221x131_839
+  - first:
+      213: 5770669891988603996
+    second: Kirby Eat_2 221x131_840
+  - first:
+      213: 4699261767832532761
+    second: Kirby Eat_2 221x131_841
+  - first:
+      213: 7353468915231818012
+    second: Kirby Eat_2 221x131_842
+  - first:
+      213: -49974859732596019
+    second: Kirby Eat_2 221x131_843
+  - first:
+      213: 8055814638778355099
+    second: Kirby Eat_2 221x131_844
+  - first:
+      213: 696793251462813696
+    second: Kirby Eat_2 221x131_845
+  - first:
+      213: -1710405003655152391
+    second: Kirby Eat_2 221x131_846
+  - first:
+      213: 4574779746259065774
+    second: Kirby Eat_2 221x131_847
+  - first:
+      213: -1555889641103040605
+    second: Kirby Eat_2 221x131_848
+  - first:
+      213: -2386203029534803180
+    second: Kirby Eat_2 221x131_849
+  - first:
+      213: 9117369022225450778
+    second: Kirby Eat_2 221x131_850
+  - first:
+      213: -7678206016624864125
+    second: Kirby Eat_2 221x131_851
+  - first:
+      213: 1123665458809033935
+    second: Kirby Eat_2 221x131_852
+  - first:
+      213: 4963911615660238132
+    second: Kirby Eat_2 221x131_853
+  - first:
+      213: -5453938589037715921
+    second: Kirby Eat_2 221x131_854
+  - first:
+      213: 320459701343480477
+    second: Kirby Eat_2 221x131_855
+  - first:
+      213: 6088148525739008493
+    second: Kirby Eat_2 221x131_856
+  - first:
+      213: -8374123855492362584
+    second: Kirby Eat_2 221x131_857
+  - first:
+      213: -1025526549600258342
+    second: Kirby Eat_2 221x131_858
+  - first:
+      213: 6220584912504231428
+    second: Kirby Eat_2 221x131_859
+  - first:
+      213: 1013983904901809059
+    second: Kirby Eat_2 221x131_860
+  - first:
+      213: 3851854086978666176
+    second: Kirby Eat_2 221x131_861
+  - first:
+      213: 5139177175386240963
+    second: Kirby Eat_2 221x131_862
+  - first:
+      213: 1736344303408520286
+    second: Kirby Eat_2 221x131_863
+  - first:
+      213: -2425553733967417525
+    second: Kirby Eat_2 221x131_864
+  - first:
+      213: -1282220612319498235
+    second: Kirby Eat_2 221x131_865
+  - first:
+      213: -6088077947234881962
+    second: Kirby Eat_2 221x131_866
+  - first:
+      213: -5540929237551567047
+    second: Kirby Eat_2 221x131_867
+  - first:
+      213: -3435477836693904424
+    second: Kirby Eat_2 221x131_868
+  - first:
+      213: -4625369992639191968
+    second: Kirby Eat_2 221x131_869
+  - first:
+      213: -8689495498495384438
+    second: Kirby Eat_2 221x131_870
+  - first:
+      213: 7500608300240356574
+    second: Kirby Eat_2 221x131_871
+  - first:
+      213: 3225541454824480797
+    second: Kirby Eat_2 221x131_872
+  - first:
+      213: 5684764866806311995
+    second: Kirby Eat_2 221x131_873
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 917
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6402536607c8933a0800000000000000
+      internalID: -6685157757475807162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_1
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 917
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa059ab26c5b81ca0800000000000000
+      internalID: -6045882637004222289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_2
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 917
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3ccbd5c7bebd4950800000000000000
+      internalID: 6435009139090115644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_3
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 917
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccb76eacefe291340800000000000000
+      internalID: 4834947346819611596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_4
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 917
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72ec44ce89cf75990800000000000000
+      internalID: -7397166129203589593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_5
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 917
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20e417b6540df26d0800000000000000
+      internalID: -3012960629113663998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_6
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 917
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5890518cb7b7aa140800000000000000
+      internalID: 4731730130074143109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_7
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 917
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff5494bf0e2361780800000000000000
+      internalID: -8712720487231699457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_8
+      rect:
+        serializedVersion: 2
+        x: 1768
+        y: 917
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2969cdbfa33771e0800000000000000
+      internalID: -2200233063050811093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_9
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 917
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd09005e393d7c8f0800000000000000
+      internalID: -520214599782330145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 786
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f140d7f6c8b2c1c70800000000000000
+      internalID: 8943070842216842271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_11
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 786
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfc57f70266d304a0800000000000000
+      internalID: -6628218510030447365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_12
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 786
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc0cae2780eb85db0800000000000000
+      internalID: -4802880059093630771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_13
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 786
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3115649287dc474d0800000000000000
+      internalID: -3137657124398149357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_14
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 786
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05fc3ae6b843d4c10800000000000000
+      internalID: 2039343979730030416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_15
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 786
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19aec10d11cda9ed0800000000000000
+      internalID: -2406369081811998063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_16
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 786
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bba8fab7868f07c0800000000000000
+      internalID: -4102912817995666504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_17
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 786
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c8dc8ce6a2ac7990800000000000000
+      internalID: -7386850450977531705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_18
+      rect:
+        serializedVersion: 2
+        x: 1768
+        y: 786
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d6f4bd4d1cf8f620800000000000000
+      internalID: 2808271570453460696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_19
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 786
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b7631af93efb6e00800000000000000
+      internalID: 1039203664001198005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 655
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37a677caa2a3919d0800000000000000
+      internalID: -2803145338104878477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_21
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 655
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a96f8ffb5e2e2100800000000000000
+      internalID: 85056415631108513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_22
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 655
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a3bb5219f3b797b0800000000000000
+      internalID: -5217503760949202011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_23
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 655
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab4571a43aa735300800000000000000
+      internalID: 239670046922069178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_24
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 655
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23ea9778caca0fac0800000000000000
+      internalID: -3823366226630300110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_25
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 655
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de13806569524f230800000000000000
+      internalID: 3671600923832496621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_26
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 655
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7edda2298a2fe060800000000000000
+      internalID: 6984848315555634813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_27
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 655
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35031475e331380f0800000000000000
+      internalID: -1116027124184960941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_28
+      rect:
+        serializedVersion: 2
+        x: 1768
+        y: 655
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba0133e94f63944c0800000000000000
+      internalID: -4302847544721731413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_29
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 655
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef392dec7ed2e27b0800000000000000
+      internalID: -5247206042209446914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 524
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68766cd4b53c54720800000000000000
+      internalID: 2829882737786513286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_31
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 524
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8163b1a66b7e52ed0800000000000000
+      internalID: -2439288852501023208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_32
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 524
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a009ab75747528770800000000000000
+      internalID: 8611541401411948554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_33
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 524
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7bf0ff03c1bcda70800000000000000
+      internalID: 8853146418847742843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_34
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 524
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68c9f5d59bacc3300800000000000000
+      internalID: 233284178200730758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_35
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 524
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c06fd6f4c703da710800000000000000
+      internalID: 1706073144309970444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_36
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 524
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef2eca1c081283560800000000000000
+      internalID: 7293616433415381758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_37
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 524
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e2e4c0ed245129f0800000000000000
+      internalID: -495021928012782874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_38
+      rect:
+        serializedVersion: 2
+        x: 1768
+        y: 524
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f532c7620a129010800000000000000
+      internalID: 1194045448839640568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_39
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 524
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1476e991698ead90800000000000000
+      internalID: -7084574111520361442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 393
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d8f704b41e343f30800000000000000
+      internalID: 4554333381819103444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_41
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 393
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbe3831e13460d5b0800000000000000
+      internalID: -5345662592294043973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_42
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 393
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8afdf4389f0cc63a0800000000000000
+      internalID: -6670744770160107608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_43
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 393
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0270ce6b2b11f000800000000000000
+      internalID: 67865342742917646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_44
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 393
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47b9f3e486e0074d0800000000000000
+      internalID: -3138993099125056652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_45
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 393
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b87c51b308e08ee90800000000000000
+      internalID: -6996326077210179701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_46
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 393
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04b81efbbbd9254c0800000000000000
+      internalID: -4300201264481727680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_47
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 393
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a095f7f96a1253130800000000000000
+      internalID: 3545777281148344586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_48
+      rect:
+        serializedVersion: 2
+        x: 1768
+        y: 393
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 029e64c48e8d07c70800000000000000
+      internalID: 8966905350318385440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_49
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 393
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8239597085c5d1c0800000000000000
+      internalID: -4479457098767715702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 262
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 601ccbaa16a95cc30800000000000000
+      internalID: 4379075956954677510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_51
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 262
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18b21e4daf6e5d4f0800000000000000
+      internalID: -804482993428026495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_52
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 262
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39dedca34669b97e0800000000000000
+      internalID: -1757645872330576493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_53
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 262
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f9df1a79263288d0800000000000000
+      internalID: -2845652462774265357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_54
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 262
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c870b603935c5ed0800000000000000
+      internalID: -2423970608494643003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_55
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 262
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37ea7fd5588f1c1e0800000000000000
+      internalID: -2179187492979757453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_56
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 262
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c26f4829c09786690800000000000000
+      internalID: -7608698475537697236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_57
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 262
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ada54905ae76a49a0800000000000000
+      internalID: -6248067276951233830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_58
+      rect:
+        serializedVersion: 2
+        x: 1768
+        y: 262
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc3cf1000815dd940800000000000000
+      internalID: 5322499944821539787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_59
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 262
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e7fda40cc9270dc0800000000000000
+      internalID: -3672921014868772895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 131
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5e403d2d6e789f10800000000000000
+      internalID: 2276708619010461279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_61
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 131
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fa62bb78e6fd7d20800000000000000
+      internalID: 3278047582163725049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_62
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 131
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65c87d8ad18088740800000000000000
+      internalID: 5154378697005304918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_63
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 131
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2c0079f84ed8d2d0800000000000000
+      internalID: -3253606325771301846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_64
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 131
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0bad03bab9d25630800000000000000
+      internalID: 3914430422029544206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_65
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 131
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35cf13e8affc59460800000000000000
+      internalID: 7247927850357095507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_66
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 131
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbc5cb0b9bccda5b0800000000000000
+      internalID: -5355399283967501121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_67
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 131
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc8b82772d7910dc0800000000000000
+      internalID: -3674488890759530292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_68
+      rect:
+        serializedVersion: 2
+        x: 1768
+        y: 131
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10f298a3667c03bd0800000000000000
+      internalID: -2652400938638561535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_69
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 131
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 405a9eaba12f93940800000000000000
+      internalID: 5276514635060192516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4b464f65af5f7c10800000000000000
+      internalID: 2053465119245355854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_71
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 0
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c187f9c91b2bd8d0800000000000000
+      internalID: -2820613351854865977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_72
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 0
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6a39fede6ad0f000800000000000000
+      internalID: 67794164132690541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_73
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 0
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19af596cbf4576840800000000000000
+      internalID: 5217232133677251217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_74
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 0
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3c976c84b483b9d0800000000000000
+      internalID: -2759716235663401923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_75
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 0
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a44647c8006ed27d0800000000000000
+      internalID: -2941442091572239286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby Eat_2 221x131_76
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 0
+        width: 221
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ca4a98f513d6b410800000000000000
+      internalID: 1492612417838533314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0e85f9ab759b1bf4b91a1ff7aadb8bf4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Kirby Eat_2 221x131_0: -6685157757475807162
+      Kirby Eat_2 221x131_1: -6045882637004222289
+      Kirby Eat_2 221x131_10: 8943070842216842271
+      Kirby Eat_2 221x131_11: -6628218510030447365
+      Kirby Eat_2 221x131_12: -4802880059093630771
+      Kirby Eat_2 221x131_13: -3137657124398149357
+      Kirby Eat_2 221x131_14: 2039343979730030416
+      Kirby Eat_2 221x131_15: -2406369081811998063
+      Kirby Eat_2 221x131_16: -4102912817995666504
+      Kirby Eat_2 221x131_17: -7386850450977531705
+      Kirby Eat_2 221x131_18: 2808271570453460696
+      Kirby Eat_2 221x131_19: 1039203664001198005
+      Kirby Eat_2 221x131_2: 6435009139090115644
+      Kirby Eat_2 221x131_20: -2803145338104878477
+      Kirby Eat_2 221x131_21: 85056415631108513
+      Kirby Eat_2 221x131_22: -5217503760949202011
+      Kirby Eat_2 221x131_23: 239670046922069178
+      Kirby Eat_2 221x131_24: -3823366226630300110
+      Kirby Eat_2 221x131_25: 3671600923832496621
+      Kirby Eat_2 221x131_26: 6984848315555634813
+      Kirby Eat_2 221x131_27: -1116027124184960941
+      Kirby Eat_2 221x131_28: -4302847544721731413
+      Kirby Eat_2 221x131_29: -5247206042209446914
+      Kirby Eat_2 221x131_3: 4834947346819611596
+      Kirby Eat_2 221x131_30: 2829882737786513286
+      Kirby Eat_2 221x131_31: -2439288852501023208
+      Kirby Eat_2 221x131_32: 8611541401411948554
+      Kirby Eat_2 221x131_33: 8853146418847742843
+      Kirby Eat_2 221x131_34: 233284178200730758
+      Kirby Eat_2 221x131_35: 1706073144309970444
+      Kirby Eat_2 221x131_36: 7293616433415381758
+      Kirby Eat_2 221x131_37: -495021928012782874
+      Kirby Eat_2 221x131_38: 1194045448839640568
+      Kirby Eat_2 221x131_39: -7084574111520361442
+      Kirby Eat_2 221x131_4: -7397166129203589593
+      Kirby Eat_2 221x131_40: 4554333381819103444
+      Kirby Eat_2 221x131_41: -5345662592294043973
+      Kirby Eat_2 221x131_42: -6670744770160107608
+      Kirby Eat_2 221x131_43: 67865342742917646
+      Kirby Eat_2 221x131_44: -3138993099125056652
+      Kirby Eat_2 221x131_45: -6996326077210179701
+      Kirby Eat_2 221x131_46: -4300201264481727680
+      Kirby Eat_2 221x131_47: 3545777281148344586
+      Kirby Eat_2 221x131_48: 8966905350318385440
+      Kirby Eat_2 221x131_49: -4479457098767715702
+      Kirby Eat_2 221x131_5: -3012960629113663998
+      Kirby Eat_2 221x131_50: 4379075956954677510
+      Kirby Eat_2 221x131_51: -804482993428026495
+      Kirby Eat_2 221x131_52: -1757645872330576493
+      Kirby Eat_2 221x131_53: -2845652462774265357
+      Kirby Eat_2 221x131_54: -2423970608494643003
+      Kirby Eat_2 221x131_55: -2179187492979757453
+      Kirby Eat_2 221x131_56: -7608698475537697236
+      Kirby Eat_2 221x131_57: -6248067276951233830
+      Kirby Eat_2 221x131_58: 5322499944821539787
+      Kirby Eat_2 221x131_59: -3672921014868772895
+      Kirby Eat_2 221x131_6: 4731730130074143109
+      Kirby Eat_2 221x131_60: 2276708619010461279
+      Kirby Eat_2 221x131_61: 3278047582163725049
+      Kirby Eat_2 221x131_62: 5154378697005304918
+      Kirby Eat_2 221x131_63: -3253606325771301846
+      Kirby Eat_2 221x131_64: 3914430422029544206
+      Kirby Eat_2 221x131_65: 7247927850357095507
+      Kirby Eat_2 221x131_66: -5355399283967501121
+      Kirby Eat_2 221x131_67: -3674488890759530292
+      Kirby Eat_2 221x131_68: -2652400938638561535
+      Kirby Eat_2 221x131_69: 5276514635060192516
+      Kirby Eat_2 221x131_7: -8712720487231699457
+      Kirby Eat_2 221x131_70: 2053465119245355854
+      Kirby Eat_2 221x131_71: -2820613351854865977
+      Kirby Eat_2 221x131_72: 67794164132690541
+      Kirby Eat_2 221x131_73: 5217232133677251217
+      Kirby Eat_2 221x131_74: -2759716235663401923
+      Kirby Eat_2 221x131_75: -2941442091572239286
+      Kirby Eat_2 221x131_76: 1492612417838533314
+      Kirby Eat_2 221x131_8: -2200233063050811093
+      Kirby Eat_2 221x131_9: -520214599782330145
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

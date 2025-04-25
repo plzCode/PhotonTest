@@ -28,7 +28,8 @@ public class Player : MonoBehaviour
     public Transform dashEffectPos;
     public GameObject AirJumpOutEffect;
     public Transform AirJumpOutEffectPos;
-    public GameObject EatEffect;
+    public GameObject EatEffect1;
+    public GameObject EatEffect2;
     public Transform EatEffectPos;
     public GameObject Attack;
     public Collider2D currentEnemy;
@@ -62,7 +63,9 @@ public class Player : MonoBehaviour
     public PlayerAirJumpUpState airJumpUpState { get; private set; }
     public PlayerAirJumpOutState airJumpOutState { get; private set; }
 
-    public PlayerEating12State eatingState12 { get; private set; }
+    public PlayerEating12State eating12State { get; private set; }
+    public PlayerEating3State eating3State { get; private set; }
+    public PlayerEating4State eating4State { get; private set; }
     public PlayerEatingEndState eatingEndState { get; private set; }
 
     public PlayerEatState eatState { get; private set; }
@@ -101,7 +104,9 @@ public class Player : MonoBehaviour
         airJumpUpState = new PlayerAirJumpUpState(this, stateMachine, "AirJumpUp");
         airJumpOutState = new PlayerAirJumpOutState(this, stateMachine, "AirJumpOut");
 
-        eatingState12 = new PlayerEating12State(this, stateMachine, "Eating1");
+        eating12State = new PlayerEating12State(this, stateMachine, "Eating12");
+        eating3State = new PlayerEating3State(this, stateMachine, "Eating3");
+        eating4State = new PlayerEating4State(this, stateMachine, "Eating4");
         eatingEndState = new PlayerEatingEndState(this, stateMachine, "EatingEnd");
 
         eatState = new PlayerEatState(this, stateMachine, "Eat");

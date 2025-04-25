@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 7655887825162473413}
   - component: {fileID: 2358070428936542936}
   - component: {fileID: -5503277366793095067}
+  - component: {fileID: 2434127859290607288}
   - component: {fileID: 67106672322285237}
   m_Layer: 6
   m_Name: Player
@@ -123,7 +124,8 @@ MonoBehaviour:
   dashEffectPos: {fileID: 2956317602630708912}
   AirJumpOutEffect: {fileID: 7334062365662037436, guid: 6a977909fd917e14592568674f7591ee, type: 3}
   AirJumpOutEffectPos: {fileID: 595596341373123499}
-  EatEffect: {fileID: 5009722476430104398, guid: 69b06db6f92da324ca488ad4ba216069, type: 3}
+  EatEffect1: {fileID: 5009722476430104398, guid: a7d124fa661c13e4ea4678f29a35aae0, type: 3}
+  EatEffect2: {fileID: 4865937574453472341, guid: 37cb877d3e7ec1d41b0a0620abdf273c, type: 3}
   EatEffectPos: {fileID: 3288432630328735207}
   Attack: {fileID: 0}
   currentEnemy: {fileID: 0}
@@ -192,6 +194,18 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 1
   m_UseLocal: 1
+--- !u!114 &2434127859290607288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698457925764607719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7631f0b4a1426194bbb0be4f204c06a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!70 &67106672322285237
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
