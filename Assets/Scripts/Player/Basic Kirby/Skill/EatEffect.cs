@@ -60,11 +60,13 @@ public class EatEffect : MonoBehaviour
 
     public void Eating3State()
     {
+        if (player == null) return;
         player.stateMachine.ChangeState(player.eating3State);
     }
 
     public void Eating4State()
     {
+        if (player == null) return;
         player.stateMachine.ChangeState(player.eating4State);
     }
 }

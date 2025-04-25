@@ -281,6 +281,7 @@ public class Player : MonoBehaviour
     public void AttackDestroy()
     {
         //Destroy(Attack);
+        if (Attack == null) return;
         PhotonNetwork.Destroy(Attack);
         
     }
