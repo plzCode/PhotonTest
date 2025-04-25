@@ -14,10 +14,7 @@ public class Spear_AnimationTriggers : MonoBehaviour
     {
         if (enemy.GetComponent<PhotonView>() != null) 
         {
-            enemy.GetComponent<PhotonView>().RPC("ThrowSpear", RpcTarget.All);
-        }
-        else
-        {
+            //enemy.GetComponent<PhotonView>().RPC("ThrowSpear", RpcTarget.All);
             enemy.ThrowSpear();
         }
     }

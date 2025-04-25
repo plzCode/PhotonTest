@@ -44,7 +44,6 @@ public class Monster_Spear : Enemy
         Gizmos.DrawWireSphere(transform.position, throwDistance + 2f); // 방향 전환용 감지 사거리
     }
 
-    [PunRPC]
     public void ThrowSpear()
     {
         //PhotonNetwork.Instantiate("Monster_Effect/" + spearPrefab.name, transform.position, Quaternion.identity);

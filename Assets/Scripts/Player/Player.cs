@@ -161,14 +161,7 @@ public class Player : MonoBehaviour
             KirbyFormNum = 0;
         }
 
-    }
-
-    #region TestRegion2
-    /*IEnumerator StartInhale()
-    {
-        while()
-    }*/
-    #endregion
+    }   
 
     public int EatKirbyFormNum;
     public int KirbyFormNum;
@@ -234,6 +227,7 @@ public class Player : MonoBehaviour
     [PunRPC]
     public void lineVelocity(float xlineVelocity, float ylineVelocity)
     {
+        if (rb == null) return;
         rb.linearVelocity = new Vector2 (xlineVelocity, ylineVelocity);
         FlipController(xlineVelocity);
     }
