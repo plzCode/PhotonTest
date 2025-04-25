@@ -56,6 +56,10 @@ public class SpawnMannager : MonoBehaviourPun
         pCam.LookAt = tmpPlayer.transform;
         pCam.Lens.OrthographicSize = 6f;
         pCam.Lens.NearClipPlane = -1f;
+
+        
+
     }
+
 
 }
