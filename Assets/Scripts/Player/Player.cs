@@ -2,6 +2,7 @@ using Photon.Pun;
 using Photon.Realtime;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Resources;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -31,7 +32,7 @@ public class Player : MonoBehaviour
     public GameObject EatEffect1;
     public GameObject EatEffect2;
     public Transform EatEffectPos;
-    public GameObject Attack;
+    public List<GameObject> AttackList = new List<GameObject>();
     public Collider2D currentEnemy;
 
     [SerializeField] private Transform groundCheck;
@@ -261,30 +262,41 @@ public class Player : MonoBehaviour
 
 
     [PunRPC]
-    public void AttackAdd(float _x, string Effect, Vector3 EffecPos) //자식 객체로 소환 및 다른 스크립트에서 프리펩 삭제 가능하게
+    public void AttackAdd(float _x, string effectName, Vector3 effectPos)
     {
+        GameObject effect = null;
+
         if (_x > 0)
+            effect = PhotonNetwork.Instantiate("Player_Effect/" + effectName, effectPos, Quaternion.identity);
+        else if (_x < 0)
+            effect = PhotonNetwork.Instantiate("Player_Effect/" + effectName, effectPos, Quaternion.Euler(0, 180, 0));
+
+        if (effect != null)
         {
-            //Attack = Instantiate(Effect, EffecPos.position, Quaternion.identity, parentTransform);
-            Attack = PhotonNetwork.Instantiate("Player_Effect/" + Effect, EffecPos, Quaternion.identity);
+            effect.GetComponent<EatEffect>().player = this;
+            effect.transform.SetParent(this.transform);
+            AttackList.Add(effect);
         }
-        else if (_x < 0) //왼쪽이면 좌우반전 소환
-        {
-            //Attack = Instantiate(Effect, EffecPos.position, Quaternion.Euler(0, 180, 0), parentTransform);
-            Attack = PhotonNetwork.Instantiate("Player_Effect/" + Effect, EffecPos, Quaternion.Euler(0, 180, 0));
-        }
-        Attack.GetComponent<EatEffect>().player = this;
-        Attack.transform.SetParent(this.transform);
     }
 
     [PunRPC]
     public void AttackDestroy()
     {
-        //Destroy(Attack);
-        if (Attack == null) return;
-        PhotonNetwork.Destroy(Attack);
-        
+        foreach (GameObject effect in AttackList)
+        {
+            if (effect == null) continue;
+
+            PhotonView view = effect.GetComponent<PhotonView>();
+            if (view != null && view.IsMine)
+            {
+                PhotonNetwork.Destroy(effect);
+            }
+        }
+
+        AttackList.Clear(); // 리스트 초기화
     }
+
+
 
     public void SetCurrentTarget(Collider2D enemyCollider)
     {
