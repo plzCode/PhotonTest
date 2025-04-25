@@ -1,4 +1,5 @@
 using UnityEngine;
+using Photon.Pun;
 
 public class PlayerChageFormState : PlayerState
 {
@@ -9,6 +10,7 @@ public class PlayerChageFormState : PlayerState
     public override void Enter()
     {
         base.Enter();
+        player.lineVelocity(0f, 0f);
     }
 
     public override void Exit()
