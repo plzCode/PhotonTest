@@ -24,7 +24,10 @@ public class EatEffect : MonoBehaviour
         if (enemy == null) return; //이미 먹고있다면 리턴
         if (Vector2.Distance(player.transform.position, enemy.position) < 1f) //적과의 거리가 1보다 작다면
         {
-            PhotonNetwork.Destroy(enemy.gameObject);  //적삭제
+            PhotonView eView = enemy.GetComponent<PhotonView>();
+            eView.RPC("DestroySelf", eView.Owner);
+            
+            //PhotonNetwork.Destroy(enemy.gameObject);  //적삭제
             player.stateMachine.ChangeState(player.eatState); //플레이어 먹은모션
             player.EatKirbyFormNum = PormNumber; //먹는 커비 모션에 적의 변신 번호 값을 저장
             player.KirbyFormNum = 1; //먹는 커비로 변신
@@ -35,7 +38,7 @@ public class EatEffect : MonoBehaviour
     public void OnTriggerStay2D(Collider2D collision) //적과 충돌중 이라면
     {
         //if (!pView.IsMine) return;
-        if(collision == null) return; //충돌중인 적이 없다면 리턴
+        if(collision == null || player == null) return; //충돌중인 적이 없다면 리턴
         if (collision.gameObject.CompareTag("Enemy")) //충돌중인 적 콜라이더를 가져옴
         {
             Collider2D playerCol = player.GetComponent<Collider2D>(); //플레이어 콜라이더를 가져옴

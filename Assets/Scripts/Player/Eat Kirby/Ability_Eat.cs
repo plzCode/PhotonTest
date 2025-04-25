@@ -1,3 +1,4 @@
+using Photon.Pun;
 using UnityEngine;
 
 public class Ability_Eat : PlayerAbility
@@ -9,6 +10,11 @@ public class Ability_Eat : PlayerAbility
         base.OnAbilityCopied(owner);
         EatKirby = Resources.Load<RuntimeAnimatorController>("Test/Eat_Kirby"); //바꿀 애니메이터 파일을 찾아 저장합니다.
         owner.GetComponentInChildren<Animator>().runtimeAnimatorController = EatKirby; //플레이어에게 애니메이터 파일을 바꿔넣습니다.
+        for (int i = 0; i < EatKirby.animationClips.Length; i++)
+        {
+            owner.GetComponentInChildren<PhotonAnimatorView>().SetParameterSynchronized(EatKirby.animationClips[i].name, PhotonAnimatorView.ParameterType.Bool, PhotonAnimatorView.SynchronizeType.Discrete);
+        }
+
         Debug.Log("Animal ability copied");
     }
 

@@ -77,6 +77,8 @@ public class Player : MonoBehaviour
     public PlayerAbility curAbility;
     public bool isInhaling = false;
 
+    protected PhotonView pView;
+
 
     public void Awake()
     {
@@ -107,6 +109,8 @@ public class Player : MonoBehaviour
         damageState = new PlayerDamageState(this, stateMachine, "Damage");
 
         changeFormState = new PlayerChageFormState(this, stateMachine, "ChangeForm");
+
+        pView = GetComponent<PhotonView>();
     }
 
     public void Start()
@@ -165,6 +169,7 @@ public class Player : MonoBehaviour
 
     public int EatKirbyFormNum;
     public int KirbyFormNum;
+    [PunRPC]
     public void KirbyFrom() //커비가 먹은 적의 고유 번호에 따라 변신 폼을 정함
     {
         Debug.Log("실행됨");
@@ -275,11 +280,6 @@ public class Player : MonoBehaviour
         
     }
 
-
-
-
-
-
     public void SetCurrentTarget(Collider2D enemyCollider)
     {
         currentEnemy = enemyCollider;
@@ -313,4 +313,9 @@ public class Player : MonoBehaviour
             dashTime += Time.deltaTime;
         }
     }
+    public void Call_RPC(string rpc_Name, RpcTarget type)
+    {
+        pView.RPC(rpc_Name, type);
+    }
+
 }

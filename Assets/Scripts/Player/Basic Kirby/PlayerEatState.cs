@@ -1,3 +1,4 @@
+using Photon.Pun;
 using UnityEngine;
 
 public class PlayerEatState : PlayerState
@@ -14,11 +15,13 @@ public class PlayerEatState : PlayerState
     public override void Exit()
     {
         base.Exit();
-        player.KirbyFrom(); //먹는중인 커비로 변신
+        pView.RPC("KirbyFrom", RpcTarget.All); //먹는중인 커비로 변신
+        //player.KirbyFrom(); //먹는중인 커비로 변신
     }
 
     public override void Update()
     {
         base.Update();
     }
+
 }

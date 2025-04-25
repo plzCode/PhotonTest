@@ -205,4 +205,17 @@ public class Enemy : MonoBehaviour
         FlipController(_xVelocity);
     }
     #endregion
+
+    public void Call_RPC(string name, RpcTarget type) 
+    {
+        eView.RPC(name, type);
+    }
+
+    #region 삭제요청    
+    [PunRPC]
+    public void DestroySelf()
+    {
+        PhotonNetwork.Destroy(gameObject);
+    }
+    #endregion
 }

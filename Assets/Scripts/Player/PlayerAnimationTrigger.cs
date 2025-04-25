@@ -31,7 +31,8 @@ public class PlayerAnimatorController : MonoBehaviour
 
         if (player.KirbyFormNum > 0) //0이상이면 먹은 적 커비로 변신
         {
-            player.KirbyFrom(); //변신
+            //player.KirbyFrom(); //변신
+            player.Call_RPC("KirbyFrom", RpcTarget.All); //변신
             player.stateMachine.ChangeState(player.changeFormState);
         }
         else
