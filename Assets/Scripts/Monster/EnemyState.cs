@@ -5,9 +5,9 @@ public class EnemyState
     protected EnemyStateMachine stateMachine;
     protected Enemy enemyBase;
     protected Rigidbody2D rb;
+    protected string animBoolName;
 
-    protected bool triggerCalled;
-    private string animBoolName;
+    protected bool triggerCalled;   
 
     protected float stateTimer;
 
