@@ -11,13 +11,14 @@ public class EnemyState
 
     protected float stateTimer;
 
-    protected Transform[] player;
+    
     public EnemyState(Enemy _enemyBase, EnemyStateMachine _stateMachine, string _animBoolName)
     {
         this.enemyBase = _enemyBase;
         this.stateMachine = _stateMachine;
         this.animBoolName = _animBoolName;
     }
+    
 
     public virtual void Enter()
     {

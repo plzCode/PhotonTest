@@ -15,7 +15,7 @@ public class Spear_IdleState : Spear_GroundedState
 
         stateTimer = enemy.idleTime;
 
-        enemy.startCoru();
+        
 
     }
 
@@ -28,18 +28,19 @@ public class Spear_IdleState : Spear_GroundedState
     {
         base.Update();
 
-        Transform closestPlayer = GetClosestPlayer();
+        GameObject closestPlayer = GameManager.Instance.GetClosestPlayer(enemy.transform.position);
         if (closestPlayer == null) return;
 
-        float distanceToPlayer = Vector3.Distance(enemy.transform.position, closestPlayer.position);
+        Transform target = closestPlayer.transform;
+        float distanceToTarget = Vector3.Distance(enemy.transform.position, target.position);
 
-        if (distanceToPlayer <= enemy.throwDistance + 2f)
+        if (distanceToTarget <= enemy.throwDistance + 2f)
         {
-            if (closestPlayer.position.x < enemy.transform.position.x)
+            if (target.position.x < enemy.transform.position.x)
             {
                 enemy.transform.rotation = Quaternion.Euler(0, 180, 0);
             }
-            else if (closestPlayer.position.x > enemy.transform.position.x)
+            else if (target.position.x > enemy.transform.position.x)
             {
                 enemy.transform.rotation = Quaternion.Euler(0, 0, 0);
             }
@@ -47,7 +48,7 @@ public class Spear_IdleState : Spear_GroundedState
 
             if (stateTimer < 0)
             {
-                if (distanceToPlayer <= enemy.throwDistance)
+                if (distanceToTarget <= enemy.throwDistance)
                 {
                     stateMachine.ChangeState(enemy.throwState);
                 }
