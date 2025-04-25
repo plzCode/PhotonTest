@@ -51,6 +51,8 @@ public class Enemy : MonoBehaviour
 
     public EnemyStateMachine stateMachine { get; private set; }
 
+    
+
     //For Photon
     private PhotonView eView; 
     private Vector3 targetPosition;

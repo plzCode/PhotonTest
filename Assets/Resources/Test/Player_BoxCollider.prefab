@@ -41,13 +41,13 @@ GameObject:
   m_Component:
   - component: {fileID: 4040077426154277962}
   - component: {fileID: 715467377046399045}
+  - component: {fileID: 6409723174339660876}
   - component: {fileID: 4317321290604817319}
   - component: {fileID: 7655887825162473413}
   - component: {fileID: 2358070428936542936}
   - component: {fileID: -5503277366793095067}
-  - component: {fileID: 67106672322285237}
   m_Layer: 6
-  m_Name: Player
+  m_Name: Player_BoxCollider
   m_TagString: Player
   m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -100,6 +100,52 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!61 &6409723174339660876
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698457925764607719}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.023211062, y: -0.37770665}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.0126604, y: 0.911376}
+  m_EdgeRadius: 0
 --- !u!114 &4317321290604817319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,43 +238,6 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 1
   m_UseLocal: 1
---- !u!70 &67106672322285237
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 698457925764607719}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.3835283}
-  m_Size: {x: 0.70318675, y: 0.8929435}
-  m_Direction: 0
 --- !u!1 &1112893942917339125
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,67 +438,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowLayerWeightsInspector: 1
   ShowParameterInspector: 1
-  m_SynchronizeParameters:
-  - Type: 4
-    SynchronizeType: 1
-    Name: ChangeForm
-  - Type: 4
-    SynchronizeType: 1
-    Name: Eat
-  - Type: 4
-    SynchronizeType: 1
-    Name: EatingEnd
-  - Type: 4
-    SynchronizeType: 1
-    Name: Eating2
-  - Type: 4
-    SynchronizeType: 1
-    Name: Eating1
-  - Type: 4
-    SynchronizeType: 1
-    Name: Damage
-  - Type: 4
-    SynchronizeType: 1
-    Name: Sliding
-  - Type: 4
-    SynchronizeType: 1
-    Name: AirJumpOut
-  - Type: 4
-    SynchronizeType: 1
-    Name: Down
-  - Type: 4
-    SynchronizeType: 1
-    Name: DashTurn
-  - Type: 4
-    SynchronizeType: 1
-    Name: Dash
-  - Type: 4
-    SynchronizeType: 1
-    Name: AirJump
-  - Type: 4
-    SynchronizeType: 1
-    Name: AirJumping
-  - Type: 4
-    SynchronizeType: 1
-    Name: Downing
-  - Type: 4
-    SynchronizeType: 1
-    Name: DowningGround
-  - Type: 4
-    SynchronizeType: 1
-    Name: AirJumpUp
-  - Type: 4
-    SynchronizeType: 1
-    Name: Jump
-  - Type: 4
-    SynchronizeType: 1
-    Name: Move
-  - Type: 4
-    SynchronizeType: 1
-    Name: Idle
-  - Type: 1
-    SynchronizeType: 1
-    Name: yVelocity
+  m_SynchronizeParameters: []
   m_SynchronizeLayers:
   - SynchronizeType: 1
     LayerIndex: 0

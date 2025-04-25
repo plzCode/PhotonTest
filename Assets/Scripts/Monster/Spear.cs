@@ -16,7 +16,7 @@ public class Spear : MonsterWeapon
 
     private void Start()
     {
-        target = GameObject.FindGameObjectWithTag("Player")?.transform;
+        target = FindClosestPlayer();
 
         if (target != null)
         {
@@ -57,6 +57,25 @@ public class Spear : MonsterWeapon
         transform.rotation = Quaternion.Euler(0, 0, angle);
     }
 
+    private Transform FindClosestPlayer()
+    {
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+        Transform closest = null;
+        float minDistance = Mathf.Infinity;
+        Vector3 currentPos = transform.position;
+
+        foreach (GameObject player in players)
+        {
+            float dist = Vector3.Distance(player.transform.position, currentPos);
+            if (dist < minDistance)
+            {
+                minDistance = dist;
+                closest = player.transform;
+            }
+        }
+
+        return closest;
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
