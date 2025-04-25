@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6036183937669518217}
   - component: {fileID: 4711439588004449736}
   m_Layer: 0
-  m_Name: Kirby Eat 221x131_0
+  m_Name: Kirby Eat_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -170,3 +170,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03672d48252814242827f651825c01d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  enemy: {fileID: 0}
+  pView: {fileID: 0}
+  Eat: 0
+  PormNumber: 0
