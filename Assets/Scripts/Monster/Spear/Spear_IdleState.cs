@@ -1,4 +1,5 @@
 
+using System.Collections;
 using UnityEngine;
 
 
@@ -13,6 +14,9 @@ public class Spear_IdleState : Spear_GroundedState
         base.Enter();
 
         stateTimer = enemy.idleTime;
+
+        enemy.startCoru();
+
     }
 
     public override void Exit()
@@ -24,29 +28,38 @@ public class Spear_IdleState : Spear_GroundedState
     {
         base.Update();
 
-        if (Vector3.Distance(enemy.transform.position, player.transform.position) <= enemy.throwDistance+2f)
+        Transform closestPlayer = GetClosestPlayer();
+        if (closestPlayer == null) return;
+
+        float distanceToPlayer = Vector3.Distance(enemy.transform.position, closestPlayer.position);
+
+        if (distanceToPlayer <= enemy.throwDistance + 2f)
         {
-            if (player.position.x < enemy.transform.position.x)
+            if (closestPlayer.position.x < enemy.transform.position.x)
             {
                 enemy.transform.rotation = Quaternion.Euler(0, 180, 0);
             }
-            else if (player.position.x > enemy.transform.position.x)
+            else if (closestPlayer.position.x > enemy.transform.position.x)
             {
                 enemy.transform.rotation = Quaternion.Euler(0, 0, 0);
             }
-        }
-        
 
-        if (stateTimer < 0)
-        {
-            
 
-            if (Vector3.Distance(enemy.transform.position, player.transform.position) <= enemy.throwDistance)
+            if (stateTimer < 0)
             {
-                stateMachine.ChangeState(enemy.throwState);
+                if (distanceToPlayer <= enemy.throwDistance)
+                {
+                    stateMachine.ChangeState(enemy.throwState);
+                }
             }
 
         }
 
+        
+
+        
+
     }
+
+    
 }

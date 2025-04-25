@@ -1,12 +1,15 @@
 using Photon.Pun;
+using System.Collections;
 using UnityEngine;
 
 public class Monster_Spear : Enemy
 {
+
+    
     [Header("M02 원거리 공격 정보")]
     [SerializeField] public float throwDistance;
 
-
+    public Transform[] player;
     #region States
     public Spear_IdleState idleState { get; private set; }
     public Spear_ThrowState throwState { get; private set; }
@@ -18,15 +21,28 @@ public class Monster_Spear : Enemy
     {
         base.Awake();
 
+        GameObject[] playerObjects = GameObject.FindGameObjectsWithTag("Player");
+        player = new Transform[playerObjects.Length];
+        for (int i = 0; i < playerObjects.Length; i++)
+        {
+            player[i] = playerObjects[i].transform;
+        }
+
+
         idleState = new Spear_IdleState(this, stateMachine, "Idle", this);
         throwState = new Spear_ThrowState(this, stateMachine, "Throw", this);
+
+        
     }
 
     protected override void Start()
     {
         base.Start();
+        
 
         stateMachine.Initialize(idleState);
+
+        
 
     }
 
@@ -44,10 +60,30 @@ public class Monster_Spear : Enemy
         Gizmos.DrawWireSphere(transform.position, throwDistance + 2f); // 방향 전환용 감지 사거리
     }
 
-    [PunRPC]
+    
     public void ThrowSpear()
     {
         //PhotonNetwork.Instantiate("Monster_Effect/" + spearPrefab.name, transform.position, Quaternion.identity);
         Instantiate(spearPrefab, transform.position, Quaternion.identity);
     }
+
+    public IEnumerator delayFindPlayer()
+    {
+        yield return new WaitForSeconds(3f);
+
+        GameObject[] playerObjects = GameObject.FindGameObjectsWithTag("Player");
+        player = new Transform[playerObjects.Length];
+        for (int i = 0; i < playerObjects.Length; i++)
+        {
+            player[i] = playerObjects[i].transform;
+        }
+
+        
+    }
+
+    public void startCoru()
+    {
+        StartCoroutine(delayFindPlayer());
+    }
+
 }
