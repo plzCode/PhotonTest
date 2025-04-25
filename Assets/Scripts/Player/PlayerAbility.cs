@@ -5,11 +5,11 @@ public abstract class PlayerAbility : MonoBehaviour
 {
     protected Player owner;
 
-    enum aibilityNumber 
+    enum AibilityNumber 
     {
-        Normal,
-        Eat,
-        Animal,
+        Normal, //0
+        Eat, //1
+        Animal, //2
     }
 
 
