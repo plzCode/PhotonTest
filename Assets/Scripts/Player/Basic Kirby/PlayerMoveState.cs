@@ -17,6 +17,7 @@ public class PlayerMoveState : PlayerGroundState
     public override void Exit()
     {
         base.Exit();
+        player.lineVelocity(0f, 0f); //움직임 0으로 만들기
     }
 
     public override void Update()
