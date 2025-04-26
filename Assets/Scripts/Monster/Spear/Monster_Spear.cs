@@ -79,7 +79,7 @@ public class Monster_Spear : Enemy
         // 마스터 클라이언트에서만 투창을 소환하도록 수정
         if (PhotonNetwork.IsMasterClient)
         {
-            Debug.Log("ThrowSpear RPC 호출됨 - IsMasterClient: " + PhotonNetwork.IsMasterClient);
+            //Debug.Log("ThrowSpear RPC 호출됨 - IsMasterClient: " + PhotonNetwork.IsMasterClient);
             PhotonNetwork.Instantiate("Monster_Effect/" + spearPrefab.name, new Vector2(transform.position.x,transform.position.y+0.1f), Quaternion.identity);
         }
         //Instantiate(spearPrefab, transform.position, Quaternion.identity);

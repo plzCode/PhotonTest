@@ -276,6 +276,7 @@ public class Player : MonoBehaviour
             effect.GetComponent<EatEffect>().player = this;
             effect.transform.SetParent(this.transform);
             AttackList.Add(effect);
+            //effect.GetComponent<PhotonView>().RPC("SetPlayer", RpcTarget.AllBuffered, pView.ViewID);
         }
     }
 
@@ -331,6 +332,64 @@ public class Player : MonoBehaviour
             dashTime += Time.deltaTime;
         }
     }
+
+    /*[PunRPC]
+    public void Change_Animator_Controller(int playerID)
+    {
+        PhotonView playerView = PhotonView.Find(playerID);
+        RuntimeAnimatorController animatorContoller = playerView.GetComponentInChildren<Animator>().runtimeAnimatorController;
+        for (int i = 0; i < animatorContoller.animationClips.Length; i++)
+        {
+            playerView.GetComponentInChildren<PhotonAnimatorView>().SetParameterSynchronized(animatorContoller.animationClips[i].name, PhotonAnimatorView.ParameterType.Bool, PhotonAnimatorView.SynchronizeType.Discrete);
+        }
+    }*/
+
+    [PunRPC]
+    public void Change_Animator_Controller(int playerViewID)
+    {
+        PhotonView playerView = PhotonView.Find(playerViewID);
+        if (playerView == null)
+        {
+            Debug.LogError("PhotonView not found for ViewID: " + playerViewID);
+            return;
+        }
+        
+        Animator animator = playerView.GetComponentInChildren<Animator>();
+        RuntimeAnimatorController newController = animator.GetComponent<Animator>().runtimeAnimatorController;
+        PhotonAnimatorView animatorView = playerView.GetComponentInChildren<PhotonAnimatorView>();
+
+        // Animator Controller 변경
+        animator.runtimeAnimatorController = newController;
+
+        // PhotonAnimatorView의 동기화 파라미터 초기화
+        if (animatorView != null)
+        {
+            animatorView.GetSynchronizedParameters().Clear();
+            animatorView.GetSynchronizedLayers().Clear();
+
+            // 새 Animator Controller의 파라미터를 동기화 설정
+            foreach (AnimatorControllerParameter param in animator.parameters)
+            {
+                if (param.type == AnimatorControllerParameterType.Bool)
+                {
+                    animatorView.SetParameterSynchronized(param.name, PhotonAnimatorView.ParameterType.Bool, PhotonAnimatorView.SynchronizeType.Discrete);
+                }
+                else if (param.type == AnimatorControllerParameterType.Float)
+                {
+                    animatorView.SetParameterSynchronized(param.name, PhotonAnimatorView.ParameterType.Float, PhotonAnimatorView.SynchronizeType.Continuous);
+                }
+                else if (param.type == AnimatorControllerParameterType.Int)
+                {
+                    animatorView.SetParameterSynchronized(param.name, PhotonAnimatorView.ParameterType.Int, PhotonAnimatorView.SynchronizeType.Discrete);
+                }
+                else if (param.type == AnimatorControllerParameterType.Trigger)
+                {
+                    animatorView.SetParameterSynchronized(param.name, PhotonAnimatorView.ParameterType.Trigger, PhotonAnimatorView.SynchronizeType.Discrete);
+                }
+            }
+        }
+    }
+
     public void Call_RPC(string rpc_Name, RpcTarget type)
     {
         pView.RPC(rpc_Name, type);

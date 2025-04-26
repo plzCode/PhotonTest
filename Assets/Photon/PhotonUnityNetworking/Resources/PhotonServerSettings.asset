@@ -28,31 +28,32 @@ MonoBehaviour:
     AuthMode: 0
     EnableLobbyStatistics: 0
     NetworkLogging: 1
-  DevRegion: kr
+  DevRegion: 
   PunLogging: 0
   EnableSupportLogger: 0
   RunInBackground: 1
   StartInOfflineMode: 0
   RpcList:
+  - AttackAdd
+  - AttackDestroy
+  - Change_Animator_Controller
   - ClickRpc
   - DestroyRpc
-  - DestroySpaceship
-  - Fire
-  - RespawnSpaceship
-  - SettingColor
-  - lineVelocity
-  - EffectAdd
-  - SyncMonsterState
-  - AttackAdd
-  - EatEnemy
-  - AttackDestroy
-  - ThrowSpear
-  - RegisterToGameManager
-  - KirbyFrom
   - DestroySelf
-  - RequestAttackFromClient
-  - SyncStateTimer
+  - DestroySpaceship
+  - EatEnemy
+  - Fire
   - FreezeSpear
+  - KirbyFrom
+  - lineVelocity
+  - RegisterToGameManager
+  - RequestAttackFromClient
+  - RespawnSpaceship
+  - SetPlayer
+  - SettingColor
+  - SyncMonsterState
+  - SyncStateTimer
+  - ThrowSpear
   DisableAutoOpenWizard: 1
   ShowSettings: 1
-  DevRegionSetOnce: 1
+  DevRegionSetOnce: 0

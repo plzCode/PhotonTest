@@ -69,4 +69,14 @@ public class EatEffect : MonoBehaviour
         if (player == null) return;
         player.stateMachine.ChangeState(player.eating4State);
     }
+
+    [PunRPC]
+    public void SetPlayer(int playerViewID)
+    {
+        PhotonView playerView = PhotonView.Find(playerViewID);
+        if (playerView != null)
+        {
+            this.player = playerView.GetComponent<Player>();
+        }
+    }
 }

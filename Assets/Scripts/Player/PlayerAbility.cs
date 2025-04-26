@@ -1,5 +1,6 @@
 using UnityEditor;
 using UnityEngine;
+using Photon.Pun;
 
 public abstract class PlayerAbility : MonoBehaviour
 {
@@ -16,6 +17,12 @@ public abstract class PlayerAbility : MonoBehaviour
     public virtual void OnAbilityCopied(Player owner)
     {
         this.owner = owner;
+        RuntimeAnimatorController prevAnim = owner.GetComponentInChildren<Animator>().runtimeAnimatorController;
+        for (int i = 0; i < prevAnim.animationClips.Length; i++)
+        {
+            owner.GetComponentInChildren<PhotonAnimatorView>().SetParameterSynchronized(prevAnim.animationClips[i].name, PhotonAnimatorView.ParameterType.Bool, PhotonAnimatorView.SynchronizeType.Disabled);
+        }
+
     }
 
     public virtual void OnAbilityDestroyed(Player owner)
@@ -28,4 +35,6 @@ public abstract class PlayerAbility : MonoBehaviour
     }
 
     public abstract void AttackHandle();
+
+    
 }

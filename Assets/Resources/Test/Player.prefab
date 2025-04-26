@@ -443,7 +443,70 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowLayerWeightsInspector: 1
   ShowParameterInspector: 1
-  m_SynchronizeParameters: []
+  m_SynchronizeParameters:
+  - Type: 4
+    SynchronizeType: 1
+    Name: Eating4
+  - Type: 4
+    SynchronizeType: 1
+    Name: Eating3
+  - Type: 4
+    SynchronizeType: 1
+    Name: ChangeForm
+  - Type: 4
+    SynchronizeType: 1
+    Name: Eat
+  - Type: 4
+    SynchronizeType: 1
+    Name: EatingEnd
+  - Type: 4
+    SynchronizeType: 1
+    Name: Eating12
+  - Type: 4
+    SynchronizeType: 1
+    Name: Damage
+  - Type: 4
+    SynchronizeType: 1
+    Name: Sliding
+  - Type: 4
+    SynchronizeType: 1
+    Name: AirJumpOut
+  - Type: 4
+    SynchronizeType: 1
+    Name: Down
+  - Type: 4
+    SynchronizeType: 1
+    Name: DashTurn
+  - Type: 4
+    SynchronizeType: 1
+    Name: Dash
+  - Type: 4
+    SynchronizeType: 1
+    Name: AirJump
+  - Type: 4
+    SynchronizeType: 1
+    Name: AirJumping
+  - Type: 4
+    SynchronizeType: 1
+    Name: Downing
+  - Type: 4
+    SynchronizeType: 1
+    Name: DowningGround
+  - Type: 4
+    SynchronizeType: 1
+    Name: AirJumpUp
+  - Type: 4
+    SynchronizeType: 1
+    Name: Jump
+  - Type: 4
+    SynchronizeType: 1
+    Name: Move
+  - Type: 4
+    SynchronizeType: 1
+    Name: Idle
+  - Type: 1
+    SynchronizeType: 1
+    Name: yVelocity
   m_SynchronizeLayers:
   - SynchronizeType: 1
     LayerIndex: 0
