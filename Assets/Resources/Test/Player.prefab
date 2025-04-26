@@ -134,6 +134,9 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
+  angle: 0
+  perp: {x: 0, y: 0}
+  isSlope: 0
   curAbility: {fileID: 0}
   isInhaling: 0
   EatKirbyFormNum: 0

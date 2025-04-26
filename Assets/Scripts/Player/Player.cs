@@ -39,6 +39,10 @@ public class Player : MonoBehaviour
     [SerializeField] private float groundLine;
     [SerializeField] private LayerMask whatIsGround;
 
+    public float angle;
+    public Vector2 perp;
+    public bool isSlope;
+
 
 
     public Rigidbody2D rb { get; private set; }
@@ -171,6 +175,8 @@ public class Player : MonoBehaviour
             KirbyFormNum = 0;
         }
 
+        Hill();
+
     }   
 
     public int EatKirbyFormNum;
@@ -207,6 +213,25 @@ public class Player : MonoBehaviour
     //충돌체크
     public bool IsGroundCheck() => Physics2D.Raycast(groundCheck.position, Vector2.down, groundLine, whatIsGround);
 
+    public void Hill() //언덕에서 캐릭터가 미끄러지지 않게 함
+    {
+        RaycastHit2D hit = Physics2D.Raycast(groundCheck.position, Vector2.down, groundLine, whatIsGround);
+
+        if(hit)
+        {
+            perp = Vector2.Perpendicular(hit.normal).normalized;
+            angle = Vector2.Angle(hit.normal, Vector2.up);
+
+            if (angle != 0)
+                isSlope = true;
+            else
+                isSlope = false;
+
+                Debug.DrawLine(hit.point, hit.point + hit.normal, Color.blue);
+            Debug.DrawLine(hit.point, hit.point + perp, Color.red);
+        }
+    }
+
     public void OnDrawGizmos()
     {
         Gizmos.DrawLine(groundCheck.position, new Vector3(groundCheck.position.x, groundCheck.position.y - groundLine));
@@ -239,7 +264,17 @@ public class Player : MonoBehaviour
     public void lineVelocity(float xlineVelocity, float ylineVelocity)
     {
         if (rb == null) return;
-        rb.linearVelocity = new Vector2 (xlineVelocity, ylineVelocity);
+        if (isSlope && IsGroundCheck())
+        {
+            // 경사면이면, 경사 방향으로 이동
+            rb.linearVelocity = perp * xlineVelocity * -1f;
+        }
+        else
+        {
+            // 평지면 그냥 일반 x축 이동
+            rb.linearVelocity = new Vector2(xlineVelocity, ylineVelocity);
+        }
+
         FlipController(xlineVelocity);
     }
     #endregion

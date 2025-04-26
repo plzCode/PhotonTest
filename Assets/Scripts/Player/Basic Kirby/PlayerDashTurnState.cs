@@ -12,9 +12,9 @@ public class PlayerDashTurnState : PlayerState
     {
         base.Enter();
         player.dash = true;
-        player.dashTime = 0;
+        player.dashTime = 0f;
         player.Flip();
-        player.lineVelocity(0, 0);
+        player.lineVelocity(0f, rb.linearVelocityY);
     }
 
     public override void Exit()
