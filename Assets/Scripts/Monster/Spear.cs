@@ -88,7 +88,8 @@ public class Spear : MonsterWeapon
         if (collision.CompareTag("Player")&&!isStuck)
         {
             Debug.Log("플레이어에게 " + power + "만큼 데미지를 줍니다.");
-            collision.GetComponent<Player>().TakeDamage(transform.position, power);
+            if (collision.GetComponent<PhotonView>() != null)
+                collision.GetComponent<PhotonView>().RPC("TakeDamage", RpcTarget.All, (Vector2)transform.position, power); // 데미지 처리
             PhotonNetwork.Destroy(gameObject); // 네트워크 전체에서 삭제
         }
 

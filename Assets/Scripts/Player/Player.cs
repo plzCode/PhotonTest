@@ -339,6 +339,7 @@ public class Player : MonoBehaviour
         currentEnemy = enemyCollider;
     }
 
+    [PunRPC]
     public void TakeDamage(Vector2 EnemyAttackPos, float Damage)    //몬스터의 공격 데미지 실행
     {
         if (transform.position.x > EnemyAttackPos.x)
@@ -429,5 +430,6 @@ public class Player : MonoBehaviour
     {
         pView.RPC(rpc_Name, type);
     }
+    
 
 }
