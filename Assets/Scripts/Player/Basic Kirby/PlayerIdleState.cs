@@ -20,7 +20,6 @@ public class PlayerIdleState : PlayerGroundState
     public override void Update()
     {
         base.Update();
-
         if (player.dashTime > 0.3f) //대쉬 시간이 0.3초 지나면 움직이는 키 눌러도 그냥 MOVE로 바꿈
         {
             player.dash = false;

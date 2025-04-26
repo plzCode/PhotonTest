@@ -402,7 +402,7 @@ public class Player : MonoBehaviour
         {
             animatorView.GetSynchronizedParameters().Clear();
             animatorView.GetSynchronizedLayers().Clear();
-
+            animatorView.SetLayerSynchronized(0, PhotonAnimatorView.SynchronizeType.Discrete);
             // 새 Animator Controller의 파라미터를 동기화 설정
             foreach (AnimatorControllerParameter param in animator.parameters)
             {

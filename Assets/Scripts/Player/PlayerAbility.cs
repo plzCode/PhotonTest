@@ -17,11 +17,14 @@ public abstract class PlayerAbility : MonoBehaviour
     public virtual void OnAbilityCopied(Player owner)
     {
         this.owner = owner;
+        PhotonAnimatorView animatorView = owner.GetComponentInChildren<PhotonAnimatorView>();
         RuntimeAnimatorController prevAnim = owner.GetComponentInChildren<Animator>().runtimeAnimatorController;
         for (int i = 0; i < prevAnim.animationClips.Length; i++)
         {
-            owner.GetComponentInChildren<PhotonAnimatorView>().SetParameterSynchronized(prevAnim.animationClips[i].name, PhotonAnimatorView.ParameterType.Bool, PhotonAnimatorView.SynchronizeType.Disabled);
+            animatorView.SetParameterSynchronized(prevAnim.animationClips[i].name, PhotonAnimatorView.ParameterType.Bool, PhotonAnimatorView.SynchronizeType.Disabled);
         }
+        animatorView.GetSynchronizedParameters().Clear();
+        animatorView.GetSynchronizedLayers().Clear();
 
     }
 

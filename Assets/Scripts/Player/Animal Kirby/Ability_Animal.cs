@@ -25,6 +25,23 @@ public class Ability_Animal : PlayerAbility
     }
     public override void AttackHandle()
     {
-        Debug.Log("Animal ability attack");
+        Debug.Log("Animal ability attack");    
+
     }
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            AttackHandle();
+        }
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Enemy"))
+        {
+            Debug.Log("Animal ability hit enemy");
+        }
+    }
+
 }
