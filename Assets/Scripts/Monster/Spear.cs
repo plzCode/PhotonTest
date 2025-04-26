@@ -1,3 +1,5 @@
+using Photon.Pun;
+using System.Collections;
 using UnityEngine;
 
 public class Spear : MonsterWeapon
@@ -5,32 +7,41 @@ public class Spear : MonsterWeapon
 
     private Rigidbody2D rb;
     private Transform target;
-    //private bool launched = false;
+    private PhotonView photonView;
 
     [SerializeField] private float flightTime = 1.0f; // 투창이 목표 지점에 도달할 시간
+    private bool isStuck = false; // 창이 땅에 박힌 상태
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        photonView = GetComponent<PhotonView>();
     }
 
     private void Start()
     {
-        target = FindClosestPlayer();
-
-        if (target != null)
+        if (photonView.IsMine)
         {
-            LaunchParabolic();
-        }
-        else
-        {
-            Debug.LogWarning("Player not found!");
+            target = FindClosestPlayer();
+            if (target != null)
+            {
+                LaunchParabolic();
+            }
+            else
+            {
+                Debug.LogWarning("Player not found!");
+            }
         }
     }
 
     private void Update()
     {
+        if (isStuck)
+            return;
+        
+        //창 회전 각 클라에서 적용
         transform.right = rb.linearVelocity;
+
     }
 
     private void LaunchParabolic()
@@ -39,20 +50,13 @@ public class Spear : MonsterWeapon
         Vector2 end = target.position;
         Vector2 distance = end - start;
 
-        // 수평 속도 계산
         float vx = distance.x / flightTime;
-
-        // 수직 속도 계산: y = vy * t + 0.5 * g * t^2 → vy = (y - 0.5 * g * t^2) / t
         float gravity = Mathf.Abs(Physics2D.gravity.y * rb.gravityScale);
         float vy = (distance.y + 0.5f * gravity * Mathf.Pow(flightTime, 2)) / flightTime;
 
-        // 최종 초기 속도 설정
         Vector2 velocity = new Vector2(vx, vy);
         rb.linearVelocity = velocity;
 
-        //launched = true;
-
-        // 회전 방향 설정 (선택사항)
         float angle = Mathf.Atan2(velocity.y, velocity.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, angle);
     }
@@ -79,11 +83,38 @@ public class Spear : MonsterWeapon
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (!PhotonNetwork.IsMasterClient) return; // 마스터만 충돌 처리
+
+        if (collision.CompareTag("Player")&&!isStuck)
         {
             Debug.Log("플레이어에게 " + power + "만큼 데미지를 줍니다.");
             collision.GetComponent<Player>().TakeDamage(transform.position, power);
-            Destroy(gameObject);
+            PhotonNetwork.Destroy(gameObject); // 네트워크 전체에서 삭제
         }
+
+        if (collision.CompareTag("Ground"))
+        {
+            //rb.linearVelocity = Vector2.zero;
+            
+            // 회전 및 위치 동결 (마스터 클라이언트에서만 처리)
+            photonView.RPC("FreezeSpear", RpcTarget.All);
+
+            StartCoroutine(DestroyAfterDelay(2f)); 
+        }
+    }       
+    [PunRPC]
+    private void FreezeSpear()
+    {
+        // 창이 땅에 박힌 상태 처리
+        isStuck = true;
+
+        // 위치 및 회전 동결
+        rb.constraints = RigidbodyConstraints2D.FreezePosition | RigidbodyConstraints2D.FreezeRotation;
+    }
+
+    private IEnumerator DestroyAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        PhotonNetwork.Destroy(gameObject);
     }
 }

@@ -15,7 +15,12 @@ public class Spear_IdleState : Spear_GroundedState
 
         stateTimer = enemy.idleTime;
 
-        
+        // 시간 동기화
+        if (Photon.Pun.PhotonNetwork.IsMasterClient)
+        {
+            enemy.photonView.RPC("SyncStateTimer", Photon.Pun.RpcTarget.Others, stateTimer);
+            
+        }
 
     }
 
@@ -28,6 +33,7 @@ public class Spear_IdleState : Spear_GroundedState
     {
         base.Update();
 
+        Debug.Log(stateTimer);
         GameObject closestPlayer = GameManager.Instance.GetClosestPlayer(enemy.transform.position);
         if (closestPlayer == null) return;
 
@@ -45,7 +51,6 @@ public class Spear_IdleState : Spear_GroundedState
                 enemy.transform.rotation = Quaternion.Euler(0, 0, 0);
             }
 
-
             if (stateTimer < 0)
             {
                 if (distanceToTarget <= enemy.throwDistance)
@@ -53,12 +58,11 @@ public class Spear_IdleState : Spear_GroundedState
                     stateMachine.ChangeState(enemy.throwState);
                 }
             }
-
         }
 
-        
 
-        
+
+
 
     }
 

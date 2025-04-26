@@ -5739,6 +5739,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5358251070412544883, guid: 56e0656401003ba48a1f93139b69c4ab, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6663518756591721886, guid: 56e0656401003ba48a1f93139b69c4ab, type: 3}
       propertyPath: m_SortingOrder
       value: 2
@@ -6213,12 +6217,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 333736077876393272, guid: a7a667c45d1e6f44eb84d6c2c3c48d1a, type: 3}
+      propertyPath: ObservedComponentsFoldoutOpen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 333736077876393272, guid: a7a667c45d1e6f44eb84d6c2c3c48d1a, type: 3}
       propertyPath: 'ObservedComponents.Array.data[0]'
       value: 
       objectReference: {fileID: 1959719181}
     - target: {fileID: 3355068980518483869, guid: a7a667c45d1e6f44eb84d6c2c3c48d1a, type: 3}
       propertyPath: m_Name
       value: Spear
+      objectReference: {fileID: 0}
+    - target: {fileID: 4028325496439182010, guid: a7a667c45d1e6f44eb84d6c2c3c48d1a, type: 3}
+      propertyPath: idleTime
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4330312079298778645, guid: a7a667c45d1e6f44eb84d6c2c3c48d1a, type: 3}
       propertyPath: m_LocalPosition.x

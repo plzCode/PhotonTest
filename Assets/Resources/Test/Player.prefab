@@ -127,7 +127,7 @@ MonoBehaviour:
   EatEffect1: {fileID: 5009722476430104398, guid: a7d124fa661c13e4ea4678f29a35aae0, type: 3}
   EatEffect2: {fileID: 4865937574453472341, guid: 37cb877d3e7ec1d41b0a0620abdf273c, type: 3}
   EatEffectPos: {fileID: 3288432630328735207}
-  Attack: {fileID: 0}
+  AttackList: []
   currentEnemy: {fileID: 0}
   groundCheck: {fileID: 6332117634270816776}
   groundLine: 0.87

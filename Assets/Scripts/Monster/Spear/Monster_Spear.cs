@@ -9,6 +9,7 @@ public class Monster_Spear : Enemy
     [Header("M02 원거리 공격 정보")]
     [SerializeField] public float throwDistance;
 
+    public PhotonView photonView; 
     
     #region States
     public Spear_IdleState idleState { get; private set; }
@@ -38,7 +39,8 @@ public class Monster_Spear : Enemy
     protected override void Start()
     {
         base.Start();
-        
+
+        photonView = GetComponent<PhotonView>();
 
         stateMachine.Initialize(idleState);
 
@@ -60,11 +62,27 @@ public class Monster_Spear : Enemy
         Gizmos.DrawWireSphere(transform.position, throwDistance + 2f); // 방향 전환용 감지 사거리
     }
 
-    
+
+    [PunRPC]
+    public void RequestAttackFromClient()
+    {
+        if(idleState.stateTimer<0)
+        {
+            stateMachine.ChangeState(throwState);
+        }
+        
+    }
+
+    [PunRPC]
     public void ThrowSpear()
     {
-        //PhotonNetwork.Instantiate("Monster_Effect/" + spearPrefab.name, transform.position, Quaternion.identity);
-        Instantiate(spearPrefab, transform.position, Quaternion.identity);
+        // 마스터 클라이언트에서만 투창을 소환하도록 수정
+        if (PhotonNetwork.IsMasterClient)
+        {
+            Debug.Log("ThrowSpear RPC 호출됨 - IsMasterClient: " + PhotonNetwork.IsMasterClient);
+            PhotonNetwork.Instantiate("Monster_Effect/" + spearPrefab.name, new Vector2(transform.position.x,transform.position.y+0.1f), Quaternion.identity);
+        }
+        //Instantiate(spearPrefab, transform.position, Quaternion.identity);
     }
 
     

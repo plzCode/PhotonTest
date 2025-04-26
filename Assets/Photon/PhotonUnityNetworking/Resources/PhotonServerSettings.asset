@@ -50,6 +50,9 @@ MonoBehaviour:
   - RegisterToGameManager
   - KirbyFrom
   - DestroySelf
+  - RequestAttackFromClient
+  - SyncStateTimer
+  - FreezeSpear
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

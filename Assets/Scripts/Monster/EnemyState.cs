@@ -1,3 +1,4 @@
+using Photon.Pun;
 using UnityEngine;
 
 public class EnemyState 
@@ -9,7 +10,7 @@ public class EnemyState
 
     protected bool triggerCalled;   
 
-    protected float stateTimer;
+    public float stateTimer;
 
     
     public EnemyState(Enemy _enemyBase, EnemyStateMachine _stateMachine, string _animBoolName)
@@ -40,5 +41,12 @@ public class EnemyState
     public virtual void AnimationFinishTrigger()
     {
         triggerCalled = true;
+    }
+
+    // 네트워크로 stateTimer 동기화
+    [PunRPC]
+    public void SyncStateTimer(float timerValue)
+    {
+        stateTimer = timerValue;
     }
 }
