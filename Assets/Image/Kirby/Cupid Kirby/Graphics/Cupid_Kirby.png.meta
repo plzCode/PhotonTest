@@ -1,0 +1,5070 @@
+fileFormatVersion: 2
+guid: 3716d98db0487e843ba82ea23c659df0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3083871611348476977
+    second: Cupid_Kirby_0
+  - first:
+      213: 667477959390560407
+    second: Cupid_Kirby_1
+  - first:
+      213: 2679316565518618976
+    second: Cupid_Kirby_2
+  - first:
+      213: 6237137633179382769
+    second: Cupid_Kirby_3
+  - first:
+      213: -8147852123214794017
+    second: Cupid_Kirby_4
+  - first:
+      213: 1184953953138399686
+    second: Cupid_Kirby_5
+  - first:
+      213: 208572925444102213
+    second: Cupid_Kirby_6
+  - first:
+      213: 6525451290514351127
+    second: Cupid_Kirby_7
+  - first:
+      213: -9060024528417446830
+    second: Cupid_Kirby_8
+  - first:
+      213: 5057809651086814097
+    second: Cupid_Kirby_9
+  - first:
+      213: -2978487679099943425
+    second: Cupid_Kirby_10
+  - first:
+      213: -6725504142589017041
+    second: Cupid_Kirby_11
+  - first:
+      213: 5658893387003637948
+    second: Cupid_Kirby_12
+  - first:
+      213: -1364695347830729632
+    second: Cupid_Kirby_13
+  - first:
+      213: -3473892604918254755
+    second: Cupid_Kirby_14
+  - first:
+      213: -8135123178419460433
+    second: Cupid_Kirby_15
+  - first:
+      213: 3802277234624804250
+    second: Cupid_Kirby_16
+  - first:
+      213: 279930576149331036
+    second: Cupid_Kirby_17
+  - first:
+      213: -5552185717003134098
+    second: Cupid_Kirby_18
+  - first:
+      213: -4417272486556425994
+    second: Cupid_Kirby_19
+  - first:
+      213: -8641503642763389450
+    second: Cupid_Kirby_20
+  - first:
+      213: -170274323649264774
+    second: Cupid_Kirby_21
+  - first:
+      213: -2017602331170141773
+    second: Cupid_Kirby_22
+  - first:
+      213: 659432632007255747
+    second: Cupid_Kirby_23
+  - first:
+      213: -7358820013702274064
+    second: Cupid_Kirby_24
+  - first:
+      213: 519157985071498452
+    second: Cupid_Kirby_25
+  - first:
+      213: -7272244789957611563
+    second: Cupid_Kirby_26
+  - first:
+      213: 7714756700271989636
+    second: Cupid_Kirby_27
+  - first:
+      213: -7868845206155799391
+    second: Cupid_Kirby_28
+  - first:
+      213: 3600649120600095022
+    second: Cupid_Kirby_29
+  - first:
+      213: 1411640368479185482
+    second: Cupid_Kirby_30
+  - first:
+      213: 6149888674885520314
+    second: Cupid_Kirby_31
+  - first:
+      213: 4622284597751042327
+    second: Cupid_Kirby_32
+  - first:
+      213: 638725822834920685
+    second: Cupid_Kirby_33
+  - first:
+      213: 4363471353065014355
+    second: Cupid_Kirby_34
+  - first:
+      213: 206559913494550041
+    second: Cupid_Kirby_35
+  - first:
+      213: 4253491276263753003
+    second: Cupid_Kirby_36
+  - first:
+      213: -2569650789714248794
+    second: Cupid_Kirby_37
+  - first:
+      213: 8560837768469817145
+    second: Cupid_Kirby_38
+  - first:
+      213: 8741239008025156325
+    second: Cupid_Kirby_39
+  - first:
+      213: -8000698271768259907
+    second: Cupid_Kirby_40
+  - first:
+      213: -2823000405496632181
+    second: Cupid_Kirby_41
+  - first:
+      213: 7135709243864774902
+    second: Cupid_Kirby_42
+  - first:
+      213: -770451270830148
+    second: Cupid_Kirby_43
+  - first:
+      213: -1245306135022369856
+    second: Cupid_Kirby_44
+  - first:
+      213: -933840956222821773
+    second: Cupid_Kirby_45
+  - first:
+      213: -2006080351357554497
+    second: Cupid_Kirby_46
+  - first:
+      213: -8246601610288810593
+    second: Cupid_Kirby_47
+  - first:
+      213: -2207084159492362080
+    second: Cupid_Kirby_48
+  - first:
+      213: 8604665849804965170
+    second: Cupid_Kirby_49
+  - first:
+      213: -617428869377092106
+    second: Cupid_Kirby_50
+  - first:
+      213: -2508847409396710273
+    second: Cupid_Kirby_51
+  - first:
+      213: -6365161280731359055
+    second: Cupid_Kirby_52
+  - first:
+      213: -5720440999253432748
+    second: Cupid_Kirby_53
+  - first:
+      213: 2511468377743025487
+    second: Cupid_Kirby_54
+  - first:
+      213: -3685385370698493327
+    second: Cupid_Kirby_55
+  - first:
+      213: 4227686943722844873
+    second: Cupid_Kirby_56
+  - first:
+      213: -8061950478760745836
+    second: Cupid_Kirby_57
+  - first:
+      213: -6049350071992610368
+    second: Cupid_Kirby_58
+  - first:
+      213: -2971108556096188317
+    second: Cupid_Kirby_59
+  - first:
+      213: 6851136196284555460
+    second: Cupid_Kirby_60
+  - first:
+      213: -4275550107950428376
+    second: Cupid_Kirby_61
+  - first:
+      213: -5801615058446543226
+    second: Cupid_Kirby_62
+  - first:
+      213: 7617116216671327140
+    second: Cupid_Kirby_63
+  - first:
+      213: 5207152355405462355
+    second: Cupid_Kirby_64
+  - first:
+      213: -4149523783940203832
+    second: Cupid_Kirby_65
+  - first:
+      213: -7842253410828600187
+    second: Cupid_Kirby_66
+  - first:
+      213: 745130450272626729
+    second: Cupid_Kirby_67
+  - first:
+      213: -2168560361973075201
+    second: Cupid_Kirby_68
+  - first:
+      213: 422971233228677977
+    second: Cupid_Kirby_69
+  - first:
+      213: 4106831088609577262
+    second: Cupid_Kirby_70
+  - first:
+      213: 7212585981008618355
+    second: Cupid_Kirby_71
+  - first:
+      213: 7995378465333942706
+    second: Cupid_Kirby_72
+  - first:
+      213: -8585688537173150082
+    second: Cupid_Kirby_73
+  - first:
+      213: 1529270859167744590
+    second: Cupid_Kirby_74
+  - first:
+      213: -7334957644112274043
+    second: Cupid_Kirby_75
+  - first:
+      213: -1305407101210833777
+    second: Cupid_Kirby_76
+  - first:
+      213: -9159399404496297809
+    second: Cupid_Kirby_77
+  - first:
+      213: -5335587785926288604
+    second: Cupid_Kirby_78
+  - first:
+      213: 8925966284991525651
+    second: Cupid_Kirby_79
+  - first:
+      213: -303074106874539979
+    second: Cupid_Kirby_80
+  - first:
+      213: -958396424495455731
+    second: Cupid_Kirby_81
+  - first:
+      213: 9162494139745853718
+    second: Cupid_Kirby_82
+  - first:
+      213: -3048684557760271107
+    second: Cupid_Kirby_83
+  - first:
+      213: 8839590339687887153
+    second: Cupid_Kirby_84
+  - first:
+      213: 6528654689664839607
+    second: Cupid_Kirby_85
+  - first:
+      213: 8836516221137202657
+    second: Cupid_Kirby_86
+  - first:
+      213: 3997328525071309189
+    second: Cupid_Kirby_87
+  - first:
+      213: 449188752547133419
+    second: Cupid_Kirby_88
+  - first:
+      213: -5133002085631570935
+    second: Cupid_Kirby_89
+  - first:
+      213: 6013803003686420644
+    second: Cupid_Kirby_90
+  - first:
+      213: 5327380838353644465
+    second: Cupid_Kirby_91
+  - first:
+      213: 4915986692718183953
+    second: Cupid_Kirby_92
+  - first:
+      213: 2949253514082567913
+    second: Cupid_Kirby_93
+  - first:
+      213: 3350050618068723125
+    second: Cupid_Kirby_94
+  - first:
+      213: -4786839426126756664
+    second: Cupid_Kirby_95
+  - first:
+      213: -7412507359840335651
+    second: Cupid_Kirby_96
+  - first:
+      213: -7378101917375063478
+    second: Cupid_Kirby_97
+  - first:
+      213: 5479743723430519186
+    second: Cupid_Kirby_98
+  - first:
+      213: -6084300758797543391
+    second: Cupid_Kirby_99
+  - first:
+      213: -5230254711674508055
+    second: Cupid_Kirby_100
+  - first:
+      213: 895035804958767645
+    second: Cupid_Kirby_101
+  - first:
+      213: -6498826931115741711
+    second: Cupid_Kirby_102
+  - first:
+      213: -3506390671602172141
+    second: Cupid_Kirby_103
+  - first:
+      213: 5953095035288534857
+    second: Cupid_Kirby_104
+  - first:
+      213: 1151411326920215496
+    second: Cupid_Kirby_105
+  - first:
+      213: -5573716855428792875
+    second: Cupid_Kirby_106
+  - first:
+      213: -8573245424545489258
+    second: Cupid_Kirby_107
+  - first:
+      213: 4007064629903949398
+    second: Cupid_Kirby_108
+  - first:
+      213: 4856830709121635706
+    second: Cupid_Kirby_109
+  - first:
+      213: 5371940017538299350
+    second: Cupid_Kirby_110
+  - first:
+      213: 2822990439880502146
+    second: Cupid_Kirby_111
+  - first:
+      213: 3183629038693931624
+    second: Cupid_Kirby_112
+  - first:
+      213: 8032719656082653937
+    second: Cupid_Kirby_113
+  - first:
+      213: 1424158988537191845
+    second: Cupid_Kirby_114
+  - first:
+      213: 8157525616365985801
+    second: Cupid_Kirby_115
+  - first:
+      213: -7672274541942794635
+    second: Cupid_Kirby_116
+  - first:
+      213: 519054887066708815
+    second: Cupid_Kirby_117
+  - first:
+      213: -2666566519634309913
+    second: Cupid_Kirby_118
+  - first:
+      213: 4384961141638938670
+    second: Cupid_Kirby_119
+  - first:
+      213: 44446415228912968
+    second: Cupid_Kirby_120
+  - first:
+      213: 1926276352289496750
+    second: Cupid_Kirby_121
+  - first:
+      213: 5863393765149564466
+    second: Cupid_Kirby_122
+  - first:
+      213: -6792940727738390694
+    second: Cupid_Kirby_123
+  - first:
+      213: -8186769581834265616
+    second: Cupid_Kirby_124
+  - first:
+      213: 5486970151443215306
+    second: Cupid_Kirby_125
+  - first:
+      213: 6448783052817862232
+    second: Cupid_Kirby_126
+  - first:
+      213: -7903394851083491136
+    second: Cupid_Kirby_127
+  - first:
+      213: 610601342649580356
+    second: Cupid_Kirby_128
+  - first:
+      213: 8894110108241894510
+    second: Cupid_Kirby_129
+  - first:
+      213: -1389528762041784806
+    second: Cupid_Kirby_130
+  - first:
+      213: -1288573603412031748
+    second: Cupid_Kirby_131
+  - first:
+      213: -9220006584729660165
+    second: Cupid_Kirby_132
+  - first:
+      213: 8648416986903776335
+    second: Cupid_Kirby_133
+  - first:
+      213: -8900160586000083591
+    second: Cupid_Kirby_134
+  - first:
+      213: 2540175568431186967
+    second: Cupid_Kirby_135
+  - first:
+      213: -3095044140481566919
+    second: Cupid_Kirby_136
+  - first:
+      213: 8287454149967681306
+    second: Cupid_Kirby_137
+  - first:
+      213: 5367564363811263090
+    second: Cupid_Kirby_138
+  - first:
+      213: 2815116787806141779
+    second: Cupid_Kirby_139
+  - first:
+      213: -476576564487765894
+    second: Cupid_Kirby_140
+  - first:
+      213: 5298108295015430868
+    second: Cupid_Kirby_141
+  - first:
+      213: 757022052140108140
+    second: Cupid_Kirby_142
+  - first:
+      213: -507513140672691062
+    second: Cupid_Kirby_143
+  - first:
+      213: 8279083484667221711
+    second: Cupid_Kirby_144
+  - first:
+      213: 153113598761361212
+    second: Cupid_Kirby_145
+  - first:
+      213: -1737528217515394412
+    second: Cupid_Kirby_146
+  - first:
+      213: -8631776353780893420
+    second: Cupid_Kirby_147
+  - first:
+      213: 359115641680398733
+    second: Cupid_Kirby_148
+  - first:
+      213: 6859328936273461017
+    second: Cupid_Kirby_149
+  - first:
+      213: -9029789650398380036
+    second: Cupid_Kirby_150
+  - first:
+      213: 5532885399031262691
+    second: Cupid_Kirby_151
+  - first:
+      213: 6700414322884519963
+    second: Cupid_Kirby_152
+  - first:
+      213: 2892803547634497177
+    second: Cupid_Kirby_153
+  - first:
+      213: -4545096470601338611
+    second: Cupid_Kirby_154
+  - first:
+      213: 1212112430158552813
+    second: Cupid_Kirby_155
+  - first:
+      213: 7528245556708733111
+    second: Cupid_Kirby_156
+  - first:
+      213: 675826155299738846
+    second: Cupid_Kirby_157
+  - first:
+      213: 5057902612511375376
+    second: Cupid_Kirby_158
+  - first:
+      213: 6264780589541151186
+    second: Cupid_Kirby_159
+  - first:
+      213: -6117971501185044181
+    second: Cupid_Kirby_160
+  - first:
+      213: 3223902414065894390
+    second: Cupid_Kirby_161
+  - first:
+      213: 4210296892509324499
+    second: Cupid_Kirby_162
+  - first:
+      213: 4592838985051847754
+    second: Cupid_Kirby_163
+  - first:
+      213: 6422542725343189398
+    second: Cupid_Kirby_164
+  - first:
+      213: 1949358628324373586
+    second: Cupid_Kirby_165
+  - first:
+      213: 7795627972152361000
+    second: Cupid_Kirby_166
+  - first:
+      213: 8895982303809331909
+    second: Cupid_Kirby_167
+  - first:
+      213: 4220176044741169495
+    second: Cupid_Kirby_168
+  - first:
+      213: -5143529775515894674
+    second: Cupid_Kirby_169
+  - first:
+      213: -4654805128085702824
+    second: Cupid_Kirby_170
+  - first:
+      213: 4558504269140946907
+    second: Cupid_Kirby_171
+  - first:
+      213: -521219294004116436
+    second: Cupid_Kirby_172
+  - first:
+      213: 9057530877469768072
+    second: Cupid_Kirby_173
+  - first:
+      213: 6400863405468426115
+    second: Cupid_Kirby_174
+  - first:
+      213: 8578996749652305231
+    second: Cupid_Kirby_175
+  - first:
+      213: 2832823574648013512
+    second: Cupid_Kirby_176
+  - first:
+      213: -5361286365321331412
+    second: Cupid_Kirby_177
+  - first:
+      213: -6079418804099441256
+    second: Cupid_Kirby_178
+  - first:
+      213: -2592738483956987166
+    second: Cupid_Kirby_179
+  - first:
+      213: 3877187323794751667
+    second: Cupid_Kirby_180
+  - first:
+      213: -7880947634249808156
+    second: Cupid_Kirby_181
+  - first:
+      213: 1771409586347852889
+    second: Cupid_Kirby_182
+  - first:
+      213: 1970474884817079268
+    second: Cupid_Kirby_183
+  - first:
+      213: 1540004386706373324
+    second: Cupid_Kirby_184
+  - first:
+      213: -5569910648788648293
+    second: Cupid_Kirby_185
+  - first:
+      213: -8585391467652584346
+    second: Cupid_Kirby_186
+  - first:
+      213: 6302778059659253770
+    second: Cupid_Kirby_187
+  - first:
+      213: -8546925053183684863
+    second: Cupid_Kirby_188
+  - first:
+      213: -2207438353306751654
+    second: Cupid_Kirby_189
+  - first:
+      213: -1207998076729994881
+    second: Cupid_Kirby_190
+  - first:
+      213: -4431364740151599350
+    second: Cupid_Kirby_191
+  - first:
+      213: -7835763115405648645
+    second: Cupid_Kirby_192
+  - first:
+      213: 1778786357613843547
+    second: Cupid_Kirby_193
+  - first:
+      213: 5896873702299364997
+    second: Cupid_Kirby_194
+  - first:
+      213: -5496969716462666266
+    second: Cupid_Kirby_195
+  - first:
+      213: 6075123850915339014
+    second: Cupid_Kirby_196
+  - first:
+      213: -499132895437585727
+    second: Cupid_Kirby_197
+  - first:
+      213: -7813325953400984035
+    second: Cupid_Kirby_198
+  - first:
+      213: -4676659345679691131
+    second: Cupid_Kirby_199
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cupid_Kirby_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 796
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 134665734ec1cca20800000000000000
+      internalID: 3083871611348476977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 796
+        width: 29
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79080e8eaab534900800000000000000
+      internalID: 667477959390560407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 792
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0619e808838de2520800000000000000
+      internalID: 2679316565518618976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_3
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 793
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f3b0e0b1a3ce8650800000000000000
+      internalID: 6237137633179382769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_4
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 791
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd2be51c9a30dee80800000000000000
+      internalID: -8147852123214794017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_5
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 791
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c9520c975dc17010800000000000000
+      internalID: 1184953953138399686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_6
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 792
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5481cda78fff4e200800000000000000
+      internalID: 208572925444102213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_7
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 793
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 714e83a106f0f8a50800000000000000
+      internalID: 6525451290514351127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_8
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 790
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2542a5781b3544280800000000000000
+      internalID: -9060024528417446830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_9
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 789
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19b629a8413f03640800000000000000
+      internalID: 5057809651086814097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_10
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 795
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff5ce5f8c394aa6d0800000000000000
+      internalID: -2978487679099943425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_11
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 795
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2440959d953aa2a0800000000000000
+      internalID: -6725504142589017041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_12
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 795
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb0b82aad8d688e40800000000000000
+      internalID: 5658893387003637948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_13
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 795
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 064dbe5cfc0af0de0800000000000000
+      internalID: -1364695347830729632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_14
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 795
+        width: 134
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d53bdffc4114acfc0800000000000000
+      internalID: -3473892604918254755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_15
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 753
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa6e24a229c3a1f80800000000000000
+      internalID: -8135123178419460433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_16
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 753
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a95bd53eff664c430800000000000000
+      internalID: 3802277234624804250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_17
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 753
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5cb629306382e300800000000000000
+      internalID: 279930576149331036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_18
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 754
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6bd703d18ca2f2b0800000000000000
+      internalID: -5552185717003134098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_20
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 753
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f518d7b836331880800000000000000
+      internalID: -8641503642763389450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_21
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 753
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a730480a76013adf0800000000000000
+      internalID: -170274323649264774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_22
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 753
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b98a989e590004e0800000000000000
+      internalID: -2017602331170141773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_23
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 753
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c6e7182c76c62900800000000000000
+      internalID: 659432632007255747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_24
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 753
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f3ad3daf2830e990800000000000000
+      internalID: -7358820013702274064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_25
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 753
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d48e72df6b643700800000000000000
+      internalID: 519157985071498452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_26
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 770
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5df24eeb4ebc31b90800000000000000
+      internalID: -7272244789957611563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_27
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 742
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 483d6482852501b60800000000000000
+      internalID: 7714756700271989636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_28
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 713
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a45c86d9fe3cc290800000000000000
+      internalID: -7868845206155799391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_29
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 713
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e29f0325c4318f130800000000000000
+      internalID: 3600649120600095022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_30
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 713
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4aadc99f67279310800000000000000
+      internalID: 1411640368479185482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_31
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 713
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abbcfb29a2bc85550800000000000000
+      internalID: 6149888674885520314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_32
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 713
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 711d5bb0a57a52040800000000000000
+      internalID: 4622284597751042327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_33
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 713
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: decc1f270c53dd800800000000000000
+      internalID: 638725822834920685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_34
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 713
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3548803b31a2e8c30800000000000000
+      internalID: 4363471353065014355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_35
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 713
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9169dac9529ddd200800000000000000
+      internalID: 206559913494550041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_36
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 713
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b258ce0a7cf670b30800000000000000
+      internalID: 4253491276263753003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_37
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 714
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6abb74aa834c65cd0800000000000000
+      internalID: -2569650789714248794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_38
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 678
+        width: 34
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9372469d7943ec670800000000000000
+      internalID: 8560837768469817145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_39
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 678
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ea9022909e1f4970800000000000000
+      internalID: 8741239008025156325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_40
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 640
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db2db24bf4fc7f090800000000000000
+      internalID: -8000698271768259907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_41
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 641
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8ce69d8610b2d8d0800000000000000
+      internalID: -2823000405496632181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_42
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 642
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f8f70d20c1270360800000000000000
+      internalID: 7135709243864774902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_43
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 642
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb77fa557434dfff0800000000000000
+      internalID: -770451270830148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_44
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 641
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c380690ba8c7bee0800000000000000
+      internalID: -1245306135022369856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_45
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 644
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37aa0a719945a03f0800000000000000
+      internalID: -933840956222821773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_46
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 643
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb031729c88f824e0800000000000000
+      internalID: -2006080351357554497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_47
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 641
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f95329e178f2e8d80800000000000000
+      internalID: -8246601610288810593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_49
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 641
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2354f8c300ae96770800000000000000
+      internalID: 8604665849804965170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_51
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 606
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f740047d298ce2dd0800000000000000
+      internalID: -2508847409396710273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_52
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 606
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b8dfeb0a876aa7a0800000000000000
+      internalID: -6365161280731359055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_53
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 605
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4562be82839ec90b0800000000000000
+      internalID: -5720440999253432748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_54
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 605
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f45eff7ee278ad220800000000000000
+      internalID: 2511468377743025487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_55
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 605
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17258170881eadcc0800000000000000
+      internalID: -3685385370698493327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_56
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 605
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c2382640e2cbaa30800000000000000
+      internalID: 4227686943722844873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_57
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 605
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 494ecace0c23e1090800000000000000
+      internalID: -8061950478760745836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_58
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 606
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c195ec09246c0ca0800000000000000
+      internalID: -6049350071992610368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_59
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 607
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36053c4828084c6d0800000000000000
+      internalID: -2971108556096188317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_60
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 608
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c0ac575210241f50800000000000000
+      internalID: 6851136196284555460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_61
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 606
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82f4b3464d13aa4c0800000000000000
+      internalID: -4275550107950428376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_62
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 565
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6869cb5b7d58c7fa0800000000000000
+      internalID: -5801615058446543226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_63
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 565
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a3df8387de65b960800000000000000
+      internalID: 7617116216671327140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_64
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 567
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35bf7438a75834840800000000000000
+      internalID: 5207152355405462355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_65
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 565
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ca95378a1ee966c0800000000000000
+      internalID: -4149523783940203832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_66
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 565
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58c37f8a218ba2390800000000000000
+      internalID: -7842253410828600187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_67
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 565
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 928a3d7523c375a00800000000000000
+      internalID: 745130450272626729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_68
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 566
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff23a9e17d9b7e1e0800000000000000
+      internalID: -2168560361973075201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_69
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 568
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 953edca7812bed500800000000000000
+      internalID: 422971233228677977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_70
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 566
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e29ca1dbd156ef830800000000000000
+      internalID: 4106831088609577262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_71
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 565
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3732bfd5cb0481460800000000000000
+      internalID: 7212585981008618355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_72
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 566
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b999075a5a45fe60800000000000000
+      internalID: 7995378465333942706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_73
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 566
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e76b6ada3c189d880800000000000000
+      internalID: -8585688537173150082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_74
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 566
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e42cc067ebf093510800000000000000
+      internalID: 1529270859167744590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_75
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 529
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58dd62c82eef43a90800000000000000
+      internalID: -7334957644112274043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_76
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 529
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8c4e05682342ede0800000000000000
+      internalID: -1305407101210833777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_78
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 529
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42b53f78d2f24f5b0800000000000000
+      internalID: -5335587785926288604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_79
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 529
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 313780e5b076fdb70800000000000000
+      internalID: 8925966284991525651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_80
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 492
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 530df1f94b34bcbf0800000000000000
+      internalID: -303074106874539979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_81
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 491
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d02a1fb978713b2f0800000000000000
+      internalID: -958396424495455731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_82
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 492
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 611662800e7b72f70800000000000000
+      internalID: 9162494139745853718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_83
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 494
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfcea7e1c85e0b5d0800000000000000
+      internalID: -3048684557760271107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_85
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 494
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bf29a699d07a9a50800000000000000
+      internalID: 6528654689664839607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_87
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 493
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58959636d1d597730800000000000000
+      internalID: 3997328525071309189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_89
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 454
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90c47968cc9e3c8b0800000000000000
+      internalID: -5133002085631570935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_90
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 453
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a008e728f1557350800000000000000
+      internalID: 6013803003686420644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_91
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 454
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bbaa4595a8aee940800000000000000
+      internalID: 5327380838353644465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_92
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 454
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 116c30cd9d7193440800000000000000
+      internalID: 4915986692718183953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_93
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 452
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e6c67bf17adde820800000000000000
+      internalID: 2949253514082567913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_94
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 419
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b5609da945cd7e20800000000000000
+      internalID: 3350050618068723125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_95
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 419
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c441e857eab19db0800000000000000
+      internalID: -4786839426126756664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_96
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 416
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd88fb154db712990800000000000000
+      internalID: -7412507359840335651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_97
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 413
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4a1b32a567bb9990800000000000000
+      internalID: -7378101917375063478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_98
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 416
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 291a04f22e5fb0c40800000000000000
+      internalID: 5479743723430519186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_99
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 413
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1289b3522b8309ba0800000000000000
+      internalID: -6084300758797543391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_100
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 379
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ece3d10d076a67b0800000000000000
+      internalID: -5230254711674508055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_101
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 379
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1ab2df825ecb6c00800000000000000
+      internalID: 895035804958767645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_102
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 379
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fdaa12a6578fc5a0800000000000000
+      internalID: -6498826931115741711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_104
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 379
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94fb38cc464ad9250800000000000000
+      internalID: 5953095035288534857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_106
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 379
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dd3f810d0e26a2b0800000000000000
+      internalID: -5573716855428792875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_107
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 379
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69e19b995b6b50980800000000000000
+      internalID: -8573245424545489258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_108
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 379
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65ef471fc04fb9730800000000000000
+      internalID: 4007064629903949398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_109
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 379
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a75576f1ccde66340800000000000000
+      internalID: 4856830709121635706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_110
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 379
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d57314fbf6fc8a40800000000000000
+      internalID: 5371940017538299350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_111
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 379
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28ba66529d64d2720800000000000000
+      internalID: 2822990439880502146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_113
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 379
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f2ca11d7f3f97f60800000000000000
+      internalID: 8032719656082653937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_114
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 379
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ad5077fd01a3c310800000000000000
+      internalID: 1424158988537191845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_115
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 379
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 900e4a1e35a553170800000000000000
+      internalID: 8157525616365985801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_116
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 379
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5761a3c14fa968590800000000000000
+      internalID: -7672274541942794635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_117
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 379
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4baa827bad043700800000000000000
+      internalID: 519054887066708815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_118
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 379
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ec4f33e0e37efad0800000000000000
+      internalID: -2666566519634309913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_119
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 341
+        width: 29
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e20c7410de28adc30800000000000000
+      internalID: 4384961141638938670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_120
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 349
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 845424777c7ed9000800000000000000
+      internalID: 44446415228912968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_121
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 348
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eae5375f2228bba10800000000000000
+      internalID: 1926276352289496750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_122
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 348
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23edaf55095fe5150800000000000000
+      internalID: 5863393765149564466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_123
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 348
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a57aede0660aab1a0800000000000000
+      internalID: -6792940727738390694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_124
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 348
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fb9bc0d070c26e80800000000000000
+      internalID: -8186769581834265616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_125
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 348
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac3b1f11842a52c40800000000000000
+      internalID: 5486970151443215306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_127
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 349
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c86485c140815290800000000000000
+      internalID: -7903394851083491136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_128
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 312
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44b3100afaa497800800000000000000
+      internalID: 610601342649580356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_129
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 311
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6c18fa350a3e6b70800000000000000
+      internalID: 8894110108241894510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_130
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 312
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a16af45f3f667bce0800000000000000
+      internalID: -1389528762041784806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_131
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 278
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf64ea582211e1ee0800000000000000
+      internalID: -1288573603412031748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_132
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 279
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf41d626cd4fb0080800000000000000
+      internalID: -9220006584729660165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_133
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 280
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4c8ad5ad69550870800000000000000
+      internalID: 8648416986903776335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_134
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 257
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97558832a174c7480800000000000000
+      internalID: -8900160586000083591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_135
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 257
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71487779834804320800000000000000
+      internalID: 2540175568431186967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_136
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 256
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9372172a0c13c05d0800000000000000
+      internalID: -3095044140481566919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_137
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 244
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a17192df3a3f20370800000000000000
+      internalID: 8287454149967681306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_138
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 244
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 272140ea95b6d7a40800000000000000
+      internalID: 5367564363811263090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_139
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 244
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35d7c6aadcd411720800000000000000
+      internalID: 2815116787806141779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_140
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 244
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a704e6db32cd269f0800000000000000
+      internalID: -476576564487765894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_141
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 209
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4daf1f97c69a68940800000000000000
+      internalID: 5298108295015430868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_142
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 209
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c69c2f8ab8b718a00800000000000000
+      internalID: 757022052140108140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_144
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 209
+        width: 31
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc69469909635e270800000000000000
+      internalID: 8279083484667221711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_145
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 209
+        width: 34
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3fd370c108ff1200800000000000000
+      internalID: 153113598761361212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_146
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 209
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49af6cfba4f03e7e0800000000000000
+      internalID: -1737528217515394412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_147
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 209
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 419f54ca325c53880800000000000000
+      internalID: -8631776353780893420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_148
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 209
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8985aff5c5dbf400800000000000000
+      internalID: 359115641680398733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_149
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 209
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91f3324435b313f50800000000000000
+      internalID: 6859328936273461017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_150
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 212
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cff7183a72ebfa280800000000000000
+      internalID: -9029789650398380036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_151
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 212
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ed2438b4f1c8cc40800000000000000
+      internalID: 5532885399031262691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_152
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 174
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b18a87b8357acfc50800000000000000
+      internalID: 6700414322884519963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_153
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 174
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9967eb5ff7d452820800000000000000
+      internalID: 2892803547634497177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_155
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 174
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dee9f6b45d942d010800000000000000
+      internalID: 1212112430158552813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_156
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 173
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b0798d8273b97860800000000000000
+      internalID: 7528245556708733111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_157
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 173
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed41f8cbe44016900800000000000000
+      internalID: 675826155299738846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_158
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 173
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 010c24fc0a7413640800000000000000
+      internalID: 5057902612511375376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_159
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 177
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d1dc5301c8f0f650800000000000000
+      internalID: 6264780589541151186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_160
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 176
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b21f6e58559981ba0800000000000000
+      internalID: -6117971501185044181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_161
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 150
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f30ce42a2a9dbc20800000000000000
+      internalID: 3223902414065894390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_162
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 151
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d403f477bafd6a30800000000000000
+      internalID: 4210296892509324499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_163
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 150
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4cb49619ba0dbf30800000000000000
+      internalID: 4592838985051847754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_164
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 149
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69999d2a494712950800000000000000
+      internalID: 6422542725343189398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_165
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 149
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 254fd1528538d0b10800000000000000
+      internalID: 1949358628324373586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_166
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 149
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8208d317652af2c60800000000000000
+      internalID: 7795627972152361000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_167
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 143
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c267bab5c0e47b70800000000000000
+      internalID: 8895982303809331909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_168
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 143
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7511964d0c3119a30800000000000000
+      internalID: 4220176044741169495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_169
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 121
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6cfab6bbe28e98b0800000000000000
+      internalID: -5143529775515894674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_170
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 122
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 857f8c1f56fc66fb0800000000000000
+      internalID: -4654805128085702824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_171
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 122
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdf6f351b7f034f30800000000000000
+      internalID: 4558504269140946907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_172
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 112
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c240eca40d144c8f0800000000000000
+      internalID: -521219294004116436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_173
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 112
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 889b7bd1850d2bd70800000000000000
+      internalID: 9057530877469768072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_174
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 101
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38f1eb2aa5f64d850800000000000000
+      internalID: 6400863405468426115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_175
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 100
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f45a1402718be0770800000000000000
+      internalID: 8578996749652305231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_176
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 102
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c24f3e3806305720800000000000000
+      internalID: 2832823574648013512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_177
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 74
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2d70efb472e895b0800000000000000
+      internalID: -5361286365321331412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_178
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 75
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89d92dccec091aba0800000000000000
+      internalID: -6079418804099441256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_179
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 67
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ea4244f51eb40cd0800000000000000
+      internalID: -2592738483956987166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_180
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 67
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b00f6a24598ec530800000000000000
+      internalID: 3877187323794751667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_181
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 67
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e6c517b1ef31a290800000000000000
+      internalID: -7880947634249808156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_182
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 67
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9544cf922af459810800000000000000
+      internalID: 1771409586347852889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_183
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 67
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ebc95cb778885b10800000000000000
+      internalID: 1970474884817079268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_184
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 67
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cca3d2694d13f5510800000000000000
+      internalID: 1540004386706373324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_185
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 43
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9e794c86c3b3b2b0800000000000000
+      internalID: -5569910648788648293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_186
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 43
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66ce5e092ff8ad880800000000000000
+      internalID: -8585391467652584346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_187
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 47
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a089d107047f77750800000000000000
+      internalID: 6302778059659253770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_188
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 47
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10f891b92f8336980800000000000000
+      internalID: -8546925053183684863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_189
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 48
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5de39f538a9d51e0800000000000000
+      internalID: -2207438353306751654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_190
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 49
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f71572346245c3fe0800000000000000
+      internalID: -1207998076729994881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_191
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 48
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0f92194f31a082c0800000000000000
+      internalID: -4431364740151599350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_192
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 50
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfc532256f6c14390800000000000000
+      internalID: -7835763115405648645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_193
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 15
+        width: 9
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5452e094c48fa810800000000000000
+      internalID: 1778786357613843547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_194
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 15
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58e65e6a367e5d150800000000000000
+      internalID: 5896873702299364997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_195
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 18
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6edb925ca27d6b3b0800000000000000
+      internalID: -5496969716462666266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_196
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 18
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60bdf4c74fc2f4450800000000000000
+      internalID: 6075123850915339014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_197
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 21
+        width: 24
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c20bbfa649b219f0800000000000000
+      internalID: -499132895437585727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_198
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 11
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1ea131317d719390800000000000000
+      internalID: -7813325953400984035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cupid_Kirby_199
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 11
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58250456a1b291fb0800000000000000
+      internalID: -4676659345679691131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1076bfad07f001f428def3123cf879b7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Cupid_Kirby_0: 3083871611348476977
+      Cupid_Kirby_1: 667477959390560407
+      Cupid_Kirby_10: -2978487679099943425
+      Cupid_Kirby_100: -5230254711674508055
+      Cupid_Kirby_101: 895035804958767645
+      Cupid_Kirby_102: -6498826931115741711
+      Cupid_Kirby_103: -3506390671602172141
+      Cupid_Kirby_104: 5953095035288534857
+      Cupid_Kirby_105: 1151411326920215496
+      Cupid_Kirby_106: -5573716855428792875
+      Cupid_Kirby_107: -8573245424545489258
+      Cupid_Kirby_108: 4007064629903949398
+      Cupid_Kirby_109: 4856830709121635706
+      Cupid_Kirby_11: -6725504142589017041
+      Cupid_Kirby_110: 5371940017538299350
+      Cupid_Kirby_111: 2822990439880502146
+      Cupid_Kirby_112: 3183629038693931624
+      Cupid_Kirby_113: 8032719656082653937
+      Cupid_Kirby_114: 1424158988537191845
+      Cupid_Kirby_115: 8157525616365985801
+      Cupid_Kirby_116: -7672274541942794635
+      Cupid_Kirby_117: 519054887066708815
+      Cupid_Kirby_118: -2666566519634309913
+      Cupid_Kirby_119: 4384961141638938670
+      Cupid_Kirby_12: 5658893387003637948
+      Cupid_Kirby_120: 44446415228912968
+      Cupid_Kirby_121: 1926276352289496750
+      Cupid_Kirby_122: 5863393765149564466
+      Cupid_Kirby_123: -6792940727738390694
+      Cupid_Kirby_124: -8186769581834265616
+      Cupid_Kirby_125: 5486970151443215306
+      Cupid_Kirby_126: 6448783052817862232
+      Cupid_Kirby_127: -7903394851083491136
+      Cupid_Kirby_128: 610601342649580356
+      Cupid_Kirby_129: 8894110108241894510
+      Cupid_Kirby_13: -1364695347830729632
+      Cupid_Kirby_130: -1389528762041784806
+      Cupid_Kirby_131: -1288573603412031748
+      Cupid_Kirby_132: -9220006584729660165
+      Cupid_Kirby_133: 8648416986903776335
+      Cupid_Kirby_134: -8900160586000083591
+      Cupid_Kirby_135: 2540175568431186967
+      Cupid_Kirby_136: -3095044140481566919
+      Cupid_Kirby_137: 8287454149967681306
+      Cupid_Kirby_138: 5367564363811263090
+      Cupid_Kirby_139: 2815116787806141779
+      Cupid_Kirby_14: -3473892604918254755
+      Cupid_Kirby_140: -476576564487765894
+      Cupid_Kirby_141: 5298108295015430868
+      Cupid_Kirby_142: 757022052140108140
+      Cupid_Kirby_143: -507513140672691062
+      Cupid_Kirby_144: 8279083484667221711
+      Cupid_Kirby_145: 153113598761361212
+      Cupid_Kirby_146: -1737528217515394412
+      Cupid_Kirby_147: -8631776353780893420
+      Cupid_Kirby_148: 359115641680398733
+      Cupid_Kirby_149: 6859328936273461017
+      Cupid_Kirby_15: -8135123178419460433
+      Cupid_Kirby_150: -9029789650398380036
+      Cupid_Kirby_151: 5532885399031262691
+      Cupid_Kirby_152: 6700414322884519963
+      Cupid_Kirby_153: 2892803547634497177
+      Cupid_Kirby_154: -4545096470601338611
+      Cupid_Kirby_155: 1212112430158552813
+      Cupid_Kirby_156: 7528245556708733111
+      Cupid_Kirby_157: 675826155299738846
+      Cupid_Kirby_158: 5057902612511375376
+      Cupid_Kirby_159: 6264780589541151186
+      Cupid_Kirby_16: 3802277234624804250
+      Cupid_Kirby_160: -6117971501185044181
+      Cupid_Kirby_161: 3223902414065894390
+      Cupid_Kirby_162: 4210296892509324499
+      Cupid_Kirby_163: 4592838985051847754
+      Cupid_Kirby_164: 6422542725343189398
+      Cupid_Kirby_165: 1949358628324373586
+      Cupid_Kirby_166: 7795627972152361000
+      Cupid_Kirby_167: 8895982303809331909
+      Cupid_Kirby_168: 4220176044741169495
+      Cupid_Kirby_169: -5143529775515894674
+      Cupid_Kirby_17: 279930576149331036
+      Cupid_Kirby_170: -4654805128085702824
+      Cupid_Kirby_171: 4558504269140946907
+      Cupid_Kirby_172: -521219294004116436
+      Cupid_Kirby_173: 9057530877469768072
+      Cupid_Kirby_174: 6400863405468426115
+      Cupid_Kirby_175: 8578996749652305231
+      Cupid_Kirby_176: 2832823574648013512
+      Cupid_Kirby_177: -5361286365321331412
+      Cupid_Kirby_178: -6079418804099441256
+      Cupid_Kirby_179: -2592738483956987166
+      Cupid_Kirby_18: -5552185717003134098
+      Cupid_Kirby_180: 3877187323794751667
+      Cupid_Kirby_181: -7880947634249808156
+      Cupid_Kirby_182: 1771409586347852889
+      Cupid_Kirby_183: 1970474884817079268
+      Cupid_Kirby_184: 1540004386706373324
+      Cupid_Kirby_185: -5569910648788648293
+      Cupid_Kirby_186: -8585391467652584346
+      Cupid_Kirby_187: 6302778059659253770
+      Cupid_Kirby_188: -8546925053183684863
+      Cupid_Kirby_189: -2207438353306751654
+      Cupid_Kirby_19: -4417272486556425994
+      Cupid_Kirby_190: -1207998076729994881
+      Cupid_Kirby_191: -4431364740151599350
+      Cupid_Kirby_192: -7835763115405648645
+      Cupid_Kirby_193: 1778786357613843547
+      Cupid_Kirby_194: 5896873702299364997
+      Cupid_Kirby_195: -5496969716462666266
+      Cupid_Kirby_196: 6075123850915339014
+      Cupid_Kirby_197: -499132895437585727
+      Cupid_Kirby_198: -7813325953400984035
+      Cupid_Kirby_199: -4676659345679691131
+      Cupid_Kirby_2: 2679316565518618976
+      Cupid_Kirby_20: -8641503642763389450
+      Cupid_Kirby_21: -170274323649264774
+      Cupid_Kirby_22: -2017602331170141773
+      Cupid_Kirby_23: 659432632007255747
+      Cupid_Kirby_24: -7358820013702274064
+      Cupid_Kirby_25: 519157985071498452
+      Cupid_Kirby_26: -7272244789957611563
+      Cupid_Kirby_27: 7714756700271989636
+      Cupid_Kirby_28: -7868845206155799391
+      Cupid_Kirby_29: 3600649120600095022
+      Cupid_Kirby_3: 6237137633179382769
+      Cupid_Kirby_30: 1411640368479185482
+      Cupid_Kirby_31: 6149888674885520314
+      Cupid_Kirby_32: 4622284597751042327
+      Cupid_Kirby_33: 638725822834920685
+      Cupid_Kirby_34: 4363471353065014355
+      Cupid_Kirby_35: 206559913494550041
+      Cupid_Kirby_36: 4253491276263753003
+      Cupid_Kirby_37: -2569650789714248794
+      Cupid_Kirby_38: 8560837768469817145
+      Cupid_Kirby_39: 8741239008025156325
+      Cupid_Kirby_4: -8147852123214794017
+      Cupid_Kirby_40: -8000698271768259907
+      Cupid_Kirby_41: -2823000405496632181
+      Cupid_Kirby_42: 7135709243864774902
+      Cupid_Kirby_43: -770451270830148
+      Cupid_Kirby_44: -1245306135022369856
+      Cupid_Kirby_45: -933840956222821773
+      Cupid_Kirby_46: -2006080351357554497
+      Cupid_Kirby_47: -8246601610288810593
+      Cupid_Kirby_48: -2207084159492362080
+      Cupid_Kirby_49: 8604665849804965170
+      Cupid_Kirby_5: 1184953953138399686
+      Cupid_Kirby_50: -617428869377092106
+      Cupid_Kirby_51: -2508847409396710273
+      Cupid_Kirby_52: -6365161280731359055
+      Cupid_Kirby_53: -5720440999253432748
+      Cupid_Kirby_54: 2511468377743025487
+      Cupid_Kirby_55: -3685385370698493327
+      Cupid_Kirby_56: 4227686943722844873
+      Cupid_Kirby_57: -8061950478760745836
+      Cupid_Kirby_58: -6049350071992610368
+      Cupid_Kirby_59: -2971108556096188317
+      Cupid_Kirby_6: 208572925444102213
+      Cupid_Kirby_60: 6851136196284555460
+      Cupid_Kirby_61: -4275550107950428376
+      Cupid_Kirby_62: -5801615058446543226
+      Cupid_Kirby_63: 7617116216671327140
+      Cupid_Kirby_64: 5207152355405462355
+      Cupid_Kirby_65: -4149523783940203832
+      Cupid_Kirby_66: -7842253410828600187
+      Cupid_Kirby_67: 745130450272626729
+      Cupid_Kirby_68: -2168560361973075201
+      Cupid_Kirby_69: 422971233228677977
+      Cupid_Kirby_7: 6525451290514351127
+      Cupid_Kirby_70: 4106831088609577262
+      Cupid_Kirby_71: 7212585981008618355
+      Cupid_Kirby_72: 7995378465333942706
+      Cupid_Kirby_73: -8585688537173150082
+      Cupid_Kirby_74: 1529270859167744590
+      Cupid_Kirby_75: -7334957644112274043
+      Cupid_Kirby_76: -1305407101210833777
+      Cupid_Kirby_77: -9159399404496297809
+      Cupid_Kirby_78: -5335587785926288604
+      Cupid_Kirby_79: 8925966284991525651
+      Cupid_Kirby_8: -9060024528417446830
+      Cupid_Kirby_80: -303074106874539979
+      Cupid_Kirby_81: -958396424495455731
+      Cupid_Kirby_82: 9162494139745853718
+      Cupid_Kirby_83: -3048684557760271107
+      Cupid_Kirby_84: 8839590339687887153
+      Cupid_Kirby_85: 6528654689664839607
+      Cupid_Kirby_86: 8836516221137202657
+      Cupid_Kirby_87: 3997328525071309189
+      Cupid_Kirby_88: 449188752547133419
+      Cupid_Kirby_89: -5133002085631570935
+      Cupid_Kirby_9: 5057809651086814097
+      Cupid_Kirby_90: 6013803003686420644
+      Cupid_Kirby_91: 5327380838353644465
+      Cupid_Kirby_92: 4915986692718183953
+      Cupid_Kirby_93: 2949253514082567913
+      Cupid_Kirby_94: 3350050618068723125
+      Cupid_Kirby_95: -4786839426126756664
+      Cupid_Kirby_96: -7412507359840335651
+      Cupid_Kirby_97: -7378101917375063478
+      Cupid_Kirby_98: 5479743723430519186
+      Cupid_Kirby_99: -6084300758797543391
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
