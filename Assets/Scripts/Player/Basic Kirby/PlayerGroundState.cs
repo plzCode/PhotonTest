@@ -22,11 +22,13 @@ public class PlayerGroundState : PlayerState
         base.Update();
         if(pView.IsMine == false) return;
 
-        if (!player.IsGroundCheck())
+        if (!player.IsGroundCheck() && !player.isSlope)
             stateMachine.ChangeState(player.airState);
 
         if (Input.GetKeyDown(KeyCode.Space))
+        {
             stateMachine.ChangeState(player.jumpState);
+        }
 
         if (Input.GetKey(KeyCode.S))
             stateMachine.ChangeState(player.downState);

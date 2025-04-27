@@ -37,13 +37,6 @@ public class PlayerState
     {
         xInput = Input.GetAxisRaw("Horizontal");
         player.anim.SetFloat("yVelocity", rb.linearVelocityY);
-
-        if(xInput == 0)
-        {
-            rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
-        }
-        else
-            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
     }
 
     public virtual void Exit()

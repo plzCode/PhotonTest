@@ -32,12 +32,18 @@ public class Player : MonoBehaviour
     public GameObject EatEffect1;
     public GameObject EatEffect2;
     public Transform EatEffectPos;
+    public GameObject GroundStarEffect;
+    public Transform GroundEffectPos;
+
     public List<GameObject> AttackList = new List<GameObject>();
     public Collider2D currentEnemy;
 
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundLine;
     [SerializeField] private LayerMask whatIsGround;
+    [SerializeField] private Transform hillCheck;
+    [SerializeField] private float hillLine;
+    [SerializeField] private LayerMask whatIsHill;
 
     public float angle;
     public Vector2 perp;
@@ -211,11 +217,12 @@ public class Player : MonoBehaviour
 
 
     //충돌체크
-    public bool IsGroundCheck() => Physics2D.Raycast(groundCheck.position, Vector2.down, groundLine, whatIsGround);
+    public bool IsGroundCheck() => Physics2D.Raycast(groundCheck.position, Vector2.down, groundLine, whatIsGround | whatIsHill);
+    public bool IsHillCheck() => Physics2D.Raycast(hillCheck.position, Vector2.down, hillLine, whatIsHill);
 
     public void Hill() //언덕에서 캐릭터가 미끄러지지 않게 함
     {
-        RaycastHit2D hit = Physics2D.Raycast(groundCheck.position, Vector2.down, groundLine, whatIsGround);
+        RaycastHit2D hit = Physics2D.Raycast(hillCheck.position, Vector2.down, groundLine, whatIsHill);
 
         if(hit)
         {
@@ -227,14 +234,15 @@ public class Player : MonoBehaviour
             else
                 isSlope = false;
 
-                Debug.DrawLine(hit.point, hit.point + hit.normal, Color.blue);
+            Debug.DrawLine(hit.point, hit.point + hit.normal, Color.blue);
             Debug.DrawLine(hit.point, hit.point + perp, Color.red);
         }
     }
 
     public void OnDrawGizmos()
     {
-        Gizmos.DrawLine(groundCheck.position, new Vector3(groundCheck.position.x, groundCheck.position.y - groundLine));
+        Gizmos.DrawLine(hillCheck.position, new Vector3(groundCheck.position.x, groundCheck.position.y - groundLine));
+        Gizmos.DrawLine(hillCheck.position, new Vector3(hillCheck.position.x, hillCheck.position.y - hillLine));
     }
 
     #region 캐릭터 움직임 및 좌우반전
@@ -264,10 +272,12 @@ public class Player : MonoBehaviour
     public void lineVelocity(float xlineVelocity, float ylineVelocity)
     {
         if (rb == null) return;
-        if (isSlope && IsGroundCheck())
+
+        if (isSlope && IsHillCheck())
         {
             // 경사면이면, 경사 방향으로 이동
             rb.linearVelocity = perp * xlineVelocity * -1f;
+            rb.linearVelocity = new Vector2(xlineVelocity, ylineVelocity);
         }
         else
         {

@@ -19,6 +19,7 @@ public class PlayerSlidingState : PlayerState
     public override void Exit()
     {
         base.Exit();
+        player.lineVelocity(0f, rb.linearVelocityY);
         Sliding = false;
     }
 

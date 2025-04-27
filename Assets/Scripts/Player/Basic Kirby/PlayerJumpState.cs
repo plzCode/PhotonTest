@@ -14,6 +14,7 @@ public class PlayerJumpState : PlayerState
     {
         base.Enter();
         MaxJumpPower = -1f;
+        pView.RPC("lineVelocity", RpcTarget.All, rb.linearVelocityX, MinJumpPower + player.JumpPower);
     }
 
     public override void Exit()
@@ -51,7 +52,8 @@ public class PlayerJumpState : PlayerState
             return;
         }
 
-
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+            stateMachine.ChangeState(player.eating12State);
 
 
         if (Input.GetKeyDown(KeyCode.Space)) //스페이스바 누르면 볼빵빵으로 감

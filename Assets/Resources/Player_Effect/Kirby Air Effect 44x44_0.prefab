@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3
-  Effect2: {fileID: 8988725665217619014, guid: a72914cba5bd1144ba90d56da3fa744b, type: 3}
+  Effect2: {fileID: 8988725665217619014, guid: 7ed95ca2c244906488a7574ee35a4ab1, type: 3}
   Effect2Pos: {fileID: 3891279766326830362}
 --- !u!114 &-8302078902375763443
 MonoBehaviour:

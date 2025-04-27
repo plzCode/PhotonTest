@@ -32,7 +32,11 @@ public class PlayerAirState : PlayerState
 
 
         if (player.IsGroundCheck())
+        {
+            player.EffectAdd(1f, player.GroundStarEffect, player.GroundEffectPos);
             stateMachine.ChangeState(player.idleState);
+            return;
+        }
 
         if (xInput != 0)
             //player.lineVelocity(xInput * player.MoveSpeed, rb.linearVelocityY);
@@ -46,7 +50,8 @@ public class PlayerAirState : PlayerState
             return;
         }
 
-
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+            stateMachine.ChangeState(player.eating12State);
 
 
         if (Input.GetKeyDown(KeyCode.Space) && player.TimeBool)

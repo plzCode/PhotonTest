@@ -13,17 +13,8 @@ public class PlayerDowningGroundState : PlayerState
     {
         base.Enter();
 
-        if(player.flipbool)
-        {
-            Lastmove = 1;
-        }
-        else
-        {
-            Lastmove = -1;
-        }
-
         //player.lineVelocity(Lastmove * player.MoveSpeed, 2f);
-        pView.RPC("lineVelocity", RpcTarget.All, Lastmove * player.MoveSpeed, 2f); //수평 이동
+        pView.RPC("lineVelocity", RpcTarget.All, player.LastMove * player.MoveSpeed, 3f); //수평 이동
     }
 
     public override void Exit()
