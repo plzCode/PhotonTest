@@ -92,7 +92,7 @@ public class Spear : MonsterWeapon
             Debug.Log("플레이어에게 " + power + "만큼 데미지를 줍니다.");
             if (collision.GetComponent<PhotonView>() != null)
                 collision.GetComponent<PhotonView>().RPC("TakeDamage", RpcTarget.All, (Vector2)transform.position, power); // 데미지 처리
-            if (!isDestroyed)
+            if (!isDestroyed && PhotonNetwork.IsMasterClient)
             {
                 isDestroyed = true;  // 삭제 상태로 설정
                 PhotonNetwork.Destroy(gameObject); // 네트워크 전체에서 삭제
