@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 7296394996654861803}
   - component: {fileID: 6679388469876447177}
   - component: {fileID: -435902090524805624}
-  - component: {fileID: -6955009955897505856}
-  - component: {fileID: 3958258062656984635}
+  - component: {fileID: 5287831278962989842}
+  - component: {fileID: -4515272140948990880}
   m_Layer: 0
   m_Name: Spear
   m_TagString: Untagged
@@ -201,11 +201,11 @@ MonoBehaviour:
   OwnershipTransfer: 0
   observableSearch: 0
   ObservedComponents:
-  - {fileID: 3958258062656984635}
+  - {fileID: -4515272140948990880}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &-6955009955897505856
+--- !u!114 &5287831278962989842
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -221,7 +221,7 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 1
---- !u!114 &3958258062656984635
+--- !u!114 &-4515272140948990880
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

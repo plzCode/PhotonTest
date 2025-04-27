@@ -14,7 +14,7 @@ public class Spear_IdleState : Spear_GroundedState
     {
         base.Enter();
 
-        //stateTimer = enemy.idleTime;
+        stateTimer = enemy.idleTime;
 
         // 시간 동기화
         if (Photon.Pun.PhotonNetwork.IsMasterClient)

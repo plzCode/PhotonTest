@@ -46,6 +46,7 @@ public class Spear : MonsterWeapon
 
     }
 
+
     private void LaunchParabolic()
     {
         Vector2 start = transform.position;
@@ -86,8 +87,8 @@ public class Spear : MonsterWeapon
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //if (!PhotonNetwork.IsMasterClient) return; // 마스터만 충돌 처리
-
-        if (collision.CompareTag("Player") && !isStuck)
+        if (isStuck || isDestroyed) return;
+        if (collision.CompareTag("Player") && !isStuck && PhotonNetwork.IsMasterClient)
         {
             Debug.Log("플레이어에게 " + power + "만큼 데미지를 줍니다.");
             if (collision.GetComponent<PhotonView>() != null)
@@ -99,35 +100,42 @@ public class Spear : MonsterWeapon
             }
         }
 
-        if (collision.CompareTag("Ground"))
+        else if (collision.CompareTag("Ground") && !isDestroyed)
         {
-            //rb.linearVelocity = Vector2.zero;
+            // **즉시 로컬에서 FreezeSpear() 호출!**
+            if (!isStuck)
+                FreezeSpear();
 
-            //FreezeSpear();
-            photonView.RPC("FreezeSpear", RpcTarget.All);
+            //그리고 나서 모든 클라에게 RPC로 한번 더 통일
+            if (photonView != null)
+                photonView.RPC("FreezeSpear", RpcTarget.Others);
 
-            StartCoroutine(DestroyAfterDelay(2f));
+            if (PhotonNetwork.IsMasterClient)
+            {
+                StartCoroutine(DestroyAfterDelay(2f));
+            }
         }
     }
     [PunRPC]
     private void FreezeSpear()
     {
-        // 창이 땅에 박힌 상태 처리
+
+        rb.constraints = RigidbodyConstraints2D.FreezeAll; // 위치+회전 다 고정
         isStuck = true;
 
-        // 위치 및 회전 동결
-        rb.constraints = RigidbodyConstraints2D.FreezePosition | RigidbodyConstraints2D.FreezeRotation;
+
     }
+
 
     private IEnumerator DestroyAfterDelay(float delay)
-{
-    yield return new WaitForSeconds(delay);
-
-    // 삭제 상태가 아니라면 삭제 요청
-    if (!isDestroyed)
     {
-        isDestroyed = true;  // 삭제 상태로 설정
-        PhotonNetwork.Destroy(gameObject); // 네트워크 전체에서 삭제
+        yield return new WaitForSeconds(delay);
+
+        // 삭제 상태가 아니라면 삭제 요청
+        if (!isDestroyed && PhotonNetwork.IsMasterClient)
+        {
+            isDestroyed = true;  // 삭제 상태로 설정
+            PhotonNetwork.Destroy(gameObject); // 네트워크 전체에서 삭제
+        }
     }
-}
 }
