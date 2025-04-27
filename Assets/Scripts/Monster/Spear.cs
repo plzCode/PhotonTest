@@ -9,6 +9,8 @@ public class Spear : MonsterWeapon
     private Transform target;
     private PhotonView photonView;
 
+    private bool isDestroyed = false;  // 오브젝트가 이미 삭제되었는지 여부를 추적
+
     [SerializeField] private float flightTime = 1.0f; // 투창이 목표 지점에 도달할 시간
     private bool isStuck = false; // 창이 땅에 박힌 상태
 
@@ -20,26 +22,26 @@ public class Spear : MonsterWeapon
 
     private void Start()
     {
-        if (photonView.IsMine)
+
+        target = FindClosestPlayer();
+        if (target != null)
         {
-            target = FindClosestPlayer();
-            if (target != null)
-            {
-                LaunchParabolic();
-            }
-            else
-            {
-                Debug.LogWarning("Player not found!");
-            }
+            LaunchParabolic();
         }
+        else
+        {
+            Debug.LogWarning("Player not found!");
+        }
+
     }
 
     private void Update()
     {
         if (isStuck)
             return;
-        
+
         //창 회전 각 클라에서 적용
+
         transform.right = rb.linearVelocity;
 
     }
@@ -83,27 +85,31 @@ public class Spear : MonsterWeapon
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!PhotonNetwork.IsMasterClient) return; // 마스터만 충돌 처리
+        //if (!PhotonNetwork.IsMasterClient) return; // 마스터만 충돌 처리
 
-        if (collision.CompareTag("Player")&&!isStuck)
+        if (collision.CompareTag("Player") && !isStuck)
         {
             Debug.Log("플레이어에게 " + power + "만큼 데미지를 줍니다.");
             if (collision.GetComponent<PhotonView>() != null)
                 collision.GetComponent<PhotonView>().RPC("TakeDamage", RpcTarget.All, (Vector2)transform.position, power); // 데미지 처리
-            PhotonNetwork.Destroy(gameObject); // 네트워크 전체에서 삭제
+            if (!isDestroyed)
+            {
+                isDestroyed = true;  // 삭제 상태로 설정
+                PhotonNetwork.Destroy(gameObject); // 네트워크 전체에서 삭제
+            }
         }
 
         if (collision.CompareTag("Ground"))
         {
             //rb.linearVelocity = Vector2.zero;
-            
-            // 회전 및 위치 동결 (마스터 클라이언트에서만 처리)
-            photonView.RPC("FreezeSpear", RpcTarget.All);
 
-            StartCoroutine(DestroyAfterDelay(2f)); 
+            FreezeSpear();
+            //photonView.RPC("FreezeSpear", RpcTarget.All);
+
+            StartCoroutine(DestroyAfterDelay(2f));
         }
-    }       
-    [PunRPC]
+    }
+    //[PunRPC]
     private void FreezeSpear()
     {
         // 창이 땅에 박힌 상태 처리
@@ -114,8 +120,14 @@ public class Spear : MonsterWeapon
     }
 
     private IEnumerator DestroyAfterDelay(float delay)
+{
+    yield return new WaitForSeconds(delay);
+
+    // 삭제 상태가 아니라면 삭제 요청
+    if (!isDestroyed)
     {
-        yield return new WaitForSeconds(delay);
-        PhotonNetwork.Destroy(gameObject);
+        isDestroyed = true;  // 삭제 상태로 설정
+        PhotonNetwork.Destroy(gameObject); // 네트워크 전체에서 삭제
     }
+}
 }

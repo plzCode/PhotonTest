@@ -47,6 +47,7 @@ public class EnemyState
     [PunRPC]
     public void SyncStateTimer(float timerValue)
     {
+        // stateTimer를 동기화 처리
         stateTimer = timerValue;
     }
 }
