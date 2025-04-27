@@ -43,11 +43,4 @@ public class EnemyState
         triggerCalled = true;
     }
 
-    // 네트워크로 stateTimer 동기화
-    [PunRPC]
-    public void SyncStateTimer(float timerValue)
-    {
-        // stateTimer를 동기화 처리
-        stateTimer = timerValue;
-    }
 }

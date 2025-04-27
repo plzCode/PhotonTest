@@ -20,8 +20,7 @@ public class Spear_IdleState : Spear_GroundedState
         if (Photon.Pun.PhotonNetwork.IsMasterClient)
         {
             stateTimer = enemy.idleTime;
-            enemy.photonView.RPC("SyncStateTimer", Photon.Pun.RpcTarget.Others, stateTimer);
-            
+            enemy.photonView.RPC("SyncStateTimer", Photon.Pun.RpcTarget.Others, (float)stateTimer);
         }        
 
     }

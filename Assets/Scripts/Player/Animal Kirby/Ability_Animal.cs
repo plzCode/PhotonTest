@@ -42,10 +42,7 @@ public class Ability_Animal : PlayerAbility
     }
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse1))
-        {
-            AttackHandle();
-        }
+        
     }
 
     public void OnTriggerEnter(Collider other)

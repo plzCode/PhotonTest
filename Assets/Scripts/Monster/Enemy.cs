@@ -218,4 +218,12 @@ public class Enemy : MonoBehaviour
         PhotonNetwork.Destroy(gameObject);
     }
     #endregion
+
+    [PunRPC]
+    public void SyncStateTimer(float timerValue)
+    {
+        // stateTimer를 동기화 처리
+        if(stateMachine.currentState != null)
+            stateMachine.currentState.stateTimer = timerValue;
+    }
 }
