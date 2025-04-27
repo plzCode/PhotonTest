@@ -171,6 +171,15 @@ public class Player : MonoBehaviour
             }
 
         }
+
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            if (curAbility != null)
+            {
+                curAbility.AttackHandle();
+            }
+        }
+
         #endregion
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
@@ -435,6 +444,9 @@ public class Player : MonoBehaviour
             }
         }
     }
+
+    public virtual void AnimationFinishTrigger() => stateMachine.state.AnimationFinishTrigger();
+
 
     public void Call_RPC(string rpc_Name, RpcTarget type)
     {

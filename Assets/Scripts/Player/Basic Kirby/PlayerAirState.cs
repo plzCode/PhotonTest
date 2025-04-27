@@ -50,7 +50,7 @@ public class PlayerAirState : PlayerState
             return;
         }
 
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0) && player.KirbyFormNum == 0)
             stateMachine.ChangeState(player.eating12State);
 
 

@@ -6,6 +6,11 @@ public class PlayerAnimatorController : MonoBehaviour
     private Player player => GetComponentInParent<Player>();
 
 
+    private void AnimationTrigger()
+    {
+        player.AnimationFinishTrigger();
+    }
+
     public void DowningGround_Idle_State()
     {
         if (!player.IsGroundCheck() && !player.isSlope)

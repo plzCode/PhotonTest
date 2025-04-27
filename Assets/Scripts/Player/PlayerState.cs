@@ -15,6 +15,8 @@ public class PlayerState
 
     private string animBoolName;
 
+    protected bool triggerCalled;
+
     //for Photon
     protected PhotonView pView;
 
@@ -29,6 +31,7 @@ public class PlayerState
 
     public virtual void Enter()
     {
+        triggerCalled = false;
         rb = player.rb;
         player.anim.SetBool(animBoolName, true);
     }
@@ -42,5 +45,9 @@ public class PlayerState
     public virtual void Exit()
     {
         player.anim.SetBool(animBoolName, false);
+    }
+    public virtual void AnimationFinishTrigger()
+    {
+        triggerCalled = true;
     }
 }
