@@ -1,4 +1,5 @@
 
+using Photon.Pun;
 using System.Collections;
 using UnityEngine;
 
@@ -13,7 +14,7 @@ public class Spear_IdleState : Spear_GroundedState
     {
         base.Enter();
 
-        
+        //stateTimer = enemy.idleTime;
 
         // 시간 동기화
         if (Photon.Pun.PhotonNetwork.IsMasterClient)
@@ -56,7 +57,8 @@ public class Spear_IdleState : Spear_GroundedState
             {
                 if (distanceToTarget <= enemy.throwDistance)
                 {
-                    stateMachine.ChangeState(enemy.throwState);
+                    //stateMachine.ChangeState(enemy.throwState);
+                    enemy.photonView.RPC("RequestAttackFromClient", RpcTarget.All);
                 }
             }
         }

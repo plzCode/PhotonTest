@@ -103,13 +103,13 @@ public class Spear : MonsterWeapon
         {
             //rb.linearVelocity = Vector2.zero;
 
-            FreezeSpear();
-            //photonView.RPC("FreezeSpear", RpcTarget.All);
+            //FreezeSpear();
+            photonView.RPC("FreezeSpear", RpcTarget.All);
 
             StartCoroutine(DestroyAfterDelay(2f));
         }
     }
-    //[PunRPC]
+    [PunRPC]
     private void FreezeSpear()
     {
         // 창이 땅에 박힌 상태 처리
