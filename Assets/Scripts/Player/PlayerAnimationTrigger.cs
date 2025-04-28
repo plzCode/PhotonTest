@@ -65,4 +65,22 @@ public class PlayerAnimatorController : MonoBehaviour
             }
         }
     }
+
+
+    private GameObject EatAttack;
+    private string EatAttackResource = "Player_Effect/Kirby Eat Attack 60x60_0";
+    public void EatKirbyStarAttack()
+    {
+        RangedAttack(EatAttack, EatAttackResource);
+    }
+
+    private void RangedAttack(GameObject rangeAttack, string rangeAttackName)
+    {
+        if (rangeAttack == null)
+        {
+            rangeAttack = Resources.Load<GameObject>(rangeAttackName);
+        }
+
+        player.EffectAdd(player.LastMove, rangeAttack, player.AirJumpOutEffectPos);
+    }
 }

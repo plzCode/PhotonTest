@@ -3,7 +3,10 @@ using UnityEngine;
 
 public class Ability_Eat : PlayerAbility
 {
+    private Player player => GetComponentInParent<Player>();
+
     public RuntimeAnimatorController EatKirby;
+    public Eat_Kirby_Attack_State attackState;
 
     public override void OnAbilityCopied(Player owner) //변신을 적용합니다.
     {
@@ -15,6 +18,8 @@ public class Ability_Eat : PlayerAbility
 
         pView.RPC("Change_Animator_Controller", RpcTarget.AllBuffered, pView.ViewID);
         Debug.Log("Animal ability copied");
+
+        AddState(owner);
     }
 
     public override void OnAbilityDestroyed(Player owner) //변신 초기화 입니다.
@@ -23,8 +28,38 @@ public class Ability_Eat : PlayerAbility
         owner.KirbyFormNum = 0; //커비 변신 초기화
         Debug.Log("Animal ability destroyed");
     }
+
+
     public override void AttackHandle()
     {
-        Debug.Log("Animal ability attack");
+        if (owner == null) return;
+
+        owner.stateMachine.ChangeState(attackState);
+
+    }
+
+    public void AddState(Player owner)
+    {
+        attackState = new Eat_Kirby_Attack_State(owner, owner.stateMachine, "Attack_1");
+    }
+
+    public void RemoveState(Player owner)
+    {
+        attackState = null;
+    }
+
+    public void Attack()
+    {
+        if (Input.GetKeyDown(KeyCode.Mouse0) && GetComponent<PhotonView>().IsMine)
+        {
+            if (player.curAbility != null)
+            {
+                player.curAbility.AttackHandle();
+            }
+            else
+            {
+                Debug.Log("Normal Kirby Attack");
+            }
+        }
     }
 }
