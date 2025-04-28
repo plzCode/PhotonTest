@@ -44,10 +44,5 @@ public class PlayerIdleState : PlayerGroundState
             player.dash = true;
             stateMachine.ChangeState(player.moveState);
         }
-
-        if (player.EatKirby != null)
-        {
-            player.EatKirby.Attack();
-        }
     }
 }

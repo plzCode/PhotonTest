@@ -99,7 +99,7 @@ public class Player : MonoBehaviour
     [SerializeField]
     public Transform attackCheck;
 
-    protected PhotonView pView;
+    public PhotonView pView;
 
 
     public void Awake()
@@ -148,6 +148,7 @@ public class Player : MonoBehaviour
 
     public void Update()
     {
+        Debug.Log(KirbyFormNum);
         stateMachine.state.Update();
 
         DashTime(); //대쉬상호작용 타임
@@ -180,13 +181,14 @@ public class Player : MonoBehaviour
 
         }
 
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            if (curAbility != null)
-            {
-                curAbility.AttackHandle();
-            }
-        }
+        //플레이어 idle 상태로 옮김
+        //if (Input.GetKeyDown(KeyCode.Mouse0))
+        //{
+        //    if (curAbility != null)
+        //    {
+        //        curAbility.AttackHandle();
+        //    }
+        //}
 
         #endregion
         Hill();

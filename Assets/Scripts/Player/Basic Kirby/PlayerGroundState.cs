@@ -1,3 +1,4 @@
+using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine;
 
@@ -31,14 +32,39 @@ public class PlayerGroundState : PlayerState
         }
 
         if (Input.GetKey(KeyCode.S))
+        {
             stateMachine.ChangeState(player.downState);
+            //if (player.KirbyFormNum != 1) // ï¿½Ì¹ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Æ´Ï¶ï¿½ï¿½
+            //{
+            //    player.pView.RPC("RPC_ChangeForm", RpcTarget.AllBuffered);  // ï¿½Ù¸ï¿½ Å¬ï¿½ï¿½ï¿½Ì¾ï¿½Æ®ï¿½é¿¡ï¿½Ôµï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+            //}
+        }
 
-        if (player.KirbyFormNum == 1) //¸÷À» ÀÔ¿¡ ´ã°í ÀÖ´ÂÁß ÀÏ¶§ º¼»§»§À¸·Î ¸ø °¡°Ô ¸·À½
+        if (player.KirbyFormNum == 1) //ï¿½ï¿½ï¿½ï¿½ ï¿½Ô¿ï¿½ ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ï¿½ï¿½ ï¿½Ï¶ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         {
             return;
         }
 
         if (Input.GetKeyDown(KeyCode.Mouse0) && player.KirbyFormNum == 0)
             stateMachine.ChangeState(player.eating12State);
+
+        //if (Input.GetKeyDown(KeyCode.Mouse0) && player.curAbility != null)
+        //{
+        //    player.GetComponent<PhotonView>().RPC(nameof(PerformAttack), RpcTarget.All);
+        //}
     }
+
+    //[PunRPC]
+    //public void PerformAttack()
+    //{
+    //    switch (player.KirbyFormNum)
+    //    {
+    //        case 1:
+    //            player.EatKirby.Attack();
+    //            break;
+    //        case 2:
+    //            player.curAbility.AttackHandle();
+    //            break;
+    //    }
+    //}
 }

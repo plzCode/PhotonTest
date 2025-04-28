@@ -22,13 +22,13 @@ MonoBehaviour:
     FixedRegion: 
     Server: 
     Port: 0
-    ProxyServer: 
+    ProxyServer: kr
     Protocol: 0
     EnableProtocolFallback: 1
     AuthMode: 0
     EnableLobbyStatistics: 0
     NetworkLogging: 1
-  DevRegion: kr
+  DevRegion: 
   PunLogging: 0
   EnableSupportLogger: 0
   RunInBackground: 1
@@ -59,6 +59,8 @@ MonoBehaviour:
   - FlipRPC
   - ForceSyncPosition
   - RequestHitFromClient
+  - PerformAttack
+  - ChangeForm
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
