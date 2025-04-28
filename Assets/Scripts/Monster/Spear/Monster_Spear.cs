@@ -56,7 +56,7 @@ public class Monster_Spear : Enemy
         base.Update();
     }
 
-    protected override void TakeDamage(float _damage)
+    public override void TakeDamage(float _damage)
     {
         base.TakeDamage(_damage);
         Debug.Log("몬스터가 피해를 " + _damage + "받음");

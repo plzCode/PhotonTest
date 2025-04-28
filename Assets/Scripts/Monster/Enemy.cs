@@ -128,7 +128,7 @@ public class Enemy : MonoBehaviour
         Debug.Log(gameObject.name + "데미지를 입혔다.");
     }
 
-    protected virtual void TakeDamage(float _damage)
+    public virtual void TakeDamage(float _damage)
     {
         //stateMachine.ChangeState();
     }
