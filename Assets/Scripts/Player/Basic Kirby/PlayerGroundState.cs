@@ -34,13 +34,13 @@ public class PlayerGroundState : PlayerState
         if (Input.GetKey(KeyCode.S))
         {
             stateMachine.ChangeState(player.downState);
-            //if (player.KirbyFormNum != 1) // ÀÌ¹Ì º¯½Å ÁßÀÌ ¾Æ´Ï¶ó¸é
+            //if (player.KirbyFormNum != 1) // ï¿½Ì¹ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Æ´Ï¶ï¿½ï¿½
             //{
-            //    player.pView.RPC("RPC_ChangeForm", RpcTarget.AllBuffered);  // ´Ù¸¥ Å¬¶óÀÌ¾ðÆ®µé¿¡°Ôµµ º¯½Å »óÅÂ Àü´Þ
+            //    player.pView.RPC("RPC_ChangeForm", RpcTarget.AllBuffered);  // ï¿½Ù¸ï¿½ Å¬ï¿½ï¿½ï¿½Ì¾ï¿½Æ®ï¿½é¿¡ï¿½Ôµï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
             //}
         }
 
-        if (player.KirbyFormNum == 1) //¸÷À» ÀÔ¿¡ ´ã°í ÀÖ´ÂÁß ÀÏ¶§ º¼»§»§À¸·Î ¸ø °¡°Ô ¸·À½
+        if (player.KirbyFormNum == 1) //ï¿½ï¿½ï¿½ï¿½ ï¿½Ô¿ï¿½ ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ï¿½ï¿½ ï¿½Ï¶ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         {
             return;
         }
