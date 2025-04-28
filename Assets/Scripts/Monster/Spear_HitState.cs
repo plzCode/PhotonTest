@@ -50,7 +50,7 @@ public class Spear_HitState : EnemyState
 
     public override void Exit()
     {
-        enemy.fx.Invoke("CancelRedBlink", 0);
+        //enemy.fx.Invoke("CancelRedBlink", 0);
         base.Exit();
 
         
