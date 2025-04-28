@@ -33,7 +33,6 @@ public class Ability_Eat : PlayerAbility
     public override void AttackHandle()
     {
         if (owner == null) return;
-
         owner.stateMachine.ChangeState(attackState);
 
     }
@@ -50,7 +49,7 @@ public class Ability_Eat : PlayerAbility
 
     public void Attack()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0) && GetComponent<PhotonView>().IsMine)
+        if (GetComponent<PhotonView>().IsMine)
         {
             if (player.curAbility != null)
             {

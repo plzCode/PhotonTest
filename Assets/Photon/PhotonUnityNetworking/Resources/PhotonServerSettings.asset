@@ -55,6 +55,10 @@ MonoBehaviour:
   - SyncStateTimer
   - ThrowSpear
   - TakeDamage
+  - RequestIdleFromClient
+  - FlipRPC
+  - ForceSyncPosition
+  - RequestHitFromClient
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

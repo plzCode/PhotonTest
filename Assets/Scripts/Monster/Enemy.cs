@@ -41,9 +41,17 @@ public class Enemy : MonoBehaviour
     public float attackPower;
     [HideInInspector] public float lastTimeAttacked;
 
+    
+
 
     public int facingDir= 1;
-    protected bool facingRight = true;
+    public bool facingRight = true;
+
+    [Header("피해 정보")]
+    
+    public Vector2 stunDirection;
+    public float hitTime;
+    public EnemyFX fx { get; private set; }
 
     [Header("시작 정보")]
     [SerializeField] private bool startRight = true;
@@ -74,12 +82,14 @@ public class Enemy : MonoBehaviour
         //fx = GetComponent<EntityFX>();
         anim = GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        fx = GetComponent<EnemyFX>();
     }
 
 
     protected virtual void Update()
     {
         stateMachine.currentState.Update();
+
         if (PhotonNetwork.IsMasterClient)
         {
             // 마스터 클라이언트에서 몬스터 상태 업데이트
@@ -120,7 +130,7 @@ public class Enemy : MonoBehaviour
 
     public virtual void TakeDamage(float _damage)
     {
-
+        //stateMachine.ChangeState();
     }
 
 
@@ -174,6 +184,35 @@ public class Enemy : MonoBehaviour
         facingRight = !facingRight;
         transform.Rotate(0, 180, 0);
     }
+
+    [PunRPC]
+    public virtual void FlipRPC()
+    {
+        facingDir = facingDir * -1;
+        facingRight = !facingRight;
+        transform.Rotate(0, 180, 0);
+    }
+
+
+    /*
+    public void IsRightRotation(bool _Right)
+    {
+        int right = 0;
+        if(_Right)
+        {
+            right = 1;
+        }
+        else
+        {
+            right = -1;
+        }
+
+        facingDir = right;
+        facingRight = _Right;
+        transform.rotation = Quaternion.Euler(0, 90 - (90 * right), 0);        
+    }
+    */
+
 
 
     public virtual void FlipController(float _x)
