@@ -13,6 +13,9 @@ GameObject:
   - component: {fileID: 6259888621962882105}
   - component: {fileID: 4028325496439182010}
   - component: {fileID: 333736077876393272}
+  - component: {fileID: 7985063032802781035}
+  - component: {fileID: 7358566062921872840}
+  - component: {fileID: 2822794170745066662}
   m_Layer: 7
   m_Name: Spear
   m_TagString: Enemy
@@ -136,7 +139,11 @@ MonoBehaviour:
   attackPower: 0
   lastTimeAttacked: 0
   facingDir: 1
+  facingRight: 1
+  stunDirection: {x: 3, y: 3}
+  hitTime: 1.5
   startRight: 1
+  photonView: {fileID: 0}
   throwDistance: 5
   spearPrefab: {fileID: 6694563840851363212, guid: 43c819531e075524890bb5069f160b88, type: 3}
 --- !u!114 &333736077876393272
@@ -151,16 +158,62 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 0
+  ObservedComponentsFoldoutOpen: 1
   Group: 0
   prefixField: -1
   Synchronization: 3
   OwnershipTransfer: 0
-  observableSearch: 2
-  ObservedComponents: []
+  observableSearch: 0
+  ObservedComponents:
+  - {fileID: 7694669027513779257}
+  - {fileID: 7358566062921872840}
+  - {fileID: 2822794170745066662}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &7985063032802781035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3355068980518483869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d2e9ad4460ba7c448f42de2ec68fa16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Number: 2
+  a: "1. \uCEE4\uBE44 \uBA39\uC740 \uD3FC"
+  b: "2. \uCEE4\uBE44 \uC560\uB2C8\uBA40 \uD3FC"
+--- !u!114 &7358566062921872840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3355068980518483869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5672e78f22197ad44baca407376fd8d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2822794170745066662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3355068980518483869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 0
+  m_SynchronizeScale: 1
+  m_UseLocal: 1
 --- !u!1 &6774259601036588431
 GameObject:
   m_ObjectHideFlags: 0

@@ -60,8 +60,8 @@ public class PlayerAnimatorController : MonoBehaviour
             if (hit.GetComponent<Enemy>() != null)
             {
                 Debug.Log("적에게" + player.curAbility.attackPower+ "만큼 데미지를 줌");
-                hit.GetComponent<Enemy>().TakeDamage(player.curAbility.attackPower);
-                hit.gameObject.SetActive(false);  //임시로
+                hit.GetComponent<Enemy>().photonView.RPC("TakeDamage", RpcTarget.All,player.curAbility.attackPower); // 데미지 처리
+                //hit.gameObject.SetActive(false);  //임시로
             }
         }
     }

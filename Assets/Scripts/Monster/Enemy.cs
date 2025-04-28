@@ -62,7 +62,7 @@ public class Enemy : MonoBehaviour
     
 
     //For Photon
-    private PhotonView eView; 
+    public PhotonView photonView; 
     private Vector3 targetPosition;
     private Quaternion targetRotation;
 
@@ -74,7 +74,7 @@ public class Enemy : MonoBehaviour
         {
             Flip();
         }
-        eView = GetComponent<PhotonView>();
+        photonView = GetComponent<PhotonView>();
     }
 
     protected virtual void Start()
@@ -97,7 +97,7 @@ public class Enemy : MonoBehaviour
             targetRotation = transform.rotation;
 
             // 다른 클라이언트에 상태 전파
-            eView.RPC("SyncMonsterState", RpcTarget.Others, targetPosition, targetRotation);
+            photonView.RPC("SyncMonsterState", RpcTarget.Others, targetPosition, targetRotation);
         }
         else
         {
@@ -247,7 +247,7 @@ public class Enemy : MonoBehaviour
 
     public void Call_RPC(string name, RpcTarget type) 
     {
-        eView.RPC(name, type);
+        photonView.RPC(name, type);
     }
 
     #region 삭제요청    

@@ -9,7 +9,7 @@ public class Monster_Spear : Enemy
     [Header("M02 원거리 공격 정보")]
     [SerializeField] public float throwDistance;
 
-    public PhotonView photonView;
+    //public PhotonView photonView;
 
     #region States
     public Spear_IdleState idleState { get; private set; }
@@ -56,6 +56,7 @@ public class Monster_Spear : Enemy
         base.Update();
     }
 
+    [PunRPC]
     public override void TakeDamage(float _damage)
     {
         base.TakeDamage(_damage);
