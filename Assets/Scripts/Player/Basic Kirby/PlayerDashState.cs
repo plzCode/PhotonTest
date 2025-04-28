@@ -81,9 +81,6 @@ public class PlayerDashState : PlayerGroundState
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-            stateMachine.ChangeState(player.eating12State);
-
         if (!player.IsGroundCheck() && !player.isSlope)
             stateMachine.ChangeState(player.airState);
     }

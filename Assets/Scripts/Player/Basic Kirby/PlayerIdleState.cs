@@ -45,9 +45,19 @@ public class PlayerIdleState : PlayerGroundState
             stateMachine.ChangeState(player.moveState);
         }
 
-        if (player.EatKirby != null)
+
+
+        if (player.curAbility != null && Input.GetKeyDown(KeyCode.Mouse0)) //기본커비가 아니라면 공격함
         {
-            player.EatKirby.Attack();
+            switch (player.KirbyFormNum)
+            {
+                case 1: //먹은 폼
+                    player.EatKirby.Attack();
+                    break;
+                case 2: //애니멀 폼
+                    player.curAbility.AttackHandle();
+                    break;
+            }
         }
     }
 }
