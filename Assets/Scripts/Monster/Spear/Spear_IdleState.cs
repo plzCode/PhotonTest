@@ -1,4 +1,3 @@
-
 using Photon.Pun;
 using System.Collections;
 using UnityEngine;
@@ -43,13 +42,15 @@ public class Spear_IdleState : Spear_GroundedState
 
         if (distanceToTarget <= enemy.throwDistance + 2f)
         {
-            if (target.position.x < enemy.transform.position.x)
+            if (target.position.x < enemy.transform.position.x&&enemy.facingDir==1)
             {
-                enemy.transform.rotation = Quaternion.Euler(0, 180, 0);
+                enemy.Flip();
+                
             }
-            else if (target.position.x > enemy.transform.position.x)
+            else if (target.position.x > enemy.transform.position.x&&enemy.facingDir==-1)
             {
-                enemy.transform.rotation = Quaternion.Euler(0, 0, 0);
+                enemy.Flip();
+                
             }
 
             if (stateTimer < 0)

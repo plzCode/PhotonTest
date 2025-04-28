@@ -5,15 +5,16 @@ using UnityEngine;
 public class Monster_Spear : Enemy
 {
 
-    
+
     [Header("M02 원거리 공격 정보")]
     [SerializeField] public float throwDistance;
 
-    public PhotonView photonView; 
-    
+    public PhotonView photonView;
+
     #region States
     public Spear_IdleState idleState { get; private set; }
     public Spear_ThrowState throwState { get; private set; }
+    public Spear_HitState hitState { get; private set; }
     #endregion
 
     [SerializeField] private GameObject spearPrefab;
@@ -32,8 +33,10 @@ public class Monster_Spear : Enemy
 
         idleState = new Spear_IdleState(this, stateMachine, "Idle", this);
         throwState = new Spear_ThrowState(this, stateMachine, "Throw", this);
+        hitState = new Spear_HitState(this, stateMachine, "Hit", this);
 
-        
+
+
     }
 
     protected override void Start()
@@ -44,13 +47,21 @@ public class Monster_Spear : Enemy
 
         stateMachine.Initialize(idleState);
 
-        
+
 
     }
 
     protected override void Update()
     {
         base.Update();
+    }
+
+    protected override void TakeDamage(float _damage)
+    {
+        base.TakeDamage(_damage);
+        Debug.Log("몬스터가 피해를 " + _damage + "받음");
+
+        photonView.RPC("RequestHitFromClient", RpcTarget.All);
     }
 
     protected override void OnDrawGizmos()
@@ -66,11 +77,23 @@ public class Monster_Spear : Enemy
     [PunRPC]
     public void RequestAttackFromClient()
     {
-        if(idleState.stateTimer<0)
-        {
-            stateMachine.ChangeState(throwState);
-        }
-        
+
+        stateMachine.ChangeState(throwState);
+
+
+    }
+
+    [PunRPC]
+    public void RequestHitFromClient()
+    {
+        stateMachine.ChangeState(hitState);
+    }
+
+    [PunRPC]
+    public void RequestIdleFromClient()
+    {
+        stateMachine.ChangeState(idleState);
+
     }
 
     [PunRPC]
@@ -80,13 +103,13 @@ public class Monster_Spear : Enemy
         if (PhotonNetwork.IsMasterClient)
         {
             //Debug.Log("ThrowSpear RPC 호출됨 - IsMasterClient: " + PhotonNetwork.IsMasterClient);
-            PhotonNetwork.Instantiate("Monster_Effect/" + spearPrefab.name, new Vector2(transform.position.x,transform.position.y+0.1f), Quaternion.identity);
+            PhotonNetwork.Instantiate("Monster_Effect/" + spearPrefab.name, new Vector2(transform.position.x, transform.position.y + 0.1f), Quaternion.identity);
         }
         //Instantiate(spearPrefab, transform.position, Quaternion.identity);
     }
 
-    
 
-    
+
+
 
 }
