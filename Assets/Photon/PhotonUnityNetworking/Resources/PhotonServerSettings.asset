@@ -22,13 +22,13 @@ MonoBehaviour:
     FixedRegion: 
     Server: 
     Port: 0
-    ProxyServer: kr
+    ProxyServer: 
     Protocol: 0
     EnableProtocolFallback: 1
     AuthMode: 0
     EnableLobbyStatistics: 0
     NetworkLogging: 1
-  DevRegion: 
+  DevRegion: kr
   PunLogging: 0
   EnableSupportLogger: 0
   RunInBackground: 1
@@ -43,24 +43,24 @@ MonoBehaviour:
   - DestroySpaceship
   - EatEnemy
   - Fire
+  - FlipRPC
+  - ForceSyncPosition
   - FreezeSpear
   - KirbyFrom
   - lineVelocity
   - RegisterToGameManager
   - RequestAttackFromClient
+  - RequestHitFromClient
+  - RequestIdleFromClient
   - RespawnSpaceship
   - SetPlayer
   - SettingColor
   - SyncMonsterState
   - SyncStateTimer
-  - ThrowSpear
   - TakeDamage
-  - RequestIdleFromClient
-  - FlipRPC
-  - ForceSyncPosition
-  - RequestHitFromClient
-  - PerformAttack
-  - ChangeForm
+  - ThrowSpear
+  - KirbyForm
+  - SyncFormNum
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

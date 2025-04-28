@@ -15,7 +15,7 @@ public class PlayerEatState : PlayerState
     public override void Exit()
     {
         base.Exit();
-        pView.RPC("KirbyFrom", RpcTarget.All); //먹는중인 커비로 변신
+        pView.RPC("KirbyForm", RpcTarget.All); //먹는중인 커비로 변신
         //player.KirbyFrom(); //먹는중인 커비로 변신
     }
 

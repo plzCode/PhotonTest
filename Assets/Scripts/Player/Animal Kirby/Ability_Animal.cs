@@ -14,7 +14,7 @@ public class Ability_Animal : PlayerAbility
     public override void OnAbilityCopied(Player owner) //변신을 적용합니다.
     {
         base.OnAbilityCopied(owner);
-        
+        owner.KirbyFormNum = 2; //커비 변신 초기화
         PhotonView pView = owner.GetComponent<PhotonView>();
         animalKirby = Resources.Load<RuntimeAnimatorController>("Test/Animal_Kirby"); //바꿀 애니메이터 파일을 찾아 저장합니다.
 
@@ -29,6 +29,7 @@ public class Ability_Animal : PlayerAbility
     public override void OnAbilityDestroyed(Player owner) //변신 초기화 입니다.
     {
         base.OnAbilityDestroyed(owner); //커비 변신 초기화
+
         RemoveState(owner); 
         Debug.Log("Animal ability destroyed");
     }

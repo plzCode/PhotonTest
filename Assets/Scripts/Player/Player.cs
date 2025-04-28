@@ -148,7 +148,7 @@ public class Player : MonoBehaviour
 
     public void Update()
     {
-        Debug.Log(KirbyFormNum);
+        //Debug.Log(KirbyFormNum);
         stateMachine.state.Update();
 
         DashTime(); //대쉬상호작용 타임
@@ -198,9 +198,9 @@ public class Player : MonoBehaviour
     public int EatKirbyFormNum;
     public int KirbyFormNum;
     [PunRPC]
-    public void KirbyFrom() //커비가 먹은 적의 고유 번호에 따라 변신 폼을 정함
+    public void KirbyForm() //커비가 먹은 적의 고유 번호에 따라 변신 폼을 정함
     {
-        Debug.Log("실행됨");
+        Debug.Log("KirbyFrom 실행됨");
             switch (KirbyFormNum)
             {
             case 1: //먹은 폼
@@ -212,6 +212,11 @@ public class Player : MonoBehaviour
                     curAbility.OnAbilityCopied(this);
                     break;
             }
+    }
+    [PunRPC]
+    public void SyncFormNum()
+    {
+        KirbyFormNum = EatKirbyFormNum;
     }
 
 

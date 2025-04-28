@@ -11,14 +11,13 @@ public class Ability_Eat : PlayerAbility
     public override void OnAbilityCopied(Player owner) //변신을 적용합니다.
     {
         base.OnAbilityCopied(owner);
-
+        owner.KirbyFormNum = 1; //커비 변신 초기화
         PhotonView pView = owner.GetComponent<PhotonView>();
         EatKirby = Resources.Load<RuntimeAnimatorController>("Test/Eat_Kirby"); //바꿀 애니메이터 파일을 찾아 저장합니다.
         owner.GetComponentInChildren<Animator>().runtimeAnimatorController = EatKirby; //플레이어에게 애니메이터 파일을 바꿔넣습니다.
 
         pView.RPC("Change_Animator_Controller", RpcTarget.AllBuffered, pView.ViewID);
-        Debug.Log("Animal ability copied");
-
+        Debug.Log("Eat ability copied");
         AddState(owner);
     }
 
@@ -26,7 +25,7 @@ public class Ability_Eat : PlayerAbility
     {
         base.OnAbilityDestroyed(owner);
         owner.KirbyFormNum = 0; //커비 변신 초기화
-        Debug.Log("Animal ability destroyed");
+        Debug.Log("Eat ability Destroyed");
     }
 
 
