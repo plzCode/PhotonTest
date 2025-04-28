@@ -116,6 +116,7 @@ MonoBehaviour:
   curAbility: {fileID: 0}
   isInhaling: 0
   attackCheck: {fileID: 7561445261509129977}
+  pView: {fileID: 0}
   EatKirbyFormNum: 0
   KirbyFormNum: 0
   dashTime: 0

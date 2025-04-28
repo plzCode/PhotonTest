@@ -99,7 +99,7 @@ public class Player : MonoBehaviour
     [SerializeField]
     public Transform attackCheck;
 
-    protected PhotonView pView;
+    public PhotonView pView;
 
 
     public void Awake()
