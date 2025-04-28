@@ -87,9 +87,17 @@ public class Player : MonoBehaviour
 
     #endregion
 
+    //변신 어빌리티
+    public Ability_Eat EatKirby => GetComponentInParent<Ability_Eat>();
+
+
+
+
     //For Test Ability
     public PlayerAbility curAbility;
     public bool isInhaling = false;
+    [SerializeField]
+    public Transform attackCheck;
 
     protected PhotonView pView;
 
@@ -181,15 +189,6 @@ public class Player : MonoBehaviour
         }
 
         #endregion
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            KirbyFormNum = 1;
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            KirbyFormNum = 0;
-        }
-
         Hill();
 
     }   

@@ -48,7 +48,39 @@ public class PlayerAnimatorController : MonoBehaviour
             Destroy(player.curAbility);
             player.stateMachine.ChangeState(player.idleState);
         }
+    }
+
+    public void AttackTrigger()
+    {
+        if(player.curAbility == null) return; //어빌리티가 없으면 리턴
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(player.attackCheck.position, player.curAbility.attackCheckRadius);
+        Debug.Log(player.curAbility.attackCheckRadius);
+        foreach (var hit in colliders)
+        {
+            if (hit.GetComponent<Enemy>() != null)
+            {
+                Debug.Log("적에게" + player.curAbility.attackPower+ "만큼 데미지를 줌");
+                hit.GetComponent<Enemy>().TakeDamage(player.curAbility.attackPower);
+                hit.gameObject.SetActive(false);  //임시로
+            }
+        }
+    }
 
 
+    private GameObject EatAttack;
+    private string EatAttackResource = "Player_Effect/Kirby Eat Attack 60x60_0";
+    public void EatKirbyStarAttack()
+    {
+        RangedAttack(EatAttack, EatAttackResource);
+    }
+
+    private void RangedAttack(GameObject rangeAttack, string rangeAttackName)
+    {
+        if (rangeAttack == null)
+        {
+            rangeAttack = Resources.Load<GameObject>(rangeAttackName);
+        }
+
+        player.EffectAdd(player.LastMove, rangeAttack, player.AirJumpOutEffectPos);
     }
 }
