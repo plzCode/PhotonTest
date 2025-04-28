@@ -90,6 +90,8 @@ public class Player : MonoBehaviour
     //For Test Ability
     public PlayerAbility curAbility;
     public bool isInhaling = false;
+    [SerializeField]
+    public Transform attackCheck;
 
     protected PhotonView pView;
 

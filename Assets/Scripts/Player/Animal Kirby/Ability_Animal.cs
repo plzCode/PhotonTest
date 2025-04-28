@@ -9,7 +9,6 @@ public class Ability_Animal : PlayerAbility
     public RuntimeAnimatorController animalKirby;
 
     public Animal_Kirby_Attack_State attackState;
-
     
 
     public override void OnAbilityCopied(Player owner) //변신을 적용합니다.
@@ -36,6 +35,10 @@ public class Ability_Animal : PlayerAbility
     public override void AttackHandle()
     {
         if (owner == null) return;
+
+        attackCheckRadius = 0.5f; //공격 범위 설정
+        attackPower = 10; //공격력 설정
+
         Debug.Log("Animal ability attack");
         owner.stateMachine.ChangeState(attackState);
 

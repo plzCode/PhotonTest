@@ -1414,7 +1414,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -1428,7 +1428,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 20
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -1519,10 +1519,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_0
       rect:
         serializedVersion: 2
-        x: 10
+        x: 11
         y: 2111
-        width: 29
-        height: 41
+        width: 28
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1541,10 +1541,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_1
       rect:
         serializedVersion: 2
-        x: 41
+        x: 53
         y: 2111
-        width: 29
-        height: 41
+        width: 28
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1563,10 +1563,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_2
       rect:
         serializedVersion: 2
-        x: 72
-        y: 2111
+        x: 151
+        y: 2109
         width: 29
-        height: 44
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1585,10 +1585,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_3
       rect:
         serializedVersion: 2
-        x: 103
-        y: 2111
-        width: 29
-        height: 44
+        x: 182
+        y: 2109
+        width: 28
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1607,10 +1607,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_4
       rect:
         serializedVersion: 2
-        x: 134
-        y: 2111
-        width: 29
-        height: 44
+        x: 214
+        y: 2109
+        width: 28
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1629,10 +1629,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_5
       rect:
         serializedVersion: 2
-        x: 165
-        y: 2111
+        x: 244
+        y: 2109
         width: 29
-        height: 44
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1651,8 +1651,8 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_6
       rect:
         serializedVersion: 2
-        x: 196
-        y: 2111
+        x: 275
+        y: 2109
         width: 15
         height: 39
       alignment: 0
@@ -1673,9 +1673,9 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_7
       rect:
         serializedVersion: 2
-        x: 213
-        y: 2111
-        width: 42
+        x: 293
+        y: 2109
+        width: 41
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1695,10 +1695,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_8
       rect:
         serializedVersion: 2
-        x: 257
-        y: 2104
+        x: 336
+        y: 2103
         width: 36
-        height: 40
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1717,9 +1717,9 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_9
       rect:
         serializedVersion: 2
-        x: 295
-        y: 2111
-        width: 38
+        x: 374
+        y: 2109
+        width: 37
         height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1739,10 +1739,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_10
       rect:
         serializedVersion: 2
-        x: 335
-        y: 2111
-        width: 30
-        height: 26
+        x: 414
+        y: 2109
+        width: 43
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1761,10 +1761,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_11
       rect:
         serializedVersion: 2
-        x: 352
-        y: 2128
-        width: 26
-        height: 26
+        x: 460
+        y: 2109
+        width: 35
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1783,9 +1783,9 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_12
       rect:
         serializedVersion: 2
-        x: 380
-        y: 2111
-        width: 36
+        x: 497
+        y: 2109
+        width: 22
         height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1805,10 +1805,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_13
       rect:
         serializedVersion: 2
-        x: 418
-        y: 2111
-        width: 22
-        height: 46
+        x: 521
+        y: 2109
+        width: 28
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1827,10 +1827,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_14
       rect:
         serializedVersion: 2
-        x: 442
-        y: 2111
-        width: 28
-        height: 42
+        x: 552
+        y: 2109
+        width: 35
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1849,10 +1849,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_15
       rect:
         serializedVersion: 2
-        x: 472
-        y: 2111
-        width: 36
-        height: 30
+        x: 11
+        y: 2059
+        width: 31
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1871,7 +1871,7 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_16
       rect:
         serializedVersion: 2
-        x: 10
+        x: 45
         y: 2059
         width: 33
         height: 34
@@ -1893,10 +1893,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_17
       rect:
         serializedVersion: 2
-        x: 45
+        x: 80
         y: 2059
         width: 33
-        height: 34
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1915,10 +1915,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_18
       rect:
         serializedVersion: 2
-        x: 80
+        x: 115
         y: 2059
         width: 33
-        height: 36
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1937,9 +1937,9 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_19
       rect:
         serializedVersion: 2
-        x: 115
+        x: 150
         y: 2059
-        width: 33
+        width: 32
         height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1959,10 +1959,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_20
       rect:
         serializedVersion: 2
-        x: 150
+        x: 184
         y: 2059
         width: 32
-        height: 37
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1981,10 +1981,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_21
       rect:
         serializedVersion: 2
-        x: 184
+        x: 219
         y: 2059
-        width: 32
-        height: 37
+        width: 27
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2003,10 +2003,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_22
       rect:
         serializedVersion: 2
-        x: 218
+        x: 249
         y: 2059
-        width: 29
-        height: 42
+        width: 25
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2025,10 +2025,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_23
       rect:
         serializedVersion: 2
-        x: 249
+        x: 276
         y: 2059
-        width: 25
-        height: 40
+        width: 22
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2047,10 +2047,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_24
       rect:
         serializedVersion: 2
-        x: 276
+        x: 300
         y: 2059
-        width: 22
-        height: 40
+        width: 20
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2069,10 +2069,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_25
       rect:
         serializedVersion: 2
-        x: 300
-        y: 2059
-        width: 21
-        height: 42
+        x: 11
+        y: 2014
+        width: 26
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2091,10 +2091,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_26
       rect:
         serializedVersion: 2
-        x: 10
+        x: 39
         y: 2014
-        width: 27
-        height: 40
+        width: 30
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2113,9 +2113,9 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_27
       rect:
         serializedVersion: 2
-        x: 39
+        x: 71
         y: 2014
-        width: 30
+        width: 33
         height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -2135,7 +2135,7 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_28
       rect:
         serializedVersion: 2
-        x: 71
+        x: 107
         y: 2014
         width: 33
         height: 39
@@ -2157,9 +2157,9 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_29
       rect:
         serializedVersion: 2
-        x: 106
+        x: 144
         y: 2014
-        width: 34
+        width: 33
         height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -2179,10 +2179,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_30
       rect:
         serializedVersion: 2
-        x: 143
+        x: 180
         y: 2014
-        width: 34
-        height: 39
+        width: 28
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2201,10 +2201,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_31
       rect:
         serializedVersion: 2
-        x: 179
+        x: 211
         y: 2014
-        width: 30
-        height: 40
+        width: 26
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2223,10 +2223,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_32
       rect:
         serializedVersion: 2
-        x: 211
+        x: 239
         y: 2014
-        width: 26
-        height: 41
+        width: 24
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2245,10 +2245,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_33
       rect:
         serializedVersion: 2
-        x: 239
+        x: 266
         y: 2014
         width: 25
-        height: 40
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2267,10 +2267,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_34
       rect:
         serializedVersion: 2
-        x: 266
+        x: 293
         y: 2014
-        width: 25
-        height: 42
+        width: 29
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2289,10 +2289,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_35
       rect:
         serializedVersion: 2
-        x: 293
+        x: 326
         y: 2014
-        width: 30
-        height: 43
+        width: 26
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2311,10 +2311,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_36
       rect:
         serializedVersion: 2
-        x: 325
-        y: 2014
-        width: 27
-        height: 41
+        x: 11
+        y: 1969
+        width: 31
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2333,10 +2333,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_37
       rect:
         serializedVersion: 2
-        x: 10
+        x: 45
         y: 1969
-        width: 33
-        height: 39
+        width: 31
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2355,10 +2355,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_38
       rect:
         serializedVersion: 2
-        x: 45
+        x: 77
         y: 1969
-        width: 31
-        height: 39
+        width: 28
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2377,10 +2377,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_39
       rect:
         serializedVersion: 2
-        x: 77
+        x: 108
         y: 1969
-        width: 28
-        height: 41
+        width: 26
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2399,10 +2399,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_40
       rect:
         serializedVersion: 2
-        x: 107
+        x: 137
         y: 1969
-        width: 28
-        height: 43
+        width: 30
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2421,9 +2421,9 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_41
       rect:
         serializedVersion: 2
-        x: 137
+        x: 169
         y: 1969
-        width: 30
+        width: 27
         height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -2443,10 +2443,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_42
       rect:
         serializedVersion: 2
-        x: 169
+        x: 199
         y: 1969
         width: 27
-        height: 42
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2465,9 +2465,9 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_43
       rect:
         serializedVersion: 2
-        x: 198
+        x: 228
         y: 1969
-        width: 28
+        width: 31
         height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -2487,10 +2487,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_44
       rect:
         serializedVersion: 2
-        x: 228
+        x: 261
         y: 1969
-        width: 31
-        height: 40
+        width: 35
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2509,10 +2509,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_45
       rect:
         serializedVersion: 2
-        x: 261
-        y: 1969
-        width: 35
-        height: 33
+        x: 11
+        y: 1925
+        width: 30
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2531,7 +2531,7 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_46
       rect:
         serializedVersion: 2
-        x: 10
+        x: 44
         y: 1925
         width: 32
         height: 40
@@ -2553,10 +2553,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_47
       rect:
         serializedVersion: 2
-        x: 44
+        x: 78
         y: 1925
-        width: 32
-        height: 40
+        width: 22
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2575,10 +2575,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_48
       rect:
         serializedVersion: 2
-        x: 78
+        x: 104
         y: 1925
-        width: 23
-        height: 36
+        width: 22
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2597,10 +2597,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_49
       rect:
         serializedVersion: 2
-        x: 103
+        x: 128
         y: 1925
-        width: 23
-        height: 30
+        width: 24
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2619,10 +2619,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_50
       rect:
         serializedVersion: 2
-        x: 128
+        x: 154
         y: 1925
-        width: 24
-        height: 29
+        width: 34
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2641,10 +2641,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_51
       rect:
         serializedVersion: 2
-        x: 154
+        x: 190
         y: 1925
-        width: 34
-        height: 39
+        width: 36
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2663,10 +2663,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_52
       rect:
         serializedVersion: 2
-        x: 190
+        x: 229
         y: 1925
-        width: 37
-        height: 27
+        width: 34
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2685,10 +2685,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_53
       rect:
         serializedVersion: 2
-        x: 229
+        x: 265
         y: 1925
-        width: 34
-        height: 34
+        width: 27
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2707,10 +2707,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_54
       rect:
         serializedVersion: 2
-        x: 265
+        x: 294
         y: 1925
-        width: 27
-        height: 42
+        width: 26
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2729,10 +2729,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_55
       rect:
         serializedVersion: 2
-        x: 294
+        x: 323
         y: 1925
-        width: 27
-        height: 42
+        width: 33
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2751,10 +2751,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_56
       rect:
         serializedVersion: 2
-        x: 323
-        y: 1925
-        width: 33
-        height: 34
+        x: 11
+        y: 1882
+        width: 26
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2773,10 +2773,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_57
       rect:
         serializedVersion: 2
-        x: 10
-        y: 1881
+        x: 39
+        y: 1882
         width: 27
-        height: 42
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2795,10 +2795,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_58
       rect:
         serializedVersion: 2
-        x: 39
-        y: 1881
-        width: 27
-        height: 42
+        x: 69
+        y: 1882
+        width: 22
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2817,10 +2817,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_59
       rect:
         serializedVersion: 2
-        x: 68
-        y: 1881
+        x: 93
+        y: 1882
         width: 23
-        height: 28
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2839,10 +2839,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_60
       rect:
         serializedVersion: 2
-        x: 93
-        y: 1881
-        width: 24
-        height: 31
+        x: 119
+        y: 1882
+        width: 23
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2861,10 +2861,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_61
       rect:
         serializedVersion: 2
-        x: 119
-        y: 1881
+        x: 145
+        y: 1882
         width: 23
-        height: 30
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2883,10 +2883,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_62
       rect:
         serializedVersion: 2
-        x: 144
-        y: 1881
+        x: 170
+        y: 1882
         width: 24
-        height: 23
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2905,10 +2905,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_63
       rect:
         serializedVersion: 2
-        x: 170
-        y: 1881
-        width: 25
-        height: 29
+        x: 199
+        y: 1882
+        width: 24
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2927,10 +2927,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_64
       rect:
         serializedVersion: 2
-        x: 198
-        y: 1881
-        width: 25
-        height: 42
+        x: 225
+        y: 1882
+        width: 34
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2949,10 +2949,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_65
       rect:
         serializedVersion: 2
-        x: 225
-        y: 1881
-        width: 34
-        height: 39
+        x: 261
+        y: 1882
+        width: 35
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2971,9 +2971,9 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_66
       rect:
         serializedVersion: 2
-        x: 261
-        y: 1881
-        width: 35
+        x: 298
+        y: 1882
+        width: 37
         height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -2993,10 +2993,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_67
       rect:
         serializedVersion: 2
-        x: 298
-        y: 1881
-        width: 37
-        height: 27
+        x: 337
+        y: 1882
+        width: 36
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3015,10 +3015,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_68
       rect:
         serializedVersion: 2
-        x: 337
-        y: 1881
-        width: 36
-        height: 27
+        x: 375
+        y: 1882
+        width: 34
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3037,10 +3037,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_69
       rect:
         serializedVersion: 2
-        x: 375
-        y: 1881
-        width: 34
-        height: 34
+        x: 11
+        y: 1831
+        width: 30
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3059,10 +3059,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_70
       rect:
         serializedVersion: 2
-        x: 10
+        x: 44
         y: 1831
-        width: 32
-        height: 36
+        width: 31
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3081,10 +3081,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_71
       rect:
         serializedVersion: 2
-        x: 44
+        x: 77
         y: 1831
         width: 31
-        height: 34
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3103,10 +3103,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_72
       rect:
         serializedVersion: 2
-        x: 77
+        x: 110
         y: 1831
-        width: 31
-        height: 33
+        width: 36
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3125,10 +3125,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_73
       rect:
         serializedVersion: 2
-        x: 110
+        x: 148
         y: 1831
-        width: 36
-        height: 27
+        width: 37
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3147,10 +3147,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_74
       rect:
         serializedVersion: 2
-        x: 148
+        x: 187
         y: 1831
-        width: 37
-        height: 27
+        width: 29
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3169,9 +3169,9 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_75
       rect:
         serializedVersion: 2
-        x: 187
+        x: 219
         y: 1831
-        width: 29
+        width: 27
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -3191,10 +3191,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_76
       rect:
         serializedVersion: 2
-        x: 218
+        x: 249
         y: 1831
-        width: 29
-        height: 48
+        width: 30
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3213,10 +3213,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_77
       rect:
         serializedVersion: 2
-        x: 249
+        x: 281
         y: 1831
         width: 30
-        height: 47
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3235,10 +3235,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_78
       rect:
         serializedVersion: 2
-        x: 281
+        x: 313
         y: 1831
-        width: 30
-        height: 47
+        width: 28
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3257,10 +3257,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_79
       rect:
         serializedVersion: 2
-        x: 313
+        x: 345
         y: 1831
-        width: 29
-        height: 47
+        width: 28
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3279,9 +3279,9 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_80
       rect:
         serializedVersion: 2
-        x: 344
-        y: 1831
-        width: 29
+        x: 11
+        y: 1781
+        width: 28
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -3301,7 +3301,7 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_81
       rect:
         serializedVersion: 2
-        x: 10
+        x: 41
         y: 1781
         width: 29
         height: 48
@@ -3323,9 +3323,9 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_82
       rect:
         serializedVersion: 2
-        x: 41
+        x: 72
         y: 1781
-        width: 29
+        width: 28
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -3345,10 +3345,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_83
       rect:
         serializedVersion: 2
-        x: 72
+        x: 104
         y: 1781
-        width: 29
-        height: 48
+        width: 34
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3367,10 +3367,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_84
       rect:
         serializedVersion: 2
-        x: 103
+        x: 142
         y: 1781
-        width: 36
-        height: 27
+        width: 29
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3389,10 +3389,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_85
       rect:
         serializedVersion: 2
-        x: 141
-        y: 1781
-        width: 31
-        height: 33
+        x: 11
+        y: 1738
+        width: 21
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3411,10 +3411,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_86
       rect:
         serializedVersion: 2
-        x: 10
+        x: 34
         y: 1738
-        width: 22
-        height: 40
+        width: 25
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3433,10 +3433,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_87
       rect:
         serializedVersion: 2
-        x: 34
+        x: 61
         y: 1738
-        width: 25
-        height: 39
+        width: 34
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3455,10 +3455,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_88
       rect:
         serializedVersion: 2
-        x: 61
+        x: 97
         y: 1738
-        width: 34
-        height: 33
+        width: 40
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3477,10 +3477,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_89
       rect:
         serializedVersion: 2
-        x: 97
+        x: 141
         y: 1738
-        width: 41
-        height: 27
+        width: 39
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3499,10 +3499,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_90
       rect:
         serializedVersion: 2
-        x: 140
+        x: 182
         y: 1738
-        width: 40
-        height: 22
+        width: 39
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3521,10 +3521,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_91
       rect:
         serializedVersion: 2
-        x: 182
+        x: 223
         y: 1738
-        width: 39
-        height: 25
+        width: 33
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3543,10 +3543,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_92
       rect:
         serializedVersion: 2
-        x: 223
+        x: 258
         y: 1738
-        width: 33
-        height: 34
+        width: 26
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3565,10 +3565,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_93
       rect:
         serializedVersion: 2
-        x: 258
+        x: 288
         y: 1738
-        width: 27
-        height: 41
+        width: 21
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3587,9 +3587,9 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_94
       rect:
         serializedVersion: 2
-        x: 287
+        x: 312
         y: 1738
-        width: 22
+        width: 24
         height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -3609,10 +3609,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_95
       rect:
         serializedVersion: 2
-        x: 311
+        x: 338
         y: 1738
-        width: 25
-        height: 39
+        width: 34
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3631,10 +3631,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_96
       rect:
         serializedVersion: 2
-        x: 338
+        x: 374
         y: 1738
-        width: 34
-        height: 32
+        width: 40
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3653,10 +3653,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_97
       rect:
         serializedVersion: 2
-        x: 374
+        x: 418
         y: 1738
-        width: 41
-        height: 27
+        width: 39
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3675,10 +3675,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_98
       rect:
         serializedVersion: 2
-        x: 417
+        x: 460
         y: 1738
-        width: 40
-        height: 22
+        width: 38
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3697,10 +3697,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_99
       rect:
         serializedVersion: 2
-        x: 459
+        x: 500
         y: 1738
-        width: 39
-        height: 25
+        width: 33
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3719,10 +3719,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_100
       rect:
         serializedVersion: 2
-        x: 500
+        x: 535
         y: 1738
-        width: 33
-        height: 33
+        width: 26
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3741,10 +3741,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_101
       rect:
         serializedVersion: 2
-        x: 535
-        y: 1738
-        width: 27
-        height: 41
+        x: 11
+        y: 1699
+        width: 21
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3763,10 +3763,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_102
       rect:
         serializedVersion: 2
-        x: 10
+        x: 34
         y: 1699
-        width: 22
-        height: 32
+        width: 24
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3785,10 +3785,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_103
       rect:
         serializedVersion: 2
-        x: 34
+        x: 60
         y: 1699
-        width: 24
-        height: 30
+        width: 35
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3807,10 +3807,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_104
       rect:
         serializedVersion: 2
-        x: 60
-        y: 1723
-        width: 9
-        height: 9
+        x: 97
+        y: 1721
+        width: 11
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3829,10 +3829,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_105
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1722
-        width: 6
-        height: 6
+        x: 134
+        y: 1699
+        width: 34
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3851,10 +3851,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_106
       rect:
         serializedVersion: 2
-        x: 97
+        x: 170
         y: 1723
-        width: 9
-        height: 9
+        width: 11
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3873,10 +3873,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_107
       rect:
         serializedVersion: 2
-        x: 101
-        y: 1721
-        width: 7
-        height: 7
+        x: 208
+        y: 1723
+        width: 11
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3895,10 +3895,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_108
       rect:
         serializedVersion: 2
-        x: 134
+        x: 246
         y: 1723
-        width: 9
-        height: 9
+        width: 11
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3917,10 +3917,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_109
       rect:
         serializedVersion: 2
-        x: 138
-        y: 1722
-        width: 6
-        height: 6
+        x: 284
+        y: 1725
+        width: 11
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3939,10 +3939,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_110
       rect:
         serializedVersion: 2
-        x: 170
+        x: 325
         y: 1725
-        width: 9
-        height: 9
+        width: 10
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3961,10 +3961,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_111
       rect:
         serializedVersion: 2
-        x: 174
-        y: 1723
-        width: 7
-        height: 7
+        x: 365
+        y: 1725
+        width: 9
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3983,10 +3983,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_112
       rect:
         serializedVersion: 2
-        x: 208
-        y: 1725
-        width: 9
-        height: 9
+        x: 106
+        y: 1699
+        width: 26
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4005,10 +4005,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_113
       rect:
         serializedVersion: 2
-        x: 212
-        y: 1723
-        width: 7
-        height: 7
+        x: 181
+        y: 1699
+        width: 25
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4027,10 +4027,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_114
       rect:
         serializedVersion: 2
-        x: 246
-        y: 1725
-        width: 9
-        height: 9
+        x: 219
+        y: 1699
+        width: 25
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4049,10 +4049,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_115
       rect:
         serializedVersion: 2
-        x: 250
-        y: 1723
-        width: 7
-        height: 7
+        x: 256
+        y: 1699
+        width: 26
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4071,10 +4071,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_116
       rect:
         serializedVersion: 2
-        x: 284
-        y: 1727
-        width: 9
-        height: 9
+        x: 296
+        y: 1699
+        width: 25
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4093,10 +4093,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_117
       rect:
         serializedVersion: 2
-        x: 288
-        y: 1725
-        width: 7
-        height: 7
+        x: 335
+        y: 1699
+        width: 27
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4115,10 +4115,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_118
       rect:
         serializedVersion: 2
-        x: 324
-        y: 1727
-        width: 9
-        height: 9
+        x: 375
+        y: 1699
+        width: 27
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4137,10 +4137,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_119
       rect:
         serializedVersion: 2
-        x: 328
-        y: 1725
-        width: 7
-        height: 7
+        x: 404
+        y: 1699
+        width: 26
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4159,10 +4159,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_120
       rect:
         serializedVersion: 2
-        x: 364
-        y: 1727
-        width: 9
-        height: 9
+        x: 433
+        y: 1699
+        width: 27
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4181,10 +4181,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_121
       rect:
         serializedVersion: 2
-        x: 368
-        y: 1725
-        width: 7
-        height: 7
+        x: 462
+        y: 1699
+        width: 27
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4203,10 +4203,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_122
       rect:
         serializedVersion: 2
-        x: 67
+        x: 493
         y: 1699
-        width: 28
-        height: 26
+        width: 26
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4225,10 +4225,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_123
       rect:
         serializedVersion: 2
-        x: 105
-        y: 1699
-        width: 27
-        height: 23
+        x: 11
+        y: 1654
+        width: 40
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4247,10 +4247,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_124
       rect:
         serializedVersion: 2
-        x: 141
-        y: 1699
-        width: 27
-        height: 26
+        x: 53
+        y: 1654
+        width: 41
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4269,10 +4269,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_125
       rect:
         serializedVersion: 2
-        x: 180
-        y: 1699
-        width: 26
-        height: 25
+        x: 11
+        y: 1610
+        width: 24
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4291,10 +4291,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_126
       rect:
         serializedVersion: 2
-        x: 219
-        y: 1699
-        width: 25
-        height: 24
+        x: 37
+        y: 1610
+        width: 22
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4313,10 +4313,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_127
       rect:
         serializedVersion: 2
-        x: 255
-        y: 1699
-        width: 27
-        height: 25
+        x: 61
+        y: 1610
+        width: 25
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4335,10 +4335,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_128
       rect:
         serializedVersion: 2
-        x: 296
-        y: 1699
+        x: 89
+        y: 1610
         width: 26
-        height: 25
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4357,10 +4357,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_129
       rect:
         serializedVersion: 2
-        x: 335
-        y: 1699
-        width: 27
-        height: 25
+        x: 118
+        y: 1610
+        width: 33
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4379,10 +4379,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_130
       rect:
         serializedVersion: 2
-        x: 375
-        y: 1699
-        width: 27
-        height: 25
+        x: 153
+        y: 1610
+        width: 30
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4401,10 +4401,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_131
       rect:
         serializedVersion: 2
-        x: 404
-        y: 1699
+        x: 185
+        y: 1610
         width: 27
-        height: 25
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4423,10 +4423,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_132
       rect:
         serializedVersion: 2
-        x: 433
-        y: 1699
-        width: 27
-        height: 25
+        x: 216
+        y: 1610
+        width: 20
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4445,10 +4445,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_133
       rect:
         serializedVersion: 2
-        x: 462
-        y: 1699
-        width: 28
-        height: 25
+        x: 238
+        y: 1610
+        width: 22
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4467,10 +4467,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_134
       rect:
         serializedVersion: 2
-        x: 492
-        y: 1699
-        width: 27
-        height: 23
+        x: 262
+        y: 1610
+        width: 23
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4489,10 +4489,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_135
       rect:
         serializedVersion: 2
-        x: 10
-        y: 1654
-        width: 41
-        height: 43
+        x: 289
+        y: 1610
+        width: 30
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4511,10 +4511,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_136
       rect:
         serializedVersion: 2
-        x: 53
-        y: 1654
-        width: 41
-        height: 43
+        x: 321
+        y: 1610
+        width: 30
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4533,10 +4533,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_137
       rect:
         serializedVersion: 2
-        x: 10
+        x: 353
         y: 1610
-        width: 25
-        height: 40
+        width: 30
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4555,10 +4555,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_138
       rect:
         serializedVersion: 2
-        x: 37
-        y: 1610
-        width: 22
-        height: 40
+        x: 14
+        y: 1557
+        width: 33
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4577,10 +4577,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_139
       rect:
         serializedVersion: 2
-        x: 61
-        y: 1610
-        width: 25
-        height: 34
+        x: 58
+        y: 1558
+        width: 33
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4599,10 +4599,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_140
       rect:
         serializedVersion: 2
-        x: 88
-        y: 1610
-        width: 28
-        height: 34
+        x: 100
+        y: 1557
+        width: 33
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4621,10 +4621,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_141
       rect:
         serializedVersion: 2
-        x: 118
-        y: 1610
-        width: 33
-        height: 34
+        x: 134
+        y: 1558
+        width: 40
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4643,10 +4643,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_142
       rect:
         serializedVersion: 2
-        x: 153
-        y: 1610
+        x: 184
+        y: 1557
         width: 30
-        height: 36
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4665,10 +4665,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_143
       rect:
         serializedVersion: 2
-        x: 185
-        y: 1610
-        width: 28
-        height: 36
+        x: 189
+        y: 1578
+        width: 39
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4687,10 +4687,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_144
       rect:
         serializedVersion: 2
-        x: 215
-        y: 1610
-        width: 21
-        height: 42
+        x: 242
+        y: 1557
+        width: 30
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4709,10 +4709,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_145
       rect:
         serializedVersion: 2
-        x: 238
-        y: 1610
-        width: 22
-        height: 39
+        x: 247
+        y: 1578
+        width: 39
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4731,10 +4731,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_146
       rect:
         serializedVersion: 2
-        x: 262
-        y: 1610
-        width: 24
-        height: 38
+        x: 301
+        y: 1557
+        width: 28
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4753,10 +4753,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_147
       rect:
         serializedVersion: 2
-        x: 288
-        y: 1610
-        width: 31
-        height: 37
+        x: 318
+        y: 1546
+        width: 49
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4775,10 +4775,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_148
       rect:
         serializedVersion: 2
-        x: 321
-        y: 1610
-        width: 30
-        height: 37
+        x: 383
+        y: 1557
+        width: 25
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4797,10 +4797,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_149
       rect:
         serializedVersion: 2
-        x: 353
-        y: 1610
-        width: 30
-        height: 32
+        x: 396
+        y: 1546
+        width: 49
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4819,9 +4819,9 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_150
       rect:
         serializedVersion: 2
-        x: 13
-        y: 1557
-        width: 31
+        x: 453
+        y: 1550
+        width: 53
         height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -4841,10 +4841,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_151
       rect:
         serializedVersion: 2
-        x: 45
-        y: 1559
-        width: 33
-        height: 37
+        x: 515
+        y: 1557
+        width: 43
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4863,10 +4863,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_152
       rect:
         serializedVersion: 2
-        x: 84
-        y: 1558
-        width: 33
-        height: 35
+        x: 569
+        y: 1557
+        width: 38
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4885,10 +4885,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_153
       rect:
         serializedVersion: 2
-        x: 140
-        y: 1559
-        width: 41
-        height: 29
+        x: 618
+        y: 1556
+        width: 35
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4907,10 +4907,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_154
       rect:
         serializedVersion: 2
-        x: 190
-        y: 1558
-        width: 30
-        height: 26
+        x: 16
+        y: 1495
+        width: 27
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4929,10 +4929,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_155
       rect:
         serializedVersion: 2
-        x: 195
-        y: 1579
-        width: 40
-        height: 17
+        x: 53
+        y: 1514
+        width: 14
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4951,10 +4951,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_156
       rect:
         serializedVersion: 2
-        x: 237
-        y: 1558
-        width: 30
-        height: 26
+        x: 78
+        y: 1495
+        width: 28
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4973,10 +4973,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_157
       rect:
         serializedVersion: 2
-        x: 242
-        y: 1579
-        width: 40
-        height: 17
+        x: 112
+        y: 1499
+        width: 10
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4995,10 +4995,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_158
       rect:
         serializedVersion: 2
-        x: 284
-        y: 1558
-        width: 28
-        height: 29
+        x: 141
+        y: 1495
+        width: 25
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5017,10 +5017,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_159
       rect:
         serializedVersion: 2
-        x: 301
-        y: 1546
-        width: 49
-        height: 50
+        x: 171
+        y: 1484
+        width: 19
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5039,10 +5039,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_160
       rect:
         serializedVersion: 2
-        x: 352
-        y: 1558
-        width: 26
-        height: 31
+        x: 216
+        y: 1495
+        width: 24
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5061,10 +5061,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_161
       rect:
         serializedVersion: 2
-        x: 366
-        y: 1546
-        width: 49
-        height: 50
+        x: 301
+        y: 1495
+        width: 24
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5083,10 +5083,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_162
       rect:
         serializedVersion: 2
-        x: 417
-        y: 1550
-        width: 54
-        height: 40
+        x: 330
+        y: 1506
+        width: 35
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5105,10 +5105,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_163
       rect:
         serializedVersion: 2
-        x: 473
-        y: 1558
-        width: 44
-        height: 31
+        x: 396
+        y: 1495
+        width: 64
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5127,10 +5127,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_164
       rect:
         serializedVersion: 2
-        x: 519
-        y: 1558
-        width: 39
-        height: 32
+        x: 488
+        y: 1492
+        width: 45
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5149,10 +5149,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_165
       rect:
         serializedVersion: 2
-        x: 560
-        y: 1558
-        width: 36
-        height: 38
+        x: 566
+        y: 1495
+        width: 29
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5171,10 +5171,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_166
       rect:
         serializedVersion: 2
-        x: 16
-        y: 1494
-        width: 28
-        height: 23
+        x: 662
+        y: 1495
+        width: 27
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5193,10 +5193,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_167
       rect:
         serializedVersion: 2
-        x: 53
-        y: 1514
-        width: 14
-        height: 16
+        x: 699
+        y: 1491
+        width: 22
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5215,10 +5215,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_168
       rect:
         serializedVersion: 2
-        x: 78
-        y: 1494
-        width: 28
-        height: 22
+        x: 256
+        y: 1492
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5237,10 +5237,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_169
       rect:
         serializedVersion: 2
-        x: 112
-        y: 1499
-        width: 10
-        height: 32
+        x: 600
+        y: 1491
+        width: 25
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5259,10 +5259,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_170
       rect:
         serializedVersion: 2
-        x: 140
-        y: 1494
-        width: 26
-        height: 21
+        x: 50
+        y: 1443
+        width: 27
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5281,10 +5281,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_171
       rect:
         serializedVersion: 2
-        x: 171
-        y: 1484
-        width: 20
-        height: 43
+        x: 87
+        y: 1463
+        width: 12
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5303,9 +5303,9 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_172
       rect:
         serializedVersion: 2
-        x: 215
-        y: 1494
-        width: 25
+        x: 132
+        y: 1443
+        width: 28
         height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -5325,10 +5325,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_173
       rect:
         serializedVersion: 2
-        x: 301
-        y: 1494
-        width: 24
-        height: 23
+        x: 166
+        y: 1448
+        width: 9
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5347,10 +5347,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_174
       rect:
         serializedVersion: 2
-        x: 329
-        y: 1506
-        width: 36
-        height: 8
+        x: 189
+        y: 1443
+        width: 26
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5369,10 +5369,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_175
       rect:
         serializedVersion: 2
-        x: 396
-        y: 1494
-        width: 64
-        height: 23
+        x: 220
+        y: 1433
+        width: 20
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5391,10 +5391,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_176
       rect:
         serializedVersion: 2
-        x: 488
-        y: 1493
-        width: 28
-        height: 23
+        x: 256
+        y: 1443
+        width: 24
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5413,10 +5413,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_177
       rect:
         serializedVersion: 2
-        x: 515
-        y: 1491
-        width: 18
-        height: 23
+        x: 327
+        y: 1443
+        width: 23
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5435,10 +5435,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_178
       rect:
         serializedVersion: 2
-        x: 565
-        y: 1494
-        width: 30
-        height: 22
+        x: 354
+        y: 1456
+        width: 36
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5457,10 +5457,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_179
       rect:
         serializedVersion: 2
-        x: 661
-        y: 1494
-        width: 29
-        height: 23
+        x: 402
+        y: 1443
+        width: 63
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5479,10 +5479,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_180
       rect:
         serializedVersion: 2
-        x: 698
-        y: 1490
-        width: 23
-        height: 38
+        x: 476
+        y: 1440
+        width: 44
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5501,10 +5501,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_181
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1491
-        width: 14
-        height: 16
+        x: 531
+        y: 1443
+        width: 29
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5523,10 +5523,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_182
       rect:
         serializedVersion: 2
-        x: 600
-        y: 1490
-        width: 25
-        height: 20
+        x: 595
+        y: 1443
+        width: 29
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5545,10 +5545,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_183
       rect:
         serializedVersion: 2
-        x: 49
-        y: 1443
-        width: 28
-        height: 23
+        x: 632
+        y: 1440
+        width: 22
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5567,10 +5567,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_184
       rect:
         serializedVersion: 2
-        x: 86
-        y: 1463
-        width: 14
-        height: 16
+        x: 664
+        y: 1443
+        width: 26
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5589,10 +5589,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_185
       rect:
         serializedVersion: 2
-        x: 132
-        y: 1443
-        width: 28
-        height: 22
+        x: 701
+        y: 1463
+        width: 12
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5611,10 +5611,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_186
       rect:
         serializedVersion: 2
-        x: 166
-        y: 1448
-        width: 10
-        height: 32
+        x: 296
+        y: 1440
+        width: 14
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5633,10 +5633,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_187
       rect:
         serializedVersion: 2
-        x: 189
-        y: 1443
-        width: 26
-        height: 21
+        x: 566
+        y: 1440
+        width: 24
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5655,10 +5655,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_188
       rect:
         serializedVersion: 2
-        x: 220
-        y: 1433
-        width: 20
-        height: 43
+        x: 16
+        y: 1388
+        width: 27
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5677,10 +5677,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_189
       rect:
         serializedVersion: 2
-        x: 255
-        y: 1443
-        width: 25
-        height: 22
+        x: 51
+        y: 1393
+        width: 8
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5699,10 +5699,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_190
       rect:
         serializedVersion: 2
-        x: 326
-        y: 1443
-        width: 24
-        height: 23
+        x: 72
+        y: 1388
+        width: 25
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5721,10 +5721,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_191
       rect:
         serializedVersion: 2
-        x: 354
-        y: 1455
-        width: 36
-        height: 8
+        x: 104
+        y: 1378
+        width: 19
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5743,10 +5743,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_192
       rect:
         serializedVersion: 2
-        x: 401
-        y: 1443
-        width: 64
-        height: 23
+        x: 138
+        y: 1388
+        width: 25
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5765,10 +5765,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_193
       rect:
         serializedVersion: 2
-        x: 475
-        y: 1442
-        width: 28
-        height: 23
+        x: 180
+        y: 1385
+        width: 12
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5787,10 +5787,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_194
       rect:
         serializedVersion: 2
-        x: 502
-        y: 1440
-        width: 18
-        height: 23
+        x: 204
+        y: 1388
+        width: 23
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5809,10 +5809,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_195
       rect:
         serializedVersion: 2
-        x: 530
-        y: 1443
-        width: 30
-        height: 22
+        x: 233
+        y: 1401
+        width: 34
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5831,10 +5831,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_196
       rect:
         serializedVersion: 2
-        x: 595
-        y: 1443
-        width: 29
-        height: 23
+        x: 277
+        y: 1388
+        width: 63
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5853,10 +5853,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_197
       rect:
         serializedVersion: 2
-        x: 632
-        y: 1439
-        width: 23
-        height: 38
+        x: 349
+        y: 1385
+        width: 44
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5875,10 +5875,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_198
       rect:
         serializedVersion: 2
-        x: 663
-        y: 1443
-        width: 28
-        height: 23
+        x: 398
+        y: 1388
+        width: 30
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5897,10 +5897,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_199
       rect:
         serializedVersion: 2
-        x: 700
-        y: 1463
-        width: 14
-        height: 16
+        x: 433
+        y: 1384
+        width: 25
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5919,10 +5919,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_200
       rect:
         serializedVersion: 2
-        x: 296
-        y: 1440
-        width: 14
-        height: 16
+        x: 464
+        y: 1388
+        width: 29
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5941,10 +5941,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_201
       rect:
         serializedVersion: 2
-        x: 565
-        y: 1439
-        width: 25
-        height: 20
+        x: 501
+        y: 1384
+        width: 22
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5963,7 +5963,7 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_202
       rect:
         serializedVersion: 2
-        x: 16
+        x: 532
         y: 1388
         width: 28
         height: 22
@@ -5985,10 +5985,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_203
       rect:
         serializedVersion: 2
-        x: 50
-        y: 1393
-        width: 10
-        height: 32
+        x: 569
+        y: 1384
+        width: 22
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6007,10 +6007,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_204
       rect:
         serializedVersion: 2
-        x: 72
-        y: 1388
+        x: 599
+        y: 1384
         width: 26
-        height: 21
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6029,10 +6029,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_205
       rect:
         serializedVersion: 2
-        x: 103
-        y: 1378
-        width: 20
-        height: 43
+        x: 84
+        y: 1333
+        width: 25
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6051,10 +6051,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_206
       rect:
         serializedVersion: 2
-        x: 138
-        y: 1388
-        width: 25
-        height: 22
+        x: 105
+        y: 1327
+        width: 31
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6073,10 +6073,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_207
       rect:
         serializedVersion: 2
-        x: 179
-        y: 1385
-        width: 14
-        height: 16
+        x: 153
+        y: 1333
+        width: 26
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6095,10 +6095,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_208
       rect:
         serializedVersion: 2
-        x: 204
-        y: 1388
-        width: 24
-        height: 23
+        x: 174
+        y: 1327
+        width: 33
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6117,10 +6117,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_209
       rect:
         serializedVersion: 2
-        x: 232
-        y: 1400
-        width: 36
-        height: 8
+        x: 226
+        y: 1332
+        width: 26
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6139,10 +6139,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_210
       rect:
         serializedVersion: 2
-        x: 277
-        y: 1388
-        width: 64
-        height: 23
+        x: 243
+        y: 1324
+        width: 38
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6161,10 +6161,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_211
       rect:
         serializedVersion: 2
-        x: 349
-        y: 1387
-        width: 28
-        height: 23
+        x: 286
+        y: 1326
+        width: 44
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6183,10 +6183,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_212
       rect:
         serializedVersion: 2
-        x: 376
-        y: 1385
-        width: 18
-        height: 23
+        x: 304
+        y: 1322
+        width: 53
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6205,10 +6205,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_213
       rect:
         serializedVersion: 2
-        x: 398
-        y: 1388
-        width: 30
-        height: 22
+        x: 370
+        y: 1333
+        width: 43
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6227,10 +6227,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_214
       rect:
         serializedVersion: 2
-        x: 433
-        y: 1384
-        width: 25
-        height: 20
+        x: 429
+        y: 1332
+        width: 38
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6249,10 +6249,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_215
       rect:
         serializedVersion: 2
-        x: 464
-        y: 1388
-        width: 29
-        height: 23
+        x: 277
+        y: 1185
+        width: 49
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6271,9 +6271,9 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_216
       rect:
         serializedVersion: 2
-        x: 501
-        y: 1384
-        width: 23
+        x: 339
+        y: 1195
+        width: 49
         height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -6293,10 +6293,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_217
       rect:
         serializedVersion: 2
-        x: 531
-        y: 1388
-        width: 29
-        height: 23
+        x: 404
+        y: 1201
+        width: 47
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6315,9 +6315,9 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_218
       rect:
         serializedVersion: 2
-        x: 568
-        y: 1384
-        width: 23
+        x: 469
+        y: 1209
+        width: 49
         height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -6337,10 +6337,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_219
       rect:
         serializedVersion: 2
-        x: 599
-        y: 1383
-        width: 26
-        height: 43
+        x: 537
+        y: 1215
+        width: 49
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6359,10 +6359,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_220
       rect:
         serializedVersion: 2
-        x: 83
-        y: 1333
-        width: 26
-        height: 30
+        x: 608
+        y: 1220
+        width: 48
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6381,10 +6381,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_221
       rect:
         serializedVersion: 2
-        x: 104
-        y: 1326
-        width: 33
-        height: 46
+        x: 678
+        y: 1220
+        width: 47
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6403,10 +6403,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_222
       rect:
         serializedVersion: 2
-        x: 153
-        y: 1333
-        width: 26
-        height: 30
+        x: 11
+        y: 1174
+        width: 45
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6425,10 +6425,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_223
       rect:
         serializedVersion: 2
-        x: 174
-        y: 1326
-        width: 33
-        height: 46
+        x: 106
+        y: 1159
+        width: 29
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6447,10 +6447,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_224
       rect:
         serializedVersion: 2
-        x: 226
-        y: 1332
-        width: 26
-        height: 29
+        x: 138
+        y: 1159
+        width: 33
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6469,10 +6469,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_225
       rect:
         serializedVersion: 2
-        x: 243
-        y: 1323
-        width: 38
-        height: 44
+        x: 174
+        y: 1159
+        width: 42
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6491,10 +6491,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_226
       rect:
         serializedVersion: 2
-        x: 286
-        y: 1325
-        width: 44
-        height: 32
+        x: 219
+        y: 1162
+        width: 46
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6513,10 +6513,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_227
       rect:
         serializedVersion: 2
-        x: 304
-        y: 1322
-        width: 54
-        height: 39
+        x: 18
+        y: 1107
+        width: 42
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6535,10 +6535,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_228
       rect:
         serializedVersion: 2
-        x: 370
-        y: 1333
-        width: 44
-        height: 26
+        x: 63
+        y: 1108
+        width: 43
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6557,10 +6557,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_229
       rect:
         serializedVersion: 2
-        x: 429
-        y: 1332
-        width: 39
-        height: 34
+        x: 108
+        y: 1108
+        width: 43
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6579,10 +6579,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_230
       rect:
         serializedVersion: 2
-        x: 277
-        y: 1185
-        width: 49
-        height: 39
+        x: 153
+        y: 1108
+        width: 45
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6601,10 +6601,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_231
       rect:
         serializedVersion: 2
-        x: 339
-        y: 1194
-        width: 49
-        height: 39
+        x: 211
+        y: 1113
+        width: 44
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6623,10 +6623,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_232
       rect:
         serializedVersion: 2
-        x: 403
-        y: 1201
-        width: 49
-        height: 39
+        x: 257
+        y: 1112
+        width: 38
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6645,10 +6645,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_233
       rect:
         serializedVersion: 2
-        x: 469
-        y: 1209
-        width: 49
-        height: 39
+        x: 297
+        y: 1112
+        width: 39
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6667,10 +6667,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_234
       rect:
         serializedVersion: 2
-        x: 537
-        y: 1214
-        width: 49
-        height: 39
+        x: 338
+        y: 1112
+        width: 43
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6689,10 +6689,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_235
       rect:
         serializedVersion: 2
-        x: 608
-        y: 1220
-        width: 49
-        height: 39
+        x: 26
+        y: 1036
+        width: 45
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6711,10 +6711,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_236
       rect:
         serializedVersion: 2
-        x: 677
-        y: 1220
-        width: 48
-        height: 49
+        x: 91
+        y: 1030
+        width: 44
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6733,10 +6733,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_237
       rect:
         serializedVersion: 2
-        x: 10
-        y: 1174
-        width: 46
-        height: 22
+        x: 147
+        y: 1020
+        width: 28
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6755,10 +6755,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_238
       rect:
         serializedVersion: 2
-        x: 105
-        y: 1158
-        width: 31
-        height: 37
+        x: 157
+        y: 1021
+        width: 40
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6777,10 +6777,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_239
       rect:
         serializedVersion: 2
-        x: 138
-        y: 1158
-        width: 34
-        height: 36
+        x: 210
+        y: 1031
+        width: 45
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6799,10 +6799,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_240
       rect:
         serializedVersion: 2
-        x: 174
-        y: 1158
-        width: 42
-        height: 36
+        x: 297
+        y: 1028
+        width: 32
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6821,10 +6821,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_241
       rect:
         serializedVersion: 2
-        x: 218
-        y: 1162
-        width: 48
-        height: 34
+        x: 330
+        y: 1028
+        width: 34
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6843,10 +6843,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_242
       rect:
         serializedVersion: 2
-        x: 18
-        y: 1107
-        width: 43
-        height: 49
+        x: 366
+        y: 1028
+        width: 27
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6865,10 +6865,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_243
       rect:
         serializedVersion: 2
-        x: 63
-        y: 1108
-        width: 43
-        height: 33
+        x: 10
+        y: 922
+        width: 33
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6887,10 +6887,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_244
       rect:
         serializedVersion: 2
-        x: 108
-        y: 1108
-        width: 43
-        height: 33
+        x: 48
+        y: 926
+        width: 32
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6909,10 +6909,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_245
       rect:
         serializedVersion: 2
-        x: 153
-        y: 1108
-        width: 45
-        height: 32
+        x: 84
+        y: 925
+        width: 37
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6931,10 +6931,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_246
       rect:
         serializedVersion: 2
-        x: 211
-        y: 1113
-        width: 44
-        height: 30
+        x: 124
+        y: 919
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6953,10 +6953,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_247
       rect:
         serializedVersion: 2
-        x: 257
-        y: 1112
-        width: 38
-        height: 36
+        x: 160
+        y: 908
+        width: 33
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6975,10 +6975,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_248
       rect:
         serializedVersion: 2
-        x: 297
-        y: 1112
-        width: 39
-        height: 47
+        x: 197
+        y: 908
+        width: 32
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6997,10 +6997,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_249
       rect:
         serializedVersion: 2
-        x: 338
-        y: 1112
-        width: 43
-        height: 47
+        x: 233
+        y: 908
+        width: 37
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7019,10 +7019,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_250
       rect:
         serializedVersion: 2
-        x: 26
-        y: 1036
-        width: 45
-        height: 43
+        x: 273
+        y: 917
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7041,10 +7041,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_251
       rect:
         serializedVersion: 2
-        x: 91
-        y: 1029
-        width: 45
-        height: 43
+        x: 309
+        y: 918
+        width: 27
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7063,10 +7063,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_252
       rect:
         serializedVersion: 2
-        x: 147
-        y: 1020
-        width: 29
-        height: 39
+        x: 10
+        y: 866
+        width: 54
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7085,10 +7085,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_253
       rect:
         serializedVersion: 2
-        x: 157
-        y: 1021
-        width: 40
-        height: 23
+        x: 68
+        y: 866
+        width: 57
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7107,10 +7107,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_254
       rect:
         serializedVersion: 2
-        x: 210
-        y: 1030
-        width: 45
-        height: 23
+        x: 127
+        y: 867
+        width: 27
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7129,10 +7129,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_255
       rect:
         serializedVersion: 2
-        x: 297
-        y: 1027
-        width: 32
-        height: 29
+        x: 10
+        y: 811
+        width: 27
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7151,10 +7151,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_256
       rect:
         serializedVersion: 2
-        x: 330
-        y: 1027
-        width: 34
-        height: 29
+        x: 39
+        y: 811
+        width: 29
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7173,10 +7173,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_257
       rect:
         serializedVersion: 2
-        x: 365
-        y: 1027
-        width: 29
-        height: 29
+        x: 71
+        y: 811
+        width: 30
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7195,10 +7195,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_258
       rect:
         serializedVersion: 2
-        x: 9
-        y: 922
-        width: 35
-        height: 38
+        x: 105
+        y: 811
+        width: 32
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7217,10 +7217,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_259
       rect:
         serializedVersion: 2
-        x: 47
-        y: 926
-        width: 34
-        height: 34
+        x: 141
+        y: 811
+        width: 30
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7239,10 +7239,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_260
       rect:
         serializedVersion: 2
-        x: 83
-        y: 925
-        width: 38
-        height: 35
+        x: 174
+        y: 811
+        width: 31
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7261,10 +7261,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_261
       rect:
         serializedVersion: 2
-        x: 123
-        y: 918
-        width: 34
-        height: 34
+        x: 207
+        y: 811
+        width: 27
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7283,10 +7283,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_262
       rect:
         serializedVersion: 2
-        x: 159
-        y: 908
-        width: 35
-        height: 38
+        x: 237
+        y: 811
+        width: 25
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7305,10 +7305,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_263
       rect:
         serializedVersion: 2
-        x: 196
-        y: 908
-        width: 34
-        height: 34
+        x: 264
+        y: 811
+        width: 25
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7327,10 +7327,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_264
       rect:
         serializedVersion: 2
-        x: 232
-        y: 908
-        width: 38
-        height: 35
+        x: 292
+        y: 811
+        width: 22
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7349,10 +7349,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_265
       rect:
         serializedVersion: 2
-        x: 272
-        y: 916
-        width: 34
-        height: 34
+        x: 316
+        y: 811
+        width: 21
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7371,10 +7371,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_266
       rect:
         serializedVersion: 2
-        x: 308
-        y: 917
-        width: 28
-        height: 43
+        x: 340
+        y: 811
+        width: 23
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7393,10 +7393,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_267
       rect:
         serializedVersion: 2
-        x: 9
-        y: 866
-        width: 56
-        height: 23
+        x: 366
+        y: 811
+        width: 22
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7415,10 +7415,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_268
       rect:
         serializedVersion: 2
-        x: 67
-        y: 866
-        width: 58
-        height: 22
+        x: 390
+        y: 811
+        width: 22
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7437,10 +7437,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_269
       rect:
         serializedVersion: 2
-        x: 127
-        y: 867
-        width: 28
-        height: 27
+        x: 415
+        y: 811
+        width: 27
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7459,10 +7459,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_270
       rect:
         serializedVersion: 2
-        x: 9
+        x: 444
         y: 811
-        width: 28
-        height: 38
+        width: 26
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7481,10 +7481,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_271
       rect:
         serializedVersion: 2
-        x: 39
+        x: 474
         y: 811
-        width: 29
-        height: 37
+        width: 26
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7503,10 +7503,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_272
       rect:
         serializedVersion: 2
-        x: 70
+        x: 502
         y: 811
-        width: 32
-        height: 36
+        width: 24
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7525,10 +7525,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_273
       rect:
         serializedVersion: 2
-        x: 104
-        y: 811
-        width: 34
-        height: 34
+        x: 10
+        y: 773
+        width: 26
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7547,9 +7547,9 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_274
       rect:
         serializedVersion: 2
-        x: 140
-        y: 811
-        width: 32
+        x: 38
+        y: 773
+        width: 26
         height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -7569,9 +7569,9 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_275
       rect:
         serializedVersion: 2
-        x: 174
-        y: 811
-        width: 31
+        x: 68
+        y: 773
+        width: 26
         height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -7591,10 +7591,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_276
       rect:
         serializedVersion: 2
-        x: 207
-        y: 811
-        width: 27
-        height: 38
+        x: 96
+        y: 774
+        width: 28
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7613,10 +7613,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_277
       rect:
         serializedVersion: 2
-        x: 236
-        y: 811
-        width: 26
-        height: 39
+        x: 126
+        y: 773
+        width: 29
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7635,10 +7635,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_278
       rect:
         serializedVersion: 2
-        x: 264
-        y: 811
-        width: 25
-        height: 39
+        x: 159
+        y: 773
+        width: 29
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7657,10 +7657,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_279
       rect:
         serializedVersion: 2
-        x: 291
-        y: 811
-        width: 23
-        height: 41
+        x: 190
+        y: 773
+        width: 30
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7679,10 +7679,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_280
       rect:
         serializedVersion: 2
-        x: 316
-        y: 811
-        width: 22
-        height: 41
+        x: 222
+        y: 774
+        width: 29
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7701,10 +7701,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_281
       rect:
         serializedVersion: 2
-        x: 340
-        y: 811
-        width: 23
-        height: 40
+        x: 254
+        y: 773
+        width: 26
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7723,10 +7723,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_282
       rect:
         serializedVersion: 2
-        x: 365
-        y: 811
-        width: 23
-        height: 41
+        x: 282
+        y: 774
+        width: 27
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7745,10 +7745,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_283
       rect:
         serializedVersion: 2
-        x: 390
-        y: 811
-        width: 23
-        height: 40
+        x: 312
+        y: 773
+        width: 26
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7767,10 +7767,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_284
       rect:
         serializedVersion: 2
-        x: 415
-        y: 811
-        width: 27
-        height: 40
+        x: 10
+        y: 735
+        width: 28
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7789,10 +7789,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_285
       rect:
         serializedVersion: 2
-        x: 444
-        y: 811
-        width: 27
-        height: 40
+        x: 40
+        y: 735
+        width: 30
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7811,10 +7811,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_286
       rect:
         serializedVersion: 2
-        x: 473
-        y: 811
-        width: 27
-        height: 38
+        x: 72
+        y: 735
+        width: 31
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7833,10 +7833,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_287
       rect:
         serializedVersion: 2
-        x: 502
-        y: 811
-        width: 25
-        height: 40
+        x: 106
+        y: 735
+        width: 29
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7855,10 +7855,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_288
       rect:
         serializedVersion: 2
-        x: 9
-        y: 772
-        width: 27
-        height: 37
+        x: 138
+        y: 735
+        width: 32
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7877,10 +7877,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_289
       rect:
         serializedVersion: 2
-        x: 38
-        y: 772
-        width: 27
-        height: 37
+        x: 173
+        y: 735
+        width: 34
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7899,10 +7899,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_290
       rect:
         serializedVersion: 2
-        x: 67
-        y: 772
-        width: 27
-        height: 37
+        x: 209
+        y: 735
+        width: 35
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7921,10 +7921,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_291
       rect:
         serializedVersion: 2
-        x: 96
-        y: 773
-        width: 28
-        height: 36
+        x: 246
+        y: 735
+        width: 35
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7943,10 +7943,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_292
       rect:
         serializedVersion: 2
-        x: 126
-        y: 772
-        width: 30
-        height: 37
+        x: 283
+        y: 735
+        width: 34
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7965,10 +7965,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_293
       rect:
         serializedVersion: 2
-        x: 158
-        y: 772
-        width: 30
-        height: 37
+        x: 319
+        y: 735
+        width: 31
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7987,10 +7987,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_294
       rect:
         serializedVersion: 2
-        x: 190
-        y: 772
-        width: 30
-        height: 37
+        x: 352
+        y: 735
+        width: 31
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8009,10 +8009,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_295
       rect:
         serializedVersion: 2
-        x: 222
-        y: 773
-        width: 29
-        height: 36
+        x: 386
+        y: 735
+        width: 28
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8031,10 +8031,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_296
       rect:
         serializedVersion: 2
-        x: 253
-        y: 772
-        width: 27
-        height: 37
+        x: 418
+        y: 736
+        width: 29
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8053,10 +8053,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_297
       rect:
         serializedVersion: 2
-        x: 282
-        y: 773
-        width: 27
-        height: 36
+        x: 449
+        y: 736
+        width: 31
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8075,10 +8075,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_298
       rect:
         serializedVersion: 2
-        x: 311
-        y: 772
-        width: 28
-        height: 37
+        x: 482
+        y: 736
+        width: 30
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8097,10 +8097,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_299
       rect:
         serializedVersion: 2
-        x: 9
-        y: 734
-        width: 29
-        height: 36
+        x: 515
+        y: 736
+        width: 27
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8119,10 +8119,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_300
       rect:
         serializedVersion: 2
-        x: 40
-        y: 734
-        width: 30
-        height: 36
+        x: 10
+        y: 702
+        width: 21
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8141,10 +8141,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_301
       rect:
         serializedVersion: 2
-        x: 72
-        y: 734
-        width: 31
-        height: 35
+        x: 34
+        y: 700
+        width: 25
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8163,10 +8163,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_302
       rect:
         serializedVersion: 2
-        x: 105
-        y: 734
-        width: 31
-        height: 35
+        x: 62
+        y: 692
+        width: 24
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8185,10 +8185,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_303
       rect:
         serializedVersion: 2
-        x: 138
-        y: 734
-        width: 33
-        height: 35
+        x: 30
+        y: 640
+        width: 29
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8207,10 +8207,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_304
       rect:
         serializedVersion: 2
-        x: 173
-        y: 734
-        width: 34
-        height: 35
+        x: 62
+        y: 640
+        width: 33
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8229,10 +8229,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_305
       rect:
         serializedVersion: 2
-        x: 209
-        y: 734
-        width: 35
-        height: 35
+        x: 101
+        y: 639
+        width: 32
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8251,10 +8251,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_306
       rect:
         serializedVersion: 2
-        x: 246
-        y: 734
-        width: 35
-        height: 35
+        x: 141
+        y: 641
+        width: 41
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8273,10 +8273,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_307
       rect:
         serializedVersion: 2
-        x: 283
-        y: 734
-        width: 34
-        height: 35
+        x: 200
+        y: 641
+        width: 22
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8295,10 +8295,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_308
       rect:
         serializedVersion: 2
-        x: 319
-        y: 734
-        width: 31
-        height: 36
+        x: 205
+        y: 662
+        width: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8317,10 +8317,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_309
       rect:
         serializedVersion: 2
-        x: 352
-        y: 734
-        width: 31
-        height: 36
+        x: 256
+        y: 641
+        width: 22
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8339,10 +8339,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_310
       rect:
         serializedVersion: 2
-        x: 385
-        y: 734
-        width: 30
-        height: 36
+        x: 261
+        y: 662
+        width: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8361,10 +8361,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_311
       rect:
         serializedVersion: 2
-        x: 417
-        y: 735
-        width: 30
-        height: 34
+        x: 312
+        y: 641
+        width: 22
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8383,10 +8383,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_312
       rect:
         serializedVersion: 2
-        x: 449
-        y: 735
-        width: 31
-        height: 34
+        x: 317
+        y: 662
+        width: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8405,10 +8405,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_313
       rect:
         serializedVersion: 2
-        x: 482
-        y: 735
-        width: 30
-        height: 35
+        x: 365
+        y: 641
+        width: 24
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8427,10 +8427,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_314
       rect:
         serializedVersion: 2
-        x: 514
-        y: 735
-        width: 29
-        height: 35
+        x: 393
+        y: 628
+        width: 34
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8449,10 +8449,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_315
       rect:
         serializedVersion: 2
-        x: 9
-        y: 702
-        width: 22
-        height: 30
+        x: 463
+        y: 627
+        width: 34
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8471,10 +8471,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_316
       rect:
         serializedVersion: 2
-        x: 33
-        y: 699
-        width: 27
-        height: 23
+        x: 601
+        y: 640
+        width: 38
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8493,10 +8493,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_317
       rect:
         serializedVersion: 2
-        x: 62
-        y: 692
-        width: 24
-        height: 32
+        x: 641
+        y: 640
+        width: 34
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8515,10 +8515,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_318
       rect:
         serializedVersion: 2
-        x: 29
-        y: 639
-        width: 31
-        height: 39
+        x: 434
+        y: 640
+        width: 26
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8537,10 +8537,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_319
       rect:
         serializedVersion: 2
-        x: 62
-        y: 639
-        width: 33
-        height: 37
+        x: 499
+        y: 631
+        width: 54
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8559,10 +8559,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_320
       rect:
         serializedVersion: 2
-        x: 101
-        y: 638
-        width: 33
-        height: 35
+        x: 555
+        y: 640
+        width: 43
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8581,10 +8581,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_321
       rect:
         serializedVersion: 2
-        x: 140
-        y: 640
-        width: 42
-        height: 29
+        x: 183
+        y: 581
+        width: 23
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8603,10 +8603,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_322
       rect:
         serializedVersion: 2
-        x: 199
-        y: 640
-        width: 23
-        height: 23
+        x: 209
+        y: 581
+        width: 24
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8625,10 +8625,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_323
       rect:
         serializedVersion: 2
-        x: 205
-        y: 661
-        width: 32
-        height: 17
+        x: 236
+        y: 581
+        width: 24
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8647,10 +8647,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_324
       rect:
         serializedVersion: 2
-        x: 255
-        y: 640
-        width: 23
-        height: 23
+        x: 264
+        y: 581
+        width: 24
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8669,10 +8669,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_325
       rect:
         serializedVersion: 2
-        x: 261
-        y: 661
-        width: 32
-        height: 17
+        x: 293
+        y: 581
+        width: 22
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8691,10 +8691,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_326
       rect:
         serializedVersion: 2
-        x: 311
-        y: 640
-        width: 23
-        height: 23
+        x: 318
+        y: 580
+        width: 22
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8713,10 +8713,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_327
       rect:
         serializedVersion: 2
-        x: 317
-        y: 661
-        width: 32
-        height: 17
+        x: 345
+        y: 581
+        width: 22
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8735,10 +8735,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_328
       rect:
         serializedVersion: 2
-        x: 364
-        y: 640
-        width: 25
-        height: 23
+        x: 371
+        y: 577
+        width: 23
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8757,10 +8757,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_329
       rect:
         serializedVersion: 2
-        x: 393
-        y: 628
-        width: 34
-        height: 50
+        x: 400
+        y: 577
+        width: 22
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8779,10 +8779,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_330
       rect:
         serializedVersion: 2
-        x: 434
-        y: 639
+        x: 429
+        y: 578
         width: 26
-        height: 22
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8802,9 +8802,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 463
-        y: 627
-        width: 34
-        height: 50
+        y: 578
+        width: 24
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8823,10 +8823,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_332
       rect:
         serializedVersion: 2
-        x: 601
-        y: 639
-        width: 39
-        height: 32
+        x: 494
+        y: 579
+        width: 25
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8845,10 +8845,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_333
       rect:
         serializedVersion: 2
-        x: 640
-        y: 639
-        width: 36
-        height: 38
+        x: 524
+        y: 579
+        width: 25
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8867,10 +8867,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_334
       rect:
         serializedVersion: 2
-        x: 499
-        y: 631
-        width: 54
-        height: 27
+        x: 24
+        y: 526
+        width: 24
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8889,10 +8889,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_335
       rect:
         serializedVersion: 2
-        x: 555
-        y: 639
-        width: 44
-        height: 20
+        x: 57
+        y: 547
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8911,10 +8911,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_336
       rect:
         serializedVersion: 2
-        x: 183
-        y: 581
-        width: 23
-        height: 18
+        x: 116
+        y: 532
+        width: 10
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8933,10 +8933,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_337
       rect:
         serializedVersion: 2
-        x: 209
-        y: 581
+        x: 146
+        y: 526
         width: 24
-        height: 18
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8955,10 +8955,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_338
       rect:
         serializedVersion: 2
-        x: 235
-        y: 581
-        width: 25
-        height: 19
+        x: 175
+        y: 516
+        width: 19
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8977,10 +8977,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_339
       rect:
         serializedVersion: 2
-        x: 264
-        y: 581
-        width: 24
-        height: 20
+        x: 219
+        y: 526
+        width: 25
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8999,10 +8999,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_340
       rect:
         serializedVersion: 2
-        x: 292
-        y: 581
-        width: 23
-        height: 20
+        x: 305
+        y: 526
+        width: 24
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9021,10 +9021,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_341
       rect:
         serializedVersion: 2
-        x: 318
-        y: 580
-        width: 23
-        height: 20
+        x: 673
+        y: 526
+        width: 24
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9043,10 +9043,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_342
       rect:
         serializedVersion: 2
-        x: 344
-        y: 581
-        width: 23
-        height: 19
+        x: 705
+        y: 522
+        width: 22
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9065,10 +9065,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_343
       rect:
         serializedVersion: 2
-        x: 371
-        y: 577
-        width: 24
-        height: 22
+        x: 88
+        y: 526
+        width: 22
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9087,10 +9087,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_344
       rect:
         serializedVersion: 2
-        x: 399
-        y: 577
-        width: 23
-        height: 23
+        x: 260
+        y: 523
+        width: 14
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9109,10 +9109,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_345
       rect:
         serializedVersion: 2
-        x: 429
-        y: 578
-        width: 26
-        height: 20
+        x: 333
+        y: 538
+        width: 36
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9131,10 +9131,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_346
       rect:
         serializedVersion: 2
-        x: 463
-        y: 578
-        width: 25
-        height: 20
+        x: 404
+        y: 526
+        width: 61
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9153,10 +9153,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_347
       rect:
         serializedVersion: 2
-        x: 493
-        y: 579
-        width: 26
-        height: 19
+        x: 499
+        y: 523
+        width: 40
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9175,9 +9175,9 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_348
       rect:
         serializedVersion: 2
-        x: 524
-        y: 579
-        width: 25
+        x: 578
+        y: 526
+        width: 22
         height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -9197,10 +9197,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_349
       rect:
         serializedVersion: 2
-        x: 24
-        y: 526
+        x: 607
+        y: 522
         width: 24
-        height: 21
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9219,10 +9219,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_350
       rect:
         serializedVersion: 2
-        x: 57
-        y: 546
-        width: 14
-        height: 16
+        x: 52
+        y: 478
+        width: 24
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9241,10 +9241,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_351
       rect:
         serializedVersion: 2
-        x: 116
-        y: 531
-        width: 10
-        height: 32
+        x: 86
+        y: 497
+        width: 12
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9263,10 +9263,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_352
       rect:
         serializedVersion: 2
-        x: 146
-        y: 526
-        width: 24
-        height: 21
+        x: 165
+        y: 482
+        width: 9
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9285,10 +9285,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_353
       rect:
         serializedVersion: 2
-        x: 175
-        y: 516
-        width: 20
-        height: 43
+        x: 189
+        y: 478
+        width: 23
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9308,9 +9308,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 219
-        y: 526
-        width: 25
-        height: 22
+        y: 467
+        width: 19
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9329,8 +9329,8 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_355
       rect:
         serializedVersion: 2
-        x: 305
-        y: 526
+        x: 255
+        y: 478
         width: 24
         height: 21
       alignment: 0
@@ -9351,10 +9351,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_356
       rect:
         serializedVersion: 2
-        x: 333
-        y: 538
-        width: 36
-        height: 8
+        x: 326
+        y: 478
+        width: 23
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9373,10 +9373,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_357
       rect:
         serializedVersion: 2
-        x: 404
-        y: 526
-        width: 61
-        height: 20
+        x: 353
+        y: 489
+        width: 36
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9395,10 +9395,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_358
       rect:
         serializedVersion: 2
-        x: 521
-        y: 523
-        width: 18
-        height: 23
+        x: 403
+        y: 478
+        width: 60
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9417,10 +9417,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_359
       rect:
         serializedVersion: 2
-        x: 578
-        y: 526
-        width: 23
-        height: 20
+        x: 478
+        y: 475
+        width: 40
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9439,10 +9439,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_360
       rect:
         serializedVersion: 2
-        x: 673
-        y: 526
-        width: 24
-        height: 22
+        x: 535
+        y: 478
+        width: 23
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9461,10 +9461,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_361
       rect:
         serializedVersion: 2
-        x: 705
-        y: 522
-        width: 23
-        height: 38
+        x: 598
+        y: 478
+        width: 24
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9483,10 +9483,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_362
       rect:
         serializedVersion: 2
-        x: 87
-        y: 526
-        width: 23
-        height: 19
+        x: 630
+        y: 474
+        width: 22
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9505,10 +9505,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_363
       rect:
         serializedVersion: 2
-        x: 260
-        y: 523
-        width: 14
-        height: 16
+        x: 664
+        y: 478
+        width: 24
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9527,10 +9527,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_364
       rect:
         serializedVersion: 2
-        x: 499
-        y: 525
-        width: 23
-        height: 20
+        x: 698
+        y: 497
+        width: 12
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9549,10 +9549,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_365
       rect:
         serializedVersion: 2
-        x: 606
-        y: 522
-        width: 25
-        height: 20
+        x: 136
+        y: 478
+        width: 23
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9571,10 +9571,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_366
       rect:
         serializedVersion: 2
-        x: 52
-        y: 477
-        width: 24
-        height: 21
+        x: 295
+        y: 475
+        width: 14
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9593,10 +9593,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_367
       rect:
         serializedVersion: 2
-        x: 85
-        y: 497
-        width: 14
-        height: 16
+        x: 563
+        y: 474
+        width: 25
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9615,10 +9615,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_368
       rect:
         serializedVersion: 2
-        x: 165
-        y: 482
-        width: 10
-        height: 32
+        x: 20
+        y: 422
+        width: 22
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9637,10 +9637,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_369
       rect:
         serializedVersion: 2
-        x: 189
-        y: 477
-        width: 24
-        height: 21
+        x: 50
+        y: 427
+        width: 9
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9659,10 +9659,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_370
       rect:
         serializedVersion: 2
-        x: 218
-        y: 467
-        width: 20
-        height: 43
+        x: 73
+        y: 422
+        width: 23
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9681,10 +9681,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_371
       rect:
         serializedVersion: 2
-        x: 254
-        y: 477
-        width: 25
-        height: 22
+        x: 103
+        y: 412
+        width: 19
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9703,10 +9703,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_372
       rect:
         serializedVersion: 2
-        x: 325
-        y: 477
-        width: 24
-        height: 21
+        x: 137
+        y: 422
+        width: 25
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9725,10 +9725,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_373
       rect:
         serializedVersion: 2
-        x: 353
-        y: 489
-        width: 36
-        height: 8
+        x: 179
+        y: 420
+        width: 12
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9747,10 +9747,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_374
       rect:
         serializedVersion: 2
-        x: 402
-        y: 477
-        width: 61
-        height: 20
+        x: 203
+        y: 422
+        width: 23
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9769,10 +9769,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_375
       rect:
         serializedVersion: 2
-        x: 500
-        y: 474
-        width: 18
-        height: 23
+        x: 231
+        y: 434
+        width: 35
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9791,9 +9791,9 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_376
       rect:
         serializedVersion: 2
-        x: 535
-        y: 477
-        width: 23
+        x: 279
+        y: 422
+        width: 60
         height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -9813,9 +9813,9 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_377
       rect:
         serializedVersion: 2
-        x: 598
-        y: 477
-        width: 24
+        x: 353
+        y: 420
+        width: 40
         height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -9835,10 +9835,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_378
       rect:
         serializedVersion: 2
-        x: 630
-        y: 473
+        x: 404
+        y: 422
         width: 23
-        height: 38
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9857,10 +9857,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_379
       rect:
         serializedVersion: 2
-        x: 664
-        y: 477
-        width: 24
-        height: 21
+        x: 432
+        y: 419
+        width: 25
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9879,10 +9879,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_380
       rect:
         serializedVersion: 2
-        x: 697
-        y: 497
-        width: 14
-        height: 16
+        x: 468
+        y: 422
+        width: 24
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9901,10 +9901,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_381
       rect:
         serializedVersion: 2
-        x: 136
-        y: 477
+        x: 500
+        y: 419
         width: 23
-        height: 19
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9923,10 +9923,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_382
       rect:
         serializedVersion: 2
-        x: 295
-        y: 474
-        width: 14
-        height: 16
+        x: 535
+        y: 422
+        width: 24
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9945,10 +9945,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_383
       rect:
         serializedVersion: 2
-        x: 478
-        y: 476
-        width: 23
-        height: 20
+        x: 568
+        y: 419
+        width: 22
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9967,10 +9967,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_384
       rect:
         serializedVersion: 2
-        x: 563
-        y: 473
-        width: 25
-        height: 20
+        x: 603
+        y: 422
+        width: 23
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9989,10 +9989,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_385
       rect:
         serializedVersion: 2
-        x: 20
-        y: 422
-        width: 23
-        height: 19
+        x: 81
+        y: 367
+        width: 26
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10011,10 +10011,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_386
       rect:
         serializedVersion: 2
-        x: 49
-        y: 427
-        width: 10
-        height: 32
+        x: 103
+        y: 360
+        width: 31
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10033,10 +10033,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_387
       rect:
         serializedVersion: 2
-        x: 73
-        y: 422
-        width: 24
-        height: 21
+        x: 151
+        y: 367
+        width: 26
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10055,10 +10055,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_388
       rect:
         serializedVersion: 2
-        x: 102
-        y: 412
-        width: 20
-        height: 43
+        x: 172
+        y: 360
+        width: 33
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10077,10 +10077,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_389
       rect:
         serializedVersion: 2
-        x: 137
-        y: 422
+        x: 224
+        y: 369
         width: 25
-        height: 22
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10099,10 +10099,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_390
       rect:
         serializedVersion: 2
-        x: 178
-        y: 419
-        width: 14
-        height: 16
+        x: 241
+        y: 360
+        width: 38
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10121,10 +10121,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_391
       rect:
         serializedVersion: 2
-        x: 203
-        y: 422
-        width: 24
-        height: 21
+        x: 284
+        y: 363
+        width: 44
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10143,10 +10143,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_392
       rect:
         serializedVersion: 2
-        x: 231
-        y: 434
-        width: 36
-        height: 8
+        x: 302
+        y: 359
+        width: 54
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10165,10 +10165,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_393
       rect:
         serializedVersion: 2
-        x: 279
-        y: 422
-        width: 61
-        height: 20
+        x: 368
+        y: 370
+        width: 43
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10187,10 +10187,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_394
       rect:
         serializedVersion: 2
-        x: 353
-        y: 421
-        width: 23
-        height: 20
+        x: 411
+        y: 370
+        width: 38
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10209,10 +10209,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_395
       rect:
         serializedVersion: 2
-        x: 375
-        y: 419
-        width: 18
-        height: 23
+        x: 270
+        y: 257
+        width: 48
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10231,10 +10231,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_396
       rect:
         serializedVersion: 2
-        x: 404
-        y: 422
-        width: 23
-        height: 20
+        x: 331
+        y: 265
+        width: 48
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10253,10 +10253,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_397
       rect:
         serializedVersion: 2
-        x: 432
-        y: 418
-        width: 25
-        height: 20
+        x: 391
+        y: 267
+        width: 42
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10275,10 +10275,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_398
       rect:
         serializedVersion: 2
-        x: 468
-        y: 422
-        width: 24
-        height: 22
+        x: 446
+        y: 273
+        width: 42
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10297,10 +10297,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_399
       rect:
         serializedVersion: 2
-        x: 500
-        y: 418
-        width: 23
-        height: 38
+        x: 492
+        y: 274
+        width: 44
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10319,10 +10319,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_400
       rect:
         serializedVersion: 2
-        x: 535
-        y: 422
-        width: 24
-        height: 22
+        x: 546
+        y: 278
+        width: 44
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10341,10 +10341,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_401
       rect:
         serializedVersion: 2
-        x: 567
-        y: 418
-        width: 23
-        height: 38
+        x: 592
+        y: 276
+        width: 38
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10363,10 +10363,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_402
       rect:
         serializedVersion: 2
-        x: 602
-        y: 422
-        width: 24
-        height: 43
+        x: 632
+        y: 276
+        width: 39
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10385,10 +10385,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_403
       rect:
         serializedVersion: 2
-        x: 81
-        y: 367
-        width: 26
-        height: 23
+        x: 673
+        y: 276
+        width: 42
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10407,10 +10407,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_404
       rect:
         serializedVersion: 2
-        x: 102
-        y: 360
-        width: 33
-        height: 46
+        x: 11
+        y: 246
+        width: 45
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10429,10 +10429,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_405
       rect:
         serializedVersion: 2
-        x: 151
-        y: 367
-        width: 26
-        height: 23
+        x: 106
+        y: 229
+        width: 27
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10451,10 +10451,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_406
       rect:
         serializedVersion: 2
-        x: 172
-        y: 360
-        width: 33
-        height: 46
+        x: 136
+        y: 230
+        width: 29
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10473,10 +10473,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_407
       rect:
         serializedVersion: 2
-        x: 224
-        y: 369
-        width: 26
-        height: 20
+        x: 167
+        y: 230
+        width: 41
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10495,10 +10495,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_408
       rect:
         serializedVersion: 2
-        x: 241
-        y: 360
-        width: 38
-        height: 44
+        x: 211
+        y: 235
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10517,10 +10517,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_409
       rect:
         serializedVersion: 2
-        x: 284
-        y: 362
-        width: 44
-        height: 27
+        x: 21
+        y: 183
+        width: 43
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10539,10 +10539,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_410
       rect:
         serializedVersion: 2
-        x: 302
-        y: 359
-        width: 54
-        height: 39
+        x: 77
+        y: 184
+        width: 44
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10561,10 +10561,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_411
       rect:
         serializedVersion: 2
-        x: 368
-        y: 370
-        width: 44
-        height: 26
+        x: 136
+        y: 170
+        width: 29
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10583,10 +10583,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_412
       rect:
         serializedVersion: 2
-        x: 411
-        y: 370
-        width: 39
-        height: 34
+        x: 146
+        y: 171
+        width: 40
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10605,10 +10605,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_413
       rect:
         serializedVersion: 2
-        x: 269
-        y: 257
-        width: 49
-        height: 39
+        x: 202
+        y: 183
+        width: 44
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10627,10 +10627,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_414
       rect:
         serializedVersion: 2
-        x: 331
-        y: 265
-        width: 49
-        height: 49
+        x: 272
+        y: 180
+        width: 30
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10649,10 +10649,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_415
       rect:
         serializedVersion: 2
-        x: 391
-        y: 267
-        width: 43
-        height: 49
+        x: 304
+        y: 180
+        width: 33
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10671,10 +10671,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_416
       rect:
         serializedVersion: 2
-        x: 446
-        y: 272
-        width: 43
-        height: 33
+        x: 339
+        y: 180
+        width: 29
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10693,10 +10693,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_417
       rect:
         serializedVersion: 2
-        x: 491
-        y: 273
-        width: 45
-        height: 28
+        x: 14
+        y: 100
+        width: 34
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10715,10 +10715,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_418
       rect:
         serializedVersion: 2
-        x: 546
-        y: 278
-        width: 44
-        height: 26
+        x: 51
+        y: 105
+        width: 35
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10737,10 +10737,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_419
       rect:
         serializedVersion: 2
-        x: 592
-        y: 276
-        width: 38
-        height: 36
+        x: 89
+        y: 105
+        width: 35
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10759,10 +10759,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_420
       rect:
         serializedVersion: 2
-        x: 632
-        y: 276
-        width: 39
-        height: 47
+        x: 126
+        y: 104
+        width: 38
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10781,10 +10781,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_421
       rect:
         serializedVersion: 2
-        x: 673
-        y: 276
-        width: 42
-        height: 47
+        x: 166
+        y: 98
+        width: 34
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10803,10 +10803,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_422
       rect:
         serializedVersion: 2
-        x: 10
-        y: 246
-        width: 46
-        height: 19
+        x: 202
+        y: 89
+        width: 34
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10825,10 +10825,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_423
       rect:
         serializedVersion: 2
-        x: 105
-        y: 229
-        width: 29
-        height: 36
+        x: 238
+        y: 88
+        width: 35
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10847,10 +10847,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_424
       rect:
         serializedVersion: 2
-        x: 136
-        y: 230
-        width: 29
-        height: 35
+        x: 275
+        y: 89
+        width: 36
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10869,10 +10869,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_425
       rect:
         serializedVersion: 2
-        x: 167
-        y: 230
-        width: 42
-        height: 36
+        x: 313
+        y: 89
+        width: 36
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10891,9 +10891,9 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_426
       rect:
         serializedVersion: 2
-        x: 211
-        y: 234
-        width: 48
+        x: 351
+        y: 89
+        width: 38
         height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -10913,10 +10913,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_427
       rect:
         serializedVersion: 2
-        x: 21
-        y: 183
-        width: 44
-        height: 39
+        x: 391
+        y: 91
+        width: 34
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10935,10 +10935,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_428
       rect:
         serializedVersion: 2
-        x: 77
-        y: 184
-        width: 44
-        height: 37
+        x: 427
+        y: 98
+        width: 34
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10957,10 +10957,10 @@ TextureImporter:
       name: Sword_Kirby_NonBackGround_NonText_429
       rect:
         serializedVersion: 2
-        x: 136
-        y: 170
+        x: 463
+        y: 99
         width: 29
-        height: 35
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10975,671 +10975,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Sword_Kirby_NonBackGround_NonText_430
-      rect:
-        serializedVersion: 2
-        x: 146
-        y: 171
-        width: 40
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f910d4ef0a39d73f0800000000000000
-      internalID: -901402030733721185
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_Kirby_NonBackGround_NonText_431
-      rect:
-        serializedVersion: 2
-        x: 202
-        y: 183
-        width: 45
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bf42501268d90ad10800000000000000
-      internalID: 2134879422778778875
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_Kirby_NonBackGround_NonText_432
-      rect:
-        serializedVersion: 2
-        x: 271
-        y: 179
-        width: 32
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4c94343960d452980800000000000000
-      internalID: -8564354425739327036
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_Kirby_NonBackGround_NonText_433
-      rect:
-        serializedVersion: 2
-        x: 304
-        y: 179
-        width: 34
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5eb2c12431b2fc3c0800000000000000
-      internalID: -4337200554420982811
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_Kirby_NonBackGround_NonText_434
-      rect:
-        serializedVersion: 2
-        x: 339
-        y: 179
-        width: 29
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 84d0c2bb0a4ba63c0800000000000000
-      internalID: -4365478286354281144
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_Kirby_NonBackGround_NonText_435
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 112
-        width: 26
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5e708a473a32588f0800000000000000
-      internalID: -538985395457095707
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_Kirby_NonBackGround_NonText_436
-      rect:
-        serializedVersion: 2
-        x: 29
-        y: 100
-        width: 19
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7ba3115201a615a60800000000000000
-      internalID: 7661021058707831479
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_Kirby_NonBackGround_NonText_437
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 117
-        width: 36
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c8e535fe857ea5450800000000000000
-      internalID: 6078425016248262284
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_Kirby_NonBackGround_NonText_438
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 104
-        width: 22
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0a2dda497045cece0800000000000000
-      internalID: -1374631394718920032
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_Kirby_NonBackGround_NonText_439
-      rect:
-        serializedVersion: 2
-        x: 88
-        y: 117
-        width: 36
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e288bb084daf58660800000000000000
-      internalID: 7387586554370951214
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_Kirby_NonBackGround_NonText_440
-      rect:
-        serializedVersion: 2
-        x: 89
-        y: 104
-        width: 23
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4e46a719b86ec97e0800000000000000
-      internalID: -1757276267465775900
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_Kirby_NonBackGround_NonText_441
-      rect:
-        serializedVersion: 2
-        x: 126
-        y: 103
-        width: 24
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 25fe45d7db558a210800000000000000
-      internalID: 1344418761109991250
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_Kirby_NonBackGround_NonText_442
-      rect:
-        serializedVersion: 2
-        x: 138
-        y: 112
-        width: 26
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 63da2355d597411b0800000000000000
-      internalID: -5686786987693789898
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_Kirby_NonBackGround_NonText_443
-      rect:
-        serializedVersion: 2
-        x: 166
-        y: 102
-        width: 19
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 148f7f56eaa6db230800000000000000
-      internalID: 3656195769762314305
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_Kirby_NonBackGround_NonText_444
-      rect:
-        serializedVersion: 2
-        x: 179
-        y: 98
-        width: 21
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a3f9cbd6694b1e5f0800000000000000
-      internalID: -729103106478137542
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_Kirby_NonBackGround_NonText_445
-      rect:
-        serializedVersion: 2
-        x: 202
-        y: 101
-        width: 18
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ab49c992fe8221000800000000000000
-      internalID: 5111557241214138
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_Kirby_NonBackGround_NonText_446
-      rect:
-        serializedVersion: 2
-        x: 215
-        y: 89
-        width: 21
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d8ac6e4e68881bbe0800000000000000
-      internalID: -1463238290971374963
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_Kirby_NonBackGround_NonText_447
-      rect:
-        serializedVersion: 2
-        x: 238
-        y: 101
-        width: 19
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6fe883611fb98a080800000000000000
-      internalID: -9175912781005156618
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_Kirby_NonBackGround_NonText_448
-      rect:
-        serializedVersion: 2
-        x: 279
-        y: 103
-        width: 22
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 57667956192e0c120800000000000000
-      internalID: 2432192912882624117
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_Kirby_NonBackGround_NonText_449
-      rect:
-        serializedVersion: 2
-        x: 325
-        y: 104
-        width: 23
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 69d2d13581455e630800000000000000
-      internalID: 3955660311165218198
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_Kirby_NonBackGround_NonText_450
-      rect:
-        serializedVersion: 2
-        x: 365
-        y: 104
-        width: 24
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ad45dfbb9246dc510800000000000000
-      internalID: 1571021975432549594
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_Kirby_NonBackGround_NonText_451
-      rect:
-        serializedVersion: 2
-        x: 391
-        y: 91
-        width: 21
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3110edb1a596be580800000000000000
-      internalID: -8796821611402624749
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_Kirby_NonBackGround_NonText_452
-      rect:
-        serializedVersion: 2
-        x: 406
-        y: 101
-        width: 19
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fea91f8ff3dfd6400800000000000000
-      internalID: 319189599814523631
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_Kirby_NonBackGround_NonText_453
-      rect:
-        serializedVersion: 2
-        x: 427
-        y: 98
-        width: 21
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f9e0ca1038c35f5d0800000000000000
-      internalID: -3029448640970355041
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_Kirby_NonBackGround_NonText_454
-      rect:
-        serializedVersion: 2
-        x: 443
-        y: 99
-        width: 18
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0832a1cb273ae4220800000000000000
-      internalID: 2472092958650409856
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_Kirby_NonBackGround_NonText_455
-      rect:
-        serializedVersion: 2
-        x: 463
-        y: 99
-        width: 29
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 47ec5128b337d9920800000000000000
-      internalID: 2998679626321350260
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_Kirby_NonBackGround_NonText_456
-      rect:
-        serializedVersion: 2
-        x: 247
-        y: 87
-        width: 26
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ead79a213054cbde0800000000000000
-      internalID: -1316101111598711378
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_Kirby_NonBackGround_NonText_457
-      rect:
-        serializedVersion: 2
-        x: 275
-        y: 88
-        width: 36
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 387446f5e958f8b70800000000000000
-      internalID: 8903481903586494339
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_Kirby_NonBackGround_NonText_458
-      rect:
-        serializedVersion: 2
-        x: 313
-        y: 88
-        width: 36
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1ecb78c18bf0db7c0800000000000000
-      internalID: -4054066806136521503
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword_Kirby_NonBackGround_NonText_459
-      rect:
-        serializedVersion: 2
-        x: 351
-        y: 88
-        width: 26
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 086e51480dca2fb60800000000000000
-      internalID: 7778469517991470720
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 66a432376f768854f9e8d85fcd22952a
     internalID: 0
     vertices: []
     indices: 
@@ -12018,38 +11358,8 @@ TextureImporter:
       Sword_Kirby_NonBackGround_NonText_428: -8661429756092001701
       Sword_Kirby_NonBackGround_NonText_429: 7712421585813438214
       Sword_Kirby_NonBackGround_NonText_43: 2042433831387468745
-      Sword_Kirby_NonBackGround_NonText_430: -901402030733721185
-      Sword_Kirby_NonBackGround_NonText_431: 2134879422778778875
-      Sword_Kirby_NonBackGround_NonText_432: -8564354425739327036
-      Sword_Kirby_NonBackGround_NonText_433: -4337200554420982811
-      Sword_Kirby_NonBackGround_NonText_434: -4365478286354281144
-      Sword_Kirby_NonBackGround_NonText_435: -538985395457095707
-      Sword_Kirby_NonBackGround_NonText_436: 7661021058707831479
-      Sword_Kirby_NonBackGround_NonText_437: 6078425016248262284
-      Sword_Kirby_NonBackGround_NonText_438: -1374631394718920032
-      Sword_Kirby_NonBackGround_NonText_439: 7387586554370951214
       Sword_Kirby_NonBackGround_NonText_44: -3333818804877911395
-      Sword_Kirby_NonBackGround_NonText_440: -1757276267465775900
-      Sword_Kirby_NonBackGround_NonText_441: 1344418761109991250
-      Sword_Kirby_NonBackGround_NonText_442: -5686786987693789898
-      Sword_Kirby_NonBackGround_NonText_443: 3656195769762314305
-      Sword_Kirby_NonBackGround_NonText_444: -729103106478137542
-      Sword_Kirby_NonBackGround_NonText_445: 5111557241214138
-      Sword_Kirby_NonBackGround_NonText_446: -1463238290971374963
-      Sword_Kirby_NonBackGround_NonText_447: -9175912781005156618
-      Sword_Kirby_NonBackGround_NonText_448: 2432192912882624117
-      Sword_Kirby_NonBackGround_NonText_449: 3955660311165218198
       Sword_Kirby_NonBackGround_NonText_45: 7059022574012941388
-      Sword_Kirby_NonBackGround_NonText_450: 1571021975432549594
-      Sword_Kirby_NonBackGround_NonText_451: -8796821611402624749
-      Sword_Kirby_NonBackGround_NonText_452: 319189599814523631
-      Sword_Kirby_NonBackGround_NonText_453: -3029448640970355041
-      Sword_Kirby_NonBackGround_NonText_454: 2472092958650409856
-      Sword_Kirby_NonBackGround_NonText_455: 2998679626321350260
-      Sword_Kirby_NonBackGround_NonText_456: -1316101111598711378
-      Sword_Kirby_NonBackGround_NonText_457: 8903481903586494339
-      Sword_Kirby_NonBackGround_NonText_458: -4054066806136521503
-      Sword_Kirby_NonBackGround_NonText_459: 7778469517991470720
       Sword_Kirby_NonBackGround_NonText_46: -4854572218840877486
       Sword_Kirby_NonBackGround_NonText_47: 5933849859343424486
       Sword_Kirby_NonBackGround_NonText_48: -2248313716969198820

@@ -6,6 +6,11 @@ public abstract class PlayerAbility : MonoBehaviour
 {
     protected Player owner;
 
+    [Header("공격 관련")]
+    public float attackCheckRadius = 0;
+    public float attackPower = 0;
+
+
     enum AibilityNumber 
     {
         Normal, //0
