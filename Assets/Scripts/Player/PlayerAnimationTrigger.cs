@@ -42,7 +42,7 @@ public class PlayerAnimatorController : MonoBehaviour
         {
             //player.KirbyFrom(); //변신
             player.Call_RPC("KirbyForm", RpcTarget.All); //변신
-                                                         //player.stateMachine.ChangeState(player.changeFormState);
+            player.stateMachine.ChangeState(player.changeFormState);
         }
         else
         {

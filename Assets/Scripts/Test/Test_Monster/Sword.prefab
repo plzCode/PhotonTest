@@ -233,6 +233,7 @@ GameObject:
   - component: {fileID: 105333692326979651}
   - component: {fileID: 1467460403422391625}
   - component: {fileID: 3679635473569793380}
+  - component: {fileID: -5689252379660423483}
   m_Layer: 0
   m_Name: Sword
   m_TagString: Untagged
@@ -384,6 +385,7 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 3679635473569793380}
   - {fileID: 5085958108753646922}
+  - {fileID: -5689252379660423483}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -400,9 +402,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_SynchronizePosition: 1
-  m_SynchronizeRotation: 1
+  m_SynchronizeRotation: 0
   m_SynchronizeScale: 0
   m_UseLocal: 1
+--- !u!114 &-5689252379660423483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8051274196118794284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5672e78f22197ad44baca407376fd8d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8695383084023676902
 GameObject:
   m_ObjectHideFlags: 0

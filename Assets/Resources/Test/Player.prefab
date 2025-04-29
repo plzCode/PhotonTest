@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: -5503277366793095067}
   - component: {fileID: 2434127859290607288}
   - component: {fileID: 67106672322285237}
+  - component: {fileID: -52732694454411436}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -152,10 +153,11 @@ MonoBehaviour:
   prefixField: -1
   Synchronization: 2
   OwnershipTransfer: 0
-  observableSearch: 2
+  observableSearch: 0
   ObservedComponents:
   - {fileID: 7655887825162473413}
   - {fileID: -5503277366793095067}
+  - {fileID: -52732694454411436}
   - {fileID: 7397273143355088000}
   sceneViewId: 0
   InstantiationId: 0
@@ -173,7 +175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_SynchronizePosition: 1
-  m_SynchronizeRotation: 1
+  m_SynchronizeRotation: 0
   m_SynchronizeScale: 1
   m_UseLocal: 1
 --- !u!114 &2434127859290607288
@@ -225,6 +227,18 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.3835283}
   m_Size: {x: 0.70318675, y: 0.8929435}
   m_Direction: 0
+--- !u!114 &-52732694454411436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698457925764607719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5672e78f22197ad44baca407376fd8d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1621551793653162873
 GameObject:
   m_ObjectHideFlags: 0
