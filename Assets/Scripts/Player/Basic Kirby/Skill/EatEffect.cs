@@ -38,8 +38,8 @@ public class EatEffect : MonoBehaviour
     public void OnTriggerStay2D(Collider2D collision) //적과 충돌중 이라면
     {
         //if (!pView.IsMine) return;
-        if(collision == null || player == null) return; //충돌중인 적이 없다면 리턴
-        if (collision.gameObject.CompareTag("Enemy")) //충돌중인 적 콜라이더를 가져옴
+        if (collision == null || player == null) return; //충돌중인 적이 없다면 리턴
+        if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Item")) //충돌중인 적 콜라이더를 가져옴
         {
             Collider2D playerCol = player.GetComponent<Collider2D>(); //플레이어 콜라이더를 가져옴
             Collider2D enemyCol = collision.GetComponent<Collider2D>(); //충돌중인 적 콜라이더를 가져옴

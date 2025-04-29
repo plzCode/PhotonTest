@@ -35,7 +35,6 @@ public class PlayerAnimatorController : MonoBehaviour
     public void ChangeForm()
     {
         player.GetComponent<PhotonView>().RPC("SyncFormNum", RpcTarget.AllBuffered);
-        player.KirbyFormNum = player.EatKirbyFormNum; //저장되어있던 몹 넘버를 변신하는 넘버로 넘긴다
 
         if (player.KirbyFormNum > 0) //0이상이면 먹은 적 커비로 변신
         {
@@ -80,9 +79,9 @@ public class PlayerAnimatorController : MonoBehaviour
     {
         if (rangeAttack == null)
         {
-            rangeAttack = Resources.Load<GameObject>(rangeAttackName);
+            rangeAttack = Resources.Load<GameObject>(rangeAttackName); //원거리 공격을 가져옴
         }
 
-        player.EffectAdd(player.LastMove, rangeAttack, player.AirJumpOutEffectPos);
+        player.EffectAdd(player.LastMove, rangeAttack, player.AirJumpOutEffectPos); //플레이어 한태서 공격 발사
     }
 }

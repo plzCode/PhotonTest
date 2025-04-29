@@ -48,23 +48,23 @@ public class PlayerGroundState : PlayerState
         if (Input.GetKeyDown(KeyCode.Mouse0) && player.KirbyFormNum == 0)
             stateMachine.ChangeState(player.eating12State);
 
-        //if (Input.GetKeyDown(KeyCode.Mouse0) && player.curAbility != null)
-        //{
-        //    player.GetComponent<PhotonView>().RPC(nameof(PerformAttack), RpcTarget.All);
-        //}
+        if (Input.GetKeyDown(KeyCode.Mouse0) && player.curAbility != null)
+        {
+            player.GetComponent<PhotonView>().RPC(nameof(PerformAttack), RpcTarget.All);
+        }
     }
 
-    //[PunRPC]
-    //public void PerformAttack()
-    //{
-    //    switch (player.KirbyFormNum)
-    //    {
-    //        case 1:
-    //            player.EatKirby.Attack();
-    //            break;
-    //        case 2:
-    //            player.curAbility.AttackHandle();
-    //            break;
-    //    }
-    //}
+    [PunRPC]
+    public void PerformAttack()
+    {
+        switch (player.KirbyFormNum)
+        {
+            case 1:
+                player.EatKirby.Attack();
+                break;
+            case 2:
+                player.curAbility.AttackHandle();
+                break;
+        }
+    }
 }

@@ -34,6 +34,7 @@ public class Player : MonoBehaviour
     public Transform EatEffectPos;
     public GameObject GroundStarEffect;
     public Transform GroundEffectPos;
+    public GameObject DamageStar;
 
     public List<GameObject> AttackList = new List<GameObject>();
     public Collider2D currentEnemy;
@@ -89,9 +90,6 @@ public class Player : MonoBehaviour
 
     //변신 어빌리티
     public Ability_Eat EatKirby => GetComponentInParent<Ability_Eat>();
-
-
-
 
     //For Test Ability
     public PlayerAbility curAbility;
@@ -165,7 +163,7 @@ public class Player : MonoBehaviour
                 Debug.Log("Normal Kirby Attack");
             }
         }
-
+        Debug.Log(EatKirbyFormNum);
         if (Input.GetKeyDown(KeyCode.X) && GetComponent<PhotonView>().IsMine)
         {
             if (curAbility == null)
@@ -182,13 +180,13 @@ public class Player : MonoBehaviour
         }
 
         //플레이어 idle 상태로 옮김
-        //if (Input.GetKeyDown(KeyCode.Mouse0))
-        //{
-        //    if (curAbility != null)
-        //    {
-        //        curAbility.AttackHandle();
-        //    }
-        //}
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            if (curAbility != null)
+            {
+                curAbility.AttackHandle();
+            }
+        }
 
         #endregion
         Hill();
@@ -217,6 +215,7 @@ public class Player : MonoBehaviour
     public void SyncFormNum()
     {
         KirbyFormNum = EatKirbyFormNum;
+        EatKirbyFormNum = 0;
     }
 
 
@@ -376,6 +375,11 @@ public class Player : MonoBehaviour
             LastMove = -1f;
         }
 
+        if(KirbyFormNum > 0)
+        {
+            EffectAdd(LastMove, DamageStar, transform);
+            curAbility.OnAbilityDestroyed(this); //어빌리티 초기화
+        }
         PlayerHP -= Damage;
         stateMachine.ChangeState(damageState);  //굴러가는거 실행
     }
