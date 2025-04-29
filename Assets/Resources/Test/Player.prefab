@@ -98,6 +98,7 @@ MonoBehaviour:
   EatEffectPos: {fileID: 4109569933669800162}
   GroundStarEffect: {fileID: 2098762502600264495, guid: 755a891752f270544829a9ba15b2889b, type: 3}
   GroundEffectPos: {fileID: 3308088945702398089}
+  DamageStar: {fileID: 2657151343364848430, guid: 6554478746b76e343be3ab56d4a492d3, type: 3}
   AttackList: []
   currentEnemy: {fileID: 0}
   groundCheck: {fileID: 6332117634270816776}
