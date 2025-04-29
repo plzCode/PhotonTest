@@ -3,12 +3,12 @@ using UnityEngine;
 public class Spear_HitState : EnemyState
 {
 
-    protected Monster_Spear enemy;
+    protected Enemy enemy;
     private bool isGrounded;
 
-    public Spear_HitState(Enemy _enemyBase, EnemyStateMachine _stateMachine, string _animBoolName, Monster_Spear _enemy) : base(_enemy, _stateMachine, _animBoolName)
+    public Spear_HitState(Enemy _enemyBase, EnemyStateMachine _stateMachine, string _animBoolName) : base(_enemyBase, _stateMachine, _animBoolName)
     {
-        this.enemy = _enemy;
+        this.enemy = _enemyBase;
     }
 
     public override void Enter()
@@ -43,7 +43,7 @@ public class Spear_HitState : EnemyState
         }
         if (stateTimer < 0)
         {
-            enemy.photonView.RPC("RequestIdleFromClient", Photon.Pun.RpcTarget.All);
+            enemy.photonView.RPC("ChangeState", Photon.Pun.RpcTarget.All,"Idle");
         }
 
     }

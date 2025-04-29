@@ -33,7 +33,7 @@ public class Monster_Spear : Enemy
 
         idleState = new Spear_IdleState(this, stateMachine, "Idle", this);
         throwState = new Spear_ThrowState(this, stateMachine, "Throw", this);
-        hitState = new Spear_HitState(this, stateMachine, "Hit", this);
+        hitState = new Spear_HitState(this, stateMachine, "Hit");
 
 
 
@@ -74,6 +74,17 @@ public class Monster_Spear : Enemy
         Gizmos.DrawWireSphere(transform.position, throwDistance + 2f); // 방향 전환용 감지 사거리
     }
 
+
+
+    [PunRPC]
+    public void ChangeState(string stateName)
+    {
+        if (stateName == "Idle")
+            stateMachine.ChangeState(idleState);
+        else if (stateName == "Attack")
+            stateMachine.ChangeState(throwState);
+
+    }
 
     [PunRPC]
     public void RequestAttackFromClient()

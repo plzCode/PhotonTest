@@ -358,8 +358,8 @@ MonoBehaviour:
   lastTimeAttacked: 0
   facingDir: 1
   facingRight: 1
-  stunDirection: {x: 0, y: 0}
-  hitTime: 0
+  stunDirection: {x: 3, y: 3}
+  hitTime: 1.5
   startRight: 1
   photonView: {fileID: 0}
   dashSpeed: 10

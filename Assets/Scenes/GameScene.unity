@@ -7292,13 +7292,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 105333692326979651, guid: 2f09e25fcac03fa48a0951d99ff32131, type: 3}
-      propertyPath: idleTime
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 105333692326979651, guid: 2f09e25fcac03fa48a0951d99ff32131, type: 3}
-      propertyPath: groundCheckDistance
-      value: 0.45
+    - target: {fileID: 1467460403422391625, guid: 2f09e25fcac03fa48a0951d99ff32131, type: 3}
+      propertyPath: sceneViewId
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4001806273118350652, guid: 2f09e25fcac03fa48a0951d99ff32131, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7344,107 +7340,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sword
       objectReference: {fileID: 0}
-    - target: {fileID: 8051274196118794284, guid: 2f09e25fcac03fa48a0951d99ff32131, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8051274196118794284, guid: 2f09e25fcac03fa48a0951d99ff32131, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6604393163672682348}
-    - targetCorrespondingSourceObject: {fileID: 8051274196118794284, guid: 2f09e25fcac03fa48a0951d99ff32131, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6604393163672682347}
-    - targetCorrespondingSourceObject: {fileID: 4451238324774469190, guid: 2f09e25fcac03fa48a0951d99ff32131, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6604393163672682349}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f09e25fcac03fa48a0951d99ff32131, type: 3}
---- !u!1 &6604393163672682345 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8051274196118794284, guid: 2f09e25fcac03fa48a0951d99ff32131, type: 3}
-  m_PrefabInstance: {fileID: 6604393163672682344}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &6604393163672682346 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4451238324774469190, guid: 2f09e25fcac03fa48a0951d99ff32131, type: 3}
-  m_PrefabInstance: {fileID: 6604393163672682344}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &6604393163672682347
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6604393163672682345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizePosition: 1
-  m_SynchronizeRotation: 1
-  m_SynchronizeScale: 0
-  m_UseLocal: 1
---- !u!114 &6604393163672682348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6604393163672682345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  Synchronization: 3
-  OwnershipTransfer: 0
-  observableSearch: 0
-  ObservedComponents:
-  - {fileID: 6604393163672682347}
-  - {fileID: 6604393163672682349}
-  sceneViewId: 6
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
---- !u!114 &6604393163672682349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6604393163672682346}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShowLayerWeightsInspector: 1
-  ShowParameterInspector: 1
-  m_SynchronizeParameters:
-  - Type: 4
-    SynchronizeType: 1
-    Name: Attack
-  - Type: 4
-    SynchronizeType: 1
-    Name: Move
-  - Type: 3
-    SynchronizeType: 1
-    Name: Combo
-  - Type: 4
-    SynchronizeType: 1
-    Name: Hit
-  - Type: 4
-    SynchronizeType: 1
-    Name: Eat
-  m_SynchronizeLayers:
-  - SynchronizeType: 1
-    LayerIndex: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

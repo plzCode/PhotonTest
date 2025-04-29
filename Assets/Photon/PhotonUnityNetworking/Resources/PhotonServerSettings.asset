@@ -62,6 +62,9 @@ MonoBehaviour:
   - KirbyForm
   - SyncFormNum
   - PerformAttack
+  - ChangeState
+  - RequestAnimIntegerChange
+  - RequestMoveFromClient
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
