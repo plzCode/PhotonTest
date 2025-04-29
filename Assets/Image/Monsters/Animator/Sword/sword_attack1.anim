@@ -98,15 +98,15 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.3857143
-    functionName: AttackTrigger
+  - time: 0.45714286
+    functionName: AttackForwardStop
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.45714286
-    functionName: AttackForwardStop
+  - time: 0.47142857
+    functionName: AttackTrigger
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

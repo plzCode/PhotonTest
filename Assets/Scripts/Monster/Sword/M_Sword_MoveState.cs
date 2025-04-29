@@ -1,3 +1,4 @@
+using Photon.Pun;
 using UnityEngine;
 
 public class M_Sword_MoveState : M_Sword_GroundedState
@@ -10,7 +11,14 @@ public class M_Sword_MoveState : M_Sword_GroundedState
     {
         base.Enter();
 
-        player = GameObject.FindGameObjectWithTag("Player")?.transform;
+        //player = GameObject.FindGameObjectWithTag("Player")?.transform;
+        stateTimer = enemy.idleTime;
+        // 시간 동기화
+        if (Photon.Pun.PhotonNetwork.IsMasterClient)
+        {
+            stateTimer = enemy.idleTime;
+            enemy.photonView.RPC("SyncStateTimer", Photon.Pun.RpcTarget.Others, (float)stateTimer);
+        }
     }
 
     public override void Exit()
@@ -20,7 +28,7 @@ public class M_Sword_MoveState : M_Sword_GroundedState
 
     public override void Update()
     {
-        base.Update();
+        base.Update();        
 
         enemy.SetVelocity(enemy.moveSpeed * enemy.facingDir, rb.linearVelocity.y);
 
@@ -29,7 +37,7 @@ public class M_Sword_MoveState : M_Sword_GroundedState
             enemy.Flip();            
         }
 
-        if (enemy.IsPlayerDetected())
+        if (enemy.IsPlayerDetected()&&PhotonNetwork.IsMasterClient)
         {
 
             //stateTimer = enemy.battleTime;
@@ -37,18 +45,19 @@ public class M_Sword_MoveState : M_Sword_GroundedState
             if (enemy.IsPlayerDetected().distance < enemy.attackDistance)
             {
 
-                if (CanAttack()) // 쿨다운이 아니면 공격
+                if (stateTimer<0) // 최소 이동 시간이 지났는가?
                 {
                     // sword 몹과 boomerang을 같이 쓰는데 다른점은 combo정도
                     if(enemy.HasParameter("Combo",enemy.anim))
                     {
+                        Debug.Log("공격 요청");
                         int randomCombo = Random.Range(1, 3);
-                        enemy.anim.SetInteger("Combo", randomCombo);
-                        stateMachine.ChangeState(enemy.attackState);
+                        enemy.photonView.RPC("RequestAnimIntegerChange", RpcTarget.All, "Combo", randomCombo);
+                        enemy.photonView.RPC("ChangeState", RpcTarget.All,"Attack");
                     }
                     else
                     {
-                        stateMachine.ChangeState(enemy.attackState);
+                        enemy.photonView.RPC("RequestStateChange", RpcTarget.All, enemy.attackState);
                     }
                     
                 }
@@ -66,6 +75,7 @@ public class M_Sword_MoveState : M_Sword_GroundedState
         }
     }
 
+    /*
 
     private bool CanAttack()
     {
@@ -77,4 +87,5 @@ public class M_Sword_MoveState : M_Sword_GroundedState
 
         return false;
     }
+    */
 }

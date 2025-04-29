@@ -102,24 +102,21 @@ public class Spear : MonsterWeapon
 
         else if (collision.CompareTag("Ground") && !isDestroyed)
         {
-            // **즉시 로컬에서 FreezeSpear() 호출!**
             if (!isStuck)
-                FreezeSpear();
-
-            //그리고 나서 모든 클라에게 RPC로 한번 더 통일
-            if (photonView != null)
-                photonView.RPC("FreezeSpear", RpcTarget.Others);
-
-            if (PhotonNetwork.IsMasterClient)
             {
-                StartCoroutine(DestroyAfterDelay(2f));
+                FreezeSpear();
+                if (photonView != null)
+                    photonView.RPC("FreezeSpear", RpcTarget.Others);
+
+                if (PhotonNetwork.IsMasterClient)
+                    StartCoroutine(DestroyAfterDelay(2f));
             }
         }
     }
     [PunRPC]
     private void FreezeSpear()
     {
-
+        if (isStuck) return; // 이미 박힌 경우 무시
         rb.constraints = RigidbodyConstraints2D.FreezeAll; // 위치+회전 다 고정
         isStuck = true;
 

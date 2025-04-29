@@ -116,15 +116,15 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.3857143
-    functionName: AttackTrigger
+  - time: 0.47142857
+    functionName: AttackForwardStop
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.47142857
-    functionName: AttackForwardStop
+  - time: 0.4857143
+    functionName: AttackTrigger
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
@@ -137,15 +137,15 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.8142857
-    functionName: AttackTrigger
+  - time: 0.8857143
+    functionName: AttackForwardStop
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.8857143
-    functionName: AttackForwardStop
+  - time: 0.9
+    functionName: AttackTrigger
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

@@ -1,3 +1,4 @@
+using Photon.Pun;
 using UnityEngine;
 
 public class Sword_AnimationTriggers : MonoBehaviour
@@ -26,8 +27,10 @@ public class Sword_AnimationTriggers : MonoBehaviour
         {
             if (hit.GetComponent<Player>() != null)
             {
-                Debug.Log("플레이어게" + enemy.attackPower + "만큼 데미지를 줌");
-                hit.GetComponent<Player>().TakeDamage(enemy.transform.position,enemy.attackPower);
+                if (hit.GetComponent<PhotonView>() != null)
+                    hit.GetComponent<PhotonView>().RPC("TakeDamage", RpcTarget.All, (Vector2)transform.position, enemy.attackPower); // 데미지 처리
+
+                Debug.Log("스워드 몬스터가 플레이어에게 " + enemy.attackPower + "만큼 데미지를 줌");
             }
         }
     }

@@ -121,6 +121,7 @@ public class Enemy : MonoBehaviour
     }
 
 
+
     public virtual void Damage()
     {
         //fx.StartCoroutine("FlashFX");
@@ -128,9 +129,11 @@ public class Enemy : MonoBehaviour
         Debug.Log(gameObject.name + "데미지를 입혔다.");
     }
 
+    [PunRPC]
     public virtual void TakeDamage(float _damage)
     {
         //stateMachine.ChangeState();
+
     }
 
 

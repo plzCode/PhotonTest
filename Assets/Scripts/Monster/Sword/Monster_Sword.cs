@@ -1,3 +1,4 @@
+using Photon.Pun;
 using UnityEngine;
 
 public class Monster_Sword : Enemy
@@ -30,6 +31,44 @@ public class Monster_Sword : Enemy
     {
         base.Update();
     }
+
+    [PunRPC]
+    public void ChangeState(string stateName)
+    {
+        if (stateName == "Move")
+            stateMachine.ChangeState(moveState);
+        else if (stateName == "Attack")
+            stateMachine.ChangeState(attackState);            
+        
+    }
+    [PunRPC]
+    public void RequestAnimIntegerChange(string _boolName,int _integer)
+    {
+        anim.SetInteger(_boolName, _integer);
+    }
+
+    [PunRPC]
+    public void RequestAttackFromClient()
+    {
+
+        stateMachine.ChangeState(attackState);
+
+
+    }
+
+    [PunRPC]
+    public void RequestHitFromClient()
+    {
+        //stateMachine.ChangeState(hitState);
+    }
+
+    [PunRPC]
+    public void RequestMoveFromClient()
+    {
+        stateMachine.ChangeState(moveState);
+
+    }
+
 
     public void Sword_AttackForward()
     {

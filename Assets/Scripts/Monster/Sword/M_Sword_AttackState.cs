@@ -1,4 +1,4 @@
-using Photon.Pun.Demo.PunBasics;
+using Photon.Pun;
 using UnityEngine;
 
 public class M_Sword_AttackState : M_Sword_GroundedState
@@ -18,9 +18,14 @@ public class M_Sword_AttackState : M_Sword_GroundedState
     {
         base.Update();
 
+        if (!PhotonNetwork.IsMasterClient)
+        {
+            return;
+        }
+        
         if (triggerCalled)
         {
-            stateMachine.ChangeState(enemy.moveState);
+            enemy.photonView.RPC("ChangeState", RpcTarget.All, "Move");
         }
 
         if (enemy.IsWallDetected() || !enemy.IsGroundDetected())
@@ -33,7 +38,7 @@ public class M_Sword_AttackState : M_Sword_GroundedState
     {
         base.Exit();
 
-        enemy.lastTimeAttacked = Time.time;
+        //enemy.lastTimeAttacked = Time.time;
     }
 
     
