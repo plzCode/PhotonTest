@@ -44,7 +44,7 @@ public class EatEffect : MonoBehaviour
             Collider2D playerCol = player.GetComponent<Collider2D>(); //플레이어 콜라이더를 가져옴
             Collider2D enemyCol = collision.GetComponent<Collider2D>(); //충돌중인 적 콜라이더를 가져옴
             PormNumber = collision.GetComponent<EnemyNumber>().Number; //흡입하는 적의 변신 번호를 가져옴니다. (적에게 EnemyNumber 스크립트가 있어야하고 번호도 있어야 합니다)
-
+            Debug.Log(PormNumber);
             enemy = collision.gameObject.transform;
 
             // 적을 플레이어 위치로 당긴다

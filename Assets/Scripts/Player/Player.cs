@@ -215,7 +215,6 @@ public class Player : MonoBehaviour
     public void SyncFormNum()
     {
         KirbyFormNum = EatKirbyFormNum;
-        EatKirbyFormNum = 0;
     }
 
 

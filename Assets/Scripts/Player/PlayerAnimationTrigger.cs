@@ -47,7 +47,6 @@ public class PlayerAnimatorController : MonoBehaviour
             player.curAbility.OnAbilityDestroyed(player); //0이면 기본 커비로 변환
             Destroy(player.curAbility);
             player.stateMachine.ChangeState(player.idleState);
-            Debug.Log("Change Form");
         }
     }
 

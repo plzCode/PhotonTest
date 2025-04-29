@@ -14,13 +14,13 @@ public class PlayerJumpState : PlayerState
     {
         base.Enter();
         MaxJumpPower = -1f;
+        MinJumpPower = 2f;
         pView.RPC("lineVelocity", RpcTarget.All, rb.linearVelocityX, MinJumpPower + player.JumpPower);
     }
 
     public override void Exit()
     {
         base.Exit();
-        MinJumpPower = 2f;
     }
 
     public override void Update()
