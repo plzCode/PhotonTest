@@ -12,11 +12,6 @@ public class PlayerDamageState : PlayerState
         base.Enter();
         pView.RPC("lineVelocity", RpcTarget.All, (player.LastMove * player.MoveSpeed * 2f), 0f); //수평 이동
         player.Flip();
-    }
-
-    public override void Exit()
-    {
-        base.Exit();
         //공격받을시 흡입 이펙트가 거꾸로 나가는 버그 수정
         if (player.LastMove == 1f)
         {
@@ -24,6 +19,12 @@ public class PlayerDamageState : PlayerState
         }
         else
             player.LastMove = 1f;
+    }
+
+    public override void Exit()
+    {
+        base.Exit();
+
     }
 
     public override void Update()

@@ -13,9 +13,6 @@ public class KirbyDamageStar : MonoBehaviour
 
     public float dleeteTime;
 
-    public GameObject Effect1;
-    public GameObject Effect2;
-
     private void Awake()
     {
         player = GameObject.FindWithTag("Player").GetComponent<Player>();
@@ -31,8 +28,6 @@ public class KirbyDamageStar : MonoBehaviour
     {
         enemyNumber.Number = player.EatKirbyFormNum;
         player.EatKirbyFormNum = 0;
-        //PhotonNetwork.Instantiate("Effect1", transform.position, Quaternion.identity);
-        //PhotonNetwork.Instantiate("Effect2", transform.position, Quaternion.identity);
     }
 
     void Update()
