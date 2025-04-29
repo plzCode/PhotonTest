@@ -10,12 +10,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1662818492238526853}
   - component: {fileID: 8637722115275677793}
+  - component: {fileID: 7592909245393097422}
   - component: {fileID: 4152583754509440874}
+  - component: {fileID: 8756114430602890070}
+  - component: {fileID: 9140928487644564934}
+  - component: {fileID: 8533131503691266927}
   - component: {fileID: 496748875433877706}
-  - component: {fileID: 1403483257998222478}
-  - component: {fileID: 8892104761615804574}
   m_Layer: 0
-  m_Name: Kirby Eat Attack 60x60_0
+  m_Name: Kirby Damage Star
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79,8 +81,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -728467831
   m_SortingLayer: 3
-  m_SortingOrder: -1
-  m_Sprite: {fileID: 2458869123079031041, guid: 8e4f5821f0918024f9066471574718dc, type: 3}
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7829203189334744460, guid: 5b061e5534b0bc84497eca221086965c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -91,6 +93,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &7592909245393097422
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2657151343364848430}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f48c580252c65ac44896398f447f5d79, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!58 &4152583754509440874
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -127,6 +151,66 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: -0.07800901}
   m_Radius: 0.6022289
+--- !u!50 &8756114430602890070
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2657151343364848430}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 6200000, guid: 095dfccb0802bb340b3642d6f682b9c1, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &9140928487644564934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2657151343364848430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20850ecc65c4ea64ca6326fe8794a490, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SaveNumber: 0
+  moveSpeed: 6
+  randomSpeed: 0
+  dleeteTime: 0
+  Effect1: {fileID: 8889441382021578810, guid: 3393266149b45854c9e4abe12ed5e055, type: 3}
+  Effect2: {fileID: 3788307040479446266, guid: 6acb8468b412bbd449684d23ec3366c8, type: 3}
+--- !u!114 &8533131503691266927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2657151343364848430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d2e9ad4460ba7c448f42de2ec68fa16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Number: 0
+  a: "1. \uCEE4\uBE44 \uBA39\uC740 \uD3FC"
+  b: "2. \uCEE4\uBE44 \uC560\uB2C8\uBA40 \uD3FC"
 --- !u!114 &496748875433877706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,38 +233,3 @@ MonoBehaviour:
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!95 &1403483257998222478
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2657151343364848430}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8fece8091273fb940bfc7de7edee687c, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8892104761615804574
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2657151343364848430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bde082e088b0e846b1b65f18cf2b1f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 8
