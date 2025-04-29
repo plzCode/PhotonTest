@@ -50,21 +50,7 @@ public class PlayerGroundState : PlayerState
 
         if (Input.GetKeyDown(KeyCode.Mouse0) && player.curAbility != null)
         {
-            player.GetComponent<PhotonView>().RPC(nameof(PerformAttack), RpcTarget.All);
-        }
-    }
-
-    [PunRPC]
-    public void PerformAttack()
-    {
-        switch (player.KirbyFormNum)
-        {
-            case 1:
-                player.EatKirby.Attack();
-                break;
-            case 2:
-                player.curAbility.AttackHandle();
-                break;
+            player.GetComponent<PhotonView>().RPC(nameof(player.PerformAttack), RpcTarget.All);
         }
     }
 }

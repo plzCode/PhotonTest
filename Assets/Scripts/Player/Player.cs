@@ -355,6 +355,19 @@ public class Player : MonoBehaviour
         AttackList.Clear(); // 리스트 초기화
     }
 
+    [PunRPC]
+    public void PerformAttack() //플레이어 폼에따라 공격 실행
+    {
+        switch (KirbyFormNum)
+        {
+            case 1:
+                EatKirby.Attack();
+                break;
+            case 2:
+                curAbility.AttackHandle();
+                break;
+        }
+    }
 
 
     public void SetCurrentTarget(Collider2D enemyCollider)

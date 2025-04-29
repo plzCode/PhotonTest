@@ -50,4 +50,10 @@ public class KirbyDamageStar : MonoBehaviour
             moveSpeed = randomSpeed;
         }
     }
+
+    [PunRPC]
+    public void DestroySelf()
+    {
+        PhotonNetwork.Destroy(gameObject);
+    }
 }
