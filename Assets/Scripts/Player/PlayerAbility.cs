@@ -22,14 +22,14 @@ public abstract class PlayerAbility : MonoBehaviour
     public virtual void OnAbilityCopied(Player owner)
     {
         this.owner = owner;
-        PhotonAnimatorView animatorView = owner.GetComponentInChildren<PhotonAnimatorView>();
+        /*PhotonAnimatorView animatorView = owner.GetComponentInChildren<PhotonAnimatorView>();
         RuntimeAnimatorController prevAnim = owner.GetComponentInChildren<Animator>().runtimeAnimatorController;
         for (int i = 0; i < prevAnim.animationClips.Length; i++)
         {
             animatorView.SetParameterSynchronized(prevAnim.animationClips[i].name, PhotonAnimatorView.ParameterType.Bool, PhotonAnimatorView.SynchronizeType.Disabled);
         }
         animatorView.GetSynchronizedParameters().Clear();
-        animatorView.GetSynchronizedLayers().Clear();
+        animatorView.GetSynchronizedLayers().Clear();*/
 
     }
 
@@ -42,8 +42,8 @@ public abstract class PlayerAbility : MonoBehaviour
         PhotonView pView = owner.GetComponent<PhotonView>();
         pView.RPC("Change_Animator_Controller", RpcTarget.Others, pView.ViewID);
         */
-        this.owner = null;         
-       
+        Destroy(owner.curAbility);
+        this.owner = null;
     }
 
     public abstract void AttackHandle();

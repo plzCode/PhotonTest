@@ -16,7 +16,8 @@ public class Ability_Eat : PlayerAbility
         EatKirby = Resources.Load<RuntimeAnimatorController>("Test/Eat_Kirby"); //바꿀 애니메이터 파일을 찾아 저장합니다.
         owner.GetComponentInChildren<Animator>().runtimeAnimatorController = EatKirby; //플레이어에게 애니메이터 파일을 바꿔넣습니다.
 
-        pView.RPC("Change_Animator_Controller", RpcTarget.AllBuffered, pView.ViewID);
+        //pView.RPC("Change_Animator_Controller", RpcTarget.AllBuffered, pView.ViewID);
+        owner.Change_Animator_Controller(pView.ViewID);
         Debug.Log("Eat ability copied");
         AddState(owner);
     }

@@ -11,6 +11,7 @@ public class PlayerChageFormState : PlayerState
     {
         base.Enter();
         player.lineVelocity(0f, 0f);
+        Debug.Log("ChangeFormState.cs");
     }
 
     public override void Exit()

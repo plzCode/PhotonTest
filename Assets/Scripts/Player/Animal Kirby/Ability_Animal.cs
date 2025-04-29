@@ -20,7 +20,8 @@ public class Ability_Animal : PlayerAbility
 
         owner.GetComponentInChildren<Animator>().runtimeAnimatorController = animalKirby; //플레이어에게 애니메이터 파일을 바꿔넣습니다.
 
-        pView.RPC("Change_Animator_Controller", RpcTarget.AllBuffered, pView.ViewID);
+        //pView.RPC("Change_Animator_Controller", RpcTarget.AllBuffered, pView.ViewID);
+        owner.Change_Animator_Controller(pView.ViewID);
         AddState(owner);
         Debug.Log("Animal ability copied");
         

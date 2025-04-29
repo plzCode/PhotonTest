@@ -128,7 +128,7 @@ MonoBehaviour:
   player: {fileID: 0}
   enemy: {fileID: 0}
   pView: {fileID: 0}
-  Eat: 0
+  isEat: 0
   PormNumber: 0
 --- !u!61 &3885229639093785565
 BoxCollider2D:

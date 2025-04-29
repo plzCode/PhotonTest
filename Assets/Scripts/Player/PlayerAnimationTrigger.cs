@@ -34,19 +34,22 @@ public class PlayerAnimatorController : MonoBehaviour
 
     public void ChangeForm()
     {
+
+        player.KirbyFormNum = player.EatKirbyFormNum; //저장되어있던 몹 넘버를 변신하는 넘버로 넘긴다
         player.GetComponent<PhotonView>().RPC("SyncFormNum", RpcTarget.AllBuffered);
 
         if (player.KirbyFormNum > 0) //0이상이면 먹은 적 커비로 변신
         {
             //player.KirbyFrom(); //변신
             player.Call_RPC("KirbyForm", RpcTarget.All); //변신
-            player.stateMachine.ChangeState(player.changeFormState);
+                                                         //player.stateMachine.ChangeState(player.changeFormState);
         }
         else
         {
             player.curAbility.OnAbilityDestroyed(player); //0이면 기본 커비로 변환
             Destroy(player.curAbility);
             player.stateMachine.ChangeState(player.idleState);
+            Debug.Log("Change Form");
         }
     }
 

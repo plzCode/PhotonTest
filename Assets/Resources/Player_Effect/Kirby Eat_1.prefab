@@ -174,7 +174,7 @@ MonoBehaviour:
   player: {fileID: 0}
   enemy: {fileID: 0}
   pView: {fileID: 0}
-  Eat: 0
+  isEat: 0
   PormNumber: 0
 --- !u!114 &5528705831134432794
 MonoBehaviour:

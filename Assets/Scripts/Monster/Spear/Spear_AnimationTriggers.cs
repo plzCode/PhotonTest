@@ -12,7 +12,7 @@ public class Spear_AnimationTriggers : MonoBehaviour
 
     private void CalledFunction()
     {
-        Debug.Log("CalledFunction 호출됨");
+        //Debug.Log("CalledFunction 호출됨");
         // RPC 호출을 마스터 클라이언트에서만 처리
         if (PhotonNetwork.IsMasterClient)
         {

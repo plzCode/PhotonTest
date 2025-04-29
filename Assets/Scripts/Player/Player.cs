@@ -150,9 +150,11 @@ public class Player : MonoBehaviour
         stateMachine.state.Update();
 
         DashTime(); //대쉬상호작용 타임
+        Hill();
 
         #region TestRegion
-        if (Input.GetKeyDown(KeyCode.Z) && GetComponent<PhotonView>().IsMine)
+        if (pView.IsMine == false) return; //내 캐릭터가 아닐때는 리턴
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             if (curAbility != null)
             {
@@ -163,8 +165,8 @@ public class Player : MonoBehaviour
                 Debug.Log("Normal Kirby Attack");
             }
         }
-        Debug.Log(EatKirbyFormNum);
-        if (Input.GetKeyDown(KeyCode.X) && GetComponent<PhotonView>().IsMine)
+        
+        if (Input.GetKeyDown(KeyCode.X))
         {
             if (curAbility == null)
             {
@@ -187,30 +189,12 @@ public class Player : MonoBehaviour
                 curAbility.AttackHandle();
             }
         }
-
         #endregion
-        Hill();
+        
 
     }   
 
-    public int EatKirbyFormNum;
-    public int KirbyFormNum;
-    [PunRPC]
-    public void KirbyForm() //커비가 먹은 적의 고유 번호에 따라 변신 폼을 정함
-    {
-        Debug.Log("KirbyFrom 실행됨");
-            switch (KirbyFormNum)
-            {
-            case 1: //먹은 폼
-                    curAbility = gameObject.AddComponent<Ability_Eat>();
-                    curAbility.OnAbilityCopied(this);
-                    break;
-            case 2: //애니멀 폼
-                    curAbility = gameObject.AddComponent<Ability_Animal>();
-                    curAbility.OnAbilityCopied(this);
-                    break;
-            }
-    }
+    
     [PunRPC]
     public void SyncFormNum()
     {
@@ -320,9 +304,10 @@ public class Player : MonoBehaviour
 
 
     [PunRPC]
-    public void AttackAdd(float _x, string effectName, Vector3 effectPos)
+    public void AttackAdd(float _x, string effectName, Vector3 effectPos, int pViewId)
     {
         GameObject effect = null;
+        PhotonView pView = PhotonView.Find(pViewId);
 
         if (_x > 0)
             effect = PhotonNetwork.Instantiate("Player_Effect/" + effectName, effectPos, Quaternion.identity);
@@ -331,12 +316,14 @@ public class Player : MonoBehaviour
 
         if (effect != null)
         {
-            effect.GetComponent<EatEffect>().player = this;
-            effect.transform.SetParent(this.transform);
+            effect.GetComponent<EatEffect>().player = pView.GetComponent<Player>();
+            effect.GetComponent<EatEffect>().pView = pView;
+            effect.transform.SetParent(pView.transform);
             AttackList.Add(effect);
             //effect.GetComponent<PhotonView>().RPC("SetPlayer", RpcTarget.AllBuffered, pView.ViewID);
         }
     }
+
 
     [PunRPC]
     public void AttackDestroy()
@@ -354,6 +341,38 @@ public class Player : MonoBehaviour
 
         AttackList.Clear(); // 리스트 초기화
     }
+
+    [PunRPC]
+    public void EatEnemy(int enemyViewId)
+    {
+        Debug.Log("EatEnemy");
+        //if (enemy == null || this == null) return; //이미 먹고있다면 리턴
+        PhotonView eView = PhotonView.Find(enemyViewId);
+        Debug.Log(enemyViewId);
+        if (eView == null) return;
+        Transform enemy = eView.transform;
+
+        enemy.GetComponentInChildren<PhotonAnimatorView>().enabled = false; //애니메이터 비활성화
+        enemy.GetComponent<PhotonView>().enabled = false; //포톤뷰 비활성화
+                                                          //PhotonView eView = enemy.GetComponent<PhotonView>();
+                                                          //PhotonNetwork.Destroy(enemy.gameObject);  //적삭제
+                                                          //this.EatKirbyFormNum = PormNumber; //먹는 커비 모션에 적의 변신 번호 값을 저장
+
+        Debug.Log(enemy.name + " : " + eView.ViewID);
+        this.EatKirbyFormNum = enemy.GetComponent<EnemyNumber>().Number;
+        this.KirbyFormNum = 1; //먹는 커비로 변신
+        Debug.Log(this.GetComponent<PhotonView>().ViewID + "의 적을 먹음"); //적을 먹음
+        this.stateMachine.ChangeState(this.eatState); //플레이어 먹은모션            
+                                                      //PlayerEetState에서 변신 함수 씀
+
+        //eView.RPC("DestroySelf", eView.Owner);
+        if (enemy != null && PhotonNetwork.IsMasterClient)
+        {
+            enemy.GetComponent<Enemy>().DestroySelf();
+        }
+
+    }
+
 
     [PunRPC]
     public void PerformAttack() //플레이어 폼에따라 공격 실행
@@ -420,6 +439,29 @@ public class Player : MonoBehaviour
             playerView.GetComponentInChildren<PhotonAnimatorView>().SetParameterSynchronized(animatorContoller.animationClips[i].name, PhotonAnimatorView.ParameterType.Bool, PhotonAnimatorView.SynchronizeType.Discrete);
         }
     }*/
+    public int EatKirbyFormNum;
+    public int KirbyFormNum;
+    [PunRPC]
+    public void KirbyForm() //커비가 먹은 적의 고유 번호에 따라 변신 폼을 정함
+    {
+        Debug.Log("KirbyFrom 실행됨");
+
+        switch (KirbyFormNum)
+        {
+            case 1: //먹은 폼
+                curAbility = gameObject.AddComponent<Ability_Eat>();
+                Debug.Log("먹은 폼");
+                break;
+            case 2: //애니멀 폼
+                curAbility = gameObject.AddComponent<Ability_Animal>();
+                break;
+            default:
+                Debug.LogError("Invalid KirbyFormNum: " + KirbyFormNum);
+                return;
+        }
+        if (curAbility == null) return; //어빌리티가 없으면 리턴
+        curAbility.OnAbilityCopied(this);
+    }
 
     [PunRPC]
     public void Change_Animator_Controller(int playerViewID)
@@ -430,41 +472,47 @@ public class Player : MonoBehaviour
             Debug.LogError("PhotonView not found for ViewID: " + playerViewID);
             return;
         }
-        
+
         Animator animator = playerView.GetComponentInChildren<Animator>();
-        RuntimeAnimatorController newController = animator.GetComponent<Animator>().runtimeAnimatorController;
         PhotonAnimatorView animatorView = playerView.GetComponentInChildren<PhotonAnimatorView>();
 
-        // Animator Controller 변경
-        animator.runtimeAnimatorController = newController;
-
-        // PhotonAnimatorView의 동기화 파라미터 초기화
-        if (animatorView != null)
+        if (animatorView == null || animator == null)
         {
-            animatorView.GetSynchronizedParameters().Clear();
-            animatorView.GetSynchronizedLayers().Clear();
-            animatorView.SetLayerSynchronized(0, PhotonAnimatorView.SynchronizeType.Discrete);
-            // 새 Animator Controller의 파라미터를 동기화 설정
-            foreach (AnimatorControllerParameter param in animator.parameters)
+            Debug.LogError("Animator or PhotonAnimatorView is null.");
+            return;
+        }
+
+        // Clear existing synchronization
+        animatorView.GetSynchronizedParameters().Clear();
+        animatorView.GetSynchronizedLayers().Clear();
+
+        // Synchronize parameters
+        foreach (AnimatorControllerParameter param in animator.parameters)
+        {
+            if (param.type == AnimatorControllerParameterType.Bool)
             {
-                if (param.type == AnimatorControllerParameterType.Bool)
-                {
-                    animatorView.SetParameterSynchronized(param.name, PhotonAnimatorView.ParameterType.Bool, PhotonAnimatorView.SynchronizeType.Discrete);
-                }
-                else if (param.type == AnimatorControllerParameterType.Float)
-                {
-                    animatorView.SetParameterSynchronized(param.name, PhotonAnimatorView.ParameterType.Float, PhotonAnimatorView.SynchronizeType.Continuous);
-                }
-                else if (param.type == AnimatorControllerParameterType.Int)
-                {
-                    animatorView.SetParameterSynchronized(param.name, PhotonAnimatorView.ParameterType.Int, PhotonAnimatorView.SynchronizeType.Discrete);
-                }
-                else if (param.type == AnimatorControllerParameterType.Trigger)
-                {
-                    animatorView.SetParameterSynchronized(param.name, PhotonAnimatorView.ParameterType.Trigger, PhotonAnimatorView.SynchronizeType.Discrete);
-                }
+                animatorView.SetParameterSynchronized(param.name, PhotonAnimatorView.ParameterType.Bool, PhotonAnimatorView.SynchronizeType.Discrete);
+            }
+            else if (param.type == AnimatorControllerParameterType.Float)
+            {
+                animatorView.SetParameterSynchronized(param.name, PhotonAnimatorView.ParameterType.Float, PhotonAnimatorView.SynchronizeType.Discrete);
+            }
+            else if (param.type == AnimatorControllerParameterType.Int)
+            {
+                animatorView.SetParameterSynchronized(param.name, PhotonAnimatorView.ParameterType.Int, PhotonAnimatorView.SynchronizeType.Discrete);
+            }
+            else
+            {
+                Debug.LogWarning($"Unsupported parameter type: {param.type} for parameter {param.name}");
             }
         }
+
+        // Synchronize layers
+        for (int i = 0; i < animator.layerCount; i++)
+        {
+            animatorView.SetLayerSynchronized(i, PhotonAnimatorView.SynchronizeType.Discrete);
+        }
+        animatorView.enabled = true; // Enable the animator view to allow synchronization
     }
 
     public virtual void AnimationFinishTrigger() => stateMachine.state.AnimationFinishTrigger();

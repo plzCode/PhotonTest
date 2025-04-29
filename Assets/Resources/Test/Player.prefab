@@ -118,11 +118,11 @@ MonoBehaviour:
   isInhaling: 0
   attackCheck: {fileID: 7561445261509129977}
   pView: {fileID: 0}
-  EatKirbyFormNum: 0
-  KirbyFormNum: 0
   dashTime: 0
   dash: 0
   turn: 0
+  EatKirbyFormNum: 0
+  KirbyFormNum: 0
 --- !u!114 &7655887825162473413
 MonoBehaviour:
   m_ObjectHideFlags: 0
