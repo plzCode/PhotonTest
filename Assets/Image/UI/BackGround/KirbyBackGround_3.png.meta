@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      KirbyBackGround_3_0: 3002496721527168070
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
