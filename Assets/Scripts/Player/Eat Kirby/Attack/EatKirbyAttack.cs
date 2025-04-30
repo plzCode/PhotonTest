@@ -24,11 +24,6 @@ public class EatKirbyAttack : MonoBehaviourPun
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Enemy enemy = collision.gameObject.GetComponent<Enemy>();
-            if (enemy != null)
-            {
-                enemy.photonView.RPC("TakeDamage", RpcTarget.All, player.curAbility.attackPower);
-            }
             PhotonNetwork.Destroy(gameObject);
         }
 

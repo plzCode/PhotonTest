@@ -181,7 +181,7 @@ public class Player : MonoBehaviour
 
         }
 
-        //플레이어 idle 상태로 옮김
+        //플레이어 Ground 상태로 옮길거임
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             if (curAbility != null)
@@ -190,7 +190,7 @@ public class Player : MonoBehaviour
             }
         }
         #endregion
-        
+
 
     }   
 
@@ -390,21 +390,6 @@ public class Player : MonoBehaviour
     }
 
 
-    [PunRPC]
-    public void PerformAttack() //플레이어 폼에따라 공격 실행
-    {
-        switch (KirbyFormNum)
-        {
-            case 1:
-                curAbility.AttackHandle();
-                break;
-            case 2:
-                curAbility.AttackHandle();
-                break;
-        }
-    }
-
-
     public void SetCurrentTarget(Collider2D enemyCollider)
     {
         currentEnemy = enemyCollider;
@@ -471,6 +456,10 @@ public class Player : MonoBehaviour
             case 2: //애니멀 폼
                 curAbility = gameObject.AddComponent<Ability_Animal>();
                 break;
+            case 3: //커터 폼
+                curAbility = gameObject.AddComponent<Ability_Cutter>();
+                break;
+
             default:
                 Debug.LogError("Invalid KirbyFormNum: " + KirbyFormNum);
                 return;

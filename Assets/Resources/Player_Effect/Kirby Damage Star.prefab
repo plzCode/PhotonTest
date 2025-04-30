@@ -338,6 +338,7 @@ MonoBehaviour:
   Number: 0
   a: "1. \uCEE4\uBE44 \uBA39\uC740 \uD3FC"
   b: "2. \uCEE4\uBE44 \uC560\uB2C8\uBA40 \uD3FC"
+  c: "3. \uCEE4\uBE44 \uCEE4\uD130 \uD3FC"
 --- !u!114 &496748875433877706
 MonoBehaviour:
   m_ObjectHideFlags: 0

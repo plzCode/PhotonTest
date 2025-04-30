@@ -16,6 +16,7 @@ public abstract class PlayerAbility : MonoBehaviour
         Normal, //0
         Eat, //1
         Animal, //2
+        Cutter, //3
     }
 
 

@@ -38,7 +38,7 @@ public class KirbyDamageStar : Item
 
         if (dleeteTime > 8f)
         {
-            PhotonNetwork.Destroy(gameObject);
+            DestroySelf();
         }
     }
 
