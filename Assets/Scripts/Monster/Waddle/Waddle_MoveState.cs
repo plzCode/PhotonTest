@@ -1,10 +1,12 @@
+using Photon.Pun;
 using UnityEngine;
 
-public class Waddle_MoveState : Waddle_GroundedState
+public class Waddle_MoveState : EnemyState
 {
-    public Waddle_MoveState(Enemy _enemyBase, EnemyStateMachine _stateMachine, string _animBoolName, Monster_Waddle _enemy) : base(_enemy, _stateMachine, _animBoolName,_enemy)
+    private Enemy enemy;
+    public Waddle_MoveState(Enemy _enemyBase, EnemyStateMachine _stateMachine, string _animBoolName) : base(_enemyBase, _stateMachine, _animBoolName)
     {
-
+        enemy = _enemyBase;
     }
     public override void Enter()
     {
@@ -20,12 +22,14 @@ public class Waddle_MoveState : Waddle_GroundedState
     {
         base.Update();
 
+        if(!PhotonNetwork.IsMasterClient)
+        { return; }
         enemy.SetVelocity(enemy.moveSpeed * enemy.facingDir, rb.linearVelocity.y);
 
         if (enemy.IsWallDetected())
         {
             enemy.Flip();
-            stateMachine.ChangeState(enemy.idleState);
+            enemy.photonView.RPC("ChangeState", RpcTarget.All, "Idle");
         }
 
 

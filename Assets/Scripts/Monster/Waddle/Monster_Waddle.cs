@@ -1,3 +1,4 @@
+using Photon.Pun;
 using UnityEngine;
 
 public class Monster_Waddle : Enemy
@@ -7,14 +8,17 @@ public class Monster_Waddle : Enemy
     #region States
     public Waddle_IdleState idleState { get; private set; }
     public Waddle_MoveState moveState { get; private set; }
+    public Spear_HitState hitState { get; private set; }
     #endregion
 
     protected override void Awake()
     {
         base.Awake();
 
-        idleState = new Waddle_IdleState(this, stateMachine, "Idle", this);
-        moveState = new Waddle_MoveState(this, stateMachine, "Move", this);
+        idleState = new Waddle_IdleState(this, stateMachine, "Idle");
+        moveState = new Waddle_MoveState(this, stateMachine, "Move");
+        hitState = new Spear_HitState(this, stateMachine, "Hit");
+        
     }
 
     protected override void Start()
@@ -28,5 +32,31 @@ public class Monster_Waddle : Enemy
     protected override void Update()
     {
         base.Update();
+    }
+
+
+    [PunRPC]
+    public void ChangeState(string stateName)
+    {
+        if (stateName == "Idle")
+            stateMachine.ChangeState(idleState);
+        else if (stateName == "Move")
+            stateMachine.ChangeState(moveState);
+        else if (stateName == "Hit")
+            stateMachine.ChangeState(hitState);
+
+    }
+
+    [PunRPC]
+    public override void TakeDamage(float _damage)
+    {
+        base.TakeDamage(_damage);
+        Debug.Log("몬스터가 피해를 " + _damage + "받음");
+
+        if(PhotonNetwork.IsMasterClient)
+        {
+            photonView.RPC("ChangeState", RpcTarget.All,"Hit");
+        }
+        
     }
 }

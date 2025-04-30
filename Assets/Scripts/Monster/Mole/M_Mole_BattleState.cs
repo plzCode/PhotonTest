@@ -1,22 +1,23 @@
+using Photon.Pun;
 using UnityEngine;
 
 public class M_Mole_BattleState : EnemyState
 {
     private Transform player;
-    private Monster_Mole enemy;
+    private Enemy enemy;
     private float facingPlayer;
     private bool isJumping;
 
-    public M_Mole_BattleState(Enemy _enemyBase, EnemyStateMachine _stateMachine, string _animBoolName, Monster_Mole _enemy) : base(_enemyBase, _stateMachine, _animBoolName)
+    public M_Mole_BattleState(Enemy _enemyBase, EnemyStateMachine _stateMachine, string _animBoolName) : base(_enemyBase, _stateMachine, _animBoolName)
     {
-        enemy = _enemy;
+        enemy = _enemyBase;
     }
 
     public override void Enter()
     {
         base.Enter();
 
-        player = GameObject.FindGameObjectWithTag("Player")?.transform;
+        player = GameManager.Instance.GetClosestPlayer(enemy.transform.position).GetComponent<Transform>();
 
 
 
@@ -30,6 +31,11 @@ public class M_Mole_BattleState : EnemyState
         }
 
         enemy.FlipController(facingPlayer);
+        if(PhotonNetwork.IsMasterClient)
+        {
+            enemy.canAttacking = true;
+        }
+       
     }
 
     public override void Update()
@@ -45,14 +51,17 @@ public class M_Mole_BattleState : EnemyState
         if(enemy.IsGroundDetected() && isJumping)
         {
             isJumping = false;
-            stateMachine.ChangeState(enemy.idleState);            
+            enemy.photonView.RPC("ChangeState", RpcTarget.All, "Idle");
         }
     }
 
     public override void Exit()
     {
         base.Exit();
+        enemy.canAttacking = false;
     }
+
+
 
     
 }

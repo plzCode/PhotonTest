@@ -36,6 +36,7 @@ public class Enemy : MonoBehaviour
     private float defaultMoveSpeed;
 
     [Header("공격 정보")]
+    public bool canAttacking;
     public float attackDistance;
     public float attackCooldown;
     public float attackPower;

@@ -1,29 +1,37 @@
+using Photon.Pun;
 using UnityEngine;
 
 public class M_Mole_IdleState : EnemyState
 {
-    private Monster_Mole enemy;
+    private Enemy enemy;
+    private Transform player;
 
 
-    public M_Mole_IdleState(Enemy _enemyBase, EnemyStateMachine _stateMachine, string _animBoolName, Monster_Mole _enemy) : base(_enemyBase, _stateMachine, _animBoolName)
+    public M_Mole_IdleState(Enemy _enemyBase, EnemyStateMachine _stateMachine, string _animBoolName) : base(_enemyBase, _stateMachine, _animBoolName)
     {
-        enemy = _enemy;
+        enemy = _enemyBase;
     }
 
     public override void Enter()
     {
         base.Enter();
-        enemy.SetZeroVelocity();
+        enemy.canAttacking = false;
+        if (PhotonNetwork.IsMasterClient)
+            enemy.SetZeroVelocity();
         
+
     }
 
     public override void Update()
     {
         base.Update();
 
-        if (enemy.GetComponentInChildren<Renderer>().isVisible)
+        player = GameManager.Instance.GetClosestPlayer(enemy.transform.position).GetComponent<Transform>();
+
+        // 조건: 마스터 클라이언트 && 플레이어 존재 && 거리 5 이하
+        if (PhotonNetwork.IsMasterClient && player != null && Vector2.Distance(player.position, enemy.transform.position) <= 8f)
         {
-            stateMachine.ChangeState(enemy.battleState);
+            enemy.photonView.RPC("ChangeState", RpcTarget.All, "Battle");
         }
 
     }
