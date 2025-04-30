@@ -141,6 +141,8 @@ GameObject:
   - component: {fileID: 9140928487644564934}
   - component: {fileID: 8533131503691266927}
   - component: {fileID: 496748875433877706}
+  - component: {fileID: 7904096130816353784}
+  - component: {fileID: 6806908288893473239}
   m_Layer: 0
   m_Name: Kirby Damage Star
   m_TagString: Item
@@ -354,10 +356,39 @@ MonoBehaviour:
   Synchronization: 3
   OwnershipTransfer: 0
   observableSearch: 2
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: 7904096130816353784}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &7904096130816353784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2657151343364848430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowLayerWeightsInspector: 1
+  ShowParameterInspector: 1
+  m_SynchronizeParameters: []
+  m_SynchronizeLayers: []
+--- !u!114 &6806908288893473239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2657151343364848430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4c7722b13216c744a37d101eb50c965, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7106332294544705775
 GameObject:
   m_ObjectHideFlags: 0

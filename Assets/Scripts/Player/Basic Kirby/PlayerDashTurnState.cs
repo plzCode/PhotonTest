@@ -14,7 +14,7 @@ public class PlayerDashTurnState : PlayerState
         player.dash = true;
         player.dashTime = 0f;
         player.Flip();
-        player.lineVelocity(0f, rb.linearVelocityY);
+        player.lineVelocity(0f, -1f);
     }
 
     public override void Exit()

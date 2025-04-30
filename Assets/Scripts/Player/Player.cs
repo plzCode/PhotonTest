@@ -214,31 +214,34 @@ public class Player : MonoBehaviour
 
 
     //충돌체크
-    public bool IsGroundCheck() => Physics2D.Raycast(groundCheck.position, Vector2.down, groundLine, whatIsGround | whatIsHill);
+    public bool IsGroundCheck() => Physics2D.OverlapCircle(groundCheck.position, groundLine, whatIsGround | whatIsHill);
     public bool IsHillCheck() => Physics2D.Raycast(hillCheck.position, Vector2.down, hillLine, whatIsHill);
 
-    public void Hill() //언덕에서 캐릭터가 미끄러지지 않게 함
+    public void Hill()
     {
-        RaycastHit2D hit = Physics2D.Raycast(hillCheck.position, Vector2.down, groundLine, whatIsHill);
+        RaycastHit2D hit = Physics2D.Raycast(hillCheck.position, Vector2.down, hillLine, whatIsHill);
 
-        if(hit)
+        if (hit)
         {
             perp = Vector2.Perpendicular(hit.normal).normalized;
             angle = Vector2.Angle(hit.normal, Vector2.up);
-
-            if (angle != 0)
-                isSlope = true;
-            else
-                isSlope = false;
+            isSlope = angle != 0;
 
             Debug.DrawLine(hit.point, hit.point + hit.normal, Color.blue);
             Debug.DrawLine(hit.point, hit.point + perp, Color.red);
+        }
+        else
+        {
+            isSlope = false; // 언덕이 아닌 경우
         }
     }
 
     public void OnDrawGizmos()
     {
-        Gizmos.DrawLine(hillCheck.position, new Vector3(groundCheck.position.x, groundCheck.position.y - groundLine));
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(groundCheck.position, groundLine);
+
+        Gizmos.color = Color.red;
         Gizmos.DrawLine(hillCheck.position, new Vector3(hillCheck.position.x, hillCheck.position.y - hillLine));
     }
 
@@ -368,7 +371,20 @@ public class Player : MonoBehaviour
         //eView.RPC("DestroySelf", eView.Owner);
         if (enemy != null && PhotonNetwork.IsMasterClient)
         {
-            enemy.GetComponent<Enemy>().DestroySelf();
+            Enemy Enemy = enemy.GetComponent<Enemy>();
+            if (Enemy != null)
+            {
+                Enemy.DestroySelf();
+            }
+            else
+            {
+                Item Item = enemy.GetComponent<Item>();
+                if (Item != null)
+                {
+                    Item.DestroySelf();
+                }
+            }
+
         }
 
     }
@@ -380,7 +396,7 @@ public class Player : MonoBehaviour
         switch (KirbyFormNum)
         {
             case 1:
-                EatKirby.Attack();
+                curAbility.AttackHandle();
                 break;
             case 2:
                 curAbility.AttackHandle();

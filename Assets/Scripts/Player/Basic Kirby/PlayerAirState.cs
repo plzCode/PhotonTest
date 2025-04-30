@@ -23,6 +23,8 @@ public class PlayerAirState : PlayerState
     public override void Update()
     {
         base.Update();
+        if (pView.IsMine == false) return;
+
         coolTime += Time.deltaTime;
 
         if (!player.TimeBool && coolTime > 0.4f)
@@ -50,8 +52,10 @@ public class PlayerAirState : PlayerState
             return;
         }
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) && player.KirbyFormNum == 0)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && player.curAbility == null)
+        {
             stateMachine.ChangeState(player.eating12State);
+        }
 
 
         if (Input.GetKeyDown(KeyCode.Space) && player.TimeBool)

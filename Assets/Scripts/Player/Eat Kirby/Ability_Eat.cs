@@ -46,19 +46,4 @@ public class Ability_Eat : PlayerAbility
     {
         attackState = null;
     }
-
-    public void Attack()
-    {
-        if (GetComponent<PhotonView>().IsMine)
-        {
-            if (player.curAbility != null)
-            {
-                player.curAbility.AttackHandle();
-            }
-            else
-            {
-                Debug.Log("Normal Kirby Attack");
-            }
-        }
-    }
 }

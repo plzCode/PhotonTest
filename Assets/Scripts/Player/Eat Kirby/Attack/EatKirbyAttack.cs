@@ -3,10 +3,10 @@ using Photon.Pun;
 
 public class EatKirbyAttack : MonoBehaviourPun
 {
-    private Player player => GetComponentInParent<Player>();
+    private Player player => GetComponent<Player>();
 
     public float moveSpeed = 8f;
-    public float lifeTime = 10f; // 10초 뒤에 삭제
+    public float lifeTime = 5f; // 10초 뒤에 삭제
     private float timer = 0f;
 
     void Update()
@@ -16,28 +16,23 @@ public class EatKirbyAttack : MonoBehaviourPun
         timer += Time.deltaTime;
         if (timer > lifeTime)
         {
-            Destroy();
+            PhotonNetwork.Destroy(gameObject);
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-
-        if (other.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy"))
         {
-            Debug.Log("적에게" + player.curAbility.attackPower + "만큼 데미지를 줌");
+            Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+            if (enemy != null)
+            {
+                enemy.photonView.RPC("TakeDamage", RpcTarget.All, player.curAbility.attackPower);
+            }
+            PhotonNetwork.Destroy(gameObject);
         }
 
-        // Ground 레이어 체크 (충돌했을 때 삭제)
-        if (other.gameObject.layer == LayerMask.NameToLayer("Ground"))
-        {
-            Destroy();
-        }
-    }
-
-    private void Destroy()
-    {
-        if (photonView.IsMine)
+        if (collision.gameObject.CompareTag("Ground"))
         {
             PhotonNetwork.Destroy(gameObject);
         }

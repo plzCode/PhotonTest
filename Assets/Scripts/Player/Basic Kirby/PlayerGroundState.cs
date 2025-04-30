@@ -1,5 +1,3 @@
-using Photon.Pun;
-using Photon.Realtime;
 using UnityEngine;
 
 public class PlayerGroundState : PlayerState
@@ -21,7 +19,7 @@ public class PlayerGroundState : PlayerState
     public override void Update()
     {
         base.Update();
-        if(pView.IsMine == false) return;
+        if (pView.IsMine == false) return;
 
         if (!player.IsGroundCheck() && !player.isSlope)
             stateMachine.ChangeState(player.airState);
@@ -45,12 +43,14 @@ public class PlayerGroundState : PlayerState
             return;
         }
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) && player.KirbyFormNum == 0)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && player.curAbility == null)
+        {
             stateMachine.ChangeState(player.eating12State);
+        }
 
         if (Input.GetKeyDown(KeyCode.Mouse0) && player.curAbility != null)
         {
-            player.GetComponent<PhotonView>().RPC(nameof(player.PerformAttack), RpcTarget.All);
+            player.curAbility.AttackHandle();
         }
     }
 }

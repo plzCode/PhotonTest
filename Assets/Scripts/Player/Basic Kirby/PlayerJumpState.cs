@@ -52,7 +52,7 @@ public class PlayerJumpState : PlayerState
             return;
         }
 
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0) && player.curAbility == null)
             stateMachine.ChangeState(player.eating12State);
 
 

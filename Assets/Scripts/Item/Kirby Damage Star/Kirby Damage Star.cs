@@ -1,7 +1,7 @@
 using Photon.Pun;
 using UnityEngine;
 
-public class KirbyDamageStar : MonoBehaviour
+public class KirbyDamageStar : Item
 {
     private Player player;
     private EnemyNumber enemyNumber;
@@ -49,11 +49,5 @@ public class KirbyDamageStar : MonoBehaviour
             randomSpeed = Random.Range(-3f, 3f);
             moveSpeed = randomSpeed;
         }
-    }
-
-    [PunRPC]
-    public void DestroySelf()
-    {
-        PhotonNetwork.Destroy(gameObject);
     }
 }

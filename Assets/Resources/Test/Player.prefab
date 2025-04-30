@@ -103,7 +103,7 @@ MonoBehaviour:
   AttackList: []
   currentEnemy: {fileID: 0}
   groundCheck: {fileID: 6332117634270816776}
-  groundLine: 0.85
+  groundLine: 0.34
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
@@ -624,7 +624,7 @@ Transform:
   m_GameObject: {fileID: 5482814269045506837}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
