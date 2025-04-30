@@ -55,5 +55,45 @@ public class PlayerTest : MonoBehaviourPunCallbacks, IPunObservable
                 break;
         }
     }
+
+    [PunRPC]
+    public void CreateHealthBar(int number, int playerViewID)
+    {
+        PhotonView playerView = PhotonView.Find(playerViewID);
+        if (playerView == null)
+        {
+            Debug.LogError($"Player with ViewID {playerViewID} not found.");
+            return;
+        }
+
+        Player player = playerView.GetComponent<Player>();
+        if (player == null)
+        {
+            Debug.LogError("Player component not found on the target object.");
+            return;
+        }
+
+        Canvas canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
+        if (canvas == null)
+        {
+            Debug.LogError("Canvas not found in the scene.");
+            return;
+        }
+
+        // 체력 UI 생성
+        GameObject healthBar = Instantiate(Resources.Load("UI/HealthBar" + number.ToString()), canvas.transform) as GameObject;
+        healthBar.transform.SetParent(canvas.transform);
+
+        // UI 위치 조정 (플레이어 리스트에 따라 위치 변경)
+        float verticalSpacing = Screen.height * 0.14f; // 화면 높이의 14%를 간격으로 사용
+        float i = verticalSpacing * GameManager.Instance.playerList.Count;
+        healthBar.transform.position = new Vector3(Screen.width * 0.984f, Screen.height * 0.945f - i, 0);
+
+        // Health_Bar 설정
+        Health_Bar healthBarScript = healthBar.GetComponentInChildren<Health_Bar>();
+        healthBarScript.UpdateHealthBar(100f);
+        healthBarScript.SetPlayer(player);
+        player.health_Bar = healthBarScript;
+    }
 }
 

@@ -39,10 +39,10 @@ public abstract class PlayerAbility : MonoBehaviour
         owner.GetComponentInChildren<Animator>().runtimeAnimatorController = 
             Resources.Load<RuntimeAnimatorController>("Test/Kirby");
         owner.KirbyFormNum = 0; //커비 변신 초기화
-        /*
+        
         PhotonView pView = owner.GetComponent<PhotonView>();
         pView.RPC("Change_Animator_Controller", RpcTarget.Others, pView.ViewID);
-        */
+        
         Destroy(owner.curAbility);
         this.owner = null;
     }

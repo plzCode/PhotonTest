@@ -83,7 +83,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 462a0ec88eea82f43b4c9d15cd55a998, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerHP: 0
+  PlayerHP: 100
   MoveSpeed: 3
   DashSpeed: 5
   JumpPower: 2.5
@@ -119,6 +119,7 @@ MonoBehaviour:
   isInhaling: 0
   attackCheck: {fileID: 7561445261509129977}
   pView: {fileID: 0}
+  health_Bar: {fileID: 0}
   dashTime: 0
   dash: 0
   turn: 0

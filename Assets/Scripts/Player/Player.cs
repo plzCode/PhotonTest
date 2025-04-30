@@ -99,6 +99,9 @@ public class Player : MonoBehaviour
 
     public PhotonView pView;
 
+    //UI
+    public Health_Bar health_Bar;
+
 
     public void Awake()
     {
@@ -413,6 +416,10 @@ public class Player : MonoBehaviour
             curAbility.OnAbilityDestroyed(this); //어빌리티 초기화
         }
         PlayerHP -= Damage;
+        if(health_Bar != null)
+        {
+            health_Bar.UpdateHealthBar(PlayerHP);
+        }
         stateMachine.ChangeState(damageState);  //굴러가는거 실행
     }
 
@@ -523,6 +530,7 @@ public class Player : MonoBehaviour
 
     public virtual void AnimationFinishTrigger() => stateMachine.state.AnimationFinishTrigger();
 
+    
 
     public void Call_RPC(string rpc_Name, RpcTarget type)
     {

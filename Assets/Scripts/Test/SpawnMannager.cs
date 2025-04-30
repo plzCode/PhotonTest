@@ -33,10 +33,10 @@ public class SpawnMannager : MonoBehaviourPun
 
     void SpawnMyPlayer()
     {
-        int actorNumber = PhotonNetwork.LocalPlayer.ActorNumber; //ActorNumber -> 플레이어 번호
+        int actorNumber = PhotonNetwork.LocalPlayer.ActorNumber; // ActorNumber -> 플레이어 번호
         int spawnIndex = (actorNumber - 1) % spawnPoints.Length;
 
-        Transform spawnPoint = spawnPoints[spawnIndex];        
+        Transform spawnPoint = spawnPoints[spawnIndex];
         GameObject tmpPlayer = PhotonNetwork.Instantiate(playerPrefabName, spawnPoint.position, spawnPoint.rotation);
 
         PhotonView playerView = tmpPlayer.GetComponent<PhotonView>();
@@ -51,7 +51,6 @@ public class SpawnMannager : MonoBehaviourPun
         pCam.AddComponent<CinemachineFollow>();
         pCam.AddComponent<CinemachineRotationComposer>();
 
-
         pCam.Follow = tmpPlayer.transform;
         pCam.LookAt = tmpPlayer.transform;
         pCam.Lens.OrthographicSize = 6f;
@@ -60,6 +59,8 @@ public class SpawnMannager : MonoBehaviourPun
         Canvas canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
         canvas.worldCamera = pCam.GetComponent<CinemachineCamera>().GetComponent<Camera>();
 
+        // 체력 UI 설정을 모든 클라이언트에서 실행
+        playerView.RPC("CreateHealthBar", RpcTarget.AllBuffered, actorNumber, viewID);
     }
 
 
