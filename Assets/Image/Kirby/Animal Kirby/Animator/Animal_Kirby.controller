@@ -1,22 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1109 &-9149921101680033963
-AnimatorTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: Damage
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 8592261063791817263}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 1
 --- !u!1101 &-9041953628403156653
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -92,31 +75,6 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
---- !u!1101 &-8131347884758267696
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: EatingEnd
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 0}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 1
-  serializedVersion: 3
-  m_TransitionDuration: 0
-  m_TransitionOffset: 0
-  m_ExitTime: 0
-  m_HasExitTime: 0
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
 --- !u!1102 &-8005994946499362108
 AnimatorState:
   serializedVersion: 6
@@ -138,7 +96,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 7e7583622b10a2d4fb2d7bcb922199c0, type: 2}
+  m_Motion: {fileID: 7400000, guid: 5da3b4d525694864ab205023e14e8cfb, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -153,7 +111,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 942c3e9a2553c3147a478add64cb9cdd, type: 2}
+    m_Motion: {fileID: 7400000, guid: 2551b3c745f8a074d9ea89902b44fc73, type: 2}
     m_Threshold: -3
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -161,7 +119,7 @@ BlendTree:
     m_DirectBlendParameter: yVelocity
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 78b52e855c4c66845aa818749a813e6c, type: 2}
+    m_Motion: {fileID: 7400000, guid: 2c55d394571b18243ae4b8f1dbcb64b9, type: 2}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -169,7 +127,7 @@ BlendTree:
     m_DirectBlendParameter: yVelocity
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 9414a0a34e1b48448a6a8e95ded8c67f, type: 2}
+    m_Motion: {fileID: 7400000, guid: 66ab711c016b3e94ca21ecfc0f5a3981, type: 2}
     m_Threshold: 1
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -200,32 +158,6 @@ AnimatorTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 1
---- !u!1102 &-7297882039169420292
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Kirby Eat Down
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: c30b6c6084055aa4c85db64b4a0fc5f6, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
 --- !u!1101 &-6951821710431179456
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -272,34 +204,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 4b8c0e62601464a4196195205d11b6b8, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1102 &-6167638850116273412
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Kirby EatingEnd
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions:
-  - {fileID: -8131347884758267696}
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: d392f3ee92b86d243a4aa031f1a96c3a, type: 2}
+  m_Motion: {fileID: 7400000, guid: 5a4e330ebcdba0a4a8d6eb2f3480da91, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -368,7 +273,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: d0aca7580c22ed7468181b7364579a2e, type: 2}
+  m_Motion: {fileID: 7400000, guid: 49c8dde8a5748cc44b1135c907761337, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -395,7 +300,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 4b4ca06bbe21b7c4d9ad2763501f744f, type: 2}
+  m_Motion: {fileID: 7400000, guid: 9eca26f382716944bb51f98d517f3a3c, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -560,77 +465,6 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
---- !u!1102 &-2510932730124434959
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Kirby Eating_4
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 12d8db761b6452243bc42352feffa00b, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1101 &-2495864906598222987
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: Eating1
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Eating2
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 0}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 1
-  serializedVersion: 3
-  m_TransitionDuration: 0
-  m_TransitionOffset: 0
-  m_ExitTime: 0
-  m_HasExitTime: 0
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1109 &-2007108303720040281
-AnimatorTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: EatingEnd
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: -6167638850116273412}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 1
 --- !u!1101 &-1769714915056619112
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -673,31 +507,6 @@ AnimatorTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 1
---- !u!1101 &-1165578270694636245
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: Eat
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 0}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 1
-  serializedVersion: 3
-  m_TransitionDuration: 0
-  m_TransitionOffset: 0
-  m_ExitTime: 0.06250006
-  m_HasExitTime: 0
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
 --- !u!1101 &-897665779267467303
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -723,58 +532,6 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
---- !u!1101 &-838668132363657306
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: Damage
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 0}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 1
-  serializedVersion: 3
-  m_TransitionDuration: 0
-  m_TransitionOffset: 0
-  m_ExitTime: 0.5833334
-  m_HasExitTime: 0
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1102 &-233688578837337919
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Kirby Eat
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions:
-  - {fileID: -1165578270694636245}
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 2c9ede2c73eb7b443b2b3bcc605c4204, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
 --- !u!1109 &-46282875732819487
 AnimatorTransition:
   m_ObjectHideFlags: 1
@@ -802,30 +559,6 @@ AnimatorController:
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: ChangeForm
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: Eat
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: EatingEnd
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: Eating2
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: Eating1
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -934,71 +667,6 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
---- !u!1109 &20166765388496913
-AnimatorTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: Eating1
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 6516504211800141756}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 1
---- !u!1101 &581462311365103583
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions: []
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 6267454481363905869}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0
-  m_TransitionOffset: 0
-  m_ExitTime: 0.2
-  m_HasExitTime: 1
-  m_HasFixedDuration: 0
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1102 &1068281877201707445
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Kirby Eating_3
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: f53033df5a78a5c43aafdf3b96857cc9, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
 --- !u!1109 &1316718267322477268
 AnimatorTransition:
   m_ObjectHideFlags: 1
@@ -1012,23 +680,6 @@ AnimatorTransition:
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -8005994946499362108}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 1
---- !u!1109 &1466271423393904748
-AnimatorTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: Eat
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: -233688578837337919}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -1054,7 +705,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 31fd4d66f4b60c54f984a0d176656542, type: 2}
+  m_Motion: {fileID: 7400000, guid: d0a67eb056786e14aaa69ec4639d32ca, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -1167,7 +818,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 568cc56024805264ca7343fbe3425e79, type: 2}
+  m_Motion: {fileID: 7400000, guid: 3eb232832fdbede4c959d690c0088295, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -1228,7 +879,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: cf8b0d6d045c1364e82fcea5faccddd0, type: 2}
+  m_Motion: {fileID: 7400000, guid: d3b9c5f54f7423b4e981dc069929ea8c, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -1255,34 +906,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: d2386a0f334169a45bb826f426da8f3c, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1102 &6267454481363905869
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Kirby Eating_2
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions:
-  - {fileID: -2495864906598222987}
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: b2598c1415db4634790fe4bc4dcee9aa, type: 2}
+  m_Motion: {fileID: 7400000, guid: af556532aefc78d42b32d62d91bea216, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -1299,70 +923,46 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 7823020403937465532}
-    m_Position: {x: 350, y: -210, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 9024857183051293742}
-    m_Position: {x: 350, y: -160, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 2188849986724990659}
-    m_Position: {x: 350, y: 140, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 4943647677090588292}
     m_Position: {x: 350, y: 290, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 7538967377135220415}
-    m_Position: {x: 350, y: 440, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: -6296727057265762674}
+    m_State: {fileID: 9024857183051293742}
     m_Position: {x: 350, y: 390, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -8005994946499362108}
-    m_Position: {x: 350, y: 240, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: -5802164783584774710}
-    m_Position: {x: 350, y: 190, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 6913305614879473640}
-    m_Position: {x: 350, y: -10, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 5457431211087089582}
-    m_Position: {x: 350, y: 40, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: -5563800241841044473}
-    m_Position: {x: 350, y: -110, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 1478410454862831167}
+    m_State: {fileID: 2188849986724990659}
     m_Position: {x: 350, y: 340, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 2990557949371384742}
+    m_State: {fileID: 4943647677090588292}
     m_Position: {x: 350, y: -60, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 6516504211800141756}
-    m_Position: {x: 250, y: 520, z: 0}
+    m_State: {fileID: 7538967377135220415}
+    m_Position: {x: 350, y: 240, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 6267454481363905869}
-    m_Position: {x: 470, y: 520, z: 0}
+    m_State: {fileID: -6296727057265762674}
+    m_Position: {x: 350, y: 190, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 1068281877201707445}
-    m_Position: {x: 350, y: 570, z: 0}
+    m_State: {fileID: -8005994946499362108}
+    m_Position: {x: 350, y: -160, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -2510932730124434959}
-    m_Position: {x: 350, y: 1050, z: 0}
+    m_State: {fileID: -5802164783584774710}
+    m_Position: {x: 350, y: -210, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -233688578837337919}
-    m_Position: {x: 350, y: 760, z: 0}
+    m_State: {fileID: 6913305614879473640}
+    m_Position: {x: 350, y: 40, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -7297882039169420292}
-    m_Position: {x: 350, y: 1120, z: 0}
+    m_State: {fileID: 5457431211087089582}
+    m_Position: {x: 350, y: 90, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 8592261063791817263}
-    m_Position: {x: 350, y: 860, z: 0}
+    m_State: {fileID: -5563800241841044473}
+    m_Position: {x: 350, y: 140, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -6167638850116273412}
-    m_Position: {x: 350, y: 660, z: 0}
+    m_State: {fileID: 1478410454862831167}
+    m_Position: {x: 350, y: -110, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 2990557949371384742}
+    m_Position: {x: 350, y: 440, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8271634441362956109}
-    m_Position: {x: 350, y: 950, z: 0}
+    m_Position: {x: 350, y: -10, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions:
@@ -1378,10 +978,6 @@ AnimatorStateMachine:
   - {fileID: 1502499137996821922}
   - {fileID: 8015449504682399240}
   - {fileID: 1669502500330342931}
-  - {fileID: -9149921101680033963}
-  - {fileID: 20166765388496913}
-  - {fileID: -2007108303720040281}
-  - {fileID: 1466271423393904748}
   - {fileID: 8366446346880990612}
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
@@ -1390,33 +986,6 @@ AnimatorStateMachine:
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 7823020403937465532}
---- !u!1102 &6516504211800141756
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Kirby Eating_1
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions:
-  - {fileID: 581462311365103583}
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 2c58920cf2e8ae14dbac9c6113edda08, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
 --- !u!1102 &6913305614879473640
 AnimatorState:
   serializedVersion: 6
@@ -1438,7 +1007,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 00ddf729084cd9f4c9fcf1837565ec0f, type: 2}
+  m_Motion: {fileID: 7400000, guid: 38f6ede36de89594d82a3de5c2f997d8, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -1465,7 +1034,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 57b7ceb7a04029e4093a1628ed876217, type: 2}
+  m_Motion: {fileID: 7400000, guid: d52080b3ae0a67b459333d151d2d8f23, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -1492,7 +1061,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 5bc7eed2127b97c41b267dfa7db1a8c9, type: 2}
+  m_Motion: {fileID: 7400000, guid: 757136da95574c8449b34d2c1fb595ca, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -1536,7 +1105,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 8df1939e9ad27f84789f9b7da3e3c052, type: 2}
+  m_Motion: {fileID: 7400000, guid: 49e6988f9c940c840b32c8792a746141, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -1559,33 +1128,6 @@ AnimatorTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 1
---- !u!1102 &8592261063791817263
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Kirby Damage
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions:
-  - {fileID: -838668132363657306}
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: b7a7427ce8edd1249bb014d97177a11b, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
 --- !u!1101 &8708145646829627458
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -1632,7 +1174,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: b7d05f03d404aa648a69ef8ad557aae0, type: 2}
+  m_Motion: {fileID: 7400000, guid: f2c14e4a0c947d74b8518e6f969e710e, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

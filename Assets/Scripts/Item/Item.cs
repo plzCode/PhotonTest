@@ -18,6 +18,9 @@ public class Item : MonoBehaviour
     [PunRPC]
     public void DestroySelf()
     {
-        PhotonNetwork.Destroy(gameObject);
+        if (PhotonNetwork.IsMasterClient)
+        {
+            PhotonNetwork.Destroy(gameObject);
+        }
     }
 }
