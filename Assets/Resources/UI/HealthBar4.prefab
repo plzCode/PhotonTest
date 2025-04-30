@@ -165,7 +165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBarImage: {fileID: 8541516235759803835}
   maxHealth: 100
-  fillSpeed: 0.5
+  fillSpeed: 5
   player: {fileID: 0}
 --- !u!1 &4474969448562986812
 GameObject:

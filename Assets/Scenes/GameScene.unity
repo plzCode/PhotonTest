@@ -1983,6 +1983,7 @@ GameObject:
   - component: {fileID: 1118468672}
   - component: {fileID: 1118468674}
   - component: {fileID: 1118468673}
+  - component: {fileID: 1118468675}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -1999,7 +2000,7 @@ RectTransform:
   m_GameObject: {fileID: 1118468671}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4.85, y: 4.85, z: 4.85}
+  m_LocalScale: {x: 4.9, y: 4.9, z: 4.9}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 6007764978449610496}
@@ -2047,6 +2048,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1118468671}
   m_CullTransparentMesh: 1
+--- !u!114 &1118468675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118468671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 1
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 1
+  m_ChildScaleHeight: 1
+  m_ReverseArrangement: 0
 --- !u!1001 &1136016931
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8813,7 +8840,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 4.8, y: 4.8, z: 4.5}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 6007764978449610496}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
