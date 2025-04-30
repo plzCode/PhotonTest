@@ -57,7 +57,8 @@ public class SpawnMannager : MonoBehaviourPun
         pCam.Lens.OrthographicSize = 6f;
         pCam.Lens.NearClipPlane = -1f;
 
-        
+        Canvas canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
+        canvas.worldCamera = pCam.GetComponent<CinemachineCamera>().GetComponent<Camera>();
 
     }
 

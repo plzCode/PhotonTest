@@ -182,13 +182,13 @@ public class Player : MonoBehaviour
         }
 
         //플레이어 Ground 상태로 옮길거임
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        /*if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             if (curAbility != null)
             {
                 curAbility.AttackHandle();
             }
-        }
+        }*/
         #endregion
 
 
@@ -486,6 +486,7 @@ public class Player : MonoBehaviour
             Debug.LogError("Animator or PhotonAnimatorView is null.");
             return;
         }
+        animatorView.enabled = false; //Synchronization을 위해 비활성화
 
         // Clear existing synchronization
         animatorView.GetSynchronizedParameters().Clear();
