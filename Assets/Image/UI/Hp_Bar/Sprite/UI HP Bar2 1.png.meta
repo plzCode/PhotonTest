@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      UI HP Bar2 1_0: 6700618074080384062
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

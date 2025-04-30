@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: a88e8736c1b000245bc7a17330aec901
+guid: 6ef492257c5f54442981a1f08488179b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1750776256723885533
-    second: UI HP Bar1 1_0
+      213: 7103984803485256712
+    second: Attack End Middle_0
+  - first:
+      213: -6096463487837064453
+    second: Attack End Middle_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,43 +112,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UI HP Bar1 1_0
+      name: Attack End Middle_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 180
-        height: 25
+        width: 28
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 322e8c0454ef3b7e0800000000000000
-      internalID: -1750776256723885533
+      spriteID: 80c038d4a8c669260800000000000000
+      internalID: 7103984803485256712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack End Middle_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 0
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf2355d12c2056ba0800000000000000
+      internalID: -6096463487837064453
       vertices: []
       indices: 
       edges: []
@@ -173,8 +172,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      UI HP Bar1 1_0: -1750776256723885533
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
