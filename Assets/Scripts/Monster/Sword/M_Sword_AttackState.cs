@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class M_Sword_AttackState : M_Sword_GroundedState
 {
-    public M_Sword_AttackState(Enemy _enemyBase, EnemyStateMachine _stateMachine, string _animBoolName, Monster_Sword _enemy) : base(_enemyBase, _stateMachine, _animBoolName, _enemy)
+    public M_Sword_AttackState(Enemy _enemyBase, EnemyStateMachine _stateMachine, string _animBoolName) : base(_enemyBase, _stateMachine, _animBoolName)
     {
     }
 

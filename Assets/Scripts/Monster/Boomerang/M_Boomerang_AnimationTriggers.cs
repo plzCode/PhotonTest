@@ -1,9 +1,10 @@
+using Photon.Pun;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 public class M_Boomerang_AnimationTriggers : MonoBehaviour
 {
-    private Monster_Sword enemy => GetComponentInParent<Monster_Sword>();
+    private Monster_Boomerang enemy => GetComponentInParent<Monster_Boomerang>();
     [SerializeField] private GameObject boomerangPrefab;
     [SerializeField] private Transform startPos;
     private GameObject currentBoomerang;
@@ -27,9 +28,32 @@ public class M_Boomerang_AnimationTriggers : MonoBehaviour
         }
     }
 
-    private void ThrowBoomerang()
+    private void PickupBoomerangRPC()
     {
-        boomerang_Script.ThrowBoomerang();
+        //Debug.Log("CalledFunction 호출됨");
+        // RPC 호출을 마스터 클라이언트에서만 처리
+        if (PhotonNetwork.IsMasterClient)
+        {
+            // 직접 호출을 지우고, RPC로 전환합니다.
+            enemy.photonView.RPC(
+                "PickupBoomerang",
+                RpcTarget.All  // 또는 RpcTarget.All
+            );
+        }
+    }
+
+    private void ThrowBoomerangRPC()
+    {
+        //if (PhotonNetwork.IsMasterClient)
+        //{
+        //    // 직접 호출을 지우고, RPC로 전환합니다.
+        //    enemy.photonView.RPC(
+        //        "ThrowBoomerang",
+        //        RpcTarget.All  // 또는 RpcTarget.All
+        //    );
+        //}
+        enemy.ThrowBoomerang();
+
     }
     
     

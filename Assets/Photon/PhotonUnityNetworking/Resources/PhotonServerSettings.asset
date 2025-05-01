@@ -66,10 +66,9 @@ MonoBehaviour:
   - RequestAnimIntegerChange
   - RequestMoveFromClient
   - CreateHealthBar
-  - EatKirbyStarAttack
-  - EffectAdd
-  - OnEnemyHit
-  - IncreaseCutter
+  - ThrowBoomerang
+  - PickupBoomerang
+  - ShareCurrentBoomerang
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

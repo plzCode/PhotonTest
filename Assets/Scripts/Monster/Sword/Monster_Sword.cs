@@ -17,8 +17,8 @@ public class Monster_Sword : Enemy
     {
         base.Awake();
 
-        moveState = new M_Sword_MoveState(this, stateMachine, "Move", this);
-        attackState = new M_Sword_AttackState(this, stateMachine, "Attack", this);
+        moveState = new M_Sword_MoveState(this, stateMachine, "Move");
+        attackState = new M_Sword_AttackState(this, stateMachine, "Attack");
         hitState = new Spear_HitState(this, stateMachine, "Hit");
     }
 

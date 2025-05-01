@@ -137,7 +137,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3355068980518483869, guid: a7a667c45d1e6f44eb84d6c2c3c48d1a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4330312079298778645, guid: a7a667c45d1e6f44eb84d6c2c3c48d1a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8221,7 +8221,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3355068980518483869, guid: a7a667c45d1e6f44eb84d6c2c3c48d1a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4330312079298778645, guid: a7a667c45d1e6f44eb84d6c2c3c48d1a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8650,6 +8650,10 @@ PrefabInstance:
       propertyPath: stunDirection.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4250105450725166255, guid: b1b78f0ae247aa64596dd962c62b782b, type: 3}
+      propertyPath: whatIsPlayer.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8894,6 +8898,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 510119167938260030}
   m_CullTransparentMesh: 1
+--- !u!1001 &3917606284246941077
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 305304231467675987, guid: 97cb541071c8c854e95fb8cac70a8bdd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 305304231467675987, guid: 97cb541071c8c854e95fb8cac70a8bdd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 305304231467675987, guid: 97cb541071c8c854e95fb8cac70a8bdd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 305304231467675987, guid: 97cb541071c8c854e95fb8cac70a8bdd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 305304231467675987, guid: 97cb541071c8c854e95fb8cac70a8bdd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 305304231467675987, guid: 97cb541071c8c854e95fb8cac70a8bdd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 305304231467675987, guid: 97cb541071c8c854e95fb8cac70a8bdd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 305304231467675987, guid: 97cb541071c8c854e95fb8cac70a8bdd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 305304231467675987, guid: 97cb541071c8c854e95fb8cac70a8bdd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 305304231467675987, guid: 97cb541071c8c854e95fb8cac70a8bdd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3430789982412605740, guid: 97cb541071c8c854e95fb8cac70a8bdd, type: 3}
+      propertyPath: boomerangPrefab
+      value: 
+      objectReference: {fileID: 2999889309051544665, guid: 9f81a91cd4aa9c14da6e0746a4a1e9d3, type: 3}
+    - target: {fileID: 4147482310571423912, guid: 97cb541071c8c854e95fb8cac70a8bdd, type: 3}
+      propertyPath: sceneViewId
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6180743330866312523, guid: 97cb541071c8c854e95fb8cac70a8bdd, type: 3}
+      propertyPath: boomerangPrefab
+      value: 
+      objectReference: {fileID: 2999889309051544665, guid: 9f81a91cd4aa9c14da6e0746a4a1e9d3, type: 3}
+    - target: {fileID: 6241601916992003496, guid: 97cb541071c8c854e95fb8cac70a8bdd, type: 3}
+      propertyPath: m_Name
+      value: Boomerang
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 97cb541071c8c854e95fb8cac70a8bdd, type: 3}
 --- !u!222 &4576359385654411674
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9087,3 +9160,4 @@ SceneRoots:
   - {fileID: 472216893936644773}
   - {fileID: 2788652210937951630}
   - {fileID: 700981616420626322}
+  - {fileID: 3917606284246941077}

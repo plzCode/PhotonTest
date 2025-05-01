@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class M_Sword_MoveState : M_Sword_GroundedState
 {
-    public M_Sword_MoveState(Enemy _enemyBase, EnemyStateMachine _stateMachine, string _animBoolName, Monster_Sword _enemy) : base(_enemyBase, _stateMachine, _animBoolName, _enemy)
+    public M_Sword_MoveState(Enemy _enemyBase, EnemyStateMachine _stateMachine, string _animBoolName) : base(_enemyBase, _stateMachine, _animBoolName)
     {
     }
 
@@ -57,7 +57,8 @@ public class M_Sword_MoveState : M_Sword_GroundedState
                     }
                     else
                     {
-                        enemy.photonView.RPC("RequestStateChange", RpcTarget.All, enemy.attackState);
+                        enemy.SetZeroVelocity();
+                        enemy.photonView.RPC("ChangeState", RpcTarget.All,"Attack");
                     }
                     
                 }
