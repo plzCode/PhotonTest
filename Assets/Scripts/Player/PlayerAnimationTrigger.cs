@@ -70,12 +70,20 @@ public class PlayerAnimatorController : MonoBehaviour
     }
 
 
-    private GameObject EatAttack;
-    private string EatAttackResource = "Player_Effect/Kirby Eat Attack 60x60_0";
+    [PunRPC]
     public void EatKirbyStarAttack()
     {
-        RangedAttack(EatAttack, EatAttackResource);
+        RangedAttack(Attack, "Player_Effect/Kirby Eat Attack 60x60_0");
     }
+
+    private Cutter cutter;
+    public void CutterKirbyAttack()
+    {
+        RangedAttack(Attack, "Player_Effect/Cutter");
+    }
+
+
+    private GameObject Attack;
 
     private void RangedAttack(GameObject rangeAttack, string rangeAttackName)
     {
@@ -83,6 +91,8 @@ public class PlayerAnimatorController : MonoBehaviour
         {
             rangeAttack = Resources.Load<GameObject>(rangeAttackName); //원거리 공격을 가져옴
         }
+
+        Vector2 Pos = new Vector2 (player.transform.position.x, player.transform.position.y + 5);
 
         player.EffectAdd(player.LastMove, rangeAttack, player.AirJumpOutEffectPos); //플레이어 한태서 공격 발사
     }

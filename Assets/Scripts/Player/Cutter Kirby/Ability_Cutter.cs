@@ -5,13 +5,15 @@ public class Ability_Cutter : PlayerAbility
 {
     public RuntimeAnimatorController cutterKirby;
 
-    public Cutter_Kirby_Attack1_State attack1State;
+    public Cutter_Kirby_Attack_State attackState;
+    public Cutter_Kirby_Attack_End_State attackEnd;
 
+    public float CoolTime = 1f; //쿨타임
 
     public override void OnAbilityCopied(Player owner) //변신을 적용합니다.
     {
         base.OnAbilityCopied(owner);
-        owner.KirbyFormNum = 2; //커비 변신 초기화
+        owner.KirbyFormNum = 3; //커비 변신 초기화
         PhotonView pView = owner.GetComponent<PhotonView>();
         cutterKirby = Resources.Load<RuntimeAnimatorController>("Test/Cutter_Kirby"); //바꿀 애니메이터 파일을 찾아 저장합니다.
 
@@ -36,13 +38,15 @@ public class Ability_Cutter : PlayerAbility
     {
         if (owner == null) return;
 
-        owner.stateMachine.ChangeState(attack1State);
+        if (CoolTime > 0) return; //쿨타임이 남아있다면 공격을 하지 않습니다.
+        owner.stateMachine.ChangeState(attackState);
+        CoolTime = 1f;
 
     }
 
     public void Update()
     {
-
+        CoolTime -= Time.deltaTime;
     }
 
     public void OnTriggerEnter(Collider other)
@@ -55,11 +59,13 @@ public class Ability_Cutter : PlayerAbility
 
     public void AddState(Player owner)
     {
-        attack1State = new Cutter_Kirby_Attack1_State(owner, owner.stateMachine, "Attack_1");
+        attackEnd = new Cutter_Kirby_Attack_End_State(owner, owner.stateMachine, "Attack_End");
+        attackState = new Cutter_Kirby_Attack_State(owner, owner.stateMachine, "Attack", attackEnd);
     }
 
     public void RemoveState(Player owner)
     {
-        attack1State = null;
+        attackState = null;
+        attackEnd = null;
     }
 }

@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Resources;
 using Unity.VisualScripting;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem.XInput;
 using UnityEngine.UIElements;
@@ -88,9 +89,6 @@ public class Player : MonoBehaviour
 
     #endregion
 
-    //변신 어빌리티
-    public Ability_Eat EatKirby => GetComponentInParent<Ability_Eat>();
-
     //For Test Ability
     public PlayerAbility curAbility;
     public bool isInhaling = false;
@@ -101,7 +99,6 @@ public class Player : MonoBehaviour
 
     //UI
     public Health_Bar health_Bar;
-
 
     public void Awake()
     {
@@ -195,9 +192,11 @@ public class Player : MonoBehaviour
         #endregion
 
 
-    }   
+    }
 
-    
+
+
+
     [PunRPC]
     public void SyncFormNum()
     {
@@ -292,6 +291,7 @@ public class Player : MonoBehaviour
     }
     #endregion
 
+    [PunRPC]
     public void EffectAdd(float _x, GameObject Effect, Transform EffecPos) //이펙트를 추가함
     {
         if (_x > 0) //오른쪽이면 그대로 소환
