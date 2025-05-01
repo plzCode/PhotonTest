@@ -5,7 +5,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Resources;
 using Unity.VisualScripting;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem.XInput;
 using UnityEngine.UIElements;
@@ -13,6 +12,7 @@ using UnityEngine.UIElements;
 public class Player : MonoBehaviour
 {
     public float PlayerHP;
+    public float PlayerMaxHP = 100f; //플레이어 최대 체력
 
     public float MoveSpeed;
     public float DashSpeed;
@@ -99,6 +99,8 @@ public class Player : MonoBehaviour
 
     //UI
     public Health_Bar health_Bar;
+    //Inventory
+    public Inventory inventory;
 
     public void Awake()
     {

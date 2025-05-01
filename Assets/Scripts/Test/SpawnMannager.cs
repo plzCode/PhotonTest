@@ -61,6 +61,10 @@ public class SpawnMannager : MonoBehaviourPun
 
         // 체력 UI 설정을 모든 클라이언트에서 실행
         playerView.RPC("CreateHealthBar", RpcTarget.AllBuffered, actorNumber, viewID);
+
+        // 인벤토리 등록
+        tmpPlayer.GetComponent<Player>().inventory = canvas.GetComponentInChildren<Inventory>();
+        canvas.GetComponentInChildren<Inventory>().player = tmpPlayer.GetComponent<Player>();
     }
 
 

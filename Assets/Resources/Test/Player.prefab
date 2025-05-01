@@ -84,6 +84,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerHP: 100
+  PlayerMaxHP: 100
   MoveSpeed: 3
   DashSpeed: 5
   JumpPower: 2.5
@@ -120,6 +121,7 @@ MonoBehaviour:
   attackCheck: {fileID: 7561445261509129977}
   pView: {fileID: 0}
   health_Bar: {fileID: 0}
+  inventory: {fileID: 0}
   dashTime: 0
   dash: 0
   turn: 0
