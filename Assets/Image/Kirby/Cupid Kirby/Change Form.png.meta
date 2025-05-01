@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: b60683c843c272f4c84c0cd13763cf4e
+guid: 6fe4e6542acf6114cb569d8a905d1989
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6799144382380341313
-    second: Attack End Up_0
-  - first:
-      213: 4618847171488121269
-    second: Attack End Up_1
+      213: 3143892327369983847
+    second: Change Form_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Attack End Up_0
+      name: Change Form_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,30 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1487f58dac96b5e50800000000000000
-      internalID: 6799144382380341313
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack End Up_1
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 0
-        width: 33
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5b10e50e701791040800000000000000
-      internalID: 4618847171488121269
+      spriteID: 767c6f82a6951ab20800000000000000
+      internalID: 3143892327369983847
       vertices: []
       indices: 
       edges: []
@@ -163,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 657458504f2efe24d90d689934b069a0
+    spriteID: f0fb4f8ac4c442b49a23b83353d67047
     internalID: 0
     vertices: []
     indices: 
@@ -173,8 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Attack End Up_0: 6799144382380341313
-      Attack End Up_1: 4618847171488121269
+      Change Form_0: 3143892327369983847
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

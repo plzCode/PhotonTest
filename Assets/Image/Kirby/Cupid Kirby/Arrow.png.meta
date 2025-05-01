@@ -1,13 +1,22 @@
 fileFormatVersion: 2
-guid: b60683c843c272f4c84c0cd13763cf4e
+guid: d19f22fd36c9ab444a49d31dfb05d9a9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6799144382380341313
-    second: Attack End Up_0
+      213: -4346244404228752641
+    second: Arrow_0
   - first:
-      213: 4618847171488121269
-    second: Attack End Up_1
+      213: -6662812116773042688
+    second: Arrow_1
+  - first:
+      213: -2292719611878453243
+    second: Arrow_2
+  - first:
+      213: 5946551882310926714
+    second: Arrow_3
+  - first:
+      213: 4428292855295335941
+    second: Arrow_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,7 +125,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Attack End Up_0
+      name: Arrow_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1487f58dac96b5e50800000000000000
-      internalID: 6799144382380341313
+      spriteID: ffa7ae2edb90fa3c0800000000000000
+      internalID: -4346244404228752641
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack End Up_1
+      name: Arrow_1
       rect:
         serializedVersion: 2
         x: 33
@@ -153,8 +162,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5b10e50e701791040800000000000000
-      internalID: 4618847171488121269
+      spriteID: 006039e4eafe883a0800000000000000
+      internalID: -6662812116773042688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_2
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 0
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 500d96c09af9e20e0800000000000000
+      internalID: -2292719611878453243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 0
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a71c2974e65668250800000000000000
+      internalID: 5946551882310926714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_4
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 0
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50e5749c3e4747d30800000000000000
+      internalID: 4428292855295335941
       vertices: []
       indices: 
       edges: []
@@ -163,7 +238,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 657458504f2efe24d90d689934b069a0
+    spriteID: fb326708f1900cf4f9d9659c73ff2c9b
     internalID: 0
     vertices: []
     indices: 
@@ -173,8 +248,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Attack End Up_0: 6799144382380341313
-      Attack End Up_1: 4618847171488121269
+      Arrow_0: -4346244404228752641
+      Arrow_1: -6662812116773042688
+      Arrow_2: -2292719611878453243
+      Arrow_3: 5946551882310926714
+      Arrow_4: 4428292855295335941
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
