@@ -95,5 +95,37 @@ public class PlayerTest : MonoBehaviourPunCallbacks, IPunObservable
         healthBarScript.SetPlayer(player);
         player.health_Bar = healthBarScript;
     }
+
+    [PunRPC]
+    public void CreateInventory(int playerViewID)
+    {
+        PhotonView playerView = PhotonView.Find(playerViewID);
+        // 인벤토리 프리팹 로드 및 소환
+        GameObject inventoryPrefab = Resources.Load<GameObject>("UI/Inventory");
+        if (inventoryPrefab == null)
+        {
+            Debug.LogError("Inventory prefab not found in Resources/UI.");
+            return;
+        }
+        Canvas canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
+        GameObject inventoryInstance = Instantiate(inventoryPrefab, canvas.transform);
+        Inventory inventoryScript = inventoryInstance.GetComponent<Inventory>();
+
+        if (inventoryScript == null)
+        {
+            Debug.LogError("Inventory component not found on the instantiated prefab.");
+            return;
+        }
+
+        // 로컬 플레이어가 아닌 경우 Inventory 비활성화
+        if (!playerView.IsMine)
+        {
+            inventoryInstance.SetActive(false);
+        }
+
+        // 인벤토리 등록
+        GetComponent<Player>().inventory = inventoryScript;
+        inventoryScript.player = GetComponent<Player>();
+    }
 }
 
