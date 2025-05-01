@@ -1,0 +1,919 @@
+fileFormatVersion: 2
+guid: 3b8762402bb043c47b4f530e4ef3f4a0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7540393864284673615
+    second: ChangeForm Effect 85x85_0
+  - first:
+      213: 7682331272362293388
+    second: ChangeForm Effect 85x85_1
+  - first:
+      213: 5609494626955481685
+    second: ChangeForm Effect 85x85_2
+  - first:
+      213: -3018466925659940699
+    second: ChangeForm Effect 85x85_3
+  - first:
+      213: -6737603515590852802
+    second: ChangeForm Effect 85x85_4
+  - first:
+      213: 3624442016932616724
+    second: ChangeForm Effect 85x85_5
+  - first:
+      213: -7244979708993327084
+    second: ChangeForm Effect 85x85_6
+  - first:
+      213: -7185775774554286104
+    second: ChangeForm Effect 85x85_7
+  - first:
+      213: 3462815669516958080
+    second: ChangeForm Effect 85x85_8
+  - first:
+      213: 550963836324191718
+    second: ChangeForm Effect 85x85_9
+  - first:
+      213: -4918964575992017537
+    second: ChangeForm Effect 85x85_10
+  - first:
+      213: -940233131427509119
+    second: ChangeForm Effect 85x85_11
+  - first:
+      213: -1882576590024596067
+    second: ChangeForm Effect 85x85_12
+  - first:
+      213: 7446935945079246476
+    second: ChangeForm Effect 85x85_13
+  - first:
+      213: -6899616370044608671
+    second: ChangeForm Effect 85x85_14
+  - first:
+      213: 8470398112918061000
+    second: ChangeForm Effect 85x85_15
+  - first:
+      213: 5083712662101822219
+    second: ChangeForm Effect 85x85_16
+  - first:
+      213: -5252080480173556199
+    second: ChangeForm Effect 85x85_17
+  - first:
+      213: 1177731454032544937
+    second: ChangeForm Effect 85x85_18
+  - first:
+      213: 190401005392748930
+    second: ChangeForm Effect 85x85_19
+  - first:
+      213: -9128097193047299246
+    second: ChangeForm Effect 85x85_20
+  - first:
+      213: -8800555249592758572
+    second: ChangeForm Effect 85x85_21
+  - first:
+      213: -9139123763745608581
+    second: ChangeForm Effect 85x85_22
+  - first:
+      213: 1900218924157910294
+    second: ChangeForm Effect 85x85_23
+  - first:
+      213: -7319648620802625206
+    second: ChangeForm Effect 85x85_24
+  - first:
+      213: 2585707063968416277
+    second: ChangeForm Effect 85x85_25
+  - first:
+      213: -7708719760016199288
+    second: ChangeForm Effect 85x85_26
+  - first:
+      213: -8768508496381034817
+    second: ChangeForm Effect 85x85_27
+  - first:
+      213: -8859753679483655002
+    second: ChangeForm Effect 85x85_28
+  - first:
+      213: -2447530443198325902
+    second: ChangeForm Effect 85x85_29
+  - first:
+      213: 4483707710446084481
+    second: ChangeForm Effect 85x85_30
+  - first:
+      213: 2943225924864500691
+    second: ChangeForm Effect 85x85_31
+  - first:
+      213: 3009517407878787004
+    second: ChangeForm Effect 85x85_32
+  - first:
+      213: -7602865004411595061
+    second: ChangeForm Effect 85x85_33
+  - first:
+      213: -1850035179836077598
+    second: ChangeForm Effect 85x85_34
+  - first:
+      213: -4860061894795861420
+    second: ChangeForm Effect 85x85_35
+  - first:
+      213: 1161546420290697260
+    second: ChangeForm Effect 85x85_36
+  - first:
+      213: -6015318085135281990
+    second: ChangeForm Effect 85x85_37
+  - first:
+      213: 1055228823236420247
+    second: ChangeForm Effect 85x85_38
+  - first:
+      213: -3887333077151227242
+    second: ChangeForm Effect 85x85_39
+  - first:
+      213: -1611201173984099150
+    second: ChangeForm Effect 85x85_40
+  - first:
+      213: -3596359481107115798
+    second: ChangeForm Effect 85x85_41
+  - first:
+      213: -3811577256484697649
+    second: ChangeForm Effect 85x85_42
+  - first:
+      213: -4691283565190456384
+    second: ChangeForm Effect 85x85_43
+  - first:
+      213: -5618792240487690669
+    second: ChangeForm Effect 85x85_44
+  - first:
+      213: -2764753688068907525
+    second: ChangeForm Effect 85x85_45
+  - first:
+      213: 2106876300160386057
+    second: ChangeForm Effect 85x85_46
+  - first:
+      213: 304066446600218829
+    second: ChangeForm Effect 85x85_47
+  - first:
+      213: 5197212704154702037
+    second: ChangeForm Effect 85x85_48
+  - first:
+      213: -1353178564951123567
+    second: ChangeForm Effect 85x85_49
+  - first:
+      213: 1481308729310558513
+    second: ChangeForm Effect 85x85_50
+  - first:
+      213: 8260991902266050904
+    second: ChangeForm Effect 85x85_51
+  - first:
+      213: 1849057481938464721
+    second: ChangeForm Effect 85x85_52
+  - first:
+      213: 7102749988294851349
+    second: ChangeForm Effect 85x85_53
+  - first:
+      213: 8148601042944263371
+    second: ChangeForm Effect 85x85_54
+  - first:
+      213: 6940756434743057840
+    second: ChangeForm Effect 85x85_55
+  - first:
+      213: 179969620880934414
+    second: ChangeForm Effect 85x85_56
+  - first:
+      213: -9152486525921348936
+    second: ChangeForm Effect 85x85_57
+  - first:
+      213: -1736770872425715538
+    second: ChangeForm Effect 85x85_58
+  - first:
+      213: -8906991102382762598
+    second: ChangeForm Effect 85x85_59
+  - first:
+      213: -7115268684289665547
+    second: ChangeForm Effect 85x85_60
+  - first:
+      213: 7209015915353842167
+    second: ChangeForm Effect 85x85_61
+  - first:
+      213: -3788380386327952899
+    second: ChangeForm Effect 85x85_62
+  - first:
+      213: -5582936697330275933
+    second: ChangeForm Effect 85x85_63
+  - first:
+      213: 716788153098436708
+    second: ChangeForm Effect 85x85_64
+  - first:
+      213: 2318128797747382946
+    second: ChangeForm Effect 85x85_65
+  - first:
+      213: -4524623873069373450
+    second: ChangeForm Effect 85x85_66
+  - first:
+      213: 2813782999141255454
+    second: ChangeForm Effect 85x85_67
+  - first:
+      213: 1517303904638151703
+    second: ChangeForm Effect 85x85_68
+  - first:
+      213: -4284349533534286785
+    second: ChangeForm Effect 85x85_69
+  - first:
+      213: 7239569220906869062
+    second: ChangeForm Effect 85x85_70
+  - first:
+      213: 687802978644338462
+    second: ChangeForm Effect 85x85_71
+  - first:
+      213: 5277880247451571111
+    second: ChangeForm Effect 85x85_72
+  - first:
+      213: 8512158556072360005
+    second: ChangeForm Effect 85x85_73
+  - first:
+      213: 1777075197705209654
+    second: ChangeForm Effect 85x85_74
+  - first:
+      213: 3024485154344063494
+    second: ChangeForm Effect 85x85_75
+  - first:
+      213: -4946575064181734923
+    second: ChangeForm Effect 85x85_76
+  - first:
+      213: 6615637229216962020
+    second: ChangeForm Effect 85x85_77
+  - first:
+      213: 6153088388942303667
+    second: ChangeForm Effect 85x85_78
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ChangeForm Effect 85x85_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 340
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f461933d44cd4a860800000000000000
+      internalID: 7540393864284673615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeForm Effect 85x85_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 340
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c887708e69f1d9a60800000000000000
+      internalID: 7682331272362293388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeForm Effect 85x85_2
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 340
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 552d42194ade8dd40800000000000000
+      internalID: 5609494626955481685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeForm Effect 85x85_3
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 340
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a816c9d2504c16d0800000000000000
+      internalID: -3018466925659940699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeForm Effect 85x85_4
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 340
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3fb8c7cc493f72a0800000000000000
+      internalID: -6737603515590852802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeForm Effect 85x85_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 255
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41ad440bfca9c4230800000000000000
+      internalID: 3624442016932616724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeForm Effect 85x85_6
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 255
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4103a881759a47b90800000000000000
+      internalID: -7244979708993327084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeForm Effect 85x85_7
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 255
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e79512410ff64c90800000000000000
+      internalID: -7185775774554286104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeForm Effect 85x85_8
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 255
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 089f63031846e0030800000000000000
+      internalID: 3462815669516958080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeForm Effect 85x85_9
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 255
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ed9034a0ba65a700800000000000000
+      internalID: 550963836324191718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeForm Effect 85x85_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 170
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7d0449a7c35cbbb0800000000000000
+      internalID: -4918964575992017537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeForm Effect 85x85_11
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 170
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18cc533d2fe93f2f0800000000000000
+      internalID: -940233131427509119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeForm Effect 85x85_12
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 170
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d952e11d09ebfd5e0800000000000000
+      internalID: -1882576590024596067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeForm Effect 85x85_13
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 170
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8e498759c4d85760800000000000000
+      internalID: 7446935945079246476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeForm Effect 85x85_14
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 170
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16f55099773af30a0800000000000000
+      internalID: -6899616370044608671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeForm Effect 85x85_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 85
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cfbe92a436ec8570800000000000000
+      internalID: 8470398112918061000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeForm Effect 85x85_16
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 85
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0b0cb44bb9fc8640800000000000000
+      internalID: 5083712662101822219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeForm Effect 85x85_17
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 85
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91efd7741acdc17b0800000000000000
+      internalID: -5252080480173556199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeForm Effect 85x85_18
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 85
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a40a6e7484285010800000000000000
+      internalID: 1177731454032544937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeForm Effect 85x85_19
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 85
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 281ef43a4b074a200800000000000000
+      internalID: 190401005392748930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeForm Effect 85x85_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25bec2537fb725180800000000000000
+      internalID: -9128097193047299246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeForm Effect 85x85_21
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4de03d9b0a52ed580800000000000000
+      internalID: -8800555249592758572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeForm Effect 85x85_22
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7cac97ab5f4b2180800000000000000
+      internalID: -9139123763745608581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChangeForm Effect 85x85_23
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 0
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61d38e13b0fee5a10800000000000000
+      internalID: 1900218924157910294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0d5ec87872427bd44b74972cb6dd421c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ChangeForm Effect 85x85_0: 7540393864284673615
+      ChangeForm Effect 85x85_1: 7682331272362293388
+      ChangeForm Effect 85x85_10: -4918964575992017537
+      ChangeForm Effect 85x85_11: -940233131427509119
+      ChangeForm Effect 85x85_12: -1882576590024596067
+      ChangeForm Effect 85x85_13: 7446935945079246476
+      ChangeForm Effect 85x85_14: -6899616370044608671
+      ChangeForm Effect 85x85_15: 8470398112918061000
+      ChangeForm Effect 85x85_16: 5083712662101822219
+      ChangeForm Effect 85x85_17: -5252080480173556199
+      ChangeForm Effect 85x85_18: 1177731454032544937
+      ChangeForm Effect 85x85_19: 190401005392748930
+      ChangeForm Effect 85x85_2: 5609494626955481685
+      ChangeForm Effect 85x85_20: -9128097193047299246
+      ChangeForm Effect 85x85_21: -8800555249592758572
+      ChangeForm Effect 85x85_22: -9139123763745608581
+      ChangeForm Effect 85x85_23: 1900218924157910294
+      ChangeForm Effect 85x85_3: -3018466925659940699
+      ChangeForm Effect 85x85_4: -6737603515590852802
+      ChangeForm Effect 85x85_5: 3624442016932616724
+      ChangeForm Effect 85x85_6: -7244979708993327084
+      ChangeForm Effect 85x85_7: -7185775774554286104
+      ChangeForm Effect 85x85_8: 3462815669516958080
+      ChangeForm Effect 85x85_9: 550963836324191718
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

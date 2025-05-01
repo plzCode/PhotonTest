@@ -22,5 +22,3 @@ public class Cupid_Kirby_Attack_State : PlayerState
         base.Update();
     }
 }
-    
-}

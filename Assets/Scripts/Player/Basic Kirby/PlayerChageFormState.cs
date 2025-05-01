@@ -11,6 +11,8 @@ public class PlayerChageFormState : PlayerState
     {
         base.Enter();
         player.lineVelocity(0f, 0f);
+        //pView.RPC("AttackAdd", RpcTarget.All, player.LastMove, player.EatEffect1.name, player.EatEffectPos.position, pView.ViewID);
+        player.AttackAdd(player.LastMove, "ChangeForm Effect 85x85_0", player.transform.position, pView.ViewID);
         Debug.Log("ChangeFormState.cs");
     }
 
