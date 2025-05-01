@@ -1,3 +1,4 @@
+using Photon.Pun;
 using UnityEngine;
 
 public class Boomerang_Obj : MonoBehaviour
@@ -15,15 +16,19 @@ public class Boomerang_Obj : MonoBehaviour
     private bool isThrown = false;
     public float facingDir = 1;
 
+    private bool isDestroyed = false;  // 오브젝트가 이미 삭제되었는지 여부를 추적
+    public PhotonView photonView;
+
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        photonView = GetComponent<PhotonView>();
     }
     private void Start()
     {
-        
+
     }
 
     private void FixedUpdate()
@@ -39,27 +44,36 @@ public class Boomerang_Obj : MonoBehaviour
     }
 
     public void SetVelocity(float _xVelocity, float _yVelocity)
-    {        
-        rb.linearVelocity = new Vector2(_xVelocity, _yVelocity);        
+    {
+        rb.linearVelocity = new Vector2(_xVelocity, _yVelocity);
     }
 
-    public void ThrowBoomerang()
+    [PunRPC]
+    public void ThrowBoomerang(float _facingDir)
     {
+        facingDir = _facingDir;
         if (anim != null)
             anim.SetTrigger("Throw");
-
         currentSpeed = maxSpeed;
         isThrown = true;
+
+
 
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+
+        if (collision.CompareTag("Player") && PhotonNetwork.IsMasterClient)
         {
             Debug.Log("플레이어에게 " + attackPower + "만큼 데미지를 줍니다.");
-            collision.GetComponent<Player>().TakeDamage(transform.position, attackPower);
-            Destroy(gameObject);
+            if (collision.GetComponent<PhotonView>() != null)
+                collision.GetComponent<PhotonView>().RPC("TakeDamage", RpcTarget.All, (Vector2)transform.position, attackPower); // 데미지 처리
+            if (PhotonNetwork.IsMasterClient)
+            {
+                isDestroyed = true;  // 삭제 상태로 설정
+                PhotonNetwork.Destroy(gameObject); // 네트워크 전체에서 삭제
+            }
         }
     }
 }

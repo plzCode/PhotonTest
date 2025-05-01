@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class M_Sword_GroundedState : EnemyState
 {
-    protected Monster_Sword enemy;
+    protected Enemy enemy;
 
     protected Transform player;
-    public M_Sword_GroundedState(Enemy _enemyBase, EnemyStateMachine _stateMachine, string _animBoolName, Monster_Sword _enemy) : base(_enemyBase, _stateMachine, _animBoolName)
+    public M_Sword_GroundedState(Enemy _enemyBase, EnemyStateMachine _stateMachine, string _animBoolName) : base(_enemyBase, _stateMachine, _animBoolName)
     {
-        this.enemy = _enemy;
+        this.enemy = _enemyBase;
     }
 
     public override void Enter()
