@@ -1,0 +1,487 @@
+fileFormatVersion: 2
+guid: 26120f7400151344abdc77f0ec118b1b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1272925975996942934
+    second: Delete Enemy Effect2 95x95_0
+  - first:
+      213: 1408547118583540913
+    second: Delete Enemy Effect2 95x95_1
+  - first:
+      213: 5168415070645599064
+    second: Delete Enemy Effect2 95x95_2
+  - first:
+      213: 7547804852832582172
+    second: Delete Enemy Effect2 95x95_3
+  - first:
+      213: -8299026360105056620
+    second: Delete Enemy Effect2 95x95_4
+  - first:
+      213: 8938139183386610215
+    second: Delete Enemy Effect2 95x95_5
+  - first:
+      213: 6407434918036659327
+    second: Delete Enemy Effect2 95x95_6
+  - first:
+      213: 7281864367149449818
+    second: Delete Enemy Effect2 95x95_7
+  - first:
+      213: 2843168995137642371
+    second: Delete Enemy Effect2 95x95_8
+  - first:
+      213: 3723914517041557603
+    second: Delete Enemy Effect2 95x95_9
+  - first:
+      213: -5802192549567116396
+    second: Delete Enemy Effect2 95x95_10
+  - first:
+      213: -395017131670536307
+    second: Delete Enemy Effect2 95x95_11
+  - first:
+      213: 6921544834661494037
+    second: Delete Enemy Effect2 95x95_12
+  - first:
+      213: -421461044704360802
+    second: Delete Enemy Effect2 95x95_13
+  - first:
+      213: 1498232378303216537
+    second: Delete Enemy Effect2 95x95_14
+  - first:
+      213: 2558597166721709068
+    second: Delete Enemy Effect2 95x95_15
+  - first:
+      213: -4728306568896699966
+    second: Delete Enemy Effect2 95x95_16
+  - first:
+      213: -4533857252184109756
+    second: Delete Enemy Effect2 95x95_17
+  - first:
+      213: 78519813342526936
+    second: Delete Enemy Effect2 95x95_18
+  - first:
+      213: -3688113672231697327
+    second: Delete Enemy Effect2 95x95_19
+  - first:
+      213: -712859388217764494
+    second: Delete Enemy Effect2 95x95_20
+  - first:
+      213: -1520527363605915147
+    second: Delete Enemy Effect2 95x95_21
+  - first:
+      213: -4777819838768447971
+    second: Delete Enemy Effect2 95x95_22
+  - first:
+      213: 2675105058376609330
+    second: Delete Enemy Effect2 95x95_23
+  - first:
+      213: 1390385010864917863
+    second: Delete Enemy Effect2 95x95_24
+  - first:
+      213: 7390776538911207542
+    second: Delete Enemy Effect2 95x95_25
+  - first:
+      213: 3988703476112397557
+    second: Delete Enemy Effect2 95x95_26
+  - first:
+      213: -2681724354534035307
+    second: Delete Enemy Effect2 95x95_27
+  - first:
+      213: -794738074627076378
+    second: Delete Enemy Effect2 95x95_28
+  - first:
+      213: -2839234772588981695
+    second: Delete Enemy Effect2 95x95_29
+  - first:
+      213: -1802216352540177243
+    second: Delete Enemy Effect2 95x95_30
+  - first:
+      213: -4712831494270731301
+    second: Delete Enemy Effect2 95x95_31
+  - first:
+      213: -6613803710748685210
+    second: Delete Enemy Effect2 95x95_32
+  - first:
+      213: 4272409334360301206
+    second: Delete Enemy Effect2 95x95_33
+  - first:
+      213: 7171964806837033879
+    second: Delete Enemy Effect2 95x95_34
+  - first:
+      213: -3633042538858618625
+    second: Delete Enemy Effect2 95x95_35
+  - first:
+      213: -3976139238834311234
+    second: Delete Enemy Effect2 95x95_36
+  - first:
+      213: 1367393118796491152
+    second: Delete Enemy Effect2 95x95_37
+  - first:
+      213: -867353192052743726
+    second: Delete Enemy Effect2 95x95_38
+  - first:
+      213: -8305357855813147470
+    second: Delete Enemy Effect2 95x95_39
+  - first:
+      213: 4260169586689590453
+    second: Delete Enemy Effect2 95x95_40
+  - first:
+      213: 7520307946943963321
+    second: Delete Enemy Effect2 95x95_41
+  - first:
+      213: 8860317058530615461
+    second: Delete Enemy Effect2 95x95_42
+  - first:
+      213: -4322980429514067377
+    second: Delete Enemy Effect2 95x95_43
+  - first:
+      213: -7404974922154243786
+    second: Delete Enemy Effect2 95x95_44
+  - first:
+      213: 2735003277520974920
+    second: Delete Enemy Effect2 95x95_45
+  - first:
+      213: -2073812182661527077
+    second: Delete Enemy Effect2 95x95_46
+  - first:
+      213: -4991395002327290600
+    second: Delete Enemy Effect2 95x95_47
+  - first:
+      213: -7712975046267246035
+    second: Delete Enemy Effect2 95x95_48
+  - first:
+      213: 2749963344956140016
+    second: Delete Enemy Effect2 95x95_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Delete Enemy Effect2 95x95_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 95
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa5b55fa198a55ee0800000000000000
+      internalID: -1272925975996942934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Delete Enemy Effect2 95x95_1
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 0
+        width: 95
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bc629c342a2c8310800000000000000
+      internalID: 1408547118583540913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Delete Enemy Effect2 95x95_2
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 0
+        width: 95
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85b3b919f16e9b740800000000000000
+      internalID: 5168415070645599064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Delete Enemy Effect2 95x95_3
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 0
+        width: 95
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1a3e0f06803fb860800000000000000
+      internalID: 7547804852832582172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Delete Enemy Effect2 95x95_4
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 0
+        width: 95
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 496c550ee7fe3dc80800000000000000
+      internalID: -8299026360105056620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Delete Enemy Effect2 95x95_5
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 0
+        width: 95
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72a42c22b36aa0c70800000000000000
+      internalID: 8938139183386610215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Delete Enemy Effect2 95x95_6
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 0
+        width: 95
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7c52032c18cbe850800000000000000
+      internalID: 6407434918036659327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Delete Enemy Effect2 95x95_7
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 0
+        width: 95
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a52848a9f016e0560800000000000000
+      internalID: 7281864367149449818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Delete Enemy Effect2 95x95_8
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 0
+        width: 95
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38f55972327f47720800000000000000
+      internalID: 2843168995137642371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: aa5478b1cf8332b4f97fabb1bb58b05a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Delete Enemy Effect2 95x95_0: -1272925975996942934
+      Delete Enemy Effect2 95x95_1: 1408547118583540913
+      Delete Enemy Effect2 95x95_2: 5168415070645599064
+      Delete Enemy Effect2 95x95_3: 7547804852832582172
+      Delete Enemy Effect2 95x95_4: -8299026360105056620
+      Delete Enemy Effect2 95x95_5: 8938139183386610215
+      Delete Enemy Effect2 95x95_6: 6407434918036659327
+      Delete Enemy Effect2 95x95_7: 7281864367149449818
+      Delete Enemy Effect2 95x95_8: 2843168995137642371
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
