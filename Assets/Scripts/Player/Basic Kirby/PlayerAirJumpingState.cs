@@ -24,12 +24,7 @@ public class PlayerAirJumpingState : PlayerState
 
         if (Input.GetKey(KeyCode.Space))
             stateMachine.ChangeState(player.airJumpUpState);
-
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            stateMachine.ChangeState(player.airJumpOutState);
-        }
-
+                
         if (player.IsGroundCheck())
             stateMachine.ChangeState(player.idleState);
 
@@ -40,6 +35,13 @@ public class PlayerAirJumpingState : PlayerState
 
         }
 
-        
+        if (IsPointerOverItemElement()) return;
+
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            stateMachine.ChangeState(player.airJumpOutState);
+        }
+
+
     }
 }

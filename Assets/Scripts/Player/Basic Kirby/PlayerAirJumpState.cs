@@ -34,13 +34,18 @@ public class PlayerAirJumpState : PlayerState
         if (Input.GetKeyDown(KeyCode.Space))
             stateMachine.ChangeState(player.airJumpUpState);
 
+        
+
+        if (xInput != 0)
+            pView.RPC("lineVelocity", RpcTarget.All, xInput * player.MoveSpeed, rb.linearVelocityY);
+        //player.lineVelocity(xInput * player.MoveSpeed, rb.linearVelocityY);
+
+
+        if (IsPointerOverItemElement()) return;
+
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             stateMachine.ChangeState(player.airJumpOutState);
         }
-
-        if (xInput != 0)
-            pView.RPC("lineVelocity", RpcTarget.All, xInput * player.MoveSpeed, rb.linearVelocityY);
-            //player.lineVelocity(xInput * player.MoveSpeed, rb.linearVelocityY);
     }
 }

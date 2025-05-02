@@ -26,14 +26,16 @@ public class PlayerAirJumpUpState : PlayerState
 
         if (rb.linearVelocityY < -0.1f)
             stateMachine.ChangeState(player.airJumpingState);
+                
+        if (xInput != 0)
+            //player.lineVelocity(xInput * player.MoveSpeed, rb.linearVelocityY);
+            pView.RPC("lineVelocity", RpcTarget.All, xInput * player.MoveSpeed, rb.linearVelocityY);
+
+        if (IsPointerOverItemElement()) return;
 
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             stateMachine.ChangeState(player.airJumpOutState);
         }
-
-        if (xInput != 0)
-            //player.lineVelocity(xInput * player.MoveSpeed, rb.linearVelocityY);
-            pView.RPC("lineVelocity", RpcTarget.All, xInput * player.MoveSpeed, rb.linearVelocityY);
     }
 }

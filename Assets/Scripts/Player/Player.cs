@@ -435,6 +435,22 @@ public class Player : MonoBehaviour
         stateMachine.ChangeState(damageState);  //굴러가는거 실행
     }
 
+    [PunRPC]
+    public void TakeHeal(float HealAmount)
+    {
+        PlayerHP += HealAmount;
+        if (PlayerHP > PlayerMaxHP)
+            PlayerHP = PlayerMaxHP;
+        if (health_Bar != null)
+        {
+            health_Bar.UpdateHealthBar(PlayerHP);
+        }
+        if (health_Bar != null)
+        {
+            health_Bar.UpdateHealthBar(PlayerHP);
+        }
+    }
+
 
 
     //대쉬타임 [idle, move, dash, dashTurn]
@@ -448,17 +464,7 @@ public class Player : MonoBehaviour
             dashTime += Time.deltaTime;
         }
     }
-
-    /*[PunRPC]
-    public void Change_Animator_Controller(int playerID)
-    {
-        PhotonView playerView = PhotonView.Find(playerID);
-        RuntimeAnimatorController animatorContoller = playerView.GetComponentInChildren<Animator>().runtimeAnimatorController;
-        for (int i = 0; i < animatorContoller.animationClips.Length; i++)
-        {
-            playerView.GetComponentInChildren<PhotonAnimatorView>().SetParameterSynchronized(animatorContoller.animationClips[i].name, PhotonAnimatorView.ParameterType.Bool, PhotonAnimatorView.SynchronizeType.Discrete);
-        }
-    }*/
+        
     public int EatKirbyFormNum;
     public int KirbyFormNum;
     [PunRPC]

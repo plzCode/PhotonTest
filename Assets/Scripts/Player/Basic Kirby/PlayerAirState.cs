@@ -52,17 +52,6 @@ public class PlayerAirState : PlayerState
             return;
         }
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) && player.curAbility == null)
-        {
-            stateMachine.ChangeState(player.eating12State);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Mouse0) && player.curAbility != null)
-        {
-            player.curAbility.AttackHandle();
-        }
-
-
         if (Input.GetKeyDown(KeyCode.Space) && player.TimeBool)
         {
             //player.lineVelocity(rb.linearVelocityX, player.JumpPower);
@@ -72,5 +61,17 @@ public class PlayerAirState : PlayerState
 
         if (rb.linearVelocityY < -8f)
             stateMachine.ChangeState(player.downingState);
+
+        if (IsPointerOverItemElement()) return;
+
+        if (Input.GetKeyDown(KeyCode.Mouse0) && player.curAbility == null)
+        {
+            stateMachine.ChangeState(player.eating12State);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Mouse0) && player.curAbility != null)
+        {
+            player.curAbility.AttackHandle();
+        }
     }
 }
