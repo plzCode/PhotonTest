@@ -11,7 +11,7 @@ public class Ability_Cupid : PlayerAbility
     public override void OnAbilityCopied(Player owner)
     {
         base.OnAbilityCopied(owner);
-        owner.KirbyFormNum = 3; //커비 변신 초기화
+        owner.KirbyFormNum = 4; //커비 변신 초기화
         PhotonView pView = owner.GetComponent<PhotonView>();
         cupidKirby = Resources.Load<RuntimeAnimatorController>("Test/Cupid_Kirby"); //바꿀 애니메이터 파일을 찾아 저장합니다.
 

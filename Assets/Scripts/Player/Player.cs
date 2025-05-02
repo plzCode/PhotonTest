@@ -478,6 +478,9 @@ public class Player : MonoBehaviour
             case 3: //Ä¿ÅÍ Æû
                 curAbility = gameObject.AddComponent<Ability_Cutter>();
                 break;
+            case 4: //Å¥ÇÇµå Æû
+                curAbility = gameObject.AddComponent<Ability_Cupid>();
+                break;
 
             default:
                 Debug.LogError("Invalid KirbyFormNum: " + KirbyFormNum);
