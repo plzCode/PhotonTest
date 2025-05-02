@@ -116,6 +116,15 @@ public class Cutter : PlayerRagedManager
             }
         }
 
+        if (collision.gameObject.CompareTag("StarBlock") && PhotonNetwork.IsMasterClient)
+        {
+            if (lifeTime <= 9.8f)
+            {
+                player.CutterUpgrade = 0;
+                PhotonNetwork.Destroy(gameObject);  // 제거
+            }
+        }
+
 
         if (collision.gameObject.CompareTag("Player") && PhotonNetwork.IsMasterClient)
         {

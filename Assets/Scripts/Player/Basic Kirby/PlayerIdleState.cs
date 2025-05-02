@@ -29,6 +29,7 @@ public class PlayerIdleState : PlayerGroundState
         if (xInput != 0 && player.dashTime > 0.1f) // 0.1 ~ 0.3초안에 움직임 값 누르면 대쉬로 전환
         {
             stateMachine.ChangeState(player.dashState);
+
             if (xInput < 0)
             {
                 player.turn = true; //참이면 턴할때 이미지 좌우반전 안함 + 마지막 xInput값 저장

@@ -66,6 +66,14 @@ public class PlayerAnimatorController : MonoBehaviour
                 hit.GetComponent<Enemy>().photonView.RPC("TakeDamage", RpcTarget.All,player.curAbility.attackPower); // 데미지 처리
                 //hit.gameObject.SetActive(false);  //임시로
             }
+            else if(hit.GetComponent<StarBlock>() != null)
+            {
+                hit.GetComponent<StarBlock>().pv.RPC("Delete", RpcTarget.All); //블록 제거
+            }
+            else if (hit.GetComponent<BigStarBlock>() != null)
+            {
+                hit.GetComponent<BigStarBlock>().pv.RPC("Delete", RpcTarget.All); //블록 제거
+            }
         }
     }
 

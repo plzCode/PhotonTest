@@ -73,6 +73,10 @@ MonoBehaviour:
   - EffectAdd
   - CreateInventory
   - CutterKirbyAttack
+  - Delete
+  - OnCollisionEnter2D
+  - BreakBlock
+  - DestroyBlock
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
