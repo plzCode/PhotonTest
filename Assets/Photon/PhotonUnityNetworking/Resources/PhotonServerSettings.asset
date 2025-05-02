@@ -72,6 +72,7 @@ MonoBehaviour:
   - EatKirbyStarAttack
   - EffectAdd
   - CreateInventory
+  - CutterKirbyAttack
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

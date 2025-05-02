@@ -33,6 +33,8 @@ public class Ability_Eat : PlayerAbility
     public override void AttackHandle()
     {
         if (owner == null) return;
+
+        attackPower = 10; //공격력 설정
         owner.stateMachine.ChangeState(attackState);
 
     }

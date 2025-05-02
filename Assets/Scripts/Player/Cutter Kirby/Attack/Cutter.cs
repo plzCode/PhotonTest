@@ -1,11 +1,10 @@
 using Photon.Pun;
 using UnityEngine;
 
-public class Cutter : MonoBehaviour
+public class Cutter : PlayerRagedManager
 {
     private Rigidbody2D rb;
     private Transform target;
-    private PhotonView photonView;
     private Animator anim;
 
     [SerializeField] private float flightTime = 1.0f;
@@ -22,23 +21,28 @@ public class Cutter : MonoBehaviour
     {
         anim = GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody2D>();
-        photonView = GetComponent<PhotonView>();
     }
 
     public void Start()
     {
         if (!photonView.IsMine) return; // 현재 클라이언트가 소유하지 않은 객체는 초기화하지 않음
 
-        Player player = Object.FindFirstObjectByType<Player>();  // Player 컴포넌트를 찾습니다.
-
-            anim.SetBool("Upgrade", true);  // 업그레이드 상태일 때 애니메이션을 설정합니다.
+        if (player.CutterUpgrade == 0)
+        {
+            anim.SetBool("Basic", true);  // 업그레이드 상태일 때 애니메이션을 설정합니다.
+        }
+        else
+        {
+            player.curAbility.attackPower += 10; // 업그레이드시 공격력을 증가시킵니다.
+            anim.SetBool("Upgrade", true); // 업그레이드 상태가 아닐 때 애니메이션을 설정합니다.
+        }
     }
 
     // 매 프레임마다 Cutter의 이동 및 상태를 업데이트합니다.
     public void Update()
     {
-        anim.SetBool("Upgrade", true); 
         if (!photonView.IsMine) return; // 현재 클라이언트가 소유하지 않은 객체는 업데이트하지 않음
+
 
         // Cutter가 살아있는 동안
         if (lifeTime > 0)
@@ -54,7 +58,19 @@ public class Cutter : MonoBehaviour
 
         if (!AttackEnemy)
         {
-            // Cutter를 직선으로 이동시킵니다.
+            if (Input.GetKey(KeyCode.Mouse0) && !AttackEnemy)
+            {
+                if (Input.GetKey(KeyCode.W))
+                {
+                    // W 키를 누르면 위로 이동합니다.
+                    transform.Translate(0, 1f * Time.deltaTime, 0);
+                }
+                else if (Input.GetKey(KeyCode.S))
+                {
+                    // S 키를 누르면 아래로 이동합니다.
+                    transform.Translate(0, -1f * Time.deltaTime, 0);
+                }
+            }
             transform.Translate(speed * Time.deltaTime, 0, 0);
             // 속도를 점진적으로 감소시킵니다.
             speed -= 10 * Time.deltaTime;
@@ -64,8 +80,6 @@ public class Cutter : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!photonView.IsMine) return; // 현재 클라이언트가 소유하지 않은 객체는 충돌 처리하지 않음
-
-        Player player = Object.FindFirstObjectByType<Player>();  // Player 컴포넌트를 찾습니다.
 
         if (collision.gameObject.CompareTag("Enemy"))
         {
@@ -80,26 +94,41 @@ public class Cutter : MonoBehaviour
             {
                 LaunchParabolic();
             }
+
+            Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+            if (enemy != null)
+            {
+                enemy.GetComponent<Enemy>().photonView.RPC("TakeDamage", RpcTarget.All, player.curAbility.attackPower);
+            }
+
             else
             {
                 Debug.LogWarning("Player not found!");
             }
         }
 
-        if (collision.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.CompareTag("Ground") && PhotonNetwork.IsMasterClient)
         {
-            if (lifeTime <= 9.0f)
+            if (lifeTime <= 9.8f)
             {
-                PhotonNetwork.Destroy(gameObject);  // 제거
+                player.CutterUpgrade = 0;
+            PhotonNetwork.Destroy(gameObject);  // 제거
             }
         }
 
-        if (collision.gameObject.CompareTag("Player"))
+
+        if (collision.gameObject.CompareTag("Player") && PhotonNetwork.IsMasterClient)
         {
-            // 플레이어와 충돌 시 Cutter를 제거합니다.
-            if (AttackEnemy)
+            if (lifeTime <= 9.8f)
             {
                 PhotonNetwork.Destroy(gameObject);
+
+                if (!AttackEnemy)
+                {
+                    player.CutterUpgrade = 0;
+                }
+                else
+                    player.CutterUpgrade += 1; // 업그레이드 수치를 증가시킵니다.
             }
         }
     }

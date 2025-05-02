@@ -122,6 +122,7 @@ MonoBehaviour:
   pView: {fileID: 0}
   health_Bar: {fileID: 0}
   inventory: {fileID: 0}
+  CutterUpgrade: 0
   dashTime: 0
   dash: 0
   turn: 0

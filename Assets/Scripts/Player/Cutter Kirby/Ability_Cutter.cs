@@ -39,8 +39,9 @@ public class Ability_Cutter : PlayerAbility
         if (owner == null) return;
 
         if (CoolTime > 0) return; //쿨타임이 남아있다면 공격을 하지 않습니다.
+        attackPower = 10; //공격력 설정
         owner.stateMachine.ChangeState(attackState);
-        CoolTime = 1f;
+        CoolTime = 0.7f;
 
     }
 

@@ -38,11 +38,6 @@ public class PlayerGroundState : PlayerState
             //}
         }
 
-        if (player.KirbyFormNum == 1) //���� �Կ� ��� �ִ��� �϶� ���������� �� ���� ����
-        {
-            return;
-        }
-
         if (Input.GetKeyDown(KeyCode.Mouse0) && player.curAbility == null)
         {
             stateMachine.ChangeState(player.eating12State);

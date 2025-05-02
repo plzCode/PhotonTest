@@ -201,6 +201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 192c56aa91daa4a4a9919a260976b3b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   flightTime: 1
   speed: 10
   AttackDelay: 0

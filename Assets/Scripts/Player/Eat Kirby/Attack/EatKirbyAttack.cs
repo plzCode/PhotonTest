@@ -1,9 +1,8 @@
 using UnityEngine;
 using Photon.Pun;
 
-public class EatKirbyAttack : MonoBehaviourPun
+public class EatKirbyAttack : PlayerRagedManager
 {
-
     public float moveSpeed = 8f;
     public float lifeTime = 5f; // 10초 뒤에 삭제
     private float timer = 0f;
@@ -19,17 +18,23 @@ public class EatKirbyAttack : MonoBehaviourPun
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-
-        if (collision.gameObject.CompareTag("Enemy") && PhotonNetwork.IsMasterClient)
+        if (collision.gameObject.CompareTag("Enemy"))
         {
-            PhotonNetwork.Destroy(gameObject);
+            Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+            if (enemy != null)
+            {
+                enemy.GetComponent<Enemy>().photonView.RPC("TakeDamage", RpcTarget.All, player.curAbility.attackPower);
+            }
+            if (PhotonNetwork.IsMasterClient)
+                PhotonNetwork.Destroy(gameObject);
         }
 
-        if (collision.gameObject.CompareTag("Ground") && PhotonNetwork.IsMasterClient)
+        if (collision.gameObject.CompareTag("Ground"))
         {
-            PhotonNetwork.Destroy(gameObject);
+            if (PhotonNetwork.IsMasterClient)
+                PhotonNetwork.Destroy(gameObject);
         }
     }
 }

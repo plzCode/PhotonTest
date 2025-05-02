@@ -76,7 +76,7 @@ public class PlayerAnimatorController : MonoBehaviour
         RangedAttack(Attack, "Player_Effect/Kirby Eat Attack 60x60_0");
     }
 
-    private Cutter cutter;
+    [PunRPC]
     public void CutterKirbyAttack()
     {
         RangedAttack(Attack, "Player_Effect/Cutter");

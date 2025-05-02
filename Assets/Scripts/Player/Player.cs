@@ -1,13 +1,7 @@
 using Photon.Pun;
-using Photon.Realtime;
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Resources;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.InputSystem.XInput;
-using UnityEngine.UIElements;
 
 public class Player : MonoBehaviour
 {
@@ -57,6 +51,7 @@ public class Player : MonoBehaviour
     public Animator anim { get; private set; }
 
     #region 스탯
+    public PlayerState playerState { get; private set; }
     public PlayerStateMachine stateMachine { get; private set; }
 
     public PlayerIdleState idleState { get; private set; }
@@ -101,6 +96,12 @@ public class Player : MonoBehaviour
     public Health_Bar health_Bar;
     //Inventory
     public Inventory inventory;
+
+
+    #region AttackUpgrade
+
+    public float CutterUpgrade;
+    #endregion
 
     public void Awake()
     {
@@ -167,7 +168,7 @@ public class Player : MonoBehaviour
                 Debug.Log("Normal Kirby Attack");
             }
         }
-        
+
         if (Input.GetKeyDown(KeyCode.X))
         {
             if (curAbility == null)
@@ -192,8 +193,6 @@ public class Player : MonoBehaviour
             }
         }*/
         #endregion
-
-
     }
 
 
@@ -296,16 +295,27 @@ public class Player : MonoBehaviour
     [PunRPC]
     public void EffectAdd(float _x, GameObject Effect, Transform EffecPos) //이펙트를 추가함
     {
+        GameObject bullet = null;
+
         if (_x > 0) //오른쪽이면 그대로 소환
         {
             //Instantiate(obj, EffecPos.position, Quaternion.identity);
-            PhotonNetwork.Instantiate("Player_Effect/"+Effect.name, EffecPos.position, Quaternion.identity);
+            bullet = PhotonNetwork.Instantiate("Player_Effect/" + Effect.name, EffecPos.position, Quaternion.identity);
 
         }
         else if (_x < 0) //왼쪽이면 좌우반전 소환
         {
             //Instantiate(obj, EffecPos.position, Quaternion.Euler(0, 180, 0));
-            PhotonNetwork.Instantiate("Player_Effect/" + Effect.name, EffecPos.position, Quaternion.Euler(0, 180, 0));
+            bullet = PhotonNetwork.Instantiate("Player_Effect/" + Effect.name, EffecPos.position, Quaternion.Euler(0, 180, 0));
+        }
+
+        if (bullet != null)
+        {
+            PlayerRagedManager attackScript = bullet.GetComponent<PlayerRagedManager>();
+            if (attackScript != null)
+            {
+                attackScript.player = this; // 이 코드가 Player 클래스 안에 있어야 함
+            }
         }
     }
 
@@ -412,13 +422,13 @@ public class Player : MonoBehaviour
             LastMove = -1f;
         }
 
-        if(KirbyFormNum > 0)
+        if (KirbyFormNum > 0)
         {
             EffectAdd(LastMove, DamageStar, transform);
             curAbility.OnAbilityDestroyed(this); //어빌리티 초기화
         }
         PlayerHP -= Damage;
-        if(health_Bar != null)
+        if (health_Bar != null)
         {
             health_Bar.UpdateHealthBar(PlayerHP);
         }
@@ -532,12 +542,12 @@ public class Player : MonoBehaviour
 
     public virtual void AnimationFinishTrigger() => stateMachine.state.AnimationFinishTrigger();
 
-    
+
 
     public void Call_RPC(string rpc_Name, RpcTarget type)
     {
         pView.RPC(rpc_Name, type);
     }
-    
+
 
 }

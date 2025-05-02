@@ -9,7 +9,7 @@ public class PlayerState
     protected Player player;
     protected PlayerStateMachine stateMachine;
 
-    protected float xInput;
+    public float xInput;
 
     protected Rigidbody2D rb;
 
