@@ -3,6 +3,8 @@ using UnityEngine;
 using UnityEngine.Windows;
 using Input = UnityEngine.Input;
 using Photon.Pun;
+using UnityEngine.EventSystems;
+using System.Collections.Generic;
 
 public class PlayerState
 {
@@ -49,5 +51,28 @@ public class PlayerState
     public virtual void AnimationFinishTrigger()
     {
         triggerCalled = true;
+    }
+
+    protected bool IsPointerOverItemElement()
+    {
+        PointerEventData eventData = new PointerEventData(EventSystem.current)
+        {
+            position = Input.mousePosition
+        };
+
+        List<RaycastResult> results = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(eventData, results);
+
+        // UI 레이어에 속한 객체가 있는지 확인
+        foreach (var result in results)
+        {
+            Debug.Log(result);
+            if (result.gameObject.layer == LayerMask.NameToLayer("UI") && result.gameObject.CompareTag("Item"))
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 }

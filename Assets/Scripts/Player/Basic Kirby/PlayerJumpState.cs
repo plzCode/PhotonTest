@@ -52,8 +52,6 @@ public class PlayerJumpState : PlayerState
             return;
         }
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) && player.curAbility == null)
-            stateMachine.ChangeState(player.eating12State);
 
 
         if (Input.GetKeyDown(KeyCode.Space)) //스페이스바 누르면 볼빵빵으로 감
@@ -61,5 +59,10 @@ public class PlayerJumpState : PlayerState
             stateMachine.ChangeState(player.airJumpState);
 
         }
+
+        if (IsPointerOverItemElement()) return;
+
+        if (Input.GetKeyDown(KeyCode.Mouse0) && player.curAbility == null)
+            stateMachine.ChangeState(player.eating12State);
     }
 }

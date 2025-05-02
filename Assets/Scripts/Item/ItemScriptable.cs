@@ -6,7 +6,7 @@ public class ItemScriptable : ScriptableObject
     public string itemName;
     public Sprite icon;
     public string description;
-    public int effectValue;
+    public float effectValue;
 
     // 나중에 분류 용도 (예: 회복, 공격 등)
     public ItemType type;

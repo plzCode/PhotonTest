@@ -11,6 +11,7 @@ public class Inventory : MonoBehaviour
 
     public void AddItem(ItemScriptable newItem)
     {
+        if (player != null && player.pView.IsMine == false) return;
         if (newItem.isAutoUse)
         {
             UseItem(newItem); // 즉시 사용
@@ -32,26 +33,21 @@ public class Inventory : MonoBehaviour
 
     public void RemoveItem(ItemScriptable item)
     {
+        if (player != null && player.pView.IsMine == false) return;
         items.Remove(item);
     }
-        
+
+
     public void UseItem(ItemScriptable item)
     {
-        Debug.Log(player.GetComponent<PhotonView>().ViewID);
+        if (player != null && player.pView.IsMine == false) return;
         switch (item.type)
         {
             case ItemType.Heal:
                 if (player != null)
                 {
-                    player.PlayerHP += item.effectValue; // 플레이어 체력 회복
-                    if (player.PlayerHP > player.PlayerMaxHP)
-                        player.PlayerHP = player.PlayerMaxHP; // 최대 체력 초과 방지
-                    
-                    if (player.health_Bar != null)
-                    {
-                        player.health_Bar.UpdateHealthBar(player.PlayerHP);
-                    }
-                    Debug.Log($"플레이어 체력: {player.PlayerHP}");
+                    player.pView.RPC("TakeHeal", RpcTarget.All, item.effectValue); // 체력 회복
+
                 }
                 else
                 {
@@ -63,6 +59,7 @@ public class Inventory : MonoBehaviour
         }
 
         RemoveItem(item); // 사용 후 삭제
+        UpdateInventoryUI();
     }
     // 인벤토리 UI를 원형으로 배치
     private void UpdateInventoryUI()
@@ -74,6 +71,14 @@ public class Inventory : MonoBehaviour
             Debug.LogError("InventoryUIParent not found in the scene.");
             return;
         }
+        // 기존 UI 제거
+        foreach (Transform child in inventoryUIParent)
+        {
+            if(child.GetComponent<Image>() != null)
+            {
+                Destroy(child.gameObject);
+            }
+        }
         for (int i = 0; i < items.Count; i++)
         {
 
@@ -82,6 +87,8 @@ public class Inventory : MonoBehaviour
 
             // 아이템 UI 생성
             GameObject itemUI = new GameObject(items[index].itemName);
+            itemUI.layer = LayerMask.NameToLayer("UI"); // UI 레이어 설정
+            itemUI.tag = "Item"; // 태그 설정
 
             // RectTransform 설정
             RectTransform rectTransform = itemUI.AddComponent<RectTransform>();
@@ -101,7 +108,8 @@ public class Inventory : MonoBehaviour
             });
 
             // UI 크기 및 부모 설정
-            itemUI.transform.localScale = new Vector3(0.8f, 0.8f, 0.8f);
+            float scaleFactor = Mathf.Min(Screen.width, Screen.height) / 1080f;
+            itemUI.transform.localScale = new Vector3(0.8f, 0.8f, 0.8f) * scaleFactor;
             itemUI.transform.SetParent(inventoryUIParent);
         }
 
