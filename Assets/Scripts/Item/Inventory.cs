@@ -74,28 +74,38 @@ public class Inventory : MonoBehaviour
             Debug.LogError("InventoryUIParent not found in the scene.");
             return;
         }
-
         for (int i = 0; i < items.Count; i++)
         {
-            // 아이템 UI 생성 또는 가져오기
-            GameObject itemUI = new GameObject(items[i].itemName);
-            if (itemUI == null)
+
+            // 로컬 변수로 캡처
+            int index = i;
+
+            // 아이템 UI 생성
+            GameObject itemUI = new GameObject(items[index].itemName);
+
+            // RectTransform 설정
+            RectTransform rectTransform = itemUI.AddComponent<RectTransform>();
+            rectTransform.anchoredPosition = itemPositions[index].position;
+
+            // 아이템 아이콘 설정
+            Image image = itemUI.AddComponent<Image>();
+            image.sprite = items[index].icon;
+
+            // 버튼 추가 및 이벤트 등록
+            Button button = itemUI.AddComponent<Button>();
+            button.onClick.AddListener(() =>
             {
-                Debug.LogError("ItemUI prefab not found in Resources/UI.");
-                return;
-            }
-            // 아이템 UI의 위치를 미리 지정된 위치로 설정
-            itemUI.AddComponent<RectTransform>();
-            itemUI.GetComponent<RectTransform>().anchoredPosition = itemPositions[i].position;
-            // 컴포넌트 추가
-            itemUI.AddComponent<Image>().sprite = items[i].icon; // 아이템 아이콘 설정
-            itemUI.AddComponent<Button>(); // Button 추가
-            itemUI.GetComponent<Button>().onClick.AddListener(() => UseItem(items[i])); // 클릭 시 아이템 사용
+                Debug.Log($"Button clicked for item: {items[index].itemName}");
+                UseItem(items[index]);
+                Destroy(itemUI); // 사용 후 UI 제거
+            });
+
+            // UI 크기 및 부모 설정
             itemUI.transform.localScale = new Vector3(0.8f, 0.8f, 0.8f);
-            itemUI.transform.SetParent(inventoryUIParent); // 부모 설정
-
-
-
+            itemUI.transform.SetParent(inventoryUIParent);
         }
+
+
+        
     }
 }
