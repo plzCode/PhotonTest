@@ -1,28 +1,25 @@
 fileFormatVersion: 2
-guid: 8e1e48c3688c38948a0d2649a5a0e30c
+guid: 64dcbea4c9b681c47ae679d1dcb1e185
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3855501784408621627
-    second: Mon2_Attack03_0
+      213: -5028808565465342834
+    second: Mon2_Attack01Fix_0
   - first:
-      213: -8459223548089576886
-    second: Mon2_Attack03_1
+      213: -4349589477957673089
+    second: Mon2_Attack01Fix_1
   - first:
-      213: -7727278835368074574
-    second: Mon2_Attack03_2
+      213: 2498345491792722590
+    second: Mon2_Attack01Fix_2
   - first:
-      213: 3101694402096833986
-    second: Mon2_Attack03_3
+      213: -6477269352740920034
+    second: Mon2_Attack01Fix_3
   - first:
-      213: -2004265380907273221
-    second: Mon2_Attack03_4
+      213: 356527599036299778
+    second: Mon2_Attack01Fix_4
   - first:
-      213: 5489146313042943338
-    second: Mon2_Attack03_5
-  - first:
-      213: 2400696063319152212
-    second: Mon2_Attack03_6
+      213: 2358687695503223605
+    second: Mon2_Attack01Fix_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -157,10 +154,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mon2_Attack03_0
+      name: Mon2_Attack01Fix_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
         width: 120
         height: 120
@@ -172,17 +169,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 426a57d5d53652746b60caf4bf8c3c5c
-      internalID: -1381037412
+      spriteID: 3a0f65cfd97a03d45a1f7ddb5e8ef1b5
+      internalID: -657773394
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mon2_Attack03_1
+      name: Mon2_Attack01Fix_1
       rect:
         serializedVersion: 2
-        x: 120
+        x: 121
         y: 0
         width: 120
         height: 120
@@ -194,17 +191,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50a88d7db23c321468874e8e96c3e201
-      internalID: 1223320445
+      spriteID: eaa5de58a047ef042a41dee78b037592
+      internalID: -1206428530
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mon2_Attack03_2
+      name: Mon2_Attack01Fix_2
       rect:
         serializedVersion: 2
-        x: 235
+        x: 239
         y: 0
         width: 120
         height: 120
@@ -216,14 +213,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1dd6896d0e3a8d04cae7a085adec636d
-      internalID: -414968533
+      spriteID: 22b9898ddbbfb9f44b84f5084d94e695
+      internalID: 353220599
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mon2_Attack03_3
+      name: Mon2_Attack01Fix_3
       rect:
         serializedVersion: 2
         x: 361
@@ -238,17 +235,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14d39f7cf80c74245b95c140f41fa8ff
-      internalID: 728895980
+      spriteID: 2882e42b822bdb24d9d7d466546d2842
+      internalID: -12759442
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mon2_Attack03_4
+      name: Mon2_Attack01Fix_4
       rect:
         serializedVersion: 2
-        x: 480
+        x: 483
         y: 0
         width: 120
         height: 120
@@ -260,17 +257,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83212c7e932d7624d9b248ee4a84ea21
-      internalID: 877297172
+      spriteID: cba1ccf6971bdc341993ddd5f9be2651
+      internalID: 115022207
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mon2_Attack03_5
+      name: Mon2_Attack01Fix_5
       rect:
         serializedVersion: 2
-        x: 600
+        x: 608
         y: 0
         width: 120
         height: 120
@@ -282,30 +279,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 908834f9599f6dd4ab7bd40bd8a188cb
-      internalID: -317129697
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mon2_Attack03_6
-      rect:
-        serializedVersion: 2
-        x: 720
-        y: 0
-        width: 120
-        height: 120
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e915f332f9c8d0419206a1d7694b287
-      internalID: 1099673794
+      spriteID: 0e35353c7f6b9214082c2c6ce27fa861
+      internalID: -885382655
       vertices: []
       indices: 
       edges: []
@@ -314,7 +289,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: b0f3540c56081b340a3679bf5720e590
+    spriteID: e9e4fe89b9742be4fbab29e81a175dde
     internalID: 0
     vertices: []
     indices: 
@@ -324,13 +299,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Mon2_Attack03_0: -1381037412
-      Mon2_Attack03_1: 1223320445
-      Mon2_Attack03_2: -414968533
-      Mon2_Attack03_3: 728895980
-      Mon2_Attack03_4: 877297172
-      Mon2_Attack03_5: -317129697
-      Mon2_Attack03_6: 1099673794
+      Mon2_Attack01Fix_0: -657773394
+      Mon2_Attack01Fix_1: -1206428530
+      Mon2_Attack01Fix_2: 353220599
+      Mon2_Attack01Fix_3: -12759442
+      Mon2_Attack01Fix_4: 115022207
+      Mon2_Attack01Fix_5: -885382655
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -52,8 +52,6 @@ public class PlayerJumpState : PlayerState
             return;
         }
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) && player.curAbility == null)
-            stateMachine.ChangeState(player.eating12State);
 
         if (Input.GetKeyDown(KeyCode.Mouse0) && player.curAbility != null)
         {
@@ -65,5 +63,10 @@ public class PlayerJumpState : PlayerState
             stateMachine.ChangeState(player.airJumpState);
 
         }
+
+        if (IsPointerOverItemElement()) return;
+
+        if (Input.GetKeyDown(KeyCode.Mouse0) && player.curAbility == null)
+            stateMachine.ChangeState(player.eating12State);
     }
 }

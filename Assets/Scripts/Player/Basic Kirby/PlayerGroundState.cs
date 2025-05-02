@@ -38,8 +38,11 @@ public class PlayerGroundState : PlayerState
             //}
         }
 
+        if (IsPointerOverItemElement()) return;
+
         if (Input.GetKeyDown(KeyCode.Mouse0) && player.curAbility == null)
         {
+            
             stateMachine.ChangeState(player.eating12State);
         }
 
