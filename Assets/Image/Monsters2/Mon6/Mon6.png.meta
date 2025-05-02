@@ -112,7 +112,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -126,7 +126,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 24
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -217,10 +217,10 @@ TextureImporter:
       name: Mon6_0
       rect:
         serializedVersion: 2
-        x: 39
-        y: 39
-        width: 44
-        height: 41
+        x: 0
+        y: 0
+        width: 120
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,10 +239,10 @@ TextureImporter:
       name: Mon6_1
       rect:
         serializedVersion: 2
-        x: 159
-        y: 39
-        width: 44
-        height: 41
+        x: 120
+        y: 0
+        width: 120
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -261,10 +261,10 @@ TextureImporter:
       name: Mon6_2
       rect:
         serializedVersion: 2
-        x: 281
-        y: 38
-        width: 41
-        height: 45
+        x: 240
+        y: 0
+        width: 120
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -283,10 +283,10 @@ TextureImporter:
       name: Mon6_3
       rect:
         serializedVersion: 2
-        x: 403
-        y: 39
-        width: 41
-        height: 43
+        x: 360
+        y: 0
+        width: 120
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,10 +305,10 @@ TextureImporter:
       name: Mon6_4
       rect:
         serializedVersion: 2
-        x: 522
-        y: 39
-        width: 41
-        height: 46
+        x: 480
+        y: 0
+        width: 120
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -327,10 +327,10 @@ TextureImporter:
       name: Mon6_5
       rect:
         serializedVersion: 2
-        x: 642
-        y: 39
-        width: 41
-        height: 46
+        x: 600
+        y: 0
+        width: 120
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -349,10 +349,10 @@ TextureImporter:
       name: Mon6_6
       rect:
         serializedVersion: 2
-        x: 761
-        y: 39
-        width: 42
-        height: 46
+        x: 720
+        y: 0
+        width: 120
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -371,10 +371,10 @@ TextureImporter:
       name: Mon6_7
       rect:
         serializedVersion: 2
-        x: 880
-        y: 39
-        width: 42
-        height: 40
+        x: 840
+        y: 0
+        width: 120
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -393,10 +393,10 @@ TextureImporter:
       name: Mon6_8
       rect:
         serializedVersion: 2
-        x: 1000
-        y: 39
-        width: 47
-        height: 39
+        x: 960
+        y: 0
+        width: 120
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -415,10 +415,10 @@ TextureImporter:
       name: Mon6_9
       rect:
         serializedVersion: 2
-        x: 1123
-        y: 39
-        width: 41
-        height: 46
+        x: 1080
+        y: 0
+        width: 120
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -437,10 +437,10 @@ TextureImporter:
       name: Mon6_10
       rect:
         serializedVersion: 2
-        x: 1243
-        y: 39
-        width: 42
-        height: 46
+        x: 1200
+        y: 0
+        width: 120
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -459,10 +459,10 @@ TextureImporter:
       name: Mon6_11
       rect:
         serializedVersion: 2
-        x: 1363
-        y: 39
-        width: 41
-        height: 46
+        x: 1320
+        y: 0
+        width: 120
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -481,10 +481,10 @@ TextureImporter:
       name: Mon6_12
       rect:
         serializedVersion: 2
-        x: 1484
-        y: 39
-        width: 42
-        height: 44
+        x: 1440
+        y: 0
+        width: 120
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -503,10 +503,10 @@ TextureImporter:
       name: Mon6_13
       rect:
         serializedVersion: 2
-        x: 1607
-        y: 38
-        width: 46
-        height: 42
+        x: 1560
+        y: 0
+        width: 120
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -525,10 +525,10 @@ TextureImporter:
       name: Mon6_14
       rect:
         serializedVersion: 2
-        x: 1727
-        y: 37
-        width: 41
-        height: 40
+        x: 1680
+        y: 0
+        width: 120
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -547,10 +547,10 @@ TextureImporter:
       name: Mon6_15
       rect:
         serializedVersion: 2
-        x: 1847
-        y: 39
-        width: 37
-        height: 44
+        x: 1800
+        y: 0
+        width: 120
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -569,10 +569,10 @@ TextureImporter:
       name: Mon6_16
       rect:
         serializedVersion: 2
-        x: 1965
-        y: 39
-        width: 33
-        height: 44
+        x: 1920
+        y: 0
+        width: 120
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -591,10 +591,10 @@ TextureImporter:
       name: Mon6_17
       rect:
         serializedVersion: 2
-        x: 2086
-        y: 39
-        width: 36
-        height: 44
+        x: 2040
+        y: 0
+        width: 120
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -613,10 +613,10 @@ TextureImporter:
       name: Mon6_18
       rect:
         serializedVersion: 2
-        x: 2205
-        y: 39
-        width: 42
-        height: 39
+        x: 2160
+        y: 0
+        width: 120
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -635,10 +635,10 @@ TextureImporter:
       name: Mon6_19
       rect:
         serializedVersion: 2
-        x: 2315
-        y: 37
-        width: 11
-        height: 41
+        x: 2280
+        y: 0
+        width: 120
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -657,10 +657,10 @@ TextureImporter:
       name: Mon6_20
       rect:
         serializedVersion: 2
-        x: 2326
-        y: 36
-        width: 41
-        height: 40
+        x: 2400
+        y: 0
+        width: 120
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -679,10 +679,10 @@ TextureImporter:
       name: Mon6_21
       rect:
         serializedVersion: 2
-        x: 2440
-        y: 39
-        width: 43
-        height: 35
+        x: 2520
+        y: 0
+        width: 120
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -701,10 +701,10 @@ TextureImporter:
       name: Mon6_22
       rect:
         serializedVersion: 2
-        x: 2562
-        y: 39
-        width: 42
-        height: 35
+        x: 2640
+        y: 0
+        width: 120
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -723,10 +723,10 @@ TextureImporter:
       name: Mon6_23
       rect:
         serializedVersion: 2
-        x: 2682
-        y: 39
-        width: 42
-        height: 35
+        x: 2760
+        y: 0
+        width: 120
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -745,42 +745,20 @@ TextureImporter:
       name: Mon6_24
       rect:
         serializedVersion: 2
-        x: 2799
-        y: 39
-        width: 44
-        height: 41
+        x: 2880
+        y: 0
+        width: 120
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 30f147dea8e2be000800000000000000
+      spriteID: 633aa5673e3b22346a4b24ad709c4894
       internalID: 66197793751179011
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mon6_25
-      rect:
-        serializedVersion: 2
-        x: 2926
-        y: 39
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d3bbebb701da163e0800000000000000
-      internalID: -2062176868051797187
       vertices: []
       indices: 
       edges: []
@@ -789,7 +767,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4838317dc1b3a054da51cb33ff4673d0
     internalID: 0
     vertices: []
     indices: 
@@ -817,7 +795,6 @@ TextureImporter:
       Mon6_22: 4152742880110378253
       Mon6_23: -2911796632095523503
       Mon6_24: 66197793751179011
-      Mon6_25: -2062176868051797187
       Mon6_3: -4982960635039785850
       Mon6_4: -491502700818252502
       Mon6_5: 2855788076521405940

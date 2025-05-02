@@ -1,28 +1,19 @@
 fileFormatVersion: 2
-guid: 8e1e48c3688c38948a0d2649a5a0e30c
+guid: f93e8a20884c4bb41990f625da666065
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3855501784408621627
-    second: Mon2_Attack03_0
+      213: -688864013645282479
+    second: DS DSi - Kirby Squeak Squad Kirby Mouse Attack - Bonkers_0
   - first:
-      213: -8459223548089576886
-    second: Mon2_Attack03_1
+      213: 5761376015976849285
+    second: DS DSi - Kirby Squeak Squad Kirby Mouse Attack - Bonkers_1
   - first:
-      213: -7727278835368074574
-    second: Mon2_Attack03_2
+      213: -7393054505891914881
+    second: DS DSi - Kirby Squeak Squad Kirby Mouse Attack - Bonkers_2
   - first:
-      213: 3101694402096833986
-    second: Mon2_Attack03_3
-  - first:
-      213: -2004265380907273221
-    second: Mon2_Attack03_4
-  - first:
-      213: 5489146313042943338
-    second: Mon2_Attack03_5
-  - first:
-      213: 2400696063319152212
-    second: Mon2_Attack03_6
+      213: -2026342724117411044
+    second: DS DSi - Kirby Squeak Squad Kirby Mouse Attack - Bonkers_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -157,11 +148,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mon2_Attack03_0
+      name: DS DSi - Kirby Squeak Squad Kirby Mouse Attack - Bonkers_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 0
+        x: 29
+        y: 1
         width: 120
         height: 120
       alignment: 0
@@ -170,20 +161,20 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 426a57d5d53652746b60caf4bf8c3c5c
-      internalID: -1381037412
+      spriteID: 1538f1054d9a076f0800000000000000
+      internalID: -688864013645282479
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mon2_Attack03_1
+      name: DS DSi - Kirby Squeak Squad Kirby Mouse Attack - Bonkers_1
       rect:
         serializedVersion: 2
-        x: 120
-        y: 0
+        x: 138
+        y: 1
         width: 120
         height: 120
       alignment: 0
@@ -192,20 +183,20 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 50a88d7db23c321468874e8e96c3e201
-      internalID: 1223320445
+      spriteID: 58f51c126f484ff40800000000000000
+      internalID: 5761376015976849285
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mon2_Attack03_2
+      name: DS DSi - Kirby Squeak Squad Kirby Mouse Attack - Bonkers_2
       rect:
         serializedVersion: 2
-        x: 235
-        y: 0
+        x: 260
+        y: 1
         width: 120
         height: 120
       alignment: 0
@@ -214,20 +205,20 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 1dd6896d0e3a8d04cae7a085adec636d
-      internalID: -414968533
+      spriteID: f7b1633d818966990800000000000000
+      internalID: -7393054505891914881
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mon2_Attack03_3
+      name: DS DSi - Kirby Squeak Squad Kirby Mouse Attack - Bonkers_3
       rect:
         serializedVersion: 2
-        x: 361
-        y: 0
+        x: 385
+        y: 1
         width: 120
         height: 120
       alignment: 0
@@ -236,76 +227,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 14d39f7cf80c74245b95c140f41fa8ff
-      internalID: 728895980
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mon2_Attack03_4
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 0
-        width: 120
-        height: 120
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 83212c7e932d7624d9b248ee4a84ea21
-      internalID: 877297172
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mon2_Attack03_5
-      rect:
-        serializedVersion: 2
-        x: 600
-        y: 0
-        width: 120
-        height: 120
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 908834f9599f6dd4ab7bd40bd8a188cb
-      internalID: -317129697
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mon2_Attack03_6
-      rect:
-        serializedVersion: 2
-        x: 720
-        y: 0
-        width: 120
-        height: 120
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e915f332f9c8d0419206a1d7694b287
-      internalID: 1099673794
+      spriteID: c1bc8c7470cf0e3e0800000000000000
+      internalID: -2026342724117411044
       vertices: []
       indices: 
       edges: []
@@ -314,7 +239,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: b0f3540c56081b340a3679bf5720e590
+    spriteID: 0e838260be117d749bdc099972abd549
     internalID: 0
     vertices: []
     indices: 
@@ -324,13 +249,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Mon2_Attack03_0: -1381037412
-      Mon2_Attack03_1: 1223320445
-      Mon2_Attack03_2: -414968533
-      Mon2_Attack03_3: 728895980
-      Mon2_Attack03_4: 877297172
-      Mon2_Attack03_5: -317129697
-      Mon2_Attack03_6: 1099673794
+      DS DSi - Kirby Squeak Squad Kirby Mouse Attack - Bonkers_0: -688864013645282479
+      DS DSi - Kirby Squeak Squad Kirby Mouse Attack - Bonkers_1: 5761376015976849285
+      DS DSi - Kirby Squeak Squad Kirby Mouse Attack - Bonkers_2: -7393054505891914881
+      DS DSi - Kirby Squeak Squad Kirby Mouse Attack - Bonkers_3: -2026342724117411044
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
