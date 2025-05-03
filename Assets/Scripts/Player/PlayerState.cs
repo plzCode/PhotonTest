@@ -66,7 +66,7 @@ public class PlayerState
         // UI 레이어에 속한 객체가 있는지 확인
         foreach (var result in results)
         {
-            Debug.Log(result);
+            
             if (result.gameObject.layer == LayerMask.NameToLayer("UI") && result.gameObject.CompareTag("Item"))
             {
                 return true;

@@ -9,7 +9,9 @@ public class Ability_Animal : PlayerAbility
     public RuntimeAnimatorController animalKirby;
 
     public Animal_Kirby_Attack_State attackState;
-    
+    public Animal_Kirby_Dash_Attack_State dash_attackState;
+    public Animal_Kirby_Down_Attack_State down_attackState;
+
 
     public override void OnAbilityCopied(Player owner) //변신을 적용합니다.
     {
@@ -33,6 +35,7 @@ public class Ability_Animal : PlayerAbility
 
         RemoveState(owner); 
         Debug.Log("Animal ability destroyed");
+        Destroy(owner.gameObject.GetComponent<Ability_Animal>());
     }
 
     public override void AttackHandle()
@@ -44,6 +47,29 @@ public class Ability_Animal : PlayerAbility
 
         owner.stateMachine.ChangeState(attackState);
 
+    }
+
+    public override void DashAttackHandle()
+    {
+        if(owner == null) return;
+
+        attackCheckRadius = 0.8f; //공격 범위 설정
+        attackPower = 10; //공격력 설정
+
+        owner.stateMachine.ChangeState(dash_attackState);
+    }
+
+    public override void DownAttackHandle()
+    {
+        PlayerState prevState = owner.stateMachine.state;
+        Debug.Log(prevState);
+        if (owner == null) return;
+        if (owner.stateMachine.state is PlayerGroundState) return;
+
+        attackCheckRadius = 0.8f; //공격 범위 설정
+        attackPower = 10; //공격력 설정
+
+        owner.stateMachine.ChangeState(down_attackState);
     }
 
     public void Update()
@@ -62,6 +88,8 @@ public class Ability_Animal : PlayerAbility
     public void AddState(Player owner)
     {
         attackState = new Animal_Kirby_Attack_State(owner, owner.stateMachine, "Attack_1");
+        dash_attackState = new Animal_Kirby_Dash_Attack_State(owner, owner.stateMachine, "Attack_Dash");
+        down_attackState = new Animal_Kirby_Down_Attack_State(owner, owner.stateMachine, "Attack_Down");
     }
     public void RemoveState(Player owner)
     {

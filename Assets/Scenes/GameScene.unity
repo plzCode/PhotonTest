@@ -9994,8 +9994,33 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4323328105425634050, guid: 9c81dfda12811dd43abc0e45e391aba6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 472216893936644775}
   m_SourcePrefab: {fileID: 100100000, guid: 9c81dfda12811dd43abc0e45e391aba6, type: 3}
+--- !u!1 &472216893936644774 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4323328105425634050, guid: 9c81dfda12811dd43abc0e45e391aba6, type: 3}
+  m_PrefabInstance: {fileID: 472216893936644773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &472216893936644775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472216893936644774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d2e9ad4460ba7c448f42de2ec68fa16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Number: 4
+  a: "1. \uCEE4\uBE44 \uBA39\uC740 \uD3FC"
+  b: "2. \uCEE4\uBE44 \uC560\uB2C8\uBA40 \uD3FC"
+  c: "3. \uCEE4\uBE44 \uCEE4\uD130 \uD3FC"
+  d: "4. \uCEE4\uBE44 \uD050\uD53C\uB4DC \uD3FC"
 --- !u!1 &510119167938260030
 GameObject:
   m_ObjectHideFlags: 0
@@ -10383,6 +10408,7 @@ MonoBehaviour:
   a: "1. \uCEE4\uBE44 \uBA39\uC740 \uD3FC"
   b: "2. \uCEE4\uBE44 \uC560\uB2C8\uBA40 \uD3FC"
   c: "3. \uCEE4\uBE44 \uCEE4\uD130 \uD3FC"
+  d: "4. \uCEE4\uBE44 \uD050\uD53C\uB4DC \uD3FC"
 --- !u!222 &4576359385654411674
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -89,6 +89,7 @@ public class Player : MonoBehaviour
     public bool isInhaling = false;
     [SerializeField]
     public Transform attackCheck;
+    
 
     public PhotonView pView;
 
@@ -156,18 +157,7 @@ public class Player : MonoBehaviour
         Hill();
 
         #region TestRegion
-        if (pView.IsMine == false) return; //내 캐릭터가 아닐때는 리턴
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            if (curAbility != null)
-            {
-                curAbility.AttackHandle();
-            }
-            else
-            {
-                Debug.Log("Normal Kirby Attack");
-            }
-        }
+        if (pView.IsMine == false) return; //내 캐릭터가 아닐때는 리턴        
 
         if (Input.GetKeyDown(KeyCode.X))
         {
@@ -183,15 +173,6 @@ public class Player : MonoBehaviour
             }
 
         }
-
-        //플레이어 Ground 상태로 옮길거임
-        /*if (Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            if (curAbility != null)
-            {
-                curAbility.AttackHandle();
-            }
-        }*/
         #endregion
     }
 

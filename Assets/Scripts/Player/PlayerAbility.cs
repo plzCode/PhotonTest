@@ -46,9 +46,19 @@ public abstract class PlayerAbility : MonoBehaviour
         
         Destroy(owner.curAbility);
         this.owner = null;
+
+        
     }
 
     public abstract void AttackHandle();
 
-    
+    public virtual void DashAttackHandle() 
+    {
+    }
+
+    public virtual void DownAttackHandle()
+    {
+    }
+
+
 }

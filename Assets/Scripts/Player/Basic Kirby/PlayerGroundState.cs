@@ -32,13 +32,15 @@ public class PlayerGroundState : PlayerState
         if (Input.GetKey(KeyCode.S))
         {
             stateMachine.ChangeState(player.downState);
-            //if (player.KirbyFormNum != 1) // �̹� ���� ���� �ƴ϶��
+            //if (player.KirbyFormNum != 1) 
             //{
-            //    player.pView.RPC("RPC_ChangeForm", RpcTarget.AllBuffered);  // �ٸ� Ŭ���̾�Ʈ�鿡�Ե� ���� ���� ����
+            //    player.pView.RPC("RPC_ChangeForm", RpcTarget.AllBuffered); 
             //}
         }
 
         if (IsPointerOverItemElement()) return;
+
+
 
         if (Input.GetKeyDown(KeyCode.Mouse0) && player.curAbility == null)
         {
@@ -46,9 +48,14 @@ public class PlayerGroundState : PlayerState
             stateMachine.ChangeState(player.eating12State);
         }
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) && player.curAbility != null)
+        /*if (Input.GetKeyDown(KeyCode.Mouse0) && player.curAbility != null)
         {
+            if (player.dash)
+            {
+                player.curAbility.DashAttackHandle();
+            }
+
             player.curAbility.AttackHandle();
-        }
+        }*/
     }
 }

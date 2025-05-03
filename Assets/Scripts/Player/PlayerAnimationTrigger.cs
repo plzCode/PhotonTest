@@ -55,18 +55,40 @@ public class PlayerAnimatorController : MonoBehaviour
 
     public void AttackTrigger()
     {
-        if(player.curAbility == null) return; //어빌리티가 없으면 리턴
+        if(player.curAbility == null || !player.pView.IsMine) return; //어빌리티가 없으면 리턴
         Collider2D[] colliders = Physics2D.OverlapCircleAll(player.attackCheck.position, player.curAbility.attackCheckRadius);
         Debug.Log(player.curAbility.attackCheckRadius);
         foreach (var hit in colliders)
         {
             if (hit.GetComponent<Enemy>() != null)
             {
-                Debug.Log("적에게" + player.curAbility.attackPower+ "만큼 데미지를 줌");
                 hit.GetComponent<Enemy>().photonView.RPC("TakeDamage", RpcTarget.All,player.curAbility.attackPower); // 데미지 처리
                 //hit.gameObject.SetActive(false);  //임시로
             }
             else if(hit.GetComponent<StarBlock>() != null)
+            {
+                hit.GetComponent<StarBlock>().pv.RPC("Delete", RpcTarget.All); //블록 제거
+            }
+            else if (hit.GetComponent<BigStarBlock>() != null)
+            {
+                hit.GetComponent<BigStarBlock>().pv.RPC("Delete", RpcTarget.All); //블록 제거
+            }
+        }
+    }
+    public void DownAttackTrigger()
+    {
+        if (player.curAbility == null || !player.pView.IsMine) return; //어빌리티가 없으면 리턴
+        Vector2 playerDown = new Vector2(player.transform.position.x, player.transform.position.y -1f); 
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(playerDown, player.curAbility.attackCheckRadius);
+        Debug.Log(player.curAbility.attackCheckRadius);
+        foreach (var hit in colliders)
+        {
+            if (hit.GetComponent<Enemy>() != null)
+            {
+                hit.GetComponent<Enemy>().photonView.RPC("TakeDamage", RpcTarget.All, player.curAbility.attackPower); // 데미지 처리
+                //hit.gameObject.SetActive(false);  //임시로
+            }
+            else if (hit.GetComponent<StarBlock>() != null)
             {
                 hit.GetComponent<StarBlock>().pv.RPC("Delete", RpcTarget.All); //블록 제거
             }

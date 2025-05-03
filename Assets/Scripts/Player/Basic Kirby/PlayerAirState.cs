@@ -69,9 +69,9 @@ public class PlayerAirState : PlayerState
             stateMachine.ChangeState(player.eating12State);
         }
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) && player.curAbility != null)
+        /*if (Input.GetKeyDown(KeyCode.Mouse0) && player.curAbility != null)
         {
             player.curAbility.AttackHandle();
-        }
+        }*/
     }
 }
