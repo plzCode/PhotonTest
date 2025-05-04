@@ -1609,6 +1609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerHP: 0
+  PlayerMaxHP: 100
   MoveSpeed: 3
   DashSpeed: 5
   JumpPower: 2.5
@@ -1619,23 +1620,39 @@ MonoBehaviour:
   dashEffectPos: {fileID: 42529854}
   AirJumpOutEffect: {fileID: 7334062365662037436, guid: 6a977909fd917e14592568674f7591ee, type: 3}
   AirJumpOutEffectPos: {fileID: 1034890459}
-  EatEffect: {fileID: 0}
+  EatEffect1: {fileID: 0}
+  EatEffect2: {fileID: 0}
   EatEffectPos: {fileID: 0}
-  Attack: {fileID: 0}
+  GroundStarEffect: {fileID: 0}
+  GroundEffectPos: {fileID: 0}
+  DamageStar: {fileID: 0}
+  AttackList: []
   currentEnemy: {fileID: 0}
   groundCheck: {fileID: 1747409119}
   groundLine: 0.88
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
+  hillCheck: {fileID: 0}
+  hillLine: 0
+  whatIsHill:
+    serializedVersion: 2
+    m_Bits: 0
+  angle: 0
+  perp: {x: 0, y: 0}
+  isSlope: 0
   curAbility: {fileID: 0}
   isInhaling: 0
-  EatKirbyFormNum: 0
-  KirbyFormNum: 0
-  EnemyAttackLastPos: 0
+  attackCheck: {fileID: 0}
+  pView: {fileID: 0}
+  health_Bar: {fileID: 0}
+  inventory: {fileID: 0}
+  CutterUpgrade: 0
   dashTime: 0
   dash: 0
   turn: 0
+  EatKirbyFormNum: 0
+  KirbyFormNum: 0
 --- !u!61 &1828818595
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1718,7 +1735,7 @@ Transform:
   m_GameObject: {fileID: 1828818593}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.09, y: -1.88, z: 0}
+  m_LocalPosition: {x: 7.09, y: -1.927, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

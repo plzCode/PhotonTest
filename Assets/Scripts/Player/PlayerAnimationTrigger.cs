@@ -22,14 +22,14 @@ public class PlayerAnimatorController : MonoBehaviour
         //에니메이터에서 idle로 가게함
     }
 
-    public void Idle_state()
+    public void Idle_Air_state()
     {
-        player.stateMachine.ChangeState(player.idleState);
-    }
-
-    public void Air_State()
-    {
-        player.stateMachine.ChangeState(player.airState);
+        if (!player.IsGroundCheck() && !player.isSlope)
+        {
+            player.stateMachine.ChangeState(player.airState);
+        }
+        else
+            player.stateMachine.ChangeState(player.idleState);
     }
 
     public void ChangeForm()

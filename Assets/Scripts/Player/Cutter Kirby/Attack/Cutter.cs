@@ -97,35 +97,30 @@ public class Cutter : PlayerRagedManager
             {
                 enemy.GetComponent<Enemy>().photonView.RPC("TakeDamage", RpcTarget.All, player.curAbility.attackPower);
             }
-
-            else
-            {
-                Debug.LogWarning("Player not found!");
-            }
         }
 
         if (collision.gameObject.CompareTag("Ground") && PhotonNetwork.IsMasterClient)
         {
-            if (lifeTime <= 9.9f && photonView.IsMine)
-            {
                 player.CutterUpgrade = 0;
                 PhotonNetwork.Destroy(gameObject);  // 제거
-            }
         }
 
         if (collision.gameObject.CompareTag("StarBlock") && PhotonNetwork.IsMasterClient)
         {
-            if (lifeTime <= 9.9f && photonView.IsMine)
-            {
                 player.CutterUpgrade = 0;
                 PhotonNetwork.Destroy(gameObject);  // 제거
+
+            BigStarBlock enemy = collision.gameObject.GetComponent<BigStarBlock>();
+            if (enemy != null)
+            {
+                enemy.GetComponent<BigStarBlock>().pv.RPC("Delete", RpcTarget.All);
             }
         }
 
 
         if (collision.gameObject.CompareTag("Player") && PhotonNetwork.IsMasterClient)
         {
-            if (lifeTime <= 9.9f && photonView.IsMine)
+            if (lifeTime <= 9.9f)
             {
                 PhotonNetwork.Destroy(gameObject);
 

@@ -7,11 +7,6 @@ public class StarBlock : BlockManager
 {
     public PhotonView photonView;
 
-    public void Start()
-    {
-        photonView = GetComponent<PhotonView>(); // PhotonView 초기화
-    }
-
     [PunRPC]
     public override void Delete()
     {
@@ -24,7 +19,11 @@ public class StarBlock : BlockManager
     public void DestroyBlock()
     {
         // 삭제 이펙트 등 추가
-        EffectAdd("Delete Effect 30x30_0", transform.position);
-        Destroy(gameObject);
+        pv.RPC("EffectAdd", RpcTarget.All, "Delete Effect 30x30_0", transform.position);
+
+        if (pv.IsMine)
+        {
+            PhotonNetwork.Destroy(gameObject);
+        }
     }
 }

@@ -61,7 +61,6 @@ public class PlayerJumpState : PlayerState
         if (Input.GetKeyDown(KeyCode.Space)) //스페이스바 누르면 볼빵빵으로 감
         {
             stateMachine.ChangeState(player.airJumpState);
-
         }
 
         if (IsPointerOverItemElement()) return;

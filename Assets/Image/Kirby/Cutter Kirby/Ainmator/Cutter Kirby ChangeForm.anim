@@ -74,7 +74,7 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.6666667
-    functionName: Idle_state
+    functionName: Idle_Air_state
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

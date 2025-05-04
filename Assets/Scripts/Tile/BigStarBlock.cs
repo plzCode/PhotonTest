@@ -5,11 +5,6 @@ public class BigStarBlock : BlockManager
 {
     public PhotonView photonView;
 
-    public void Start()
-    {
-        photonView = GetComponent<PhotonView>(); // PhotonView 초기화
-    }
-
     [PunRPC]
     public override void Delete()
     {
@@ -22,7 +17,11 @@ public class BigStarBlock : BlockManager
     public void DestroyBlock()
     {
         // 삭제 이펙트 등 추가
-        EffectAdd("Big Delete Effect 30x30_0", transform.position);
-        Destroy(gameObject);
+        pv.RPC("EffectAdd", RpcTarget.All, "Big Delete Effect 30x30_0", transform.position);
+
+        if (pv.IsMine)
+        {
+            PhotonNetwork.Destroy(gameObject);
+        }
     }
 }
