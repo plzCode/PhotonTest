@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 051ae13eaf9ddd548a5c86cf69d26a13
+guid: 2723ffb69cae69a44be4c7a03550b690
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7613127668512062925
-    second: Attack3 35x33_0
-  - first:
-      213: -2300772701829429796
-    second: Attack3 35x33_1
-  - first:
-      213: -4806387441256757446
-    second: Attack3 35x33_2
+      213: 5162207370768409436
+    second: Attack3 35x33 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -102,50 +96,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Attack3 35x33_0
+      name: Attack3 35x33 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -160,14 +115,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dcdfb57474347a960800000000000000
-      internalID: 7613127668512062925
+      spriteID: c53ed8fc048d3a740800000000000000
+      internalID: 5162207370768409436
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack3 35x33_1
+      name: Attack3 35x33 1_1
       rect:
         serializedVersion: 2
         x: 35
@@ -180,16 +135,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cd58a8eea630210e0800000000000000
-      internalID: -2300772701829429796
+      spriteID: 64efdaa35e4dafc44822ea7fa35fc9d3
+      internalID: -422463531
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack3 35x33_2
+      name: Attack3 35x33 1_2
       rect:
         serializedVersion: 2
         x: 70
@@ -202,10 +157,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a370ef666184c4db0800000000000000
-      internalID: -4806387441256757446
+      spriteID: a7f98e60faa9d70448dc5c6bd5e64e75
+      internalID: -1065660924
       vertices: []
       indices: 
       edges: []
@@ -214,7 +169,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 1a2c1a26b83a724429746c6555992e21
+    spriteID: 8ce5d83edf966ce40a1a91a0cb76d6d4
     internalID: 0
     vertices: []
     indices: 
@@ -224,9 +179,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Attack3 35x33_0: 7613127668512062925
-      Attack3 35x33_1: -2300772701829429796
-      Attack3 35x33_2: -4806387441256757446
+      Attack3 35x33 1_0: 5162207370768409436
+      Attack3 35x33 1_1: -422463531
+      Attack3 35x33 1_2: -1065660924
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

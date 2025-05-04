@@ -1479,7 +1479,7 @@ Animator:
   m_GameObject: {fileID: 1662846539}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 586b22d75156a65419828153e4f07e16, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3b57f0ecbf0d67f40b0e94c63a4e1244, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4265,8 +4265,8 @@ SceneRoots:
   - {fileID: 7613897275412149501}
   - {fileID: 1194315627}
   - {fileID: 5210547424216932504}
-  - {fileID: 1828818597}
   - {fileID: 2639254404455017953}
   - {fileID: 2053584984}
   - {fileID: 80757193}
   - {fileID: 2074519343}
+  - {fileID: 1828818597}
