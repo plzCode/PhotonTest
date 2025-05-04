@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Cupid Kirby AttackReady Up
+  m_Name: Cupid Kirby Fly AttackReady Up
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,13 +21,15 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -1092791589113318997, guid: 8cf80c903036d1548802affe0b5461f8, type: 3}
+      value: {fileID: 2876301672638429201, guid: 45ad710a8b53b394ab965070689a16e3, type: 3}
+    - time: 0.06666667
+      value: {fileID: -7770761786230160156, guid: 45ad710a8b53b394ab965070689a16e3, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
     flags: 2
-  m_SampleRate: 60
+  m_SampleRate: 15
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -44,13 +46,14 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -1092791589113318997, guid: 8cf80c903036d1548802affe0b5461f8, type: 3}
+    - {fileID: 2876301672638429201, guid: 45ad710a8b53b394ab965070689a16e3, type: 3}
+    - {fileID: -7770761786230160156, guid: 45ad710a8b53b394ab965070689a16e3, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.016666668
+    m_StopTime: 0.13333334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
