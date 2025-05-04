@@ -60,7 +60,8 @@ public class PlayerAnimatorController : MonoBehaviour
         Debug.Log(player.curAbility.attackCheckRadius);
         if(AudioManager.Instance != null && player.curAbility.SFX_Name != "")
         {
-            AudioManager.Instance.PlaySFX(player.curAbility.SFX_Name);
+            //AudioManager.Instance.PlaySFX(player.curAbility.SFX_Name);
+            AudioManager.Instance.GetComponent<PhotonView>().RPC("RPC_PlaySFX", RpcTarget.All, player.curAbility.SFX_Name);
         }
         foreach (var hit in colliders)
         {

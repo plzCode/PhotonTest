@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using Photon.Pun;
 
 public class AudioManager : MonoBehaviour
 {
@@ -30,6 +31,15 @@ public class AudioManager : MonoBehaviour
     }
 
     public void PlaySFX(string clipName)
+    {
+        if (sfxClips.TryGetValue(clipName, out var clip))
+            sfxSource.PlayOneShot(clip);
+        else
+            Debug.LogWarning($"SFX {clipName} not found.");
+    }
+
+    [PunRPC]
+    public void RPC_PlaySFX(string clipName)
     {
         if (sfxClips.TryGetValue(clipName, out var clip))
             sfxSource.PlayOneShot(clip);
