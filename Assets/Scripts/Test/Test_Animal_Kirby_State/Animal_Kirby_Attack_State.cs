@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class Animal_Kirby_Attack_State : PlayerState
 {
-    private Cupid_
-
     public Animal_Kirby_Attack_State(Player _player, PlayerStateMachine _stateMachine, string _animBoolName) : base(_player, _stateMachine, _animBoolName)
     {
     }
