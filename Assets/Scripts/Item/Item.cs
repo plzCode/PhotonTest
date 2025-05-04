@@ -1,7 +1,7 @@
 using Photon.Pun;
 using UnityEngine;
 
-public class Item : MonoBehaviour
+public class Item : MonoBehaviourPun
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

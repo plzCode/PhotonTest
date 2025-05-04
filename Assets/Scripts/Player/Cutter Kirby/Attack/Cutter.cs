@@ -41,15 +41,12 @@ public class Cutter : PlayerRagedManager
     // 매 프레임마다 Cutter의 이동 및 상태를 업데이트합니다.
     public void Update()
     {
-        if (!photonView.IsMine) return; // 현재 클라이언트가 소유하지 않은 객체는 업데이트하지 않음
-
-
         // Cutter가 살아있는 동안
         if (lifeTime > 0)
         {
             lifeTime -= Time.deltaTime;  // 시간이 지나면서 수명이 감소합니다.
 
-            if (lifeTime <= 0f)
+            if (lifeTime <= 0f && photonView.IsMine && PhotonNetwork.IsMasterClient)
             {
                 // 생명 주기가 끝나면 Cutter를 제거합니다.
                 PhotonNetwork.Destroy(gameObject);
@@ -109,16 +106,16 @@ public class Cutter : PlayerRagedManager
 
         if (collision.gameObject.CompareTag("Ground") && PhotonNetwork.IsMasterClient)
         {
-            if (lifeTime <= 9.8f)
+            if (lifeTime <= 9.9f && photonView.IsMine)
             {
                 player.CutterUpgrade = 0;
-            PhotonNetwork.Destroy(gameObject);  // 제거
+                PhotonNetwork.Destroy(gameObject);  // 제거
             }
         }
 
         if (collision.gameObject.CompareTag("StarBlock") && PhotonNetwork.IsMasterClient)
         {
-            if (lifeTime <= 9.8f)
+            if (lifeTime <= 9.9f && photonView.IsMine)
             {
                 player.CutterUpgrade = 0;
                 PhotonNetwork.Destroy(gameObject);  // 제거
@@ -128,7 +125,7 @@ public class Cutter : PlayerRagedManager
 
         if (collision.gameObject.CompareTag("Player") && PhotonNetwork.IsMasterClient)
         {
-            if (lifeTime <= 9.8f)
+            if (lifeTime <= 9.9f && photonView.IsMine)
             {
                 PhotonNetwork.Destroy(gameObject);
 

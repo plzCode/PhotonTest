@@ -44,7 +44,7 @@ public class M_Mole_BattleState : EnemyState
 
         if(!enemy.IsGroundDetected())
         {
-            Debug.Log("¶¥À» ¶«");
+            //Debug.Log("¶¥À» ¶«");
             isJumping = true;
             
         }

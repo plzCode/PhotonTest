@@ -53,10 +53,10 @@ public class PlayerJumpState : PlayerState
         }
 
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) && player.curAbility != null)
+        /*if (Input.GetKeyDown(KeyCode.Mouse0) && player.curAbility != null)
         {
             player.curAbility.AttackHandle();
-        }
+        }*/
 
         if (Input.GetKeyDown(KeyCode.Space)) //스페이스바 누르면 볼빵빵으로 감
         {
