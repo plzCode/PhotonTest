@@ -403,7 +403,7 @@ public class Player : MonoBehaviour
             LastMove = -1f;
         }
 
-        if (KirbyFormNum > 0)
+        if (KirbyFormNum > 0 && pView.IsMine) 
         {
             EffectAdd(LastMove, DamageStar, transform);
             curAbility.OnAbilityDestroyed(this); //어빌리티 초기화

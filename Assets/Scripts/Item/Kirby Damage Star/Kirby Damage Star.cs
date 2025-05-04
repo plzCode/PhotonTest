@@ -17,11 +17,6 @@ public class KirbyDamageStar : Item
     {
         player = GameObject.FindWithTag("Player").GetComponent<Player>();
         enemyNumber = GetComponent<EnemyNumber>();  // 자기 자신에 붙어 있는 EnemyNumber 가져오기
-
-        if (enemyNumber == null)
-        {
-            Debug.LogError("EnemyNumber 컴포넌트가 이 오브젝트에 존재하지 않습니다.");
-        }
     }
 
     void Start()
@@ -32,11 +27,14 @@ public class KirbyDamageStar : Item
 
     void Update()
     {
-        transform.Translate(moveSpeed * Time.deltaTime, 0, 0);
+        if (this.photonView.IsMine)
+        {
+            transform.Translate(moveSpeed * Time.deltaTime, 0, 0);
+        }
 
         dleeteTime += Time.deltaTime;
 
-        if (dleeteTime > 8f)
+        if (dleeteTime > 8f && this.photonView.IsMine)
         {
             DestroySelf();
         }
@@ -44,6 +42,8 @@ public class KirbyDamageStar : Item
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
+        if (!this.photonView.IsMine) return;
+
         if (collision.gameObject.CompareTag("Ground"))
         {
             randomSpeed = Random.Range(-3f, 3f);

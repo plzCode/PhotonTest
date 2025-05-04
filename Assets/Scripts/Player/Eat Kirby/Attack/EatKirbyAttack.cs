@@ -9,10 +9,12 @@ public class EatKirbyAttack : PlayerRagedManager
 
     void Update()
     {
-        transform.Translate(moveSpeed * Time.deltaTime, 0, 0);
+        if (!photonView.IsMine) return;
 
+        transform.Translate(moveSpeed * Time.deltaTime, 0, 0);
         timer += Time.deltaTime;
-        if (timer > lifeTime && PhotonNetwork.IsMasterClient)
+
+        if (timer > lifeTime)
         {
             PhotonNetwork.Destroy(gameObject);
         }
@@ -20,6 +22,8 @@ public class EatKirbyAttack : PlayerRagedManager
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (!photonView.IsMine) return;
+
         if (collision.gameObject.CompareTag("Enemy"))
         {
             Enemy enemy = collision.gameObject.GetComponent<Enemy>();
@@ -27,13 +31,11 @@ public class EatKirbyAttack : PlayerRagedManager
             {
                 enemy.GetComponent<Enemy>().photonView.RPC("TakeDamage", RpcTarget.All, player.curAbility.attackPower);
             }
-            if (PhotonNetwork.IsMasterClient)
                 PhotonNetwork.Destroy(gameObject);
         }
 
         if (collision.gameObject.CompareTag("Ground"))
         {
-            if (PhotonNetwork.IsMasterClient)
                 PhotonNetwork.Destroy(gameObject);
         }
     }
