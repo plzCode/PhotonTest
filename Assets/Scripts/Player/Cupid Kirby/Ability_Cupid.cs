@@ -6,6 +6,8 @@ public class Ability_Cupid : PlayerAbility
     public RuntimeAnimatorController cupidKirby;
 
     public Cupid_Kirby_Attack_State attackState;
+    public Cupid_Kirby_Direction_State attackDirection;
+    public Cupid_Kirby_Attack_End_State attackEnd;
 
 
     public override void OnAbilityCopied(Player owner)
@@ -47,11 +49,15 @@ public class Ability_Cupid : PlayerAbility
 
     public void AddState(Player owner)
     {
-        attackState = new Cupid_Kirby_Attack_State(owner, owner.stateMachine, "Attack");
+        attackDirection = new Cupid_Kirby_Direction_State(owner, owner.stateMachine, "Attack_End", attackEnd);
+        attackEnd = new Cupid_Kirby_Attack_End_State(owner, owner.stateMachine, "Attack_End");
+        attackState = new Cupid_Kirby_Attack_State(owner, owner.stateMachine, "Attack", attackDirection);
     }
 
     public void RemoveState(Player owner)
     {
         attackState = null;
+        attackDirection = null;
+        attackEnd = null;
     }
 }
