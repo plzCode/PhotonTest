@@ -47,6 +47,7 @@ public class Enemy : MonoBehaviour
 
     public int facingDir= 1;
     public bool facingRight = true;
+    public bool isJump = false;
 
     [Header("피해 정보")]
     
