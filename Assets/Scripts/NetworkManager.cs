@@ -23,7 +23,10 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     void Start()
     {
         ConnectToPhoton();
-        
+        if(AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlayBGM("MainTitle_2");
+        }
     }
 
     public void ConnectToPhoton()

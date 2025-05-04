@@ -41,11 +41,11 @@ public class Ability_Animal : PlayerAbility
     public override void AttackHandle()
     {
         if (owner == null) return;
-
+        SFX_Name = "Player_Animal_Attack";
         attackCheckRadius = 0.5f; //공격 범위 설정
         attackPower = 10; //공격력 설정
 
-        owner.stateMachine.ChangeState(attackState);
+        owner.stateMachine.ChangeState(attackState);        
 
     }
 

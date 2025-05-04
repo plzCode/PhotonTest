@@ -58,6 +58,10 @@ public class PlayerAnimatorController : MonoBehaviour
         if(player.curAbility == null || !player.pView.IsMine) return; //어빌리티가 없으면 리턴
         Collider2D[] colliders = Physics2D.OverlapCircleAll(player.attackCheck.position, player.curAbility.attackCheckRadius);
         Debug.Log(player.curAbility.attackCheckRadius);
+        if(AudioManager.Instance != null && player.curAbility.SFX_Name != "")
+        {
+            AudioManager.Instance.PlaySFX(player.curAbility.SFX_Name);
+        }
         foreach (var hit in colliders)
         {
             if (hit.GetComponent<Enemy>() != null)
@@ -74,6 +78,7 @@ public class PlayerAnimatorController : MonoBehaviour
                 hit.GetComponent<BigStarBlock>().pv.RPC("Delete", RpcTarget.All); //블록 제거
             }
         }
+        player.curAbility.SFX_Name = ""; //어빌리티의 SFX 이름 초기화
     }
     public void DownAttackTrigger()
     {

@@ -37,6 +37,7 @@ public class CommandInput : MonoBehaviour
 
     void Update()
     {
+        if(player.pView.IsMine == false) return; // 내 캐릭터가 아닐 경우 무시
         CheckInput();
         CleanBuffer();
         CheckCommands();

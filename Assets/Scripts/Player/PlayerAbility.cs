@@ -10,6 +10,7 @@ public abstract class PlayerAbility : MonoBehaviour
     public float attackCheckRadius = 0;
     public float attackPower = 0;
 
+    public string SFX_Name = "";
 
     enum AibilityNumber 
     {
