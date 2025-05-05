@@ -123,6 +123,12 @@ public class PlayerAnimatorController : MonoBehaviour
         RangedAttack(Attack, "Player_Effect/Cutter");
     }
 
+    [PunRPC]
+    public void SwordKirbyAttack()
+    {
+        RangedAttack(Attack, "Player_Effect/Attack2 Effect_0");
+    }
+
 
     private GameObject Attack;
 
