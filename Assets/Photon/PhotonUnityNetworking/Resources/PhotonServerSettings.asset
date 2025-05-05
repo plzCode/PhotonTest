@@ -82,11 +82,7 @@ MonoBehaviour:
   - ChangeAnimInteger
   - SetJumpEnd
   - RPC_PlaySFX
-<<<<<<< HEAD
-  - SwordKirbyAttack
-=======
   - ThrowBombRPC
->>>>>>> aeb81e59c3b1de5535fc169bf919662e2ea0e5aa
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

@@ -32,12 +32,7 @@ public class CommandInput : MonoBehaviour
         RegisterCommand("DashAttack", new List<KeyCode> { KeyCode.A, KeyCode.A, KeyCode.Mouse0 }, new List<Type> { typeof(PlayerGroundState), typeof(PlayerAirState), typeof(PlayerJumpState), typeof(PlayerAirJumpingState), typeof(PlayerAirJumpUpState) });
         RegisterCommand("DashAttack", new List<KeyCode> { KeyCode.D, KeyCode.D, KeyCode.Mouse0 }, new List<Type> { typeof(PlayerGroundState), typeof(PlayerAirState), typeof(PlayerJumpState), typeof(PlayerAirJumpingState), typeof(PlayerAirJumpUpState) });
 
-<<<<<<< HEAD
-        RegisterCommand("DownAttack", new List<KeyCode> { KeyCode.S, KeyCode.S, KeyCode.Mouse0 }, new List<Type> { typeof(PlayerAirState), typeof(PlayerJumpState) });
-        RegisterCommand("UpAttack", new List<KeyCode> { KeyCode.W, KeyCode.Mouse0 }, new List<Type> { typeof(PlayerGroundState) });
-=======
         RegisterCommand("DownAttack", new List<KeyCode> { KeyCode.S, KeyCode.S, KeyCode.Mouse0 }, new List<Type> { typeof(PlayerAirState), typeof(PlayerJumpState), typeof(PlayerAirJumpingState), typeof(PlayerAirJumpUpState) });
->>>>>>> aeb81e59c3b1de5535fc169bf919662e2ea0e5aa
         RegisterCommand("Attack", new List<KeyCode> { KeyCode.Mouse0 });
     }
 
@@ -111,7 +106,6 @@ public class CommandInput : MonoBehaviour
             {
                 "DashAttack" => "DashAttackHandle",
                 "DownAttack" => "DownAttackHandle",
-                "UpAttack" => "UpAttackHandle",
                 "Attack" => "AttackHandle",
                 _ => "AttackHandle"
             };
