@@ -42,7 +42,7 @@ public class Ability_Animal : PlayerAbility
     {
         if (owner == null) return;
         SFX_Name = "Player_Animal_Attack";
-        attackCheckRadius = 0.5f; //공격 범위 설정
+        attackCheckRadius = 1.1f; //공격 범위 설정
         attackPower = 10; //공격력 설정
 
         owner.stateMachine.ChangeState(attackState);        
@@ -52,7 +52,7 @@ public class Ability_Animal : PlayerAbility
     public override void DashAttackHandle()
     {
         if(owner == null) return;
-
+        SFX_Name = "Player_Animal_Dash_Attack";
         attackCheckRadius = 0.8f; //공격 범위 설정
         attackPower = 10; //공격력 설정
 
@@ -66,6 +66,7 @@ public class Ability_Animal : PlayerAbility
         if (owner == null) return;
         if (owner.stateMachine.state is PlayerGroundState) return;
 
+        SFX_Name = "Player_Animal_Dash_Attack";
         attackCheckRadius = 0.8f; //공격 범위 설정
         attackPower = 10; //공격력 설정
 

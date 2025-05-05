@@ -1,5 +1,9 @@
 using UnityEngine;
 using Photon.Pun;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using System.Linq;
 
 public class PlayerAnimatorController : MonoBehaviour
 {
@@ -57,7 +61,6 @@ public class PlayerAnimatorController : MonoBehaviour
     {
         if(player.curAbility == null || !player.pView.IsMine) return; //어빌리티가 없으면 리턴
         Collider2D[] colliders = Physics2D.OverlapCircleAll(player.attackCheck.position, player.curAbility.attackCheckRadius);
-        Debug.Log(player.curAbility.attackCheckRadius);
         if(AudioManager.Instance != null && player.curAbility.SFX_Name != "")
         {
             //AudioManager.Instance.PlaySFX(player.curAbility.SFX_Name);
@@ -83,26 +86,26 @@ public class PlayerAnimatorController : MonoBehaviour
     }
     public void DownAttackTrigger()
     {
-        if (player.curAbility == null || !player.pView.IsMine) return; //어빌리티가 없으면 리턴
-        Vector2 playerDown = new Vector2(player.transform.position.x, player.transform.position.y -1f); 
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(playerDown, player.curAbility.attackCheckRadius);
-        Debug.Log(player.curAbility.attackCheckRadius);
-        foreach (var hit in colliders)
+        if (player.curAbility == null || !player.pView.IsMine) return; //어빌리티가 없으면 리턴        
+        if (AudioManager.Instance != null && player.curAbility.SFX_Name != "")
         {
-            if (hit.GetComponent<Enemy>() != null)
-            {
-                hit.GetComponent<Enemy>().photonView.RPC("TakeDamage", RpcTarget.All, player.curAbility.attackPower); // 데미지 처리
-                //hit.gameObject.SetActive(false);  //임시로
-            }
-            else if (hit.GetComponent<StarBlock>() != null)
-            {
-                hit.GetComponent<StarBlock>().pv.RPC("Delete", RpcTarget.All); //블록 제거
-            }
-            else if (hit.GetComponent<BigStarBlock>() != null)
-            {
-                hit.GetComponent<BigStarBlock>().pv.RPC("Delete", RpcTarget.All); //블록 제거
-            }
+            //AudioManager.Instance.PlaySFX(player.curAbility.SFX_Name);
+            AudioManager.Instance.GetComponent<PhotonView>().RPC("RPC_PlaySFX", RpcTarget.All, player.curAbility.SFX_Name);
         }
+        StartCoroutine(CheckOverlapForSeconds(()=> new Vector2(player.transform.position.x, player.transform.position.y - 1f), player.curAbility.attackCheckRadius, 0.3f)); //공격 범위 체크
+        player.curAbility.SFX_Name = ""; //어빌리티의 SFX 이름 초기화
+    }
+    public void DashAttackTrigger()
+    {
+        if (player.curAbility == null || !player.pView.IsMine) return; //어빌리티가 없으면 리턴
+        Debug.Log("DashAttack !!!!!!!!!!!!!!!!!!!!");
+        if (AudioManager.Instance != null && player.curAbility.SFX_Name != "")
+        {
+            //AudioManager.Instance.PlaySFX(player.curAbility.SFX_Name);
+            AudioManager.Instance.GetComponent<PhotonView>().RPC("RPC_PlaySFX", RpcTarget.All, player.curAbility.SFX_Name);
+        }
+        StartCoroutine(CheckOverlapForSeconds(()=>player.attackCheck.position, player.curAbility.attackCheckRadius, 0.3f)); //공격 범위 체크
+        player.curAbility.SFX_Name = ""; //어빌리티의 SFX 이름 초기화
     }
 
 
@@ -131,5 +134,42 @@ public class PlayerAnimatorController : MonoBehaviour
         Vector2 Pos = new Vector2 (player.transform.position.x, player.transform.position.y + 5);
 
         player.EffectAdd(player.LastMove, rangeAttack, player.AirJumpOutEffectPos); //플레이어 한태서 공격 발사
+    }
+
+    //Animal Kirby Dash Attack
+    IEnumerator CheckOverlapForSeconds(Func<Vector2> getCenter, float radius, float duration)
+    {
+        float timer = 0f;
+        HashSet<int> processedIDs = new HashSet<int>();
+
+        while (timer < duration)
+        {
+            Vector2 center = getCenter();
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(center, radius);
+
+            foreach (var col in colliders)
+            {
+                int id = col.GetInstanceID();  // collider 기준 ID
+                if (processedIDs.Contains(id)) continue;
+
+                if (col.TryGetComponent<Enemy>(out var enemy))
+                {
+                    enemy.photonView.RPC("TakeDamage", RpcTarget.All, player.curAbility.attackPower);
+                }
+                else if (col.TryGetComponent<StarBlock>(out var starBlock))
+                {
+                    starBlock.pv.RPC("Delete", RpcTarget.All);
+                }
+                else if (col.TryGetComponent<BigStarBlock>(out var bigBlock))
+                {
+                    bigBlock.pv.RPC("Delete", RpcTarget.All);
+                }
+
+                processedIDs.Add(id);
+            }
+
+            timer += Time.deltaTime;
+            yield return null;
+        }
     }
 }

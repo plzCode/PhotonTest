@@ -82,6 +82,7 @@ MonoBehaviour:
   - ChangeAnimInteger
   - SetJumpEnd
   - RPC_PlaySFX
+  - ThrowBombRPC
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
