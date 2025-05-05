@@ -16,6 +16,7 @@ public class PlayerJumpState : PlayerState
         MaxJumpPower = -1f;
         MinJumpPower = 2f;
         pView.RPC("lineVelocity", RpcTarget.All, rb.linearVelocityX, MinJumpPower + player.JumpPower);
+        AudioManager.Instance.RPC_PlaySFX("Jump_Sound");
     }
 
     public override void Exit()

@@ -94,6 +94,7 @@ public class PlayerTest : MonoBehaviourPunCallbacks, IPunObservable
         healthBarScript.UpdateHealthBar(100f);
         healthBarScript.SetPlayer(player);
         player.health_Bar = healthBarScript;
+        healthBarScript.player = player; // 플레이어 스크립트와 연결
     }
 
     [PunRPC]

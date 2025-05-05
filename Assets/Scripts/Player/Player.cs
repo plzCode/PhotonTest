@@ -436,10 +436,10 @@ public class Player : MonoBehaviour
         {
             health_Bar.UpdateHealthBar(PlayerHP);
         }
-        if (health_Bar != null)
+        /*if (health_Bar != null)
         {
             health_Bar.UpdateHealthBar(PlayerHP);
-        }
+        }*/
     }
 
 

@@ -15,6 +15,7 @@ public class PlayerDowningGroundState : PlayerState
 
         //player.lineVelocity(Lastmove * player.MoveSpeed, 2f);
         pView.RPC("lineVelocity", RpcTarget.All, player.LastMove * player.MoveSpeed, 3f); //수평 이동
+        AudioManager.Instance.RPC_PlaySFX("Player_Air_Downing_Ground_Sound");
     }
 
     public override void Exit()

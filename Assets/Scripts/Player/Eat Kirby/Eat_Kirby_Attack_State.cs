@@ -11,6 +11,7 @@ public class Eat_Kirby_Attack_State : PlayerState
     public override void Enter()
     {
         base.Enter();
+        AudioManager.Instance.RPC_PlaySFX("Eat_Kirby_Star_Attack_Sound");
     }
 
     public override void Exit()
