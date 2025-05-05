@@ -87,6 +87,8 @@ public class PlayerAnimatorController : MonoBehaviour
     public void DownAttackTrigger()
     {
         if (player.curAbility == null || !player.pView.IsMine) return; //어빌리티가 없으면 리턴        
+
+        Debug.Log("DownAttack !!!!!!!!!!!!!!!!!!!!");
         if (AudioManager.Instance != null && player.curAbility.SFX_Name != "")
         {
             //AudioManager.Instance.PlaySFX(player.curAbility.SFX_Name);
