@@ -4,7 +4,6 @@ using UnityEngine;
 public class Cutter_Kirby_Attack_State : PlayerState
 {
     private Cutter_Kirby_Attack_End_State cutterKirbyAttackEndState;
-    private Cutter cutter;
 
     public Cutter_Kirby_Attack_State(Player _player, PlayerStateMachine _stateMachine, string _animBoolName,
     Cutter_Kirby_Attack_End_State _attackEndState) : base(_player, _stateMachine, _animBoolName)
@@ -28,7 +27,10 @@ public class Cutter_Kirby_Attack_State : PlayerState
 
         if (Input.GetKeyUp(KeyCode.Mouse0))
         {
-            player.stateMachine.ChangeState(cutterKirbyAttackEndState);
+            if (pView.IsMine)
+            {
+                player.stateMachine.ChangeState(cutterKirbyAttackEndState);
+            }
         }
     }
 }

@@ -282,6 +282,7 @@ public class Player : MonoBehaviour
         {
             //Instantiate(obj, EffecPos.position, Quaternion.identity);
             bullet = PhotonNetwork.Instantiate("Player_Effect/" + Effect.name, EffecPos.position, Quaternion.identity);
+            
 
         }
         else if (_x < 0) //왼쪽이면 좌우반전 소환
@@ -297,6 +298,12 @@ public class Player : MonoBehaviour
             {
                 attackScript.player = this; // 이 코드가 Player 클래스 안에 있어야 함
             }
+
+            /*if(bullet.GetComponent<KirbyDamageStar>() != null)
+            {
+                bullet.GetComponent<KirbyDamageStar>().player = this; // 이 코드가 Player 클래스 안에 있어야 함
+                bullet.GetComponent<KirbyDamageStar>().enemyNumber.Number = this.EatKirbyFormNum; //적의 번호를 가져옴
+            }*/
         }
     }
 
@@ -315,8 +322,11 @@ public class Player : MonoBehaviour
 
         if (effect != null)
         {
-            effect.GetComponent<EatEffect>().player = pView.GetComponent<Player>();
-            effect.GetComponent<EatEffect>().pView = pView;
+            if(effect.GetComponent<EatEffect>() != null)
+            {
+                effect.GetComponent<EatEffect>().player = pView.GetComponent<Player>();
+                effect.GetComponent<EatEffect>().pView = pView;
+            }
             effect.transform.SetParent(pView.transform);
             AttackList.Add(effect);
             //effect.GetComponent<PhotonView>().RPC("SetPlayer", RpcTarget.AllBuffered, pView.ViewID);
@@ -467,6 +477,12 @@ public class Player : MonoBehaviour
                 break;
             case 4: //큐피드 폼
                 curAbility = gameObject.AddComponent<Ability_Cupid>();
+                break;
+            case 5: //스워드 폼
+                curAbility = gameObject.AddComponent<Ability_Sword>();
+                break;
+            case 6: //휠 폼
+                curAbility = gameObject.AddComponent<Ability_Sword>();
                 break;
 
             default:

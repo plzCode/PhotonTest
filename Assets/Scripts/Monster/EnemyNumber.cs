@@ -11,4 +11,5 @@ public class EnemyNumber : MonoBehaviour
     public string b = "2. 커비 애니멀 폼";
     public string c = "3. 커비 커터 폼";
     public string d = "4. 커비 큐피드 폼";
+    public string e = "5. 커비 스워드 폼";
 }

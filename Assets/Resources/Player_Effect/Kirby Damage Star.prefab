@@ -320,6 +320,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20850ecc65c4ea64ca6326fe8794a490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  enemyNumber: {fileID: 0}
   SaveNumber: 0
   moveSpeed: 6
   randomSpeed: 0
@@ -341,6 +343,7 @@ MonoBehaviour:
   b: "2. \uCEE4\uBE44 \uC560\uB2C8\uBA40 \uD3FC"
   c: "3. \uCEE4\uBE44 \uCEE4\uD130 \uD3FC"
   d: "4. \uCEE4\uBE44 \uD050\uD53C\uB4DC \uD3FC"
+  e: "5. \uCEE4\uBE44 \uC2A4\uC6CC\uB4DC \uD3FC"
 --- !u!114 &496748875433877706
 MonoBehaviour:
   m_ObjectHideFlags: 0

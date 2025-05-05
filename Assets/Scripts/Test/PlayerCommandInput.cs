@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class CommandInput : MonoBehaviour
 {
@@ -28,16 +29,22 @@ public class CommandInput : MonoBehaviour
     {
         player = GetComponent<Player>();
         // 예시 커맨드 등록
-        RegisterCommand("DashAttack", new List<KeyCode> { KeyCode.A, KeyCode.A, KeyCode.Mouse0 }, new List<Type> { typeof(PlayerGroundState), typeof(PlayerAirState), typeof(PlayerJumpState) });
-        RegisterCommand("DashAttack", new List<KeyCode> { KeyCode.D, KeyCode.D, KeyCode.Mouse0 }, new List<Type> { typeof(PlayerGroundState), typeof(PlayerAirState), typeof(PlayerJumpState) });
+        RegisterCommand("DashAttack", new List<KeyCode> { KeyCode.A, KeyCode.A, KeyCode.Mouse0 }, new List<Type> { typeof(PlayerGroundState), typeof(PlayerAirState), typeof(PlayerJumpState), typeof(PlayerAirJumpingState), typeof(PlayerAirJumpUpState) });
+        RegisterCommand("DashAttack", new List<KeyCode> { KeyCode.D, KeyCode.D, KeyCode.Mouse0 }, new List<Type> { typeof(PlayerGroundState), typeof(PlayerAirState), typeof(PlayerJumpState), typeof(PlayerAirJumpingState), typeof(PlayerAirJumpUpState) });
 
+<<<<<<< HEAD
         RegisterCommand("DownAttack", new List<KeyCode> { KeyCode.S, KeyCode.S, KeyCode.Mouse0 }, new List<Type> { typeof(PlayerAirState), typeof(PlayerJumpState) });
+        RegisterCommand("UpAttack", new List<KeyCode> { KeyCode.W, KeyCode.Mouse0 }, new List<Type> { typeof(PlayerGroundState) });
+=======
+        RegisterCommand("DownAttack", new List<KeyCode> { KeyCode.S, KeyCode.S, KeyCode.Mouse0 }, new List<Type> { typeof(PlayerAirState), typeof(PlayerJumpState), typeof(PlayerAirJumpingState), typeof(PlayerAirJumpUpState) });
+>>>>>>> aeb81e59c3b1de5535fc169bf919662e2ea0e5aa
         RegisterCommand("Attack", new List<KeyCode> { KeyCode.Mouse0 });
     }
 
     void Update()
     {
         if(player.pView.IsMine == false) return; // 내 캐릭터가 아닐 경우 무시
+        if (IsPointerOverItemElement()) return; // 마우스가 UI 위에 있을 경우 무시
         CheckInput();
         CleanBuffer();
         CheckCommands();
@@ -86,8 +93,6 @@ public class CommandInput : MonoBehaviour
         Debug.Log($"현재 상태: {currentState.GetType()}");
         foreach (var validType in validStates)
         {
-            Debug.Log($"검사 대상 타입: {validType}");
-            Debug.Log($"결과: {validType.IsAssignableFrom(currentState.GetType())}");
             if (validType != null && currentState != null && validType.IsInstanceOfType(currentState))
                 return true;
         }
@@ -98,6 +103,7 @@ public class CommandInput : MonoBehaviour
     {
         try
         {
+            if (player.curAbility == null) return;
             var ability = player.curAbility;
             var abilityType = ability.GetType();
 
@@ -105,12 +111,12 @@ public class CommandInput : MonoBehaviour
             {
                 "DashAttack" => "DashAttackHandle",
                 "DownAttack" => "DownAttackHandle",
+                "UpAttack" => "UpAttackHandle",
                 "Attack" => "AttackHandle",
                 _ => "AttackHandle"
             };
 
-            var method = abilityType.GetMethod(methodName,
-                System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance);
+            var method = abilityType.GetMethod(methodName,System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance);
 
             // 부모(Player_Ability)에만 정의되어 있고 자식에서 오버라이드 안 한 경우
             bool isOverridden = method != null && method.DeclaringType == abilityType;
@@ -156,5 +162,28 @@ public class CommandInput : MonoBehaviour
     public void RegisterCommand(string name, List<KeyCode> inputSequence)
     {
         RegisterCommand(name, inputSequence, new List<Type>()); // 빈 타입 리스트 → 모든 상태에서 허용
+    }
+
+    protected bool IsPointerOverItemElement()
+    {
+        PointerEventData eventData = new PointerEventData(EventSystem.current)
+        {
+            position = Input.mousePosition
+        };
+
+        List<RaycastResult> results = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(eventData, results);
+
+        // UI 레이어에 속한 객체가 있는지 확인
+        foreach (var result in results)
+        {
+
+            if (result.gameObject.layer == LayerMask.NameToLayer("UI") && result.gameObject.CompareTag("Item"))
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 }

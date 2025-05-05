@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class KirbyDamageStar : Item
 {
-    private Player player;
-    private EnemyNumber enemyNumber;
+    public Player player;
+    public EnemyNumber enemyNumber;
 
     public float SaveNumber;
 

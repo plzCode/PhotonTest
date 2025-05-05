@@ -12,6 +12,7 @@ public class Animal_Kirby_Dash_Attack_State : PlayerState
     public override void Enter()
     {
         base.Enter();
+       
         elapsedTime = 0f;
         if(player.flipbool)
         {
@@ -29,7 +30,8 @@ public class Animal_Kirby_Dash_Attack_State : PlayerState
 
     public override void Exit()
     {
-        base.Exit(); 
+        base.Exit();
+        player.lineVelocity(0f, 0f);
         player.rb.constraints = RigidbodyConstraints2D.None;
         player.rb.freezeRotation = true;
     }

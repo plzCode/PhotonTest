@@ -19,6 +19,7 @@ public abstract class PlayerAbility : MonoBehaviour
         Animal, //2
         Cutter, //3
         Cupid, //4
+        Sword, //5
     }
 
 
@@ -52,6 +53,10 @@ public abstract class PlayerAbility : MonoBehaviour
     }
 
     public abstract void AttackHandle();
+
+    public virtual void UpAttackHandle()
+    {
+    }
 
     public virtual void DashAttackHandle() 
     {
