@@ -11,7 +11,9 @@ public class Bonkers_JumpState : BossState
     public override void Enter()
     {         
 
-        base.Enter();     
+        base.Enter();
+
+        isJumpTurn = false;
        
         
         

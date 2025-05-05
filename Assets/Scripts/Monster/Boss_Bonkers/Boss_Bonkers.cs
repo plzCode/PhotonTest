@@ -9,10 +9,15 @@ public class Boss_Bonkers : Enemy
     public Bonkers_IdleState idleState { get; private set; }
     public Bonkers_MoveState moveState { get; private set; }
     public Bonkers_JumpState jumpState { get; private set; }
+    public Bonkers_AttackState attackState { get; private set; }
 
 
 
     #endregion
+
+    [Header("ÆøÅº Á¤º¸")]
+    [SerializeField] private GameObject bombPrefab;
+    [SerializeField] private Transform bombStart;
 
 
     protected override void Awake()
@@ -22,6 +27,7 @@ public class Boss_Bonkers : Enemy
         idleState = new Bonkers_IdleState(this, stateMachine, "Idle");
         moveState = new Bonkers_MoveState(this, stateMachine, "Move");
         jumpState = new Bonkers_JumpState(this, stateMachine, "Jump");
+        attackState = new Bonkers_AttackState(this, stateMachine, "Attack");
 
     }
 
@@ -46,6 +52,8 @@ public class Boss_Bonkers : Enemy
             stateMachine.ChangeState(moveState);
         else if (stateName == "Jump")
             stateMachine.ChangeState(jumpState);
+        else if (stateName == "Attack")
+            stateMachine.ChangeState(attackState);
 
     }
 
@@ -61,5 +69,17 @@ public class Boss_Bonkers : Enemy
         anim.SetBool("JumpEnd", true);
     }
 
+    [PunRPC]
+    public void ThrowBombRPC()
+    {
+        
+        if (PhotonNetwork.IsMasterClient)
+        {
+            //Debug.Log("ThrowSpear RPC È£ÃâµÊ - IsMasterClient: " + PhotonNetwork.IsMasterClient);
+            GameObject _currentBomb = PhotonNetwork.Instantiate("Monster_Effect/" + bombPrefab.name, bombStart.position, Quaternion.identity);
+            //Rigidbody2D _BombRidig = _currentBomb.GetComponent<Rigidbody2D>();
+            //_BombRidig.linearVelocity = new Vector2(10 * facingDir, 10);
+        }
+    }
     
 }

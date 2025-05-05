@@ -7,9 +7,10 @@ public class BossState : EnemyState
     public bool isJumpTurn;
     public float specificTime;
     public int randomJumpCount;
+    public int randAttackCount;
 
     public int findPlayerCounter=3;
-
+    public bool isActive;
 
     public BossState(Enemy _enemyBase, EnemyStateMachine _stateMachine, string _animBoolName) : base(_enemyBase, _stateMachine, _animBoolName)
     {
