@@ -36,7 +36,7 @@ public class Health_Bar : MonoBehaviour
         // SFX 재생 시작 (회복일 때만)
         AudioSource audioSource = AudioManager.Instance.sfxSource;
         AudioClip sfxClip = AudioManager.Instance.sfxClips["Healing_Sound"]; // SFX 클립 이름
-        if (isHealing && PhotonNetwork.LocalPlayer.IsLocal)
+        if (isHealing && player.pView.IsMine)
         {
             audioSource.clip = sfxClip;
             audioSource.loop = true; // 루프 설정

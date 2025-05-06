@@ -423,6 +423,7 @@ public class Player : MonoBehaviour
         {
             health_Bar.UpdateHealthBar(PlayerHP);
         }
+        AudioManager.Instance.RPC_PlaySFX("Damaged_Sound");
         stateMachine.ChangeState(damageState);  //굴러가는거 실행
     }
 

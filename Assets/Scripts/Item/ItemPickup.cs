@@ -1,3 +1,4 @@
+using Photon.Pun;
 using UnityEngine;
 public class ItemPickup : MonoBehaviour
 {
@@ -9,18 +10,23 @@ public class ItemPickup : MonoBehaviour
         {
             other.GetComponent<Player>().inventory.AddItem(item);
             Destroy(gameObject);
-            switch(item.type)
+
+            if(other.GetComponent<PhotonView>().IsMine)
             {
-                case ItemType.Heal:
-                    AudioManager.Instance.RPC_PlaySFX("Get_Item_Sound");
-                    break;
-                case ItemType.Ability:
-                    AudioManager.Instance.RPC_PlaySFX("Get_Item_Sound");
-                    break;
-                default:
-                    Debug.LogWarning("Unknown item type: " + item.type);
-                    break;
+                switch (item.type)
+                {
+                    case ItemType.Heal:
+                        AudioManager.Instance.RPC_PlaySFX("Get_Item_Sound");
+                        break;
+                    case ItemType.Ability:
+                        AudioManager.Instance.RPC_PlaySFX("Get_Item_Sound");
+                        break;
+                    default:
+                        Debug.LogWarning("Unknown item type: " + item.type);
+                        break;
+                }
             }
+            
         }
     }
 }

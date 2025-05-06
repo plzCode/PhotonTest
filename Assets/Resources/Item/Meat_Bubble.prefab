@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4214871640898663276}
   - component: {fileID: 908970083056177271}
   m_Layer: 0
-  m_Name: Cherry_Bubble
+  m_Name: Meat_Bubble
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,7 +32,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5656301032919564332}
+  - {fileID: 9020017773524728865}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &9105275410777682583
@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c536619ffa2ff4b4fbaebccb3ed05a72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 6b7d9619eddff35498cd49e43c7f8f4d, type: 2}
+  item: {fileID: 11400000, guid: 5335f01355283d740b5e132134e53a92, type: 2}
 --- !u!212 &4214871640898663276
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -92,7 +92,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -90375647409325229, guid: 593fc822f38f4924c8d6f785e33d96e7, type: 3}
+  m_Sprite: {fileID: 6937817954938267909, guid: 6238726400646f4489bcbbeeca697f98, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -139,7 +139,7 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.47692272
---- !u!1001 &4337755758102756372
+--- !u!1001 &1108009121373782041
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -149,7 +149,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 868480576776282427, guid: 75b4cae016d7305449e2f014164c836a, type: 3}
       propertyPath: m_Name
-      value: Bubble
+      value: Bubble (1)
       objectReference: {fileID: 0}
     - target: {fileID: 8236514390980312120, guid: 75b4cae016d7305449e2f014164c836a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -196,8 +196,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75b4cae016d7305449e2f014164c836a, type: 3}
---- !u!4 &5656301032919564332 stripped
+--- !u!4 &9020017773524728865 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8236514390980312120, guid: 75b4cae016d7305449e2f014164c836a, type: 3}
-  m_PrefabInstance: {fileID: 4337755758102756372}
+  m_PrefabInstance: {fileID: 1108009121373782041}
   m_PrefabAsset: {fileID: 0}

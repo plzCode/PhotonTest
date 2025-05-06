@@ -10,6 +10,7 @@ public class PlayerEating4State : PlayerState
     {
         base.Enter();
         player.lineVelocity(0f, 0f); //움직임 0으로 만들기
+        AudioManager.Instance.RPC_StopSFX();
     }
 
     public override void Exit()
