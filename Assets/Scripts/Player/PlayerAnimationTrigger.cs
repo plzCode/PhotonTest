@@ -129,6 +129,12 @@ public class PlayerAnimatorController : MonoBehaviour
         RangedAttack(Attack, "Player_Effect/Attack2 Effect_0");
     }
 
+    [PunRPC]
+    public void WhellKirbyAttackEffect()
+    {
+        RangedAttack(Attack, "Player_Effect/Whell Attack Effect_0");
+    }
+
 
     private GameObject Attack;
 
@@ -138,8 +144,6 @@ public class PlayerAnimatorController : MonoBehaviour
         {
             rangeAttack = Resources.Load<GameObject>(rangeAttackName); //원거리 공격을 가져옴
         }
-
-        Vector2 Pos = new Vector2 (player.transform.position.x, player.transform.position.y + 5);
 
         player.EffectAdd(player.LastMove, rangeAttack, player.AirJumpOutEffectPos); //플레이어 한태서 공격 발사
     }

@@ -12,4 +12,5 @@ public class EnemyNumber : MonoBehaviour
     public string c = "3. Ä¿ºñ Ä¿ÅÍ Æû";
     public string d = "4. Ä¿ºñ Å¥ÇÇµå Æû";
     public string e = "5. Ä¿ºñ ½º¿öµå Æû";
+    public string f = "6. Ä¿ºñ ÈÙ Æû";
 }

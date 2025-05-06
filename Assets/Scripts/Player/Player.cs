@@ -504,7 +504,7 @@ public class Player : MonoBehaviour
                 curAbility = gameObject.AddComponent<Ability_Sword>();
                 break;
             case 6: //ÈÙ Æû
-                curAbility = gameObject.AddComponent<Ability_Sword>();
+                curAbility = gameObject.AddComponent<Ability_Whell>();
                 break;
 
             default:

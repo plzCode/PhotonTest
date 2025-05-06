@@ -344,6 +344,7 @@ MonoBehaviour:
   c: "3. \uCEE4\uBE44 \uCEE4\uD130 \uD3FC"
   d: "4. \uCEE4\uBE44 \uD050\uD53C\uB4DC \uD3FC"
   e: "5. \uCEE4\uBE44 \uC2A4\uC6CC\uB4DC \uD3FC"
+  f: "6. \uCEE4\uBE44 \uD720 \uD3FC"
 --- !u!114 &496748875433877706
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -20,6 +20,7 @@ public abstract class PlayerAbility : MonoBehaviour
         Cutter, //3
         Cupid, //4
         Sword, //5
+        Whell, //6
     }
 
 
