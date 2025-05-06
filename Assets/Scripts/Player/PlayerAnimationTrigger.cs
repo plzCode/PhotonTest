@@ -39,6 +39,7 @@ public class PlayerAnimatorController : MonoBehaviour
     public void ChangeForm()
     {
 
+        AudioManager.Instance.RPC_PlaySFX("Nomikomi_Sound");
         player.KirbyFormNum = player.EatKirbyFormNum; //저장되어있던 몹 넘버를 변신하는 넘버로 넘긴다
         player.GetComponent<PhotonView>().RPC("SyncFormNum", RpcTarget.AllBuffered);
 
