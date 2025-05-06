@@ -63,8 +63,7 @@ public class PlayerAnimatorController : MonoBehaviour
         Collider2D[] colliders = Physics2D.OverlapCircleAll(player.attackCheck.position, player.curAbility.attackCheckRadius);
         if(AudioManager.Instance != null && player.curAbility.SFX_Name != "")
         {
-            //AudioManager.Instance.PlaySFX(player.curAbility.SFX_Name);
-            AudioManager.Instance.GetComponent<PhotonView>().RPC("RPC_PlaySFX", RpcTarget.All, player.curAbility.SFX_Name);
+            AudioManager.Instance.RPC_PlaySFX(player.curAbility.SFX_Name);
         }
         foreach (var hit in colliders)
         {
@@ -92,7 +91,7 @@ public class PlayerAnimatorController : MonoBehaviour
         if (AudioManager.Instance != null && player.curAbility.SFX_Name != "")
         {
             //AudioManager.Instance.PlaySFX(player.curAbility.SFX_Name);
-            AudioManager.Instance.GetComponent<PhotonView>().RPC("RPC_PlaySFX", RpcTarget.All, player.curAbility.SFX_Name);
+            AudioManager.Instance.RPC_PlaySFX(player.curAbility.SFX_Name);
         }
         StartCoroutine(CheckOverlapForSeconds(()=> new Vector2(player.transform.position.x, player.transform.position.y - 1f), player.curAbility.attackCheckRadius, 0.3f)); //공격 범위 체크
         player.curAbility.SFX_Name = ""; //어빌리티의 SFX 이름 초기화
@@ -104,7 +103,7 @@ public class PlayerAnimatorController : MonoBehaviour
         if (AudioManager.Instance != null && player.curAbility.SFX_Name != "")
         {
             //AudioManager.Instance.PlaySFX(player.curAbility.SFX_Name);
-            AudioManager.Instance.GetComponent<PhotonView>().RPC("RPC_PlaySFX", RpcTarget.All, player.curAbility.SFX_Name);
+            AudioManager.Instance.RPC_PlaySFX(player.curAbility.SFX_Name);
         }
         StartCoroutine(CheckOverlapForSeconds(()=>player.attackCheck.position, player.curAbility.attackCheckRadius, 0.3f)); //공격 범위 체크
         player.curAbility.SFX_Name = ""; //어빌리티의 SFX 이름 초기화

@@ -123,6 +123,7 @@ MonoBehaviour:
   pView: {fileID: 0}
   health_Bar: {fileID: 0}
   inventory: {fileID: 0}
+  commandInput: {fileID: 0}
   CutterUpgrade: 0
   dashTime: 0
   dash: 0
@@ -256,7 +257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9c39196edb1ab849b1fb20c05d22000, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputBufferTime: 0.5
+  inputBufferTime: 0.3
   player: {fileID: 0}
 --- !u!1 &1621551793653162873
 GameObject:

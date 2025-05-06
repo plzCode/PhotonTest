@@ -18,6 +18,7 @@ public class PlayerAirJumpOutState : PlayerState
         Effect = true;
         Back = true;
         AudioManager.Instance.RPC_PlaySFX("Air_Out_Sound");
+        player.commandInput.ClearInputBuffer();  
     }
 
     public override void Exit()

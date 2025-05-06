@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem.XR.Haptics;
 
 public class CommandInput : MonoBehaviour
 {
-    public float inputBufferTime = 0.5f;
+    public float inputBufferTime = 0.3f;
     public Player player;
 
     private struct InputEntry
@@ -34,12 +35,13 @@ public class CommandInput : MonoBehaviour
 
         RegisterCommand("UpAttack", new List<KeyCode> { KeyCode.W, KeyCode.Mouse0 }, new List<Type> { typeof(PlayerGroundState) });
         RegisterCommand("DownAttack", new List<KeyCode> { KeyCode.S, KeyCode.S, KeyCode.Mouse0 }, new List<Type> { typeof(PlayerAirState), typeof(PlayerJumpState), typeof(PlayerAirJumpingState), typeof(PlayerAirJumpUpState) });
-        RegisterCommand("Attack", new List<KeyCode> { KeyCode.Mouse0 });
+        RegisterCommand("Attack", new List<KeyCode> { KeyCode.Mouse0 }, new List<Type> { typeof(PlayerIdleState), typeof(PlayerMoveState), typeof(PlayerDashState), typeof(PlayerJumpState)});
     }
 
     void Update()
     {
         if(player.pView.IsMine == false) return; // 내 캐릭터가 아닐 경우 무시
+        
         if (IsPointerOverItemElement()) return; // 마우스가 UI 위에 있을 경우 무시
         CheckInput();
         CleanBuffer();
@@ -48,6 +50,11 @@ public class CommandInput : MonoBehaviour
 
     void CheckInput()
     {
+        var currentState = player.stateMachine.state;
+        if (currentState is PlayerSlidingState)
+        {
+            return;
+        }
         foreach (KeyCode key in System.Enum.GetValues(typeof(KeyCode)))
         {
             if (Input.GetKeyDown(key))
@@ -63,15 +70,23 @@ public class CommandInput : MonoBehaviour
         }
     }
 
+    public void ClearInputBuffer()
+    {
+        inputBuffer.Clear();
+    }
+
     void CheckCommands()
     {
         List<KeyCode> currentInputs = inputBuffer.Select(e => e.key).ToList();
         var currentState = player.stateMachine.state;
-
         foreach (var pair in commandMap)
         {
             foreach (var (sequence, validStates) in pair.Value)
             {
+                if (currentState is PlayerAirJumpOutState || currentState is PlayerSlidingState)
+                {
+                    return;
+                }
                 if (IsMatch(currentInputs, sequence) && IsValidState(currentState, validStates))
                 {
                     Debug.Log($"{pair.Key} 커맨드 발동");
@@ -84,6 +99,7 @@ public class CommandInput : MonoBehaviour
     }
     bool IsValidState(PlayerState currentState, List<Type> validStates)
     {
+
         if (validStates == null || validStates.Count == 0)
             return true; // 조건이 없으면 모든 상태에서 허용
         Debug.Log($"현재 상태: {currentState.GetType()}");

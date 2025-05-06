@@ -55,7 +55,16 @@ public class Inventory : MonoBehaviour
                 }
                 break;
             case ItemType.Ability:
-                break;
+                if (player != null && player.GetComponentInChildren<PlayerAnimatorController>())
+                {
+                    player.EatKirbyFormNum = (int)item.effectValue; // 능력 변경
+                    player.GetComponentInChildren<PlayerAnimatorController>().ChangeForm(); // 능력 사용
+                }
+                else
+                {
+                    Debug.LogWarning("Player reference is null.");
+                }
+                    break;
         }
 
         RemoveItem(item); // 사용 후 삭제

@@ -97,6 +97,8 @@ public class Player : MonoBehaviour
     public Health_Bar health_Bar;
     //Inventory
     public Inventory inventory;
+    //Command
+    public CommandInput commandInput;
 
 
     #region AttackUpgrade
@@ -137,6 +139,7 @@ public class Player : MonoBehaviour
         changeFormState = new PlayerChageFormState(this, stateMachine, "ChangeForm");
 
         pView = GetComponent<PhotonView>();
+        commandInput = GetComponent<CommandInput>();
     }
 
     public void Start()
@@ -459,7 +462,7 @@ public class Player : MonoBehaviour
         
     public int EatKirbyFormNum;
     public int KirbyFormNum;
-    [PunRPC]
+    [PunRPC] 
     public void KirbyForm() //커비가 먹은 적의 고유 번호에 따라 변신 폼을 정함
     {
         Debug.Log("KirbyFrom 실행됨");
