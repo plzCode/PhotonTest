@@ -89,6 +89,7 @@ MonoBehaviour:
   - PlaySFX
   - StopSFX
   - RPC_PlaySFXLoop
+  - Die
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
