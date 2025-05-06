@@ -4,12 +4,13 @@ using UnityEngine;
 using Photon.Pun;
 using Unity.Cinemachine;
 using Unity.VisualScripting;
+using Unity.Mathematics;
 
 public class SpawnMannager : MonoBehaviourPun
 {
-    
+
     public string gameSceneName = "GameScene";
-    public string playerPrefabName = "Test/Player";// Resources 폴더에 있어야 함
+    public string playerPrefabName = "Test/Player";// Resources 폴더에 있어야 함    
     public Transform[] spawnPoints; // 미리 지정해놓은 스폰 지점들
 
     private void OnEnable()
@@ -51,6 +52,7 @@ public class SpawnMannager : MonoBehaviourPun
         pCam.AddComponent<CinemachineFollow>();
         pCam.AddComponent<CinemachineRotationComposer>();
 
+
         pCam.Follow = tmpPlayer.transform;
         pCam.LookAt = tmpPlayer.transform;
         pCam.Lens.OrthographicSize = 6f;
@@ -59,10 +61,17 @@ public class SpawnMannager : MonoBehaviourPun
         Canvas canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
         canvas.worldCamera = pCam.GetComponent<CinemachineCamera>().GetComponent<Camera>();
 
+        camObj.AddComponent<CinemachineBasicMultiChannelPerlin>();
+        pCam.GetComponent<CinemachineBasicMultiChannelPerlin>().NoiseProfile = Resources.Load<NoiseSettings>("Bonkers_Shake");
+        pCam.GetComponent<CinemachineBasicMultiChannelPerlin>().AmplitudeGain = 0;
+        pCam.GetComponent<CinemachineBasicMultiChannelPerlin>().FrequencyGain = 0;
+        CameraShake.Instance.cinemCamera = camObj.GetComponent<CinemachineCamera>();
+        CameraShake.Instance.noise = camObj.GetComponent<CinemachineBasicMultiChannelPerlin>();
+
         // 체력 UI 설정을 모든 클라이언트에서 실행
         playerView.RPC("CreateHealthBar", RpcTarget.AllBuffered, actorNumber, viewID);
         // 인벤토리 UI 설정을 모든 클라이언트에서 실행
-        playerView.RPC("CreateInventory", RpcTarget.AllBuffered,  viewID);
+        playerView.RPC("CreateInventory", RpcTarget.AllBuffered, viewID);
 
     }
 

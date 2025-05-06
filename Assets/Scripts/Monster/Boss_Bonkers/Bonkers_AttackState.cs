@@ -24,7 +24,7 @@ public class Bonkers_AttackState : BossState
 
         if(isBackWalking)
         {
-            boss.rb.linearVelocity = new Vector2(5 * -boss.facingDir, 0);
+            boss.rb.linearVelocity = new Vector2(3 * -boss.facingDir, 0);
         }
 
 

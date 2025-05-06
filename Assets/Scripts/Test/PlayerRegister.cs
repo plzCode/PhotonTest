@@ -17,5 +17,14 @@ public class PlayerRegister : MonoBehaviourPun
         {
             GameManager.Instance.RegisterPlayer(targetView.gameObject);
         }
+
+        GameObject bonkersObj = GameObject.Find("Bonkers");
+        if (bonkersObj != null)
+        {
+            Boss_Bonkers bonkers = bonkersObj.GetComponent<Boss_Bonkers>();
+            bonkers.UpdateCurrentPlayersCollision();
+        }
+        
+
     }
 }

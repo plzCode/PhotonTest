@@ -20,7 +20,7 @@ public class Bonkers_MoveState : BossState
     {
         base.Update();
         boss.SetVelocity(5 * boss.facingDir, 0);
-        if (Vector2.Distance(closestPlayer.position, boss.transform.position) <= 2f)
+        if (Vector2.Distance(closestPlayer.position, boss.transform.position) <= 3.5f)
         {
             randAttackCount = 1;
             boss.photonView.RPC("ChangeAnimInteger", RpcTarget.All, "AttackCount", randAttackCount);

@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 4574105629807904052}
   - component: {fileID: 5384828041151818215}
   - component: {fileID: 918851917780751076}
-  - component: {fileID: 3150118168601041690}
   - component: {fileID: -3392500113914449728}
   - component: {fileID: 2528974759657261692}
   m_Layer: 0
@@ -174,27 +173,10 @@ MonoBehaviour:
   Synchronization: 3
   OwnershipTransfer: 0
   observableSearch: 2
-  ObservedComponents:
-  - {fileID: 3150118168601041690}
+  ObservedComponents: []
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &3150118168601041690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7672715142142705170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizePosition: 1
-  m_SynchronizeRotation: 1
-  m_SynchronizeScale: 0
-  m_UseLocal: 1
 --- !u!114 &-3392500113914449728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,7 +189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b853b1086b44773469c3ae14d649cb7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackPower: 5
+  attackPower: 15
   rb: {fileID: 4574105629807904052}
 --- !u!58 &2528974759657261692
 CircleCollider2D:

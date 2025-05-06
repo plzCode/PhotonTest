@@ -25,28 +25,57 @@ public class Bonkers_AnimationTriggers : MonoBehaviour
         }
     }
 
+    
+    private void SetCameraShake()
+    {
+        CameraShake.Instance.Shake(0.3f, 1.33f, 1.33f);
+    }
+
+    private void AttackTrigger()
+    {
+        SetCameraShake();
+
+        if (!PhotonNetwork.IsMasterClient)
+            return;
+
+
+
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(boss.attackCheck.position, boss.attackCheckRadius);
+
+        foreach (var hit in colliders)
+        {
+            if (hit.GetComponent<Player>() != null)
+            {
+                if (hit.GetComponent<PhotonView>() != null)
+                    hit.GetComponent<PhotonView>().RPC("TakeDamage", RpcTarget.All, (Vector2)transform.position, boss.attackPower); // 데미지 처리                
+
+                
+            }
+        }
+    }
+
     private void CalledFunction()
-    {        
-        boss.rb.AddForce(Vector2.up * 20, ForceMode2D.Impulse);        
-        
+    {
+        boss.rb.AddForce(Vector2.up * 15, ForceMode2D.Impulse);
+
     }
 
     private void ForwardJump()
     {
 
-        boss.SetVelocity(5*boss.facingDir, 20);
+        boss.SetVelocity(5 * boss.facingDir, 15);
 
 
     }
 
     private void SmallBackJump()
     {
-        boss.rb.linearVelocity = new Vector2(5 * -boss.facingDir, 10);
+        boss.rb.linearVelocity = new Vector2(3 * -boss.facingDir, 10);
     }
 
     private void SmallJump()
-    {        
-          boss.SetVelocity(0, 15);      
+    {
+        boss.SetVelocity(0, 15);
     }
 
     private void SetJumpCheck()
@@ -64,5 +93,5 @@ public class Bonkers_AnimationTriggers : MonoBehaviour
         boss.attackState.isBackWalking = true;
     }
 
-    
+
 }

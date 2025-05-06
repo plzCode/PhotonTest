@@ -36,11 +36,68 @@ public class Boss_Bonkers : Enemy
         base.Start();
 
         stateMachine.Initialize(idleState);
+
+        UpdateCurrentPlayersCollision();
+
+        // 플레이어와 몬스터의 콜라이더를 찾아서 충돌을 무시
+        //Collider2D playerCollider = GameObject.Find("Player(Clone)").GetComponent<Collider2D>();
+        //Collider2D monsterCollider = GetComponent<Collider2D>();
+
+        //if (playerCollider != null && monsterCollider != null)
+        //{
+        //    Debug.Log("충돌무시설정");
+        //    Physics2D.IgnoreCollision(playerCollider, monsterCollider, true);  // 물리적 충돌 무시
+        //}
+
+
     }
 
     protected override void Update()
     {
         base.Update();
+
+        //UpdateCurrentPlayersCollision();
+    }
+
+    //GameObject bonkersObject = GameObject.Find("Bonkers");
+    //    if(bonkersObject!=null)
+    //    {
+    //        Boss_Bonkers bonkers = bonkersObject.GetComponent<Boss_Bonkers>();
+    //bonkers.UpdateCurrentPlayersCollision();
+    //    }
+
+    public void UpdateCurrentPlayersCollision()
+    {
+
+        Collider2D monsterCollider = GetComponent<Collider2D>();
+        if (monsterCollider == null)
+        {
+            Debug.LogWarning("Monster Collider가 없습니다.");
+            return;
+        }
+
+        // 플레이어 배열이 유효한지 확인
+        if (GameManager.Instance.playerList == null || GameManager.Instance.playerList.Count == 0)
+        {
+            Debug.LogWarning("플레이어 배열이 비어있습니다.");
+            return;
+        }
+
+        // 플레이어와 몬스터의 콜라이더를 찾아서 충돌을 무시
+        for (int i = 0; i < GameManager.Instance.playerList.Count; i++)
+        {
+            // 각 플레이어의 Collider2D가 있는지 확인
+            Collider2D playerCollider = GameManager.Instance.playerList[i].GetComponent<Collider2D>();
+            if (playerCollider != null)
+            {
+                Physics2D.IgnoreCollision(playerCollider, monsterCollider, true);  // 물리적 충돌 무시
+                Debug.Log("플레이어 " + i + "와 몬스터의 충돌 무시 설정");
+            }
+            else
+            {
+                Debug.LogWarning("플레이어 " + i + "에 Collider2D가 없습니다.");
+            }
+        }
     }
 
     [PunRPC]
@@ -81,5 +138,24 @@ public class Boss_Bonkers : Enemy
             //_BombRidig.linearVelocity = new Vector2(10 * facingDir, 10);
         }
     }
+
     
+    
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        
+        
+        if (collision.CompareTag("Player") && PhotonNetwork.IsMasterClient)
+        {
+            Debug.Log("플레이어에게 " + attackPower + "만큼 데미지를 줍니다.");
+            if (collision.GetComponent<PhotonView>() != null)
+            {
+                collision.GetComponent<PhotonView>().RPC("TakeDamage", RpcTarget.All, (Vector2)transform.position, attackPower); // 데미지 처리
+            }
+                
+            
+            
+        }
+    }
+
 }
