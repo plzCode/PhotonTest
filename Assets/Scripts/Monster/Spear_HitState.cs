@@ -1,3 +1,4 @@
+using Photon.Pun;
 using UnityEngine;
 
 public class Spear_HitState : EnemyState
@@ -43,7 +44,15 @@ public class Spear_HitState : EnemyState
         }
         if (stateTimer < 0)
         {
-            enemy.photonView.RPC("ChangeState", Photon.Pun.RpcTarget.All,"Idle");
+            if(enemy.currentHp<=0)
+            {
+                enemy.photonView.RPC("Die", RpcTarget.All);
+            }
+            else
+            {
+                enemy.photonView.RPC("ChangeState", Photon.Pun.RpcTarget.All, "Idle");
+            }
+                
         }
 
     }

@@ -10,7 +10,12 @@ public class Enemy : MonoBehaviour
 
     #endregion
     [SerializeField] protected LayerMask whatIsPlayer;
-
+    [Header("체력 정보")]
+    [SerializeField] public float maxHp=10;
+    [SerializeField] public float currentHp=10;
+    [SerializeField] public GameObject dieEffect;
+    [SerializeField] protected SpriteRenderer spriteRenderer;  // 스프라이트 렌더러 참조
+    private Coroutine hitFlashRoutine;
 
     [Header("넉백 정보")]
     [SerializeField] protected Vector2 knockbackDirection;
@@ -77,6 +82,8 @@ public class Enemy : MonoBehaviour
             Flip();
         }
         photonView = GetComponent<PhotonView>();
+        currentHp = maxHp;
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
 
     protected virtual void Start()
@@ -122,8 +129,21 @@ public class Enemy : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-
-
+    [PunRPC]
+    public virtual void Die()
+    {
+        if (PhotonNetwork.IsMasterClient)
+        {
+            //isDestroyed = true;  // 삭제 상태로 설정
+            photonView.RPC("EffectAdd", RpcTarget.All, "Delete Effect 30x30_0", transform.position);
+            PhotonNetwork.Destroy(gameObject); // 네트워크 전체에서 삭제
+        }
+    }
+    [PunRPC]
+    protected virtual void EffectAdd(string effectName, Vector3 effectPos)
+    {
+        PhotonNetwork.Instantiate("Tile_Effect/" + effectName, effectPos, Quaternion.identity);
+    }
     public virtual void Damage()
     {
         //fx.StartCoroutine("FlashFX");
@@ -134,8 +154,30 @@ public class Enemy : MonoBehaviour
     [PunRPC]
     public virtual void TakeDamage(float _damage)
     {
+        if(currentHp>0)
+        {
+            // 색상 변화 효과 시작
+            if (hitFlashRoutine != null)
+                StopCoroutine(hitFlashRoutine);
+            hitFlashRoutine = StartCoroutine(HitFlash());
+        }
+        
         //stateMachine.ChangeState();
 
+    }
+
+    private IEnumerator HitFlash()
+    {
+        if (spriteRenderer == null)
+            yield break;
+
+        for (int i = 0; i < 2; i++)
+        {
+            spriteRenderer.color = Color.red;
+            yield return new WaitForSeconds(0.1f);
+            spriteRenderer.color = Color.white;
+            yield return new WaitForSeconds(0.1f);
+        }
     }
 
 

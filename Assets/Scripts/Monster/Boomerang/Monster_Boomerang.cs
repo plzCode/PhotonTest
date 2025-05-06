@@ -53,8 +53,14 @@ public class Monster_Boomerang : Enemy
     public override void TakeDamage(float _damage)
     {
         base.TakeDamage(_damage);
+        if (currentHp <= 0)
+        {
+            return;
+        }
         Debug.Log("몬스터가 피해를 " + _damage + "받음");
-
+        currentHp -= _damage;
+        if (currentHp <= 0)
+        { currentHp = 0; }
         if (PhotonNetwork.IsMasterClient)
         {
             photonView.RPC("ChangeState", RpcTarget.All, "Hit");

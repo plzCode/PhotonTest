@@ -75,6 +75,14 @@ public class Monster_Sword : Enemy
     public override void TakeDamage(float _damage)
     {
         base.TakeDamage(_damage);
+        if (currentHp <= 0)
+        {
+            return;
+        }
+
+        currentHp -= _damage;
+        if (currentHp <= 0)
+        { currentHp = 0; }
         Debug.Log("몬스터가 피해를 " + _damage + "받음");
 
         photonView.RPC("RequestHitFromClient", RpcTarget.All);

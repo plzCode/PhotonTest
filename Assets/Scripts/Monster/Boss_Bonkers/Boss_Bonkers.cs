@@ -11,7 +11,8 @@ public class Boss_Bonkers : Enemy
     public Bonkers_JumpState jumpState { get; private set; }
     public Bonkers_AttackState attackState { get; private set; }
 
-
+    [Header("체력 UI")]
+    [SerializeField] private Monster_HealthBar health_Bar;
 
     #endregion
 
@@ -98,6 +99,19 @@ public class Boss_Bonkers : Enemy
                 Debug.LogWarning("플레이어 " + i + "에 Collider2D가 없습니다.");
             }
         }
+    }
+
+    [PunRPC]
+    public override void TakeDamage(float _damage)
+    {
+        base.TakeDamage(_damage);
+        if (currentHp <= 0)
+            return;
+        currentHp -= _damage;
+        health_Bar.UpdateHealthBar(maxHp, currentHp);
+        Debug.Log("몬스터가 피해를 " + _damage + "받음");
+
+        
     }
 
     [PunRPC]
