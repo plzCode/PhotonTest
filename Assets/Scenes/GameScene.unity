@@ -2916,13 +2916,29 @@ PrefabInstance:
       propertyPath: health_Bar
       value: 
       objectReference: {fileID: 82705931}
+    - target: {fileID: 5481355944146061131, guid: f391ef9f13c31a744b82eef0cf3b790b, type: 3}
+      propertyPath: attackCheckRadius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5989453673209453163, guid: f391ef9f13c31a744b82eef0cf3b790b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 5989453673209453163, guid: f391ef9f13c31a744b82eef0cf3b790b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 5989453673209453163, guid: f391ef9f13c31a744b82eef0cf3b790b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.66
+      objectReference: {fileID: 0}
     - target: {fileID: 5989453673209453163, guid: f391ef9f13c31a744b82eef0cf3b790b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 56.66
+      value: 56.2
       objectReference: {fileID: 0}
     - target: {fileID: 5989453673209453163, guid: f391ef9f13c31a744b82eef0cf3b790b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.72
+      value: -4.48
       objectReference: {fileID: 0}
     - target: {fileID: 5989453673209453163, guid: f391ef9f13c31a744b82eef0cf3b790b, type: 3}
       propertyPath: m_LocalPosition.z
