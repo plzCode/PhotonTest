@@ -63,7 +63,7 @@ public class Bonkers_AnimationTriggers : MonoBehaviour
     private void ForwardJump()
     {
 
-        boss.SetVelocity(5 * boss.facingDir, 15);
+        boss.SetVelocity(4 * boss.facingDir, 15);
 
 
     }
