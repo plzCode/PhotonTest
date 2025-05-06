@@ -33,6 +33,7 @@ public class Door : MonoBehaviour
         if (playersInRange != null && Input.GetKeyDown(KeyCode.W))
         {
             StartCoroutine(TeleportPlayerCoroutine(playersInRange));
+            AudioManager.Instance.PlaySFX("Door_Sound");
         }
     }
 

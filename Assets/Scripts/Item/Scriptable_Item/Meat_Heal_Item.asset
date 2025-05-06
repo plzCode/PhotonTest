@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c102456f7f152f4a8cd6cf2d661e44f, type: 3}
+  m_Name: Meat_Heal_Item
+  m_EditorClassIdentifier: 
+  itemName: Meat
+  icon: {fileID: 6937817954938267909, guid: 6238726400646f4489bcbbeeca697f98, type: 3}
+  description: "\uD68C\uBCF5 \uC544\uC774\uD15C"
+  effectValue: 70
+  type: 0
+  isAutoUse: 1

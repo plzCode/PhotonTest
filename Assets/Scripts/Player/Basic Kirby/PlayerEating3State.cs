@@ -13,12 +13,14 @@ public class  PlayerEating3State : PlayerState
         base.Enter();
         Debug.Log("Eating3 : " + player);
         pView.RPC("AttackAdd", RpcTarget.All, player.LastMove, player.EatEffect2.name, player.EatEffectPos.position, pView.ViewID);
+        AudioManager.Instance.RPC_PlaySFX("Inhale_Sound_Cut");
     }
 
     public override void Exit()
     {
         base.Exit();
         pView.RPC("AttackDestroy", RpcTarget.All);
+        AudioManager.Instance.RPC_StopSFX();
     }
 
     public override void Update()

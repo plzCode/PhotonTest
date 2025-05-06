@@ -1,3 +1,4 @@
+using Photon.Pun;
 using UnityEngine;
 public class ItemPickup : MonoBehaviour
 {
@@ -5,12 +6,27 @@ public class ItemPickup : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("ItemPickup OnTriggerEnter");
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Item picked up: " + item.itemName);
             other.GetComponent<Player>().inventory.AddItem(item);
             Destroy(gameObject);
+
+            if(other.GetComponent<PhotonView>().IsMine)
+            {
+                switch (item.type)
+                {
+                    case ItemType.Heal:
+                        AudioManager.Instance.RPC_PlaySFX("Get_Item_Sound");
+                        break;
+                    case ItemType.Ability:
+                        AudioManager.Instance.RPC_PlaySFX("Get_Item_Sound");
+                        break;
+                    default:
+                        Debug.LogWarning("Unknown item type: " + item.type);
+                        break;
+                }
+            }
+            
         }
     }
 }

@@ -84,6 +84,11 @@ MonoBehaviour:
   - RPC_PlaySFX
   - ThrowBombRPC
   - SwordKirbyAttack
+  - RPC_PlaySFXSegment
+  - RPC_StopSFX
+  - PlaySFX
+  - StopSFX
+  - RPC_PlaySFXLoop
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

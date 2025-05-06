@@ -13,6 +13,7 @@ public class PlayerAirJumpUpState : PlayerState
         base.Enter();
         //player.lineVelocity(rb.linearVelocityX, player.JumpPower * 1.5f);
         pView.RPC("lineVelocity", RpcTarget.All, rb.linearVelocityX, player.JumpPower * 1.5f);
+        AudioManager.Instance.RPC_PlaySFX("Air_Jump_up_Sound");
     }
 
     public override void Exit()

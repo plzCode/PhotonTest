@@ -20,6 +20,7 @@ public class PlayerDashState : PlayerGroundState
         player.dashTime = 0;
         Effect = true;
         Effect2 = true;
+        AudioManager.Instance.RPC_PlaySFX("Dash_Sound");
     }
 
     public override void Exit()
