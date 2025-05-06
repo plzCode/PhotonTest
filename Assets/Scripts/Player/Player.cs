@@ -1,6 +1,7 @@
 using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Serialization.Formatters;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -280,18 +281,24 @@ public class Player : MonoBehaviour
     public void EffectAdd(float _x, GameObject Effect, Transform EffecPos) //이펙트를 추가함
     {
         GameObject bullet = null;
-
-        if (_x > 0) //오른쪽이면 그대로 소환
+        if (PhotonNetwork.IsMasterClient)
         {
-            //Instantiate(obj, EffecPos.position, Quaternion.identity);
-            bullet = PhotonNetwork.Instantiate("Player_Effect/" + Effect.name, EffecPos.position, Quaternion.identity);
+            if (_x > 0) //오른쪽이면 그대로 소환
+            {
+                //Instantiate(obj, EffecPos.position, Quaternion.identity);
+                bullet = PhotonNetwork.Instantiate("Player_Effect/" + Effect.name, EffecPos.position, Quaternion.identity);
             
 
-        }
-        else if (_x < 0) //왼쪽이면 좌우반전 소환
-        {
-            //Instantiate(obj, EffecPos.position, Quaternion.Euler(0, 180, 0));
-            bullet = PhotonNetwork.Instantiate("Player_Effect/" + Effect.name, EffecPos.position, Quaternion.Euler(0, 180, 0));
+            }
+            else if (_x < 0) //왼쪽이면 좌우반전 소환
+            {
+                //Instantiate(obj, EffecPos.position, Quaternion.Euler(0, 180, 0));
+                bullet = PhotonNetwork.Instantiate("Player_Effect/" + Effect.name, EffecPos.position, Quaternion.Euler(0, 180, 0));
+
+            }
+
+            
+
         }
 
         if (bullet != null)
@@ -301,14 +308,25 @@ public class Player : MonoBehaviour
             {
                 attackScript.player = this; // 이 코드가 Player 클래스 안에 있어야 함
             }
-
-            /*if(bullet.GetComponent<KirbyDamageStar>() != null)
+            if(bullet.GetComponent<KirbyDamageStar>() != null)
             {
-                bullet.GetComponent<KirbyDamageStar>().player = this; // 이 코드가 Player 클래스 안에 있어야 함
-                bullet.GetComponent<KirbyDamageStar>().enemyNumber.Number = this.EatKirbyFormNum; //적의 번호를 가져옴
-            }*/
+                bullet.GetComponent<PhotonView>().RPC("SetPlayer", RpcTarget.AllBuffered, pView.ViewID);
+            }
+            
         }
     }
+    /*[PunRPC]
+    public void KirbyDamageStarSetting(int bView, int pView)
+    {
+        GameObject bullet = PhotonView.Find(bView).gameObject;
+        Player player = PhotonView.Find(pView).gameObject.GetComponent<Player>();
+
+        if (bullet.GetComponent<KirbyDamageStar>() != null)
+        {
+            bullet.GetComponent<KirbyDamageStar>().player = player; // 이 코드가 Player 클래스 안에 있어야 함
+            bullet.GetComponent<KirbyDamageStar>().enemyNumber.Number = player.KirbyFormNum;
+        }
+    }*/
 
 
 
@@ -416,9 +434,9 @@ public class Player : MonoBehaviour
             LastMove = -1f;
         }
 
-        if (KirbyFormNum > 0 && pView.IsMine) 
+        if (curAbility!=null) 
         {
-            EffectAdd(LastMove, DamageStar, transform);
+            EffectAdd(LastMove, DamageStar, transform);            
             curAbility.OnAbilityDestroyed(this); //어빌리티 초기화
         }
         PlayerHP -= Damage;

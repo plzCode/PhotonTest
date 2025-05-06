@@ -321,7 +321,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  enemyNumber: {fileID: 0}
+  enemyNumber: {fileID: 8533131503691266927}
   SaveNumber: 0
   moveSpeed: 6
   randomSpeed: 0

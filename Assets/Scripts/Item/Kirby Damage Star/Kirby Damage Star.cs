@@ -15,14 +15,15 @@ public class KirbyDamageStar : Item
 
     private void Awake()
     {
-        player = GameObject.FindWithTag("Player").GetComponent<Player>();
+        /*player = GameObject.FindWithTag("Player").GetComponent<Player>();*/
         enemyNumber = GetComponent<EnemyNumber>();  // 자기 자신에 붙어 있는 EnemyNumber 가져오기
     }
 
     void Start()
     {
-        enemyNumber.Number = player.EatKirbyFormNum;
-        player.EatKirbyFormNum = 0;
+        //enemyNumber.Number = player.EatKirbyFormNum;
+        /*player.KirbyFormNum = 0;
+        player.EatKirbyFormNum = 0;*/
     }
 
     void Update()
@@ -49,5 +50,22 @@ public class KirbyDamageStar : Item
             randomSpeed = Random.Range(-3f, 3f);
             moveSpeed = randomSpeed;
         }
+    }
+
+    [PunRPC]
+    public void SetPlayer(int pView)
+    {
+        player = PhotonView.Find(pView).GetComponent<Player>();
+        /*if(player.curAbility is Ability_Eat)
+        {
+            enemyNumber.Number = player.EatKirbyFormNum;
+        }
+        else if (player.curAbility != null)
+        {
+            enemyNumber.Number = player.KirbyFormNum;
+        }*/
+        enemyNumber.Number = player.EatKirbyFormNum;
+
+
     }
 }
