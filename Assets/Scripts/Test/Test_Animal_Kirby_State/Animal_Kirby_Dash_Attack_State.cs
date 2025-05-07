@@ -9,10 +9,12 @@ public class Animal_Kirby_Dash_Attack_State : PlayerState
     private float duration = 0.5f;
     private float elapsedTime;
 
+    private float audioTime;
+
     public override void Enter()
     {
         base.Enter();
-       
+        audioTime = 0f;
         elapsedTime = 0f;
         if(player.flipbool)
         {
@@ -39,6 +41,15 @@ public class Animal_Kirby_Dash_Attack_State : PlayerState
     public override void Update()
     {
         base.Update();
+
+        audioTime += Time.deltaTime;
+
+        if (audioTime > 0.08f)
+        {
+            AudioManager.Instance.RPC_PlaySFX("kirby_Animal_2");
+            audioTime = 0f;
+        }
+
         if (triggerCalled)
         {
             stateMachine.ChangeState(player.idleState);

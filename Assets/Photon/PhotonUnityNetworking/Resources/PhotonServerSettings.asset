@@ -97,6 +97,9 @@ MonoBehaviour:
   - Sword_2_Sound
   - Sword_3_Sound
   - Sword_4_Sound
+  - Animal_1_Sound
+  - TurnMoveDown
+  - WhellTurn
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

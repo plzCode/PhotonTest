@@ -9,9 +9,11 @@ public class Animal_Kirby_Down_Attack_State : PlayerState
     private float duration = 0.5f;
     private float elapsedTime;
 
+    private float audioTime;
     public override void Enter()
     {
         base.Enter();
+        audioTime = 0f;
         elapsedTime = 0f;
         player.lineVelocity(0f, -10f);
         player.rb.constraints = RigidbodyConstraints2D.FreezePositionX;
@@ -29,6 +31,15 @@ public class Animal_Kirby_Down_Attack_State : PlayerState
     public override void Update()
     {
         base.Update();
+
+        audioTime += Time.deltaTime;
+
+        if (audioTime > 0.08f)
+        {
+            AudioManager.Instance.RPC_PlaySFX("kirby_Animal_2");
+            audioTime = 0f;
+        }
+
         if (triggerCalled)
         {
             stateMachine.ChangeState(player.idleState);
