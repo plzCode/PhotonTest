@@ -154,7 +154,9 @@ public class Enemy : MonoBehaviour
     [PunRPC]
     public virtual void TakeDamage(float _damage)
     {
-        if(currentHp>0)
+        AudioManager.Instance.RPC_PlaySFX("Enemy_Damage");
+
+        if (currentHp>0)
         {
             // 색상 변화 효과 시작
             if (hitFlashRoutine != null)

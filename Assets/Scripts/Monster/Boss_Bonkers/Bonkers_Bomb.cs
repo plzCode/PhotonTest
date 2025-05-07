@@ -23,17 +23,21 @@ public class Bonkers_Bomb : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.CompareTag("Player") && PhotonNetwork.IsMasterClient)
+        if (collision.CompareTag("Player"))
         {
-            PhotonView pv = collision.GetComponent<PhotonView>();
-            Debug.Log("폭탄이 터져 플레이어에게 " + attackPower + "만큼 데미지를 줍니다.");
-            if (pv != null)
-                pv.RPC("TakeDamage", RpcTarget.All, (Vector2)transform.position, attackPower); // 데미지 처리
+            AudioManager.Instance.RPC_PlaySFX("Boom5");
             if (PhotonNetwork.IsMasterClient)
             {
-                //isDestroyed = true;  // 삭제 상태로 설정
-                photonView.RPC("EffectAdd", RpcTarget.All, "Delete Effect 30x30_0", transform.position);
-                PhotonNetwork.Destroy(gameObject); // 네트워크 전체에서 삭제
+                PhotonView pv = collision.GetComponent<PhotonView>();
+                Debug.Log("폭탄이 터져 플레이어에게 " + attackPower + "만큼 데미지를 줍니다.");
+                if (pv != null)
+                    pv.RPC("TakeDamage", RpcTarget.All, (Vector2)transform.position, attackPower); // 데미지 처리
+                if (PhotonNetwork.IsMasterClient)
+                {
+                    //isDestroyed = true;  // 삭제 상태로 설정
+                    photonView.RPC("EffectAdd", RpcTarget.All, "Bonkers Bomb Effect2 95x95_0", transform.position);
+                    PhotonNetwork.Destroy(gameObject); // 네트워크 전체에서 삭제
+                }
             }
         }
     }
@@ -41,6 +45,6 @@ public class Bonkers_Bomb : MonoBehaviour
     [PunRPC]
     protected virtual void EffectAdd(string effectName, Vector3 effectPos)
     {
-        PhotonNetwork.Instantiate("Tile_Effect/" + effectName, effectPos, Quaternion.identity);
+        PhotonNetwork.Instantiate("Monster_Effect/" + effectName, effectPos, Quaternion.identity);
     }
 }

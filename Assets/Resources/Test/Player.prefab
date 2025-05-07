@@ -117,6 +117,7 @@ MonoBehaviour:
   angle: 0
   perp: {x: 0, y: 0}
   isSlope: 0
+  spriteRenderer: {fileID: 0}
   curAbility: {fileID: 0}
   isInhaling: 0
   attackCheck: {fileID: 7561445261509129977}

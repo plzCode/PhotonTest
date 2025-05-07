@@ -123,11 +123,40 @@ public class PlayerAnimatorController : MonoBehaviour
         RangedAttack(Attack, "Player_Effect/Cutter");
     }
 
+
+
+
     [PunRPC]
     public void SwordKirbyAttack()
     {
         RangedAttack(Attack, "Player_Effect/Attack2 Effect_0");
     }
+
+    [PunRPC]
+    public void Sword_1_Sound()
+    {
+        AudioManager.Instance.RPC_PlaySFX("kirby_Sword_1");
+    }
+
+    [PunRPC]
+    public void Sword_2_Sound()
+    {
+        AudioManager.Instance.RPC_PlaySFX("kirby_Sword_2");
+    }
+
+    [PunRPC]
+    public void Sword_3_Sound()
+    {
+        AudioManager.Instance.RPC_PlaySFX("kirby_Sword_3");
+    }
+
+    [PunRPC]
+    public void Sword_4_Sound()
+    {
+        AudioManager.Instance.RPC_PlaySFX("kirby_Sword_4");
+    }
+
+
 
     [PunRPC]
     public void WhellKirbyAttackEffect()

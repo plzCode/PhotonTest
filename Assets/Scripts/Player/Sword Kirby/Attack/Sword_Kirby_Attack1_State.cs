@@ -32,9 +32,15 @@ public class Sword_Kirby_Attack1_State : PlayerState
         {
             player.stateMachine.ChangeState(attack2State);
         }
-        else if (Input.GetKeyUp(KeyCode.Mouse0))
+        else
+        
+        if (player.IsGroundCheck())
         {
             player.stateMachine.ChangeState(player.idleState);
+        }
+        else
+        {
+            player.stateMachine.ChangeState(player.airState);
         }
     }
 }

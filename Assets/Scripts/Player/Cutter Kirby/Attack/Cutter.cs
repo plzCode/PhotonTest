@@ -27,6 +27,8 @@ public class Cutter : PlayerRagedManager
     {
         if (!photonView.IsMine) return; // 현재 클라이언트가 소유하지 않은 객체는 초기화하지 않음
 
+        AudioManager.Instance.RPC_PlaySFX("kirby_Cutter_Start");
+
         if (player.CutterUpgrade == 0)
         {
             anim.SetBool("Basic", true);  // 업그레이드 상태일 때 애니메이션을 설정합니다.
@@ -122,6 +124,7 @@ public class Cutter : PlayerRagedManager
         {
             if (lifeTime <= 9.9f)
             {
+                AudioManager.Instance.RPC_PlaySFX("kirby_Cutter_End");
                 PhotonNetwork.Destroy(gameObject);
 
                 if (!AttackEnemy)

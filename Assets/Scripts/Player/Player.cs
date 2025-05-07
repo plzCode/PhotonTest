@@ -46,6 +46,7 @@ public class Player : MonoBehaviour
     public Vector2 perp;
     public bool isSlope;
 
+    [SerializeField] private SpriteRenderer spriteRenderer;
 
 
     public Rigidbody2D rb { get; private set; }
@@ -90,7 +91,7 @@ public class Player : MonoBehaviour
     public bool isInhaling = false;
     [SerializeField]
     public Transform attackCheck;
-    
+
 
     public PhotonView pView;
 
@@ -141,6 +142,7 @@ public class Player : MonoBehaviour
 
         pView = GetComponent<PhotonView>();
         commandInput = GetComponent<CommandInput>();
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
 
     public void Start()
@@ -287,7 +289,7 @@ public class Player : MonoBehaviour
             {
                 //Instantiate(obj, EffecPos.position, Quaternion.identity);
                 bullet = PhotonNetwork.Instantiate("Player_Effect/" + Effect.name, EffecPos.position, Quaternion.identity);
-            
+
 
             }
             else if (_x < 0) //왼쪽이면 좌우반전 소환
@@ -297,7 +299,7 @@ public class Player : MonoBehaviour
 
             }
 
-            
+
 
         }
 
@@ -308,11 +310,11 @@ public class Player : MonoBehaviour
             {
                 attackScript.player = this; // 이 코드가 Player 클래스 안에 있어야 함
             }
-            if(bullet.GetComponent<KirbyDamageStar>() != null)
+            if (bullet.GetComponent<KirbyDamageStar>() != null)
             {
                 bullet.GetComponent<PhotonView>().RPC("SetPlayer", RpcTarget.AllBuffered, pView.ViewID);
             }
-            
+
         }
     }
     /*[PunRPC]
@@ -343,7 +345,7 @@ public class Player : MonoBehaviour
 
         if (effect != null)
         {
-            if(effect.GetComponent<EatEffect>() != null)
+            if (effect.GetComponent<EatEffect>() != null)
             {
                 effect.GetComponent<EatEffect>().player = pView.GetComponent<Player>();
                 effect.GetComponent<EatEffect>().pView = pView;
@@ -425,6 +427,12 @@ public class Player : MonoBehaviour
     [PunRPC]
     public void TakeDamage(Vector2 EnemyAttackPos, float Damage)    //몬스터의 공격 데미지 실행
     {
+        if (isInvincible)
+            return; //무적상태면 리턴
+
+        pView.RPC("RPC_HitFlash", RpcTarget.All);
+        StartCoroutine(NoDamage(0.5f));
+
         if (transform.position.x > EnemyAttackPos.x)
         {
             LastMove = 1f;
@@ -434,9 +442,9 @@ public class Player : MonoBehaviour
             LastMove = -1f;
         }
 
-        if (curAbility!=null) 
+        if (curAbility != null)
         {
-            EffectAdd(LastMove, DamageStar, transform);            
+            EffectAdd(LastMove, DamageStar, transform);
             curAbility.OnAbilityDestroyed(this); //어빌리티 초기화
         }
         PlayerHP -= Damage;
@@ -477,10 +485,10 @@ public class Player : MonoBehaviour
             dashTime += Time.deltaTime;
         }
     }
-        
+
     public int EatKirbyFormNum;
     public int KirbyFormNum;
-    [PunRPC] 
+    [PunRPC]
     public void KirbyForm() //커비가 먹은 적의 고유 번호에 따라 변신 폼을 정함
     {
         Debug.Log("KirbyFrom 실행됨");
@@ -577,5 +585,41 @@ public class Player : MonoBehaviour
         pView.RPC(rpc_Name, type);
     }
 
+
+    [PunRPC]
+    public void RPC_HitFlash()
+    {
+        StartCoroutine(HitFlash());
+    }
+
+    private IEnumerator HitFlash() //피격시 색상 변화
+    {
+        if (spriteRenderer == null)
+            yield break;
+
+        for (int i = 0; i < 2; i++)
+        {
+            spriteRenderer.color = Color.red;
+            yield return new WaitForSeconds(0.1f);
+            spriteRenderer.color = Color.white;
+            yield return new WaitForSeconds(0.1f);
+        }
+    }
+
+
+    bool isInvincible = false;
+    private IEnumerator NoDamage(float duration)
+    {
+        isInvincible = true;
+
+        Collider col = GetComponent<Collider>();
+        if (col != null) col.enabled = false;
+
+        yield return new WaitForSeconds(duration);
+
+        isInvincible = false;
+
+        if (col != null) col.enabled = true;
+    }
 
 }
