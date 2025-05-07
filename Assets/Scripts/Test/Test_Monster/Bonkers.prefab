@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 2090248974136614946}
   m_Layer: 10
   m_Name: Bonkers
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -157,6 +157,10 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 64
+  maxHp: 10
+  currentHp: 10
+  dieEffect: {fileID: 0}
+  spriteRenderer: {fileID: 0}
   knockbackDirection: {x: 0, y: 0}
   knockbackDuration: 0
   attackCheck: {fileID: 2800147436912850521}
@@ -183,6 +187,7 @@ MonoBehaviour:
   hitTime: 0
   startRight: 1
   photonView: {fileID: 0}
+  health_Bar: {fileID: 0}
   bombPrefab: {fileID: 7672715142142705170, guid: 3177cdd779c89474887e408873bbe791, type: 3}
   bombStart: {fileID: 5915930766094084449}
 --- !u!70 &2090248974136614946
