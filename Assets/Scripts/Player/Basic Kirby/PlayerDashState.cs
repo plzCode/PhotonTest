@@ -42,16 +42,16 @@ public class PlayerDashState : PlayerGroundState
 
         if (EffectTime > 0.05f && Effect2) //이펙트 바로소환하면 대쉬 턴 할때 이펙트 생성되서 0.05초로 함
         {
-            player.EffectAdd(xInput, player.dashEffect, player.dashEffectPos);
-            //pView.RPC("EffectAdd", RpcTarget.All, xInput, player.dashEffect.name, player.dashEffectPos);
+            //player.EffectAdd(xInput, player.dashEffect, player.dashEffectPos);
+            pView.RPC("EffectAdd", RpcTarget.All, xInput, player.dashEffect.name, player.dashEffectPos.position);
             Effect2 = false;
             EffectTime = 0;
         }
 
         if (EffectTime > 0.2f && Effect)
         {
-            player.EffectAdd(xInput, player.dashEffect, player.dashEffectPos);
-            //pView.RPC("EffectAdd", RpcTarget.All, xInput, player.dashEffect.name, player.dashEffectPos);
+            //player.EffectAdd(xInput, player.dashEffect, player.dashEffectPos);
+            pView.RPC("EffectAdd", RpcTarget.All, xInput, player.dashEffect.name, player.dashEffectPos.position);
             Effect = false;
             EffectTime = 0;
         }
@@ -59,15 +59,15 @@ public class PlayerDashState : PlayerGroundState
         if (xInput > 0 && player.turn) //대쉬 턴 할때 이펙트가 달릴때랑 똑같이 나오게 하기
         {
             stateMachine.ChangeState(player.dashTurnState);
-            player.EffectAdd(-1f, player.dashEffect, player.dashEffectPos);
-            //pView.RPC("EffectAdd", RpcTarget.All, -1f, player.dashEffect.name, player.dashEffectPos);
+            //player.EffectAdd(-1f, player.dashEffect, player.dashEffectPos);
+            pView.RPC("EffectAdd", RpcTarget.All, -1f, player.dashEffect.name, player.dashEffectPos.position);
             return;
         }
         else if (xInput < 0 && !player.turn)
         {
             stateMachine.ChangeState(player.dashTurnState);
-            player.EffectAdd(1, player.dashEffect, player.dashEffectPos);
-            //pView.RPC("EffectAdd", RpcTarget.All, 1f, player.dashEffect.name, player.dashEffectPos);
+            //player.EffectAdd(1, player.dashEffect, player.dashEffectPos);
+            pView.RPC("EffectAdd", RpcTarget.All, 1f, player.dashEffect.name, player.dashEffectPos.position);
             return;
         }
 

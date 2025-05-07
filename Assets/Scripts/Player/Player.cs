@@ -7,7 +7,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public float PlayerHP;
-    public float PlayerMaxHP = 100f; //ÇÃ·¹ÀÌ¾î ÃÖ´ë Ã¼·Â
+    public float PlayerMaxHP = 100f; //ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ ï¿½Ö´ï¿½ Ã¼ï¿½ï¿½
 
     public float MoveSpeed;
     public float DashSpeed;
@@ -52,7 +52,7 @@ public class Player : MonoBehaviour
     public Rigidbody2D rb { get; private set; }
     public Animator anim { get; private set; }
 
-    #region ½ºÅÈ
+    #region ï¿½ï¿½ï¿½ï¿½
     public PlayerState playerState { get; private set; }
     public PlayerStateMachine stateMachine { get; private set; }
 
@@ -151,7 +151,7 @@ public class Player : MonoBehaviour
         anim = GetComponentInChildren<Animator>();
         stateMachine.StartState(idleState);
 
-        LastMove = 1f; //ÇÃ·¹ÀÌ¾î ¸¶Áö¸· ÀÔ·Â°ªÀ» ÃÊ±â 1·Î ¸¸µë
+        LastMove = 1f; //ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·Â°ï¿½ï¿½ï¿½ ï¿½Ê±ï¿½ 1ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     }
 
     public void Update()
@@ -159,11 +159,11 @@ public class Player : MonoBehaviour
         //Debug.Log(KirbyFormNum);
         stateMachine.state.Update();
 
-        DashTime(); //´ë½¬»óÈ£ÀÛ¿ë Å¸ÀÓ
+        DashTime(); //ï¿½ë½¬ï¿½ï¿½È£ï¿½Û¿ï¿½ Å¸ï¿½ï¿½
         Hill();
 
         #region TestRegion
-        if (pView.IsMine == false) return; //³» Ä³¸¯ÅÍ°¡ ¾Æ´Ò¶§´Â ¸®ÅÏ        
+        if (pView.IsMine == false) return; //ï¿½ï¿½ Ä³ï¿½ï¿½ï¿½Í°ï¿½ ï¿½Æ´Ò¶ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½        
 
         if (Input.GetKeyDown(KeyCode.X))
         {
@@ -203,7 +203,7 @@ public class Player : MonoBehaviour
     }
 
 
-    //Ãæµ¹Ã¼Å©
+    //ï¿½æµ¹Ã¼Å©
     public bool IsGroundCheck() => Physics2D.OverlapCircle(groundCheck.position, groundLine, whatIsGround | whatIsHill);
     public bool IsHillCheck() => Physics2D.Raycast(hillCheck.position, Vector2.down, hillLine, whatIsHill);
 
@@ -222,7 +222,7 @@ public class Player : MonoBehaviour
         }
         else
         {
-            isSlope = false; // ¾ð´öÀÌ ¾Æ´Ñ °æ¿ì
+            isSlope = false; // ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Æ´ï¿½ ï¿½ï¿½ï¿½
         }
     }
 
@@ -235,8 +235,8 @@ public class Player : MonoBehaviour
         Gizmos.DrawLine(hillCheck.position, new Vector3(hillCheck.position.x, hillCheck.position.y - hillLine));
     }
 
-    #region Ä³¸¯ÅÍ ¿òÁ÷ÀÓ ¹× ÁÂ¿ì¹ÝÀü
-    //ÀÌ¹ÌÁö ÁÂ¿ì¹ÝÀü
+    #region Ä³ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Â¿ï¿½ï¿½ï¿½ï¿½
+    //ï¿½Ì¹ï¿½ï¿½ï¿½ ï¿½Â¿ï¿½ï¿½ï¿½ï¿½
     public void Flip()
     {
         flipbool = !flipbool;
@@ -257,7 +257,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    //Ä³¸¯ÅÍ ¿òÁ÷ÀÓ
+    //Ä³ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     [PunRPC]
     public void lineVelocity(float xlineVelocity, float ylineVelocity)
     {
@@ -265,13 +265,13 @@ public class Player : MonoBehaviour
 
         if (isSlope && IsHillCheck())
         {
-            // °æ»ç¸éÀÌ¸é, °æ»ç ¹æÇâÀ¸·Î ÀÌµ¿
+            // ï¿½ï¿½ï¿½ï¿½ï¿½Ì¸ï¿½, ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ìµï¿½
             rb.linearVelocity = perp * xlineVelocity * -1f;
             rb.linearVelocity = new Vector2(xlineVelocity, ylineVelocity);
         }
         else
         {
-            // ÆòÁö¸é ±×³É ÀÏ¹Ý xÃà ÀÌµ¿
+            // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½×³ï¿½ ï¿½Ï¹ï¿½ xï¿½ï¿½ ï¿½Ìµï¿½
             rb.linearVelocity = new Vector2(xlineVelocity, ylineVelocity);
         }
 
@@ -280,22 +280,22 @@ public class Player : MonoBehaviour
     #endregion
 
     [PunRPC]
-    public void EffectAdd(float _x, GameObject Effect, Transform EffecPos) //ÀÌÆåÆ®¸¦ Ãß°¡ÇÔ
+    public void EffectAdd(float _x, string Effect, Vector3 EffecPos) //ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ß°ï¿½ï¿½ï¿½
     {
         GameObject bullet = null;
         if (PhotonNetwork.IsMasterClient)
         {
-            if (_x > 0) //¿À¸¥ÂÊÀÌ¸é ±×´ë·Î ¼ÒÈ¯
+            if (_x > 0) //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¸ï¿½ ï¿½×´ï¿½ï¿½ ï¿½ï¿½È¯
             {
                 //Instantiate(obj, EffecPos.position, Quaternion.identity);
-                bullet = PhotonNetwork.Instantiate("Player_Effect/" + Effect.name, EffecPos.position, Quaternion.identity);
-
+                bullet = PhotonNetwork.Instantiate("Player_Effect/" + Effect, EffecPos, Quaternion.identity);
+            
 
             }
-            else if (_x < 0) //¿ÞÂÊÀÌ¸é ÁÂ¿ì¹ÝÀü ¼ÒÈ¯
+            else if (_x < 0) //ï¿½ï¿½ï¿½ï¿½ï¿½Ì¸ï¿½ ï¿½Â¿ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
             {
                 //Instantiate(obj, EffecPos.position, Quaternion.Euler(0, 180, 0));
-                bullet = PhotonNetwork.Instantiate("Player_Effect/" + Effect.name, EffecPos.position, Quaternion.Euler(0, 180, 0));
+                bullet = PhotonNetwork.Instantiate("Player_Effect/" + Effect, EffecPos, Quaternion.Euler(0, 180, 0));
 
             }
 
@@ -308,7 +308,7 @@ public class Player : MonoBehaviour
             PlayerRagedManager attackScript = bullet.GetComponent<PlayerRagedManager>();
             if (attackScript != null)
             {
-                attackScript.player = this; // ÀÌ ÄÚµå°¡ Player Å¬·¡½º ¾È¿¡ ÀÖ¾î¾ß ÇÔ
+                attackScript.player = this; // ï¿½ï¿½ ï¿½Úµå°¡ Player Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½È¿ï¿½ ï¿½Ö¾ï¿½ï¿½ ï¿½ï¿½
             }
             if (bullet.GetComponent<KirbyDamageStar>() != null)
             {
@@ -325,7 +325,7 @@ public class Player : MonoBehaviour
 
         if (bullet.GetComponent<KirbyDamageStar>() != null)
         {
-            bullet.GetComponent<KirbyDamageStar>().player = player; // ÀÌ ÄÚµå°¡ Player Å¬·¡½º ¾È¿¡ ÀÖ¾î¾ß ÇÔ
+            bullet.GetComponent<KirbyDamageStar>().player = player; // ï¿½ï¿½ ï¿½Úµå°¡ Player Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½È¿ï¿½ ï¿½Ö¾ï¿½ï¿½ ï¿½ï¿½
             bullet.GetComponent<KirbyDamageStar>().enemyNumber.Number = player.KirbyFormNum;
         }
     }*/
@@ -371,31 +371,31 @@ public class Player : MonoBehaviour
             }
         }
 
-        AttackList.Clear(); // ¸®½ºÆ® ÃÊ±âÈ­
+        AttackList.Clear(); // ï¿½ï¿½ï¿½ï¿½Æ® ï¿½Ê±ï¿½È­
     }
 
     [PunRPC]
     public void EatEnemy(int enemyViewId)
     {
         Debug.Log("EatEnemy");
-        //if (enemy == null || this == null) return; //ÀÌ¹Ì ¸Ô°íÀÖ´Ù¸é ¸®ÅÏ
+        //if (enemy == null || this == null) return; //ï¿½Ì¹ï¿½ ï¿½Ô°ï¿½ï¿½Ö´Ù¸ï¿½ ï¿½ï¿½ï¿½ï¿½
         PhotonView eView = PhotonView.Find(enemyViewId);
         Debug.Log(enemyViewId);
         if (eView == null) return;
         Transform enemy = eView.transform;
 
-        enemy.GetComponentInChildren<PhotonAnimatorView>().enabled = false; //¾Ö´Ï¸ÞÀÌÅÍ ºñÈ°¼ºÈ­
-        enemy.GetComponent<PhotonView>().enabled = false; //Æ÷Åæºä ºñÈ°¼ºÈ­
+        enemy.GetComponentInChildren<PhotonAnimatorView>().enabled = false; //ï¿½Ö´Ï¸ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È°ï¿½ï¿½È­
+        enemy.GetComponent<PhotonView>().enabled = false; //ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È°ï¿½ï¿½È­
                                                           //PhotonView eView = enemy.GetComponent<PhotonView>();
-                                                          //PhotonNetwork.Destroy(enemy.gameObject);  //Àû»èÁ¦
-                                                          //this.EatKirbyFormNum = PormNumber; //¸Ô´Â Ä¿ºñ ¸ð¼Ç¿¡ ÀûÀÇ º¯½Å ¹øÈ£ °ªÀ» ÀúÀå
+                                                          //PhotonNetwork.Destroy(enemy.gameObject);  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+                                                          //this.EatKirbyFormNum = PormNumber; //ï¿½Ô´ï¿½ Ä¿ï¿½ï¿½ ï¿½ï¿½Ç¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È£ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
         Debug.Log(enemy.name + " : " + eView.ViewID);
         this.EatKirbyFormNum = enemy.GetComponent<EnemyNumber>().Number;
-        this.KirbyFormNum = 1; //¸Ô´Â Ä¿ºñ·Î º¯½Å
-        Debug.Log(this.GetComponent<PhotonView>().ViewID + "ÀÇ ÀûÀ» ¸ÔÀ½"); //ÀûÀ» ¸ÔÀ½
-        this.stateMachine.ChangeState(this.eatState); //ÇÃ·¹ÀÌ¾î ¸ÔÀº¸ð¼Ç            
-                                                      //PlayerEetState¿¡¼­ º¯½Å ÇÔ¼ö ¾¸
+        this.KirbyFormNum = 1; //ï¿½Ô´ï¿½ Ä¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+        Debug.Log(this.GetComponent<PhotonView>().ViewID + "ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½"); //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+        this.stateMachine.ChangeState(this.eatState); //ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½            
+                                                      //PlayerEetStateï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ô¼ï¿½ ï¿½ï¿½
 
         //eView.RPC("DestroySelf", eView.Owner);
         if (enemy != null && PhotonNetwork.IsMasterClient)
@@ -425,10 +425,10 @@ public class Player : MonoBehaviour
     }
 
     [PunRPC]
-    public void TakeDamage(Vector2 EnemyAttackPos, float Damage)    //¸ó½ºÅÍÀÇ °ø°Ý µ¥¹ÌÁö ½ÇÇà
+    public void TakeDamage(Vector2 EnemyAttackPos, float Damage)    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     {
         if (isInvincible)
-            return; //¹«Àû»óÅÂ¸é ¸®ÅÏ
+            return; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¸ï¿½ ï¿½ï¿½ï¿½ï¿½
 
         pView.RPC("RPC_HitFlash", RpcTarget.All);
         StartCoroutine(NoDamage(0.5f));
@@ -444,8 +444,9 @@ public class Player : MonoBehaviour
 
         if (curAbility != null)
         {
-            EffectAdd(LastMove, DamageStar, transform);
-            curAbility.OnAbilityDestroyed(this); //¾îºô¸®Æ¼ ÃÊ±âÈ­
+            //EffectAdd(LastMove, DamageStar, transform);            
+            pView.RPC("EffectAdd", RpcTarget.All, LastMove, DamageStar.name, transform);
+            curAbility.OnAbilityDestroyed(this); //ï¿½ï¿½ï¿½ï¿½ï¿½Æ¼ ï¿½Ê±ï¿½È­
         }
         PlayerHP -= Damage;
         if (health_Bar != null)
@@ -453,7 +454,7 @@ public class Player : MonoBehaviour
             health_Bar.UpdateHealthBar(PlayerHP);
         }
         AudioManager.Instance.RPC_PlaySFX("Damaged_Sound");
-        stateMachine.ChangeState(damageState);  //±¼·¯°¡´Â°Å ½ÇÇà
+        stateMachine.ChangeState(damageState);  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â°ï¿½ ï¿½ï¿½ï¿½ï¿½
     }
 
     [PunRPC]
@@ -474,7 +475,7 @@ public class Player : MonoBehaviour
 
 
 
-    //´ë½¬Å¸ÀÓ [idle, move, dash, dashTurn]
+    //ï¿½ë½¬Å¸ï¿½ï¿½ [idle, move, dash, dashTurn]
     public float dashTime;
     public bool dash;
     public bool turn;
@@ -489,29 +490,29 @@ public class Player : MonoBehaviour
     public int EatKirbyFormNum;
     public int KirbyFormNum;
     [PunRPC]
-    public void KirbyForm() //Ä¿ºñ°¡ ¸ÔÀº ÀûÀÇ °íÀ¯ ¹øÈ£¿¡ µû¶ó º¯½Å ÆûÀ» Á¤ÇÔ
+    public void KirbyForm() //Ä¿ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È£ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     {
-        Debug.Log("KirbyFrom ½ÇÇàµÊ");
+        Debug.Log("KirbyFrom ï¿½ï¿½ï¿½ï¿½ï¿½");
 
         switch (KirbyFormNum)
         {
-            case 1: //¸ÔÀº Æû
+            case 1: //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
                 curAbility = gameObject.AddComponent<Ability_Eat>();
-                Debug.Log("¸ÔÀº Æû");
+                Debug.Log("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½");
                 break;
-            case 2: //¾Ö´Ï¸Ö Æû
+            case 2: //ï¿½Ö´Ï¸ï¿½ ï¿½ï¿½
                 curAbility = gameObject.AddComponent<Ability_Animal>();
                 break;
-            case 3: //Ä¿ÅÍ Æû
+            case 3: //Ä¿ï¿½ï¿½ ï¿½ï¿½
                 curAbility = gameObject.AddComponent<Ability_Cutter>();
                 break;
-            case 4: //Å¥ÇÇµå Æû
+            case 4: //Å¥ï¿½Çµï¿½ ï¿½ï¿½
                 curAbility = gameObject.AddComponent<Ability_Cupid>();
                 break;
-            case 5: //½º¿öµå Æû
+            case 5: //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
                 curAbility = gameObject.AddComponent<Ability_Sword>();
                 break;
-            case 6: //ÈÙ Æû
+            case 6: //ï¿½ï¿½ ï¿½ï¿½
                 curAbility = gameObject.AddComponent<Ability_Whell>();
                 break;
 
@@ -519,7 +520,7 @@ public class Player : MonoBehaviour
                 Debug.LogError("Invalid KirbyFormNum: " + KirbyFormNum);
                 return;
         }
-        if (curAbility == null) return; //¾îºô¸®Æ¼°¡ ¾øÀ¸¸é ¸®ÅÏ
+        if (curAbility == null) return; //ï¿½ï¿½ï¿½ï¿½ï¿½Æ¼ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         curAbility.OnAbilityCopied(this);
     }
 
@@ -541,7 +542,7 @@ public class Player : MonoBehaviour
             Debug.LogError("Animator or PhotonAnimatorView is null.");
             return;
         }
-        animatorView.enabled = false; //SynchronizationÀ» À§ÇØ ºñÈ°¼ºÈ­
+        animatorView.enabled = false; //Synchronizationï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È°ï¿½ï¿½È­
 
         // Clear existing synchronization
         animatorView.GetSynchronizedParameters().Clear();
@@ -592,7 +593,7 @@ public class Player : MonoBehaviour
         StartCoroutine(HitFlash());
     }
 
-    private IEnumerator HitFlash() //ÇÇ°Ý½Ã »ö»ó º¯È­
+    private IEnumerator HitFlash() //ï¿½Ç°Ý½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È­
     {
         if (spriteRenderer == null)
             yield break;

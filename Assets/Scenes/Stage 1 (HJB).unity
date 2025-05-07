@@ -680,6 +680,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Anim Kirby
       objectReference: {fileID: 0}
+    - target: {fileID: 4300956499978384602, guid: a08188566241a354eb0cb50d7f483242, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4526661268197498006, guid: a08188566241a354eb0cb50d7f483242, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -919,7 +923,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &532208966
 Transform:
   m_ObjectHideFlags: 0
