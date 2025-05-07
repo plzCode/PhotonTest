@@ -14,6 +14,7 @@ public class PlayerSlidingState : PlayerState
     {
         base.Enter();
         Sliding = true;
+        AudioManager.Instance.RPC_PlaySFX("SLIDING");
     }
 
     public override void Exit()

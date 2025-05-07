@@ -13,6 +13,7 @@ public class Whell_Kirby_Attack_Turn_State : PlayerState
     public override void Enter()
     {
         base.Enter();
+        AudioManager.Instance.RPC_PlaySFX("Kirby_WHEEL_TURN");
         player.lineVelocity(0f, -1f);
     }
 

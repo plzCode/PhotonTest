@@ -10,6 +10,7 @@ public class PlayerEatState : PlayerState
     public override void Enter()
     {
         base.Enter();
+        AudioManager.Instance.RPC_PlaySFX("Eat_Sound");
     }
 
     public override void Exit()
