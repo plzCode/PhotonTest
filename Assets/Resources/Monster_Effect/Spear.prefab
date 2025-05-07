@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11a9b488442e077468864e3c118c20f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <power>k__BackingField: 10
+  <power>k__BackingField: 100
   <speed>k__BackingField: 5
   <weaponType>k__BackingField: 0
   flightTime: 1
