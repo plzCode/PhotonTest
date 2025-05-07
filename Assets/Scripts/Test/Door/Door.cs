@@ -1,5 +1,6 @@
 using Photon.Pun;
 using System.Collections;
+using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -12,6 +13,8 @@ public class Door : MonoBehaviour
 
     private ScreenFader screenFader; // 스크린 페이더 컴포넌트
     private float fadeTime = 0.5f;
+
+    public PolygonCollider2D confinderArea;
 
     private void Awake()
     {
@@ -78,6 +81,13 @@ public class Door : MonoBehaviour
                 /*PhotonNetwork.RaiseEvent(0, new object[] { photonView.ViewID, Linked_Door.transform.position },
                     new Photon.Realtime.RaiseEventOptions { Receivers = Photon.Realtime.ReceiverGroup.Others },
                     ExitGames.Client.Photon.SendOptions.SendReliable);*/
+
+                // 3. 플레이어의 카메라 설정
+                if(confinderArea != null)
+                {
+                    CinemachineConfiner2D tmpCam = GameObject.Find("PlayerCamera").GetComponent<CinemachineConfiner2D>();
+                    tmpCam.BoundingShape2D = confinderArea;
+                }
 
                 Debug.Log(player.name + "이(가) " + Linked_Door.name + "로 이동했습니다.");
 

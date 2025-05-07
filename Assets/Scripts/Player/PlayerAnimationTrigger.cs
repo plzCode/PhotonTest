@@ -145,7 +145,8 @@ public class PlayerAnimatorController : MonoBehaviour
             rangeAttack = Resources.Load<GameObject>(rangeAttackName); //원거리 공격을 가져옴
         }
 
-        player.EffectAdd(player.LastMove, rangeAttack, player.AirJumpOutEffectPos); //플레이어 한태서 공격 발사
+        //player.EffectAdd(player.LastMove, rangeAttack, player.AirJumpOutEffectPos); //플레이어 한태서 공격 발사
+        player.pView.RPC("EffectAdd", RpcTarget.All, player.LastMove, rangeAttack.name, player.AirJumpOutEffectPos); //플레이어 한태서 공격 발사
     }
 
     //Animal Kirby Dash Attack

@@ -278,7 +278,7 @@ public class Player : MonoBehaviour
     #endregion
 
     [PunRPC]
-    public void EffectAdd(float _x, GameObject Effect, Transform EffecPos) //이펙트를 추가함
+    public void EffectAdd(float _x, string Effect, Vector3 EffecPos) //이펙트를 추가함
     {
         GameObject bullet = null;
         if (PhotonNetwork.IsMasterClient)
@@ -286,14 +286,14 @@ public class Player : MonoBehaviour
             if (_x > 0) //오른쪽이면 그대로 소환
             {
                 //Instantiate(obj, EffecPos.position, Quaternion.identity);
-                bullet = PhotonNetwork.Instantiate("Player_Effect/" + Effect.name, EffecPos.position, Quaternion.identity);
+                bullet = PhotonNetwork.Instantiate("Player_Effect/" + Effect, EffecPos, Quaternion.identity);
             
 
             }
             else if (_x < 0) //왼쪽이면 좌우반전 소환
             {
                 //Instantiate(obj, EffecPos.position, Quaternion.Euler(0, 180, 0));
-                bullet = PhotonNetwork.Instantiate("Player_Effect/" + Effect.name, EffecPos.position, Quaternion.Euler(0, 180, 0));
+                bullet = PhotonNetwork.Instantiate("Player_Effect/" + Effect, EffecPos, Quaternion.Euler(0, 180, 0));
 
             }
 
@@ -436,7 +436,8 @@ public class Player : MonoBehaviour
 
         if (curAbility!=null) 
         {
-            EffectAdd(LastMove, DamageStar, transform);            
+            //EffectAdd(LastMove, DamageStar, transform);            
+            pView.RPC("EffectAdd", RpcTarget.All, LastMove, DamageStar.name, transform);
             curAbility.OnAbilityDestroyed(this); //어빌리티 초기화
         }
         PlayerHP -= Damage;

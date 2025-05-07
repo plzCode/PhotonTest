@@ -35,7 +35,8 @@ public class PlayerAirState : PlayerState
 
         if (player.IsGroundCheck())
         {
-            player.EffectAdd(1f, player.GroundStarEffect, player.GroundEffectPos);
+            //player.EffectAdd(1f, player.GroundStarEffect, player.GroundEffectPos);
+            pView.RPC("EffectAdd", RpcTarget.All, 1f, player.GroundStarEffect.name, player.GroundEffectPos.position);
             stateMachine.ChangeState(player.idleState);
             return;
         }

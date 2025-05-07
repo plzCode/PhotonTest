@@ -49,8 +49,12 @@ public class SpawnMannager : MonoBehaviourPun
         // 플레이어의 카메라 설정
         GameObject camObj = new GameObject("PlayerCamera");
         CinemachineCamera pCam = camObj.AddComponent<CinemachineCamera>();
-        pCam.AddComponent<CinemachineFollow>();
-        pCam.AddComponent<CinemachineRotationComposer>();
+        //pCam.AddComponent<CinemachineFollow>();
+        pCam.AddComponent<CinemachineHardLockToTarget>();
+        pCam.AddComponent<CinemachinePositionComposer>();
+        pCam.AddComponent<CinemachineConfiner2D>();
+        pCam.GetComponent<CinemachineConfiner2D>().BoundingShape2D = GameObject.Find("Confiners").GetComponentInChildren<PolygonCollider2D>();
+        
 
 
         pCam.Follow = tmpPlayer.transform;
