@@ -99,6 +99,8 @@ public class Enemy : MonoBehaviour
     {
         stateMachine.currentState.Update();
 
+        anim.SetFloat("yVelocity", rb.linearVelocityY);
+
         if (PhotonNetwork.IsMasterClient)
         {
             // 마스터 클라이언트에서 몬스터 상태 업데이트

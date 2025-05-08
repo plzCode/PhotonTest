@@ -21,9 +21,9 @@ public class Boss_DDD : Enemy
 
     #endregion
 
-    [Header("∆¯≈∫ ¡§∫∏")]
-    [SerializeField] private GameObject bombPrefab;
-    [SerializeField] private Transform bombStart;
+    [Header("¿Ã∆Â∆Æ ¡§∫∏")]
+    public GameObject AirPrefab;
+    public Transform AirPos;
 
 
     protected override void Awake()
@@ -134,34 +134,21 @@ public class Boss_DDD : Enemy
             stateMachine.ChangeState(moveState);
         else if (stateName == "Jump")
             stateMachine.ChangeState(jumpState);
+        else if (stateName == "Air_Jump")
+            stateMachine.ChangeState(airJumpState);
+        else if (stateName == "Air_Jumping")
+            stateMachine.ChangeState(airJumpingState);
         else if (stateName == "Attack")
             stateMachine.ChangeState(attackState);
+        else if (stateName == "Attack1")
+            stateMachine.ChangeState(attack1State);
+        else if (stateName == "Attack2")
+            stateMachine.ChangeState(attack2State);
+        else if (stateName == "Attack3")
+            stateMachine.ChangeState(attack3State);
+        else if (stateName == "Die")
+            stateMachine.ChangeState(dieState);
 
-    }
-
-    [PunRPC]
-    public void ChangeAnimInteger(string _integerName, int _value)
-    {
-        anim.SetInteger(_integerName, _value);
-    }
-
-    [PunRPC]
-    public void SetJumpEnd()
-    {
-        anim.SetBool("JumpEnd", true);
-    }
-
-    [PunRPC]
-    public void AirOutRPC()
-    {
-
-        if (PhotonNetwork.IsMasterClient)
-        {
-            //Debug.Log("ThrowSpear RPC »£√‚µ  - IsMasterClient: " + PhotonNetwork.IsMasterClient);
-            GameObject _currentBomb = PhotonNetwork.Instantiate("Monster_Effect/" + bombPrefab.name, bombStart.position, Quaternion.identity);
-            //Rigidbody2D _BombRidig = _currentBomb.GetComponent<Rigidbody2D>();
-            //_BombRidig.linearVelocity = new Vector2(10 * facingDir, 10);
-        }
     }
 
 
@@ -180,6 +167,39 @@ public class Boss_DDD : Enemy
 
 
 
+        }
+    }
+
+
+
+    public void CallAttack3RPC()
+    {
+        if (PhotonNetwork.IsMasterClient)
+        {
+            photonView.RPC("Attack3RPC", RpcTarget.All);
+        }
+    }
+
+
+    private string MonsterName;
+    private int randMonsterCount;
+    [PunRPC]
+    private void Attack3RPC() // ∏ÛΩ∫≈Õ º“»Ø
+    {
+        if (!PhotonNetwork.IsMasterClient) return;
+
+        Vector2 randomOffset = new Vector2(Random.Range(-1.5f, 1.5f), Random.Range(0f, 1.5f));
+        Vector2 spawnPosition = (Vector2)transform.position + randomOffset;
+
+        string[] monsterList = {
+        "BigWaddle", "Boomerang","Mole", "Spear", "Sword", "Waddle"
+        };
+
+        MonsterName = monsterList[Random.Range(0, monsterList.Length)];
+
+        if (PhotonNetwork.IsMasterClient)
+        {
+            PhotonNetwork.Instantiate("Monster_Effect/Test_Monster/" + MonsterName, spawnPosition, Quaternion.identity);
         }
     }
 }

@@ -3,8 +3,6 @@ using UnityEngine;
 
 public class DDD_IdleState : BossState
 {
-    private int moveNumber;
-
     public DDD_IdleState(Enemy _enemyBase, EnemyStateMachine _stateMachine, string _animBoolName) : base(_enemyBase, _stateMachine, _animBoolName)
     {
 
@@ -15,6 +13,11 @@ public class DDD_IdleState : BossState
         base.Enter();
         isJumpTurn = true;
         stateTimer = boss.idleTime;
+
+        if (!boss.IsGroundDetected() && PhotonNetwork.IsMasterClient)
+        {
+            boss.photonView.RPC("ChangeState", RpcTarget.All, "Jump");
+        }
     }
 
     public override void Update()
@@ -25,7 +28,7 @@ public class DDD_IdleState : BossState
             return;
 
 
-        if (stateTimer < 0)
+        if (stateTimer < 0 && closestPlayer != null)
         {
             if (isJumpTurn) //플레이어가 멀리있다면 가까이 간 후 공격시작
             {
@@ -39,28 +42,28 @@ public class DDD_IdleState : BossState
                 {
                     boss.photonView.RPC("FlipRPC", RpcTarget.All);
                 }
-                if (closestPlayer != null && Vector2.Distance(closestPlayer.position, boss.transform.position) >= 7f) //너무멀면 쫒아오도록
-                {
-                    moveNumber = Random.Range(1, 4);
+                    randAttackCount = Random.Range(1, 7);
 
-                    switch (moveNumber)
-                    {
-                        case 1:
-                            boss.photonView.RPC("ChangeState", RpcTarget.All, "Move");
-                            break;
-                        case 2:
-                            boss.photonView.RPC("ChangeState", RpcTarget.All, "Jump");
-                            break;
-                        case 3:
-                            boss.photonView.RPC("ChangeState", RpcTarget.All, "Air_Jump");
-                            break;
-                    }
-                }
-                else
+                switch (randAttackCount)
                 {
-                    randAttackCount = Random.Range(2, 5);
-                    boss.photonView.RPC("ChangeAnimInteger", RpcTarget.All, "AttackCount", randAttackCount);
-                    boss.photonView.RPC("ChangeState", RpcTarget.All, "Attack");
+                    case 1:
+                        boss.photonView.RPC("ChangeState", RpcTarget.All, "Move");
+                        break;
+                    case 2:
+                        boss.photonView.RPC("ChangeState", RpcTarget.All, "Jump");
+                        break;
+                    case 3:
+                        boss.photonView.RPC("ChangeState", RpcTarget.All, "Air_Jump");
+                        break;
+                    case 4:
+                        boss.photonView.RPC("ChangeState", RpcTarget.All, "Attack1");
+                        break;
+                    case 5:
+                        boss.photonView.RPC("ChangeState", RpcTarget.All, "Attack2");
+                        break;
+                    case 6:
+                        boss.photonView.RPC("ChangeState", RpcTarget.All, "Attack3");
+                        break;
                 }
             }
         }

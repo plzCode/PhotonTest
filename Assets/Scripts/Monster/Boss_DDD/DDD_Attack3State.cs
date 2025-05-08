@@ -1,3 +1,4 @@
+using Photon.Pun;
 using UnityEngine;
 
 public class DDD_Attack3State : BossState

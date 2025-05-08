@@ -102,6 +102,10 @@ MonoBehaviour:
   - WhellTurn
   - Init_Player
   - AirOutRPC
+  - ChangeAttackAnimInteger
+  - ChangeMoveAnim
+  - ChangeAttackAnim
+  - Attack3RPC
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

@@ -1,7 +1,12 @@
+using Photon.Pun;
 using UnityEngine;
 
 public class DDD_AirJumpingState : BossState
 {
+    private float JumpTime;
+    private float JumpOutTime;
+    private Vector2 LastPlayer;
+
     public DDD_AirJumpingState(Enemy _enemyBase, EnemyStateMachine _stateMachine, string _animBoolName) : base(_enemyBase, _stateMachine, _animBoolName)
     {
     }
@@ -9,6 +14,9 @@ public class DDD_AirJumpingState : BossState
     public override void Enter()
     {
         base.Enter();
+
+        JumpTime = 0;
+        JumpOutTime = 0;
     }
 
     public override void Exit()
@@ -19,5 +27,34 @@ public class DDD_AirJumpingState : BossState
     public override void Update()
     {
         base.Update();
+
+        JumpTime += Time.deltaTime;
+        JumpOutTime += Time.deltaTime;
+
+        if (!PhotonNetwork.IsMasterClient)
+            return;
+
+        boss.SetVelocity(2f * boss.facingDir, rb.linearVelocityY);
+
+        if (JumpTime >= 0.7f)
+        {
+            boss.SetVelocity(rb.linearVelocityX, 7f);
+            JumpTime = 0f;
+        }
+
+        if (Mathf.Abs(closestPlayer.position.x - boss.transform.position.x) <= 1f)
+        {
+            boss.photonView.RPC("ChangeState", RpcTarget.All, "Jump");
+        }
+
+        if ((closestPlayer.position.x < boss.transform.position.x && boss.facingDir == 1) || (closestPlayer.position.x > boss.transform.position.x && boss.facingDir == -1))
+        {
+            boss.photonView.RPC("ChangeState", RpcTarget.All, "Jump");
+        }
+
+        if (JumpOutTime > 4f)
+        {
+            boss.photonView.RPC("ChangeState", RpcTarget.All, "Jump");
+        }
     }
 }
