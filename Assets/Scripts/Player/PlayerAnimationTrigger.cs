@@ -88,7 +88,6 @@ public class PlayerAnimatorController : MonoBehaviour
     {
         if (player.curAbility == null || !player.pView.IsMine) return; //어빌리티가 없으면 리턴        
 
-        Debug.Log("DownAttack !!!!!!!!!!!!!!!!!!!!");
         if (AudioManager.Instance != null && player.curAbility.SFX_Name != "")
         {
             //AudioManager.Instance.PlaySFX(player.curAbility.SFX_Name);
@@ -100,7 +99,6 @@ public class PlayerAnimatorController : MonoBehaviour
     public void DashAttackTrigger()
     {
         if (player.curAbility == null || !player.pView.IsMine) return; //어빌리티가 없으면 리턴
-        Debug.Log("DashAttack !!!!!!!!!!!!!!!!!!!!");
         if (AudioManager.Instance != null && player.curAbility.SFX_Name != "")
         {
             //AudioManager.Instance.PlaySFX(player.curAbility.SFX_Name);
@@ -138,6 +136,7 @@ public class PlayerAnimatorController : MonoBehaviour
     [PunRPC]
     public void WhellKirbyAttackEffect()
     {
+        
         RangedAttack(Attack, "Player_Effect/Whell Attack Effect_0");
     }
 
@@ -146,6 +145,7 @@ public class PlayerAnimatorController : MonoBehaviour
 
     private void RangedAttack(GameObject rangeAttack, string rangeAttackName)
     {
+        if (!player.pView.IsMine) return;
         if (rangeAttack == null)
         {
             rangeAttack = Resources.Load<GameObject>(rangeAttackName); //원거리 공격을 가져옴
