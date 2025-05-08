@@ -124,7 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c24f5ead2599344a8c0d25939372ae7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boomerangPrefab: {fileID: 1923375133844380750, guid: 584868d9948a112448cc27bcf771699f, type: 3}
+  boomerangPrefab: {fileID: 2999889309051544665, guid: 9f81a91cd4aa9c14da6e0746a4a1e9d3, type: 3}
   startPos: {fileID: 4642539334492266783}
 --- !u!114 &7813328188974328402
 MonoBehaviour:
@@ -230,9 +230,10 @@ GameObject:
   - component: {fileID: 4147482310571423912}
   - component: {fileID: 8556154767824313396}
   - component: {fileID: 335073829800003035}
+  - component: {fileID: 2762196266325954677}
   m_Layer: 0
   m_Name: Boomerang
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -335,6 +336,10 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 64
+  maxHp: 30
+  currentHp: 30
+  dieEffect: {fileID: 0}
+  spriteRenderer: {fileID: 0}
   knockbackDirection: {x: 0, y: 0}
   knockbackDuration: 0
   attackCheck: {fileID: 0}
@@ -356,11 +361,13 @@ MonoBehaviour:
   lastTimeAttacked: 0
   facingDir: 1
   facingRight: 1
+  isJump: 0
   stunDirection: {x: 3, y: 3}
   hitTime: 1.33
   startRight: 1
   photonView: {fileID: 0}
   playerCheckDistance: 5.5
+  boomerangPrefab: {fileID: 2999889309051544665, guid: 9f81a91cd4aa9c14da6e0746a4a1e9d3, type: 3}
 --- !u!114 &4147482310571423912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -414,6 +421,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5672e78f22197ad44baca407376fd8d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2762196266325954677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6241601916992003496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d2e9ad4460ba7c448f42de2ec68fa16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Number: 3
+  a: "1. \uCEE4\uBE44 \uBA39\uC740 \uD3FC"
+  b: "2. \uCEE4\uBE44 \uC560\uB2C8\uBA40 \uD3FC"
+  c: "3. \uCEE4\uBE44 \uCEE4\uD130 \uD3FC"
+  d: "4. \uCEE4\uBE44 \uD050\uD53C\uB4DC \uD3FC"
+  e: "5. \uCEE4\uBE44 \uC2A4\uC6CC\uB4DC \uD3FC"
+  f: "6. \uCEE4\uBE44 \uD720 \uD3FC"
 --- !u!1 &7364460221651801542
 GameObject:
   m_ObjectHideFlags: 0

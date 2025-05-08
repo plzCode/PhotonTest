@@ -31,6 +31,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 9139830358720353560}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4723510566360751631
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7277453994208035720}
+  m_Layer: 0
+  m_Name: GroundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7277453994208035720
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4723510566360751631}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.08, y: -0.42, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9139830358720353560}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6570677878778485603
 GameObject:
   m_ObjectHideFlags: 0
@@ -48,7 +79,7 @@ GameObject:
   - component: {fileID: 5158584017730951551}
   m_Layer: 0
   m_Name: BigWaddle
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68,6 +99,7 @@ Transform:
   m_Children:
   - {fileID: 47473484489985107}
   - {fileID: 1184710998532391503}
+  - {fileID: 7277453994208035720}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &7545590345773042886
@@ -149,12 +181,16 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 0
+  maxHp: 30
+  currentHp: 30
+  dieEffect: {fileID: 0}
+  spriteRenderer: {fileID: 0}
   knockbackDirection: {x: 0, y: 0}
   knockbackDuration: 0
   attackCheck: {fileID: 0}
   attackCheckRadius: 0
-  groundCheck: {fileID: 0}
-  groundCheckDistance: 0
+  groundCheck: {fileID: 7277453994208035720}
+  groundCheckDistance: 0.3
   wallCheck: {fileID: 1184710998532391503}
   wallCheckDistance: 0.15
   whatIsGround:
@@ -163,12 +199,14 @@ MonoBehaviour:
   moveSpeed: 1.5
   idleTime: 0.33
   battleTime: 0
+  canAttacking: 0
   attackDistance: 0
   attackCooldown: 0
   attackPower: 0
   lastTimeAttacked: 0
   facingDir: 1
   facingRight: 1
+  isJump: 0
   stunDirection: {x: 2.5, y: 2.5}
   hitTime: 1.25
   startRight: 1
@@ -240,7 +278,7 @@ GameObject:
   - component: {fileID: 3349294119417158627}
   m_Layer: 0
   m_Name: BigWaddle
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
