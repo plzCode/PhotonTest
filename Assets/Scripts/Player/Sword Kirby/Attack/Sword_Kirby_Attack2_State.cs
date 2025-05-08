@@ -41,7 +41,7 @@ public class Sword_Kirby_Attack2_State : PlayerState
             return;
 
         attackTime -= Time.deltaTime;
-        Debug.Log(attackTime);
+        //Debug.Log(attackTime);
         if (attackTime <= 0)
         {
             Attack = false;

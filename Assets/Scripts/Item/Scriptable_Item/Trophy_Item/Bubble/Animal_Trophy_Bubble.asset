@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c102456f7f152f4a8cd6cf2d661e44f, type: 3}
   m_Name: Animal_Trophy_Bubble
   m_EditorClassIdentifier: 
-  itemName: Animal_Trophy
+  itemName: Animal_Trophy_Bubble
   icon: {fileID: -8017714699139040919, guid: 25601b2de7e54fb42896b8c150943b69, type: 3}
   description: "\uBCC0\uC2E0"
   effectValue: 2
