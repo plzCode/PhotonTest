@@ -324,4 +324,20 @@ public class Enemy : MonoBehaviour
         if(stateMachine.currentState != null)
             stateMachine.currentState.stateTimer = timerValue;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+
+        if (collision.collider.CompareTag("Player") && PhotonNetwork.IsMasterClient)
+        {
+            Debug.Log("플레이어에게 " + 10f + "만큼 데미지를 줍니다.");
+
+            PhotonView targetView = collision.collider.GetComponent<PhotonView>();
+            if (targetView != null)
+            {
+                targetView.RPC("TakeDamage", RpcTarget.All, (Vector2)transform.position, 10f);
+            }
+
+        }
+    }
 }

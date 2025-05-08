@@ -71,7 +71,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -151,6 +151,7 @@ MonoBehaviour:
   startRight: 1
   startPosition: {x: 0, y: 0, z: 0}
   isFirstSpawn: 1
+  monsterSpawner: {fileID: 0}
   photonView: {fileID: 0}
   throwDistance: 5
   spearPrefab: {fileID: 6694563840851363212, guid: 43c819531e075524890bb5069f160b88, type: 3}

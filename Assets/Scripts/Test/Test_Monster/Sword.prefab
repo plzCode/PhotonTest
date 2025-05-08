@@ -369,6 +369,9 @@ MonoBehaviour:
   stunDirection: {x: 3, y: 3}
   hitTime: 1.5
   startRight: 1
+  startPosition: {x: 0, y: 0, z: 0}
+  isFirstSpawn: 1
+  monsterSpawner: {fileID: 0}
   photonView: {fileID: 0}
   dashSpeed: 10
 --- !u!114 &7273539999278656457

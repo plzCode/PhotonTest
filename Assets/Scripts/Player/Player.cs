@@ -167,24 +167,18 @@ public class Player : MonoBehaviour
         DashTime(); //�뽬��ȣ�ۿ� Ÿ��
         Hill();
 
-        #region TestRegion
         if (pView.IsMine == false) return; //�� ĳ���Ͱ� �ƴҶ��� ����        
 
-        if (Input.GetKeyDown(KeyCode.X))
+        if (Input.GetKeyDown(KeyCode.G))
         {
-            if (curAbility == null)
+            if (curAbility != null)
             {
-                curAbility = gameObject.AddComponent<Ability_Eat>();
-                curAbility.OnAbilityCopied(this);
-            }
-            else
-            {
+                EffectAdd(-1 * LastMove, DamageStar.name, transform.position);
                 curAbility.OnAbilityDestroyed(this);
                 Destroy(curAbility);
             }
 
         }
-        #endregion
     }
 
 
@@ -470,7 +464,7 @@ public class Player : MonoBehaviour
             return; //�������¸� ����
 
         pView.RPC("RPC_HitFlash", RpcTarget.All);
-        StartCoroutine(NoDamage(0.5f));
+        pView.RPC("RPC_StartNoDamage", RpcTarget.All, 2f , 0.2f);
 
         if (transform.position.x > EnemyAttackPos.x)
         {
@@ -654,18 +648,41 @@ public class Player : MonoBehaviour
 
 
     bool isInvincible = false;
-    private IEnumerator NoDamage(float duration)
+
+    [PunRPC]
+    public void RPC_StartNoDamage(float duration, float interval)
+    {
+        StartCoroutine(NoDamage(duration, interval));
+    }
+
+    [PunRPC]
+    private IEnumerator NoDamage(float MaxTime, float interval)
     {
         isInvincible = true;
 
-        Collider col = GetComponent<Collider>();
-        if (col != null) col.enabled = false;
+        Animator animator = GetComponentInChildren<Animator>();
+        if (animator == null)
+            yield break;
 
-        yield return new WaitForSeconds(duration);
+        SpriteRenderer spriteRenderer = animator.GetComponent<SpriteRenderer>();
+        if (spriteRenderer == null)
+            yield break;
 
+        Color originalColor = spriteRenderer.color;
+
+        float elapsedTime = 0f;
+        bool isWhite = false;
+
+        while (elapsedTime < MaxTime)
+        {
+            isWhite = !isWhite;
+            spriteRenderer.color = isWhite ? Color.red : originalColor; // 빨간색으로 깜빡이기
+            yield return new WaitForSeconds(interval);
+            elapsedTime += interval;
+        }
+
+        spriteRenderer.color = originalColor;
         isInvincible = false;
-
-        if (col != null) col.enabled = true;
     }
 
     

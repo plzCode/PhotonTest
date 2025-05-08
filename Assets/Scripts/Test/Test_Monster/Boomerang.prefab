@@ -365,6 +365,9 @@ MonoBehaviour:
   stunDirection: {x: 3, y: 3}
   hitTime: 1.33
   startRight: 1
+  startPosition: {x: 0, y: 0, z: 0}
+  isFirstSpawn: 1
+  monsterSpawner: {fileID: 0}
   photonView: {fileID: 0}
   playerCheckDistance: 5.5
   boomerangPrefab: {fileID: 2999889309051544665, guid: 9f81a91cd4aa9c14da6e0746a4a1e9d3, type: 3}

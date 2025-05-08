@@ -120,6 +120,10 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 64
+  maxHp: 10
+  currentHp: 10
+  dieEffect: {fileID: 0}
+  spriteRenderer: {fileID: 0}
   knockbackDirection: {x: 0, y: 0}
   knockbackDuration: 0
   attackCheck: {fileID: 0}
@@ -134,15 +138,20 @@ MonoBehaviour:
   moveSpeed: 1.5
   idleTime: 2
   battleTime: 0
+  canAttacking: 0
   attackDistance: 0
   attackCooldown: 0
   attackPower: 0
   lastTimeAttacked: 0
   facingDir: 1
   facingRight: 1
+  isJump: 0
   stunDirection: {x: 3, y: 3}
   hitTime: 1.5
   startRight: 1
+  startPosition: {x: 0, y: 0, z: 0}
+  isFirstSpawn: 1
+  monsterSpawner: {fileID: 0}
   photonView: {fileID: 0}
   throwDistance: 5
   spearPrefab: {fileID: 6694563840851363212, guid: 43c819531e075524890bb5069f160b88, type: 3}
@@ -186,6 +195,10 @@ MonoBehaviour:
   Number: 2
   a: "1. \uCEE4\uBE44 \uBA39\uC740 \uD3FC"
   b: "2. \uCEE4\uBE44 \uC560\uB2C8\uBA40 \uD3FC"
+  c: "3. \uCEE4\uBE44 \uCEE4\uD130 \uD3FC"
+  d: "4. \uCEE4\uBE44 \uD050\uD53C\uB4DC \uD3FC"
+  e: "5. \uCEE4\uBE44 \uC2A4\uC6CC\uB4DC \uD3FC"
+  f: "6. \uCEE4\uBE44 \uD720 \uD3FC"
 --- !u!114 &7358566062921872840
 MonoBehaviour:
   m_ObjectHideFlags: 0

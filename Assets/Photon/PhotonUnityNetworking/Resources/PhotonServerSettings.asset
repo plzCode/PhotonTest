@@ -113,6 +113,8 @@ MonoBehaviour:
   - ChangeParam
   - DeactivateSelfAndChildren
   - ReSpawnRPC
+  - NoDamage
+  - RPC_StartNoDamage
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
