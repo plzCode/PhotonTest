@@ -24,6 +24,9 @@ public class PlayerGroundState : PlayerState
         if (!player.IsGroundCheck() && !player.isSlope)
             stateMachine.ChangeState(player.airState);
 
+
+        if(player.isBusy) return;
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             stateMachine.ChangeState(player.jumpState);

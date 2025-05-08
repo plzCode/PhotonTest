@@ -42,7 +42,7 @@ public class CommandInput : MonoBehaviour
     {
         if(player.pView.IsMine == false) return; // 내 캐릭터가 아닐 경우 무시
         
-        if (IsPointerOverItemElement()) return; // 마우스가 UI 위에 있을 경우 무시
+        if (IsPointerOverItemElement() || player.isBusy) return; // 마우스가 UI 위에 있을 경우 무시
         CheckInput();
         CleanBuffer();
         CheckCommands();

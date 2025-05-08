@@ -445,13 +445,14 @@ public class Player : MonoBehaviour
         if (curAbility != null)
         {
             //EffectAdd(LastMove, DamageStar, transform);            
-            pView.RPC("EffectAdd", RpcTarget.All, LastMove, DamageStar.name, transform);
+            pView.RPC("EffectAdd", RpcTarget.All, LastMove, DamageStar.name, transform.position);
             curAbility.OnAbilityDestroyed(this); //�����Ƽ �ʱ�ȭ
         }
         PlayerHP -= Damage;
         if(PlayerHP <= 0)
         {
             PlayerHP = 0;
+            isBusy = true;
             Die_Player();
         }
         if (health_Bar != null)
@@ -685,6 +686,7 @@ public class Player : MonoBehaviour
             pView.RPC("Init_Player", RpcTarget.AllBuffered);
             this.transform.position = resTransform.position;
             this.gameObject.SetActive(true);
+            
 
         }
         else
@@ -692,6 +694,7 @@ public class Player : MonoBehaviour
             //게임오버
             Debug.Log("게임오버");
         }
+        isBusy = false;
     }
     [PunRPC]
     public void Init_Player()
