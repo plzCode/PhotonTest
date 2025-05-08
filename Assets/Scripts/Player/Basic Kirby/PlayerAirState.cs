@@ -41,6 +41,8 @@ public class PlayerAirState : PlayerState
             return;
         }
 
+        if(player.isBusy) return;
+
         if (xInput != 0)
             //player.lineVelocity(xInput * player.MoveSpeed, rb.linearVelocityY);
             pView.RPC("lineVelocity", RpcTarget.All, xInput * player.MoveSpeed, rb.linearVelocityY); //수평 이동

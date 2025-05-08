@@ -28,7 +28,11 @@ public class Sword_AnimationTriggers : MonoBehaviour
             if (hit.GetComponent<Player>() != null)
             {
                 if (hit.GetComponent<PhotonView>() != null)
-                    hit.GetComponent<PhotonView>().RPC("TakeDamage", RpcTarget.All, (Vector2)transform.position, enemy.attackPower); // 데미지 처리
+                {
+                    Vector2 tmpPos = new Vector2(transform.position.x, transform.position.y);
+                    Debug.Log(hit.name);
+                    hit.GetComponent<PhotonView>().RPC("TakeDamage", RpcTarget.All, tmpPos, enemy.attackPower); // 데미지 처리
+                }
 
                 Debug.Log("스워드 몬스터가 플레이어에게 " + enemy.attackPower + "만큼 데미지를 줌");
             }

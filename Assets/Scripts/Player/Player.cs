@@ -186,9 +186,10 @@ public class Player : MonoBehaviour
 
 
     [PunRPC]
-    public void SyncFormNum()
+    public void SyncFormNum(int EatKirbyFormNum)
     {
-        KirbyFormNum = EatKirbyFormNum;
+        this.EatKirbyFormNum = EatKirbyFormNum;
+        KirbyFormNum = this.EatKirbyFormNum;
     }
 
 
@@ -444,14 +445,15 @@ public class Player : MonoBehaviour
 
         if (curAbility != null)
         {
-            //EffectAdd(LastMove, DamageStar, transform);            
-            pView.RPC("EffectAdd", RpcTarget.All, LastMove, DamageStar.name, transform);
+            EffectAdd(LastMove, DamageStar.name, transform.position);            
+            //pView.RPC("EffectAdd", RpcTarget.All, LastMove, DamageStar.name, transform.position);
             curAbility.OnAbilityDestroyed(this); //�����Ƽ �ʱ�ȭ
         }
         PlayerHP -= Damage;
         if(PlayerHP <= 0)
         {
             PlayerHP = 0;
+            isBusy = true;
             Die_Player();
         }
         if (health_Bar != null)
@@ -639,7 +641,7 @@ public class Player : MonoBehaviour
             if (spriteRenderer != null)
             {
                 Color originalColor = spriteRenderer.color; // 기존 색상 저장
-                StartCoroutine(FlickSprite(spriteRenderer, originalColor, 2f, 0.1f)); // 2초 동안 0.1초 간격으로 깜박임
+                StartCoroutine(FlickSprite(spriteRenderer, originalColor, 2f, 0.1f)); // 2초 동안 0.1초 간격으로 깜박임 <<이거 RPC화 시켜야함
             }
         }
     }
@@ -668,9 +670,10 @@ public class Player : MonoBehaviour
         {
             Transform resTransform = null;
             PlayerLife--;
+            string areaString = this.GetComponent<PlayerTest>().area;
             foreach (GameObject player in GameManager.Instance.playerList)
             {
-                if (player.activeSelf && player.GetComponent<Player>() != this)
+                if (player.activeSelf && player.GetComponent<Player>() != this && player.GetComponent<PlayerTest>().area.Equals(areaString))
                 {
                     resTransform = player.transform;
                     resTransform.position += Vector3.up * 10f;
@@ -685,6 +688,7 @@ public class Player : MonoBehaviour
             pView.RPC("Init_Player", RpcTarget.AllBuffered);
             this.transform.position = resTransform.position;
             this.gameObject.SetActive(true);
+            
 
         }
         else
@@ -692,6 +696,7 @@ public class Player : MonoBehaviour
             //게임오버
             Debug.Log("게임오버");
         }
+        isBusy = false;
     }
     [PunRPC]
     public void Init_Player()

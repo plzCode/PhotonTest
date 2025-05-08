@@ -95,6 +95,8 @@ public class Ability_Animal : PlayerAbility
     public void RemoveState(Player owner)
     {
         attackState = null;
+        dash_attackState = null;
+        down_attackState = null;
     }
 
 }
