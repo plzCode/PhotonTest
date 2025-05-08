@@ -102,6 +102,7 @@ MonoBehaviour:
   - WhellTurn
   - Init_Player
   - AirOutRPC
+  - Setting_Area_Name
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

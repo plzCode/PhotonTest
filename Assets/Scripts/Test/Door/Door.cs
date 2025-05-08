@@ -15,6 +15,7 @@ public class Door : MonoBehaviour
     private float fadeTime = 0.5f;
 
     public PolygonCollider2D confinderArea;
+    string area = "";
 
     private void Awake()
     {
@@ -29,6 +30,7 @@ public class Door : MonoBehaviour
         {
             Debug.LogError("ScreenFader를 찾을 수 없습니다!");
         }
+        area = confinderArea.name;
     }
 
     private void Update()
@@ -87,6 +89,11 @@ public class Door : MonoBehaviour
                 {
                     CinemachineConfiner2D tmpCam = GameObject.Find("PlayerCamera").GetComponent<CinemachineConfiner2D>();
                     tmpCam.BoundingShape2D = confinderArea;
+                }
+
+                if(player.GetComponent<PlayerTest>() != null)
+                {
+                    photonView.RPC("Setting_Area_Name", RpcTarget.AllBuffered, area, photonView.ViewID);
                 }
 
                 Debug.Log(player.name + "이(가) " + Linked_Door.name + "로 이동했습니다.");
