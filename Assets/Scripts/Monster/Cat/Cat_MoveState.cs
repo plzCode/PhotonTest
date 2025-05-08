@@ -13,8 +13,9 @@ public class Cat_MoveState : EnemyState
         base.Enter();
 
         if (!PhotonNetwork.IsMasterClient)
-        { return; }
-        enemy.SetVelocity(rb.linearVelocity.x, 10f);
+            return;
+
+        enemy.SetVelocity(rb.linearVelocity.x, 7f);
     }
 
     public override void Exit()
@@ -26,10 +27,10 @@ public class Cat_MoveState : EnemyState
     {
         base.Update();
 
-
         if (!PhotonNetwork.IsMasterClient)
-        { return; }
-        enemy.SetVelocity(enemy.moveSpeed * enemy.facingDir, rb.linearVelocity.y);
+            return;
 
+
+        enemy.SetVelocity(enemy.moveSpeed * enemy.facingDir, rb.linearVelocity.y);
     }
 }

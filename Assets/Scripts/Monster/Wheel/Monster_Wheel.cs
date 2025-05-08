@@ -70,7 +70,7 @@ public class Monster_Wheel : Enemy
     {
         if (PhotonNetwork.IsMasterClient)
         {
-            photonView.RPC("ChangeState", RpcTarget.All, "Turn");
+            photonView.RPC("ChangeState", RpcTarget.All, "Move");
         }
     }
 }

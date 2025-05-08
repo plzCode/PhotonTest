@@ -24,8 +24,11 @@ public class Cat_IdleState : EnemyState
     {
         base.Update();
 
+        if(!PhotonNetwork.IsMasterClient)
+            return;
 
-        if (stateTimer < 0 && PhotonNetwork.IsMasterClient)
+
+        if (stateTimer < 0)
         {
             enemy.photonView.RPC("ChangeState", RpcTarget.All, "Move");
         }

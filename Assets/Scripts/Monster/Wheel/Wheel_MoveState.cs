@@ -37,7 +37,7 @@ public class Wheel_MoveState : EnemyState
             enemy.SetVelocity(enemy.moveSpeed + 5f * enemy.facingDir, rb.linearVelocity.y);
         }
 
-        else if (enemy.IsWallDetected())
+        if (enemy.IsWallDetected())
         {
             enemy.photonView.RPC("ChangeState", RpcTarget.All, "Turn");
         }

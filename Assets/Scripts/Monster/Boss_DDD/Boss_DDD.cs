@@ -192,7 +192,7 @@ public class Boss_DDD : Enemy
         Vector2 spawnPosition = (Vector2)transform.position + randomOffset;
 
         string[] monsterList = {
-        "BigWaddle", "Boomerang","Mole", "Spear", "Sword", "Waddle"
+        "BigWaddle", "Boomerang","Mole", "Spear", "Sword", "Waddle", "Wheel", "Cat"
         };
 
         MonsterName = monsterList[Random.Range(0, monsterList.Length)];

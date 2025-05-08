@@ -22,9 +22,9 @@ public class Cat_MoveDownState : EnemyState
     {
         base.Update();
 
-
         if (!PhotonNetwork.IsMasterClient)
-        { return; }
+            return;
+
         enemy.SetVelocity(enemy.moveSpeed * enemy.facingDir, rb.linearVelocity.y);
 
         if (enemy.IsGroundDetected())

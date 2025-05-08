@@ -145,14 +145,14 @@ public class Enemy : MonoBehaviour
         if (PhotonNetwork.IsMasterClient)
         {
             //isDestroyed = true;  // 삭제 상태로 설정
-            photonView.RPC("EffectAdd", RpcTarget.All, "Delete Effect 30x30_0", transform.position);
+            photonView.RPC("EffectAdd", RpcTarget.All, "Delete Enemy Effect 45x45_0", transform.position);
             //PhotonNetwork.Destroy(gameObject); // 네트워크 전체에서 삭제
         }
     }
     [PunRPC]
     protected virtual void EffectAdd(string effectName, Vector3 effectPos)
     {
-        PhotonNetwork.Instantiate("Tile_Effect/" + effectName, effectPos, Quaternion.identity);        
+        PhotonNetwork.Instantiate("Monster_Effect/" + effectName, effectPos, Quaternion.identity);        
     }
     public virtual void Damage()
     {
