@@ -101,6 +101,7 @@ MonoBehaviour:
   - TurnMoveDown
   - WhellTurn
   - Init_Player
+  - AirOutRPC
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
