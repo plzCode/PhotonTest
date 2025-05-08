@@ -3,8 +3,8 @@ guid: 74ae231156528e1498b4e359daa3f77b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6230752081919375196
-    second: "\uC2A4\uD06C\uB9B0\uC0F7 2025-05-08 130852_0"
+      213: 5471114978251189754
+    second: Stage2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\uC2A4\uD06C\uB9B0\uC0F7 2025-05-08 130852_0"
+      name: Stage2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1319
-        height: 492
+        width: 747
+        height: 370
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4a88ba15efbe789a0800000000000000
-      internalID: -6230752081919375196
+      spriteID: afd2bf3e51e4deb40800000000000000
+      internalID: 5471114978251189754
       vertices: []
       indices: 
       edges: []
