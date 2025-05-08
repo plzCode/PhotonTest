@@ -145,10 +145,12 @@ public class Monster_Spear : Enemy
             Flip();
         }
 
-        if(!isFirstSpawn)
+        if (!isFirstSpawn)
+        {
             transform.position = startPosition;
+            stateMachine.Initialize(idleState);
+        }
         currentHp = maxHp;
-        stateMachine.Initialize(idleState);
     }
 
 

@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public GameObject[] players; // 기존 방식 유지
     public List<GameObject> playerList = new List<GameObject>(); // 새 리스트 방식
 
-    public List<Transform> spwanTransform = new List<Transform>(); // 스폰 위치 리스트
+    public SavePoint spwanTransform = new SavePoint(); // 스폰 위치 리스트
 
     private void Awake()
     {

@@ -119,9 +119,11 @@ public class Monster_Boomerang : Enemy
         }
 
         if (!isFirstSpawn)
+        {
             transform.position = startPosition;
+            stateMachine.Initialize(idleState);
+        }
         currentHp = maxHp;
-        stateMachine.Initialize(idleState);
     }
 
     public void ThrowBoomerang()

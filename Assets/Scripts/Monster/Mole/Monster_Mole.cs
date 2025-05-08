@@ -78,9 +78,11 @@ public class Monster_Mole : Enemy
         }
 
         if (!isFirstSpawn)
+        {
             transform.position = startPosition;
+            stateMachine.Initialize(idleState);
+        }
         currentHp = maxHp;
-        stateMachine.Initialize(idleState);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {

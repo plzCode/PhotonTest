@@ -54,7 +54,7 @@ public class SpawnMannager : MonoBehaviourPun
         pCam.AddComponent<CinemachinePositionComposer>();
         pCam.AddComponent<CinemachineConfiner2D>();
         pCam.GetComponent<CinemachineConfiner2D>().BoundingShape2D = GameObject.Find("Confiners").GetComponentInChildren<PolygonCollider2D>();
-        
+
 
 
         pCam.Follow = tmpPlayer.transform;

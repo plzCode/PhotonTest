@@ -1,6 +1,7 @@
 using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Cinemachine;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -633,7 +634,7 @@ public class Player : MonoBehaviour
     
     public void Die_Player()
     {
-        if (!pView.IsMine) return;
+
         Animator animator = GetComponentInChildren<Animator>();
         if (animator != null)
         {
@@ -676,16 +677,26 @@ public class Player : MonoBehaviour
                 if (player.activeSelf && player.GetComponent<Player>() != this && player.GetComponent<PlayerTest>().area.Equals(areaString))
                 {
                     resTransform = player.transform;
-                    resTransform.position += Vector3.up * 10f;
+                    resTransform.position += Vector3.up * 3f;
                     break;
                 }
             }
             if (resTransform == null)
             {
-                resTransform = GameManager.Instance.spwanTransform[GameManager.Instance.spwanTransform.Count - 1];
+                SavePoint savePoint = GameManager.Instance.spwanTransform;
+                resTransform = savePoint.transform;
+                Debug.Log(savePoint.areaName + " : " + GetComponent<PlayerTest>().area + "!!!!!!!!");
+                if (savePoint.areaName != GetComponent<PlayerTest>().area)
+                {
+                    //카메라 설정
+                    GetComponent<PlayerTest>().area = savePoint.areaName;
+                    CinemachineConfiner2D tmpCam = GameObject.Find("PlayerCamera").GetComponent<CinemachineConfiner2D>();
+                    tmpCam.BoundingShape2D = savePoint.confinderArea;
+                }
+                
             }
 
-            pView.RPC("Init_Player", RpcTarget.AllBuffered);
+            Init_Player();
             this.transform.position = resTransform.position;
             this.gameObject.SetActive(true);
             
@@ -698,9 +709,9 @@ public class Player : MonoBehaviour
         }
         isBusy = false;
     }
-    [PunRPC]
     public void Init_Player()
     {
+        
         PlayerHP = PlayerMaxHP;
         KirbyFormNum = 0;
         EatKirbyFormNum = 0;

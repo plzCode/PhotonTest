@@ -3,7 +3,16 @@ using UnityEngine;
 
 public class SavePoint : MonoBehaviour
 {
+    [SerializeField]
     public bool isTriggered = false;
+    public string areaName = "";
+    public PolygonCollider2D confinderArea;
+
+
+    public void Start()
+    {
+        if(confinderArea != null) areaName = confinderArea.name;
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -12,7 +21,7 @@ public class SavePoint : MonoBehaviour
             isTriggered = true;
             if (GameManager.Instance != null)
             {
-                GameManager.Instance.spwanTransform.Add(transform);
+                GameManager.Instance.spwanTransform = this;
                 StartCoroutine(RotationObject());
             }
         }

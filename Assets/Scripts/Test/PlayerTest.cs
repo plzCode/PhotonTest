@@ -135,5 +135,6 @@ public class PlayerTest : MonoBehaviourPunCallbacks, IPunObservable
 
         this.area = area;
     }
+
 }
 

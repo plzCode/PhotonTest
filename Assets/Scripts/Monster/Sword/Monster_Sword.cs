@@ -108,9 +108,11 @@ public class Monster_Sword : Enemy
         }
 
         if (!isFirstSpawn)
+        {
             transform.position = startPosition;
+            stateMachine.Initialize(moveState);
+        }
         currentHp = maxHp;
-        stateMachine.Initialize(moveState);
     }
     protected override void OnDrawGizmos()
     {

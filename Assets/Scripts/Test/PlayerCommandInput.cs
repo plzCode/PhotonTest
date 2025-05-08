@@ -139,7 +139,7 @@ public class CommandInput : MonoBehaviour
             }
             else
             {
-                Debug.LogWarning($"{methodName}이 {abilityType.Name}에 오버라이드되어 있지 않음. 기본 공격 실행");
+                //Debug.LogWarning($"{methodName}이 {abilityType.Name}에 오버라이드되어 있지 않음. 기본 공격 실행");
                 ability.AttackHandle();
             }
         }

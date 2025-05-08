@@ -207,6 +207,7 @@ MonoBehaviour:
   AttackDelay: 0
   AttackEnemy: 0
   ReturnPlayer: 0
+  tmpPlayer: {fileID: 0}
 --- !u!114 &5750212262843837516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,6 +259,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   observableSearch: 0
   ObservedComponents:
+  - {fileID: 4443525134377311598}
   - {fileID: 5750212262843837516}
   sceneViewId: 0
   InstantiationId: 0

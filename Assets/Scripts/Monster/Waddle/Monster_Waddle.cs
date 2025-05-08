@@ -48,6 +48,7 @@ public class Monster_Waddle : Enemy
         else if (stateName == "ReSpawn")
         {
             MonsterSpawner.Instance.StartCoroutine(MonsterSpawner.Instance.ReSpawner(gameObject));
+            
         }
             
         
@@ -88,8 +89,10 @@ public class Monster_Waddle : Enemy
         }
 
         if (!isFirstSpawn)
+        {
             transform.position = startPosition;
+            stateMachine.Initialize(idleState);
+        }
         currentHp = maxHp;
-        stateMachine.Initialize(idleState);
     }
 }
