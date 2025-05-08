@@ -1,5 +1,6 @@
 using Photon.Pun;
 using System.Collections;
+using System.Linq;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -105,9 +106,10 @@ public class Enemy : MonoBehaviour
     {
         stateMachine.currentState.Update();
 
-        anim.SetFloat("yVelocity", rb.linearVelocityY);
+        if(this.HasParameter("yVelocity", anim))
+            anim.SetFloat("yVelocity", rb.linearVelocityY);
 
-        if (PhotonNetwork.IsMasterClient)
+        /*if (PhotonNetwork.IsMasterClient)
         {
             // 마스터 클라이언트에서 몬스터 상태 업데이트
             targetPosition = transform.position + Vector3.left * Time.deltaTime; // 예: 왼쪽으로 이동
@@ -121,7 +123,7 @@ public class Enemy : MonoBehaviour
             // 다른 클라이언트에서 상태 적용
             transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * 10);
             transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * 10);
-        }
+        }*/
     }
     // 몬스터 상태 동기화
     [PunRPC] 
