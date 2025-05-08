@@ -43,7 +43,7 @@ public class Cutter : PlayerRagedManager
     // 매 프레임마다 Cutter의 이동 및 상태를 업데이트합니다.
     public void Update()
     {
-        if(!photonView.IsMine) return; // 현재 클라이언트가 소유하지 않은 객체는 업데이트하지 않음
+        if(!PhotonNetwork.LocalPlayer.IsLocal) return; // 현재 클라이언트가 소유하지 않은 객체는 업데이트하지 않음
                                        // Cutter가 살아있는 동안
         if (lifeTime > 0)
         {
@@ -74,49 +74,7 @@ public class Cutter : PlayerRagedManager
             transform.Translate(speed * Time.deltaTime, 0, 0); // 오른쪽으로 이동
             speed -= 10 * Time.deltaTime; // 속도 감소
         }
-        /*// Cutter가 살아있는 동안
-        if (lifeTime > 0)
-        {
-            lifeTime -= Time.deltaTime;  // 시간이 지나면서 수명이 감소합니다.
-
-            if (lifeTime <= 0f && photonView.IsMine && PhotonNetwork.IsMasterClient)
-            {
-                // 생명 주기가 끝나면 Cutter를 제거합니다.
-                PhotonNetwork.Destroy(gameObject);
-            }
-        }
-
-        if (!AttackEnemy)
-        {
-            float verticalInput = 0f;
-
-            if (Input.GetKey(KeyCode.Mouse0))
-            {
-                if (Input.GetKey(KeyCode.W))
-                {
-                    verticalInput = 1f; // 위로 이동
-                }
-                else if (Input.GetKey(KeyCode.S))
-                {
-                    verticalInput = -1f; // 아래로 이동
-                }
-            }
-
-            // 로컬 이동 처리
-            transform.Translate(speed * Time.deltaTime, verticalInput * Time.deltaTime, 0);
-
-            // 이동 명령을 다른 클라이언트에 전달
-            GetComponent<PhotonView>().RPC("RPC_MoveCutter", RpcTarget.Others, speed * Time.deltaTime, verticalInput * Time.deltaTime);
-
-            // 속도를 점진적으로 감소시킴
-            speed -= 10 * Time.deltaTime;
-        }*/
-    }
-    [PunRPC]
-    public void RPC_MoveCutterfloat(float horizontalMove, float verticalMove)
-    {
-        // 다른 클라이언트에서 이동 처리
-        transform.Translate(horizontalMove, verticalMove, 0);
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

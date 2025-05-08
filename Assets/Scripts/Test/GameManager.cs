@@ -50,5 +50,21 @@ public class GameManager : MonoBehaviour
 
         return closest;
     }
+
+    public int GetAreaPlayer(string areaName)
+    {
+        int playerCount = 0;
+        foreach (GameObject player in playerList)
+        {
+            if (player.GetComponent<PlayerTest>() != null)
+            {
+                if (player.GetComponent<PlayerTest>().area.Equals(areaName))
+                {
+                    playerCount++;
+                }
+            }
+        }
+        return playerCount;
+    }
     
 }

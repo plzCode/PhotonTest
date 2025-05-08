@@ -37,6 +37,11 @@ public class Door : MonoBehaviour
     {
         if (playersInRange != null && Input.GetKeyDown(KeyCode.W))
         {
+            if (playersInRange.GetComponent<PlayerTest>() != null)
+            {
+                playersInRange.GetComponent<Player>().pView.RPC("Setting_Area_Name", RpcTarget.AllBuffered, area, playersInRange.GetComponent<Player>().pView.ViewID);
+                //playersInRange.GetComponent<PlayerTest>().Setting_Area_Name(area, playersInRange.GetComponent<Player>().pView.ViewID);
+            }
             StartCoroutine(TeleportPlayerCoroutine(playersInRange));
             AudioManager.Instance.PlaySFX("Door_Sound");
         }
@@ -71,12 +76,13 @@ public class Door : MonoBehaviour
             PhotonView photonView = player.GetComponent<PhotonView>();
             if (photonView != null && photonView.IsMine)
             {
+                
                 // 1. 페이드 아웃
                 if (screenFader != null)
                 {
                     yield return StartCoroutine(screenFader.FadeOut(fadeTime));
                 }
-                
+
                 // 2. 위치 이동 및 동기화
                 player.transform.position = Linked_Door.transform.position;
                 GetComponent<PhotonView>().RPC("ForceSyncPosition", RpcTarget.All, photonView.ViewID, Linked_Door.transform.position);
@@ -85,15 +91,15 @@ public class Door : MonoBehaviour
                     ExitGames.Client.Photon.SendOptions.SendReliable);*/
 
                 // 3. 플레이어의 카메라 설정
-                if(confinderArea != null)
+                if (confinderArea != null)
                 {
                     CinemachineConfiner2D tmpCam = GameObject.Find("PlayerCamera").GetComponent<CinemachineConfiner2D>();
                     tmpCam.BoundingShape2D = confinderArea;
                 }
 
-                if(player.GetComponent<PlayerTest>() != null)
+                if (PhotonNetwork.IsMasterClient)
                 {
-                    photonView.RPC("Setting_Area_Name", RpcTarget.AllBuffered, area, photonView.ViewID);
+                    Debug.Log("Area Name : " + area + " = " + GameManager.Instance.GetAreaPlayer(player.GetComponent<PlayerTest>().area));
                 }
 
                 Debug.Log(player.name + "이(가) " + Linked_Door.name + "로 이동했습니다.");
