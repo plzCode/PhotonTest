@@ -93,6 +93,10 @@ public class Monster_Spear : Enemy
             stateMachine.ChangeState(idleState);
         else if (stateName == "Attack")
             stateMachine.ChangeState(throwState);
+        else if (stateName == "ReSpawn")
+        {    
+            MonsterSpawner.Instance.StartCoroutine(MonsterSpawner.Instance.ReSpawner(gameObject));
+        }
 
     }
 
@@ -130,7 +134,22 @@ public class Monster_Spear : Enemy
         //Instantiate(spearPrefab, transform.position, Quaternion.identity);
     }
 
+    private void OnEnable()
+    {
+        if (startRight && facingDir == -1)
+        {
+            Flip();
+        }
+        else if (!startRight && facingDir == 1)
+        {
+            Flip();
+        }
 
+        if(!isFirstSpawn)
+            transform.position = startPosition;
+        currentHp = maxHp;
+        stateMachine.Initialize(idleState);
+    }
 
 
 

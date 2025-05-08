@@ -40,6 +40,10 @@ public class Monster_Mole : Enemy
             stateMachine.ChangeState(battleState);
         else if (stateName == "Hit")
             stateMachine.ChangeState(hitState);
+        else if (stateName == "ReSpawn")
+        {
+            MonsterSpawner.Instance.StartCoroutine(MonsterSpawner.Instance.ReSpawner(gameObject));
+        }
 
     }
 
@@ -62,7 +66,22 @@ public class Monster_Mole : Enemy
         }
 
     }
+    private void OnEnable()
+    {
+        if (startRight && facingDir == -1)
+        {
+            Flip();
+        }
+        else if (!startRight && facingDir == 1)
+        {
+            Flip();
+        }
 
+        if (!isFirstSpawn)
+            transform.position = startPosition;
+        currentHp = maxHp;
+        stateMachine.Initialize(idleState);
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(PhotonNetwork.IsMasterClient&&canAttacking)

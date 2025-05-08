@@ -61,7 +61,9 @@ public class Enemy : MonoBehaviour
     public EnemyFX fx { get; private set; }
 
     [Header("시작 정보")]
-    [SerializeField] private bool startRight = true;
+    [SerializeField] protected bool startRight = true;
+    [SerializeField] protected Vector3 startPosition;
+    [SerializeField] protected bool isFirstSpawn = true;
 
 
     public EnemyStateMachine stateMachine { get; private set; }
@@ -84,6 +86,7 @@ public class Enemy : MonoBehaviour
         photonView = GetComponent<PhotonView>();
         currentHp = maxHp;
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        
     }
 
     protected virtual void Start()
@@ -92,6 +95,9 @@ public class Enemy : MonoBehaviour
         anim = GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody2D>();
         fx = GetComponent<EnemyFX>();
+        startPosition = transform.position;
+        isFirstSpawn = false;
+
     }
 
 
@@ -136,13 +142,13 @@ public class Enemy : MonoBehaviour
         {
             //isDestroyed = true;  // 삭제 상태로 설정
             photonView.RPC("EffectAdd", RpcTarget.All, "Delete Effect 30x30_0", transform.position);
-            PhotonNetwork.Destroy(gameObject); // 네트워크 전체에서 삭제
+            //PhotonNetwork.Destroy(gameObject); // 네트워크 전체에서 삭제
         }
     }
     [PunRPC]
     protected virtual void EffectAdd(string effectName, Vector3 effectPos)
     {
-        PhotonNetwork.Instantiate("Tile_Effect/" + effectName, effectPos, Quaternion.identity);
+        PhotonNetwork.Instantiate("Tile_Effect/" + effectName, effectPos, Quaternion.identity);        
     }
     public virtual void Damage()
     {
