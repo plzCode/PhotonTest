@@ -197,9 +197,10 @@ GameObject:
   - component: {fileID: 3506203188874828386}
   - component: {fileID: 4998991705178418710}
   - component: {fileID: 4520189856175577874}
+  - component: {fileID: 2086713513853680664}
   m_Layer: 0
   m_Name: Waddle
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -301,6 +302,10 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 0
+  maxHp: 30
+  currentHp: 30
+  dieEffect: {fileID: 0}
+  spriteRenderer: {fileID: 0}
   knockbackDirection: {x: 0, y: 0}
   knockbackDuration: 0
   attackCheck: {fileID: 0}
@@ -315,12 +320,14 @@ MonoBehaviour:
   moveSpeed: 1.5
   idleTime: 0.33
   battleTime: 0
+  canAttacking: 0
   attackDistance: 0
   attackCooldown: 0
   attackPower: 0
   lastTimeAttacked: 0
   facingDir: 1
   facingRight: 1
+  isJump: 0
   stunDirection: {x: 3, y: 3}
   hitTime: 1.5
   startRight: 1
@@ -378,6 +385,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5672e78f22197ad44baca407376fd8d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2086713513853680664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4323328105425634050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d2e9ad4460ba7c448f42de2ec68fa16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Number: 4
+  a: "1. \uCEE4\uBE44 \uBA39\uC740 \uD3FC"
+  b: "2. \uCEE4\uBE44 \uC560\uB2C8\uBA40 \uD3FC"
+  c: "3. \uCEE4\uBE44 \uCEE4\uD130 \uD3FC"
+  d: "4. \uCEE4\uBE44 \uD050\uD53C\uB4DC \uD3FC"
+  e: "5. \uCEE4\uBE44 \uC2A4\uC6CC\uB4DC \uD3FC"
+  f: "6. \uCEE4\uBE44 \uD720 \uD3FC"
 --- !u!1 &4879068470287185809
 GameObject:
   m_ObjectHideFlags: 0

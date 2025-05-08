@@ -58,6 +58,7 @@ public class Inventory : MonoBehaviour
                 if (player != null && player.GetComponentInChildren<PlayerAnimatorController>())
                 {
                     player.EatKirbyFormNum = (int)item.effectValue; // 능력 변경
+                    player.pView.RPC("SyncFormNum", RpcTarget.AllBuffered, player.EatKirbyFormNum); // 능력 변경
                     player.GetComponentInChildren<PlayerAnimatorController>().ChangeForm(); // 능력 사용
                 }
                 else

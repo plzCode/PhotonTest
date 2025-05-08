@@ -231,12 +231,13 @@ GameObject:
   - component: {fileID: 7518041830190383744}
   - component: {fileID: 3053080387547377621}
   - component: {fileID: 105333692326979651}
+  - component: {fileID: 7273539999278656457}
   - component: {fileID: 1467460403422391625}
   - component: {fileID: 3679635473569793380}
   - component: {fileID: -5689252379660423483}
   m_Layer: 0
   m_Name: Sword
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -339,6 +340,10 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 64
+  maxHp: 30
+  currentHp: 30
+  dieEffect: {fileID: 0}
+  spriteRenderer: {fileID: 0}
   knockbackDirection: {x: 0, y: 0}
   knockbackDuration: 0
   attackCheck: {fileID: 6445054297126676414}
@@ -353,17 +358,38 @@ MonoBehaviour:
   moveSpeed: 1.5
   idleTime: 2
   battleTime: 0
+  canAttacking: 0
   attackDistance: 1.74
   attackCooldown: 1
   attackPower: 10
   lastTimeAttacked: 0
   facingDir: 1
   facingRight: 1
+  isJump: 0
   stunDirection: {x: 3, y: 3}
   hitTime: 1.5
   startRight: 1
   photonView: {fileID: 0}
   dashSpeed: 10
+--- !u!114 &7273539999278656457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8051274196118794284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d2e9ad4460ba7c448f42de2ec68fa16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Number: 5
+  a: "1. \uCEE4\uBE44 \uBA39\uC740 \uD3FC"
+  b: "2. \uCEE4\uBE44 \uC560\uB2C8\uBA40 \uD3FC"
+  c: "3. \uCEE4\uBE44 \uCEE4\uD130 \uD3FC"
+  d: "4. \uCEE4\uBE44 \uD050\uD53C\uB4DC \uD3FC"
+  e: "5. \uCEE4\uBE44 \uC2A4\uC6CC\uB4DC \uD3FC"
+  f: "6. \uCEE4\uBE44 \uD720 \uD3FC"
 --- !u!114 &1467460403422391625
 MonoBehaviour:
   m_ObjectHideFlags: 0
