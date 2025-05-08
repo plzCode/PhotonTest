@@ -109,6 +109,10 @@ MonoBehaviour:
   - Setting_Area_Name
   - RPC_MoveCutter
   - RPC_MoveCutterfloat
+  - EffectForCutter
+  - ChangeParam
+  - DeactivateSelfAndChildren
+  - ReSpawnRPC
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

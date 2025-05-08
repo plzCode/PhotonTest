@@ -144,6 +144,10 @@ public class Player : MonoBehaviour
         pView = GetComponent<PhotonView>();
         commandInput = GetComponent<CommandInput>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        if (pView.IsMine)
+        {
+            PhotonNetwork.LocalPlayer.TagObject = gameObject; // 로컬 플레이어의 GameObject를 TagObject로 설정
+        }
     }
 
     public void Start()
@@ -300,9 +304,42 @@ public class Player : MonoBehaviour
                 bullet = PhotonNetwork.Instantiate("Player_Effect/" + Effect, EffecPos, Quaternion.Euler(0, 180, 0));
 
             }
+        }
+
+        if (bullet != null)
+        {
+            PlayerRagedManager attackScript = bullet.GetComponent<PlayerRagedManager>();
+            if (attackScript != null)
+            {
+                attackScript.player = this; // �� �ڵ尡 Player Ŭ���� �ȿ� �־�� ��
+            }
+            if (bullet.GetComponent<KirbyDamageStar>() != null)
+            {
+                bullet.GetComponent<PhotonView>().RPC("SetPlayer", RpcTarget.AllBuffered, pView.ViewID);
+            }
+
+        }
+    }
+
+    [PunRPC]
+    public void EffectForCutter(float _x, string Effect, Vector3 EffecPos)
+    {
+        GameObject bullet = null;
+        if (pView.IsMine)
+        {
+            if (_x > 0) //�������̸� �״�� ��ȯ
+            {
+                //Instantiate(obj, EffecPos.position, Quaternion.identity);
+                bullet = PhotonNetwork.Instantiate("Player_Effect/" + Effect, EffecPos, Quaternion.identity);
 
 
+            }
+            else if (_x < 0) //�����̸� �¿���� ��ȯ
+            {
+                //Instantiate(obj, EffecPos.position, Quaternion.Euler(0, 180, 0));
+                bullet = PhotonNetwork.Instantiate("Player_Effect/" + Effect, EffecPos, Quaternion.Euler(0, 180, 0));
 
+            }
         }
 
         if (bullet != null)

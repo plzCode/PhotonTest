@@ -65,7 +65,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] protected bool startRight = true;
     [SerializeField] protected Vector3 startPosition;
     [SerializeField] protected bool isFirstSpawn = true;
-
+    public MonsterSpawner monsterSpawner;
 
     public EnemyStateMachine stateMachine { get; private set; }
 
