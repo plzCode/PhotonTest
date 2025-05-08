@@ -36,7 +36,7 @@ public class AudioManager : MonoBehaviour
     [PunRPC]
     public void PlaySFX(string clipName)
     {
-        if (!PhotonNetwork.IsMasterClient) return;
+        if (!PhotonNetwork.LocalPlayer.IsLocal) return;
         if (sfxClips.TryGetValue(clipName, out var clip))
             sfxSource.PlayOneShot(clip);
         else

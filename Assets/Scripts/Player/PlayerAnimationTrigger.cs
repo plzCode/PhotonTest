@@ -41,7 +41,7 @@ public class PlayerAnimatorController : MonoBehaviour
 
         AudioManager.Instance.RPC_PlaySFX("Nomikomi_Sound");
         player.KirbyFormNum = player.EatKirbyFormNum; //저장되어있던 몹 넘버를 변신하는 넘버로 넘긴다
-        player.GetComponent<PhotonView>().RPC("SyncFormNum", RpcTarget.AllBuffered);
+        player.GetComponent<PhotonView>().RPC("SyncFormNum", RpcTarget.AllBuffered, player.EatKirbyFormNum);
 
         if (player.KirbyFormNum > 0) //0이상이면 먹은 적 커비로 변신
         {
@@ -153,6 +153,7 @@ public class PlayerAnimatorController : MonoBehaviour
 
         //player.EffectAdd(player.LastMove, rangeAttack, player.AirJumpOutEffectPos); //플레이어 한태서 공격 발사
         player.pView.RPC("EffectAdd", RpcTarget.All, player.LastMove, rangeAttack.name, player.AirJumpOutEffectPos); //플레이어 한태서 공격 발사
+        Debug.Log(rangeAttack.name);
     }
 
     //Animal Kirby Dash Attack
