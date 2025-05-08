@@ -232,7 +232,7 @@ GameObject:
   - component: {fileID: 1040033562712808211}
   m_Layer: 0
   m_Name: Boomerang
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -335,6 +335,10 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 64
+  maxHp: 10
+  currentHp: 10
+  dieEffect: {fileID: 0}
+  spriteRenderer: {fileID: 0}
   knockbackDirection: {x: 0, y: 0}
   knockbackDuration: 0
   attackCheck: {fileID: 0}
@@ -349,11 +353,17 @@ MonoBehaviour:
   moveSpeed: 1.5
   idleTime: 2
   battleTime: 0
+  canAttacking: 0
   attackDistance: 5
   attackCooldown: 1.5
   attackPower: 5
   lastTimeAttacked: 0
   facingDir: 1
+  facingRight: 1
+  isJump: 0
+  stunDirection: {x: 0, y: 0}
+  hitTime: 0
   startRight: 1
-  dashSpeed: 0
+  photonView: {fileID: 0}
   playerCheckDistance: 5.5
+  boomerangPrefab: {fileID: 0}

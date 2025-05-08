@@ -1,13 +1,13 @@
 using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.Serialization.Formatters;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
     public float PlayerHP;
     public float PlayerMaxHP = 100f; //�÷��̾� �ִ� ü��
+    public int PlayerLife = 3;
 
     public float MoveSpeed;
     public float DashSpeed;
@@ -449,11 +449,19 @@ public class Player : MonoBehaviour
             curAbility.OnAbilityDestroyed(this); //�����Ƽ �ʱ�ȭ
         }
         PlayerHP -= Damage;
+        if(PlayerHP <= 0)
+        {
+            PlayerHP = 0;
+            Die_Player();
+        }
         if (health_Bar != null)
         {
             health_Bar.UpdateHealthBar(PlayerHP);
         }
-        AudioManager.Instance.RPC_PlaySFX("Damaged_Sound");
+        if (pView.IsMine)
+        {
+            AudioManager.Instance.RPC_PlaySFX("Damaged_Sound");
+        }
         stateMachine.ChangeState(damageState);  //�������°� ����
     }
 
@@ -492,13 +500,10 @@ public class Player : MonoBehaviour
     [PunRPC]
     public void KirbyForm() //Ŀ�� ���� ���� ���� ��ȣ�� ���� ���� ���� ����
     {
-        Debug.Log("KirbyFrom �����");
-
         switch (KirbyFormNum)
         {
             case 1: //���� ��
                 curAbility = gameObject.AddComponent<Ability_Eat>();
-                Debug.Log("���� ��");
                 break;
             case 2: //�ִϸ� ��
                 curAbility = gameObject.AddComponent<Ability_Animal>();
@@ -597,14 +602,14 @@ public class Player : MonoBehaviour
     {
         if (spriteRenderer == null)
             yield break;
-
+/*
         for (int i = 0; i < 2; i++)
         {
             spriteRenderer.color = Color.red;
             yield return new WaitForSeconds(0.1f);
             spriteRenderer.color = Color.white;
             yield return new WaitForSeconds(0.1f);
-        }
+        }*/
     }
 
 
@@ -623,4 +628,82 @@ public class Player : MonoBehaviour
         if (col != null) col.enabled = true;
     }
 
+    
+    public void Die_Player()
+    {
+        if (!pView.IsMine) return;
+        Animator animator = GetComponentInChildren<Animator>();
+        if (animator != null)
+        {
+            SpriteRenderer spriteRenderer = animator.GetComponent<SpriteRenderer>();
+            if (spriteRenderer != null)
+            {
+                Color originalColor = spriteRenderer.color; // 기존 색상 저장
+                StartCoroutine(FlickSprite(spriteRenderer, originalColor, 2f, 0.1f)); // 2초 동안 0.1초 간격으로 깜박임
+            }
+        }
+    }
+
+    IEnumerator FlickSprite(SpriteRenderer spriteRenderer, Color originalColor, float duration, float interval)
+    {
+        float elapsedTime = 0f;
+        bool isVisible = true;
+
+        while (elapsedTime < duration)
+        {
+            isVisible = !isVisible; // 가시성 토글
+            spriteRenderer.color = isVisible ? originalColor : new Color(originalColor.r, originalColor.g, originalColor.b, 0f); // 투명도 조정
+            yield return new WaitForSeconds(interval);
+            elapsedTime += interval;
+        }
+        this.gameObject.SetActive(false);
+        // 깜박임 종료 후 원래 색상 복원
+        spriteRenderer.color = originalColor;
+        ResurrectionPlayer();
+    }
+
+    public void ResurrectionPlayer()
+    {
+        if (PlayerLife > 0)
+        {
+            Transform resTransform = null;
+            PlayerLife--;
+            foreach (GameObject player in GameManager.Instance.playerList)
+            {
+                if (player.activeSelf && player.GetComponent<Player>() != this)
+                {
+                    resTransform = player.transform;
+                    resTransform.position += Vector3.up * 10f;
+                    break;
+                }
+            }
+            if (resTransform == null)
+            {
+                resTransform = GameManager.Instance.spwanTransform[GameManager.Instance.spwanTransform.Count - 1];
+            }
+
+            pView.RPC("Init_Player", RpcTarget.AllBuffered);
+            this.transform.position = resTransform.position;
+            this.gameObject.SetActive(true);
+
+        }
+        else
+        {
+            //게임오버
+            Debug.Log("게임오버");
+        }
+    }
+    [PunRPC]
+    public void Init_Player()
+    {
+        PlayerHP = PlayerMaxHP;
+        KirbyFormNum = 0;
+        EatKirbyFormNum = 0;
+
+        if (health_Bar != null)
+        {
+            health_Bar.UpdateHealthBar(PlayerHP);
+        }
+
+    }
 }

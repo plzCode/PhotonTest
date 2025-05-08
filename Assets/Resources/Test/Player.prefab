@@ -86,6 +86,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerHP: 100
   PlayerMaxHP: 100
+  PlayerLife: 3
   MoveSpeed: 3
   DashSpeed: 5
   JumpPower: 2.5

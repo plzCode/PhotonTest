@@ -111,6 +111,7 @@ public class PlayerAnimatorController : MonoBehaviour
     }
 
 
+
     [PunRPC]
     public void EatKirbyStarAttack()
     {
@@ -130,30 +131,6 @@ public class PlayerAnimatorController : MonoBehaviour
     public void SwordKirbyAttack()
     {
         RangedAttack(Attack, "Player_Effect/Attack2 Effect_0");
-    }
-
-    [PunRPC]
-    public void Sword_1_Sound()
-    {
-        AudioManager.Instance.RPC_PlaySFX("kirby_Sword_1");
-    }
-
-    [PunRPC]
-    public void Sword_2_Sound()
-    {
-        AudioManager.Instance.RPC_PlaySFX("kirby_Sword_2");
-    }
-
-    [PunRPC]
-    public void Sword_3_Sound()
-    {
-        AudioManager.Instance.RPC_PlaySFX("kirby_Sword_3");
-    }
-
-    [PunRPC]
-    public void Sword_4_Sound()
-    {
-        AudioManager.Instance.RPC_PlaySFX("kirby_Sword_4");
     }
 
 
@@ -214,4 +191,48 @@ public class PlayerAnimatorController : MonoBehaviour
             yield return null;
         }
     }
+
+
+
+
+
+    #region Audio
+
+    [PunRPC]
+    public void Animal_1_Sound()
+    {
+        AudioManager.Instance.RPC_PlaySFX("kirby_Animal_1");
+    }
+
+
+
+
+
+    [PunRPC]
+    public void Sword_1_Sound()
+    {
+        AudioManager.Instance.RPC_PlaySFX("kirby_Sword_1");
+    }
+
+    [PunRPC]
+    public void Sword_2_Sound()
+    {
+        AudioManager.Instance.RPC_PlaySFX("kirby_Sword_2");
+    }
+
+    [PunRPC]
+    public void Sword_3_Sound()
+    {
+        AudioManager.Instance.RPC_PlaySFX("kirby_Sword_3");
+    }
+
+    [PunRPC]
+    public void Sword_4_Sound()
+    {
+        AudioManager.Instance.RPC_PlaySFX("kirby_Sword_4");
+    }
+
+
+
+    #endregion
 }

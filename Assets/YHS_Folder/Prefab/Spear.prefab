@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 2643602043395809808}
   m_Layer: 0
   m_Name: Spear
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -148,6 +148,10 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 0
+  maxHp: 10
+  currentHp: 10
+  dieEffect: {fileID: 0}
+  spriteRenderer: {fileID: 0}
   knockbackDirection: {x: 0, y: 0}
   knockbackDuration: 0
   attackCheck: {fileID: 0}
@@ -162,12 +166,18 @@ MonoBehaviour:
   moveSpeed: 1.5
   idleTime: 2
   battleTime: 0
+  canAttacking: 0
   attackDistance: 0
   attackCooldown: 0
   attackPower: 0
   lastTimeAttacked: 0
   facingDir: 1
+  facingRight: 1
+  isJump: 0
+  stunDirection: {x: 0, y: 0}
+  hitTime: 0
   startRight: 1
+  photonView: {fileID: 0}
   throwDistance: 5
   spearPrefab: {fileID: 0}
 --- !u!114 &2643602043395809808
@@ -185,6 +195,10 @@ MonoBehaviour:
   Number: 2
   a: "1. \uCEE4\uBE44 \uBA39\uC740 \uD3FC"
   b: "2. \uCEE4\uBE44 \uC560\uB2C8\uBA40 \uD3FC"
+  c: "3. \uCEE4\uBE44 \uCEE4\uD130 \uD3FC"
+  d: "4. \uCEE4\uBE44 \uD050\uD53C\uB4DC \uD3FC"
+  e: "5. \uCEE4\uBE44 \uC2A4\uC6CC\uB4DC \uD3FC"
+  f: "6. \uCEE4\uBE44 \uD720 \uD3FC"
 --- !u!1 &2891360666939525787
 GameObject:
   m_ObjectHideFlags: 0

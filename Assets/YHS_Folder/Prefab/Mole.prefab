@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 4802329393386193487}
   m_Layer: 0
   m_Name: Mole
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -146,6 +146,10 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 0
+  maxHp: 10
+  currentHp: 10
+  dieEffect: {fileID: 0}
+  spriteRenderer: {fileID: 0}
   knockbackDirection: {x: 0, y: 0}
   knockbackDuration: 0
   attackCheck: {fileID: 0}
@@ -160,9 +164,18 @@ MonoBehaviour:
   moveSpeed: 10
   idleTime: 0
   battleTime: 0
+  canAttacking: 0
   attackDistance: 0
   attackCooldown: 0
+  attackPower: 0
   lastTimeAttacked: 0
+  facingDir: 1
+  facingRight: 1
+  isJump: 0
+  stunDirection: {x: 0, y: 0}
+  hitTime: 0
+  startRight: 1
+  photonView: {fileID: 0}
 --- !u!1 &6474128038098856396
 GameObject:
   m_ObjectHideFlags: 0
