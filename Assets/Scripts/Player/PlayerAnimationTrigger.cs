@@ -152,7 +152,7 @@ public class PlayerAnimatorController : MonoBehaviour
         }
 
         //player.EffectAdd(player.LastMove, rangeAttack, player.AirJumpOutEffectPos); //플레이어 한태서 공격 발사
-        player.pView.RPC("EffectAdd", RpcTarget.All, player.LastMove, rangeAttack.name, player.AirJumpOutEffectPos.position); //플레이어 한태서 공격 발사
+        player.pView.RPC("EffectForCutter", RpcTarget.All, player.LastMove, rangeAttack.name, player.AirJumpOutEffectPos.position); //플레이어 한태서 공격 발사
         Debug.Log(rangeAttack.name);
     }
 

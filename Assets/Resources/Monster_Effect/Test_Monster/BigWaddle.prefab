@@ -210,6 +210,8 @@ MonoBehaviour:
   stunDirection: {x: 2.5, y: 2.5}
   hitTime: 1.25
   startRight: 1
+  startPosition: {x: 0, y: 0, z: 0}
+  isFirstSpawn: 1
   photonView: {fileID: 0}
 --- !u!114 &5251315224108856524
 MonoBehaviour:

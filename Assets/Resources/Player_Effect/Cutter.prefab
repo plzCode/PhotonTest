@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 5750212262843837516}
   - component: {fileID: 4443525134377311598}
   - component: {fileID: 589165271786400628}
+  - component: {fileID: 1982545579702454667}
   m_Layer: 0
   m_Name: Cutter
   m_TagString: Untagged
@@ -207,7 +208,6 @@ MonoBehaviour:
   AttackDelay: 0
   AttackEnemy: 0
   ReturnPlayer: 0
-  tmpPlayer: {fileID: 0}
 --- !u!114 &5750212262843837516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,3 +264,19 @@ MonoBehaviour:
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &1982545579702454667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191848446042697673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowLayerWeightsInspector: 1
+  ShowParameterInspector: 1
+  m_SynchronizeParameters: []
+  m_SynchronizeLayers: []
