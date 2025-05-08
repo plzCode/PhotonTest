@@ -26,7 +26,8 @@ public class Sword_Attack2_Effect : PlayerRagedManager
 
     public void Update()
     {
-        if (!photonView.IsMine) return;
+        //if (!photonView.IsMine) return;
+        if (!PhotonNetwork.LocalPlayer.IsLocal) return;
 
         transform.Translate(speed * Time.deltaTime, 0, 0);
 

@@ -1,4 +1,5 @@
 using Photon.Pun;
+using System.Collections;
 using UnityEngine;
 
 public class Monster_Waddle : Enemy
@@ -44,8 +45,16 @@ public class Monster_Waddle : Enemy
             stateMachine.ChangeState(moveState);
         else if (stateName == "Hit")
             stateMachine.ChangeState(hitState);
+        else if (stateName == "ReSpawn")
+        {
+            MonsterSpawner.Instance.StartCoroutine(MonsterSpawner.Instance.ReSpawner(gameObject));
+        }
+            
+        
 
     }
+
+    
 
     [PunRPC]
     public override void TakeDamage(float _damage)
@@ -65,5 +74,22 @@ public class Monster_Waddle : Enemy
             photonView.RPC("ChangeState", RpcTarget.All,"Hit");
         }
         
+    }
+
+    private void OnEnable()
+    {
+        if (startRight && facingDir == -1)
+        {
+            Flip();
+        }
+        else if (!startRight && facingDir == 1)
+        {
+            Flip();
+        }
+
+        if (!isFirstSpawn)
+            transform.position = startPosition;
+        currentHp = maxHp;
+        stateMachine.Initialize(idleState);
     }
 }

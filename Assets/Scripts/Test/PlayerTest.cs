@@ -4,7 +4,7 @@ using UnityEngine;
 public class PlayerTest : MonoBehaviourPunCallbacks, IPunObservable
 {
     PhotonView playerView;
-
+    public string area;
     private void Start()
     {
         playerView = GetComponent<PhotonView>();
@@ -127,6 +127,13 @@ public class PlayerTest : MonoBehaviourPunCallbacks, IPunObservable
         // 인벤토리 등록
         GetComponent<Player>().inventory = inventoryScript;
         inventoryScript.player = GetComponent<Player>();
+    }
+
+    [PunRPC]
+    public void Setting_Area_Name(string area, int pViewId)
+    {
+
+        this.area = area;
     }
 }
 

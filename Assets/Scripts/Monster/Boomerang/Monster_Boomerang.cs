@@ -45,6 +45,10 @@ public class Monster_Boomerang : Enemy
             stateMachine.ChangeState(attackState);
         else if (stateName == "Hit")
             stateMachine.ChangeState(hitState);
+        else if (stateName == "ReSpawn")
+        {
+            MonsterSpawner.Instance.StartCoroutine(MonsterSpawner.Instance.ReSpawner(gameObject));
+        }
 
     }
 
@@ -103,8 +107,23 @@ public class Monster_Boomerang : Enemy
         //Instantiate(spearPrefab, transform.position, Quaternion.identity);
     }
 
-    
-    
+    private void OnEnable()
+    {
+        if (startRight && facingDir == -1)
+        {
+            Flip();
+        }
+        else if (!startRight && facingDir == 1)
+        {
+            Flip();
+        }
+
+        if (!isFirstSpawn)
+            transform.position = startPosition;
+        currentHp = maxHp;
+        stateMachine.Initialize(idleState);
+    }
+
     public void ThrowBoomerang()
     {
         

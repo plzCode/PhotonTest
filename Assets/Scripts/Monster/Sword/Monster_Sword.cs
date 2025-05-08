@@ -1,4 +1,5 @@
 using Photon.Pun;
+using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
 
 public class Monster_Sword : Enemy
@@ -40,8 +41,12 @@ public class Monster_Sword : Enemy
         if (stateName == "Idle" || stateName == "Move")
             stateMachine.ChangeState(moveState);
         else if (stateName == "Attack")
-            stateMachine.ChangeState(attackState);            
-        
+            stateMachine.ChangeState(attackState);
+        else if (stateName == "ReSpawn")
+        {
+            MonsterSpawner.Instance.StartCoroutine(MonsterSpawner.Instance.ReSpawner(gameObject));
+        }
+
     }
     [PunRPC]
     public void RequestAnimIntegerChange(string _boolName,int _integer)
@@ -91,7 +96,22 @@ public class Monster_Sword : Enemy
     {
         SetVelocity(dashSpeed * facingDir, rb.linearVelocity.y);
     }
+    private void OnEnable()
+    {
+        if(startRight && facingDir==-1)
+        {
+            Flip();
+        }
+        else if(!startRight && facingDir ==1)
+        {
+            Flip();
+        }
 
+        if (!isFirstSpawn)
+            transform.position = startPosition;
+        currentHp = maxHp;
+        stateMachine.Initialize(moveState);
+    }
     protected override void OnDrawGizmos()
     {
         base.OnDrawGizmos();

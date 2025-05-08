@@ -670,9 +670,10 @@ public class Player : MonoBehaviour
         {
             Transform resTransform = null;
             PlayerLife--;
+            string areaString = this.GetComponent<PlayerTest>().area;
             foreach (GameObject player in GameManager.Instance.playerList)
             {
-                if (player.activeSelf && player.GetComponent<Player>() != this)
+                if (player.activeSelf && player.GetComponent<Player>() != this && player.GetComponent<PlayerTest>().area.Equals(areaString))
                 {
                     resTransform = player.transform;
                     resTransform.position += Vector3.up * 10f;

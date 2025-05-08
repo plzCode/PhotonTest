@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c102456f7f152f4a8cd6cf2d661e44f, type: 3}
+  m_Name: Animal_Trophy_Bubble
+  m_EditorClassIdentifier: 
+  itemName: Animal_Trophy_Bubble
+  icon: {fileID: -8017714699139040919, guid: 25601b2de7e54fb42896b8c150943b69, type: 3}
+  description: "\uBCC0\uC2E0"
+  effectValue: 2
+  type: 1
+  isAutoUse: 0

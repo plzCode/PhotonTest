@@ -43,12 +43,13 @@ public class Cutter : PlayerRagedManager
     // 매 프레임마다 Cutter의 이동 및 상태를 업데이트합니다.
     public void Update()
     {
-        // Cutter가 살아있는 동안
+        if(!PhotonNetwork.LocalPlayer.IsLocal) return; // 현재 클라이언트가 소유하지 않은 객체는 업데이트하지 않음
+                                       // Cutter가 살아있는 동안
         if (lifeTime > 0)
         {
             lifeTime -= Time.deltaTime;  // 시간이 지나면서 수명이 감소합니다.
 
-            if (lifeTime <= 0f && photonView.IsMine && PhotonNetwork.IsMasterClient)
+            if (lifeTime <= 0f && PhotonNetwork.IsMasterClient)
             {
                 // 생명 주기가 끝나면 Cutter를 제거합니다.
                 PhotonNetwork.Destroy(gameObject);
@@ -57,23 +58,23 @@ public class Cutter : PlayerRagedManager
 
         if (!AttackEnemy)
         {
-            if (Input.GetKey(KeyCode.Mouse0) && !AttackEnemy)
+            if (Input.GetKey(KeyCode.Mouse0))
             {
                 if (Input.GetKey(KeyCode.W))
                 {
-                    // W 키를 누르면 위로 이동합니다.
+                    // W 키를 누르면 위로 이동
                     transform.Translate(0, 1f * Time.deltaTime, 0);
                 }
                 else if (Input.GetKey(KeyCode.S))
                 {
-                    // S 키를 누르면 아래로 이동합니다.
+                    // S 키를 누르면 아래로 이동
                     transform.Translate(0, -1f * Time.deltaTime, 0);
                 }
             }
-            transform.Translate(speed * Time.deltaTime, 0, 0);
-            // 속도를 점진적으로 감소시킵니다.
-            speed -= 10 * Time.deltaTime;
+            transform.Translate(speed * Time.deltaTime, 0, 0); // 오른쪽으로 이동
+            speed -= 10 * Time.deltaTime; // 속도 감소
         }
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

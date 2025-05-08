@@ -76,6 +76,8 @@ public class SpawnMannager : MonoBehaviourPun
         playerView.RPC("CreateHealthBar", RpcTarget.AllBuffered, actorNumber, viewID);
         // 인벤토리 UI 설정을 모든 클라이언트에서 실행
         playerView.RPC("CreateInventory", RpcTarget.AllBuffered, viewID);
+        // 플레이어의 Area string을 설정
+        playerView.RPC("Setting_Area_Name", RpcTarget.AllBuffered, "stage1", viewID);
 
     }
 
