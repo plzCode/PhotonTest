@@ -41,6 +41,9 @@ namespace Photon.Pun.Demo.Asteroids
         private Dictionary<string, GameObject> roomListEntries;
         private Dictionary<int, GameObject> playerListEntries;
 
+        [Header("Audio")]
+        public AudioSource sfxSource;
+
         #region UNITY
 
         public void Awake()
@@ -139,6 +142,7 @@ namespace Photon.Pun.Demo.Asteroids
                 {AsteroidsGame.PLAYER_LOADED_LEVEL, false}
             };
             PhotonNetwork.LocalPlayer.SetCustomProperties(props);
+            playSFX("UI_Select");
         }
 
         public override void OnLeftRoom()
@@ -214,6 +218,7 @@ namespace Photon.Pun.Demo.Asteroids
             }
 
             SetActivePanel(SelectionPanel.name);
+            playSFX("UI_Cancle");
         }
 
         public void OnCreateRoomButtonClicked()
@@ -228,6 +233,7 @@ namespace Photon.Pun.Demo.Asteroids
             RoomOptions options = new RoomOptions {MaxPlayers = maxPlayers, PlayerTtl = 10000 };
 
             PhotonNetwork.CreateRoom(roomName, options, null);
+            playSFX("UI_Select");
         }
 
         public void OnJoinRandomRoomButtonClicked()
@@ -235,11 +241,13 @@ namespace Photon.Pun.Demo.Asteroids
             SetActivePanel(JoinRandomRoomPanel.name);
 
             PhotonNetwork.JoinRandomRoom();
+            playSFX("UI_Select");
         }
 
         public void OnLeaveGameButtonClicked()
         {
             PhotonNetwork.LeaveRoom();
+            playSFX("UI_Cancle");
         }
 
         public void OnLoginButtonClicked()
@@ -260,6 +268,7 @@ namespace Photon.Pun.Demo.Asteroids
             {
                 Debug.LogError("Player Name is invalid.");
             }
+            playSFX("UI_Select");
         }
 
         public void OnRoomListButtonClicked()
@@ -270,6 +279,7 @@ namespace Photon.Pun.Demo.Asteroids
             }
 
             SetActivePanel(RoomListPanel.name);
+            playSFX("UI_Select");
         }
 
         public void OnStartGameButtonClicked()
@@ -280,6 +290,7 @@ namespace Photon.Pun.Demo.Asteroids
             this.gameObject.SetActive(false);
 
             PhotonNetwork.LoadLevel("GameScene");
+            playSFX("UI_Select");
         }
 
         #endregion
@@ -327,6 +338,10 @@ namespace Photon.Pun.Demo.Asteroids
 
         private void SetActivePanel(string activePanel)
         {
+            /*if(activePanel.Equals("CreateRoomPanel"))
+            {
+                playSFX("UI_Select");
+            }*/
             LoginPanel.SetActive(activePanel.Equals(LoginPanel.name));
             SelectionPanel.SetActive(activePanel.Equals(SelectionPanel.name));
             CreateRoomPanel.SetActive(activePanel.Equals(CreateRoomPanel.name));
@@ -373,6 +388,15 @@ namespace Photon.Pun.Demo.Asteroids
                 entry.GetComponent<RoomListEntry>().Initialize(info.Name, (byte)info.PlayerCount, (byte)info.MaxPlayers);
 
                 roomListEntries.Add(info.Name, entry);
+            }
+        }
+
+        private void playSFX(string sfx)
+        {
+            if (sfxSource != null)
+            {
+                sfxSource.clip = Resources.Load<AudioClip>("Audio/SFX/" + sfx);
+                sfxSource.Play();
             }
         }
     }

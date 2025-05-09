@@ -2343,7 +2343,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.545
+  m_Volume: 0.309
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4524,6 +4524,7 @@ MonoBehaviour:
   InsideRoomPanel: {fileID: 1669547782}
   StartGameButton: {fileID: 2122937713}
   PlayerListEntryPrefab: {fileID: 195212, guid: d68bf8413681d9b4aa7328277e632e3f, type: 3}
+  sfxSource: {fileID: 76887091}
 --- !u!114 &1625876244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5751,8 +5752,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 576399718}
   - {fileID: 76887090}
+  - {fileID: 576399718}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2065341273
