@@ -500,8 +500,7 @@ public class Player : MonoBehaviour
             AudioManager.Instance.RPC_PlaySFX("Damaged_Sound");
         }
         stateMachine.ChangeState(damageState);  //�������°� ����
-
-        pView.RPC("RPC_HitFlash", RpcTarget.All);
+                
         //pView.RPC("RPC_StartNoDamage", RpcTarget.All, 2f, 0.2f);
         StartCoroutine(NoDamage(2f, 0.2f));
     }
@@ -730,22 +729,26 @@ public class Player : MonoBehaviour
     {
         if (PlayerLife > 0)
         {
-            Transform resTransform = null;
+            
             PlayerLife--;
+
+            Vector3 resPosition = Vector3.zero;
+            bool foundPlayer = false;
+
             string areaString = this.GetComponent<PlayerTest>().area;
             foreach (GameObject player in GameManager.Instance.playerList)
             {
                 if (player.activeSelf && player.GetComponent<Player>() != this && player.GetComponent<PlayerTest>().area.Equals(areaString))
                 {
-                    resTransform = player.transform;
-                    resTransform.position += Vector3.up * 3f;
+                    resPosition = player.transform.position + Vector3.up * 6f;
+                    foundPlayer = true;
                     break;
                 }
             }
-            if (resTransform == null)
+            if (!foundPlayer)
             {
                 SavePoint savePoint = GameManager.Instance.spwanTransform;
-                resTransform = savePoint.transform;
+                resPosition = savePoint.transform.position; 
                 Debug.Log(savePoint.areaName + " : " + GetComponent<PlayerTest>().area + "!!!!!!!!");
                 if (savePoint.areaName != GetComponent<PlayerTest>().area)
                 {
@@ -758,7 +761,7 @@ public class Player : MonoBehaviour
             }
 
             Init_Player();
-            this.transform.position = resTransform.position;
+            this.transform.position = resPosition;
             this.gameObject.SetActive(true);
             
 
