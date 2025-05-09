@@ -124,6 +124,7 @@ MonoBehaviour:
   attackCheck: {fileID: 7561445261509129977}
   pView: {fileID: 0}
   health_Bar: {fileID: 0}
+  lifeNum: {fileID: 0}
   inventory: {fileID: 0}
   commandInput: {fileID: 0}
   CutterUpgrade: 0

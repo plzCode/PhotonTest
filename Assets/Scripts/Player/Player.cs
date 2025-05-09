@@ -82,6 +82,7 @@ public class Player : MonoBehaviour
     public PlayerEatState eatState { get; private set; }
 
     public PlayerDamageState damageState { get; private set; }
+    public PlayerDieState dieState { get; private set; }
 
     public PlayerChageFormState changeFormState { get; private set; }
 
@@ -98,6 +99,8 @@ public class Player : MonoBehaviour
 
     //UI
     public Health_Bar health_Bar;
+    //life
+    public LifeNum lifeNum;
     //Inventory
     public Inventory inventory;
     //Command
@@ -138,8 +141,10 @@ public class Player : MonoBehaviour
         eatState = new PlayerEatState(this, stateMachine, "Eat");
 
         damageState = new PlayerDamageState(this, stateMachine, "Damage");
+        dieState =new PlayerDieState(this, stateMachine, "Die");
 
         changeFormState = new PlayerChageFormState(this, stateMachine, "ChangeForm");
+
 
         pView = GetComponent<PhotonView>();
         commandInput = GetComponent<CommandInput>();
@@ -491,6 +496,10 @@ public class Player : MonoBehaviour
             isBusy = true;
             Die_Player();
         }
+        else
+        {
+            stateMachine.ChangeState(damageState);
+        }
         if (health_Bar != null)
         {
             health_Bar.UpdateHealthBar(PlayerHP);
@@ -499,7 +508,7 @@ public class Player : MonoBehaviour
         {
             AudioManager.Instance.RPC_PlaySFX("Damaged_Sound");
         }
-        stateMachine.ChangeState(damageState);  //�������°� ����
+          //�������°� ����
                 
         //pView.RPC("RPC_StartNoDamage", RpcTarget.All, 2f, 0.2f);
         StartCoroutine(NoDamage(2f, 0.2f));
@@ -691,7 +700,7 @@ public class Player : MonoBehaviour
         isInvincible = false;
     }
 
-    
+
     public void Die_Player()
     {
 
@@ -705,6 +714,7 @@ public class Player : MonoBehaviour
                 StartCoroutine(FlickSprite(spriteRenderer, originalColor, 2f, 0.1f)); // 2초 동안 0.1초 간격으로 깜박임 <<이거 RPC화 시켜야함
             }
         }
+        stateMachine.ChangeState(dieState); //죽는 애니메이션
     }
 
     IEnumerator FlickSprite(SpriteRenderer spriteRenderer, Color originalColor, float duration, float interval)
@@ -729,8 +739,12 @@ public class Player : MonoBehaviour
     {
         if (PlayerLife > 0)
         {
-            
+
             PlayerLife--;
+            if (lifeNum != null)
+            {
+                lifeNum.UpdateLifeNum(PlayerLife);
+            }
 
             Vector3 resPosition = Vector3.zero;
             bool foundPlayer = false;
@@ -748,44 +762,31 @@ public class Player : MonoBehaviour
             if (!foundPlayer)
             {
                 SavePoint savePoint = GameManager.Instance.spwanTransform;
-
-                GetComponent<PlayerTest>().currentDoor.stageSpawner.ActFalseWithChildren();
-
-                resPosition = savePoint.transform.position; 
-                Debug.Log(savePoint.areaName + " : " + GetComponent<PlayerTest>().area + "!!!!!!!!");
-                if (savePoint.areaName != GetComponent<PlayerTest>().area)
+                if (savePoint != null)
                 {
-
-                    //카메라 설정
-                    GetComponent<PlayerTest>().area = savePoint.areaName;
-                    CinemachineConfiner2D tmpCam = GameObject.Find("PlayerCamera").GetComponent<CinemachineConfiner2D>();                    
-                    if (pView.IsMine)
+                    resPosition = savePoint.transform.position;
+                    Debug.Log(savePoint.areaName + " : " + GetComponent<PlayerTest>().area + "!!!!!!!!");
+                    if (savePoint.areaName != GetComponent<PlayerTest>().area)
                     {
+                        //카메라 설정
+                        GetComponent<PlayerTest>().area = savePoint.areaName;
+                        CinemachineConfiner2D tmpCam = GameObject.Find("PlayerCamera").GetComponent<CinemachineConfiner2D>();
                         tmpCam.BoundingShape2D = savePoint.confinderArea;
                     }
-
-
-                    bool stageFoundPlayer=false;
-                    foreach (GameObject player in GameManager.Instance.playerList)
-                    {
-                        if (player.activeSelf && player.GetComponent<Player>() != this && player.GetComponent<PlayerTest>().area.Equals(areaString))
-                        {
-                            stageFoundPlayer = true;
-                            break;
-                        }
-                    }
-                    if (!stageFoundPlayer)
-                    {
-                        savePoint.monsterSpawner.DeactivateSelfAndChildren();
-                    }
                 }
-                
+                else
+                {
+                    resPosition = GameObject.Find("SpawPoint").transform.position;
+                }
+
             }
+
 
             Init_Player();
             this.transform.position = resPosition;
             this.gameObject.SetActive(true);
-            
+            stateMachine.ChangeState(idleState);
+
 
         }
         else
@@ -797,7 +798,7 @@ public class Player : MonoBehaviour
     }
     public void Init_Player()
     {
-        
+
         PlayerHP = PlayerMaxHP;
         KirbyFormNum = 0;
         EatKirbyFormNum = 0;

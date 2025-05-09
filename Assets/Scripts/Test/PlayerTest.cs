@@ -96,6 +96,12 @@ public class PlayerTest : MonoBehaviourPunCallbacks, IPunObservable
         healthBarScript.SetPlayer(player);
         player.health_Bar = healthBarScript;
         healthBarScript.player = player; // 플레이어 스크립트와 연결
+        
+        // LifeNum 설정
+        LifeNum lifenum = healthBar.GetComponentInChildren<LifeNum>();
+        lifenum.SetPlayer(player);
+        player.lifeNum = lifenum;
+        lifenum.UpdateLifeNum(player.PlayerLife);
     }
 
     [PunRPC]
