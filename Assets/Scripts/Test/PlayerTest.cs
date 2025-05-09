@@ -5,6 +5,7 @@ public class PlayerTest : MonoBehaviourPunCallbacks, IPunObservable
 {
     PhotonView playerView;
     public string area;
+    public Door currentDoor;
     private void Start()
     {
         playerView = GetComponent<PhotonView>();
@@ -130,10 +131,11 @@ public class PlayerTest : MonoBehaviourPunCallbacks, IPunObservable
     }
 
     [PunRPC]
-    public void Setting_Area_Name(string area, int pViewId)
+    public void Setting_Area_Name(string area, int pViewId,string doorName)
     {
 
         this.area = area;
+        currentDoor = GameObject.Find(doorName).GetComponent<Door>();
     }
 
 }

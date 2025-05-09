@@ -88,6 +88,8 @@ public class MonsterSpawner : MonoBehaviour
             if (monster != null)
                 monster.SetActive(false);
         }
+
+        StopAllCoroutines();
                 
     }
 }

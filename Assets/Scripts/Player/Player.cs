@@ -748,14 +748,36 @@ public class Player : MonoBehaviour
             if (!foundPlayer)
             {
                 SavePoint savePoint = GameManager.Instance.spwanTransform;
+
+                GetComponent<PlayerTest>().currentDoor.stageSpawner.ActFalseWithChildren();
+
                 resPosition = savePoint.transform.position; 
                 Debug.Log(savePoint.areaName + " : " + GetComponent<PlayerTest>().area + "!!!!!!!!");
                 if (savePoint.areaName != GetComponent<PlayerTest>().area)
                 {
+
                     //카메라 설정
                     GetComponent<PlayerTest>().area = savePoint.areaName;
-                    CinemachineConfiner2D tmpCam = GameObject.Find("PlayerCamera").GetComponent<CinemachineConfiner2D>();
-                    tmpCam.BoundingShape2D = savePoint.confinderArea;
+                    CinemachineConfiner2D tmpCam = GameObject.Find("PlayerCamera").GetComponent<CinemachineConfiner2D>();                    
+                    if (pView.IsMine)
+                    {
+                        tmpCam.BoundingShape2D = savePoint.confinderArea;
+                    }
+
+
+                    bool stageFoundPlayer=false;
+                    foreach (GameObject player in GameManager.Instance.playerList)
+                    {
+                        if (player.activeSelf && player.GetComponent<Player>() != this && player.GetComponent<PlayerTest>().area.Equals(areaString))
+                        {
+                            stageFoundPlayer = true;
+                            break;
+                        }
+                    }
+                    if (!stageFoundPlayer)
+                    {
+                        savePoint.monsterSpawner.DeactivateSelfAndChildren();
+                    }
                 }
                 
             }

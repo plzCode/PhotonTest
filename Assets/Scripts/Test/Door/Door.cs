@@ -41,7 +41,7 @@ public class Door : MonoBehaviour
         {
             if (playersInRange.GetComponent<PlayerTest>() != null)
             {
-                playersInRange.GetComponent<Player>().pView.RPC("Setting_Area_Name", RpcTarget.AllBuffered, area, playersInRange.GetComponent<Player>().pView.ViewID);
+                playersInRange.GetComponent<Player>().pView.RPC("Setting_Area_Name", RpcTarget.AllBuffered, area, playersInRange.GetComponent<Player>().pView.ViewID,Linked_Door.gameObject.name);
                 //playersInRange.GetComponent<PlayerTest>().Setting_Area_Name(area, playersInRange.GetComponent<Player>().pView.ViewID);
             }
             StartCoroutine(TeleportPlayerCoroutine(playersInRange));
@@ -75,6 +75,8 @@ public class Door : MonoBehaviour
 
         if (player != null)
         {
+            
+
             PhotonView photonView = player.GetComponent<PhotonView>();
             if (photonView != null && photonView.IsMine)
             {
@@ -115,6 +117,7 @@ public class Door : MonoBehaviour
 
 
                 Debug.Log(player.name + "이(가) " + Linked_Door.name + "로 이동했습니다.");
+                
 
                 // 3. 페이드 인
                 if (screenFader != null)

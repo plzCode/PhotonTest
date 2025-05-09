@@ -7,11 +7,33 @@ public class SavePoint : MonoBehaviour
     public bool isTriggered = false;
     public string areaName = "";
     public PolygonCollider2D confinderArea;
+    public MonsterSpawner monsterSpawner;
 
 
     public void Start()
     {
         if(confinderArea != null) areaName = confinderArea.name;
+
+
+        // 1. 부모 오브젝트(Stage1_Group) 찾기
+        GameObject parent = GameObject.Find(areaName + "_Group");
+        if (parent != null)
+        {
+            // 2. 자식 오브젝트(Stage1_Spawner) 찾기
+            Transform child = parent.transform.Find(areaName + "_Spawner");
+            if (child != null)
+            {
+                monsterSpawner = child.GetComponent<MonsterSpawner>();
+            }
+            else
+            {
+                Debug.LogWarning("자식 스포너 오브젝트를 찾을 수 없습니다: " + areaName + "_Spawner");
+            }
+        }
+        else
+        {
+            Debug.LogWarning("부모 그룹 오브젝트를 찾을 수 없습니다: " + areaName + "_Group");
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

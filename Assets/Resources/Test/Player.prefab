@@ -145,6 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   area: 
+  currentDoor: {fileID: 0}
 --- !u!114 &2358070428936542936
 MonoBehaviour:
   m_ObjectHideFlags: 0
