@@ -98,6 +98,8 @@ public class Player : MonoBehaviour
 
     //UI
     public Health_Bar health_Bar;
+    //life
+    public LifeNum lifeNum;
     //Inventory
     public Inventory inventory;
     //Command
@@ -691,7 +693,7 @@ public class Player : MonoBehaviour
         isInvincible = false;
     }
 
-    
+
     public void Die_Player()
     {
 
@@ -729,8 +731,12 @@ public class Player : MonoBehaviour
     {
         if (PlayerLife > 0)
         {
-            
+
             PlayerLife--;
+            if (lifeNum != null)
+            {
+                lifeNum.UpdateLifeNum(PlayerLife);
+            }
 
             Vector3 resPosition = Vector3.zero;
             bool foundPlayer = false;
@@ -748,44 +754,30 @@ public class Player : MonoBehaviour
             if (!foundPlayer)
             {
                 SavePoint savePoint = GameManager.Instance.spwanTransform;
-
-                GetComponent<PlayerTest>().currentDoor.stageSpawner.ActFalseWithChildren();
-
-                resPosition = savePoint.transform.position; 
-                Debug.Log(savePoint.areaName + " : " + GetComponent<PlayerTest>().area + "!!!!!!!!");
-                if (savePoint.areaName != GetComponent<PlayerTest>().area)
+                if (savePoint != null)
                 {
-
-                    //카메라 설정
-                    GetComponent<PlayerTest>().area = savePoint.areaName;
-                    CinemachineConfiner2D tmpCam = GameObject.Find("PlayerCamera").GetComponent<CinemachineConfiner2D>();                    
-                    if (pView.IsMine)
+                    resPosition = savePoint.transform.position;
+                    Debug.Log(savePoint.areaName + " : " + GetComponent<PlayerTest>().area + "!!!!!!!!");
+                    if (savePoint.areaName != GetComponent<PlayerTest>().area)
                     {
+                        //카메라 설정
+                        GetComponent<PlayerTest>().area = savePoint.areaName;
+                        CinemachineConfiner2D tmpCam = GameObject.Find("PlayerCamera").GetComponent<CinemachineConfiner2D>();
                         tmpCam.BoundingShape2D = savePoint.confinderArea;
                     }
-
-
-                    bool stageFoundPlayer=false;
-                    foreach (GameObject player in GameManager.Instance.playerList)
-                    {
-                        if (player.activeSelf && player.GetComponent<Player>() != this && player.GetComponent<PlayerTest>().area.Equals(areaString))
-                        {
-                            stageFoundPlayer = true;
-                            break;
-                        }
-                    }
-                    if (!stageFoundPlayer)
-                    {
-                        savePoint.monsterSpawner.DeactivateSelfAndChildren();
-                    }
                 }
-                
+                else
+                {
+                    resPosition = GameObject.Find("SpawPoint").transform.position;
+                }
+
             }
+
 
             Init_Player();
             this.transform.position = resPosition;
             this.gameObject.SetActive(true);
-            
+
 
         }
         else
@@ -797,7 +789,7 @@ public class Player : MonoBehaviour
     }
     public void Init_Player()
     {
-        
+
         PlayerHP = PlayerMaxHP;
         KirbyFormNum = 0;
         EatKirbyFormNum = 0;
