@@ -9,14 +9,18 @@ public class EatKirbyAttack : PlayerRagedManager
 
     void Update()
     {
-        if (!photonView.IsMine) return;
+        //if (!photonView.IsMine) return;
 
         transform.Translate(moveSpeed * Time.deltaTime, 0, 0);
         timer += Time.deltaTime;
 
         if (timer > lifeTime)
         {
-            PhotonNetwork.Destroy(gameObject);
+            if(PhotonNetwork.IsMasterClient)
+            {
+                PhotonNetwork.Destroy(gameObject);
+            }
+            
         }
     }
 

@@ -579,8 +579,15 @@ public class Player : MonoBehaviour
     }
 
     [PunRPC]
-    public void Change_Animator_Controller(int playerViewID)
+    public void ChangeState()
     {
+        stateMachine.ChangeState(curAbility.GetComponent<Ability_Eat>().attackState);
+    }
+
+
+    [PunRPC]
+    public void Change_Animator_Controller(int playerViewID)
+    {        
         PhotonView playerView = PhotonView.Find(playerViewID);
         if (playerView == null)
         {

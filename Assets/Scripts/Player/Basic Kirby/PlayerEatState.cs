@@ -9,7 +9,7 @@ public class PlayerEatState : PlayerState
 
     public override void Enter()
     {
-        base.Enter();
+        base.Enter();        
         AudioManager.Instance.RPC_PlaySFX("Eat_Sound");
     }
 
@@ -18,8 +18,13 @@ public class PlayerEatState : PlayerState
         base.Exit();
         //pView.RPC("KirbyForm", RpcTarget.All); //먹는중인 커비로 변신
         Debug.Log("EatState.cs");
-        player.KirbyForm();
-            //player.KirbyFrom(); //먹는중인 커비로 변신
+        //player.KirbyForm();
+        if (PhotonNetwork.IsMasterClient)
+        {
+            pView.RPC("KirbyForm", RpcTarget.All); //먹는중인 커비로 변신
+        }
+        
+        //player.KirbyFrom(); //먹는중인 커비로 변신
     }
 
     public override void Update()
