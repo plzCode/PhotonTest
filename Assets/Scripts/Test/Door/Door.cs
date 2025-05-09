@@ -17,6 +17,8 @@ public class Door : MonoBehaviour
     public PolygonCollider2D confinderArea;
     string area = "";
 
+    public MonsterSpawner stageSpawner;
+
     private void Awake()
     {
         col = GetComponent<Collider2D>();
@@ -76,7 +78,7 @@ public class Door : MonoBehaviour
             PhotonView photonView = player.GetComponent<PhotonView>();
             if (photonView != null && photonView.IsMine)
             {
-                
+
                 // 1. 페이드 아웃
                 if (screenFader != null)
                 {
@@ -97,10 +99,20 @@ public class Door : MonoBehaviour
                     tmpCam.BoundingShape2D = confinderArea;
                 }
 
-                if (PhotonNetwork.IsMasterClient)
+                Debug.Log("Current Area Name : " + Linked_Door.area + " = " + GameManager.Instance.GetAreaPlayer(Linked_Door.area));
+                Debug.Log("Next Area Name" + area + " = " + GameManager.Instance.GetAreaPlayer(area));
+
+
+
+                if (GameManager.Instance.GetAreaPlayer(area) == 1) // 이동할층
                 {
-                    Debug.Log("Area Name : " + area + " = " + GameManager.Instance.GetAreaPlayer(player.GetComponent<PlayerTest>().area));
+                    Linked_Door.stageSpawner.photonView.RPC("DeactivateSelfAndChildren", RpcTarget.All);
                 }
+                if (GameManager.Instance.GetAreaPlayer(Linked_Door.area) == 0) //현재층
+                {
+                    stageSpawner.photonView.RPC("ActFalseWithChildren", RpcTarget.All);
+                }
+
 
                 Debug.Log(player.name + "이(가) " + Linked_Door.name + "로 이동했습니다.");
 
