@@ -1,4 +1,5 @@
 using Photon.Pun;
+using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
 
 public class Monster_Wheel : Enemy
@@ -42,7 +43,14 @@ public class Monster_Wheel : Enemy
             stateMachine.ChangeState(turnState);
         else if (stateName == "Hit")
             stateMachine.ChangeState(hitState);
-
+        else if (stateName == "ReSpawn")
+        {
+            if (PhotonNetwork.IsMasterClient)
+            {
+                // 몬스터 리스폰 처리
+                monsterSpawner.photonView.RPC("ReSpawnRPC", RpcTarget.All, photonView.ViewID);                
+            }
+        }
     }
 
     [PunRPC]
@@ -72,5 +80,23 @@ public class Monster_Wheel : Enemy
         {
             photonView.RPC("ChangeState", RpcTarget.All, "Move");
         }
+    }
+    private void OnEnable()
+    {
+        if (startRight && facingDir == -1)
+        {
+            Flip();
+        }
+        else if (!startRight && facingDir == 1)
+        {
+            Flip();
+        }
+
+        if (!isFirstSpawn)
+        {
+            transform.position = startPosition;
+            stateMachine.Initialize(moveState);
+        }
+        currentHp = maxHp;
     }
 }

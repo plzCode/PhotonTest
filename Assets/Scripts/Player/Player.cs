@@ -173,14 +173,18 @@ public class Player : MonoBehaviour
         {
             if (curAbility != null)
             {
-                EffectAdd(-1 * LastMove, DamageStar.name, transform.position);
-                curAbility.OnAbilityDestroyed(this);
-                Destroy(curAbility);
+                pView.RPC("DropAbility", RpcTarget.All, -1 * LastMove, DamageStar.name, transform.position);
             }
 
         }
     }
-
+    [PunRPC]
+    public void DropAbility(float _x, string Effect, Vector3 pos)
+    {
+        EffectAdd(_x, Effect, pos);
+        curAbility.OnAbilityDestroyed(this);
+        Destroy(curAbility);
+    }
 
 
 
@@ -426,7 +430,7 @@ public class Player : MonoBehaviour
         Debug.Log(enemy.name + " : " + eView.ViewID);
         this.EatKirbyFormNum = enemy.GetComponent<EnemyNumber>().Number;
         this.KirbyFormNum = 1; //�Դ� Ŀ��� ����
-        Debug.Log(this.GetComponent<PhotonView>().ViewID + "�� ���� ����"); //���� ����
+        
         this.stateMachine.ChangeState(this.eatState); //�÷��̾� �������            
                                                       //PlayerEetState���� ���� �Լ� ��
 
@@ -463,8 +467,7 @@ public class Player : MonoBehaviour
         if (isInvincible)
             return; //�������¸� ����
 
-        pView.RPC("RPC_HitFlash", RpcTarget.All);
-        pView.RPC("RPC_StartNoDamage", RpcTarget.All, 2f , 0.2f);
+        
 
         if (transform.position.x > EnemyAttackPos.x)
         {
@@ -497,6 +500,10 @@ public class Player : MonoBehaviour
             AudioManager.Instance.RPC_PlaySFX("Damaged_Sound");
         }
         stateMachine.ChangeState(damageState);  //�������°� ����
+
+        pView.RPC("RPC_HitFlash", RpcTarget.All);
+        //pView.RPC("RPC_StartNoDamage", RpcTarget.All, 2f, 0.2f);
+        NoDamage(2f, 0.2f);
     }
 
     [PunRPC]

@@ -115,6 +115,7 @@ MonoBehaviour:
   - ReSpawnRPC
   - NoDamage
   - RPC_StartNoDamage
+  - DropAbility
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
