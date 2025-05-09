@@ -27,10 +27,10 @@ public class MonsterSpawner : MonoBehaviour
 
     private void Start()
     {
-        if (PhotonNetwork.IsMasterClient)
-        {
-            StartCoroutine(DelayedDeactivateCall());
-        }
+        //if (PhotonNetwork.IsMasterClient)
+        //{
+        //    StartCoroutine(DelayedDeactivateCall());
+        //}
 
     }
     private IEnumerator DelayedDeactivateCall()
@@ -77,5 +77,17 @@ public class MonsterSpawner : MonoBehaviour
             if (monster != null)
                 monster.SetActive(true);
         }
+    }
+
+    [PunRPC]
+    public void ActFalseWithChildren()
+    {
+        // 모든 몬스터를 먼저 비활성화
+        foreach (GameObject monster in monsterGroup)
+        {
+            if (monster != null)
+                monster.SetActive(false);
+        }
+                
     }
 }
