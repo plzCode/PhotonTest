@@ -13,10 +13,11 @@ public class DDD_AirJumpState : BossState
     {
         base.Enter();
 
-        if (!PhotonNetwork.IsMasterClient)
-            return;
+        
 
         boss.SetVelocity(2f * boss.facingDir, 15f);
+        if (!PhotonNetwork.IsMasterClient)
+            return;
     }
 
     public override void Exit()
@@ -30,13 +31,15 @@ public class DDD_AirJumpState : BossState
 
         JumpTime += Time.deltaTime;
 
-        if (!PhotonNetwork.IsMasterClient)
-            return;
+        
 
         if (JumpTime >= 0.5f)
         {
-            boss.photonView.RPC("ChangeState", RpcTarget.All, "Air_Jumping");
+            
             JumpTime = 0f;
+            if (!PhotonNetwork.IsMasterClient)
+                return;
+            boss.photonView.RPC("ChangeState", RpcTarget.All, "Air_Jumping");
         }
     }
 }

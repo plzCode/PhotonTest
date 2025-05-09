@@ -22,11 +22,11 @@ public class DDD_Attack1State : BossState
     {
         base.Update();
 
-        if (!PhotonNetwork.IsMasterClient)
-            return;
+        
 
         boss.SetVelocity(7f * boss.facingDir, 0f);
-
+        if (!PhotonNetwork.IsMasterClient)
+            return;
         if (Mathf.Abs(closestPlayer.position.x - boss.transform.position.x) <= 4f)
         {
             boss.photonView.RPC("ChangeState", RpcTarget.All, "Attack");

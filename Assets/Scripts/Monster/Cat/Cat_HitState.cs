@@ -53,6 +53,7 @@ public class Cat_HitState : EnemyState
             if (enemy.currentHp <= 0)
             {
                 enemy.photonView.RPC("Die", RpcTarget.All);
+                enemy.photonView.RPC("ChangeState", Photon.Pun.RpcTarget.All, "ReSpawn");
             }
             else
             {

@@ -198,7 +198,7 @@ GameObject:
   - component: {fileID: 4998991705178418710}
   - component: {fileID: 4520189856175577874}
   - component: {fileID: 2086713513853680664}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Waddle
   m_TagString: Enemy
   m_Icon: {fileID: 0}

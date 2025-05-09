@@ -47,7 +47,19 @@ public class Monster_Cat : Enemy
             stateMachine.ChangeState(hitState);
         else if (stateName == "MoveDown")
             stateMachine.ChangeState(moveDownState);
+        else if (stateName == "ReSpawn")
+        {
+            if (PhotonNetwork.IsMasterClient)
+            {
+                if (monsterSpawner != null)
+                    monsterSpawner.photonView.RPC("ReSpawnRPC", RpcTarget.All, photonView.ViewID);
+                else
+                {
+                    PhotonNetwork.Destroy(gameObject);
+                }
 
+            }
+        }
     }
 
     [PunRPC]

@@ -172,4 +172,9 @@ public class Boss_Bonkers : Enemy
         }
     }
 
+    private void OnEnable()
+    {
+        UpdateCurrentPlayersCollision();
+    }
+
 }

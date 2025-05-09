@@ -31,16 +31,21 @@ public class DDD_AirJumpingState : BossState
         JumpTime += Time.deltaTime;
         JumpOutTime += Time.deltaTime;
 
-        if (!PhotonNetwork.IsMasterClient)
-            return;
+        
 
         boss.SetVelocity(2f * boss.facingDir, rb.linearVelocityY);
 
         if (JumpTime >= 0.7f)
         {
-            boss.SetVelocity(rb.linearVelocityX, 7f);
             JumpTime = 0f;
+            if (!PhotonNetwork.IsMasterClient)
+                return;
+            boss.SetVelocity(rb.linearVelocityX, 7f);
+            
         }
+        if (!PhotonNetwork.IsMasterClient)
+            return;
+
 
         if (Mathf.Abs(closestPlayer.position.x - boss.transform.position.x) <= 1f)
         {

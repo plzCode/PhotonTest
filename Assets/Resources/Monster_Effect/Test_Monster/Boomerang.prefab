@@ -231,7 +231,7 @@ GameObject:
   - component: {fileID: 8556154767824313396}
   - component: {fileID: 335073829800003035}
   - component: {fileID: 2762196266325954677}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Boomerang
   m_TagString: Enemy
   m_Icon: {fileID: 0}

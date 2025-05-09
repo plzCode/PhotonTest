@@ -198,7 +198,7 @@ GameObject:
   - component: {fileID: 4998991705178418710}
   - component: {fileID: 4520189856175577874}
   - component: {fileID: 2086713513853680664}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Waddle
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -331,6 +331,9 @@ MonoBehaviour:
   stunDirection: {x: 3, y: 3}
   hitTime: 1.5
   startRight: 1
+  startPosition: {x: 0, y: 0, z: 0}
+  isFirstSpawn: 1
+  monsterSpawner: {fileID: 0}
   photonView: {fileID: 0}
 --- !u!114 &3506203188874828386
 MonoBehaviour:

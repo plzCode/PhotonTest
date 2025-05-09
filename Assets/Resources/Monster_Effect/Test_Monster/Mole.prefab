@@ -181,7 +181,7 @@ GameObject:
   - component: {fileID: 2355939290963060175}
   - component: {fileID: 2676428150496672760}
   - component: {fileID: 6231105025331233116}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Mole
   m_TagString: Enemy
   m_Icon: {fileID: 0}

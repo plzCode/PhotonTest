@@ -77,7 +77,7 @@ GameObject:
   - component: {fileID: 5251315224108856524}
   - component: {fileID: 2641154295242145925}
   - component: {fileID: 5158584017730951551}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BigWaddle
   m_TagString: Enemy
   m_Icon: {fileID: 0}

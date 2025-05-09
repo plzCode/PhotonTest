@@ -30,8 +30,7 @@ public class DDD_Attack2State : BossState
         base.Update();
 
 
-        if (!PhotonNetwork.IsMasterClient)
-            return;
+        
 
 
         if (isJumping)
@@ -53,11 +52,15 @@ public class DDD_Attack2State : BossState
         if (Mathf.Abs(closestPlayer.position.x - boss.transform.position.x) <= 3f)
         {
             boss.SetVelocity(boss.facingDir, -5f);
+            if (!PhotonNetwork.IsMasterClient)
+                return;
             boss.photonView.RPC("ChangeState", RpcTarget.All, "Attack");
         }
 
         if (boss.IsGroundDetected())
         {
+            if (!PhotonNetwork.IsMasterClient)
+                return;
             boss.photonView.RPC("ChangeState", RpcTarget.All, "Idle");
         }
     }

@@ -31,8 +31,7 @@ public class DDD_JumpState : BossState
     {
         base.Update();
 
-        if (!PhotonNetwork.IsMasterClient)
-            return;
+        
 
 
         if (isJumping)
@@ -50,6 +49,8 @@ public class DDD_JumpState : BossState
 
             isJumping = false;
         }
+        if (!PhotonNetwork.IsMasterClient)
+            return;
 
         if (boss.IsGroundDetected())
         {

@@ -202,4 +202,9 @@ public class Boss_DDD : Enemy
             PhotonNetwork.Instantiate("Monster_Effect/Test_Monster/" + MonsterName, spawnPosition, Quaternion.identity);
         }
     }
+    private void OnEnable()
+    {
+        UpdateCurrentPlayersCollision();
+    }
+
 }

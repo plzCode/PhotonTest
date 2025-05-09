@@ -15,7 +15,8 @@ GameObject:
   - component: {fileID: 918851917780751076}
   - component: {fileID: -3392500113914449728}
   - component: {fileID: 2528974759657261692}
-  m_Layer: 0
+  - component: {fileID: -4336241034728289238}
+  m_Layer: 7
   m_Name: Bomb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -227,3 +228,22 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0.056143563, y: -0.088225484}
   m_Radius: 0.46
+--- !u!114 &-4336241034728289238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7672715142142705170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d2e9ad4460ba7c448f42de2ec68fa16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Number: 0
+  a: "1. \uCEE4\uBE44 \uBA39\uC740 \uD3FC"
+  b: "2. \uCEE4\uBE44 \uC560\uB2C8\uBA40 \uD3FC"
+  c: "3. \uCEE4\uBE44 \uCEE4\uD130 \uD3FC"
+  d: "4. \uCEE4\uBE44 \uD050\uD53C\uB4DC \uD3FC"
+  e: "5. \uCEE4\uBE44 \uC2A4\uC6CC\uB4DC \uD3FC"
+  f: "6. \uCEE4\uBE44 \uD720 \uD3FC"

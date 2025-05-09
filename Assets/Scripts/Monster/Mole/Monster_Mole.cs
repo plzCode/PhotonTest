@@ -42,11 +42,16 @@ public class Monster_Mole : Enemy
             stateMachine.ChangeState(hitState);
         else if (stateName == "ReSpawn")
         {
-            if(PhotonNetwork.IsMasterClient)
+            if (PhotonNetwork.IsMasterClient)
             {
-                // 몬스터 리스폰 처리
-                monsterSpawner.photonView.RPC("ReSpawnRPC", RpcTarget.All, photonView.ViewID);
-            }            
+                if (monsterSpawner != null)
+                    monsterSpawner.photonView.RPC("ReSpawnRPC", RpcTarget.All, photonView.ViewID);
+                else
+                {
+                    PhotonNetwork.Destroy(gameObject);
+                }
+
+            }
         }
 
     }

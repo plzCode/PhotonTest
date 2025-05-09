@@ -17,16 +17,17 @@ public class Bonkers_AttackState : BossState
     {
         base.Update();
 
-        if (!PhotonNetwork.IsMasterClient)
-        {
-            return;
-        }
+        
 
         if(isBackWalking)
         {
             boss.rb.linearVelocity = new Vector2(3 * -boss.facingDir, 0);
         }
 
+        if (!PhotonNetwork.IsMasterClient)
+        {
+            return;
+        }
 
         if (triggerCalled)
         {

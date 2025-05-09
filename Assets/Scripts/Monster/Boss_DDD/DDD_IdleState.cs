@@ -14,10 +14,10 @@ public class DDD_IdleState : BossState
         isJumpTurn = true;
         stateTimer = boss.idleTime;
 
-        if (!boss.IsGroundDetected() && PhotonNetwork.IsMasterClient)
-        {
-            boss.photonView.RPC("ChangeState", RpcTarget.All, "Jump");
-        }
+        //if (!boss.IsGroundDetected() && PhotonNetwork.IsMasterClient)
+        //{
+        //    boss.photonView.RPC("ChangeState", RpcTarget.All, "Jump");
+        //}
     }
 
     public override void Update()
