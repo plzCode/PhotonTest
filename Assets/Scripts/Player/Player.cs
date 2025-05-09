@@ -503,7 +503,7 @@ public class Player : MonoBehaviour
 
         pView.RPC("RPC_HitFlash", RpcTarget.All);
         //pView.RPC("RPC_StartNoDamage", RpcTarget.All, 2f, 0.2f);
-        NoDamage(2f, 0.2f);
+        StartCoroutine(NoDamage(2f, 0.2f));
     }
 
     [PunRPC]
