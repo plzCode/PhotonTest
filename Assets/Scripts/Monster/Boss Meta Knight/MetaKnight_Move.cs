@@ -33,7 +33,7 @@ public class MetaKnight_Move : BossState
         if (!PhotonNetwork.IsMasterClient)
             return;
 
-        if (Mathf.Abs(closestPlayer.position.x - boss.transform.position.x) <= 3f || AttackTime > 4f) //3.5f 이내에 들어오면 공격 or 4초이상 지나면 공격
+        if (Mathf.Abs(closestPlayer.position.x - boss.transform.position.x) <= 3.5f || AttackTime > 4f) //3.5f 이내에 들어오면 공격 or 4초이상 지나면 공격
         {
             randAttackCount = Random.Range(1, 1);
 

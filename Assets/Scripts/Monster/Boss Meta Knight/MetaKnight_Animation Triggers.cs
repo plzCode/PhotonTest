@@ -39,4 +39,12 @@ public class MetaKnight_AnimationTriggers : MonoBehaviour
             }
         }
     }
+
+    private void Jump()
+    {
+
+        boss.SetVelocity(4 * boss.facingDir, 10f);
+
+
+    }
 }

@@ -170,9 +170,8 @@ MonoBehaviour:
   OwnershipTransfer: 0
   observableSearch: 0
   ObservedComponents:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 4475107500321294864}
+  - {fileID: 1774415484860324653}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -212,7 +211,7 @@ MonoBehaviour:
   attackCheck: {fileID: 8895219850570511556}
   attackCheckRadius: 0.87
   groundCheck: {fileID: 6804122865316666226}
-  groundCheckDistance: 0
+  groundCheckDistance: 0.24
   wallCheck: {fileID: 0}
   wallCheckDistance: 0
   whatIsGround:
@@ -384,7 +383,7 @@ Transform:
   m_GameObject: {fileID: 3982864910429719422}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.05, y: -1.35, z: 0}
+  m_LocalPosition: {x: 0.05, y: -1.288, z: 0}
   m_LocalScale: {x: 0.65999997, y: 0.65999997, z: 0.65999997}
   m_ConstrainProportionsScale: 0
   m_Children: []

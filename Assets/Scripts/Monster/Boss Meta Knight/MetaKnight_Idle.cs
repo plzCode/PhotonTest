@@ -10,6 +10,8 @@ public class MetaKnight_Idle : BossState
     public override void Enter()
     {
         base.Enter();
+        isJumpTurn = true;
+        stateTimer = boss.idleTime;
     }
 
     public override void Exit()
@@ -39,7 +41,7 @@ public class MetaKnight_Idle : BossState
                 {
                     boss.photonView.RPC("FlipRPC", RpcTarget.All);
                 }
-                randAttackCount = Random.Range(1, 2);
+                randAttackCount = Random.Range(1, 4);
 
                 switch (randAttackCount)
                 {
@@ -47,9 +49,12 @@ public class MetaKnight_Idle : BossState
                         boss.photonView.RPC("ChangeState", RpcTarget.All, "Move");
                         break;
                     case 2:
-                        boss.photonView.RPC("ChangeState", RpcTarget.All, "Jump");
+                        boss.photonView.RPC("ChangeState", RpcTarget.All, "Dash");
                         break;
                     case 3:
+                        boss.photonView.RPC("ChangeState", RpcTarget.All, "Jump");
+                        break;
+                    case 4:
                         boss.photonView.RPC("ChangeState", RpcTarget.All, "Air_Jump");
                         break;
                 }

@@ -1,3 +1,4 @@
+using Photon.Pun;
 using UnityEngine;
 
 public class MetaKnight_Attack1 : BossState
@@ -19,5 +20,15 @@ public class MetaKnight_Attack1 : BossState
     public override void Update()
     {
         base.Update();
+
+        if (!PhotonNetwork.IsMasterClient)
+        {
+            return;
+        }
+
+        if (triggerCalled)
+        {
+            boss.photonView.RPC("ChangeState", RpcTarget.All, "Idle");
+        }
     }
 }

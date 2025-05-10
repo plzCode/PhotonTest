@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9217859197653083990}
   - component: {fileID: 1899091944936510503}
   - component: {fileID: 4762974920174618172}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Kirby Damage Mini Star2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -144,7 +144,7 @@ GameObject:
   - component: {fileID: 7904096130816353784}
   - component: {fileID: 4613347913591632398}
   - component: {fileID: 6806908288893473239}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Kirby Damage Star
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -444,7 +444,7 @@ GameObject:
   - component: {fileID: 7736291264202575966}
   - component: {fileID: 1422634014307847457}
   - component: {fileID: 6798335019184081729}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Kirby Damage Mini Star1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
