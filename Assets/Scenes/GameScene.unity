@@ -115303,6 +115303,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DDD
       objectReference: {fileID: 0}
+    - target: {fileID: 6765205760667711875, guid: 49314194cd5131b4e9af660ce9b488c0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -124552,6 +124556,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stage1_Group
       objectReference: {fileID: 0}
+    - target: {fileID: 5473476868624375350, guid: d3445a995aeb5ff4093859745d7f0f39, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6738598123846485992, guid: d3445a995aeb5ff4093859745d7f0f39, type: 3}
       propertyPath: monsterGroup.Array.size
       value: 4
@@ -125209,6 +125217,67 @@ Transform:
   m_Children: []
   m_Father: {fileID: 907211496}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!1001 &1678039114
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 54967113908805515, guid: f3770ff5b6b4488499fe81a29fd65681, type: 3}
+      propertyPath: sceneViewId
+      value: 47
+      objectReference: {fileID: 0}
+    - target: {fileID: 4714316961202094152, guid: f3770ff5b6b4488499fe81a29fd65681, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 4714316961202094152, guid: f3770ff5b6b4488499fe81a29fd65681, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4714316961202094152, guid: f3770ff5b6b4488499fe81a29fd65681, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4714316961202094152, guid: f3770ff5b6b4488499fe81a29fd65681, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4714316961202094152, guid: f3770ff5b6b4488499fe81a29fd65681, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4714316961202094152, guid: f3770ff5b6b4488499fe81a29fd65681, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4714316961202094152, guid: f3770ff5b6b4488499fe81a29fd65681, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4714316961202094152, guid: f3770ff5b6b4488499fe81a29fd65681, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4714316961202094152, guid: f3770ff5b6b4488499fe81a29fd65681, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4714316961202094152, guid: f3770ff5b6b4488499fe81a29fd65681, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7991990263768376517, guid: f3770ff5b6b4488499fe81a29fd65681, type: 3}
+      propertyPath: m_Name
+      value: BossSpawnEvent
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f3770ff5b6b4488499fe81a29fd65681, type: 3}
 --- !u!1 &1711406594
 GameObject:
   m_ObjectHideFlags: 0
@@ -128573,3 +128642,4 @@ SceneRoots:
   - {fileID: 1428887449}
   - {fileID: 1499829878}
   - {fileID: 1108473254}
+  - {fileID: 1678039114}

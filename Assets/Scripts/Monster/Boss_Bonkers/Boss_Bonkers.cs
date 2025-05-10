@@ -55,6 +55,7 @@ public class Boss_Bonkers : Enemy
 
     protected override void Update()
     {
+        
         base.Update();
 
         //UpdateCurrentPlayersCollision();
@@ -177,4 +178,13 @@ public class Boss_Bonkers : Enemy
         UpdateCurrentPlayersCollision();
     }
 
+
+    //Tmp
+    public void forEventInit()
+    {
+
+        stateMachine.Initialize(idleState);
+
+        UpdateCurrentPlayersCollision();
+    }
 }

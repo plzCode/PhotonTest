@@ -373,6 +373,7 @@ MonoBehaviour:
   isFirstSpawn: 1
   monsterSpawner: {fileID: 0}
   photonView: {fileID: 0}
+  isBusy: 0
   dashSpeed: 10
 --- !u!114 &7273539999278656457
 MonoBehaviour:

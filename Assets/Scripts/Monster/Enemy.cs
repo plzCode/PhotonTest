@@ -1,6 +1,7 @@
 using Photon.Pun;
 using System.Collections;
 using System.Linq;
+using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -76,6 +77,12 @@ public class Enemy : MonoBehaviour
     private Vector3 targetPosition;
     private Quaternion targetRotation;
 
+    //For Boss Spawn Event
+    [Header("몬스터 상태")]
+    public bool isBusy = false;
+    public bool stateMachineInitialized { get; private set; } = false;
+
+
     protected virtual void Awake()
     {
         stateMachine = new EnemyStateMachine();
@@ -87,7 +94,8 @@ public class Enemy : MonoBehaviour
         photonView = GetComponent<PhotonView>();
         currentHp = maxHp;
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
-        
+
+        stateMachineInitialized = false;
     }
 
     protected virtual void Start()
@@ -99,11 +107,14 @@ public class Enemy : MonoBehaviour
         startPosition = transform.position;
         isFirstSpawn = false;
 
+        stateMachineInitialized = true;
     }
 
 
     protected virtual void Update()
     {
+        if (isBusy)
+            return;
         stateMachine.currentState.Update();
 
         if(this.HasParameter("yVelocity", anim))
@@ -340,5 +351,54 @@ public class Enemy : MonoBehaviour
             }
 
         }
+    }
+
+    [PunRPC]
+    public void WaitAndAction(float time)
+    {
+        StartCoroutine(WaitAndActionCoroutine(time));
+    }
+
+    private IEnumerator WaitAndActionCoroutine(float time)
+    {
+        // 초기화가 완료될 때까지 대기
+        while (!stateMachineInitialized)
+        {
+            Debug.LogWarning("StateMachine is not initialized yet. Waiting...");
+            yield return null; // 다음 프레임까지 대기
+        }
+
+        // 초기화 완료 후 동작 실행
+        StartCoroutine(BusyFor(time));
+
+        
+    }
+
+    public IEnumerator BusyFor(float _seconds)
+    {
+        isBusy = true;
+        if (PhotonNetwork.IsMasterClient)
+        {
+            if (this.gameObject.GetComponent<Boss_Bonkers>() != null)
+            {
+                Debug.Log("JUMP");
+                //this.gameObject.GetComponent<Boss_Bonkers>().
+                this.gameObject.GetComponent<PhotonView>().RPC("ChangeState", RpcTarget.AllBuffered, "Jump");
+            }
+            else if (this.gameObject.GetComponent<Boss_DDD>() != null)
+            {
+                this.gameObject.GetComponent<PhotonView>().RPC("ChangeState", RpcTarget.AllBuffered, "Jump");
+            }
+        }
+        yield return new WaitForSeconds(_seconds);
+
+        if (PhotonNetwork.IsMasterClient)
+        {
+            if (this.gameObject.GetComponent<Boss_Bonkers>() != null)
+            {
+                this.gameObject.GetComponent<Boss_Bonkers>().forEventInit();
+            }
+        }
+        isBusy = false;
     }
 }

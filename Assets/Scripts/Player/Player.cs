@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
 
     public float JumpPower;
 
-    public bool isBusy { get; private set; }
+    public bool isBusy = false;//{ get; private set; }
 
     public bool flipbool = true;
     public float LastMove;
@@ -719,6 +719,8 @@ public class Player : MonoBehaviour
     public void Die_Player()
     {
 
+        Debug.Log("Die");
+        stateMachine.ChangeState(dieState); //죽는 애니메이션
         Animator animator = GetComponentInChildren<Animator>();
         if (animator != null)
         {
@@ -729,7 +731,6 @@ public class Player : MonoBehaviour
                 StartCoroutine(FlickSprite(spriteRenderer, originalColor, 2f, 0.1f)); // 2초 동안 0.1초 간격으로 깜박임 <<이거 RPC화 시켜야함
             }
         }
-        stateMachine.ChangeState(dieState); //죽는 애니메이션
     }
 
     IEnumerator FlickSprite(SpriteRenderer spriteRenderer, Color originalColor, float duration, float interval)

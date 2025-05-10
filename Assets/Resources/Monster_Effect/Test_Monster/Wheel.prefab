@@ -304,6 +304,7 @@ MonoBehaviour:
   isFirstSpawn: 1
   monsterSpawner: {fileID: 0}
   photonView: {fileID: 0}
+  isBusy: 0
 --- !u!114 &5051317268411437871
 MonoBehaviour:
   m_ObjectHideFlags: 0
