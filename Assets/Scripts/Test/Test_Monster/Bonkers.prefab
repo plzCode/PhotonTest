@@ -38,9 +38,9 @@ Transform:
   - {fileID: 925925810633983410}
   - {fileID: 1179336348401782401}
   - {fileID: 369865726462269652}
-  - {fileID: 5915930766094084449}
-  - {fileID: 2800147436912850521}
   - {fileID: 400782350059203157}
+  - {fileID: 2800147436912850521}
+  - {fileID: 1455449594868212264}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &8657834506105574201
@@ -188,10 +188,13 @@ MonoBehaviour:
   stunDirection: {x: 5, y: 5}
   hitTime: 0
   startRight: 1
+  startPosition: {x: 0, y: 0, z: 0}
+  isFirstSpawn: 1
+  monsterSpawner: {fileID: 0}
   photonView: {fileID: 0}
   health_Bar: {fileID: 5389145308783671102}
   bombPrefab: {fileID: 7672715142142705170, guid: 3177cdd779c89474887e408873bbe791, type: 3}
-  bombStart: {fileID: 400782350059203157}
+  bombStart: {fileID: 1455449594868212264}
 --- !u!70 &2090248974136614946
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -438,6 +441,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5989453673209453163}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2598670564813837499
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1455449594868212264}
+  m_Layer: 10
+  m_Name: BombStartPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1455449594868212264
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2598670564813837499}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.73, y: -0.82, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5989453673209453163}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5181992281112496121
 GameObject:
   m_ObjectHideFlags: 0
@@ -495,37 +529,6 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -1.82, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5989453673209453163}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &7374282765919063788
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5915930766094084449}
-  m_Layer: 10
-  m_Name: BombStartPosition
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5915930766094084449
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7374282765919063788}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.73, y: -0.82, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -759,6 +762,15 @@ MonoBehaviour:
   - Type: 3
     SynchronizeType: 0
     Name: JumpCount
+  - Type: 3
+    SynchronizeType: 0
+    Name: AttackCount
+  - Type: 4
+    SynchronizeType: 0
+    Name: Attack
+  - Type: 4
+    SynchronizeType: 0
+    Name: JumpEnd
   m_SynchronizeLayers:
   - SynchronizeType: 0
     LayerIndex: 0

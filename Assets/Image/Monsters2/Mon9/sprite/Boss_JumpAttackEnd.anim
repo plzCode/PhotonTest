@@ -89,6 +89,13 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 0.016666668
+    functionName: Attack1__Sound
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.083333336
     functionName: SmallJump
     data: 
@@ -98,6 +105,13 @@ AnimationClip:
     messageOptions: 0
   - time: 0.78333336
     functionName: SetCameraShake
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.78333336
+    functionName: JumpEnd__Sound
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

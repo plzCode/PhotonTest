@@ -94,4 +94,42 @@ public class Bonkers_AnimationTriggers : MonoBehaviour
     }
 
 
+    #region Audio
+
+    [PunRPC]
+    private void Move__Sound()
+    {
+        AudioManager.Instance.RPC_PlaySFX("Boss_Move");
+    }
+
+    [PunRPC]
+    private void Attack__Sound()
+    {
+        AudioManager.Instance.RPC_PlaySFX("BKS_Attack");
+    }
+
+    [PunRPC]
+    private void Attack1__Sound()
+    {
+        AudioManager.Instance.RPC_PlaySFX("BKS_Attack1");
+    }
+
+    [PunRPC]
+    private void Jump__Sound()
+    {
+        AudioManager.Instance.RPC_PlaySFX("BKS_Jump");
+    }
+
+    [PunRPC]
+    private void JumpEnd__Sound()
+    {
+        AudioManager.Instance.RPC_PlaySFX("BKS_JumpEnd");
+    }
+
+    [PunRPC]
+    private void Throw__Sound()
+    {
+        AudioManager.Instance.RPC_PlaySFX("BKS_Throw");
+    }
+    #endregion
 }

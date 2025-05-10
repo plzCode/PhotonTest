@@ -70,7 +70,7 @@ public class EatEffect : MonoBehaviour
                 //EatEnemy();            
 
                 if (playerCol != null && enemyCol != null) //플레이어와 충돌중인 적 콜라이더가 비어있지 않다면
-                    Physics2D.IgnoreCollision(playerCol, enemyCol, false); //둘이 닿을땐 서로 부딪히지 않음
+                    Physics2D.IgnoreCollision(playerCol, enemyCol, true); //둘이 닿을땐 서로 부딪히지 않음
             }
             catch
             {

@@ -119,6 +119,12 @@ MonoBehaviour:
   - ActFalseWithChildren
   - Idle_Air_state
   - Change
+  - Attack__Sound
+  - JumpEnd__Sound
+  - Throw__Sound
+  - Attack1__Sound
+  - Jump__Sound
+  - Move__Sound
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
