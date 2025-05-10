@@ -51,8 +51,17 @@ TagManager:
   - name: Ground
     uniqueID: 3795126499
     locked: 0
+  - name: Enemy
+    uniqueID: 1955778305
+    locked: 0
+  - name: Boss
+    uniqueID: 3561421553
+    locked: 0
   - name: Player
     uniqueID: 3566499465
+    locked: 0
+  - name: Effect
+    uniqueID: 790707137
     locked: 0
   m_RenderingLayers:
   - Default

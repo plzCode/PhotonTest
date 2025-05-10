@@ -6,9 +6,9 @@ PhysicsMaterial2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Bounce
+  m_Name: Star Bounce
   serializedVersion: 2
-  friction: 1
-  bounciness: 0.5
+  friction: 0
+  bounciness: 1
   m_FrictionCombine: 1
   m_BounceCombine: 4

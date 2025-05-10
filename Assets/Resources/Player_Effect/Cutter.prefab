@@ -81,8 +81,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 790707137
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 210579964889076504, guid: 5895414c619e40f4991d15e5317a9fd2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -278,5 +278,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowLayerWeightsInspector: 1
   ShowParameterInspector: 1
-  m_SynchronizeParameters: []
-  m_SynchronizeLayers: []
+  m_SynchronizeParameters:
+  - Type: 4
+    SynchronizeType: 0
+    Name: Upgrade
+  - Type: 4
+    SynchronizeType: 0
+    Name: Basic
+  m_SynchronizeLayers:
+  - SynchronizeType: 0
+    LayerIndex: 0

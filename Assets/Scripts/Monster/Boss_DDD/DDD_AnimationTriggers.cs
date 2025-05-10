@@ -81,4 +81,46 @@ public class DDD_AnimationTriggers : MonoBehaviour
             boss.photonView.RPC("Attack3RPC", RpcTarget.All);
         }
     }
+
+
+    #region Audio
+
+    [PunRPC]
+    private void Move__Sound()
+    {
+        AudioManager.Instance.RPC_PlaySFX("Boss_Move");
+    }
+
+    [PunRPC]
+    private void Jump__Sound()
+    {
+        AudioManager.Instance.RPC_PlaySFX("BKS_Throw");
+    }
+
+    [PunRPC]
+    private void Jump1__Sound()
+    {
+        AudioManager.Instance.RPC_PlaySFX("BKS_Jump");
+    }
+
+    [PunRPC]
+    private void AirOut__Sound()
+    {
+        AudioManager.Instance.RPC_PlaySFX("Air_Out_Sound");
+    }
+
+    [PunRPC]
+    private void Attack__Sound()
+    {
+        AudioManager.Instance.RPC_PlaySFX("DDD_Attack");
+    }
+
+    [PunRPC]
+    private void Attack3__Sound()
+    {
+        AudioManager.Instance.RPC_PlaySFX("DDD_Attack3");
+    }
+
+
+    #endregion
 }

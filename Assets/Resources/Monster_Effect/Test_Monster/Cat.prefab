@@ -363,8 +363,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1955778305
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 6697474226177700308, guid: 826d74916cda5f64f993b2f94678d80f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -430,11 +430,14 @@ MonoBehaviour:
     SynchronizeType: 1
     Name: Idle
   - Type: 4
-    SynchronizeType: 1
-    Name: Throw
-  - Type: 4
     SynchronizeType: 0
     Name: Hit
+  - Type: 4
+    SynchronizeType: 0
+    Name: Move
+  - Type: 4
+    SynchronizeType: 0
+    Name: MoveDown
   m_SynchronizeLayers:
   - SynchronizeType: 1
     LayerIndex: 0

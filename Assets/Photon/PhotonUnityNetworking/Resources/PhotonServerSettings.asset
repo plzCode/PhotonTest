@@ -125,6 +125,9 @@ MonoBehaviour:
   - Attack1__Sound
   - Jump__Sound
   - Move__Sound
+  - Jump1__Sound
+  - Attack3__Sound
+  - AirOut__Sound
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
