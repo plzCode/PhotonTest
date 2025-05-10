@@ -18,6 +18,7 @@ public class Eat_Kirby_Attack_State : PlayerState
     {
         base.Exit();
         player.curAbility.OnAbilityDestroyed(player);
+        player.stateMachine.ChangeState(player.idleState);
     }
 
     public override void Update()

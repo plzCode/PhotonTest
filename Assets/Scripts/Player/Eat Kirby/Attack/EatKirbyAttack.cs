@@ -4,7 +4,7 @@ using Photon.Pun;
 public class EatKirbyAttack : PlayerRagedManager
 {
     public float moveSpeed = 8f;
-    public float lifeTime = 5f; // 10ÃÊ µÚ¿¡ »èÁ¦
+    public float lifeTime = 5f; // 10ì´ˆ ë’¤ì— ì‚­ì œ
     private float timer = 0f;
 
     void Update()
