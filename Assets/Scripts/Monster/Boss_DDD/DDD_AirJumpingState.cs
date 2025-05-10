@@ -28,38 +28,27 @@ public class DDD_AirJumpingState : BossState
     {
         base.Update();
 
-        JumpTime += Time.deltaTime;
-        JumpOutTime += Time.deltaTime;
-
-        
-
-        boss.SetVelocity(2f * boss.facingDir, rb.linearVelocityY);
-
-        if (JumpTime >= 0.7f)
+        if (PhotonNetwork.IsMasterClient)
         {
-            JumpTime = 0f;
-            if (!PhotonNetwork.IsMasterClient)
-                return;
-            boss.SetVelocity(rb.linearVelocityX, 7f);
-            
-        }
-        if (!PhotonNetwork.IsMasterClient)
-            return;
+            JumpTime += Time.deltaTime;
+            JumpOutTime += Time.deltaTime;
 
+            boss.SetVelocity(2f * boss.facingDir, rb.linearVelocityY);
 
-        if (Mathf.Abs(closestPlayer.position.x - boss.transform.position.x) <= 1f)
-        {
-            boss.photonView.RPC("ChangeState", RpcTarget.All, "Jump");
-        }
+            if (JumpTime >= 0.7f)
+            {
+                JumpTime = 0f;
+                boss.SetVelocity(rb.linearVelocityX, 7f);
+            }
 
-        if ((closestPlayer.position.x < boss.transform.position.x && boss.facingDir == 1) || (closestPlayer.position.x > boss.transform.position.x && boss.facingDir == -1))
-        {
-            boss.photonView.RPC("ChangeState", RpcTarget.All, "Jump");
-        }
-
-        if (JumpOutTime > 4f)
-        {
-            boss.photonView.RPC("ChangeState", RpcTarget.All, "Jump");
+            if (Mathf.Abs(closestPlayer.position.x - boss.transform.position.x) <= 1f ||
+                (closestPlayer.position.x < boss.transform.position.x && boss.facingDir == 1) ||
+                (closestPlayer.position.x > boss.transform.position.x && boss.facingDir == -1) ||
+                JumpOutTime > 4f)
+            {
+                boss.photonView.RPC("ChangeState", RpcTarget.All, "Jump");
+            }
         }
     }
+
 }
