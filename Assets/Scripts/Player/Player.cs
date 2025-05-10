@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
@@ -464,6 +465,13 @@ public class Player : MonoBehaviour
     public void SetCurrentTarget(Collider2D enemyCollider)
     {
         currentEnemy = enemyCollider;
+    }
+
+
+    [PunRPC]
+    public void Change()
+    {
+        curAbility.OnAbilityDestroyed(this);
     }
 
     [PunRPC]

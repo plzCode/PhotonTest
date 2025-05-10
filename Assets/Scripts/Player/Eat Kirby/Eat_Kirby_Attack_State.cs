@@ -1,3 +1,4 @@
+using Photon.Pun;
 using UnityEngine;
 
 public class Eat_Kirby_Attack_State : PlayerState
@@ -17,8 +18,8 @@ public class Eat_Kirby_Attack_State : PlayerState
     public override void Exit()
     {
         base.Exit();
-        player.curAbility.OnAbilityDestroyed(player);
-        player.stateMachine.ChangeState(player.idleState);
+
+        pView.RPC("Change", RpcTarget.All); //먹는중인 커비로 변신
     }
 
     public override void Update()
