@@ -90,6 +90,7 @@ MonoBehaviour:
   MoveSpeed: 3
   DashSpeed: 5
   JumpPower: 2.5
+  isBusy: 0
   flipbool: 1
   LastMove: 0
   TimeBool: 1

@@ -153,6 +153,7 @@ MonoBehaviour:
   isFirstSpawn: 1
   monsterSpawner: {fileID: 0}
   photonView: {fileID: 0}
+  isBusy: 0
   throwDistance: 5
   spearPrefab: {fileID: 6694563840851363212, guid: 43c819531e075524890bb5069f160b88, type: 3}
 --- !u!114 &333736077876393272

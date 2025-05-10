@@ -192,6 +192,7 @@ MonoBehaviour:
   isFirstSpawn: 1
   monsterSpawner: {fileID: 0}
   photonView: {fileID: 0}
+  isBusy: 0
   health_Bar: {fileID: 5389145308783671102}
   bombPrefab: {fileID: 7672715142142705170, guid: 3177cdd779c89474887e408873bbe791, type: 3}
   bombStart: {fileID: 400782350059203157}
@@ -751,28 +752,28 @@ MonoBehaviour:
   ShowParameterInspector: 1
   m_SynchronizeParameters:
   - Type: 4
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: Jump
   - Type: 4
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: Move
   - Type: 4
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: Idle
   - Type: 3
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: JumpCount
   - Type: 3
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: AttackCount
   - Type: 4
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: Attack
   - Type: 4
-    SynchronizeType: 0
+    SynchronizeType: 1
     Name: JumpEnd
   m_SynchronizeLayers:
-  - SynchronizeType: 0
+  - SynchronizeType: 1
     LayerIndex: 0
 --- !u!114 &3611975968243331450
 MonoBehaviour:

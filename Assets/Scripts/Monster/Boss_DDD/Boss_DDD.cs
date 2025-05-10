@@ -66,6 +66,7 @@ public class Boss_DDD : Enemy
 
     protected override void Update()
     {
+        
         base.Update();
 
         //UpdateCurrentPlayersCollision();
