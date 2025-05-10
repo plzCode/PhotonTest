@@ -19,11 +19,11 @@ public class PlayerEatState : PlayerState
         //pView.RPC("KirbyForm", RpcTarget.All); //먹는중인 커비로 변신
         Debug.Log("EatState.cs");
         //player.KirbyForm();
-        if (PhotonNetwork.IsMasterClient)
+        if (pView.IsMine)
         {
-            pView.RPC("KirbyForm", RpcTarget.All); //먹는중인 커비로 변신
+            pView.RPC("KirbyForm", RpcTarget.All);
         }
-        
+
         //player.KirbyFrom(); //먹는중인 커비로 변신
     }
 
