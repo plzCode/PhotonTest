@@ -171,6 +171,12 @@ public class Enemy : MonoBehaviour
             SpawnReward();
             return;
         }
+        else if (this is BossMetaKnight)
+        {
+            StartCoroutine(DieTime());
+            SpawnReward();
+            return;
+        }
         //if (PhotonNetwork.IsMasterClient)
         //{
         //    //isDestroyed = true;  // 삭제 상태로 설정

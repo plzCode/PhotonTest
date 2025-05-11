@@ -1,3 +1,4 @@
+using System.Xml;
 using Photon.Pun;
 using UnityEngine;
 
@@ -15,6 +16,9 @@ public class BossMetaKnight : Enemy
     public MetaKnight_Attack3 attack3State { get; private set; }
     public MetaKnight_Attack4 attack4State { get; private set; }
     public MetaKnight_Attack5 attack5State { get; private set; }
+    public MetaKnight_Dead deadState { get; private set; }
+    public MetaKnight_Ready readyState { get; private set; }
+    public MetaKnight_UnReady unReadyState { get; private set; }
 
 
     [Header("체력 UI")]
@@ -34,9 +38,12 @@ public class BossMetaKnight : Enemy
     [SerializeField] private GameObject Attack3rightPrefab;
     [SerializeField] private GameObject Attack3leftPrefab;
 
+    public static BossMetaKnight Instance;
+
     protected override void Awake()
     {
         base.Awake();
+        Instance = this;
 
         idleState = new MetaKnight_Idle(this, stateMachine, "Idle");
         moveState = new MetaKnight_Move(this, stateMachine, "Move");
@@ -48,13 +55,16 @@ public class BossMetaKnight : Enemy
         attack3State = new MetaKnight_Attack3(this, stateMachine, "Attack3");
         attack4State = new MetaKnight_Attack4(this, stateMachine, "Attack4");
         attack5State = new MetaKnight_Attack5(this, stateMachine, "Attack5");
+        deadState = new MetaKnight_Dead(this, stateMachine, "Dead");
+        readyState = new MetaKnight_Ready(this, stateMachine, "Ready");
+        unReadyState = new MetaKnight_UnReady(this, stateMachine, "UnReady");
     }
 
     protected override void Start()
     {
         base.Start();
 
-        stateMachine.Initialize(idleState);
+        stateMachine.Initialize(readyState);
 
         UpdateCurrentPlayersCollision();
 
@@ -128,7 +138,10 @@ public class BossMetaKnight : Enemy
         currentHp -= _damage;
         health_Bar.UpdateHealthBar(maxHp, currentHp);
         Debug.Log("몬스터가 피해를 " + _damage + "받음");
-
+        if (currentHp <= 0)
+        {
+            stateMachine.ChangeState(deadState);
+        }
 
     }
 
@@ -155,6 +168,12 @@ public class BossMetaKnight : Enemy
             stateMachine.ChangeState(attack4State);
         else if (stateName == "Attack5")
             stateMachine.ChangeState(attack5State);
+        else if (stateName == "Dead")
+            stateMachine.ChangeState(deadState);
+        else if (stateName == "Ready")
+            stateMachine.ChangeState(readyState);
+        else if (stateName == "UnReady")
+            stateMachine.ChangeState(unReadyState);
 
     }
 
