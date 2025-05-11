@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/TestPhoton.unity
     guid: 164e5647ac120b9459c490136cdec971
   - enabled: 1
-    path: Assets/Scenes/GameScene.unity
+    path: Assets/Scenes/GameScene_middle.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/SlotCar-Scene.unity
@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameScene_past.unity
     guid: a9dd6d36d1ca8e0469d77242b3496823
+  - enabled: 1
+    path: Assets/Scenes/GameScene.unity
+    guid: 14fd46c5018393741b534a70820ecbc9
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 3590b91b4603b465dbb4216d601bff33, type: 3}
   m_UseUCBPForAssetBundles: 0
