@@ -27,6 +27,13 @@ public class BossMetaKnight : Enemy
     public Transform AirPos;
 
 
+    [Header("공격 정보")]
+    [SerializeField] private GameObject Attack1Prefab;
+    [SerializeField] private Transform Attack1Pos;
+    [SerializeField] private GameObject Attack2Prefab;
+    [SerializeField] private GameObject Attack3rightPrefab;
+    [SerializeField] private GameObject Attack3leftPrefab;
+
     protected override void Awake()
     {
         base.Awake();
@@ -149,6 +156,38 @@ public class BossMetaKnight : Enemy
         else if (stateName == "Attack5")
             stateMachine.ChangeState(attack5State);
 
+    }
+
+    [PunRPC]
+    public void Attack1RPC()
+    {
+
+        if (PhotonNetwork.IsMasterClient)
+        {
+            GameObject _currentBomb = PhotonNetwork.Instantiate("Monster_Effect/" + Attack1Prefab.name, Attack1Pos.position, Quaternion.identity);
+        }
+    }
+
+    [PunRPC]
+    public void Attack2RPC()
+    {
+        if (PhotonNetwork.IsMasterClient)
+        {
+            Vector3 randomOffset = new Vector3(Random.Range(-3f, 3f), 0f, 0f);
+            Vector3 spawnPos = transform.position + randomOffset;
+
+            GameObject _currentBomb = PhotonNetwork.Instantiate("Monster_Effect/" + Attack2Prefab.name, spawnPos, Quaternion.identity);
+        }
+    }
+
+    [PunRPC]
+    public void Attack3RPC()
+    {
+        if (PhotonNetwork.IsMasterClient)
+        {
+            GameObject _currentBomb = PhotonNetwork.Instantiate("Monster_Effect/" + Attack3leftPrefab.name, transform.position, Quaternion.identity);
+            GameObject _currentBomb1 = PhotonNetwork.Instantiate("Monster_Effect/" + Attack3rightPrefab.name, transform.position, Quaternion.identity);
+        }
     }
 
 

@@ -134,6 +134,8 @@ MonoBehaviour:
   - BossSpawn
   - PlayBGM
   - RPC_StopBGM
+  - Attack1RPC
+  - Attack2RPC
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

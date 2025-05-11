@@ -105,49 +105,49 @@ AnimationClip:
     intParameter: 0
     messageOptions: 0
   - time: 0.6333333
-    functionName: MyPosAttackTrigger
+    functionName: MyPosAirAttackTrigger
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
   - time: 0.6666667
-    functionName: MyPosAttackTrigger
+    functionName: MyPosAirAttackTrigger
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
   - time: 0.7
-    functionName: MyPosAttackTrigger
+    functionName: MyPosAirAttackTrigger
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
   - time: 0.73333335
-    functionName: MyPosAttackTrigger
+    functionName: MyPosAirAttackTrigger
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
   - time: 0.76666665
-    functionName: MyPosAttackTrigger
+    functionName: MyPosAirAttackTrigger
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
   - time: 0.8
-    functionName: MyPosAttackTrigger
+    functionName: MyPosAirAttackTrigger
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
   - time: 0.8333333
-    functionName: MyPosAttackTrigger
+    functionName: MyPosAirAttackTrigger
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

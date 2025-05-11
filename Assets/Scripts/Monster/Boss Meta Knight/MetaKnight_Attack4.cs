@@ -17,6 +17,7 @@ public class MetaKnight_Attack4 : BossState
     {
         base.Exit();
         boss.isJump = false;
+        bossDash = false;
     }
 
     public override void Update()

@@ -128,11 +128,11 @@ Transform:
   m_GameObject: {fileID: 2013274307102707495}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.61, y: -0.52, z: 0}
+  m_LocalPosition: {x: 1.6099999, y: -0.52, z: 0}
   m_LocalScale: {x: 0.65999997, y: 0.65999997, z: 0.65999997}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 436153025757924730}
+  m_Father: {fileID: 7373225003940803275}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2992003139231993750
 GameObject:
@@ -247,12 +247,77 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3703986044403137746}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
+  m_Father: {fileID: 7373225003940803275}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4616085871334242533
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7373225003940803275}
+  m_Layer: 10
+  m_Name: Pos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7373225003940803275
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4616085871334242533}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 9173048580099433071}
+  - {fileID: 6576469231512217585}
+  - {fileID: 4360519026583923842}
   m_Father: {fileID: 436153025757924730}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4995898209731093036
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4360519026583923842}
+  m_Layer: 10
+  m_Name: Attack1_Effect_Pos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4360519026583923842
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4995898209731093036}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7373225003940803275}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5115393814085955262
 GameObject:
@@ -398,25 +463,13 @@ MonoBehaviour:
     Name: Air Attack
   - Type: 4
     SynchronizeType: 0
-    Name: Air Jump
-  - Type: 4
-    SynchronizeType: 0
     Name: Attack1
-  - Type: 4
-    SynchronizeType: 0
-    Name: Attack1_1
-  - Type: 4
-    SynchronizeType: 0
-    Name: Attack1_2
   - Type: 4
     SynchronizeType: 0
     Name: Attack2
   - Type: 4
     SynchronizeType: 0
     Name: Attack3
-  - Type: 4
-    SynchronizeType: 0
-    Name: Attack3_1
   - Type: 4
     SynchronizeType: 0
     Name: Attack4
@@ -426,6 +479,12 @@ MonoBehaviour:
   - Type: 4
     SynchronizeType: 0
     Name: Damage
+  - Type: 3
+    SynchronizeType: 0
+    Name: Attack_Count
+  - Type: 4
+    SynchronizeType: 0
+    Name: Air_Jump
   m_SynchronizeLayers:
   - SynchronizeType: 0
     LayerIndex: 0
@@ -510,8 +569,7 @@ Transform:
   - {fileID: 6306263000361874017}
   - {fileID: 1556843766058593800}
   - {fileID: 9180829087828219629}
-  - {fileID: 9173048580099433071}
-  - {fileID: 6576469231512217585}
+  - {fileID: 7373225003940803275}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &8930471015162837579
@@ -693,7 +751,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   moveSpeed: 10
-  idleTime: 0
+  idleTime: 0.3
   battleTime: 0
   canAttacking: 0
   attackDistance: 0
@@ -714,6 +772,11 @@ MonoBehaviour:
   health_Bar: {fileID: 5399280296788854887}
   AirPrefab: {fileID: 0}
   AirPos: {fileID: 0}
+  Attack1Prefab: {fileID: 3206973588584592386, guid: ad5d8b9d938895e4da2dc41a75f1715b, type: 3}
+  Attack1Pos: {fileID: 4360519026583923842}
+  Attack2Prefab: {fileID: 6464392119990998506, guid: f8d7fdec4a83da044b8acd3ff6d09426, type: 3}
+  Attack3rightPrefab: {fileID: 6858931248053896203, guid: 1ae994ab4b0ba604595fe0797017a2f1, type: 3}
+  Attack3leftPrefab: {fileID: 4796685517355856161, guid: d51de9908d9576f45b8adc6c50428c09, type: 3}
 --- !u!1 &8927216347352679053
 GameObject:
   m_ObjectHideFlags: 0

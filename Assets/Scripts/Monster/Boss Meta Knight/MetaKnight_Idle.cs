@@ -42,7 +42,7 @@ public class MetaKnight_Idle : BossState
                 }
                 else
                 {
-                    randomJumpCount = Random.Range(5, 5); // 2~3
+                    randomJumpCount = Random.Range(1,6); // 2~3
                     switch (randomJumpCount)
                     {
                         case 1:
@@ -91,7 +91,7 @@ public class MetaKnight_Idle : BossState
                 }
                 else
                 {
-                    randomJumpCount = Random.Range(2, 2);
+                    randomJumpCount = Random.Range(1, 5);
 
                     switch (randomJumpCount)
                     {

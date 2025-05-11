@@ -418,6 +418,10 @@ public class Enemy : MonoBehaviour
             {
                 this.gameObject.GetComponent<Boss_DDD>().forEventInit();
             }
+            if (this.gameObject.GetComponent<BossMetaKnight>() != null)
+            {
+                this.gameObject.GetComponent<BossMetaKnight>().forEventInit();
+            }
         }
         isBusy = false;
     }

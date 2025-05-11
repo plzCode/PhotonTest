@@ -12,13 +12,49 @@ public class MetaKnight_AnimationTriggers : MonoBehaviour
     }
 
 
+
     private void SetCameraShake()
     {
         CameraShake.Instance.Shake(0.3f, 1.33f, 1.33f);
     }
 
+    private void Attack1Effect()
+    {
+        if (PhotonNetwork.IsMasterClient)
+        {
+            boss.photonView.RPC(
+                "Attack1RPC",
+                RpcTarget.All
+            );
+        }
+    }
+
+    private void Attack2Effect()
+    {
+        if (PhotonNetwork.IsMasterClient)
+        {
+            boss.photonView.RPC(
+                "Attack2RPC",
+                RpcTarget.All
+            );
+        }
+    }
+
+    private void Attack3Effect()
+    {
+        if (PhotonNetwork.IsMasterClient)
+        {
+            boss.photonView.RPC(
+                "Attack3RPC",
+                RpcTarget.All
+            );
+        }
+    }
+
     private void AttackTrigger()
     {
+        boss.SetVelocity(0 * boss.facingDir, 0);
+
         if (!PhotonNetwork.IsMasterClient)
             return;
 
@@ -40,6 +76,30 @@ public class MetaKnight_AnimationTriggers : MonoBehaviour
 
     private void MyPosAttackTrigger()
     {
+        boss.SetVelocity(0 * boss.facingDir, 0);
+
+        if (!PhotonNetwork.IsMasterClient)
+            return;
+
+
+
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(boss.attack1Check.position, boss.attack1CheckRadius);
+
+        foreach (var hit in colliders)
+        {
+            if (hit.GetComponent<Player>() != null)
+            {
+                if (hit.GetComponent<PhotonView>() != null)
+                    hit.GetComponent<PhotonView>().RPC("TakeDamage", RpcTarget.All, (Vector2)transform.position, boss.attackPower); // 데미지 처리                
+
+
+            }
+        }
+    }
+
+    private void MyPosAirAttackTrigger()
+    {
+
         if (!PhotonNetwork.IsMasterClient)
             return;
 
