@@ -160,9 +160,9 @@ public class Enemy : MonoBehaviour
 
         if (this is Boss_Bonkers)
         {
+            AudioManager.Instance.StopBGM();
             StartCoroutine(DieTime());
             SpawnReward();
-            AudioManager.Instance.StopBGM();
             return;
         }
         else if (this is Boss_DDD)

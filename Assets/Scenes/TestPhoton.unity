@@ -5274,6 +5274,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Meta Knight
       objectReference: {fileID: 0}
+    - target: {fileID: 7387228803708773641, guid: 4afb562c60ea1b14984e6d7d6f70c1ba, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
