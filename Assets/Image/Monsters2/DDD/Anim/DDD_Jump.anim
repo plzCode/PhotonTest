@@ -22,14 +22,20 @@ AnimationClip:
     curve:
     - time: 0
       value: {fileID: 7460046300004610927, guid: 4aff606002aaef1488b587fec297d5d5, type: 3}
-    - time: 0.14285715
+    - time: 0.43333334
       value: {fileID: 7034338576483803127, guid: 4aff606002aaef1488b587fec297d5d5, type: 3}
+    - time: 1
+      value: {fileID: 7034338576483803127, guid: 4aff606002aaef1488b587fec297d5d5, type: 3}
+    - time: 1.0166667
+      value: {fileID: 6054277451648750542, guid: 4aff606002aaef1488b587fec297d5d5, type: 3}
+    - time: 2.1833334
+      value: {fileID: 6054277451648750542, guid: 4aff606002aaef1488b587fec297d5d5, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
     flags: 2
-  m_SampleRate: 7
+  m_SampleRate: 60
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -48,12 +54,15 @@ AnimationClip:
     pptrCurveMapping:
     - {fileID: 7460046300004610927, guid: 4aff606002aaef1488b587fec297d5d5, type: 3}
     - {fileID: 7034338576483803127, guid: 4aff606002aaef1488b587fec297d5d5, type: 3}
+    - {fileID: 7034338576483803127, guid: 4aff606002aaef1488b587fec297d5d5, type: 3}
+    - {fileID: 6054277451648750542, guid: 4aff606002aaef1488b587fec297d5d5, type: 3}
+    - {fileID: 6054277451648750542, guid: 4aff606002aaef1488b587fec297d5d5, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.2857143
+    m_StopTime: 2.2
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -73,8 +82,22 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.14285715
+  - time: 0.43333334
+    functionName: Jump
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.43333334
     functionName: Jump__Sound
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.0166667
+    functionName: SetGroundCheck
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

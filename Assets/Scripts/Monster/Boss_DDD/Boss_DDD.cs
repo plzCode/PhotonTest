@@ -1,4 +1,5 @@
 using Photon.Pun;
+using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
 
 public class Boss_DDD : Enemy
@@ -9,22 +10,19 @@ public class Boss_DDD : Enemy
     public DDD_MoveState moveState { get; private set; }
     public DDD_JumpState jumpState { get; private set; }
     public DDD_AirJumpState airJumpState { get; private set; }
-    public DDD_AirJumpingState airJumpingState { get; private set; }
-    public DDD_AttackState attackState { get; private set; }
     public DDD_Attack1State attack1State { get; private set; }
     public DDD_Attack2State attack2State { get; private set; }
     public DDD_Attack3State attack3State { get; private set; }
     public DDD_DieState dieState { get; private set; }
 
-    [Header("Ã¼·Â UI")]
+    [Header("Ã¼ï¿½ï¿½ UI")]
     [SerializeField] private Monster_HealthBar health_Bar;
 
     #endregion
 
-    [Header("ÀÌÆåÆ® Á¤º¸")]
+    [Header("ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½")]
     public GameObject AirPrefab;
     public Transform AirPos;
-
 
     protected override void Awake()
     {
@@ -34,8 +32,6 @@ public class Boss_DDD : Enemy
         moveState = new DDD_MoveState(this, stateMachine, "Move");
         jumpState = new DDD_JumpState(this, stateMachine, "Jump");
         airJumpState = new DDD_AirJumpState(this, stateMachine, "Air_Jump");
-        airJumpingState = new DDD_AirJumpingState(this, stateMachine, "Air_Jumping");
-        attackState = new DDD_AttackState(this, stateMachine, "Attack");
         attack1State = new DDD_Attack1State(this, stateMachine, "Attack1");
         attack2State = new DDD_Attack2State(this, stateMachine, "Attack2");
         attack3State = new DDD_Attack3State(this, stateMachine, "Attack3");
@@ -51,14 +47,14 @@ public class Boss_DDD : Enemy
 
         UpdateCurrentPlayersCollision();
 
-        // ÇÃ·¹ÀÌ¾î¿Í ¸ó½ºÅÍÀÇ ÄÝ¶óÀÌ´õ¸¦ Ã£¾Æ¼­ Ãæµ¹À» ¹«½Ã
+        // ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ý¶ï¿½ï¿½Ì´ï¿½ï¿½ï¿½ Ã£ï¿½Æ¼ï¿½ ï¿½æµ¹ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         //Collider2D playerCollider = GameObject.Find("Player(Clone)").GetComponent<Collider2D>();
         //Collider2D monsterCollider = GetComponent<Collider2D>();
 
         //if (playerCollider != null && monsterCollider != null)
         //{
-        //    Debug.Log("Ãæµ¹¹«½Ã¼³Á¤");
-        //    Physics2D.IgnoreCollision(playerCollider, monsterCollider, true);  // ¹°¸®Àû Ãæµ¹ ¹«½Ã
+        //    Debug.Log("ï¿½æµ¹ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½");
+        //    Physics2D.IgnoreCollision(playerCollider, monsterCollider, true);  // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½æµ¹ ï¿½ï¿½ï¿½ï¿½
         //}
 
 
@@ -85,30 +81,30 @@ public class Boss_DDD : Enemy
         Collider2D monsterCollider = GetComponent<Collider2D>();
         if (monsterCollider == null)
         {
-            Debug.LogWarning("Monster Collider°¡ ¾ø½À´Ï´Ù.");
+            Debug.LogWarning("Monster Colliderï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
             return;
         }
 
-        // ÇÃ·¹ÀÌ¾î ¹è¿­ÀÌ À¯È¿ÇÑÁö È®ÀÎ
+        // ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½È¿ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½
         if (GameManager.Instance.playerList == null || GameManager.Instance.playerList.Count == 0)
         {
-            Debug.LogWarning("ÇÃ·¹ÀÌ¾î ¹è¿­ÀÌ ºñ¾îÀÖ½À´Ï´Ù.");
+            Debug.LogWarning("ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½Ï´ï¿½.");
             return;
         }
 
-        // ÇÃ·¹ÀÌ¾î¿Í ¸ó½ºÅÍÀÇ ÄÝ¶óÀÌ´õ¸¦ Ã£¾Æ¼­ Ãæµ¹À» ¹«½Ã
+        // ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ý¶ï¿½ï¿½Ì´ï¿½ï¿½ï¿½ Ã£ï¿½Æ¼ï¿½ ï¿½æµ¹ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         for (int i = 0; i < GameManager.Instance.playerList.Count; i++)
         {
-            // °¢ ÇÃ·¹ÀÌ¾îÀÇ Collider2D°¡ ÀÖ´ÂÁö È®ÀÎ
+            // ï¿½ï¿½ ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ï¿½ï¿½ Collider2Dï¿½ï¿½ ï¿½Ö´ï¿½ï¿½ï¿½ È®ï¿½ï¿½
             Collider2D playerCollider = GameManager.Instance.playerList[i].GetComponent<Collider2D>();
             if (playerCollider != null)
             {
-                Physics2D.IgnoreCollision(playerCollider, monsterCollider, true);  // ¹°¸®Àû Ãæµ¹ ¹«½Ã
-                Debug.Log("ÇÃ·¹ÀÌ¾î " + i + "¿Í ¸ó½ºÅÍÀÇ Ãæµ¹ ¹«½Ã ¼³Á¤");
+                Physics2D.IgnoreCollision(playerCollider, monsterCollider, true);  // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½æµ¹ ï¿½ï¿½ï¿½ï¿½
+                Debug.Log("ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ " + i + "ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½æµ¹ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
             }
             else
             {
-                Debug.LogWarning("ÇÃ·¹ÀÌ¾î " + i + "¿¡ Collider2D°¡ ¾ø½À´Ï´Ù.");
+                Debug.LogWarning("ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ " + i + "ï¿½ï¿½ Collider2Dï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
             }
         }
     }
@@ -121,7 +117,7 @@ public class Boss_DDD : Enemy
             return;
         currentHp -= _damage;
         health_Bar.UpdateHealthBar(maxHp, currentHp);
-        Debug.Log("¸ó½ºÅÍ°¡ ÇÇÇØ¸¦ " + _damage + "¹ÞÀ½");
+        Debug.Log("ï¿½ï¿½ï¿½Í°ï¿½ ï¿½ï¿½ï¿½Ø¸ï¿½ " + _damage + "ï¿½ï¿½ï¿½ï¿½");
 
 
     }
@@ -137,10 +133,6 @@ public class Boss_DDD : Enemy
             stateMachine.ChangeState(jumpState);
         else if (stateName == "Air_Jump")
             stateMachine.ChangeState(airJumpState);
-        else if (stateName == "Air_Jumping")
-            stateMachine.ChangeState(airJumpingState);
-        else if (stateName == "Attack")
-            stateMachine.ChangeState(attackState);
         else if (stateName == "Attack1")
             stateMachine.ChangeState(attack1State);
         else if (stateName == "Attack2")
@@ -160,10 +152,10 @@ public class Boss_DDD : Enemy
 
         if (collision.CompareTag("Player") && PhotonNetwork.IsMasterClient)
         {
-            Debug.Log("ÇÃ·¹ÀÌ¾î¿¡°Ô " + attackPower + "¸¸Å­ µ¥¹ÌÁö¸¦ ÁÝ´Ï´Ù.");
+            Debug.Log("ï¿½Ã·ï¿½ï¿½Ì¾î¿¡ï¿½ï¿½ " + attackPower + "ï¿½ï¿½Å­ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ý´Ï´ï¿½.");
             if (collision.GetComponent<PhotonView>() != null)
             {
-                collision.GetComponent<PhotonView>().RPC("TakeDamage", RpcTarget.All, (Vector2)transform.position, attackPower); // µ¥¹ÌÁö Ã³¸®
+                collision.GetComponent<PhotonView>().RPC("TakeDamage", RpcTarget.All, (Vector2)transform.position, attackPower); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½
             }
 
 
@@ -185,7 +177,7 @@ public class Boss_DDD : Enemy
     private string MonsterName;
     private int randMonsterCount;
     [PunRPC]
-    private void Attack3RPC() // ¸ó½ºÅÍ ¼ÒÈ¯
+    private void Attack3RPC() // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
     {
         if (!PhotonNetwork.IsMasterClient) return;
 
@@ -208,4 +200,12 @@ public class Boss_DDD : Enemy
         UpdateCurrentPlayersCollision();
     }
 
+
+    public void forEventInit()
+    {
+
+        stateMachine.Initialize(idleState);
+
+        UpdateCurrentPlayersCollision();
+    }
 }

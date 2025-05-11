@@ -5,32 +5,6 @@ public class DDD_AnimationTriggers : MonoBehaviour
 {
     private Boss_DDD boss => GetComponentInParent<Boss_DDD>();
 
-    private void ISGround()
-    {
-        if (!PhotonNetwork.IsMasterClient)
-            return;
-
-        if (boss.IsGroundDetected())
-        {
-            boss.photonView.RPC("ChangeState", RpcTarget.All, "Idle");
-        }
-        else
-        {
-            boss.photonView.RPC("ChangeState", RpcTarget.All, "Jump");
-        }
-    }
-
-    private void Ground()
-    {
-        if (!PhotonNetwork.IsMasterClient)
-            return;
-
-        if (boss.IsGroundDetected())
-        {
-            boss.photonView.RPC("ChangeState", RpcTarget.All, "Idle");
-        }
-    }
-
     private void SetCameraShake()
     {
         CameraShake.Instance.Shake(0.3f, 1.33f, 1.33f);
@@ -73,6 +47,45 @@ public class DDD_AnimationTriggers : MonoBehaviour
         }
     }
 
+    private void BossFlip()
+    {
+        boss.facingDir *= -1;
+    }
+
+    private void ZeroMoveJump()
+    {
+        boss.rb.AddForce(Vector2.up * 15, ForceMode2D.Impulse);
+
+    }
+
+    private void Jump()
+    {
+        boss.SetVelocity(4 * boss.facingDir, 12);
+
+    }
+
+    private void AirJump()
+    {
+
+        boss.SetVelocity(2.5f * boss.facingDir, 8);
+
+
+    }
+
+    private void SetGroundCheck()
+    {
+        boss.isJump = true;
+    }
+
+    private void SetMove()
+    {
+        boss.attack1State.isMoveing = true;
+    }
+
+    private void SetMoveCancel()
+    {
+        boss.attack1State.isMoveing = false;
+    }
 
     public void CallAttack3RPC()
     {

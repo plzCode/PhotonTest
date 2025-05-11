@@ -15,10 +15,23 @@ public class DDD_Attack3State : BossState
     public override void Exit()
     {
         base.Exit();
+
+        boss.isJump = false;
     }
 
     public override void Update()
     {
         base.Update();
+
+
+
+        if (!PhotonNetwork.IsMasterClient)
+            return;
+
+        if (boss.isJump)
+        {
+
+            boss.photonView.RPC("ChangeState", RpcTarget.All, "Idle");
+        }
     }
 }

@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class DDD_Attack1State : BossState
 {
-
+    public bool isMoveing;
     public DDD_Attack1State(Enemy _enemyBase, EnemyStateMachine _stateMachine, string _animBoolName) : base(_enemyBase, _stateMachine, _animBoolName)
     {
     }
@@ -16,25 +16,29 @@ public class DDD_Attack1State : BossState
     public override void Exit()
     {
         base.Exit();
+        isMoveing = false;
+        boss.isJump = false;
     }
 
     public override void Update()
     {
         base.Update();
 
-        
-
-        boss.SetVelocity(7f * boss.facingDir, 0f);
-        if (!PhotonNetwork.IsMasterClient)
-            return;
-        if (Mathf.Abs(closestPlayer.position.x - boss.transform.position.x) <= 4f)
+        if(isMoveing == true)
         {
-            boss.photonView.RPC("ChangeState", RpcTarget.All, "Attack");
+            boss.SetVelocity(7f * boss.facingDir, 0f);
         }
 
-        if ((closestPlayer.position.x < boss.transform.position.x && boss.facingDir == 1) || (closestPlayer.position.x > boss.transform.position.x && boss.facingDir == -1))
+
+        if (!PhotonNetwork.IsMasterClient)
+            return;
+
+
+
+        if (boss.isJump)
         {
-            boss.photonView.RPC("ChangeState", RpcTarget.All, "Attack");
+
+            boss.photonView.RPC("ChangeState", RpcTarget.All, "Idle");
         }
     }
 }

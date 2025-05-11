@@ -28,7 +28,7 @@ public class DDD_MoveState : BossState
         if (!PhotonNetwork.IsMasterClient)
             return;
 
-        if (Mathf.Abs(closestPlayer.position.x - boss.transform.position.x) <= 3.5f || AttackTime > 4f) //3.5f 이내에 들어오면 공격 or 4초이상 지나면 공격
+        if (Vector2.Distance(closestPlayer.position, boss.transform.position) <= 3.5f || AttackTime > 4f) //3.5f 이내에 들어오면 공격 or 4초이상 지나면 공격
         {
             randAttackCount = Random.Range(1, 4);
 
@@ -50,14 +50,7 @@ public class DDD_MoveState : BossState
         //플레이어를 향해 추적하고있는데 이미 지나쳐버렸을때
         if ((closestPlayer.position.x < boss.transform.position.x && boss.facingDir == 1) || (closestPlayer.position.x > boss.transform.position.x && boss.facingDir == -1))
         {
-            if (boss.IsGroundDetected())
-            {
-                boss.photonView.RPC("ChangeState", RpcTarget.All, "Idle");
-            }
-            else
-            {
-                boss.photonView.RPC("ChangeState", RpcTarget.All, "Jump");
-            }
+            boss.photonView.RPC("ChangeState", RpcTarget.All, "Idle");
         }
 
     }

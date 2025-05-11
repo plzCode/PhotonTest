@@ -385,10 +385,6 @@ public class Enemy : MonoBehaviour
                 //this.gameObject.GetComponent<Boss_Bonkers>().
                 this.gameObject.GetComponent<PhotonView>().RPC("ChangeState", RpcTarget.AllBuffered, "Jump");
             }
-            else if (this.gameObject.GetComponent<Boss_DDD>() != null)
-            {
-                this.gameObject.GetComponent<PhotonView>().RPC("ChangeState", RpcTarget.AllBuffered, "Jump");
-            }
         }
         yield return new WaitForSeconds(_seconds);
 
@@ -397,6 +393,10 @@ public class Enemy : MonoBehaviour
             if (this.gameObject.GetComponent<Boss_Bonkers>() != null)
             {
                 this.gameObject.GetComponent<Boss_Bonkers>().forEventInit();
+            }
+            if (this.gameObject.GetComponent<Boss_DDD>() != null)
+            {
+                this.gameObject.GetComponent<Boss_DDD>().forEventInit();
             }
         }
         isBusy = false;
