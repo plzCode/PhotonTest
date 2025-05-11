@@ -84,6 +84,7 @@ public class Player : MonoBehaviour
 
     public PlayerDamageState damageState { get; private set; }
     public PlayerDieState dieState { get; private set; }
+    public PlayerDanceState danceState { get; private set; }
 
     public PlayerChageFormState changeFormState { get; private set; }
 
@@ -143,6 +144,7 @@ public class Player : MonoBehaviour
 
         damageState = new PlayerDamageState(this, stateMachine, "Damage");
         dieState =new PlayerDieState(this, stateMachine, "Die");
+        danceState = new PlayerDanceState(this, stateMachine, "Dance");
 
         changeFormState = new PlayerChageFormState(this, stateMachine, "ChangeForm");
 

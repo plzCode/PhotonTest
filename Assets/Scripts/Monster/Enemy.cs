@@ -154,6 +154,8 @@ public class Enemy : MonoBehaviour
     public virtual void Die()
     {
         EffectAdd("Delete Enemy Effect 45x45_0", transform.position);
+        if (!PhotonNetwork.IsMasterClient) return;
+        StartCoroutine(DieTime());
         //if (PhotonNetwork.IsMasterClient)
         //{
         //    //isDestroyed = true;  // 삭제 상태로 설정
@@ -400,5 +402,18 @@ public class Enemy : MonoBehaviour
             }
         }
         isBusy = false;
+    }
+    IEnumerator DieTime()
+    {
+        
+        int repeatCount = 5;
+
+        for (int i = 0; i < repeatCount; i++)
+        {
+            AudioManager.Instance.PlaySFX("Boss_Die"); // 원하는 사운드 이름으로 교체
+            yield return new WaitForSeconds(0.2f);
+        }
+
+        PhotonNetwork.Destroy(gameObject);
     }
 }

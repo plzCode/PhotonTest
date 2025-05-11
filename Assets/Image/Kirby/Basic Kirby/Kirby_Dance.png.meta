@@ -1,0 +1,1690 @@
+fileFormatVersion: 2
+guid: 2e1991b422a8b8340a6a47ae4696ffa2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6069902931270865257
+    second: Kirby_Dance_0
+  - first:
+      213: 843445922626670480
+    second: Kirby_Dance_1
+  - first:
+      213: -2585603951095212696
+    second: Kirby_Dance_2
+  - first:
+      213: -5914079529521892960
+    second: Kirby_Dance_3
+  - first:
+      213: -7087310931586962146
+    second: Kirby_Dance_4
+  - first:
+      213: -2201042776596704792
+    second: Kirby_Dance_5
+  - first:
+      213: -595465423139390213
+    second: Kirby_Dance_6
+  - first:
+      213: -8835337410283237237
+    second: Kirby_Dance_7
+  - first:
+      213: -1692389863700928417
+    second: Kirby_Dance_8
+  - first:
+      213: 72403743532873208
+    second: Kirby_Dance_9
+  - first:
+      213: 5642663060146092782
+    second: Kirby_Dance_10
+  - first:
+      213: 9043059193788116129
+    second: Kirby_Dance_11
+  - first:
+      213: -1359347585502208657
+    second: Kirby_Dance_12
+  - first:
+      213: -3096014189423118485
+    second: Kirby_Dance_13
+  - first:
+      213: -6787073196751579516
+    second: Kirby_Dance_14
+  - first:
+      213: 9083174275370614209
+    second: Kirby_Dance_15
+  - first:
+      213: -6607962326032521229
+    second: Kirby_Dance_16
+  - first:
+      213: -3311343302301647161
+    second: Kirby_Dance_17
+  - first:
+      213: 8322103748568504829
+    second: Kirby_Dance_18
+  - first:
+      213: 3973848813865855255
+    second: Kirby_Dance_19
+  - first:
+      213: 1094509632519905991
+    second: Kirby_Dance_20
+  - first:
+      213: 5886042781845737636
+    second: Kirby_Dance_21
+  - first:
+      213: -49639735859403505
+    second: Kirby_Dance_22
+  - first:
+      213: 7320816300250928023
+    second: Kirby_Dance_23
+  - first:
+      213: -272662215194028778
+    second: Kirby_Dance_24
+  - first:
+      213: 5465379496816558093
+    second: Kirby_Dance_25
+  - first:
+      213: 2874467437597468086
+    second: Kirby_Dance_26
+  - first:
+      213: 4394874419920129861
+    second: Kirby_Dance_27
+  - first:
+      213: -4061627085852259968
+    second: Kirby_Dance_28
+  - first:
+      213: -3199784559752833247
+    second: Kirby_Dance_29
+  - first:
+      213: 3540629779093184141
+    second: Kirby_Dance_30
+  - first:
+      213: -5789642946578121834
+    second: Kirby_Dance_31
+  - first:
+      213: -1100462313788480697
+    second: Kirby_Dance_32
+  - first:
+      213: 9114249677569631162
+    second: Kirby_Dance_33
+  - first:
+      213: 495618305416056297
+    second: Kirby_Dance_34
+  - first:
+      213: 3645046642032095914
+    second: Kirby_Dance_35
+  - first:
+      213: -5813365511696261685
+    second: Kirby_Dance_36
+  - first:
+      213: -4879582784317057725
+    second: Kirby_Dance_37
+  - first:
+      213: 8173775573027734048
+    second: Kirby_Dance_38
+  - first:
+      213: 407714514713189566
+    second: Kirby_Dance_39
+  - first:
+      213: 2153321590267849035
+    second: Kirby_Dance_40
+  - first:
+      213: -7290312046768471329
+    second: Kirby_Dance_41
+  - first:
+      213: 557126644024945300
+    second: Kirby_Dance_42
+  - first:
+      213: 3830067768897715693
+    second: Kirby_Dance_43
+  - first:
+      213: 6213721349406945163
+    second: Kirby_Dance_44
+  - first:
+      213: -2051083781172761124
+    second: Kirby_Dance_45
+  - first:
+      213: -2321864058410411451
+    second: Kirby_Dance_46
+  - first:
+      213: 665003545679308314
+    second: Kirby_Dance_47
+  - first:
+      213: -8464322156900160066
+    second: Kirby_Dance_48
+  - first:
+      213: -4739539275861489427
+    second: Kirby_Dance_49
+  - first:
+      213: 7395120661456238511
+    second: Kirby_Dance_50
+  - first:
+      213: 4765563067074046369
+    second: Kirby_Dance_51
+  - first:
+      213: 5436465537011986681
+    second: Kirby_Dance_52
+  - first:
+      213: 5770248881322047107
+    second: Kirby_Dance_53
+  - first:
+      213: -8359487285541000470
+    second: Kirby_Dance_54
+  - first:
+      213: 2566081819529641782
+    second: Kirby_Dance_55
+  - first:
+      213: -7792480666702806130
+    second: Kirby_Dance_56
+  - first:
+      213: -6539481592552286116
+    second: Kirby_Dance_57
+  - first:
+      213: -4765716695204730160
+    second: Kirby_Dance_58
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Kirby_Dance_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 95
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96190876e80ac3450800000000000000
+      internalID: 6069902931270865257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 95
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09f0a6d099584bb00800000000000000
+      internalID: 843445922626670480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_2
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 95
+        width: 25
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8659f15d7e61e1cd0800000000000000
+      internalID: -2585603951095212696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_3
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 95
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a130758008fceda0800000000000000
+      internalID: -5914079529521892960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_4
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 95
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1d24060240d4ad90800000000000000
+      internalID: -7087310931586962146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_5
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 95
+        width: 26
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e1938d91435471e0800000000000000
+      internalID: -2201042776596704792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_6
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 95
+        width: 26
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfcbfb14a5b7cb7f0800000000000000
+      internalID: -595465423139390213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_7
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 94
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b80195ddf63926580800000000000000
+      internalID: -8835337410283237237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_8
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 94
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5862a8b26c6388e0800000000000000
+      internalID: -1692389863700928417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_9
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 94
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f57fa532da310100800000000000000
+      internalID: 72403743532873208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_10
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 95
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeaf9373824ce4e40800000000000000
+      internalID: 5642663060146092782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_11
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 95
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ac2290bc666f7d70800000000000000
+      internalID: 9043059193788116129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_12
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 95
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6d1bd7b290a22de0800000000000000
+      internalID: -1359347585502208657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_13
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 95
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b67bdd38f7fb805d0800000000000000
+      internalID: -3096014189423118485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_14
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 95
+        width: 24
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4861c0313e87fc1a0800000000000000
+      internalID: -6787073196751579516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_15
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 91
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cd7e64f0eaed0e70800000000000000
+      internalID: 9083174275370614209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_16
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 94
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f7eaa3664dcb44a0800000000000000
+      internalID: -6607962326032521229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 63
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cef0f09fcebb02d0800000000000000
+      internalID: -3311343302301647161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_18
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 64
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df95f55544d0e7370800000000000000
+      internalID: 8322103748568504829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_19
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 64
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 719e49d1172f52730800000000000000
+      internalID: 3973848813865855255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_20
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 63
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c2a79936ba703f00800000000000000
+      internalID: 1094509632519905991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_21
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 63
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a0daa879bc6fa150800000000000000
+      internalID: 5886042781845737636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_22
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 64
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f052b595ce4af4ff0800000000000000
+      internalID: -49639735859403505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_23
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 63
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 793985243a3c89560800000000000000
+      internalID: 7320816300250928023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_24
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 63
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61550bfe82f473cf0800000000000000
+      internalID: -272662215194028778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_25
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 63
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d00447e02bde8db40800000000000000
+      internalID: 5465379496816558093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_26
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 63
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b5ac68a7e824e720800000000000000
+      internalID: 2874467437597468086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_27
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 64
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54f4ac7fffabdfc30800000000000000
+      internalID: 4394874419920129861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_28
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 64
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 089cba15fa332a7c0800000000000000
+      internalID: -4061627085852259968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_29
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 63
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 127172665e41893d0800000000000000
+      internalID: -3199784559752833247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_30
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 63
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8ed4086608d22130800000000000000
+      internalID: 3540629779093184141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_31
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 63
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69b7dd83a6e07afa0800000000000000
+      internalID: -5789642946578121834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_32
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 63
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 743eee92b5f5ab0f0800000000000000
+      internalID: -1100462313788480697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_33
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 63
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab3a1c9dac15c7e70800000000000000
+      internalID: 9114249677569631162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_34
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 63
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ed418e093ac0e600800000000000000
+      internalID: 495618305416056297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_35
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 65
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa2bd00db9ec59230800000000000000
+      internalID: 3645046642032095914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 33
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcd56dd1ed6c25fa0800000000000000
+      internalID: -5813365511696261685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_37
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3459ba09f4d384cb0800000000000000
+      internalID: -4879582784317057725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_38
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 32
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0224510c3951f6170800000000000000
+      internalID: 8173775573027734048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_39
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 32
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebc1043e03e78a500800000000000000
+      internalID: 407714514713189566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_40
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 32
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b49281bd39222ed10800000000000000
+      internalID: 2153321590267849035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_41
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 32
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd24d96b1db93da90800000000000000
+      internalID: -7290312046768471329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_42
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 33
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49a23002bbf4bb700800000000000000
+      internalID: 557126644024945300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_43
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 32
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ded32ded752272530800000000000000
+      internalID: 3830067768897715693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_44
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 32
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8f69a445a29b3650800000000000000
+      internalID: 6213721349406945163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_45
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 33
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdde1aa0b261983e0800000000000000
+      internalID: -2051083781172761124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_46
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 34
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54a53bdc0f417cfd0800000000000000
+      internalID: -2321864058410411451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_47
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 34
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a16279293319a3900800000000000000
+      internalID: 665003545679308314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_48
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 34
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebd6f7d18dfa88a80800000000000000
+      internalID: -8464322156900160066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_49
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 34
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de88347c326c93eb0800000000000000
+      internalID: -4739539275861489427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_50
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 34
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa730418f0fb0a660800000000000000
+      internalID: 7395120661456238511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_51
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 34
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a96ba74c5ea22240800000000000000
+      internalID: 4765563067074046369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_52
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 34
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f0b04f2a94327b40800000000000000
+      internalID: 5436465537011986681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_53
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 386bbc419ca041050800000000000000
+      internalID: 5770248881322047107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_54
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aea2fe0ba922dfb80800000000000000
+      internalID: -8359487285541000470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_55
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 0
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63ff6a5b1dd8c9320800000000000000
+      internalID: 2566081819529641782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_56
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 0
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e838416be1c8bd390800000000000000
+      internalID: -7792480666702806130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_57
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5817b4a3281f35a0800000000000000
+      internalID: -6539481592552286116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kirby_Dance_58
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 0
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0da6c226ae5ccddb0800000000000000
+      internalID: -4765716695204730160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Kirby_Dance_0: 6069902931270865257
+      Kirby_Dance_1: 843445922626670480
+      Kirby_Dance_10: 5642663060146092782
+      Kirby_Dance_11: 9043059193788116129
+      Kirby_Dance_12: -1359347585502208657
+      Kirby_Dance_13: -3096014189423118485
+      Kirby_Dance_14: -6787073196751579516
+      Kirby_Dance_15: 9083174275370614209
+      Kirby_Dance_16: -6607962326032521229
+      Kirby_Dance_17: -3311343302301647161
+      Kirby_Dance_18: 8322103748568504829
+      Kirby_Dance_19: 3973848813865855255
+      Kirby_Dance_2: -2585603951095212696
+      Kirby_Dance_20: 1094509632519905991
+      Kirby_Dance_21: 5886042781845737636
+      Kirby_Dance_22: -49639735859403505
+      Kirby_Dance_23: 7320816300250928023
+      Kirby_Dance_24: -272662215194028778
+      Kirby_Dance_25: 5465379496816558093
+      Kirby_Dance_26: 2874467437597468086
+      Kirby_Dance_27: 4394874419920129861
+      Kirby_Dance_28: -4061627085852259968
+      Kirby_Dance_29: -3199784559752833247
+      Kirby_Dance_3: -5914079529521892960
+      Kirby_Dance_30: 3540629779093184141
+      Kirby_Dance_31: -5789642946578121834
+      Kirby_Dance_32: -1100462313788480697
+      Kirby_Dance_33: 9114249677569631162
+      Kirby_Dance_34: 495618305416056297
+      Kirby_Dance_35: 3645046642032095914
+      Kirby_Dance_36: -5813365511696261685
+      Kirby_Dance_37: -4879582784317057725
+      Kirby_Dance_38: 8173775573027734048
+      Kirby_Dance_39: 407714514713189566
+      Kirby_Dance_4: -7087310931586962146
+      Kirby_Dance_40: 2153321590267849035
+      Kirby_Dance_41: -7290312046768471329
+      Kirby_Dance_42: 557126644024945300
+      Kirby_Dance_43: 3830067768897715693
+      Kirby_Dance_44: 6213721349406945163
+      Kirby_Dance_45: -2051083781172761124
+      Kirby_Dance_46: -2321864058410411451
+      Kirby_Dance_47: 665003545679308314
+      Kirby_Dance_48: -8464322156900160066
+      Kirby_Dance_49: -4739539275861489427
+      Kirby_Dance_5: -2201042776596704792
+      Kirby_Dance_50: 7395120661456238511
+      Kirby_Dance_51: 4765563067074046369
+      Kirby_Dance_52: 5436465537011986681
+      Kirby_Dance_53: 5770248881322047107
+      Kirby_Dance_54: -8359487285541000470
+      Kirby_Dance_55: 2566081819529641782
+      Kirby_Dance_56: -7792480666702806130
+      Kirby_Dance_57: -6539481592552286116
+      Kirby_Dance_58: -4765716695204730160
+      Kirby_Dance_6: -595465423139390213
+      Kirby_Dance_7: -8835337410283237237
+      Kirby_Dance_8: -1692389863700928417
+      Kirby_Dance_9: 72403743532873208
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
