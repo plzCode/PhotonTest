@@ -129,6 +129,7 @@ MonoBehaviour:
   - Attack3__Sound
   - AirOut__Sound
   - WaitAndAction
+  - Dance
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

@@ -58,22 +58,12 @@ public class Chest : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            AudioManager.Instance.PlaySFX("Kirby_Dance");
-            anim.SetBool("Open", true);
+            collision.GetComponent<Player>().pView.RPC("Dance", RpcTarget.AllBuffered);
 
-            if(collision.GetComponent<Player>() != null)
-            {
-                Player player = collision.GetComponent<Player>();
-                if(player.curAbility != null)
-                {
-                    player.curAbility.OnAbilityDestroyed(player);
-                    Destroy(player.curAbility);
-                }
-                player.isBusy = true;
-                player.stateMachine.ChangeState(player.danceState);
-            }
         }
     }
+
+    
 
 
 }

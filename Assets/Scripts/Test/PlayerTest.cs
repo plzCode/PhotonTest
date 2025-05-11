@@ -144,5 +144,38 @@ public class PlayerTest : MonoBehaviourPunCallbacks, IPunObservable
         currentDoor = GameObject.Find(doorName).GetComponent<Door>();
     }
 
+    [PunRPC]
+    public void Dance()
+    {   
+        if(PhotonNetwork.IsMasterClient)
+        {
+            AudioManager.Instance.RPC_PlaySFX("Kirby_Dance");
+        }
+
+        for (int i = 0; i < GameManager.Instance.playerList.Count; i++)
+        {
+            GameObject playerObject = GameManager.Instance.playerList[i];
+            if (playerObject.GetComponent<Player>() != null)
+            {
+                Player tmp_player = playerObject.GetComponent<Player>();
+                if (!tmp_player.pView.IsMine)
+                {
+                    // i 값을 활용하여 각 플레이어의 위치를 조정
+                    playerObject.GetComponent<PhotonTransformView>().enabled = false;
+                    playerObject.transform.position = new Vector3(transform.position.x + 1.5f * i, transform.position.y, transform.position.z);
+                }
+                tmp_player.anim.SetBool("Open", true);
+                if (tmp_player.curAbility != null)
+                {
+                    tmp_player.curAbility.OnAbilityDestroyed(tmp_player);
+                    Destroy(tmp_player.curAbility);
+                }
+                tmp_player.isBusy = true;
+                tmp_player.stateMachine.ChangeState(tmp_player.danceState);
+            }
+        }
+
+    }
+
 }
 
