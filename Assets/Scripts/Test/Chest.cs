@@ -67,9 +67,16 @@ public class Chest : MonoBehaviour
             isTriggered = true;
             AudioManager.Instance.StopBGM();
             collision.GetComponent<Player>().pView.RPC("Dance", RpcTarget.AllBuffered, transform.position);
-            StartCoroutine(WaitAndAction(5.3f, "Open"));
+            //StartCoroutine(WaitAndAction(5.3f, "Open"));
+            GetComponent<PhotonView>().RPC("RPC_WaitAndAction", RpcTarget.AllBuffered, 5.3f, "Open");
 
         }
+    }
+
+    [PunRPC]
+    public void RPC_WaitAndAction(float time, string func)
+    {
+        StartCoroutine(WaitAndAction(time, func));
     }
 
     IEnumerator WaitAndAction(float time,string func)
