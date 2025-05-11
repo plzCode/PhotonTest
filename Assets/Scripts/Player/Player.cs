@@ -830,6 +830,7 @@ public class Player : MonoBehaviour
         {
             //게임오버
             Debug.Log("게임오버");
+            NetworkManager.Instance.DisconnectAndLoadScene("TestPhoton");
         }
         isBusy = false;
     }

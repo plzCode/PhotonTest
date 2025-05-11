@@ -33,6 +33,8 @@ public class Boss_Bonkers : Enemy
         attackState = new Bonkers_AttackState(this, stateMachine, "Attack");
         dieState = new Bonkers_DieState(this, stateMachine, "Die");
 
+        
+
     }
 
     protected override void Start()
@@ -136,7 +138,7 @@ public class Boss_Bonkers : Enemy
         else if (stateName == "Attack")
             stateMachine.ChangeState(attackState);
         else if (stateName == "Die")
-            stateMachine.ChangeState(idleState);
+            stateMachine.ChangeState(dieState);
         else
             Debug.LogError("Invalid state name: " + stateName);
 

@@ -131,6 +131,9 @@ MonoBehaviour:
   - WaitAndAction
   - SetVelocityRPC
   - Dance
+  - BossSpawn
+  - PlayBGM
+  - RPC_StopBGM
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

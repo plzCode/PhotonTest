@@ -161,11 +161,14 @@ public class Enemy : MonoBehaviour
         if (this is Boss_Bonkers)
         {
             StartCoroutine(DieTime());
+            SpawnReward();
+            AudioManager.Instance.StopBGM();
             return;
         }
         else if (this is Boss_DDD)
         {
             StartCoroutine(DieTime());
+            SpawnReward();
             return;
         }
         //if (PhotonNetwork.IsMasterClient)
@@ -430,5 +433,15 @@ public class Enemy : MonoBehaviour
         }
 
         PhotonNetwork.Destroy(gameObject);
+    }
+    public void SpawnReward()
+    {
+        if (PhotonNetwork.IsMasterClient)
+        {
+            // 보상 스폰 로직
+            GameObject reward = PhotonNetwork.Instantiate("Item/Reward/Chest", transform.position, Quaternion.identity);
+
+            // 추가적인 보상 설정이나 초기화 작업 수행
+        }
     }
 }
