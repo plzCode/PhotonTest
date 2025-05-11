@@ -13,7 +13,8 @@ public class Bonkers_DieState : BossState
     {
         base.Enter();
         boss.anim.SetFloat("yVelocity", 10f);
-        boss.photonView.RPC("Die", RpcTarget.All);
+        if(PhotonNetwork.IsMasterClient)
+            boss.photonView.RPC("Die", RpcTarget.All);
 
     }
 

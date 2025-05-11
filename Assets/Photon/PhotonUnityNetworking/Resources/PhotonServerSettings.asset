@@ -131,6 +131,7 @@ MonoBehaviour:
   - WaitAndAction
   - SetVelocityRPC
   - Dance
+  - BossSpawn
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

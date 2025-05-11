@@ -145,26 +145,23 @@ public class PlayerTest : MonoBehaviourPunCallbacks, IPunObservable
     }
 
     [PunRPC]
-    public void Dance()
-    {   
+    public void Dance(Vector3 pos)
+    {
         if(PhotonNetwork.IsMasterClient)
         {
             AudioManager.Instance.RPC_PlaySFX("Kirby_Dance");
         }
-
+        
+        // 모든 클라이언트에서 동일한 기준 좌표로 실행
         for (int i = 0; i < GameManager.Instance.playerList.Count; i++)
         {
             GameObject playerObject = GameManager.Instance.playerList[i];
-            if (playerObject.GetComponent<Player>() != null)
+            if (playerObject.TryGetComponent<Player>(out Player tmp_player))
             {
-                Player tmp_player = playerObject.GetComponent<Player>();
-                if (!tmp_player.pView.IsMine)
-                {
-                    // i 값을 활용하여 각 플레이어의 위치를 조정
-                    playerObject.GetComponent<PhotonTransformView>().enabled = false;
-                    playerObject.transform.position = new Vector3(transform.position.x + 1.5f * i, transform.position.y, transform.position.z);
-                }
-                tmp_player.anim.SetBool("Open", true);
+                float offset = 1.5f * ((i / 2) + 1);
+                float x = (i % 2 == 0) ? pos.x + offset : pos.x - offset;
+                playerObject.transform.position = new Vector3(x, pos.y, pos.z);
+
                 if (tmp_player.curAbility != null)
                 {
                     tmp_player.curAbility.OnAbilityDestroyed(tmp_player);
@@ -174,7 +171,6 @@ public class PlayerTest : MonoBehaviourPunCallbacks, IPunObservable
                 tmp_player.stateMachine.ChangeState(tmp_player.danceState);
             }
         }
-
     }
 
 }

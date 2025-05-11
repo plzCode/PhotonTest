@@ -1,6 +1,7 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
+using UnityEngine.SceneManagement;
 
 public class NetworkManager : MonoBehaviourPunCallbacks
 {
@@ -8,11 +9,11 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     private void Awake()
     {
-        // ½Ì±ÛÅæ ÆĞÅÏ
+        // ì‹±ê¸€í†¤ íŒ¨í„´
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); // ¾À ÀüÈ¯ ½Ã¿¡µµ À¯Áö
+            DontDestroyOnLoad(gameObject); // ì”¬ ì „í™˜ ì‹œì—ë„ ìœ ì§€
         }
         else
         {
@@ -23,10 +24,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     void Start()
     {
         ConnectToPhoton();
-        if(AudioManager.Instance != null)
-        {
-            AudioManager.Instance.PlayBGM("MainTitle_2");
-        }
     }
 
     public void ConnectToPhoton()
@@ -35,21 +32,21 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         Debug.Log("Connecting to Photon...");
     }
 
-    // ¸¶½ºÅÍ ¼­¹ö¿¡ ¿¬°á ¿Ï·á
+    // ë§ˆìŠ¤í„° ì„œë²„ì— ì—°ê²° ì™„ë£Œ
     public override void OnConnectedToMaster()
     {
         Debug.Log("Connected to Master Server");
         PhotonNetwork.JoinLobby();
     }
 
-    // ·Îºñ ÀÔÀå ¿Ï·á
+    // ë¡œë¹„ ì…ì¥ ì™„ë£Œ
     public override void OnJoinedLobby()
     {
         Debug.Log("Joined Lobby");
-        // UI È°¼ºÈ­ °°Àº ÀÛ¾÷ °¡´É
+        // UI í™œì„±í™” ê°™ì€ ì‘ì—… ê°€ëŠ¥
     }
 
-    // ¹æ »ı¼º
+    // ë°© ìƒì„±
     public void CreateRoom(string roomName)
     {
         RoomOptions options = new RoomOptions();
@@ -58,28 +55,28 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         PhotonNetwork.CreateRoom(roomName, options);
     }
 
-    // ¹æ Âü°¡
+    // ë°© ì°¸ê°€
     public void JoinRoom(string roomName)
     {
         PhotonNetwork.JoinRoom(roomName);
     }
 
-    // ·£´ı ¹æ Âü°¡
+    // ëœë¤ ë°© ì°¸ê°€
     public void JoinRandomRoom()
     {
         PhotonNetwork.JoinRandomRoom();
     }
 
-    // ¹æ Âü°¡ ¼º°ø
+    // ë°© ì°¸ê°€ ì„±ê³µ
     public override void OnJoinedRoom()
     {
         Debug.Log("Joined Room: " + PhotonNetwork.CurrentRoom.Name);
 
-        // ·Îµù ¾À ÀÌµ¿ µî
-        //PhotonNetwork.LoadLevel("GameScene"); // ¸ğµç À¯Àú°¡ ÀÚµ¿À¸·Î ÀÌµ¿
+        // ë¡œë”© ì”¬ ì´ë™ ë“±
+        //PhotonNetwork.LoadLevel("GameScene"); // ëª¨ë“  ìœ ì €ê°€ ìë™ìœ¼ë¡œ ì´ë™
     }
 
-    // ¹æ Âü°¡ ½ÇÆĞ
+    // ë°© ì°¸ê°€ ì‹¤íŒ¨
     public override void OnJoinRandomFailed(short returnCode, string message)
     {
         Debug.Log("Join Random Failed: " + message);
@@ -94,5 +91,25 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     public void LeaveRoom()
     {
         PhotonNetwork.LeaveRoom();
+    }
+
+    private bool isWaitingToLoadScene = false;
+    private string nextSceneName;
+    public void DisconnectAndLoadScene(string nextSceneName)
+    {
+        this.nextSceneName = nextSceneName;
+        isWaitingToLoadScene = true;
+        PhotonNetwork.Disconnect();
+    }
+
+
+    public override void OnDisconnected(DisconnectCause cause)
+    {
+
+        if (isWaitingToLoadScene && nextSceneName != null)
+        {
+            isWaitingToLoadScene = false;
+            SceneManager.LoadScene(nextSceneName);
+        }
     }
 }

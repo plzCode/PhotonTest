@@ -19,6 +19,7 @@ public class CameraShake : MonoBehaviour
         }
 
         Instance = this;
+
         DontDestroyOnLoad(gameObject);
 
         

@@ -7,7 +7,7 @@ public class BossSpawnEvent : MonoBehaviour
 {
     public int playerNumber;
     public int stay_Player = 0;
-    public float timeToWait = 4f;
+    public float timeToWait = 1f;
     public GameObject bossPrefab;
     public Transform SpawnPoint;
     public bool isTriggered = false;
@@ -32,8 +32,12 @@ public class BossSpawnEvent : MonoBehaviour
 
                 if (bossPrefab != null)
                 {
-                    BossSpawn();
-                    isTriggered = true;
+                    if (PhotonNetwork.IsMasterClient)
+                    {
+                        GetComponent<PhotonView>().RPC("BossSpawn",RpcTarget.AllBuffered);
+                        isTriggered = true;
+                    }
+                    
                 }
                 else
                 {
@@ -51,6 +55,7 @@ public class BossSpawnEvent : MonoBehaviour
         }
     }
 
+    [PunRPC]
     public void BossSpawn()
     {
         /*if(PhotonNetwork.IsMasterClient == false)

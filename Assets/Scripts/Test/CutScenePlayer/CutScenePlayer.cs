@@ -1,14 +1,18 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.Video;
 using UnityEngine.SceneManagement;
+using Photon.Pun;
+using System.Security.Cryptography;
+using Photon.Realtime;
+using System.Collections;
 
-public class CutScenePlayer : MonoBehaviour
+public class CutScenePlayer : MonoBehaviourPunCallbacks
 {
-    [Header("¿µ»ó ¼³Á¤")]
-    public string videoFileName = "ending.mp4"; // StreamingAssets Æú´õ ³» ¿µ»ó ÆÄÀÏ ÀÌ¸§
+    [Header("ì˜ìƒ ì„¤ì •")]
+    public string videoFileName = "ending.mp4";
 
-    [Header("´ÙÀ½ ¾À ¼³Á¤")]
-    public string nextSceneName = "TestPhoton"; // ¿µ»ó ³¡³­ ÈÄ ÀÌµ¿ÇÒ ¾À ÀÌ¸§
+    [Header("ë‹¤ìŒ ì”¬ ì„¤ì •")]
+    public string nextSceneName = "TestPhoton";
 
     private VideoPlayer videoPlayer;
 
@@ -19,23 +23,79 @@ public class CutScenePlayer : MonoBehaviour
         {
             videoPlayer = gameObject.AddComponent<VideoPlayer>();
         }
-        videoFileName = videoFileName + ".mp4"; // È®ÀåÀÚ Ãß°¡
+
+        if (!videoFileName.EndsWith(".mp4"))
+            videoFileName += ".mp4";
     }
 
     void Start()
+    {
+        videoPlayer.targetCamera = Camera.main;
+        videoPlayer.renderMode = VideoRenderMode.CameraFarPlane;
+    }
+
+    /*void OnVideoEnd(VideoPlayer vp)
+    {
+        //Debug.Log("âœ… [OnVideoEnd] ì˜ìƒ ì¢…ë£Œ ê°ì§€");
+        //StartCoroutine(HandleDisconnectAndSceneLoad());
+        Debug.Log("âœ… [OnVideoEnd] ì˜ìƒ ì¢…ë£Œ ê°ì§€ - ë°”ë¡œ ì”¬ ì „í™˜");
+        NetworkManager.Instance.OnLeftLobby();
+        NetworkManager.Instance.ConnectToPhoton();
+        SceneManager.LoadScene(nextSceneName);
+
+
+    }*/
+
+    /* public override void OnDisconnected(DisconnectCause cause)
+     {
+         Debug.Log("[OnDisconnected] ì—°ê²° í•´ì œë¨: " + cause);
+
+         if (isWaitingToLoadScene)
+         {
+             isWaitingToLoadScene = false;
+
+             Debug.Log("â¡ï¸ ì”¬ ì´ë™ ì‹œì‘");
+             NetworkManager.Instance.OnLeftLobby();
+             NetworkManager.Instance.ConnectToPhoton();
+
+             SceneManager.LoadScene(nextSceneName);
+         }
+     }
+
+     IEnumerator HandleDisconnectAndSceneLoad()
+     {
+         if (PhotonNetwork.IsConnected)
+         {
+             PhotonNetwork.Disconnect();
+             Debug.Log("ğŸ”Œ Disconnect ìš”ì²­");
+
+             while (PhotonNetwork.IsConnected)
+             {
+                 yield return null; // ì—°ê²° í•´ì œ ëŒ€ê¸°
+             }
+         }
+
+         Debug.Log("â¡ï¸ ì—°ê²° í•´ì œ ì™„ë£Œ â†’ ì”¬ ì „í™˜");
+         SceneManager.LoadScene(nextSceneName);
+     }*/
+    void OnVideoEnd(VideoPlayer vp)
+    {
+
+        if (AudioManager.Instance != null)
+        {
+            Destroy(AudioManager.Instance.gameObject);
+            AudioManager.Instance = null;
+        }
+        NetworkManager.Instance.DisconnectAndLoadScene(nextSceneName);
+    }
+
+    
+    public void PlayCutScene()
     {
         string videoPath = System.IO.Path.Combine(Application.streamingAssetsPath, videoFileName);
         videoPlayer.url = videoPath;
         videoPlayer.renderMode = VideoRenderMode.CameraNearPlane;
         videoPlayer.loopPointReached += OnVideoEnd;
         videoPlayer.Play();
-    }
-
-    void OnVideoEnd(VideoPlayer vp)
-    {
-        if (!string.IsNullOrEmpty(nextSceneName))
-        {
-            SceneManager.LoadScene(nextSceneName);
-        }
     }
 }

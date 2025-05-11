@@ -5,7 +5,7 @@ using System.Collections;
 
 public class AudioManager : MonoBehaviour
 {
-    public static AudioManager Instance { get; private set; }
+    public static AudioManager Instance;
 
     public AudioSource bgmSource;
     public AudioSource sfxSource;
@@ -17,11 +17,16 @@ public class AudioManager : MonoBehaviour
 
     void Awake()
     {
-        if (Instance != null && Instance != this) Destroy(gameObject);
-        else Instance = this;
-        audioView = GetComponent<PhotonView>();
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
 
         DontDestroyOnLoad(gameObject);
+        audioView = GetComponent<PhotonView>();
         LoadAllClips();
     }
 

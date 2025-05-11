@@ -1,3 +1,4 @@
+using Photon.Pun;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -22,8 +23,13 @@ public class SceneLoadListener : MonoBehaviour
     {
         switch (scene.name)
         {
-            case "LobbyScene":
+            case "TestPhoton":
                 AudioManager.Instance.PlayBGM("LobbyBGM");
+                if (AudioManager.Instance != null)
+                {
+                    AudioManager.Instance.PlayBGM("MainTitle_2");
+                }
+                NetworkManager.Instance.ConnectToPhoton();
                 break;
             case "GameScene":
                 AudioManager.Instance.PlayBGM("GameScene");
