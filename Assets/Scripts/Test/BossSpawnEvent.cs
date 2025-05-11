@@ -67,7 +67,7 @@ public class BossSpawnEvent : MonoBehaviour
         if (bossPrefab != null)
         {
             // WaitAndAction 코루틴 실행
-            bossPrefab.GetComponentInChildren<PhotonView>().RPC("WaitAndAction", RpcTarget.All, timeToWait);
+            //bossPrefab.GetComponentInChildren<PhotonView>().RPC("WaitAndAction", RpcTarget.All, timeToWait);
         }
         else
         {

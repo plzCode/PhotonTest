@@ -130,6 +130,7 @@ MonoBehaviour:
   - AirOut__Sound
   - WaitAndAction
   - SetVelocityRPC
+  - Dance
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

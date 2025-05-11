@@ -594,6 +594,9 @@ MonoBehaviour:
   - Type: 4
     SynchronizeType: 0
     Name: Die
+  - Type: 4
+    SynchronizeType: 0
+    Name: Dance
   m_SynchronizeLayers:
   - SynchronizeType: 1
     LayerIndex: 0

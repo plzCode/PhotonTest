@@ -193,7 +193,44 @@ public class PlayerAnimatorController : MonoBehaviour
         }
     }
 
+    #region forChest
+    public void MoveLeft()
+    {
+        MoveForDuration(1f, 1f);
+    }
+    public void MoveRight()
+    {
+        MoveForDuration(-1f, 1f);
+    }
+    public void MoveStop()
+    {
+        StopAllCoroutines();
+        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+    }
 
+    public void MoveForDuration(float distance, float duration)
+    {
+        StartCoroutine(MoveCoroutine(distance, duration));
+    }
+    private IEnumerator MoveCoroutine(float distance, float duration)
+    {
+        float elapsedTime = 0f;
+        float startX = transform.position.x;
+        float targetX = startX + distance;
+
+        while (elapsedTime < duration)
+        {
+            elapsedTime += Time.deltaTime;
+            float t = elapsedTime / duration; // 진행 비율 (0 ~ 1)
+            float newX = Mathf.Lerp(startX, targetX, t); // 선형 보간으로 위치 계산
+            transform.position = new Vector3(newX, transform.position.y, transform.position.z);
+            yield return null; // 다음 프레임까지 대기
+        }
+
+        // 최종 위치 보정
+        transform.position = new Vector3(targetX, transform.position.y, transform.position.z);
+    }
+    #endregion
 
 
 

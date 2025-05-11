@@ -1,4 +1,5 @@
 using Photon.Pun;
+using System.Collections;
 using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
 
@@ -10,6 +11,7 @@ public class Boss_Bonkers : Enemy
     public Bonkers_MoveState moveState { get; private set; }
     public Bonkers_JumpState jumpState { get; private set; }
     public Bonkers_AttackState attackState { get; private set; }
+    public Bonkers_DieState dieState { get; private set; }
 
     [Header("체력 UI")]
     [SerializeField] private Monster_HealthBar health_Bar;
@@ -29,6 +31,7 @@ public class Boss_Bonkers : Enemy
         moveState = new Bonkers_MoveState(this, stateMachine, "Move");
         jumpState = new Bonkers_JumpState(this, stateMachine, "Jump");
         attackState = new Bonkers_AttackState(this, stateMachine, "Attack");
+        dieState = new Bonkers_DieState(this, stateMachine, "Die");
 
     }
 
@@ -112,7 +115,13 @@ public class Boss_Bonkers : Enemy
         health_Bar.UpdateHealthBar(maxHp, currentHp);
         Debug.Log("몬스터가 피해를 " + _damage + "받음");
 
-        
+        if(currentHp <= 0)
+        {
+            //health_Bar.UpdateHealthBar(maxHp, 0);
+            // 몬스터 사망 처리
+            stateMachine.ChangeState(dieState);
+            //Destroy(gameObject);
+        }
     }
 
     [PunRPC]
@@ -126,6 +135,10 @@ public class Boss_Bonkers : Enemy
             stateMachine.ChangeState(jumpState);
         else if (stateName == "Attack")
             stateMachine.ChangeState(attackState);
+        else if (stateName == "Die")
+            stateMachine.ChangeState(idleState);
+        else
+            Debug.LogError("Invalid state name: " + stateName);
 
     }
 
@@ -187,4 +200,6 @@ public class Boss_Bonkers : Enemy
 
         UpdateCurrentPlayersCollision();
     }
+
+    
 }
