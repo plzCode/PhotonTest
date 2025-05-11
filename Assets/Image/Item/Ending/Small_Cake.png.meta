@@ -273,7 +273,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Small_Cake_0: 6764164312181796181
+      Small_Cake_1: 3985647187394324698
+      Small_Cake_2: 6866831487045699508
+      Small_Cake_3: 3318508455390924820
+      Small_Cake_4: 1877129496353206862
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
