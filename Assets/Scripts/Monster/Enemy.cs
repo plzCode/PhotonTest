@@ -28,6 +28,8 @@ public class Enemy : MonoBehaviour
     [Header("충돌 정보")]
     public Transform attackCheck;
     public float attackCheckRadius;
+    public Transform attack1Check;
+    public float attack1CheckRadius;
 
 
     [SerializeField] protected Transform groundCheck;
@@ -247,6 +249,8 @@ public class Enemy : MonoBehaviour
             Gizmos.DrawLine(wallCheck.position, new Vector3(wallCheck.position.x + wallCheckDistance * facingDir, wallCheck.position.y));
         if (attackCheck != null)
             Gizmos.DrawWireSphere(attackCheck.position, attackCheckRadius);
+        if (attack1Check != null)
+            Gizmos.DrawWireSphere(attack1Check.position, attack1CheckRadius);
     }
 
     // 파라미터를 가지고있는지 확인한다.

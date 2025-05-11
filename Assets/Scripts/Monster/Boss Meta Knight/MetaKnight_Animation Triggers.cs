@@ -19,8 +19,6 @@ public class MetaKnight_AnimationTriggers : MonoBehaviour
 
     private void AttackTrigger()
     {
-        SetCameraShake();
-
         if (!PhotonNetwork.IsMasterClient)
             return;
 
@@ -40,11 +38,90 @@ public class MetaKnight_AnimationTriggers : MonoBehaviour
         }
     }
 
+    private void MyPosAttackTrigger()
+    {
+        if (!PhotonNetwork.IsMasterClient)
+            return;
+
+
+
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(boss.attack1Check.position, boss.attack1CheckRadius);
+
+        foreach (var hit in colliders)
+        {
+            if (hit.GetComponent<Player>() != null)
+            {
+                if (hit.GetComponent<PhotonView>() != null)
+                    hit.GetComponent<PhotonView>().RPC("TakeDamage", RpcTarget.All, (Vector2)transform.position, boss.attackPower); // 데미지 처리                
+
+
+            }
+        }
+    }
+
+    private void MyPosAttack4Trigger()
+    {
+        boss.SetVelocity(0 * boss.facingDir, 0);
+
+        if (!PhotonNetwork.IsMasterClient)
+            return;
+
+
+
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(boss.attack1Check.position, boss.attack1CheckRadius + 0.5f);
+
+        foreach (var hit in colliders)
+        {
+            if (hit.GetComponent<Player>() != null)
+            {
+                if (hit.GetComponent<PhotonView>() != null)
+                    hit.GetComponent<PhotonView>().RPC("TakeDamage", RpcTarget.All, (Vector2)transform.position, boss.attackPower); // 데미지 처리                
+
+
+            }
+        }
+    }
+
     private void Jump()
     {
-
         boss.SetVelocity(4 * boss.facingDir, 10f);
+    }
 
+    private void AirJump()
+    {
+        boss.SetVelocity(4 * boss.facingDir, 6f);
+    }
 
+    private void AirStop()
+    {
+        Rigidbody2D rb = boss.GetComponent<Rigidbody2D>();
+        rb.linearVelocity = Vector2.zero;
+        rb.gravityScale = 0f; // 중력도 제거
+    }
+
+    private void AirStopEnd()
+    {
+        Rigidbody2D rb = boss.GetComponent<Rigidbody2D>();
+        rb.gravityScale = 1f; // 중력 복원
+    }
+
+    private void SetJumpCheck()
+    {
+        boss.isJump = true;
+    }
+
+    private void SetJumpCheckClose()
+    {
+        boss.isJump = false;
+    }
+
+    private void Setmove()
+    {
+        boss.attack4State.bossDash = true;
+    }
+
+    private void SetmoveClose()
+    {
+        boss.attack4State.bossDash = false;
     }
 }

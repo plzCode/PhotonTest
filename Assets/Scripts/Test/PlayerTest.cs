@@ -49,7 +49,7 @@ public class PlayerTest : MonoBehaviourPunCallbacks, IPunObservable
                 sr.color = new Color32(255, 255, 0, 255);
                 break;
             case 3:
-                sr.color = new Color32(0, 0, 255, 255);
+                sr.color = new Color32(0, 255, 255, 255);
                 break;
             case 4:
                 sr.color = new Color32(0, 255, 0, 255);

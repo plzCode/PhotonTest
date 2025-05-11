@@ -10,7 +10,6 @@ public class MetaKnight_Idle : BossState
     public override void Enter()
     {
         base.Enter();
-        isJumpTurn = true;
         stateTimer = boss.idleTime;
     }
 
@@ -26,12 +25,12 @@ public class MetaKnight_Idle : BossState
         if (!PhotonNetwork.IsMasterClient)
             return;
 
-
-        if (stateTimer < 0 && closestPlayer != null)
+        if (stateTimer < 0)
         {
-            if (isJumpTurn) //플레이어가 멀리있다면 가까이 간 후 공격시작
+            // 조건:  플레이어 존재 && 거리 8 이하
+            if (closestPlayer != null && Vector2.Distance(closestPlayer.position, boss.transform.position) < 7f)
             {
-                isJumpTurn = false;
+
 
                 if ((boss.transform.position.x < closestPlayer.position.x) && boss.facingDir == -1)
                 {
@@ -41,24 +40,80 @@ public class MetaKnight_Idle : BossState
                 {
                     boss.photonView.RPC("FlipRPC", RpcTarget.All);
                 }
-                randAttackCount = Random.Range(1, 4);
-
-                switch (randAttackCount)
+                else
                 {
-                    case 1:
-                        boss.photonView.RPC("ChangeState", RpcTarget.All, "Move");
-                        break;
-                    case 2:
-                        boss.photonView.RPC("ChangeState", RpcTarget.All, "Dash");
-                        break;
-                    case 3:
-                        boss.photonView.RPC("ChangeState", RpcTarget.All, "Jump");
-                        break;
-                    case 4:
-                        boss.photonView.RPC("ChangeState", RpcTarget.All, "Air_Jump");
-                        break;
+                    randomJumpCount = Random.Range(5, 5); // 2~3
+                    switch (randomJumpCount)
+                    {
+                        case 1:
+                            randAttackCount = Random.Range(1, 5);
+                            boss.photonView.RPC("ChangeAnimInteger", RpcTarget.All, "Attack_Count", randAttackCount);
+                            boss.photonView.RPC("ChangeState", RpcTarget.All, "Attack1");
+                            break;
+                        case 2:
+                            randAttackCount = Random.Range(1, 4);
+                            boss.photonView.RPC("ChangeAnimInteger", RpcTarget.All, "Attack_Count", randAttackCount);
+                            boss.photonView.RPC("ChangeState", RpcTarget.All, "Attack2");
+                            break;
+                        case 3:
+                            randAttackCount = Random.Range(1, 5);
+                            boss.photonView.RPC("ChangeAnimInteger", RpcTarget.All, "Attack_Count", randAttackCount);
+                            boss.photonView.RPC("ChangeState", RpcTarget.All, "Attack3");
+                            break;
+                        case 4:
+                            randAttackCount = Random.Range(1, 4);
+                            boss.photonView.RPC("ChangeAnimInteger", RpcTarget.All, "Attack_Count", randAttackCount);
+                            boss.photonView.RPC("ChangeState", RpcTarget.All, "Attack4");
+                            break;
+                        case 5:
+                            randAttackCount = Random.Range(1, 100);
+                            if (randAttackCount < 70)
+                            {
+                                return;
+                            }
+                            else boss.photonView.RPC("ChangeState", RpcTarget.All, "Attack5");
+                            break;
+                    }
                 }
             }
+
+
+
+            else if (closestPlayer != null && Vector2.Distance(closestPlayer.position, boss.transform.position) > 7f) //너무멀면 쫒아오도록
+            {
+                if ((boss.transform.position.x < closestPlayer.position.x) && boss.facingDir == -1)
+                {
+                    boss.photonView.RPC("FlipRPC", RpcTarget.All);
+                }
+                if ((boss.transform.position.x > closestPlayer.position.x) && boss.facingDir == 1)
+                {
+                    boss.photonView.RPC("FlipRPC", RpcTarget.All);
+                }
+                else
+                {
+                    randomJumpCount = Random.Range(2, 2);
+
+                    switch (randomJumpCount)
+                    {
+                        case 1:
+                            boss.photonView.RPC("ChangeState", RpcTarget.All, "Move");
+                            break;
+                        case 2:
+                            boss.photonView.RPC("ChangeState", RpcTarget.All, "Dash");
+                            break;
+                        case 3:
+                            boss.photonView.RPC("ChangeState", RpcTarget.All, "Jump");
+                            break;
+                        case 4:
+                            boss.photonView.RPC("ChangeState", RpcTarget.All, "Air_Jump");
+                            break;
+                    }
+                }
+            }
+
+
+
+
         }
     }
 }

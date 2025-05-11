@@ -15,11 +15,18 @@ public class MetaKnight_Attack1 : BossState
     public override void Exit()
     {
         base.Exit();
+        boss.isJump = false;
     }
 
     public override void Update()
     {
         base.Update();
+
+        if (!boss.isJump)
+        {
+            boss.SetVelocity(6 * boss.facingDir, 0);
+        }
+
 
         if (!PhotonNetwork.IsMasterClient)
         {

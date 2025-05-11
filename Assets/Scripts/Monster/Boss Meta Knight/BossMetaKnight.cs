@@ -11,6 +11,10 @@ public class BossMetaKnight : Enemy
     public MetaKnight_Jump jumpState { get; private set; }
     public MetaKnight_AirJump airJumpState { get; private set; }
     public MetaKnight_Attack1 attack1State { get; private set; }
+    public MetaKnight_Attack2 attack2State { get; private set; }
+    public MetaKnight_Attack3 attack3State { get; private set; }
+    public MetaKnight_Attack4 attack4State { get; private set; }
+    public MetaKnight_Attack5 attack5State { get; private set; }
 
 
     [Header("Ã¼·Â UI")]
@@ -33,6 +37,10 @@ public class BossMetaKnight : Enemy
         jumpState = new MetaKnight_Jump(this, stateMachine, "Jump");
         airJumpState = new MetaKnight_AirJump(this, stateMachine, "Air_Jump");
         attack1State = new MetaKnight_Attack1(this, stateMachine, "Attack1");
+        attack2State = new MetaKnight_Attack2(this, stateMachine, "Attack2");
+        attack3State = new MetaKnight_Attack3(this, stateMachine, "Attack3");
+        attack4State = new MetaKnight_Attack4(this, stateMachine, "Attack4");
+        attack5State = new MetaKnight_Attack5(this, stateMachine, "Attack5");
     }
 
     protected override void Start()
@@ -132,9 +140,23 @@ public class BossMetaKnight : Enemy
             stateMachine.ChangeState(airJumpState);
         else if (stateName == "Attack1")
             stateMachine.ChangeState(attack1State);
+        else if (stateName == "Attack2")
+            stateMachine.ChangeState(attack2State);
+        else if (stateName == "Attack3")
+            stateMachine.ChangeState(attack3State);
+        else if (stateName == "Attack4")
+            stateMachine.ChangeState(attack4State);
+        else if (stateName == "Attack5")
+            stateMachine.ChangeState(attack5State);
 
     }
 
+
+    [PunRPC]
+    public void ChangeAnimInteger(string _integerName, int _value)
+    {
+        anim.SetInteger(_integerName, _value);
+    }
 
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -156,6 +178,16 @@ public class BossMetaKnight : Enemy
 
     private void OnEnable()
     {
+        UpdateCurrentPlayersCollision();
+    }
+
+
+    //Tmp
+    public void forEventInit()
+    {
+
+        stateMachine.Initialize(idleState);
+
         UpdateCurrentPlayersCollision();
     }
 }

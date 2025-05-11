@@ -10,16 +10,12 @@ public class MetaKnight_Jump : BossState
     public override void Enter()
     {
         base.Enter();
-
-        if (boss.IsGroundDetected() && PhotonNetwork.IsMasterClient)
-        {
-            boss.SetVelocity(5f * boss.facingDir, 5f);
-        }
     }
 
     public override void Exit()
     {
         base.Exit();
+        boss.isJump = false;
     }
 
     public override void Update()
@@ -29,7 +25,7 @@ public class MetaKnight_Jump : BossState
         if (!PhotonNetwork.IsMasterClient)
             return;
 
-        if (boss.IsGroundDetected())
+        if (boss.isJump && boss.IsGroundDetected())
         {
             boss.photonView.RPC("ChangeState", RpcTarget.All, "Idle");
         }

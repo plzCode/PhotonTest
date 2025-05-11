@@ -12,8 +12,6 @@ public class MetaKnight_Move : BossState
     public override void Enter()
     {
         base.Enter();
-
-        AttackTime = 0f;
     }
 
     public override void Exit()
@@ -25,30 +23,13 @@ public class MetaKnight_Move : BossState
     {
         base.Update();
 
-        AttackTime += Time.deltaTime;
+        boss.SetVelocity(6 * boss.facingDir, 0);
 
-
-
-        boss.SetVelocity(5 * boss.facingDir, rb.linearVelocityY);
-        if (!PhotonNetwork.IsMasterClient)
-            return;
-
-        if (Mathf.Abs(closestPlayer.position.x - boss.transform.position.x) <= 3.5f || AttackTime > 4f) //3.5f 이내에 들어오면 공격 or 4초이상 지나면 공격
+        if (Vector2.Distance(closestPlayer.position, boss.transform.position) <= 3.5f)
         {
-            randAttackCount = Random.Range(1, 1);
-
-            switch (randAttackCount)
-            {
-                case 1:
-                    boss.photonView.RPC("ChangeState", RpcTarget.All, "Attack1");
-                    break;
-                case 2:
-                    boss.photonView.RPC("ChangeState", RpcTarget.All, "Attack2");
-                    break;
-                case 3:
-                    boss.photonView.RPC("ChangeState", RpcTarget.All, "Attack3");
-                    break;
-            }
+            randAttackCount = Random.Range(1, 5);
+            boss.photonView.RPC("ChangeAnimInteger", RpcTarget.All, "Attack_Count", randAttackCount);
+            boss.photonView.RPC("ChangeState", RpcTarget.All, "Attack1");
             //boss.photonView.RPC("ChangeState", RpcTarget.All, "Idle");
         }
 
