@@ -88,8 +88,9 @@ public class Door : MonoBehaviour
                 }
 
                 // 2. 위치 이동 및 동기화
-                player.transform.position = Linked_Door.transform.position;
-                GetComponent<PhotonView>().RPC("ForceSyncPosition", RpcTarget.All, photonView.ViewID, Linked_Door.transform.position);
+                player.transform.position = Linked_Door.transform.position; 
+                Vector3 tmpPostion = Linked_Door.transform.position + (Vector3.up * 0.2f);
+                GetComponent<PhotonView>().RPC("ForceSyncPosition", RpcTarget.All, photonView.ViewID, tmpPostion);
                 /*PhotonNetwork.RaiseEvent(0, new object[] { photonView.ViewID, Linked_Door.transform.position },
                     new Photon.Realtime.RaiseEventOptions { Receivers = Photon.Realtime.ReceiverGroup.Others },
                     ExitGames.Client.Photon.SendOptions.SendReliable);*/

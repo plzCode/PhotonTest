@@ -155,13 +155,24 @@ public class Enemy : MonoBehaviour
     {
         EffectAdd("Delete Enemy Effect 45x45_0", transform.position);
         if (!PhotonNetwork.IsMasterClient) return;
-        StartCoroutine(DieTime());
+
+        if (this is Boss_Bonkers)
+        {
+            StartCoroutine(DieTime());
+            return;
+        }
+        else if (this is Boss_DDD)
+        {
+            StartCoroutine(DieTime());
+            return;
+        }
         //if (PhotonNetwork.IsMasterClient)
         //{
         //    //isDestroyed = true;  // 삭제 상태로 설정
         //    photonView.RPC("EffectAdd", RpcTarget.All, "Delete Enemy Effect 45x45_0", transform.position);
         //    //PhotonNetwork.Destroy(gameObject); // 네트워크 전체에서 삭제
-        //}
+        //}EffectAdd("Delete Enemy Effect 45x45_0", transform.position);
+
     }
     [PunRPC]
     protected virtual void EffectAdd(string effectName, Vector3 effectPos)

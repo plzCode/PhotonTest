@@ -429,8 +429,8 @@ public class Player : MonoBehaviour
         if (eView == null) return;
         Transform enemy = eView.transform;
 
-        enemy.GetComponentInChildren<PhotonAnimatorView>().enabled = false; //�ִϸ����� ��Ȱ��ȭ
-        enemy.GetComponent<PhotonView>().enabled = false; //����� ��Ȱ��ȭ
+        //enemy.GetComponentInChildren<PhotonAnimatorView>().enabled = false; //�ִϸ����� ��Ȱ��ȭ
+        //enemy.GetComponent<PhotonView>().enabled = false; //����� ��Ȱ��ȭ
                                                           //PhotonView eView = enemy.GetComponent<PhotonView>();
                                                           //PhotonNetwork.Destroy(enemy.gameObject);  //������
                                                           //this.EatKirbyFormNum = PormNumber; //�Դ� Ŀ�� ��ǿ� ���� ���� ��ȣ ���� ����
@@ -446,9 +446,28 @@ public class Player : MonoBehaviour
         if (enemy != null && PhotonNetwork.IsMasterClient)
         {
             Enemy Enemy = enemy.GetComponent<Enemy>();
+            Debug.Log(Enemy + " : 3.");
             if (Enemy != null)
             {
-                Enemy.DestroySelf();
+                Debug.Log(Enemy.monsterSpawner + " : Here!!");
+                if (Enemy.monsterSpawner != null)
+                {
+                    Enemy.photonView.RPC("ChangeState", RpcTarget.All, "Hit");
+                    Enemy.photonView.RPC("Die", RpcTarget.All);
+                    Enemy.photonView.RPC("ChangeState", Photon.Pun.RpcTarget.All, "ReSpawn");
+                    //Enemy.photonView.RPC("ReSpawnRPC", RpcTarget.All, Enemy.photonView.ViewID);
+                    //Enemy.Die();
+                    
+                }
+                else
+                {
+                    
+                    Enemy.DestroySelf();
+                }
+
+
+                //Enemy.DestroySelf();
+                //Enemy.gameObject.SetActive(false);                
             }
             else
             {

@@ -60,6 +60,7 @@ public class EatEffect : MonoBehaviour
                     Debug.Log("ภโพฦธิดย ม฿ : " + isEat);
                     if (!isEat && PhotonNetwork.IsMasterClient)
                     {
+
                         isEat = true; //ธิดยม฿
                         Debug.Log("ธิดย ม฿ : " + isEat);
                         pView.RPC("EatEnemy", RpcTarget.All, enemy.GetComponent<PhotonView>().ViewID);

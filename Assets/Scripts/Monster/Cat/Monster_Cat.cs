@@ -90,4 +90,22 @@ public class Monster_Cat : Enemy
             photonView.RPC("ChangeState", RpcTarget.All, "MoveDown");
         }
     }
+    private void OnEnable()
+    {
+        if (startRight && facingDir == -1)
+        {
+            Flip();
+        }
+        else if (!startRight && facingDir == 1)
+        {
+            Flip();
+        }
+
+        if (!isFirstSpawn)
+        {
+            transform.position = startPosition;
+            stateMachine.Initialize(idleState);
+        }
+        currentHp = maxHp;
+    }
 }
