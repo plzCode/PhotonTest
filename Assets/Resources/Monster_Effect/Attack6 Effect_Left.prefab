@@ -210,7 +210,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackPower: 50
   wallCheck: {fileID: 8157630754930035190}
-  wallCheckDistance: 2
+  wallCheckDistance: 3
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8

@@ -137,6 +137,15 @@ MonoBehaviour:
   - Attack1RPC
   - Attack2RPC
   - RPC_WaitAndAction
+  - AirJump__Sound
+  - AirAttack__Sound
+  - FireAttack__Sound
+  - AirDownAttack__Sound
+  - ToneAttack__Sound
+  - EngAttack__Sound
+  - Dash__Sound
+  - Burn__Sound
+  - ToneRead__Sound
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

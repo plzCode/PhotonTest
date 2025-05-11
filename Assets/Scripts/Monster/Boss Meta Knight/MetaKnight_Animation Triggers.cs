@@ -184,4 +184,72 @@ public class MetaKnight_AnimationTriggers : MonoBehaviour
     {
         boss.attack4State.bossDash = false;
     }
+
+    #region Audio
+    [PunRPC]
+    private void Jump__Sound()
+    {
+        AudioManager.Instance.RPC_PlaySFX("Meta_Jump");
+    }
+
+    [PunRPC]
+    private void AirJump__Sound()
+    {
+        AudioManager.Instance.RPC_PlaySFX("Meta_AIrJump");
+    }
+    
+    [PunRPC]
+    private void AirAttack__Sound()
+    {
+        AudioManager.Instance.RPC_PlaySFX("Meta_Air attack");
+    }
+    [PunRPC]
+    private void FireAttack__Sound()
+    {
+        AudioManager.Instance.RPC_PlaySFX("Meta_Fire_Attack");
+    }
+
+    [PunRPC]
+    private void AirDownAttack__Sound()
+    {
+        AudioManager.Instance.RPC_PlaySFX("Meta_AirDown_Attack");
+    }
+
+    [PunRPC]
+    private void ToneAttack__Sound()
+    {
+        AudioManager.Instance.RPC_PlaySFX("Meta_Tone");
+    }
+
+    [PunRPC]
+    private void EngAttack__Sound()
+    {
+        AudioManager.Instance.RPC_PlaySFX("Meta_Eng_Attack");
+    }
+
+    [PunRPC]
+    private void Attack__Sound()
+    {
+        AudioManager.Instance.RPC_PlaySFX("Meta_Attack");
+    }
+    
+    [PunRPC]
+    private void Dash__Sound()
+    {
+        AudioManager.Instance.RPC_PlaySFX("Meta_Dash");
+    }
+
+    [PunRPC]
+    private void Burn__Sound()
+    {
+        AudioManager.Instance.RPC_PlaySFX("Meta_Burn");
+    }
+
+    [PunRPC]
+    private void ToneRead__Sound()
+    {
+        AudioManager.Instance.RPC_PlaySFX("Meta_ToneRead");
+    }
+
+    #endregion
 }
