@@ -1,4 +1,5 @@
 using Photon.Pun;
+using System.Linq;
 using UnityEngine;
 
 public class PlayerTest : MonoBehaviourPunCallbacks, IPunObservable
@@ -151,11 +152,12 @@ public class PlayerTest : MonoBehaviourPunCallbacks, IPunObservable
         {
             AudioManager.Instance.RPC_PlaySFX("Kirby_Dance");
         }
-        
-        // 모든 클라이언트에서 동일한 기준 좌표로 실행
-        for (int i = 0; i < GameManager.Instance.playerList.Count; i++)
+
+        var sortedPlayers = GameManager.Instance.playerList.OrderBy(p => p.GetComponent<PhotonView>().ViewID).ToList();
+
+        for (int i = 0; i < sortedPlayers.Count; i++)
         {
-            GameObject playerObject = GameManager.Instance.playerList[i];
+            GameObject playerObject = sortedPlayers[i];
             if (playerObject.TryGetComponent<Player>(out Player tmp_player))
             {
                 float offset = 1.5f * ((i / 2) + 1);

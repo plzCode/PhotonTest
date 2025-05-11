@@ -99,6 +99,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
         this.nextSceneName = nextSceneName;
         isWaitingToLoadScene = true;
+        GameManager.Instance.playerList.Clear(); // 플레이어 리스트 초기화
         PhotonNetwork.Disconnect();
     }
 

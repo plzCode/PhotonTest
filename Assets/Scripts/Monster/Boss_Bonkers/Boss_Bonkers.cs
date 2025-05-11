@@ -33,6 +33,8 @@ public class Boss_Bonkers : Enemy
         attackState = new Bonkers_AttackState(this, stateMachine, "Attack");
         dieState = new Bonkers_DieState(this, stateMachine, "Die");
 
+        
+
     }
 
     protected override void Start()

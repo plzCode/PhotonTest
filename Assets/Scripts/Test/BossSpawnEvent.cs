@@ -28,10 +28,12 @@ public class BossSpawnEvent : MonoBehaviour
             if(playerNumber == stay_Player && !isTriggered)
             {
                 
+
                 StartCoroutine(playerBusy(timeToWait));
 
                 if (bossPrefab != null)
                 {
+                    PlayBossBGM();
                     if (PhotonNetwork.IsMasterClient)
                     {
                         GetComponent<PhotonView>().RPC("BossSpawn",RpcTarget.AllBuffered);
@@ -78,6 +80,13 @@ public class BossSpawnEvent : MonoBehaviour
         {
             Debug.LogError("Enemy component is not attached to the bossPrefab.");
         }
+    }
+
+    public void PlayBossBGM()
+    {
+        if (bossPrefab.GetComponentInChildren<Boss_Bonkers>()) { AudioManager.Instance.PlayBGM("11. VS. Mid-Boss"); }
+        else if (bossPrefab.GetComponentInChildren<Boss_DDD>()) { AudioManager.Instance.PlayBGM("21. VS. Boss"); }
+
     }
 
     public IEnumerator playerBusy(float time)

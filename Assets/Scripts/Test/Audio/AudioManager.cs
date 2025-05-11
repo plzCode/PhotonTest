@@ -52,9 +52,10 @@ public class AudioManager : MonoBehaviour
     {
         audioView.RPC("PlaySFX", RpcTarget.All, clipName);
     }
-
+    [PunRPC]
     public void PlayBGM(string clipName, bool loop = true)
     {
+        StopBGM();
         if (bgmClips.TryGetValue(clipName, out var clip))
         {
             bgmSource.clip = clip;
@@ -64,11 +65,22 @@ public class AudioManager : MonoBehaviour
         else
             Debug.LogWarning($"BGM {clipName} not found.");
     }
+    public void RPC_PlayBGM(string clipName, bool loop = true)
+    {
+        audioView.RPC("PlayBGM", RpcTarget.All, clipName, loop);
+    }
 
     public void StopBGM()
     {
         bgmSource.Stop();
     }
+
+    [PunRPC]
+    public void RPC_StopBGM()
+    {
+        audioView.RPC("StopBGM", RpcTarget.All);
+    }
+
     [PunRPC]
     public void StopSFX()
     {

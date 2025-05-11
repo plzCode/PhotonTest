@@ -160,6 +160,7 @@ public class Enemy : MonoBehaviour
         {
             StartCoroutine(DieTime());
             SpawnReward();
+            AudioManager.Instance.StopBGM();
             return;
         }
         else if (this is Boss_DDD)
