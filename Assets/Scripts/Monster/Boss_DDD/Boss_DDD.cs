@@ -119,7 +119,10 @@ public class Boss_DDD : Enemy
         health_Bar.UpdateHealthBar(maxHp, currentHp);
         Debug.Log("���Ͱ� ���ظ� " + _damage + "����");
 
-
+        if (currentHp <= 0)
+        {
+            stateMachine.ChangeState(dieState);
+        }
     }
 
     [PunRPC]

@@ -310,6 +310,8 @@ MonoBehaviour:
   knockbackDuration: 0
   attackCheck: {fileID: 0}
   attackCheckRadius: 0
+  attack1Check: {fileID: 0}
+  attack1CheckRadius: 0
   groundCheck: {fileID: 1924022035133825413}
   groundCheckDistance: 0.25
   wallCheck: {fileID: 6836020417901063982}

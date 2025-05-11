@@ -119,10 +119,7 @@ public class Boss_Bonkers : Enemy
 
         if(currentHp <= 0)
         {
-            //health_Bar.UpdateHealthBar(maxHp, 0);
-            // 몬스터 사망 처리
             stateMachine.ChangeState(dieState);
-            //Destroy(gameObject);
         }
     }
 
