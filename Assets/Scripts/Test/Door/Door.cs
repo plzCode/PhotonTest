@@ -125,6 +125,10 @@ public class Door : MonoBehaviour
                 {
                     yield return StartCoroutine(screenFader.FadeIn(fadeTime));
                 }
+                if (!AudioManager.Instance.bgmSource.isPlaying)
+                {
+                    AudioManager.Instance.PlayBGM("GameScene");
+                }
             }
         }
         else
