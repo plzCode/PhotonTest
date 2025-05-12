@@ -14,6 +14,7 @@ public class PlayerDanceState : PlayerState
     public override void Exit()
     {
         base.Exit();
+        player.isBusy = false;
     }
     public override void Update()
     {

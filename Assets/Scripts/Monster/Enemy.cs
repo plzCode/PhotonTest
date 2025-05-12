@@ -162,19 +162,19 @@ public class Enemy : MonoBehaviour
         {
             AudioManager.Instance.StopBGM();
             StartCoroutine(DieTime());
-            SpawnReward();
+            Bonker_SpawnReward();
             return;
         }
         else if (this is Boss_DDD)
         {
             StartCoroutine(DieTime());
-            SpawnReward();
+            DDD_SpawnReward();
             return;
         }
         else if (this is BossMetaKnight)
         {
             StartCoroutine(DieTime());
-            SpawnReward();
+            Meta_SpawnReward();
             return;
         }
         //if (PhotonNetwork.IsMasterClient)
@@ -444,12 +444,32 @@ public class Enemy : MonoBehaviour
 
         PhotonNetwork.Destroy(gameObject);
     }
-    public void SpawnReward()
+    public void Bonker_SpawnReward()
     {
         if (PhotonNetwork.IsMasterClient)
         {
             // 보상 스폰 로직
-            GameObject reward = PhotonNetwork.Instantiate("Item/Reward/Chest", transform.position, Quaternion.identity);
+            GameObject reward = PhotonNetwork.Instantiate("Item/Reward/Bonker_Chest", transform.position, Quaternion.identity);
+
+            // 추가적인 보상 설정이나 초기화 작업 수행
+        }
+    }
+    public void DDD_SpawnReward()
+    {
+        if (PhotonNetwork.IsMasterClient)
+        {
+            // 보상 스폰 로직
+            GameObject reward = PhotonNetwork.Instantiate("Item/Reward/DDD_Chest", transform.position, Quaternion.identity);
+
+            // 추가적인 보상 설정이나 초기화 작업 수행
+        }
+    }
+    public void Meta_SpawnReward()
+    {
+        if (PhotonNetwork.IsMasterClient)
+        {
+            // 보상 스폰 로직
+            GameObject reward = PhotonNetwork.Instantiate("Item/Reward/Meta_Chest", transform.position, Quaternion.identity);
 
             // 추가적인 보상 설정이나 초기화 작업 수행
         }

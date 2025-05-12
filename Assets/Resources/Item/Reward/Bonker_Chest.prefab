@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 66737115593659333}
   - component: {fileID: 2798634710236763535}
   m_Layer: 0
-  m_Name: Chest
+  m_Name: Bonker_Chest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 6145672647821815028}
-  reward: {fileID: 5442692508058675260, guid: 5216540fd74c94d4a8c22a5c6db849c7, type: 3}
+  reward: {fileID: 7616401352543207027, guid: cf1c82eeb32e05c4c8b61c6ae106e1d5, type: 3}
   cutScenePlayer: {fileID: 0}
   isTriggered: 0
 --- !u!61 &4026422498580481193

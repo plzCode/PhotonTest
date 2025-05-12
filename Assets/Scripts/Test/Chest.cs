@@ -33,7 +33,12 @@ public class Chest : MonoBehaviour
             spawnedReward.transform.SetParent(transform); // Chest의 자식으로 설정
 
             if (cutScenePlayer == null)
-                cutScenePlayer = GetComponentInChildren<CutScenePlayer>();
+                try
+                {
+                    cutScenePlayer = GetComponentInChildren<CutScenePlayer>();
+
+                }
+                catch { }
             // Cake를 위로 튀어나오게 이동
             StartCoroutine(MoveRewardUpwards(spawnedReward));
         }
@@ -88,8 +93,12 @@ public class Chest : MonoBehaviour
                 anim.SetBool("Open", true); 
                 break;
             case "CutScene":
-                AudioManager.Instance.RPC_PlaySFX("Get_Item_Sound");
-                cutScenePlayer.PlayCutScene();
+                if(cutScenePlayer !=null)
+                {
+                    AudioManager.Instance.RPC_PlaySFX("Get_Item_Sound");
+                    cutScenePlayer.PlayCutScene();
+                }
+
                 break;
         }
         
