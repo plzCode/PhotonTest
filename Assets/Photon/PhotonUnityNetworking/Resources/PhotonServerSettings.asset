@@ -146,6 +146,8 @@ MonoBehaviour:
   - Dash__Sound
   - Burn__Sound
   - ToneRead__Sound
+  - ADDBlock
+  - AddBlock
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
