@@ -106,15 +106,19 @@ public class Door : MonoBehaviour
                 Debug.Log("Next Area Name" + area + " = " + GameManager.Instance.GetAreaPlayer(area));
 
 
-
-                if (GameManager.Instance.GetAreaPlayer(area) == 1) // 이동할층
+                if(stageSpawner != null) //이동할층
                 {
-                    Linked_Door.stageSpawner.photonView.RPC("DeactivateSelfAndChildren", RpcTarget.All);
+                    Debug.Log(stageSpawner.name);
+                    if (GameManager.Instance.GetAreaPlayer(area) == 1) // 이동할층
+                    {
+                        Linked_Door.stageSpawner.photonView.RPC("DeactivateSelfAndChildren", RpcTarget.All);
+                    }
+                    if (GameManager.Instance.GetAreaPlayer(Linked_Door.area) == 0) //현재층
+                    {
+                        stageSpawner.photonView.RPC("ActFalseWithChildren", RpcTarget.All);
+                    }
                 }
-                if (GameManager.Instance.GetAreaPlayer(Linked_Door.area) == 0) //현재층
-                {
-                    stageSpawner.photonView.RPC("ActFalseWithChildren", RpcTarget.All);
-                }
+                
 
 
                 Debug.Log(player.name + "이(가) " + Linked_Door.name + "로 이동했습니다.");
