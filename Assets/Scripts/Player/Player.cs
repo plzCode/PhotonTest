@@ -186,6 +186,15 @@ public class Player : MonoBehaviour
             }
 
         }
+        if (Input.GetKeyDown(KeyCode.Alpha0))
+        {
+            pView.RPC("SettingisInvincible", RpcTarget.AllBuffered);//개발자 디버깅
+        }
+    }
+    [PunRPC]
+    public void SettingisInvincible()
+    {
+        isInvincible = !isInvincible;
     }
     [PunRPC]
     public void DropAbility(float _x, string Effect, Vector3 pos)

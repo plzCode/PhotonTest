@@ -93,6 +93,7 @@ public class Chest : MonoBehaviour
         switch(func)
         {
             case "Open":
+                isTriggered = true;
                 anim.SetBool("Open", true); 
                 break;
             case "CutScene":
