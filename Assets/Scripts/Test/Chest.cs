@@ -62,7 +62,7 @@ public class Chest : MonoBehaviour
         }
 
         rewardObject.transform.position = targetPosition; // 최종 위치 보정
-        StartCoroutine(WaitAndAction(1f, "CutScene")); // 컷신 재생
+        StartCoroutine(WaitAndAction(0.45f, "CutScene")); // 컷신 재생
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

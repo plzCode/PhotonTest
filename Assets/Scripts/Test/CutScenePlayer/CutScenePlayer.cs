@@ -32,6 +32,12 @@ public class CutScenePlayer : MonoBehaviourPunCallbacks
     {
         videoPlayer.targetCamera = Camera.main;
         videoPlayer.renderMode = VideoRenderMode.CameraFarPlane;
+
+        if(videoFileName == "Opneing.mp4")
+        {
+            videoPlayer.playOnAwake = true;
+            PlayCutScene();
+        }
     }
 
     /*void OnVideoEnd(VideoPlayer vp)
@@ -81,12 +87,26 @@ public class CutScenePlayer : MonoBehaviourPunCallbacks
     void OnVideoEnd(VideoPlayer vp)
     {
 
-        if (AudioManager.Instance != null)
+        switch (videoFileName) 
         {
-            Destroy(AudioManager.Instance.gameObject);
-            AudioManager.Instance = null;
+            case "Opening.mp4":
+                SceneManager.LoadScene(nextSceneName);
+                break;
+            case "Ending.mp4":
+                if (AudioManager.Instance != null)
+                {
+                    Destroy(AudioManager.Instance.gameObject);
+                    AudioManager.Instance = null;
+                }
+                NetworkManager.Instance.DisconnectAndLoadScene(nextSceneName);
+
+                break;
+            default:
+                Debug.Log("기타 영상 종료 감지");
+                break;
         }
-        NetworkManager.Instance.DisconnectAndLoadScene(nextSceneName);
+        
+        
     }
 
     
