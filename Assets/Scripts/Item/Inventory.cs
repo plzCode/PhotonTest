@@ -66,6 +66,17 @@ public class Inventory : MonoBehaviour
                     Debug.LogWarning("Player reference is null.");
                 }
                     break;
+            case ItemType.LifeUp:
+                if (player != null)
+                {
+                    AudioManager.Instance.RPC_PlaySFX("LifeUp");
+                    player.pView.RPC("AddLife", RpcTarget.AllBuffered, item.effectValue); // 생명 증가
+                }
+                else
+                {
+                    Debug.LogWarning("Player reference is null.");
+                }
+                break;
         }
 
         RemoveItem(item); // 사용 후 삭제

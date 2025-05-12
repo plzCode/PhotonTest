@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     public float PlayerHP;
     public float PlayerMaxHP = 100f; //�÷��̾� �ִ� ü��
     public int PlayerLife = 3;
+    public int PlayerMaxLife = 5;
 
     public float MoveSpeed;
     public float DashSpeed;
@@ -557,6 +558,19 @@ public class Player : MonoBehaviour
         {
             health_Bar.UpdateHealthBar(PlayerHP);
         }*/
+    }
+    [PunRPC]
+    public void AddLife(float LifeAmount)
+    {
+        PlayerLife += (int)LifeAmount;
+        if(PlayerLife > PlayerMaxLife)
+        {
+            PlayerLife = PlayerMaxLife;
+        }
+        if(lifeNum != null)
+        {
+            lifeNum.UpdateLifeNum(PlayerLife);
+        }
     }
 
 

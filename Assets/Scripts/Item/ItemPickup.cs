@@ -21,6 +21,9 @@ public class ItemPickup : MonoBehaviour
                     case ItemType.Ability:
                         AudioManager.Instance.RPC_PlaySFX("Get_Item_Sound");
                         break;
+                    case ItemType.LifeUp:
+                        AudioManager.Instance.RPC_PlaySFX("Get_Item_Sound");
+                        break;
                     default:
                         Debug.LogWarning("Unknown item type: " + item.type);
                         break;

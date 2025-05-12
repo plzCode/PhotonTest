@@ -51,6 +51,8 @@ public class AudioManager : MonoBehaviour
     public void RPC_PlaySFX(string clipName)
     {
         audioView.RPC("PlaySFX", RpcTarget.All, clipName);
+        if(clipName.Equals("Kirby_Dance"))
+            Debug.Log(clipName);
     }
     [PunRPC]
     public void PlayBGM(string clipName, bool loop = true)

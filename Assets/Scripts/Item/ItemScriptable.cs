@@ -18,4 +18,5 @@ public enum ItemType
 {
     Heal,
     Ability,
+    LifeUp,
 }

@@ -87,6 +87,7 @@ MonoBehaviour:
   PlayerHP: 100
   PlayerMaxHP: 100
   PlayerLife: 3
+  PlayerMaxLife: 5
   MoveSpeed: 3
   DashSpeed: 5
   JumpPower: 2.5
