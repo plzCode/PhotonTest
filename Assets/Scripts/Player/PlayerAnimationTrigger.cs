@@ -35,6 +35,16 @@ public class PlayerAnimatorController : MonoBehaviour
         else
             player.stateMachine.ChangeState(player.idleState);
     }
+    [PunRPC]
+    public void RPC_Idle_Air_State() 
+    {
+        if (!player.IsGroundCheck() && !player.isSlope)
+        {
+            player.stateMachine.ChangeState(player.airState);
+        }
+        else
+            player.stateMachine.ChangeState(player.idleState);
+    }
 
     public void ChangeForm()
     {

@@ -19,9 +19,9 @@ public class Chest : MonoBehaviour
     {
         if (reward != null)
         {
-            GameObject spawnedReward;
+            GameObject spawnedReward = null;
 
-            // PhotonNetwork를 사용하는 경우와 아닌 경우를 구분하여 Cake 생성
+            // PhotonNetwork를 사용하는 경우와 아닌 경우를 구분하여 Cake 생성            
             if (reward.GetComponent<PhotonView>())
             {
                 spawnedReward = PhotonNetwork.Instantiate(reward.name, transform.position, Quaternion.identity);
@@ -33,12 +33,15 @@ public class Chest : MonoBehaviour
             spawnedReward.transform.SetParent(transform); // Chest의 자식으로 설정
 
             if (cutScenePlayer == null)
+            {
                 try
                 {
                     cutScenePlayer = GetComponentInChildren<CutScenePlayer>();
 
                 }
                 catch { }
+            }
+               
             // Cake를 위로 튀어나오게 이동
             StartCoroutine(MoveRewardUpwards(spawnedReward));
         }

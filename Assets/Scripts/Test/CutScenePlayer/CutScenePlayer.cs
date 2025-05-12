@@ -41,6 +41,17 @@ public class CutScenePlayer : MonoBehaviourPunCallbacks
         }
     }
 
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Debug.Log("Escape 키가 눌렸습니다.");
+            videoPlayer.Stop();
+            videoPlayer.loopPointReached -= OnVideoEnd;
+            SceneManager.LoadScene(nextSceneName);
+        }
+    }
+
     /*void OnVideoEnd(VideoPlayer vp)
     {
         //Debug.Log("✅ [OnVideoEnd] 영상 종료 감지");

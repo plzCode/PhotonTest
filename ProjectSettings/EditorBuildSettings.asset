@@ -12,14 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/TestPhoton.unity
     guid: 164e5647ac120b9459c490136cdec971
   - enabled: 1
-    path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/SlotCar-Scene.unity
-    guid: 711b38c07f2cf904f81b3422c67f1825
-  - enabled: 1
-    path: Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/PunCockpit-Scene.unity
-    guid: 9d6d60c803e244e51ba945a84b88757d
-  - enabled: 1
-    path: Assets/Scenes/GameScene.unity
-    guid: 14fd46c5018393741b534a70820ecbc9
+    path: Assets/Scenes/GameScene_Debugging.unity
+    guid: 677f4037894335647a975a74ef3c1890
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 3590b91b4603b465dbb4216d601bff33, type: 3}
   m_UseUCBPForAssetBundles: 0

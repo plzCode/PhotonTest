@@ -149,6 +149,7 @@ MonoBehaviour:
   - ADDBlock
   - AddBlock
   - AddLife
+  - RPC_Idle_Air_State
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
