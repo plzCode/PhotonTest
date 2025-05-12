@@ -33,8 +33,9 @@ public class CutScenePlayer : MonoBehaviourPunCallbacks
         videoPlayer.targetCamera = Camera.main;
         videoPlayer.renderMode = VideoRenderMode.CameraFarPlane;
 
-        if(videoFileName == "Opneing.mp4")
+        if(videoFileName == "Opening.mp4")
         {
+            Debug.Log("?");
             videoPlayer.playOnAwake = true;
             PlayCutScene();
         }
